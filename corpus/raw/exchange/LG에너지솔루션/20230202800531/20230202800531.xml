@@ -1,0 +1,150 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>LG에너지솔루션/투자판단 관련 주요경영사항/(2023.02.02)투자판단 관련 주요경영사항</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">구매 공급에 대한 합의서 체결</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">당사는 미국 FEPS와 하기와 같은 장기공급을 합의하는 계약을 체결함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">가. 공급상대방 : FEPS(Freudenberg E-Power Systems) <br xmlns:java="http://xml.apache.org/xalan/java">나. 공급제품 : 전기차 배터리 모듈 <br xmlns:java="http://xml.apache.org/xalan/java">다. 공급물량 : 19GWh <br xmlns:java="http://xml.apache.org/xalan/java">라. 공급개시일 : 2024년 <br xmlns:java="http://xml.apache.org/xalan/java">마. 기대효과 : 미래 고성장이 예상되는 상용차(버스, 트럭 등) 시장 대상 판로 확보</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 이사회결의일(결정일) 또는 사실확인일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2023-02-02</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">가. 본건 계약 예상금액은 확정되지 않았으나 수시 공시 기준금액 이상으로 추정됨에 따라 공시하는 건임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">나. 상기 '3. 이사회결의일(결정일) 또는 사실확인일'은 구매 공급에 대한 합의서 체결일임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">다, 상기 공급 합의 계약 관련하여 구체적인 사항은 추후 고객과의 협의에 따라 변동될 수 있음.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span class="xforms_input" style="width:475px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div id="LIB_L9081" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:11pt;font-weight:bold;">【공시유보 관련사항】</span> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormG1_Form0_Table0" style="margin:0px 0px 20px 0px;width:597px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="160"> <span style="width:160px;font-size:10pt;">1. 유보사항</span> </td> 
+          <td width="437"> <span class="xforms_input" style="width:437px;font-size:10pt;">구체적인 공급가액</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="160"> <span style="width:160px;font-size:10pt;">2. 유보사유</span> </td> 
+          <td width="437"> <span class="xforms_input" style="width:437px;font-size:10pt;">경영상 비밀유지</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="160"> <span style="width:160px;font-size:10pt;">3. 유보기한</span> </td> 
+          <td width="437"> <span class="xforms_input" style="width:437px;font-size:10pt;">2024-12-31</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

@@ -1,0 +1,134 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>현대제철/투자판단 관련 주요경영사항/(2025.03.25)투자판단 관련 주요경영사항</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">美 전기로 제철소 건설 추진</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">○ 투자 개요 : 미국 자동차강판 특화 전기로 제철소 건설 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 주요설비 : DRP*, 전기로, 열연/냉연 압연설비 등 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 생산능력 : 연간 270만톤(열연/냉연) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->    * DRP(Direct Reduction Plant) : 직접환원철 저탄소 원료 설비 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">○ 목적 : 미래 성장동력 확보 및 중장기 탄소저감 체제 전환 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">○ 장소 : 미국 남동부 루이지애나 주 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">○ 투자금액 : $58억 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">○ 건설기간 : 2026년 3분기 ~ 2029년 1분기</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 이사회결의일(결정일) 또는 사실확인일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2025-03-24</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">5</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">1) 본 건은 당사와 현대차그룹 등이 공동 투자하여 미국 남동부 루이지애나 주에 58억 달러 규모의 자동차강판 특화 전기로 제철소를 건설하는 건 입니다. 상기 2. '투자금액' $58억을 원화 환산 시 8조 5,080억원이며, 이는 2025년 3월 24일 서울외국환중개 매매기준율(1,466.9원/달러)을 기준으로 환산한 금액입니다. 실제 거래종결일의 환율에 따라 원화환산 금액은 변경될 수 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 상기 2. '투자금액' $58억의 자본구조는 자기자본 50%와 외부차입 50%로 검토 중이며, 당사를 포함한 현대차그룹 및 기타 투자자와의 지분출자를 협의 중에 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 상기 내용은 관계기관의 협의나 승인 절차, 사업진행상황 등에 따라 그 내용 및 규모 등에 변동사항이 발생할 수 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4) 당사의 감사위원회는 전원 사외이사로 구성되어 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5) 본 투자에 대한 당사의 투자금액, 지분율, 일정 등 세부 내용은 검토 중이며, 추후 확정 시 관련 공시를 진행할 예정입니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span style="width:475px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20250108000031&amp;rcpno=20250108000031&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2025-01-08 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20250207000374&amp;rcpno=20250207000374&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2025-02-07 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+   </div> 
+  </div>  
+ </body>
+</html>

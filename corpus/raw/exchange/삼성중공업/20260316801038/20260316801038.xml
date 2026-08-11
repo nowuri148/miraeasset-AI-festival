@@ -1,0 +1,158 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>삼성중공업/단일판매ㆍ공급계약 해지/(2026.03.16)단일판매ㆍ공급계약 해지</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 해지</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">1. 판매ㆍ공급계약 해지 구분</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">공사수주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">- 해지계약명</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">원유운반선 1척</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="153"> <span style="width:153px;font-size:10pt;">2. 해지내역</span> </td> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">해지금액(원)</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;text-align:right;">114,800,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;text-align:right;">5,944,700,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;text-align:right;">1.9</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">오세아니아 지역 선주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">4. 계약기간</span> </td> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">2023-06-02</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">5. 해지 주요사유</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">선주사의 계약 의무 불이행</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">6. 해지일자</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">2026-03-14</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">7. 공시유보 관련내용</span> </td> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" width="264"> <span style="width:264px;font-size:10pt;">8. 기타 투자판단과 관련한 중요사항</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">(1) 진행경과 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 2023-06-02, 당사는 원유운반선 2척 수주하여 이를 공시하였습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 2026-02-03, 기존에 수주한 원유운반선 2척 중 1척에 대해 선주사가 최종 분할금 납입에 실패하여 계약상 당사에게 발생한 계약 해지 권한을 행사함에 따라 정정공시를 실시한 바 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 2026-03-14, 당사는 원유운반선 1척에 대해 최종 분할금 납입에 실패한 선주사에 계약상 당사에게 발생한 계약 해지 권한을 행사하여 계약을 해지하였습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">(2) 대응방안 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 당사는 기수취한 선수금 및 해당 선박의 제3자 매각 추진을 통해 확보될 매각 대금으로 선박 건조 비용 및 관련 손해를 보전할 계획으로, 계약 해지에 따른 회사의 재무적 영향은 미미할 전망입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">(3) 기타참고사항 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2항의 해지금액은 계약일의 매매기준환율 (1,320.7원/$)을 적용하였으며, 억원 미만에서 반올림했습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2항의 최근 매출액은 2022년말 연결재무제표 기준이며, 억원 미만에서 반올림했습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="86"> <span style="width:86px;font-size:10pt;">관련공시</span> </td> 
+       <td width="246"> <span style="width:246px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20260203000709&amp;rcpno=20260203000709&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2026-02-03 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

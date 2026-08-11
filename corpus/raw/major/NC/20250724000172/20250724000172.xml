@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11339">유형자산 양도 결정</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20221018">6.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00261443">(주)엔씨소프트</COMPANY-NAME>
+
+
+<BODY ATOCID="3">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="3">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">  2025년     07월     24일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">주식회사 엔씨소프트</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">김택진, 박병무 (공동대표이사)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">서울특별시 강남구 테헤란로 509</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-2186-3300</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지)http://www.ncsoft.com</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) 전무</TD>
+<TD WIDTH="267" HEIGHT="23">(성  명) 이장욱</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-2186-3300</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Transfer of Tangible Assets" ATOCID="1">유형자산 양도 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="TBL_TRP" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" WIDTH="626" BORDER="1">
+
+<COLGROUP WIDTH="626">
+<COL WIDTH="174"></COL>
+<COL WIDTH="155"></COL>
+<COL WIDTH="297"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="320" COLSPAN="2" AUPDATECONT="N" ENG="1. Type of asset" HEIGHT="23">1. 자산구분</TD>
+<TU WIDTH="288" AUNIT="ACCT_TP" AUNITVALUE="1" ALIGN="CENTER" HEIGHT="23" ENG="Land and building">토지 및 건물</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="61">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="- Name of asset" WIDTH="320" HEIGHT="54">   - 자산명</TD>
+<TE ACODE="ACCT_NM" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="288" HEIGHT="54">서울특별시 강남구 삼성동 158-16 토지 및 지상건물 (엔씨타워I)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ENG="2. Details of transfer" WIDTH="165" HEIGHT="83">2. 양도내역</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Transfer amount (KRW)" WIDTH="146" HEIGHT="23">양도금액(원)</TD>
+<TE ALIGN="RIGHT" ACODE="TR_AMT" WIDTH="288" HEIGHT="23">443,500,000,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Total assets (KRW)" WIDTH="146" HEIGHT="23">자산총액(원)</TD>
+<TE ALIGN="RIGHT" ACODE="CRP_ASST" WIDTH="288" HEIGHT="23">3,953,941,191,414</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Ratio to total assets (%)" WIDTH="146" HEIGHT="23">자산총액대비(%)</TD>
+<TE ALIGN="RIGHT" ACODE="ASST_RT" WIDTH="288" HEIGHT="23">11.22</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="3. Purpose of transfer" WIDTH="320" HEIGHT="23">3. 양도목적</TD>
+<TE ACODE="TR_PPS" ALIGN="CENTER" WIDTH="288" HEIGHT="23">신사옥(글로벌 RDI센터) 건축비용 충당</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="4. Impact of transfer" WIDTH="320" HEIGHT="23">4. 양도영향</TD>
+<TE ACODE="TR_EFT" ALIGN="CENTER" WIDTH="288" HEIGHT="23">신사옥(글로벌 RDI센터) 건축비용 확보</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ENG="5. Scheduled transfer date" WIDTH="165" HEIGHT="83">5. 양도예정일자</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Contract conclusion date" WIDTH="146" HEIGHT="23">계약체결일</TD>
+<TU ALIGN="CENTER" AUNIT="TR_CTRT_DT" AUNITVALUE="20250728" WIDTH="288" HEIGHT="23">2025년 07월 28일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Transfer base date" WIDTH="146" HEIGHT="23">양도기준일</TD>
+<TU ALIGN="CENTER" AUNIT="TR_BSC_DT" AUNITVALUE="20250811" WIDTH="288" HEIGHT="23">2025년 08월 11일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Scheduled registration date" WIDTH="146" HEIGHT="23">등기예정일</TD>
+<TU ALIGN="CENTER" AUNIT="TR_EXT_DT" AUNITVALUE="20250811" WIDTH="288" HEIGHT="23">2025년 08월 11일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="6. Counterparty" WIDTH="165" HEIGHT="166">6. 거래상대방</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Company name (Entity name)" WIDTH="146" HEIGHT="23">회사명(성명)</TD>
+<TE ALIGN="CENTER" ACODE="OTH_NM" WIDTH="288" HEIGHT="23">퍼시픽제83호부동산일반사모투자회사</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Issued capital (KRW)" WIDTH="146" HEIGHT="23">자본금(원)</TD>
+<TE ALIGN="RIGHT" ACODE="OTH_CPT" WIDTH="288" HEIGHT="23">100,000,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Main business" WIDTH="146" HEIGHT="23">주요사업</TD>
+<TE ACODE="OTH_MNB" ALIGN="CENTER" WIDTH="288" HEIGHT="23">금융업</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Location of head office (Address)" WIDTH="146" HEIGHT="46">본점소재지(주소)</TD>
+<TE ACODE="OTH_ADRS" ALIGN="CENTER" WIDTH="288" HEIGHT="46">서울특별시 강남구 테헤란로 432, 20층(대치동, DB금융센터)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Relationship to company" WIDTH="146" HEIGHT="23">회사와의 관계</TD>
+<TU ALIGN="CENTER" AUNIT="OTH_RLT" AUNITVALUE="-" WIDTH="288" HEIGHT="23" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="7. Transaction payment" WIDTH="320" HEIGHT="46">7. 거래대금지급</TD>
+<TE ACODE="PRC_PAY" VALIGN="MIDDLE" WIDTH="288" HEIGHT="46">1) 계약금: 44,350,000,000원2) 잔금: 399,150,000,000원</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="8. Matters related to external evaluation" WIDTH="165" HEIGHT="258">8. 외부평가에 관한 사항</TD>
+<TD AUPDATECONT="N" ENG="Whether external valuation was conducted" WIDTH="146" HEIGHT="23">외부평가 여부</TD>
+<TU ALIGN="CENTER" AUNIT="EXV_YN" AUNITVALUE="Y" WIDTH="288" HEIGHT="23" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="145">
+<TD AUPDATECONT="N" ENG="- Basis and reasons" VALIGN="MIDDLE" WIDTH="146" HEIGHT="138"> - 근거 및 사유</TD>
+<TE ACODE="EXV_BSS" WIDTH="288" HEIGHT="138">1) 근거 : 자본시장과 금융투자업에 관한 법률 제161조 제1항 제7호 및 동법 시행령 제171조 제2항 제5호2) 사유 : 회사가 양도하기로 의사결정한 자산양도가액의 적정성 여부를 판단하기 위한 참고자료 제공</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="External evaluator’s name" WIDTH="146" HEIGHT="23">외부평가기관의 명칭</TD>
+<TE ACODE="EXV_NM" ALIGN="CENTER" WIDTH="288" HEIGHT="23">삼덕회계법인</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="Period of external valuation" WIDTH="146" HEIGHT="23">외부평가 기간</TD>
+<TU ALIGN="CENTER" AUNIT="EXV_PROD" AUNITVALUE="20250714-20250718" WIDTH="288" HEIGHT="23">2025년 07월 14일 ~ 2025년 07월 18일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="Opinion of external valuation" WIDTH="146" HEIGHT="23">외부평가 의견</TD>
+<TE ACODE="EXV_OPN" ALIGN="CENTER" WIDTH="288" HEIGHT="23">적정</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="9. Whether subject to a special resolution of the general shareholders’ meeting" WIDTH="320" HEIGHT="23">9. 주주총회 특별결의 여부</TD>
+<TU ALIGN="CENTER" AUNIT="GM_SD_YN" AUNITVALUE="N" WIDTH="288" HEIGHT="23" ENG="Non-applicable">미해당</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="- Scheduled date of general shareholders’ meeting" WIDTH="320" HEIGHT="23">   - 주주총회 예정일자</TD>
+<TU ALIGN="CENTER" AUNIT="GM_DUE_DT" AUNITVALUE="-" WIDTH="288" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="6" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- Matters related to the appraisal rights" WIDTH="165" HEIGHT="242">   - 주식매수청구권에     관한 사항</TD>
+<TD AUPDATECONT="N" ENG="Terms and conditions for exercise" WIDTH="146" HEIGHT="23">행사요건</TD>
+<TE ACODE="CSPR_RQMT" ALIGN="CENTER" WIDTH="288" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="Estimated purchase price" WIDTH="146" HEIGHT="23">매수예정가격</TD>
+<TE ALIGN="CENTER" ACODE="CSPR_EPT_PRC" VALIGN="MIDDLE" WIDTH="288" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD AUPDATECONT="N" ENG="Exercise procedure, method, period, and location" WIDTH="146" HEIGHT="46">행사절차, 방법,기간, 장소</TD>
+<TE ACODE="CSPR_DTL" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="288" HEIGHT="46">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD AUPDATECONT="N" ENG="Payment schedule and method" WIDTH="146" HEIGHT="46">지급예정시기,지급방법</TD>
+<TE ACODE="CSPR_PAY_DTL" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="288" HEIGHT="46">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD AUPDATECONT="N" ENG="Restrictions on appraisal rights" WIDTH="146" HEIGHT="46">주식매수청구권 제한관련 내용</TD>
+<TE ACODE="CSPR_LMT" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="288" HEIGHT="46">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="Effects on contract" WIDTH="146" HEIGHT="23">계약에 미치는 효력</TD>
+<TE ACODE="CSPR_EFT" ALIGN="CENTER" WIDTH="288" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="10. Board resolution date (decision date)" WIDTH="320" HEIGHT="23">10. 이사회결의일(결정일)</TD>
+<TU ALIGN="CENTER" AUNIT="DRT_RSLT_DT" AUNITVALUE="20250724" WIDTH="288" HEIGHT="23">2025년 07월 24일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- Attendance of outside directors" WIDTH="165" HEIGHT="53">   - 사외이사참석여부</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Present (No.)" WIDTH="146" HEIGHT="23">참석(명)</TD>
+<TE ALIGN="RIGHT" ACODE="ODRT_ATD_CNT" WIDTH="288" HEIGHT="23">5</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Absent (No.)" WIDTH="146" HEIGHT="23">불참(명)</TD>
+<TE ALIGN="RIGHT" ACODE="ODRT_NATD_CNT" WIDTH="288" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="- Attendance of auditors (members of Audit Committee who are not outside directors)" WIDTH="320" HEIGHT="23">   - 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+<TU ALIGN="CENTER" AUNIT="ADT_ATD_YN" AUNITVALUE="-" WIDTH="288" HEIGHT="23" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="11. Whether subject to the Fair Trade Commission reporting requirements" WIDTH="320" HEIGHT="23">11. 공정거래위원회 신고대상 여부</TD>
+<TU ALIGN="CENTER" AUNIT="FTC_RPT_YN" AUNITVALUE="N" WIDTH="288" HEIGHT="23" ENG="Non-applicable">미해당</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="12. Whether signed a put option contract, etc." WIDTH="320" HEIGHT="23">12. 풋옵션 등 계약 체결여부</TD>
+<TU ALIGN="CENTER" AUNIT="PO_CTRT_YN" AUNITVALUE="N" WIDTH="288" HEIGHT="23" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="- Contract details" WIDTH="320" HEIGHT="23">   - 계약내용</TD>
+<TE ACODE="PO_CTRT_DTL" ALIGN="CENTER" WIDTH="288" HEIGHT="23">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" AUPDATECONT="N" ENG="13. Plans for future corporate restructuring" HEIGHT="23">13. 향후 회사구조개편에 관한 계획</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>- 해당사항 없습니다.</P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" AUPDATECONT="N" ENG="14. Other matters to be factored into investment decisions" HEIGHT="23">14. 기타 투자판단과 관련한 중요사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>1) 상기 2.의 '양도금액(원)'은 부가세 및 제세공과금, 수수료 등의 부대비용을 제외한 매매계약서상의 금액이며, '자산총액(원)'은 2024년 말 연결재무제표 기준입니다.2) 상기 5.의 '양도기준일'은 잔금수령일이며, '등기예정일'은 양수인 이행사항으로 잔금 지급 이후 지체없이 진행될 예정입니다.3) 상기 6.의 '거래상대방의 자본금(원)'은 최근사업연도 2024년 말 기준입니다.4) 상기 10.의 '감사(사외이사가 아닌 감사위원) 참석여부' 관련, 당사의 감사위원회는 전원 사외이사로 구성되어 있습니다.5) 상기 일정 및 대금지급 관련 사항은 거래상대방과의 협의 및 진행상황에 따라
+<SPAN USERMARK="0X54AF00"> </SPAN>변경될 수 있습니다.6) 기타 세부사항은 본 공시서류에 첨부된 외부평가기관의 평가의견서를 참조하시기 바랍니다.
+</P>
+<P>※ 관련공시 : 해당사항 없습니다.</P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

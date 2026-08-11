@@ -1,0 +1,130 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>현대건설/투자판단 관련 주요경영사항/(2023.01.13)투자판단 관련 주요경영사항</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">수도권광역급행철도 B노선(GTX-B) 민간투자사업 협상대상자 선정</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">- 현대건설(대우건설 컨소시엄)은 아래와 같이 2023년 1월 13일, 국토교통부가 발주한 수도권광역급행철도 B노선(GTX-B) 민간투자사업의 협상대상자로 선정되었음을 통보받음. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->               - 아   래 - <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">1.주무관청 : 국토교통부 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2.계약금액 : 약 6,427억원(당사분) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3.최근매출액 : 18,065,533,516,285원 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4.매출액대비 : 3.56%</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 이사회결의일(결정일) 또는 사실확인일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2023-01-13</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">- 상기2. 주요내용의 계약금액은 총 계약금액 3조 2,137억원 중 당사분(20%)에 해당하는 금액임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기2. 주요내용의 최근매출액은 2021년말 연결재무제표 기준임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 3.사실확인일은 협상대상자 선정 공문 수령일임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 본 사항은 사업 진행과정에서 변동될 수 있으며, 향후 본계약 체결 시 확정 내용을 재공시할 예정임.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span class="xforms_input" style="width:475px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+   </div> 
+  </div>  
+ </body>
+</html>

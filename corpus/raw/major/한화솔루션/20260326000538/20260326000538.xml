@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11306">주요사항보고서(유상증자결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20251230">6.3</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00162461">한화솔루션(주)</COMPANY-NAME>
+
+
+<BODY ATOCID="2">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">  2026년     03월     26일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">한화솔루션 주식회사</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">남정운</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">서울특별시 중구 청계천로 86</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-729-2700 </TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지) www.hanwhasolutions.com/</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) 재무실장 </TD>
+<TD WIDTH="267" HEIGHT="23">(성  명) 정원영</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 070-4193-4130 </TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Paid-In Capital Increase" ATOCID="1">유상증자 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="CST_CNT" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="600" BORDER="1">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="160"></COL>
+<COL WIDTH="172"></COL>
+<COL WIDTH="268"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="151" AUPDATECONT="N" ENG="1. Class and number of new shares" HEIGHT="53">1. 신주의 종류와 수</TD>
+<TD ALIGN="CENTER" WIDTH="163" AUPDATECONT="N" ENG="Common stock (shrs.)" HEIGHT="23">보통주식 (주)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" ACODE="CST_CNT" HEIGHT="23">72,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Different classes of stocks (shrs.)" WIDTH="163" HEIGHT="23">기타주식 (주)</TD>
+<TE ALIGN="RIGHT" ACODE="PST_CNT" WIDTH="259" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="2. Par value per share (KRW)" WIDTH="323" HEIGHT="23">2. 1주당 액면가액 (원)</TD>
+<TE ALIGN="RIGHT" ACODE="FVAL" WIDTH="259" HEIGHT="23">5,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" AUPDATECONT="N" ENG="3. Total number of shares issued before capital increase (shrs.)" WIDTH="151" HEIGHT="53">3. 증자전     발행주식총수 (주)</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Common stock (shrs.)" WIDTH="163" HEIGHT="23">보통주식 (주)</TD>
+<TE ALIGN="RIGHT" ACODE="BFR_CST_CNT" WIDTH="259" HEIGHT="23" VALIGN="MIDDLE">171,892,536</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Different classes of stocks (shrs.)" WIDTH="163" HEIGHT="23">기타주식 (주)</TD>
+<TE ALIGN="RIGHT" ACODE="BFR_PST_CNT" WIDTH="259" HEIGHT="23" VALIGN="MIDDLE">2,575,349</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="6" VALIGN="MIDDLE" AUPDATECONT="N" ENG="4. Purpose of funding" WIDTH="151" HEIGHT="196">4. 자금조달의 목적</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Facility investment (KRW)" WIDTH="163" HEIGHT="23">시설자금 (원)</TD>
+<TE ALIGN="RIGHT" ACODE="FND_USE1" WIDTH="259" HEIGHT="23">907,700,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Business acquisition (KRW)" WIDTH="163" HEIGHT="23">영업양수자금 (원)</TD>
+<TE ALIGN="RIGHT" ACODE="FND_USE_SQ" WIDTH="259" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Operating capital (KRW)" WIDTH="163" HEIGHT="23">운영자금 (원)</TD>
+<TE ALIGN="RIGHT" ACODE="FND_USE2" WIDTH="259" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Debt repayment (KRW)" WIDTH="163" HEIGHT="23">채무상환자금 (원)</TD>
+<TE ALIGN="RIGHT" ACODE="FND_USE_RD" WIDTH="259" HEIGHT="23">1,489,900,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Acquisition of securities issued by other corporations (KRW)" WIDTH="163" HEIGHT="46">타법인 증권취득자금 (원)</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" ACODE="ANC_ACQ_AMT" WIDTH="259" HEIGHT="46">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Other purposes (KRW)" WIDTH="163" HEIGHT="23">기타자금 (원)</TD>
+<TE ALIGN="RIGHT" ACODE="FND_USE3" WIDTH="259" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" AUPDATECONT="N" ENG="5. Capital increase method" WIDTH="323" HEIGHT="23">5. 증자방식</TD>
+<TU ALIGN="CENTER" AUNIT="CI_MTH" AUNITVALUE="3" WIDTH="259" HEIGHT="23" ENG="General public offering of forfeited shares after shareholder allotment">주주배정후 실권주 일반공모</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P>※ 기타주식에 관한 사항</P>
+
+<TABLE-GROUP ACLASS="STO_ETC" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="600" BORDER="1">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="235"></COL>
+<COL WIDTH="365"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="226" AUPDATECONT="N" ENG="Basis in articles of incorporation" HEIGHT="23">정관의 근거</TD>
+<TE WIDTH="356" VALIGN="MIDDLE" ACODE="AOI_BAS" HEIGHT="23" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="Details of stocks" WIDTH="226" HEIGHT="23">주식의 내용</TD>
+<TE VALIGN="MIDDLE" ACODE="STO_CNT" WIDTH="356" HEIGHT="23" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="Others" WIDTH="226" HEIGHT="23">기타</TD>
+<TE VALIGN="MIDDLE" ACODE="ETC_CNT" WIDTH="356" HEIGHT="23" ALIGN="CENTER">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<P></P>
+
+<LIBRARY>
+<TABLE-GROUP ACLASS="STK_ASN_INC" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="642" BORDER="1">
+
+<COLGROUP WIDTH="642">
+<COL WIDTH="131"></COL>
+<COL WIDTH="93"></COL>
+<COL WIDTH="110"></COL>
+<COL WIDTH="78"></COL>
+<COL WIDTH="93"></COL>
+<COL WIDTH="137"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="4" VALIGN="MIDDLE" WIDTH="122" AUPDATECONT="N" ENG="6. Issuing price of new shares" HEIGHT="113">6. 신주 발행가액</TD>
+<TD ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="84" AUPDATECONT="N" ENG="Final issuing price" HEIGHT="53">확정발행가</TD>
+<TD ALIGN="CENTER" WIDTH="101" AUPDATECONT="N" ENG="Common stock (KRW)" HEIGHT="23">보통주식 (원)</TD>
+<TE COLSPAN="3" ALIGN="RIGHT" WIDTH="299" ACODE="CST_ISS_VAL" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Different classes of stocks (KRW)" WIDTH="101" HEIGHT="23">기타주식 (원)</TD>
+<TE COLSPAN="3" ALIGN="RIGHT" ACODE="PST_ISS_VAL" WIDTH="299" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Expected issuing price" WIDTH="84" HEIGHT="53">예정발행가</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Common stock (KRW)" WIDTH="101" HEIGHT="23">보통주식 (원)</TD>
+<TE ALIGN="RIGHT" ACODE="PRE_CST_VAL" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23">33,300</TE>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Expected date of finalization" WIDTH="84" HEIGHT="23">확정예정일</TD>
+<TU ALIGN="CENTER" AUNIT="PRE_CST_VAL_DT" AUNITVALUE="20260617" WIDTH="128" HEIGHT="23">2026년 06월 17일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Different classes of stocks (KRW)" WIDTH="101" HEIGHT="23">기타주식 (원)</TD>
+<TE ALIGN="RIGHT" ACODE="PRE_PST_VAL" WIDTH="69" HEIGHT="23">-</TE>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Expected date of finalization" WIDTH="84" HEIGHT="23">확정예정일</TD>
+<TU ALIGN="CENTER" AUNIT="PRE_PST_VAL_DT" AUNITVALUE="-" WIDTH="128" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="7. Calculation method of issuing price" WIDTH="325" HEIGHT="46">7. 발행가 산정방법</TD>
+<TE COLSPAN="3" ACODE="ISS_FUNC" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="299" HEIGHT="46">24. 기타 투자판단에 참고할 사항가. 신주 발행가액 산정방법 참조</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="8. Record date for allotment of new shares" WIDTH="325" HEIGHT="23">8. 신주배정기준일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="ALL_BS_DT" AUNITVALUE="20260514" WIDTH="299" HEIGHT="23">2026년 05월 14일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="9. Number of new stocks allocated per share" WIDTH="325" HEIGHT="23">9. 1주당 신주배정주식수 (주)</TD>
+<TE COLSPAN="3" ALIGN="RIGHT" ACODE="NEW_ASN_CNT" WIDTH="299" HEIGHT="23">0.3348843614</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="10. Preferential allotment ratio for members of the employee stock ownership association (%)" WIDTH="325" HEIGHT="23">10. 우리사주조합원 우선배정비율 (%)</TD>
+<TE COLSPAN="3" ALIGN="RIGHT" ACODE="EMP_ALL_RATE" WIDTH="299" HEIGHT="23">20</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="4" VALIGN="MIDDLE" AUPDATECONT="N" ENG="11. Scheduled date of subscription" WIDTH="122" HEIGHT="113">11. 청약예정일</TD>
+<TD ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Employee stock ownership association" WIDTH="84" HEIGHT="53">우리사주조합</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Start date" WIDTH="101" HEIGHT="23">시작일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="EMP_BGN_DT" AUNITVALUE="20260622" WIDTH="299" HEIGHT="23">2026년 06월 22일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="End date" WIDTH="101" HEIGHT="23">종료일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="EMP_END_DT" AUNITVALUE="20260622" WIDTH="299" HEIGHT="23">2026년 06월 22일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Existing shareholders" WIDTH="84" HEIGHT="53">구주주</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Start date" WIDTH="101" HEIGHT="23">시작일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="SH_BGN_DT" AUNITVALUE="20260622" WIDTH="299" HEIGHT="23">2026년 06월 22일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="End date" WIDTH="101" HEIGHT="23">종료일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="SH_END_DT" AUNITVALUE="20260623" WIDTH="299" HEIGHT="23">2026년 06월 23일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="12. Payment date" WIDTH="325" HEIGHT="23">12. 납입일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="PYM_DT" AUNITVALUE="20260630" WIDTH="299" HEIGHT="23">2026년 06월 30일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="13. Plan for handling forfeited shares" WIDTH="325" HEIGHT="46">13. 실권주 처리계획</TD>
+<TE COLSPAN="3" ACODE="PRC_PLN" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="299" HEIGHT="46">24. 기타 투자판단에 참고할 사항나. 신주의 배정방법 참조</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="14. Record date for dividend on new shares" WIDTH="325" HEIGHT="23">14. 신주의 배당기산일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="DV_ST_DT" AUNITVALUE="20260101" WIDTH="299" HEIGHT="23">2026년 01월 01일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="15. Scheduled delivery date of new share certificates" WIDTH="325" HEIGHT="23">15. 신주권교부예정일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="NST_GV_DT" AUNITVALUE="-" WIDTH="299" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="16. Scheduled listing date of new shares" WIDTH="325" HEIGHT="23">16. 신주의 상장예정일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="LST_PLN_DT" AUNITVALUE="20260710" WIDTH="299" HEIGHT="23">2026년 07월 10일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="17. Lead underwriter (in case of indirect offering)" WIDTH="325" HEIGHT="92">17. 대표주관회사(직접공모가 아닌 경우)</TD>
+<TE COLSPAN="3" ALIGN="CENTER" ACODE="CHF_AGN" WIDTH="299" HEIGHT="92">케이비증권(주)NH투자증권(주)한국투자증권(주)대신증권(주)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="18. Whether the warrants are transferable" WIDTH="325" HEIGHT="23">18. 신주인수권양도여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="NST_GV_YN" AUNITVALUE="Y" WIDTH="299" HEIGHT="23" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="- Whether warrant certificates are listed" WIDTH="325" HEIGHT="23">   - 신주인수권증서의 상장여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="WRNT_LST_YN" AUNITVALUE="Y" WIDTH="299" HEIGHT="23" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="- Financial investment business entity responsible for the sale and brokerage of warrants" WIDTH="325" HEIGHT="92">   - 신주인수권증서의 매매 및 매매의 중개를       담당할 금융투자업자 </TD>
+<TE COLSPAN="3" ALIGN="CENTER" VALIGN="MIDDLE" ACODE="SEC_CRP" WIDTH="299" HEIGHT="92">케이비증권(주)NH투자증권(주)한국투자증권(주)대신증권(주)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="19. Board resolution date (decision date)" WIDTH="325" HEIGHT="23">19. 이사회결의일(결정일)</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="DRC_DT" AUNITVALUE="20260326" WIDTH="299" HEIGHT="23">2026년 03월 26일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- Attendance of outside directors" WIDTH="122" HEIGHT="53">   - 사외이사      참석여부</TD>
+<TD COLSPAN="2" ALIGN="CENTER" AUPDATECONT="N" ENG="Present (No.)" WIDTH="194" HEIGHT="23">참석 (명)</TD>
+<TE COLSPAN="3" ALIGN="CENTER" ACODE="ATD_CNT" WIDTH="299" HEIGHT="23">4</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" ALIGN="CENTER" AUPDATECONT="N" ENG="Absent (No.)" WIDTH="194" HEIGHT="23">불참 (명)</TD>
+<TE COLSPAN="3" ALIGN="CENTER" ACODE="NATD_CNT" WIDTH="299" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="- Attendance of auditors (members of Audit Committee)" WIDTH="325" HEIGHT="23">   - 감사(감사위원) 참석여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="ADT_ATD_YN" AUNITVALUE="-" WIDTH="299" HEIGHT="23" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="20. Whether subject to file securities registration statement" WIDTH="325" HEIGHT="23">20. 증권신고서 제출대상 여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="RPT_SM_YN" AUNITVALUE="Y" WIDTH="299" HEIGHT="23" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="21. Reasons for exemption from filing securities registration statement, if exempted" WIDTH="325" HEIGHT="23">21. 제출을 면제받은 경우 그 사유</TD>
+<TE ACODE="RPT_SBM" COLSPAN="3" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="299" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ROWSPAN="3" ENG="22. Short selling transaction period during which subscriptions are prohibited" WIDTH="325" HEIGHT="83">22. 청약이 금지되는 공매도 거래 기간</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Whether applicable" WIDTH="69" HEIGHT="23">해당여부</TD>
+<TU COLSPAN="2" ALIGN="CENTER" AUNIT="SSL_YN" AUNITVALUE="Y" WIDTH="221" HEIGHT="23" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Start date" WIDTH="69" HEIGHT="23">시작일</TD>
+<TU COLSPAN="2" ALIGN="CENTER" AUNIT="SSL_BGN_DT" AUNITVALUE="20260327" WIDTH="221" HEIGHT="23">2026년 03월 27일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="End date" WIDTH="69" HEIGHT="23">종료일</TD>
+<TU COLSPAN="2" ALIGN="CENTER" AUNIT="SSL_END_DT" AUNITVALUE="20260617" WIDTH="221" HEIGHT="23">2026년 06월 17일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" ENG="23. Whether subject to the Fair Trade Commission reporting requirements" WIDTH="325" HEIGHT="23">23. 공정거래위원회 신고대상 여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="TRD_YN" AUNITVALUE="N" WIDTH="299" HEIGHT="23" ENG="Non-applicable">미해당</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE WIDTH="659" ACLASS="NORMAL" AFIXTABLE="N" BORDER="0">
+
+<COLGROUP WIDTH="659">
+<COL WIDTH="659"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD WIDTH="650" HEIGHT="46">주1) 우리사주조합, 구주주 청약 및 초과청약 결과 발생한 실권주에 대해 2026년 06월 25일부터 2026년 06월 26일까지(2일간) 일반공모 청약을 진행할 예정입니다.</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="76">
+<TD WIDTH="650" HEIGHT="69">주2) 상기 '23. 공정거래위원회 신고대상 여부'는 주요사항보고서 제출 현재 기준 청약 개시 전으로 확인 불가능하여 미해당으로 작성하며, 최종 발행가액 결정 또는 관계회사의 청약여부 등에 따라 변동 발생시 정정공시할 예정입니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="24. Other matters to be factored into investment decisions">24. 기타 투자판단에 참고할 사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+</LIBRARY>
+
+<P></P>
+<P USERMARK="B">가. 신주 발행가액 산정방법</P>
+<P>「증권의 발행 및 공시 등에 관한 규정」제5-18조에 의거 주주배정 증자 시 가격산정 절차 폐지 및 가격산정의 자율화에 따라 발행가액을 자유롭게 산정할 수 있으나, 시장혼란 우려 및 기존 관행 등으로 「(舊)유가증권의 발행 및 공시등에 관한 규정」제57조에 의거하여 아래와 같이 산정합니다.① 예정발행가액 : 예정발행가액은 최초 이사회결의일 전일(2026년 3월 25일)을 기산일로 하여 유가증권시장에서 성립된 거래대금을 거래량으로 나눈 1개월 가중산술평균주가, 1주일 가중산술평균주가, 기산일 종가를 산술평균하여 산정한 가액과 기산일 종가 중 낮은 금액을 기준주가로 하여 할인율 20%를 적용, 아래의 산식에 의하여 산정된 발행가액(예정발행가액)으로 합니다. 단, 호가단위 미만은 호가단위로 절상하며, 그 가액이 액면가액 이하일 경우에는 액면가액을 발행가액으로 합니다. </P>
+<P>* 예정발행가액 = [기준주가 × (1-할인율)] / [1+(증자비율 × 할인율)]</P>
+<P>② 1차 발행가액 : 1차 발행가액은 신주배정기준일(2026년 05월 14일) 전 제3거래일(2026년 05월 11일)을 기산일로 하여 유가증권시장에서 성립된 거래대금을 거래량으로 가중산술평균한 1개월 가중산술평균주가, 1주일 가중산술평균주가 및 기산일 종가를 산술평균하여 산정한 가액과 기산일 종가 중 낮은 금액을 1차 기준주가로 하며 할인율 20%를 적용, 증자비율은 유상증자 주식수/발행주식총수로 계산하여 아래의 산식에 의하여 산정된 발행가액으로 합니다. 단, 호가단위 미만은 호가단위로 절상하며, 그 가액이 액면가액(5,000원) 이하인 경우 액면가액으로 합니다.</P>
+<P>* 1차 발행가액 = [1차 기준주가 x (1-할인율)] / [1 + (증자비율 x 할인율)]</P>
+<P>③ 2차 발행가액 : 2차 발행가액은 구주주 청약일(2026년 6월 22일) 전 제3거래일(2026년 6월 17일)을 기산일로 하여 유가증권시장에서 성립된 거래대금을 거래량으로 가중산술평균한 1주일 가중산술평균주가 및 기산일 종가를 산술평균하여 산정한 가액과 기산일 종가 중 낮은 금액을 2차 기준주가로 하여 아래의 산식에 따라 결정하며 할인율은 20%를 적용합니다. 단, 호가 단위 미만은 호가 단위로 절상하며, 할인율 적용에 따른 모집가액이 액면가액(5,000원) 이하일 경우에는 액면가액을 발행가액으로 합니다. </P>
+<P>* 2차 발행가액 = 2차 기준주가 x (1-할인율)</P>
+<P> </P>
+<P>④ 확정 발행가액 : 확정 발행가액은 1차 발행가액과 2차 발행가액 중 낮은 가액으로 합니다. 다만 「자본시장과 금융투자업에 관한 법률」 제165조의6 및 「증권의 발행 및 공시 등에 관한 규정」 제5-15조의 2에 의거하여 1차 발행가액과 2차 발행가액 중 낮은 가액이 청약일 전 과거 제3거래일부터 제5거래일까지의 가중산술평균주가를 기준주가로 하여 40% 할인율을 적용하여 산정한 가격보다 낮은 경우 청약일전 과거 제3거래일부터 제5거래일까지의 가중산술평균주가에서 40% 할인율을 적용하여 산정한 가격을 확정발행가액으로 합니다. 단, 호가 단위 미만은 호가단위로 절상하며, 확정 발행가액이 액면가액(5,000원) 이하일 경우에는 액면가액을 발행가액으로 합니다. </P>
+<P></P>
+<P>* 확정 발행가액 = Max{Min[1차 발행가액, 2차 발행가액], 기준주가의 60%}※ 일반공모 발행가액은 구주주 청약시에 적용된 확정 발행가액을 동일하게 적용합니다.</P>
+
+<P USERMARK="B">나. 신주의 배정방법
+<SPAN USERMARK="!B">① 우리사주조합: 총 발행주식의 20.0%에 해당하는 14,400,000주는 「자본시장과 금융투자업에 관한 법률」제165조의7에 따라 우리사주조합에게 우선 배정합니다.② 구주주 청약: 신주배정기준일(2026년 05월 14일) 18시 현재 주주명부에 등재된 주주(이하 “구주주”라 한다)에게 본 주식을 1주당 0.3348843614주를 곱하여 산정된 배정주식수(단, 1주 미만은 절사함)를 구주주의 배정범위로 하고, 배정범위 내에서 청약한 수량만큼 배정합니다. 단, 신주배정기준일 전 자기주식 및 자기주식신탁 등의 자기주식 변동으로 인하여 1주당 배정주식수가 변동될 수 있습니다.</SPAN>
+<SPAN></SPAN>
+<SPAN USERMARK="!B">③ 초과청약에 대한 배정: 우리사주조합 및 구주주(신주인수권증서 보유자) 청약 이후 발생한 실권주가 있는 경우, 실권주를 구주주(신주인수권증서 보유자)가 초과청약(초과청약비율 : 배정 신주 1주당 0.2주)한 주식수에 비례하여 배정하며(단, 초과청약 주식수가 실권주에 미달한 경우 100% 배정), 1주 미만의 주식은 절사하여 배정하지 않습니다.</SPAN>
+</P>
+<P USERMARK="A-L">(i) 청약한도 주식수 = 신주인수권증서청약 한도주식수 + 초과청약 한도주식수</P>
+<P USERMARK="A-L">(ii) 신주인수권증서청약 한도주식수 = 보유한신주인수권증서의 수량</P>
+<P USERMARK="A-L">(iii) 초과청약 한도주식수 = 신주인수권증서청약 한도주식수 X 초과청약 비율(20%)</P>
+
+<P USERMARK="B">
+<SPAN USERMARK="!B">④ 일반공모 청약 : 상기 우리사주조합, 구주주청약 및 초과청약 결과 발생한 실권주 및 단수주는 “공동대표주관회사”가 다음 각호와 같이 일반에게 공모하되, ‘증권 인수업무 등에 관한 규정’ 제9조 제2항 제3호에 따라 고위험고수익투자신탁등에 공모주식의 5%를 배정하며, 나머지 95%에 해당하는 주식은 개인청약자 및 기관투자자에게 구분 없이 배정합니다. 고위험고수익투자신탁등에 대한 공모주식 5%와 개인투자자 및 기관투자자에 대한 공모주식 95%에 대한 청약경쟁률과 배정은 별도로 산출 및 배정합니다. 다만, 한 그룹만 청약미달이 발생할 경우, 청약미달에 해당하는 주식은 청약초과 그룹에 배정합니다.</SPAN>
+<SPAN USERMARK="!B 0X54AF00"></SPAN>
+<SPAN USERMARK="!B">(i) 일반공모에 관한 배정수량 계산시에는 “공동대표주관회사”의 “청약물량”(“공동대표주관회사”의 각 청약처에서 일반공모 방식으로 접수를 받은 청약주식수를 의미하며, “공동대표주관회사”에 대하여 개별적으로 산정한 청약주식수를 말한다)에 대해서는 “공동대표주관회사”의 “총청약물량”(“공동대표주관회사”가 일반공모 방식으로 접수를 받은 “청약물량”의 합을 말한다)을 “일반공모 배정분” 주식수로 나눈 통합청약경쟁률에 따라 “공동대표주관회사”의 각 청약자에 배정하는 방식(이하 “통합배정”이라 한다)으로 합니다.(ii) 일반공모에 관한 배정시 “공동대표주관회사”의 “총청약물량”이 “일반공모 배정분” 주식수를 초과하는 경우에는 청약경쟁률에 따라 5사6입을 원칙으로 안분 배정하여 잔여주식이 최소화되도록 합니다. 이후 최종 잔여주식은 최대청약자부터 순차적으로 우선 배정하되, 동순위 최대청약자가 최종 잔여 주식보다 많은 경우에는 “공동대표주관회사”가 무작위 추첨방식을 통하여 배정합니다.(iii) “공동대표주관회사”의 “총청약물량”이 “일반공모 배정분” 주식수에 미달하는 경우, “공동대표주관회사”는 “개별인수 의무주식수”를 각각 자기의 계산으로 인수합니다. 제2조 제4항에 따라 “청약미달회사”(“청약물량”이 “인수한도 의무주식수”보다 적은 회사를 말한다)의 “개별인수 의무주식수”는 “일반공모 배정분”에서 제2조 제4항에 따라 “공동대표주관회사”의 인수비율로 나누어 산정하며, “청약미달회사”의 인수책임을 면하게 된 주식수는 “청약초과회사”(“청약물량”이 “인수한도 의무주식수”를 초과하는 회사를 말한다)의 “초과청약물량”(“청약물량”에서 “인수한도 의무주식수”를 차감한 주식수를 의미하되, 0 이상으로 한다)을 “청약미달회사”에게 배분하여 산정합니다. (iv) 단, “공동대표주관회사”는 '증권 인수업무 등에 관한 규정' 제9조 제2항에 의거 고위험고수익투자신탁등 및 일반청약자에 대하여 배정하여야 할 주식이 5,000주(액면가 5,000원 기준) 이하 이거나, 배정할 주식의 공모금액이 1억원 이하인 경우에는 일반청약자에게 배정하지 아니하고 자기의 계산으로 인수할 수 있습니다.</SPAN>다. 청약사무취급처 및 청약기간
+</P>
+
+<TABLE BORDER="1" WIDTH="878" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="878">
+<COL WIDTH="185"></COL>
+<COL WIDTH="135"></COL>
+<COL WIDTH="390"></COL>
+<COL WIDTH="168"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="311" USERMARK="BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="23">청약대상자</TD>
+<TD ALIGN="CENTER" WIDTH="381" USERMARK="BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="23">청약취급처</TD>
+<TD ALIGN="CENTER" WIDTH="159" USERMARK="BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="23">청약일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="311" VALIGN="MIDDLE" HEIGHT="23">우리사주조합</TD>
+<TD WIDTH="381" VALIGN="MIDDLE" HEIGHT="23">"공동대표주관회사" 중 한국투자증권(주)의 본ㆍ지점</TD>
+<TD ALIGN="CENTER" WIDTH="159" VALIGN="MIDDLE" HEIGHT="23">2026년 06월 22일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD ROWSPAN="2" ALIGN="CENTER" WIDTH="176" VALIGN="MIDDLE" HEIGHT="122">구주주(신주인수권증서 보유자)</TD>
+<TD ALIGN="CENTER" WIDTH="126" VALIGN="MIDDLE" HEIGHT="46">특별계좌 보유자(기존 '명부주주')</TD>
+<TD WIDTH="381" VALIGN="MIDDLE" HEIGHT="46">"공동대표주관회사"의 본ㆍ지점</TD>
+<TD ROWSPAN="2" ALIGN="CENTER" WIDTH="159" VALIGN="MIDDLE" HEIGHT="122">2026년 06월 22일~2026년 06월 23일 </TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="76">
+<TD ALIGN="CENTER" WIDTH="126" VALIGN="MIDDLE" HEIGHT="69">일반주주(기존 '실질주주')</TD>
+<TD WIDTH="381" VALIGN="MIDDLE" HEIGHT="69">1) 주주확정일 현재 한화솔루션(주)의 주식을 예탁하고 있는 해당 증권회사 본ㆍ지점2) "공동대표주관회사"의 본ㆍ지점</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="311" VALIGN="MIDDLE" HEIGHT="46">일반공모청약(고위험고수익투자신탁등 청약 포함)</TD>
+<TD WIDTH="381" VALIGN="MIDDLE" HEIGHT="46">"공동대표주관회사"의 본ㆍ지점</TD>
+<TD ALIGN="CENTER" WIDTH="159" VALIGN="MIDDLE" HEIGHT="46">2026년 06월 25일~2026년 06월 26일 </TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE BORDER="0" WIDTH="879" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="879">
+<COL WIDTH="879"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD WIDTH="870" HEIGHT="46">주) 청약취급처에 따라 청약창구 및 방법(본ㆍ지점 외 홈페이지, HTS, MTS, ARS 등) 규정이 상이하오니 청약 전 해당 증권사에 확인하여 주시기 바랍니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<P USERMARK="B">라. 신주인수권증서에 관한 사항
+<SPAN USERMARK="!B">① 신주인수권증서는 전자증권제도 시행(2019년 9월 16일)에 따라 실물 증서로 발행되지 않습니다.</SPAN>
+</P>
+<P></P>
+<P>② 당사는「자본시장과 금융투자업에 관한 법률」 제165조의6 제3항 및 「증권의 발행 및 공시 등에 관한 규정」 제5-19조에 의거하여 주주에게 신주인수권증서를 발행하며, 공동대표주관회사에게 신주인수권증서의 매매 또는 중개를 위탁하기로 합니다.</P>
+<P> </P>
+<P>③ 당사는 (i) 주주가 증권사 계좌에 보유하고 있는 주식(기존 “실질주주” 보유주식)에 대하여는 일괄하여 신주인수권증서를 발행하고 이를 각 계좌에 대체하는 방식으로 신주인수권증서를 발행하여야 하며, (ii) 명의개서대행기관을 통하여 특별계좌에 관리되는 주식(기존 “명부주주” 보유주식)에 대하여 배정되는 신주인수권증서는 명의개서대행기관 내 특별계좌에 소유자별로 발행하는 방식으로 신주인수권증서를 발행합니다. 단, 특별계좌보유자(기존 “명부주주”)가 명의개서대행기관에 신주인수권증서의 대행예탁 및 상장을 신청할 경우 동 신주인수권증서에 대해 상장거래 및 계좌대체가 가능합니다.</P>
+<P></P>
+<P>④ 당사는 일반주주(기존 '실질주주')에게 발행되는 신주인수권증서를 일괄예탁 방식으로 발행하여 거래소에 상장을 신청하고, 최소한 5거래일 이상의 기간 동안 상장하여야 합니다.- 신주인수권증서 상장예정기간: 2026년 06월 05일 ~ 2026년 06월 11일 (5거래일간)</P>
+<P>⑤ 신주인수권증서의 양도와 신주인수권증서에 기재된 주식에 관한 청약 방법은 아래와 같습니다.</P>
+<P>(i) 일반주주(기존 '실질주주')의 경우 장내ㆍ장외 거래를 통하여 매매가 성립되면 계좌 대체의 방식으로 양도하며, 예탁하고 있는 증권회사 및 “공동대표주관회사”의 본점 및 지점을 통하여 청약합니다.</P>
+<P>(ii) 특별계좌 보유자(기존 '명부주주')의 경우 명의개서대리인의 '특별계좌'에서 '일반 전자등록계좌(증권회사 계좌)'로 신주인수권증서를 이전 신청한 후 청약에 참여하거나 신주인수권증서를 매매할 수 있습니다. 신주인수권증서를 '일반 전자등록계좌(증권회사 계좌)'로 이전하지 않고도 "공동대표주관회사"의 본점 또는 지점에서 직접 청약 가능하나, 신주인수권증서의 매매는 명의개서대행기관 '특별계좌'에서 '일반 전자등록계좌(증권회사 계좌)'로 신주인수권증서를 이전 신청한 후에 한하여 가능합니다.</P>
+
+<P>
+<SPAN USERMARK="B">마. 기타 참고사항</SPAN>① 본 유상증자 계획은 관계기관의 조정 또는 증권신고서 수리과정 등에서 변경될 수 있습니다.② 기타 본건 신주 발행을 위하여 이사회에서 정하지 않은 사항 등 세부사항은 대표이사에게 위임합니다.③ 청약증거금은 주금납입일에 주금으로 대체하며, 청약일로부터 납입일까지의 이자는 무이자로 합니다.④ 본 주요사항보고서에 기재되어 있지 않은 청약의 방법 및 청약의 장소 등 기타 유상증자에 대한 자세한 사항은 2026년 03월 26일 제출할 예정인 증권신고서 및 예비투자설명서를 참고하시기 바랍니다.
+</P>
+<P></P>
+
+<P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

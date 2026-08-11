@@ -1,0 +1,4387 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title>KB금융/사업보고서/2026.06.19</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scaleable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+	
+<script type="text/javascript" src="/resource/js/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="/js/jquery-ui/jquery-ui.min.css">
+<script type="text/javascript" src="/js/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- 2011.11.01 ext 2.3 -->
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/js/ext-main/resources/css/ext-all-ie8.css" /><![endif]-->
+<script type="text/javascript" src="/js/ext-main/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="/js/ext-main/ext-all.js"></script>
+
+<!-- x-xeries js libraries  -->
+<script type="text/javascript" src="/js/xjs.js?ver=4"></script>
+
+<!-- application js libraries -->
+<script type="text/javascript" src="/js/jsval.js" ></script>
+
+<!-- 웹표준 추가 스크립트-->
+<script type="text/javascript" src="/js/jquery/gotop.js"></script>
+
+<!-- 웹표준화적용사항 위반으로 DSAB001L.jsp에서 헤드로 위치 이동 -->
+<style type="text/css">
+.checked-icon {background-image: url(/images/temp/add.gif);}
+.ui-autocomplete {max-height: 100px; overflow-y: auto; overflow-x: hidden;}
+.ui-menu-item .ui-menu-item-wrapper.ui-state-active {background: #eaeaea !important; border: none; color:#333;}
+</style>
+<!--end -->
+
+<!-- 추가 되는 js, css 시작 -->
+<link rel="stylesheet" href="/resource/css/bootstrap.min.css">
+<link rel="stylesheet" href="/resource/css/slick.css">
+<link rel="stylesheet" href="/js/jsTree/default/style.css" />
+<link rel="stylesheet" href="/resource/css/bootstrap-datepicker3.css">
+<script type="text/javascript" src="/resource/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/resource/js/slick.min.js"></script>
+<script type="text/javascript" src="/js/jsTree/jstree.js"></script>
+<script type="text/javascript" src="/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="/js/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="/js/idart/idart.js"></script><!-- idart용 -->
+<!-- 추가 되는 js, css 끝 -->
+
+<script type="text/javascript">
+function loadHistoryContents() {
+	xajax.initParameter();
+	xajax.blockUI = false;
+	xajax.simpleSend("/dsaf001/history.ax", function(html) {
+		$j("#wingWrap").html(html);
+	});
+}
+
+</script>
+<script type="text/javascript">
+(
+	function(){
+		var s=function(){
+				__flash__removeCallback=function(i,n){if(i)i[n]=null;
+			};window.setTimeout(s,10);
+		};s();
+	}
+)();
+</script>
+
+<script type="text/javascript">
+function otherGongsi(){
+	var f_select = document.getElementById("f_select");
+	var link = f_select.options[f_select.selectedIndex].value;
+	if(link != "f_slt_1"){
+		window.open(link);
+	}
+	if(link == "f_slt_1"){
+		alert("해외전자공시를 선택해주세요");
+	}
+}
+</script>
+
+
+	
+<link id="commonCss" rel="stylesheet" href="/css/common.css?ver=1.13" />
+<link id="userCssWeb" rel="stylesheet" href="/css/web.css?ver=24" />
+<link id="userCssTab" rel="stylesheet" href="/css/tablet.css?ver=11" />
+<link id="userCssMob" rel="stylesheet" href="/css/mobile.css?ver=14" />
+<link id="userCssFnt" rel="stylesheet" href="/css/fonts.css?ver=1.13" />
+
+<script type="text/javascript" src="/js/common.js?ver=7"></script>
+
+
+<link rel="stylesheet" type="text/css" href="/css/viewer/report_dart.css?ver=3" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/css/viewer/report_pop.css?ver=1" charset="utf-8">
+
+<script type="text/javascript" src="/js/detectmobilebrowser.js"></script>
+<script type="text/javascript" src="/js/viewer/popup.js?ver=2"></script>
+<!-- 202407 목차 수정 css -->
+<link rel="stylesheet" href="/css/viewer.css">   
+
+
+
+<script type="text/javascript">
+if(isMobile() == false && $j(window).width() <= 1050){
+	$j(window)[0].resizeTo(1200, $j(window).height());
+} 
+
+$j(document).ready(function() {
+	leftPanel = document.getElementById('left-panel');
+	rightPanel = document.getElementById('right-panel');
+	collapseButton = document.getElementById('collapse-button');
+	isDragging = false;
+	initPage();
+	
+	if(isMobileSize()){
+		isLeftPanelCollapsed = true; // 초기 상태: 패널이 열려 있음
+	}else{
+		isLeftPanelCollapsed = false; // 초기 상태: 패널이 열려 있음
+	}
+	
+    if(isMobile()){
+    	divider.addEventListener('touchstart', startResize);
+    }else{
+    	divider.addEventListener('pointerdown', startResize);
+    }
+    
+	function startResize(event) {
+	    isDragging = true;
+		divider.classList.add('dragging');
+		if(isMobile()){
+			event.target.addEventListener('touchmove', resizePanel);
+			event.target.addEventListener('touchend', stopResize);
+		}else {
+			divider.setPointerCapture(event.pointerId);
+			document.addEventListener('pointermove', resizePanel);
+			document.addEventListener('pointerup', stopResize);
+			document.addEventListener('pointerleave', stopResize);
+	    } 
+	}
+
+	function resizePanel(event) {
+		var dividerPosition = event.clientX;
+		if(isMobile()){
+        	dividerPosition = event.touches[0].clientX;
+    	}
+	    if (isDragging) {
+	        var leftPanelWidth = dividerPosition;
+	        var rightPanelWidth = window.innerWidth - dividerPosition;
+			leftPanel.style.width = ( leftPanelWidth / window.innerWidth * 100 ) + '%' ;
+			rightPanel.style.width = ( rightPanelWidth / window.innerWidth * 100 )+ '%';
+	    }
+	}
+
+	function stopResize(e) {
+	    isDragging = false;
+		divider.classList.remove('dragging');
+		if(isMobile()){
+			divider.removeEventListener('touchmove', resizePanel);
+			divider.removeEventListener('touchend', stopResize);
+		}else{
+			divider.releasePointerCapture(e.pointerId)
+			document.removeEventListener('pointermove', resizePanel);
+			document.removeEventListener('pointerup', stopResize);
+			document.removeEventListener('pointerleave', stopResize);
+	    } 
+	}
+
+	
+});
+
+// 윈도우 크기에 따라 목차 영역 변경
+window.addEventListener('resize', function() {
+	if (isMobileSize() || cnt ==0) {
+		hideTocArea();
+	} else{
+		toggleTocArea();
+	}
+	if (isMobile()) {$j(".contentsWrap, .viewWrap, .leftPanel").addClass("safari")};
+	
+	w = parseInt($j(".viewWrap").css("width"));
+	h = parseInt($j(".viewWrap").css("height"));
+	if( $j(".warning").length){
+		if($j(window).width() >= 1024 || $j(window).width() <= 760){
+			h = parseInt($j(".viewWrap").css("height")) - $j(".warning").height() - 17;
+			$j("#ifrm").height(h);
+		}else{
+			h = parseInt($j(".viewWrap").css("height")) - $j(".warning").height() - 17;
+			$j("#ifrm").height(h);
+		}  
+	}   
+});
+
+function toggleLeftPanel() {
+    if (isLeftPanelCollapsed) {
+        // 왼쪽 패널을 보이도록 설정
+        leftPanel.style.width = '25%';
+        leftPanel.style.position='relative';
+        rightPanel.style.width = '75%';
+        collapseButton.classList.remove('collapsed'); // 버튼 화살표 변경
+		rightPanel.classList.remove('collapsed');  
+        isLeftPanelCollapsed = false;
+        leftPanel.style.display = 'block';
+        divider.style.display = 'block';
+    } else {
+        // 왼쪽 패널을 숨김
+		leftPanel.style.width = '2%';
+        rightPanel.style.width = '98%'
+        collapseButton.classList.add('collapsed'); // 버튼 화살표 변경
+        rightPanel.classList.add('collapsed');  
+        isLeftPanelCollapsed = true;
+        leftPanel.style.display = 'none';
+        divider.style.display = 'none';
+    }
+}
+
+function hideTocArea() {
+	isLeftPanelCollapsed = false;
+	toggleLeftPanel();
+}
+
+function toggleTocArea() {
+	isLeftPanelCollapsed = true;
+	toggleLeftPanel();
+}
+
+function initPage() {
+	if (isMobile()) {$j(".contentsWrap, .viewWrap, .leftPanel").addClass("safari")};
+	
+	w = parseInt($j(".viewWrap").css("width"));
+	h = parseInt($j(".viewWrap").css("height"));
+	if ($j(".warning").length) {
+		h = parseInt($j(".viewWrap").css("height")) - $j(".warning").height() - 17;
+		$j("#ifrm").height(h);
+	}
+	
+	initLayerNew('winCorpInfo');
+	
+	//목차생성 및 최초뷰어호출
+	makeToc();
+	
+    //팝업행성
+    makePop();
+    
+	window.focus();
+	try {
+		opener.loadHistoryContents();
+	} catch (e) {
+		;
+	}
+	if (isMobileSize())  hideTocArea()
+	if (isInApp()) $j('#print').hide();
+}
+
+function makeToc() {
+	cnt = 0;
+	var treeData = [];
+	
+	
+		var node1 = {};
+		node1['text'] = "정 정 신 고 (보고)";
+		node1['id'] = "1";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "1";
+		node1['offset'] = "1024";
+		node1['length'] = "38015";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "1";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "343";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+		
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "【 대표이사 등의 확인 】";
+		node1['id'] = "2";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "2";
+		node1['offset'] = "39043";
+		node1['length'] = "455";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "2";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "344";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+		
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "사 업 보 고 서";
+		node1['id'] = "3";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "3";
+		node1['offset'] = "39528";
+		node1['length'] = "4607";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "3";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "1";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+		
+		
+		
+		
+			
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "【 대표이사 등의 확인 】";
+		node1['id'] = "4";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "4";
+		node1['offset'] = "44221";
+		node1['length'] = "450";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "4";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "2";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+		
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "I. 회사의 개요";
+		node1['id'] = "5";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "5";
+		node1['offset'] = "44675";
+		node1['length'] = "331174";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "5";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "3";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 회사의 개요";
+			node2['id'] = "6"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "6";
+			node2['offset'] = "44811";
+			node2['length'] = "103819";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "6";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "4";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 회사의 연혁";
+			node2['id'] = "7"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "7";
+			node2['offset'] = "148634";
+			node2['length'] = "124054";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "7";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "5";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "3. 자본금 변동사항";
+			node2['id'] = "8"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "8";
+			node2['offset'] = "272692";
+			node2['length'] = "8556";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "8";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "6";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "4. 주식의 총수 등";
+			node2['id'] = "9"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "9";
+			node2['offset'] = "281252";
+			node2['length'] = "87416";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "9";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "7";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "5. 정관에 관한 사항";
+			node2['id'] = "10"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "10";
+			node2['offset'] = "368672";
+			node2['length'] = "7163";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "10";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "8";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "II. 사업의 내용";
+		node1['id'] = "11";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "11";
+		node1['offset'] = "375853";
+		node1['length'] = "1844930";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "11";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "9";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 사업의 개요";
+			node2['id'] = "12"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "12";
+			node2['offset'] = "376230";
+			node2['length'] = "3114";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "12";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "1";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 영업의 현황";
+			node2['id'] = "13"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "13";
+			node2['offset'] = "379348";
+			node2['length'] = "1159697";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "13";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "2";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "3. 파생상품거래 현황";
+			node2['id'] = "14"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "14";
+			node2['offset'] = "1539049";
+			node2['length'] = "217713";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "14";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "3";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "4. 영업설비";
+			node2['id'] = "15"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "15";
+			node2['offset'] = "1756766";
+			node2['length'] = "170246";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "15";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "4";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "5. 재무건전성 등 기타 참고사항";
+			node2['id'] = "16"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "16";
+			node2['offset'] = "1927016";
+			node2['length'] = "293727";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "16";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "5";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "III. 재무에 관한 사항";
+		node1['id'] = "17";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "17";
+		node1['offset'] = "2220787";
+		node1['length'] = "22077213";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "17";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "10";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 요약재무정보";
+			node2['id'] = "18"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "18";
+			node2['offset'] = "2220955";
+			node2['length'] = "52286";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "18";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "11";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 연결재무제표";
+			node2['id'] = "19"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "19";
+			node2['offset'] = "2273492";
+			node2['length'] = "416154";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "19";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "129";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+				node2['children'] = [];
+			
+			
+			
+				var node3 = {};
+				node3['text'] = "2-1. 연결 재무상태표";
+				node3['id'] = "20"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "20";
+				node3['offset'] = "2273640";
+				node3['length'] = "44843";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "20";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "237";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "2-2. 연결 포괄손익계산서";
+				node3['id'] = "21"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "21";
+				node3['offset'] = "2318483";
+				node3['length'] = "57634";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "21";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "238";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "2-3. 연결 자본변동표";
+				node3['id'] = "22"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "22";
+				node3['offset'] = "2376117";
+				node3['length'] = "234470";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "22";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "239";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "2-4. 연결 현금흐름표";
+				node3['id'] = "23"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "23";
+				node3['offset'] = "2610587";
+				node3['length'] = "79063";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "23";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "240";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "3. 연결재무제표 주석";
+			node2['id'] = "24"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "24";
+			node2['offset'] = "2689650";
+			node2['length'] = "16392089";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "24";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "134";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+				node2['children'] = [];
+			
+			
+			
+				var node3 = {};
+				node3['text'] = "1. 지배기업의 개요 및 보고주체 (연결)";
+				node3['id'] = "25"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "25";
+				node3['offset'] = "2689814";
+				node3['length'] = "1838";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "25";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "241";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "2. 연결재무제표 작성기준 (연결)";
+				node3['id'] = "26"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "26";
+				node3['offset'] = "2691652";
+				node3['length'] = "7846";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "26";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "242";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "3. 중요한 회계정책 (연결)";
+				node3['id'] = "27"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "27";
+				node3['offset'] = "2699498";
+				node3['length'] = "57010";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "27";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "243";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "4. 금융위험의 관리 (연결)";
+				node3['id'] = "28"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "28";
+				node3['offset'] = "2756508";
+				node3['length'] = "1562452";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "28";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "244";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "5. 부문별공시 (연결)";
+				node3['id'] = "29"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "29";
+				node3['offset'] = "4318960";
+				node3['length'] = "392318";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "29";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "245";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "6-A. 금융자산과 금융부채-공정가치 (연결)";
+				node3['id'] = "30"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "30";
+				node3['offset'] = "4711278";
+				node3['length'] = "1027091";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "30";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "246";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "6-B. 금융자산과 금융부채-범주별 금융상품 (연결)";
+				node3['id'] = "31"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "31";
+				node3['offset'] = "5738369";
+				node3['length'] = "73522";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "31";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "247";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "6-C. 금융자산과 금융부채-금융자산의 양도 (연결)";
+				node3['id'] = "32"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "32";
+				node3['offset'] = "5811891";
+				node3['length'] = "98726";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "32";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "248";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "6-D. 금융자산과 금융부채-금융자산과 금융부채의 상계 (연결)";
+				node3['id'] = "33"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "33";
+				node3['offset'] = "5910617";
+				node3['length'] = "116107";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "33";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "249";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "7. 상각후원가 측정 예치금 (연결)";
+				node3['id'] = "34"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "34";
+				node3['offset'] = "6026724";
+				node3['length'] = "151484";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "34";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "250";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "8. 담보제공자산 (연결)";
+				node3['id'] = "35"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "35";
+				node3['offset'] = "6178208";
+				node3['length'] = "110364";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "35";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "251";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "9. 파생금융상품 및 위험회피회계 (연결)";
+				node3['id'] = "36"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "36";
+				node3['offset'] = "6288572";
+				node3['length'] = "441479";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "36";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "252";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "10&11. 상각후원가 측정 대출채권/대손충당금 (연결)";
+				node3['id'] = "37"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "37";
+				node3['offset'] = "6730051";
+				node3['length'] = "424365";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "37";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "253";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "12-A. 당기손익-공정가치 측정 금융자산 (연결)";
+				node3['id'] = "38"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "38";
+				node3['offset'] = "7154416";
+				node3['length'] = "20438";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "38";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "254";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "12-B. 투자금융자산-기타포괄손익-공정가치 측정 금융자산 (연결)";
+				node3['id'] = "39"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "39";
+				node3['offset'] = "7174854";
+				node3['length'] = "123257";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "39";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "255";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "12-C. 투자금융자산-상각후원가 측정 유가증권 (연결)";
+				node3['id'] = "40"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "40";
+				node3['offset'] = "7298111";
+				node3['length'] = "19615";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "40";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "256";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "13. 관계기업 및 공동기업 투자 (연결)";
+				node3['id'] = "41"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "41";
+				node3['offset'] = "7317726";
+				node3['length'] = "383192";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "41";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "257";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "14-A. 유형자산 (연결)";
+				node3['id'] = "42"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "42";
+				node3['offset'] = "7700918";
+				node3['length'] = "85608";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "42";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "258";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "14-B. 투자부동산 (연결)";
+				node3['id'] = "43"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "43";
+				node3['offset'] = "7786526";
+				node3['length'] = "67680";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "43";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "259";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "15. 무형자산 (연결)";
+				node3['id'] = "44"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "44";
+				node3['offset'] = "7854206";
+				node3['length'] = "157859";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "44";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "260";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "16-A. 리스-사용권자산 (연결)";
+				node3['id'] = "45"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "45";
+				node3['offset'] = "8012065";
+				node3['length'] = "13234";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "45";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "261";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "16-B. 리스-리스부채 (연결)";
+				node3['id'] = "46"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "46";
+				node3['offset'] = "8025299";
+				node3['length'] = "10883";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "46";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "262";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "16-C. 리스-리스 제공자 (연결)";
+				node3['id'] = "47"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "47";
+				node3['offset'] = "8036182";
+				node3['length'] = "28747";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "47";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "263";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "17. 이연법인세자산과 부채 (연결)";
+				node3['id'] = "48"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "48";
+				node3['offset'] = "8064929";
+				node3['length'] = "539540";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "48";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "264";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "18. 매각예정자산 및 매각예정처분집단 (연결)";
+				node3['id'] = "49"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "49";
+				node3['offset'] = "8604469";
+				node3['length'] = "74108";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "49";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "265";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "19. 기타자산 (연결)";
+				node3['id'] = "50"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "50";
+				node3['offset'] = "8678577";
+				node3['length'] = "55813";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "50";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "266";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "20. 당기손익-공정가치측정금융부채 (연결)";
+				node3['id'] = "51"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "51";
+				node3['offset'] = "8734390";
+				node3['length'] = "22889";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "51";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "267";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "21. 예수부채 (연결)";
+				node3['id'] = "52"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "52";
+				node3['offset'] = "8757279";
+				node3['length'] = "24148";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "52";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "268";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "22&23. 차입부채/사채 (연결)";
+				node3['id'] = "53"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "53";
+				node3['offset'] = "8781427";
+				node3['length'] = "232603";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "53";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "269";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "24. 충당부채 (연결)";
+				node3['id'] = "54"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "54";
+				node3['offset'] = "9014030";
+				node3['length'] = "162309";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "54";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "270";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "25. 순확정급여부채(자산) (연결)";
+				node3['id'] = "55"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "55";
+				node3['offset'] = "9176339";
+				node3['length'] = "126526";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "55";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "271";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "26. 기타부채 (연결)";
+				node3['id'] = "56"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "56";
+				node3['offset'] = "9302865";
+				node3['length'] = "44616";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "56";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "272";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "27-A. 자본 (연결)";
+				node3['id'] = "57"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "57";
+				node3['offset'] = "9347481";
+				node3['length'] = "171622";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "57";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "273";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "27-B. 대손준비금 (연결)";
+				node3['id'] = "58"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "58";
+				node3['offset'] = "9519103";
+				node3['length'] = "16219";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "58";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "274";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "28. 순이자이익 (연결)";
+				node3['id'] = "59"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "59";
+				node3['offset'] = "9535322";
+				node3['length'] = "39230";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "59";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "275";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "29. 순수수료이익 (연결)";
+				node3['id'] = "60"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "60";
+				node3['offset'] = "9574552";
+				node3['length'] = "31641";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "60";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "276";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "30. 당기손익-공정가치 측정 금융상품 순손익 (연결)";
+				node3['id'] = "61"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "61";
+				node3['offset'] = "9606193";
+				node3['length'] = "76645";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "61";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "277";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "31. 기타영업손익 (연결)";
+				node3['id'] = "62"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "62";
+				node3['offset'] = "9682838";
+				node3['length'] = "37666";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "62";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "278";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "32-A. 일반관리비 (연결)";
+				node3['id'] = "63"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "63";
+				node3['offset'] = "9720504";
+				node3['length'] = "32219";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "63";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "279";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "32-B. 주식기준보상 (연결)";
+				node3['id'] = "64"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "64";
+				node3['offset'] = "9752723";
+				node3['length'] = "714180";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "64";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "280";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "33. 기타영업외손익 (연결)";
+				node3['id'] = "65"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "65";
+				node3['offset'] = "10466903";
+				node3['length'] = "20460";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "65";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "281";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "34. 법인세비용 (연결)";
+				node3['id'] = "66"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "66";
+				node3['offset'] = "10487363";
+				node3['length'] = "70159";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "66";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "282";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "35. 배당금 (연결)";
+				node3['id'] = "67"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "67";
+				node3['offset'] = "10557522";
+				node3['length'] = "16131";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "67";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "283";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "36. 기타포괄손익누계액 (연결)";
+				node3['id'] = "68"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "68";
+				node3['offset'] = "10573653";
+				node3['length'] = "59945";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "68";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "284";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "37. 주당이익 (연결)";
+				node3['id'] = "69"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "69";
+				node3['offset'] = "10633598";
+				node3['length'] = "44900";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "69";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "285";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "38-A. 보험계약-보험계약자산과 보험계약부채 (연결)";
+				node3['id'] = "70"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "70";
+				node3['offset'] = "10678498";
+				node3['length'] = "65351";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "70";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "286";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "38-B. 보험계약-원수 보험부채 변동내역 (연결)";
+				node3['id'] = "71"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "71";
+				node3['offset'] = "10743849";
+				node3['length'] = "423940";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "71";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "287";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "38-C. 보험계약-출재 보험부채 변동내역 (연결)";
+				node3['id'] = "72"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "72";
+				node3['offset'] = "11167789";
+				node3['length'] = "425814";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "72";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "288";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "38-D. 보험계약-보험서비스결과 (연결)";
+				node3['id'] = "73"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "73";
+				node3['offset'] = "11593603";
+				node3['length'] = "259063";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "73";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "289";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "38-E. 보험계약-재보험서비스결과 (연결)";
+				node3['id'] = "74"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "74";
+				node3['offset'] = "11852666";
+				node3['length'] = "242335";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "74";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "290";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "38-F. 보험계약-보험계약의 정보 (연결)";
+				node3['id'] = "75"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "75";
+				node3['offset'] = "12095001";
+				node3['length'] = "321225";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "75";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "291";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "38-G. 보험계약-투자손익과 보험금융손익 (연결)";
+				node3['id'] = "76"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "76";
+				node3['offset'] = "12416226";
+				node3['length'] = "303806";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "76";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "292";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "38-H. 보험계약-위험관리 (연결)";
+				node3['id'] = "77"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "77";
+				node3['offset'] = "12720032";
+				node3['length'] = "2268527";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "77";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "293";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "39. 현금흐름표 (연결)";
+				node3['id'] = "78"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "78";
+				node3['offset'] = "14988559";
+				node3['length'] = "102278";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "78";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "294";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "40. 우발 및 약정사항 (연결)";
+				node3['id'] = "79"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "79";
+				node3['offset'] = "15090837";
+				node3['length'] = "293355";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "79";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "295";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "41. 종속기업 현황 (연결)";
+				node3['id'] = "80"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "80";
+				node3['offset'] = "15384192";
+				node3['length'] = "40123";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "80";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "296";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "42. 비연결구조화기업 (연결)";
+				node3['id'] = "81"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "81";
+				node3['offset'] = "15424315";
+				node3['length'] = "23856";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "81";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "297";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "43. 특수관계자 (연결)";
+				node3['id'] = "82"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "82";
+				node3['offset'] = "15448171";
+				node3['length'] = "3628349";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "82";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "298";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "44. 보고기간후사건 (연결)";
+				node3['id'] = "83"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "83";
+				node3['offset'] = "19076520";
+				node3['length'] = "4123";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "83";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "299";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "45. 재무제표 승인 (연결)";
+				node3['id'] = "84"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "84";
+				node3['offset'] = "19080643";
+				node3['length'] = "1100";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "84";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "300";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "4. 재무제표";
+			node2['id'] = "85"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "85";
+			node2['offset'] = "19081743";
+			node2['length'] = "219462";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "85";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "195";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+				node2['children'] = [];
+			
+			
+			
+				var node3 = {};
+				node3['text'] = "4-1. 재무상태표";
+				node3['id'] = "86"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "86";
+				node3['offset'] = "19081885";
+				node3['length'] = "25477";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "86";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "301";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "4-2. 포괄손익계산서";
+				node3['id'] = "87"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "87";
+				node3['offset'] = "19107362";
+				node3['length'] = "26320";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "87";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "302";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "4-3. 자본변동표";
+				node3['id'] = "88"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "88";
+				node3['offset'] = "19133682";
+				node3['length'] = "120399";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "88";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "303";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "4-4. 현금흐름표";
+				node3['id'] = "89"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "89";
+				node3['offset'] = "19254081";
+				node3['length'] = "47128";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "89";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "304";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "5. 재무제표 주석";
+			node2['id'] = "90"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "90";
+			node2['offset'] = "19301209";
+			node2['length'] = "2729182";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "90";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "200";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+				node2['children'] = [];
+			
+			
+			
+				var node3 = {};
+				node3['text'] = "1. 회사의 개요 및 보고주체";
+				node3['id'] = "91"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "91";
+				node3['offset'] = "19301367";
+				node3['length'] = "1777";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "91";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "305";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "2. 재무제표 작성기준";
+				node3['id'] = "92"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "92";
+				node3['offset'] = "19303144";
+				node3['length'] = "4098";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "92";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "306";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "3. 중요한 회계정책";
+				node3['id'] = "93"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "93";
+				node3['offset'] = "19307242";
+				node3['length'] = "32016";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "93";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "307";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "4. 금융위험의 관리";
+				node3['id'] = "94"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "94";
+				node3['offset'] = "19339258";
+				node3['length'] = "305396";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "94";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "308";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "5. 금융자산과 금융부채";
+				node3['id'] = "95"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "95";
+				node3['offset'] = "19644654";
+				node3['length'] = "219148";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "95";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "309";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "6. 예치금";
+				node3['id'] = "96"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "96";
+				node3['offset'] = "19863802";
+				node3['length'] = "63515";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "96";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "310";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "7. 당기손익-공정가치 측정 금융자산";
+				node3['id'] = "97"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "97";
+				node3['offset'] = "19927317";
+				node3['length'] = "6675";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "97";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "311";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "8. 상각후원가 측정 대출채권";
+				node3['id'] = "98"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "98";
+				node3['offset'] = "19933992";
+				node3['length'] = "36699";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "98";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "312";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "9. 종속기업투자";
+				node3['id'] = "99"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "99";
+				node3['offset'] = "19970691";
+				node3['length'] = "12919";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "99";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "313";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "10. 유형자산";
+				node3['id'] = "100"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "100";
+				node3['offset'] = "19983610";
+				node3['length'] = "58470";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "100";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "314";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "11. 무형자산";
+				node3['id'] = "101"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "101";
+				node3['offset'] = "20042080";
+				node3['length'] = "51838";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "101";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "315";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "12-A. 리스-사용권자산";
+				node3['id'] = "102"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "102";
+				node3['offset'] = "20093918";
+				node3['length'] = "11482";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "102";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "316";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "12-B. 리스-리스부채";
+				node3['id'] = "103"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "103";
+				node3['offset'] = "20105400";
+				node3['length'] = "8190";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "103";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "317";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "13. 이연법인세자산과 부채";
+				node3['id'] = "104"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "104";
+				node3['offset'] = "20113590";
+				node3['length'] = "264390";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "104";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "318";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "14. 기타자산";
+				node3['id'] = "105"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "105";
+				node3['offset'] = "20377980";
+				node3['length'] = "41113";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "105";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "319";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "15&16. 차입부채/사채";
+				node3['id'] = "106"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "106";
+				node3['offset'] = "20419093";
+				node3['length'] = "231767";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "106";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "320";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "17. 순확정급여부채(자산)";
+				node3['id'] = "107"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "107";
+				node3['offset'] = "20650860";
+				node3['length'] = "94864";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "107";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "321";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "18. 기타부채";
+				node3['id'] = "108"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "108";
+				node3['offset'] = "20745724";
+				node3['length'] = "14565";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "108";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "322";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "19-A. 자본";
+				node3['id'] = "109"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "109";
+				node3['offset'] = "20760289";
+				node3['length'] = "161567";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "109";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "323";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "19-B. 이익잉여금 처분계산서";
+				node3['id'] = "110"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "110";
+				node3['offset'] = "20921856";
+				node3['length'] = "21167";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "110";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "324";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "19-C. 대손준비금";
+				node3['id'] = "111"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "111";
+				node3['offset'] = "20943023";
+				node3['length'] = "16581";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "111";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "325";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "20. 배당금";
+				node3['id'] = "112"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "112";
+				node3['offset'] = "20959604";
+				node3['length'] = "14939";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "112";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "326";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "21. 순이자손익";
+				node3['id'] = "113"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "113";
+				node3['offset'] = "20974543";
+				node3['length'] = "20261";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "113";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "327";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "22. 순수수료손익";
+				node3['id'] = "114"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "114";
+				node3['offset'] = "20994804";
+				node3['length'] = "9212";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "114";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "328";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "23. 당기손익-공정가치 측정 금융상품 순손익";
+				node3['id'] = "115"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "115";
+				node3['offset'] = "21004016";
+				node3['length'] = "16420";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "115";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "329";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "24. 기타영업손익";
+				node3['id'] = "116"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "116";
+				node3['offset'] = "21020436";
+				node3['length'] = "8433";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "116";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "330";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "25-A. 일반관리비";
+				node3['id'] = "117"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "117";
+				node3['offset'] = "21028869";
+				node3['length'] = "27726";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "117";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "331";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "25-B. 주식기준보상";
+				node3['id'] = "118"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "118";
+				node3['offset'] = "21056595";
+				node3['length'] = "570627";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "118";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "332";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "26. 영업외손익";
+				node3['id'] = "119"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "119";
+				node3['offset'] = "21627222";
+				node3['length'] = "11481";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "119";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "333";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "27. 법인세수익(비용)";
+				node3['id'] = "120"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "120";
+				node3['offset'] = "21638703";
+				node3['length'] = "54286";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "120";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "334";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "28. 주당이익";
+				node3['id'] = "121"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "121";
+				node3['offset'] = "21692989";
+				node3['length'] = "44328";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "121";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "335";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "29. 현금흐름표";
+				node3['id'] = "122"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "122";
+				node3['offset'] = "21737317";
+				node3['length'] = "41080";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "122";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "336";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "30. 우발 및 약정사항";
+				node3['id'] = "123"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "123";
+				node3['offset'] = "21778397";
+				node3['length'] = "15843";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "123";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "337";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "31. 특수관계자";
+				node3['id'] = "124"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "124";
+				node3['offset'] = "21794240";
+				node3['length'] = "230867";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "124";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "338";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "32. 보고기간후사건";
+				node3['id'] = "125"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "125";
+				node3['offset'] = "22025107";
+				node3['length'] = "4034";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "125";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "339";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+				var node3 = {};
+				node3['text'] = "33. 재무제표 승인";
+				node3['id'] = "126"; 
+				node3['rcpNo'] = "20260619000667";
+				node3['dcmNo'] = "11440765";
+				node3['eleId'] = "126";
+				node3['offset'] = "22029141";
+				node3['length'] = "1280";
+				node3['dtd'] = "dart4.xsd";
+				node3['tocNo'] = "126";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+				node3['atocId'] =  "340";  //편집기 목차(nrseo.20240111)
+				
+				cnt++;
+				node2['children'].push(node3);
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "6. 배당에 관한 사항";
+			node2['id'] = "127"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "127";
+			node2['offset'] = "22030421";
+			node2['length'] = "29388";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "127";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "12";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "7. 증권의 발행을 통한 자금조달에 관한 사항";
+			node2['id'] = "128"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "128";
+			node2['offset'] = "22059813";
+			node2['length'] = "2143160";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "128";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "13";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "8. 기타 재무에 관한 사항";
+			node2['id'] = "131"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "131";
+			node2['offset'] = "24202977";
+			node2['length'] = "95009";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "129";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "16";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "IV. 이사의 경영진단 및 분석의견";
+		node1['id'] = "132";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "132";
+		node1['offset'] = "24298004";
+		node1['length'] = "377783";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "130";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "17";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 예측정보에 대한 주의사항";
+			node2['id'] = "133"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "133";
+			node2['offset'] = "24298212";
+			node2['length'] = "955";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "131";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "18";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 개요";
+			node2['id'] = "134"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "134";
+			node2['offset'] = "24299171";
+			node2['length'] = "14791";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "132";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "19";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "3. 재무상태 및 영업실적";
+			node2['id'] = "135"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "135";
+			node2['offset'] = "24313966";
+			node2['length'] = "170014";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "133";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "20";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "4. 유동성 및 자금조달과 지출";
+			node2['id'] = "136"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "136";
+			node2['offset'] = "24483984";
+			node2['length'] = "151679";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "134";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "21";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "5. 부외거래";
+			node2['id'] = "137"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "137";
+			node2['offset'] = "24635667";
+			node2['length'] = "11004";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "135";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "22";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "6. 그 밖에 투자의사결정에 필요한 사항";
+			node2['id'] = "138"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "138";
+			node2['offset'] = "24646675";
+			node2['length'] = "29098";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "136";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "23";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "V. 회계감사인의 감사의견 등";
+		node1['id'] = "139";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "139";
+		node1['offset'] = "24675791";
+		node1['length'] = "97972";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "137";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "24";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 외부감사에 관한 사항";
+			node2['id'] = "140"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "140";
+			node2['offset'] = "24675982";
+			node2['length'] = "64455";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "138";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "25";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 내부통제에 관한 사항";
+			node2['id'] = "141"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "141";
+			node2['offset'] = "24740441";
+			node2['length'] = "33308";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "139";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "26";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "VI. 이사회 등 회사의 기관에 관한 사항";
+		node1['id'] = "142";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "142";
+		node1['offset'] = "24773767";
+		node1['length'] = "348376";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "140";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "27";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 이사회에 관한 사항";
+			node2['id'] = "143"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "143";
+			node2['offset'] = "24773977";
+			node2['length'] = "264566";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "141";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "28";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 감사제도에 관한 사항";
+			node2['id'] = "144"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "144";
+			node2['offset'] = "25038547";
+			node2['length'] = "50186";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "142";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "29";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "3. 주주총회 등에 관한 사항";
+			node2['id'] = "145"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "145";
+			node2['offset'] = "25088737";
+			node2['length'] = "33392";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "143";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "30";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "VII. 주주에 관한 사항";
+		node1['id'] = "146";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "146";
+		node1['offset'] = "25122147";
+		node1['length'] = "67642";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "144";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "31";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+		
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "VIII. 임원 및 직원 등에 관한 사항";
+		node1['id'] = "147";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "147";
+		node1['offset'] = "25189793";
+		node1['length'] = "205799";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "145";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "32";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 임원 및 직원 등의 현황";
+			node2['id'] = "148"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "148";
+			node2['offset'] = "25189979";
+			node2['length'] = "158799";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "146";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "33";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 임원의 보수 등";
+			node2['id'] = "149"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "149";
+			node2['offset'] = "25348782";
+			node2['length'] = "46796";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "147";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "34";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "IX. 계열회사 등에 관한 사항";
+		node1['id'] = "150";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "150";
+		node1['offset'] = "25395596";
+		node1['length'] = "28328";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "148";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "35";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+		
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "X. 대주주 등과의 거래내용";
+		node1['id'] = "151";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "151";
+		node1['offset'] = "25423928";
+		node1['length'] = "41435";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "149";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "36";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+		
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "XI. 그 밖에 투자자 보호를 위하여 필요한 사항";
+		node1['id'] = "152";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "152";
+		node1['offset'] = "25465367";
+		node1['length'] = "869114";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "150";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "37";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 공시내용 진행 및 변경사항";
+			node2['id'] = "153"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "153";
+			node2['offset'] = "25465578";
+			node2['length'] = "1753";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "151";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "38";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 우발부채 등에 관한 사항";
+			node2['id'] = "154"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "154";
+			node2['offset'] = "25467335";
+			node2['length'] = "266676";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "152";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "39";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "3. 제재 등과 관련된 사항";
+			node2['id'] = "155"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "155";
+			node2['offset'] = "25734015";
+			node2['length'] = "393091";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "153";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "40";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "4. 작성기준일 이후 발생한 주요사항 등 기타사항";
+			node2['id'] = "156"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "156";
+			node2['offset'] = "26127110";
+			node2['length'] = "207357";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "154";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "41";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "XII. 상세표";
+		node1['id'] = "157";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "157";
+		node1['offset'] = "26334485";
+		node1['length'] = "1008637";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "155";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "42";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 연결대상 종속회사 현황(상세)";
+			node2['id'] = "158"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "158";
+			node2['offset'] = "26334647";
+			node2['length'] = "312729";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "156";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "43";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 계열회사 현황(상세)";
+			node2['id'] = "159"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "159";
+			node2['offset'] = "26647380";
+			node2['length'] = "21622";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "157";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "44";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "3. 타법인출자 현황(상세)";
+			node2['id'] = "160"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "160";
+			node2['offset'] = "26669006";
+			node2['length'] = "25686";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "158";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "45";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "4. 주요 상품·서비스 (1) 예금상품(상세)";
+			node2['id'] = "161"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "161";
+			node2['offset'] = "26694696";
+			node2['length'] = "36100";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "159";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "7";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "5. 주요 상품ㆍ서비스 (2) 대출상품(상세)";
+			node2['id'] = "162"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "162";
+			node2['offset'] = "26730800";
+			node2['length'] = "121514";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "160";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "8";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "6. 주요 상품ㆍ서비스 (3) 신탁상품(상세)";
+			node2['id'] = "163"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "163";
+			node2['offset'] = "26852318";
+			node2['length'] = "8628";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "161";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "9";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "7. 주요 상품ㆍ서비스 (4) 투자신탁상품(상세)";
+			node2['id'] = "164"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "164";
+			node2['offset'] = "26860950";
+			node2['length'] = "13252";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "162";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "10";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "8. 주요 상품ㆍ서비스 (5) 외환업무(상세)";
+			node2['id'] = "165"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "165";
+			node2['offset'] = "26874206";
+			node2['length'] = "27388";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "163";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "11";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "9. 주요 상품ㆍ서비스 (6) 방카슈랑스(상세)";
+			node2['id'] = "166"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "166";
+			node2['offset'] = "26901598";
+			node2['length'] = "16092";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "164";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "12";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "10. 주요 상품ㆍ서비스 (7) PB/GOLD&WISE 전용상품(상세)";
+			node2['id'] = "167"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "167";
+			node2['offset'] = "26917694";
+			node2['length'] = "3442";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "165";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "13";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "11. 주요 상품ㆍ서비스 (8) 전자금융(상세)";
+			node2['id'] = "168"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "168";
+			node2['offset'] = "26921140";
+			node2['length'] = "7092";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "166";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "14";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "12. 증권거래현황(상세)";
+			node2['id'] = "169"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "169";
+			node2['offset'] = "26928236";
+			node2['length'] = "35955";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "167";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "16";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "13. 장내파생상품거래현황(상세)";
+			node2['id'] = "170"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "170";
+			node2['offset'] = "26964195";
+			node2['length'] = "39149";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "168";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "17";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "14. 투자운용인력현황(상세)";
+			node2['id'] = "171"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "171";
+			node2['offset'] = "27003348";
+			node2['length'] = "236731";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "169";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "18";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "15. 일임형 Wrap상품(상세)";
+			node2['id'] = "172"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "172";
+			node2['offset'] = "27240083";
+			node2['length'] = "28097";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "170";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "19";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "16. 신용파생상품 거래현황(상세)";
+			node2['id'] = "173"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "173";
+			node2['offset'] = "27268184";
+			node2['length'] = "74924";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "171";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "20";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+		var node1 = {};
+		node1['text'] = "【 전문가의 확인 】";
+		node1['id'] = "174";
+		node1['rcpNo'] = "20260619000667";
+		node1['dcmNo'] = "11440765";
+		node1['eleId'] = "174";
+		node1['offset'] = "27343126";
+		node1['length'] = "576";
+		node1['dtd'] = "dart4.xsd";
+		node1['tocNo'] =  "172";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+		node1['atocId'] =  "46";  //편집기 목차(nrseo.20240111)
+		 
+		cnt++;
+		
+			node1['children'] = [];
+		
+		
+		
+			var node2 = {};
+			node2['text'] = "1. 전문가의 확인";
+			node2['id'] = "175"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "175";
+			node2['offset'] = "27343273";
+			node2['length'] = "214";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "173";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "47";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+			var node2 = {};
+			node2['text'] = "2. 전문가와의 이해관계";
+			node2['id'] = "176"; 	
+			node2['rcpNo'] = "20260619000667";
+			node2['dcmNo'] = "11440765";
+			node2['eleId'] = "176";
+			node2['offset'] = "27343491";
+			node2['length'] = "197";
+			node2['dtd'] = "dart4.xsd";
+			node2['tocNo'] =  "174";  //eleId 가 toc 순번하고 동일 하지 않은 문서가 존재함.
+			node2['atocId'] =  "48";  //편집기 목차(nrseo.20240111)
+			
+			cnt++;
+			
+			
+			
+			
+			node1['children'].push(node2);
+		
+		
+		
+		
+		treeData.push(node1);
+	
+	
+	//js tree
+	var jsTree = $j('#listTree').jstree({
+		'core' : {
+			'multiple' : false,
+			'themes' : {
+				'icons' : false
+			},
+			'data' : treeData
+		}
+	});
+	
+	jsTree.on('loaded.jstree', function(){
+		if (cnt > 200) {
+			
+				$j(this).jstree('select_node', 'ul > li:first');
+			
+			
+		} else {
+			$j(this).jstree('open_all');
+			
+				$j(this).jstree('select_node', 'ul > li:first');
+			
+			
+		}
+		jsTree.on("select_node.jstree", function (e, data) {
+			var original = data.node.original;
+			if(data.selected.length) {
+				// searchGubun 혹은 keyword 변경시 : 검색정보 초기화(현재목차/키워드없음)한다.
+				if (isChanged) resetKeyword();
+			
+				if (fixGubun == "1") {
+					linkDoc(original.rcpNo, original.dcmNo, original.eleId, original.offset, original.length, original.dtd, original.tocNo);
+				} else {
+					// 현재목차검색에서 목차클릭시  : 검색정보 초기화(현재목차/키워드없음)한다.
+					resetKeyword();
+					viewDoc(original.rcpNo, original.dcmNo, original.eleId, original.offset, original.length, original.dtd, original.tocNo);
+				}
+				if (isMobileSize()) hideTocArea();
+			}
+		});
+	});
+	
+		if(cnt == 0){
+			hideTocArea();
+			$j('#collapse-button').css('display','none');
+		}
+	
+	
+		
+		
+		
+			// 최초 뷰어 호출
+			// 3.일반 최초로딩시
+			// 처음에 전체검색으로 시작할때(주소창에 keyword 물고올때)
+			if ('' != "") {
+				fixGubun = "1";
+				fixKeyword = '';
+				$j("input:radio[name='searchGubun']:input[value='"+fixGubun+"']").prop("checked", true);
+				$j("#searchWord").val(fixKeyword);
+			}
+			
+				
+				
+					viewDoc("20260619000667", "11440765", "1", "1024", "38015", "dart4.xsd", "");
+				
+				
+			
+		
+	
+}
+
+function makePop() {
+	//정기공시 특정보고서 팝업
+	
+	// 공매도
+	
+	// 정정
+	alertJungJung("", "11011");
+	// 핵심투자위험
+	alertInvestNotice("20260619000667", "11440765", "20260313000853", "1", "11011" ,"dart4.xsd");
+	// 소액공모
+	alertSmallPublicOffering("N");
+	// 참고사항
+	
+	// 5%
+	
+	// 효력
+	
+	// 사업보고서 감사의견 불일치
+	
+	// 공매도 취득제한
+	
+
+}
+
+
+/* ########################
+# 문서조회(viewer.do) 관련
+######################## */ 
+var currentDocValues = {rcpNo: "", dcmNo: "", eleId: "", offset: "", length: "", dtd: "", tocNo: ""};
+function viewDoc(rcpNo, dcmNo, eleId, offset, length, dtd, tocNo) {
+	currentDocValues.rcpNo = rcpNo;
+	currentDocValues.dcmNo = dcmNo;
+	currentDocValues.eleId = eleId;
+	currentDocValues.offset = offset;
+	currentDocValues.length = length;
+	currentDocValues.dtd = dtd;
+	currentDocValues.tocNo = tocNo;
+	
+	var params = "";
+	params += "?rcpNo=" + rcpNo;
+	params += "&dcmNo=" + dcmNo;
+	if (eleId != null) params += "&eleId=" + eleId;
+	if (offset != null) params += "&offset=" + offset;
+	if (length != null) params += "&length=" + length;
+	params += "&dtd=" + dtd;
+	
+	if (!isNullTrim(fixKeyword)) {
+		params += "&keyword=" + encodeURIComponent(fixKeyword);
+		params += "&searchGubun=" + fixGubun;
+		
+		$j("#loadingMask").show();
+		$j("#loadingWrap").show();
+	}
+
+	document.getElementById("ifrm").src = "/report/viewer.do" + params;
+}
+
+function linkDoc(rcpNo, dcmNo, eleId, offset, length, dtd, tocNo) {
+	currentDocValues.rcpNo = rcpNo;
+	currentDocValues.dcmNo = dcmNo;
+	currentDocValues.eleId = eleId;
+	currentDocValues.offset = offset;
+	currentDocValues.length = length;
+	currentDocValues.dtd = dtd;
+	currentDocValues.tocNo = tocNo;
+	
+	$j('#ifrm').contents().find("[id^=bookmark_]").removeClass("bookmark");
+	$j('#ifrm').contents().scrollTop($j('#ifrm').contents().find("a[name=toc"+tocNo+"]").offset().top);
+}
+
+/* iframe load */
+var bodyTocCnt = 0;
+var tocPositionIds = [];
+var tocPositionItems = [];
+function iframeLoaded() {
+	$j('#ifrm').contents().on('click','a[target]', newWindowEvent);
+	
+	$j('#ifrm').contents().find("img").each(function() {
+		$j(this).attr("onclick", "parent.winImgRealSize('"+$j(this).attr("src")+"');");
+		$j(this).css("cursor", "zoom-in");
+	});
+	// 임시 (기존 생성된 이미지 원본보기 때문)->html 전체 삭제하면 괜찮을텐데...
+	$j('#ifrm').contents().find("div[name='imgDiv']").remove();
+	// 거래소 통합공시 경우 일부 태그 스타일 초기화(nrseo.LR-Chm-2021-00141)
+	if ("dart4.xsd" == "HTML") {
+		$j('#ifrm').contents().find(".xforms td").each(function() {
+			var inStyle = $j(this).attr("style");
+			if (inStyle == null || inStyle.indexOf("text-align") == -1) {
+				$j(this).css("text-align", "left");
+			}
+		});
+		$j('#ifrm').contents().find(".xforms span").each(function() {
+			var inStyle = $j(this).attr("style");
+			if (inStyle == null || inStyle.indexOf("display") == -1) {
+				$j(this).css("display", "inline");
+			}
+		});
+	}
+	
+	// 전체검색
+	if (fixGubun == "1") {
+		bodyTocCnt = $j("#ifrm").contents().find("p > a[name^=toc]").length;
+		if ($j("#listTree ul li a").length > 0) {
+			if (bodyTocCnt === 0 || (Array.isArray(tocPositionItems) && tocPositionItems.length === 0)) {
+				tocPositionItems = [];
+				$j($j("#ifrm").contents().find("p > a[name^=toc]").get().reverse()).each(function() {
+					tocPositionIds.push($j(this).attr("name").replace(/[^0-9]/g, ''));
+					tocPositionItems.push($j(this).position().top);
+				});
+			}
+		}
+	}
+	
+	$j('#ifrm').contents().find('head').append('<style>span.highlight {background-color:#ffff00;} span.highlight.on {background-color:#ffb700;} .bookmark {background-color:#FFF0F0 !important; text-decoration:underline;}</style>');
+	if (!isNullTrim(fixKeyword)) {
+		procHighlight();
+	}
+}
+
+function reloadDoc() {
+	viewDoc(currentDocValues.rcpNo, currentDocValues.dcmNo, currentDocValues.eleId, currentDocValues.offset, currentDocValues.length, currentDocValues.dtd);
+}
+
+function changeDoc(val) {
+	document.fmove.action="/dsaf001/main.do?" + val;
+	document.fmove.submit();	
+}
+
+function changeNewDoc(val) {
+	window.open("/dsaf001/main.do?"+ val,'resizable=no, status=no, scrollbars=no','width=1200, height=810');
+}
+
+function changeFamily(val) {
+	if (val=="null") return;
+	changeDoc(val); $j("#att").val("null"); $j("#ref").val("null");
+}
+
+function changeRef(val) {
+	if (val=="null") return;
+	changeDoc(val); $j("#att").val("null"); $j("#family").val("null");
+}
+
+function changeAtt(val) {
+	if (val=="null") return;
+	changeDoc(val); $j("#ref").val("null"); $j("#family").val("null");
+}
+
+function changeHis(val) {
+	if (val=="null") return;
+	changeNewDoc(val); $j("#history").val("null"); $j("#family").val("null");
+}
+
+var winImg;
+function winImgRealSize(src, bcColor, maxWidth) {
+	if (typeof bgColor === "undefined") bgColor = "#000";
+	if (typeof maxWidth === "undefined") maxWidth = "1100px";
+	if (winImg && !winImg.closed) winImg.close();
+	winImg = window.open("", "imgRealSizeBox");
+	winImg.document.write("<html><head><title>이미지새창보기</title><meta name=\"viewport\" content=\"user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width\"/></head>" +
+			"<body style=\"margin:0;background:"+bgColor+";height:100%;\" onclick=\"window.close('imgRealSizeBox');\"><table border=\"0\" width=\"100%\" height=\"100%\"><tr><td valign=\"middle\" align=\"center\">" +
+					"<img style=\"position:relative;z-index:2;width:100%;max-width:"+maxWidth+";\" src=\""+src+"\"/></td></tr></table></body></html>");
+}
+
+/* ########################
+# 문서검색 스크립트 
+######################## */ 	
+var isChanged = false;
+var fixKeyword = "";
+var fixGubun = "2"; // 1:전체, 2:현재
+function resetKeyword() {
+	fixGubun = "2";
+	fixKeyword = "";
+	$j("input:radio[name='searchGubun']:input[value='"+fixGubun+"']").prop("checked", true);
+}
+function searchKeyword() {
+	procSearchKeyword();
+}
+function procSearchKeyword() {
+	if (isNullTrim($j("#searchWord").val())) {
+		alert('검색어를 입력해 주세요.');
+		return;
+	}
+	
+	isChanged = false;
+	
+	
+		if ($j('input:radio[name=searchGubun]:checked').val() == "1") {
+			if (confirm("전체문서내 검색시 파일용량이 커서 검색이 느릴 수 있습니다.\n계속 진행하시겠습니까?") == false) {
+				$j("#searchWord").val(fixKeyword);
+				return;
+			}
+		}
+	
+	
+	fixKeyword = $j("#searchWord").val();
+	fixGubun = $j('input:radio[name=searchGubun]:checked').val();
+	
+	viewDoc(currentDocValues.rcpNo, currentDocValues.dcmNo, currentDocValues.eleId, currentDocValues.offset, currentDocValues.length, currentDocValues.dtd);
+}
+$j(function() {
+	$j("#searchWord").change(function() {
+		if ($j("#searchWord").val() != fixKeyword) isChanged = true;
+		else isChanged = false;
+	});
+	
+	$j("input:radio[name='searchGubun']").change(function() {
+		if ($j('input:radio[name=searchGubun]:checked').val() != fixGubun) isChanged = true;
+		else isChanged = false;
+	});
+});
+
+/* ########################
+# 하이라이트(문서검색후) 스크립트 
+######################## */
+var highlight_obj;
+var highlight_idx;
+function procHighlight() {
+	highlight_obj = $j("#ifrm").contents().find('.highlight');
+	if (highlight_obj.length == 0) {
+		// 전체검색일때 제일 처음 목차 선택된 것처럼 css 효과만 부여
+		if (fixGubun == "1") {
+			$j("#listTree").jstree("deselect_all");
+			$j("#listTree ul li:eq(0) > a").attr("aria-selected", true);
+			$j("#listTree ul li:eq(0) > a").addClass("jstree-clicked");
+		}
+		
+		alert("일치하는 검색어["+fixKeyword+"]가 없습니다.");
+	} else {
+		highlight_idx = 0;
+		moveHighlight(highlight_idx);
+	}
+	
+	$j("#loadingMask").hide();
+	$j("#loadingWrap").hide();
+}
+
+function moveHighlight(idx) {
+	// 전체검색일때 키워드에 해당하는 목차 클릭 이벤트
+	if (fixGubun == "1") {
+		var top = $j(highlight_obj[idx]).offset().top;
+		for (var i=0; i<tocPositionItems.length; i++) {
+			if ((top+10) >= tocPositionItems[i]) {
+				//이미 같은 목차가 선택되어 있으면 스킵
+				if ($j("#listTree ul li:eq(" + (tocPositionIds[i]-1) + ") > a").attr("aria-selected") != "true") {
+					$j("#listTree ul li:eq(" + (tocPositionIds[i]-1) + ") > a").trigger("click");
+				}
+				break;
+			}
+		}
+	}
+	
+	highlight_obj.removeClass('on');
+	$j(highlight_obj[idx]).addClass('on');
+	
+	// 세로 영역 맞추기
+	var ifrmTop = $j('#ifrm').contents().scrollTop();
+	var ifrmBottom = ifrmTop + $j('#ifrm').height();
+	var highlightTop = $j(highlight_obj[idx]).offset().top;
+	var highlightBottom = highlightTop + $j(highlight_obj[idx]).height();
+	$j('#ifrm').contents().scrollTop(highlightTop);
+	
+	// 가로 영역 맞추기
+	var offsetWidth = highlight_obj[idx].offsetWidth;
+	var offsetLeft = $j(highlight_obj[idx]).offset().left;
+	var offsetRight = offsetLeft + offsetWidth;
+	var ifrmWidth = $j('#ifrm').width();
+	var ifrmLeft = $j('#ifrm').contents().scrollLeft();
+	var ifrmRight = ifrmLeft + ifrmWidth;
+	if(ifrmWidth < offsetRight + 30) {
+		$j('#ifrm').contents().scrollLeft(offsetRight - ifrmWidth + 30);
+	} else {
+		$j('#ifrm').contents().scrollLeft(0);
+	}
+	/*
+	if (fn_isMobileApp()=="pc") {
+		$j('#contentsWrapDiv').css('height','calc(100vh - 115px)');
+	}
+	*/
+}
+
+function movePrev() {
+	if (isChanged) {
+		alert("검색정보를 수정하였습니다. 검색을 먼저 하시기 바랍니다.");
+		return;
+	}
+	
+	if (!isNullTrim(highlight_obj) != "" && highlight_obj.length > 0) {
+		if (highlight_idx == 0) {
+			highlight_idx = highlight_obj.length - 1;	//처음 위치면 마지막으로 이동
+		} else {
+			highlight_idx += -1;
+		}
+		moveHighlight(highlight_idx);
+	}
+}
+
+function moveNext() {
+	if (isChanged) {
+		alert("검색정보를 수정하였습니다. 검색을 먼저 하시기 바랍니다.");
+		return;
+	}
+	
+	if (!isNullTrim(highlight_obj) != "" && highlight_obj.length > 0) {
+		if (highlight_obj.length == (highlight_idx + 1)) {
+			highlight_idx = 0;	//마지막 위치면 처음으로 이동
+		} else {
+			highlight_idx += 1;
+		}
+		moveHighlight(highlight_idx);
+	}
+}
+
+/* ########################
+# 다운로드/인쇄/닫기 버튼 이벤트
+######################## */ 
+function openPdfDownload(rcpNo, dcmNo) {
+	 
+		
+			var size = getOpenSize(530, 480);
+			var url = "/pdf/download/main.do?rcp_no=" + rcpNo + "&dcm_no=" + dcmNo;
+			var win = window.open( url, 'DOWNLOAD', ''+size+', resizable=no, status=no, scrollbars=no');
+			if(win == null) alert("팝업차단을 해제해주세요.");
+			else win.focus();
+		
+		
+	
+}	
+
+function showPdfStopMsg(title, cont, type, type2){
+	var layerPopHtml = "";
+	layerPopHtml +='<div class="layerPop layerPopViewer" style="display:block; width:450px;">';
+	layerPopHtml +='	<div class="title">';
+	layerPopHtml +=		title ;
+	layerPopHtml +='		<a class="btnClose" onclick="closeWinCcommMsg(this)" href="javascript:void(0);">확인</a>';
+	layerPopHtml +='	</div>';
+	layerPopHtml +='	<div class="contViewer" id="commMsgCont" style="height:200px;">';
+	layerPopHtml +='      <div class="contWrap">';
+	layerPopHtml +=			cont;
+	layerPopHtml +='      </div>';
+	layerPopHtml +='	</div>';
+	layerPopHtml +='</div>';
+
+	$j('#winCommMsg').append(layerPopHtml);
+	$j('#winCommMsg').show();
+}
+
+function showSelectPopup(title, cont, type, type2){
+	var layerPopHtml = "";
+	layerPopHtml +='<div class="layerPop layerPopViewer" style="display:block; width:505px;">';
+	layerPopHtml +='	<div class="selectPopupTitle">';
+	layerPopHtml +=		title ;
+	layerPopHtml +='		<a class="btnClose" onclick="closeWinCcommMsg(this)" href="javascript:void(0);">확인</a>';
+	layerPopHtml +='	</div>';
+	layerPopHtml +='	<div class="contViewer" id="commMsgCont" style="height:200px;">';
+	layerPopHtml +='      <div class="contWrap">';
+	layerPopHtml +='           <pre style="font-size:100%; line-height:1.2em;">';
+	layerPopHtml +=			cont;
+	layerPopHtml +='           </pre>';
+	layerPopHtml +='      </div>';
+	layerPopHtml +='	</div>';
+	layerPopHtml +='</div>';
+
+	$j('#winCommMsg').append(layerPopHtml);
+	$j('#winCommMsg').show();
+}
+
+function printDoc() {
+	var printFrame = document.getElementById('ifrm');
+	var agent = navigator.userAgent.toLowerCase();
+	
+	if (agent.indexOf('trident') > -1) ifrm.focus();
+	else printFrame.focus();
+	
+	var prependHTML = '';
+	prependHTML += '<div id="printDocTitle">';
+	prependHTML += 'KB금융';
+	
+	if ($j('#family option:selected').val() != "null") prependHTML += ' / ' + $j('#family option:selected').text() + ' ';
+	if ($j('#att option:selected').val() != "null") prependHTML += ' / ' + $j('#att option:selected').text() + ' ';
+	
+	prependHTML += '</div>';
+
+	$j('#ifrm').contents().find('body').prepend(prependHTML) // title추가
+	printFrame.contentWindow.print();
+	$j('#ifrm').contents().find('#printDocTitle').remove(); // 다시 title삭제
+}
+
+function windowClose(){
+	if (isInApp()) {
+		if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
+			android_dart.appFinish();
+			window.close();
+		} else {
+			window.webkit.messageHandlers.DARTJS_APPFINISH.postMessage('');
+			window.close();
+		}
+	} else {
+		window.close();
+	}
+}
+/* ########################
+# RSS
+######################## */ 
+function scrapFeed(cik) {
+    var rssValue = "";
+    if(cik == "today"){
+    	rssValue = "https://dart.fss.or.kr/api/todayRSS.xml";
+    } else{
+    	rssValue = "https://dart.fss.or.kr/api/companyRSS.xml?crpCd=" + cik;
+    }
+
+    if(window.clipboardData){  // IE처리
+    	if (window.clipboardData.setData("Text", rssValue)) {
+        	alert('클립보드에 복사되었습니다');
+    	}
+    } else {                     // 비IE 처리
+    	window.prompt ("Ctrl+C를 눌러 클립보드로 복사하세요", rssValue);
+    }
+}
+
+/* ########################
+# 하이퍼링크
+######################## */ 
+// 상세표
+function goBookmark(to, from, toc) {
+	$j("#listTree ul li a").each(function() {
+		if ($j(this).text() == toc) {
+			//이미 같은 목차가 선택되어 있으면 스킵
+			if ($j(this).attr("aria-selected") != "true") {
+				$j(this).trigger("click");
+			}
+			
+			setTimeout(function() {
+				var bookmark = $j('#ifrm').contents().find("a[class="+to+"]").offset();
+				if (bookmark == null) {
+					$j('#ifrm').contents().scrollTop(0);
+				} else {
+					$j('#ifrm').contents().scrollTop(bookmark.top);
+				}
+			}, 500);
+			
+			return false;
+		}
+	});
+}
+// 책갈피
+// 속성값에 id가 들어오면 무조건 책갈피!!!
+// 신 다트편집기 책갈피 로직 변경대응 (2024.01 nrseo)
+function goBookmark2(atocId, text) {
+	var data = $j("#listTree").jstree(true)._model.data;
+	$j.each(data, function(i, v) {
+		if (v.original) {
+			if (v.original["atocId"] == atocId) {
+				var id = v.original["id"];
+				
+				//이미 같은 목차가 선택되어 있으면 스킵
+				if ($j("#listTree ul li[id=" + id + "] > a").attr("aria-selected") != "true") {
+					$j("#listTree ul li[id=" + id + "] > a").trigger("click");
+				}
+				
+				setTimeout(function() {
+					$j("#ifrm").contents().find("[id^=bookmark_]").each(function() {
+						if (text == $j(this).attr("bookmarktext")) {
+							$j(this).addClass("bookmark");
+							var bookmark = $j(this).offset();
+							if (bookmark == null) {
+								$j('#ifrm').contents().scrollTop(0);
+							} else {
+								$j('#ifrm').contents().scrollTop(bookmark.top);
+							}
+							return false;
+						}
+					});
+				}, 500);
+				
+				return false;
+			}
+		}
+	});
+}
+
+/* ########################
+# 기타(변경확률낮음)
+######################## */ 
+
+function subPopView (id) {
+	$j("#" + id).show();
+}
+
+function popClose(id) {
+	$j("#" + id).hide();
+}
+	
+/* ########################
+# 기타(사용여부 불확실)
+######################## */ 
+//사용자가 '예'를 선택했을 때 최종문서로 이동한다.
+function confirmFinalDoc(bnt){
+	var rcp_no = "" ;
+	if(bnt=='yes'){
+		
+			
+				if(rcp_no == ""){
+					rcp_no = 20260619000667;
+				}
+			
+		
+			
+				if(rcp_no == ""){
+					rcp_no = 20260324000835;
+				}
+			
+		
+			
+				if(rcp_no == ""){
+					rcp_no = 20260313001191;
+				}
+			
+		
+		changeFamily("rcpNo="+rcp_no);
+	}
+}
+function replaceHtml(el, html) {
+	var oldEl = (typeof el === "string" ? document.getElementById(el) : el);
+	var newEl = oldEl.cloneNode(false);
+	newEl.innerHTML = html;
+	oldEl.parentNode.replaceChild(newEl, oldEl);
+	return newEl;
+};
+</script>
+	
+</head>
+
+<body>
+<div class="loadingMask" id="loadingMask" style="display:none"></div>
+<div class="loadingWrap" id="loadingWrap" style="display:none">
+	<div class="loadingImg"></div>
+	<div class="loadingMessage">잠시만 기다려주세요.</div>
+</div>
+<div class="wrapper">
+	<form name="fmove"  method="post" action="">
+	<input type="submit" style="display:none" name="goAction" />
+	</form>
+	<!-- viewerPop -->
+	<div class="viewerPop">
+		<!-- header -->
+		<div class="header" id="header">
+			<div class="top">
+				<h1 style="cursor:auto;"></h1>
+				
+					
+						
+					
+					
+					
+					
+				
+				
+				
+				
+				<div class="nameWrap"><span class="tagCom_kospi" title="유가증권시장">유</span>
+					<span onclick="openCorpInfoNew('00688996', 'winCorpInfo', '/dsae001/selectPopup.ax');" style="cursor:pointer;">KB금융</span></div>
+				<div class="searchWrap">
+				    <span class="frmCheck">
+						<input type="radio" id="searchGubun1" name="searchGubun" value="2" title="현재목차" checked />
+						<label for="searchGubun1" title="현재목차" >현재목차</label>
+					</span>
+					<span class="frmCheck">	
+						<input type="radio" id="searchGubun2" name="searchGubun" value="1" title="전체문서" />
+						<label for="searchGubun2" title="전체문서" >전체문서</label>
+					</span>
+					<span class="search">
+						<label for="search">선택</label>
+						<input type="text" id="searchWord" placeholder="검색어 입력" onkeyup="if(event.keyCode==13){searchKeyword();}" />
+						<button class="btnSearch" onclick="searchKeyword();">검색</button>
+					</span>						
+					<button class="btnPrev" onclick="movePrev();">이전</button>
+					<button class="btnNext" onclick="moveNext();">다음</button>		
+				</div>
+			</div>
+
+			<div class="bottom">
+				<div class="leftWrap">
+					<ul>
+						<li class="docLi">
+							<span class="frmSelect">
+								
+									<label for="family">본문</label>
+									<select class="w01" id="family" onchange="changeFamily(this.value)">
+										<option value="null">+본문선택+</option>
+										
+											
+											<option value="rcpNo=20260619000667" selected title="사업보고서">
+												
+													2026.06.19&nbsp;
+												
+												[정정]
+												
+												사업보고서
+											</option>
+										
+											
+											<option value="rcpNo=20260324000835"  title="사업보고서">
+												
+													2026.03.24&nbsp;
+												
+												[정정]
+												
+												사업보고서
+											</option>
+										
+											
+											<option value="rcpNo=20260313001191"  title="사업보고서">
+												
+													2026.03.13&nbsp;
+												
+												
+												
+												사업보고서
+											</option>
+										
+									</select>
+								
+							</span> 
+						</li>
+						<li class="docLi">
+							<span class="frmSelect">
+								<!-- 첨부문서 -->
+								<label for="att">첨부</label>
+								<select id="att" class="w01" onchange="changeAtt(this.value)">
+									<option value="null">+첨부선택+</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121787" >
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											감사보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121792" >
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											감사의감사보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121914" >
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											내부감시장치에대한감사의의견서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121915" >
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											내부회계관리제도운영보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121788" >
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											연결감사보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121793" >
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											영업보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121916" >
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											자기주식보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121791" >
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											정관
+										</option>
+									
+								</select>
+							</span> 
+						</li>
+						
+						
+						<li class="docLi_mob">
+							<span class="frmSelect">
+								<select id="doc" class="w01" onchange="changeFamily(this.value)">
+									<option value="null" selected>+문서 선택+</option>
+									<b><option value="null">-본문문서선택-</option></b>
+									
+										
+										<option value="rcpNo=20260619000667" title="사업보고서" style="color:blue">
+											
+												2026.06.19&nbsp;
+											
+											[정정]
+											
+											사업보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260324000835" title="사업보고서" style="">
+											
+												2026.03.24&nbsp;
+											
+											[정정]
+											
+											사업보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191" title="사업보고서" style="">
+											
+												2026.03.13&nbsp;
+											
+											
+											
+											사업보고서
+										</option>
+									
+									<option value="null">-첨부문서선택-</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121787" style="">
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											감사보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121792" style="">
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											감사의감사보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121914" style="">
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											내부감시장치에대한감사의의견서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121915" style="">
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											내부회계관리제도운영보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121788" style="">
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											연결감사보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121793" style="">
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											영업보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121916" style="">
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											자기주식보고서
+										</option>
+									
+										
+										<option value="rcpNo=20260313001191&amp;dcmNo=11121791" style="">
+											2026.03.13&nbsp;
+											
+												
+												
+											
+											정관
+										</option>
+									
+									
+									
+									
+									
+								</select>
+							</span> 
+						</li>
+					</ul>
+				</div>
+				<div class="rightWrap">	
+					<button class="btnDown" onclick="openViewer('20260619000667','en');">영문보기</button>
+						
+						<button class="btnDown" onclick="openPdfDownload('20260619000667', '11440765');">다운로드</button>
+					
+					<button class="btnPrint" onclick="printDoc();" id="print">인쇄</button>
+					<button class="btnSearch" onclick="windowClose();">닫기</button>	
+				</div>
+			</div>
+		</div>
+		<!-- //header -->
+		
+		<!-- contentsWrap -->
+		<div id="contentsWrapDiv" class="contentsWrap">
+			<div class="leftpanelwrap" id="left-panel">
+				<div class="headerWrap">문서목차</div>
+				<div class="leftpanel" id="left-panel-content">
+					<ul id="listTree">
+					</ul>
+				</div>
+			</div>
+			<div id="collapse-button" onclick="toggleLeftPanel()"></div>
+			<div class="divider" id="divider"></div>
+			<div class="rightpanelwrap" id="right-panel">
+				<!-- contents -->
+				<div class="contents" style="display:block;">
+					<div class="viewWrap">
+								
+						<div class="contWrap">
+							<iframe id="ifrm" frameborder="0" scrolling="auto" style="width: 100%; height : 100%; margin: 0; padding: 0" title="tailFrame" onload="iframeLoaded();"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- contents -->
+			</div>
+			<!-- //contentsWrap -->
+		</div>
+	</div>
+</div>
+<div id="pdfStopMsg" style="position: absolute; left: -1000px; top: -1000px; visibility: hidden;"></div>
+<div id="popup" style="position: absolute; left: -1000px; top: -1000px; visibility: hidden;"></div>
+
+
+<!-- layer popup wrap -->
+<div id="winCommMsg" style="display:none">
+	<div class="mask" style="display:block"></div>
+	<!-- layer popup wrap -->
+</div>
+
+
+
+<script type="text/javascript">
+function openReportViewerEng(rcpNo, dcmNo){
+	var url = "/dsbh001/main.do?rcpNo=" + rcpNo;
+	if (dcmNo) {
+		//<![CDATA[
+		url += "&dcmNo=" + dcmNo;
+		//]]>
+	}
+
+	var size = getOpenSize(1024, 768);
+	window.open(url, rcpNo, size+",resizable=yes");
+	$j("#r_"+rcpNo).css("color","#cd0093");
+}
+
+var win_num = 1;
+function openReportViewer(rcpNo, dcmNo){
+	var url = "/dsaf001/main.do?rcpNo=" + rcpNo;
+	if (dcmNo) {
+		//<![CDATA[
+		url += "&dcmNo=" + dcmNo;
+		//]]>
+	}
+
+	var size = getOpenSize(1200, 810);
+	window.open(url, rcpNo+win_num, size+",resizable=yes");
+	win_num++;
+	if (dcmNo) {
+		$j("#r_"+rcpNo+dcmNo).css("color","#cd0093");
+	}else{
+		$j("#r_"+rcpNo).css("color","#cd0093");
+	}
+}
+
+function openReportViewerParam(rcpNo, dcmNo, params){
+	var url = "/dsaf001/main.do?rcpNo=" + rcpNo;
+	if (dcmNo) {
+		//<![CDATA[
+		url += "&dcmNo=" + dcmNo;
+		//]]>
+	}
+	if (params) {
+		//<![CDATA[
+		url += params;
+		//]]>
+	}
+
+	var size = getOpenSize(1200, 810);
+	window.open(url, rcpNo+win_num, size+",resizable=yes");
+	win_num++;
+	if (dcmNo) {
+		$j("#r_"+rcpNo+dcmNo).css("color","#cd0093");
+	}else{
+		$j("#r_"+rcpNo).css("color","#cd0093");
+	}
+}
+
+function openReportListViewer(rcpNo, dcmNo, eleId){
+
+	var url = "/dsaf001/main.do?rcpNo=" + rcpNo;
+	if (dcmNo) {
+		//<![CDATA[
+		url += "&dcmNo=" + dcmNo;
+		//]]>
+		if(eleId) {
+			url += "&eleId=" + eleId;
+		}
+	}
+
+	var size = getOpenSize(1200, 810);
+	window.open(url, rcpNo+win_num, size+",resizable=yes");
+	win_num++;
+	if (dcmNo) {
+		$j("#r_"+rcpNo+dcmNo).css("color","#cd0093");
+	}else{
+		$j("#r_"+rcpNo).css("color","#cd0093");
+	}
+}
+
+/*
+ * 통합검색용 문서뷰어 팝업 호출
+ * nrseo 2010. 10. 20
+ * 2016.09.30 jsp에 직접 명시 하여 미사용(DSAB007A.jsp)
+ * - a:visited 미작동으로 인한 조치
+ */
+function openReportViewerKeyword(rcpNo, dcmNo, keyword){
+	var url = "/dsaf001/main.do?rcpNo=" + rcpNo;
+	if (dcmNo) {
+		//<![CDATA[
+		url += "&dcmNo=" + dcmNo;
+		//]]>
+	}
+	//<![CDATA[
+	url += "&keyword=" + encodeURIComponent(keyword);
+	//]]>
+
+	var size = getOpenSize(1024, 768);
+	window.open(url, rcpNo+win_num, size+",resizable=yes");
+	win_num++;
+	if (dcmNo) {
+		$j("#r_"+rcpNo+dcmNo).css("color","#cd0093");
+	}else{
+		$j("#r_"+rcpNo).css("color","#cd0093");
+	}
+}
+
+/*
+ * 메인화면 전용
+ */
+function openReportViewerMain(rcpNo, dcmNo){
+	var url = "/dsaf001/main.do?rcpNo=" + rcpNo;
+	if (dcmNo) {
+		//<![CDATA[
+		url += "&dcmNo=" + dcmNo;
+		//]]>
+	}
+
+	var size = getOpenSize(1200, 810);
+	window.open(url, rcpNo+win_num, size+",resizable=yes");
+	win_num++;
+}
+
+/*
+ * 사용(xbrl 미리보기)
+ */
+function openXbrlViewer(rcpNo, dcmNo, lang){
+	var url = "";
+	if (lang == "en") url = "https://englishdart.fss.or.kr/dsbh002/main.do?rcpNo=" + rcpNo;
+	else url = "/dsaf002/main.do?rcpNo=" + rcpNo;
+	
+	if (dcmNo) {
+		//<![CDATA[
+		url += "&dcmNo=" + dcmNo;
+		//]]>
+	}
+
+	var size = getOpenSize(1200, 810);
+	window.open(url, "_blank", size+",resizable=yes");
+}
+
+/*
+ * 사용(xbrl뷰어 열기 팝업(opendart link))
+ */
+function openXbrlViewerNew(opendartUrl, rcpNo, stat, preview) {
+	if (stat == "Y") {
+		var url = opendartUrl + "/xbrl/viewer/main.do?rcpNo=" + rcpNo;
+
+		var size = getOpenSize(1200, 810);
+		window.open( url, rcpNo+win_num, size+",resizable=yes" );
+		win_num++;
+	} else if (stat == "N") {
+		if (preview == "Y") {
+			openXbrlViewer(rcpNo, "", "");
+		} else {
+			alert( '문서 생성중 입니다.\n잠시 후 다시 조회 하시기 바랍니다.' );
+		}
+	} else {
+		alert( '생성된 문서가 없습니다.' );
+	}
+}
+
+//영문보기
+function openViewer(rcpNo, lang){
+	var url = "";
+	if (lang == "en") url = "https://englishdart.fss.or.kr/dsbh001/main.do?rcpNo=" + rcpNo;
+	else url = "/dsaf001/main.do?rcpNo=" + rcpNo;
+
+	var size = getOpenSize(1200, 810);
+	window.open(url, "_blank", size+",resizable=yes");
+}
+
+function openHelp(menu) {
+	var url = "/guide/main.jsp";
+	if (menu) {
+		url += "?menu=" + menu;
+	}
+	var size = getOpenSize(1100, 761);
+	var win = window.open(url, "DartGuide", size + ",resizable=yes,scrollbars=no");
+	if (win == null) {
+		alert("팝업차단을 해제하시기 바랍니다.");
+	} else {
+		win.focus();
+	}
+}
+
+</script>
+<form name="reportForm" method="post" action="/dsaf001/main.do">
+	<input type="hidden" name="rcpNo" />
+	<input type="hidden" name="dcmNo" />
+	<input type="hidden" name="keyword" />
+	<input type="submit" style="display:none;" />
+</form>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>삼성엔지니어링/단일판매ㆍ공급계약체결/(2023.06.22)단일판매ㆍ공급계약체결</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2023-06-22</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">단일판매·공급계약 체결</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2018-09-04</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">계약종료일 변경</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">5. 계약기간-종료일</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2023-06-23</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">9. 기타 투자판단과 관련한 중요사항</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">당사는  Waste Heat Recovery Project 프로젝트 관련하여 발주처와 계약 종료일에 관하여 협의 중으로, 향후 구체적인 내용이 확정되는 시점에 재공시 예정입니다.</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">-</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">공사수주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">- 체결계약명</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">Waste Heat Recovery Project</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="153"> <span style="width:153px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">526,577,599,405</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">5,536,227,288,788</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">9.51</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">Abu Dhabi Oil Refining Company</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">UAE</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">2018-03-25</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">Lump-sum turn key</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">7. 계약(수주)일자</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">2018-09-03</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">8. 공시유보 관련내용</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="596"> <span style="width:596px;font-size:10pt;">9. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;"> <br xmlns:java="http://xml.apache.org/xalan/java">당사는  Waste Heat Recovery Project 프로젝트 관련하여 발주처와 계약 종료일에 관하여 협의 중으로, 향후 구체적인 내용이 확정되는 시점에 재공시 예정입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">1) 상기 계약은 2018년 3월 7일 자율공시한 LOA 수령 프로젝트에 대한 본 계약입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 상기 2 매출액과 대규모 법인여부는 2017년말 연결 재무제표 기준으로 작성되었습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 상기 2 계약금액은 USD 472,988,053에 계약일자 최초 매매기준환율(USD 1,113.30)을 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  적용하여 원화 환산한 금액입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4) 프로젝트 개요 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> · 사업명 : Waste Heat Recovery Project <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> · 발주처 : Abu Dhabi Oil Refining Company(UAE 국영석유회사 ADNOC의 자회사) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> · 내  용 : 기존 시설의 폐열을 이용해 230메가와트(MW)의 전력을 생산하는 시설과 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->             시간당 2,600 입방미터(M3)의 담수를 생산하는시설 등을 건설하는 프로젝트 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> · 공  기 : 63개월 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> · 금  액 : 526,577,599,405원 (USD 472,988,053) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5) 공사기간, 계약금액 등 공사 진행 과정상 변동 될 수 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--></span> </td> 
+      </tr> 
+      <tr> 
+       <td width="153"> <span style="width:153px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="3" width="443"> <span style="width:443px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20180307000030&amp;rcpno=20180307000030&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2018-03-07 기타 경영사항(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20180904000348&amp;rcpno=20180904000348&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2018-09-04 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

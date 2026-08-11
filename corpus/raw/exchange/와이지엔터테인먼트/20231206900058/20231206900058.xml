@@ -1,0 +1,132 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>와이지엔터테인먼트/투자판단 관련 주요경영사항/(2023.12.06)투자판단 관련 주요경영사항(그룹 전속 계약 체결의 건)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">그룹 전속 계약 체결의 건</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">당사 소속 아티스트 블랙핑크 멤버 4인 전원의 그룹 전속 계약 체결</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 사실발생(확인)일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2023-12-06</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">4. 결정일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2023-12-06</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">2</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">참석</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">5. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">- 당사는 소속 아티스트 블랙핑크 멤버 4인 전원의 그룹 전속 계약 체결의 건에 대한 이사회 결의를 완료하였습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 해당 사실은 당사의 재무현황 및 투자자의 의사결정 등에 영향을 미칠 수 있는 경영사항으로 판단하여 공시하였습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span class="xforms_input" style="width:475px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+   </div> 
+  </div>  
+ </body>
+</html>

@@ -1,0 +1,158 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>삼성E&A/단일판매ㆍ공급계약 해지/(2025.04.07)단일판매ㆍ공급계약 해지</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 해지</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">1. 판매ㆍ공급계약 해지 구분</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">공사수주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">- 해지계약명</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">Contract Agreement in respect of Salamanca ULSD Project</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="153"> <span style="width:153px;font-size:10pt;">2. 해지내역</span> </td> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">해지금액(원)</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;text-align:right;">186,755,793,747</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;text-align:right;">8,911,451,187,779</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;text-align:right;">2.10</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">Samsung Ingenieria DUBA S.A. de C.V</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">자회사</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">4. 계약기간</span> </td> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">2016-01-04</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">2025-04-04</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">5. 해지 주요사유</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">발주처의 계약 해지 통보</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">6. 해지일자</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">2025-04-04</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">7. 공시유보 관련내용</span> </td> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" width="264"> <span style="width:264px;font-size:10pt;">8. 기타 투자판단과 관련한 중요사항</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">- 멕시코 국영석유회사 PEMEX와 당사의 멕시코 법인 Samsung Ingenieria DUBA S.A. DE C.V는 2015년 Salamanca ULSD Project 계약을 체결하였고, 당사는 원계약 중 설계와 조달 과정을 멕시코 법인으로 부터 발주 받아 2015년 12월 28일 공시하였습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 2016년 10월 8일, 원발주처로부터 국가 정유프로젝트 예산 감축으로 인해 공사의 일시 중단을 요청 받았습니다. 이 후, 8년간 이미 공시된 7회의 추가 일시 중단 포함 총 25회의 일시 중단이 계속된 후, 금일 최종적으로 계약 해지 통보를 받았습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 당사는 멕시코 국영석유회사인 발주처로부터 계약해지 통보 공문 수령후 원만하게 계약해지를 합의했습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 발주처와의 우호적 관계를 기반으로 프로젝트 중단기간 중 발생한 비용에 대해 보상 받았고, 기존에 공시한 '25년 매출, 영업이익 전망에 동 프로젝트는 반영되어 있지 않기 때문에 계약해지로 인한 재무적 손실은 없습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2의 해지금액은 최초 계약금액의 본사분 USD 196,260,000.00에서 진행분을 제외한 USD 159,388,746.05 에 2015년 12월 24일 최초 매매기준율(1,171.70원)을 적용한 값입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2의 최근매출액은 2014년 말 연결재무제표 기준입니다. 2024년 말 연결재무제표 기준 매출 9조 9,666억 대비 1.87% 입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 6의 해지일자는 발주처로부터 계약 해지통보 공문을 수령한 날입니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="86"> <span style="width:86px;font-size:10pt;">관련공시</span> </td> 
+       <td width="246"> <span style="width:246px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20151228000068&amp;rcpno=20151228000068&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2015-12-28 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20161010000420&amp;rcpno=20161010000420&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2016-10-10 기타 경영사항(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20170420000395&amp;rcpno=20170420000395&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2017-04-20 기타 경영사항(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20171016000168&amp;rcpno=20171016000168&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2017-10-16 기타 경영사항(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20180412000475&amp;rcpno=20180412000475&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2018-04-12 기타 경영사항(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20180928000674&amp;rcpno=20180928000674&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2018-09-28 기타 경영사항(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20180928000791&amp;rcpno=20180928000791&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2018-09-28 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20181228000697&amp;rcpno=20181228000697&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2018-12-28 기타 경영사항(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20190627000424&amp;rcpno=20190627000424&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2019-06-27 기타 경영사항(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

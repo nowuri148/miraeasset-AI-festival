@@ -1,0 +1,210 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>LG에너지솔루션/투자판단 관련 주요경영사항/(2025.12.26)투자판단 관련 주요경영사항</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2025-12-26</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">투자판단 관련 주요경영사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2023-02-02</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">공시유보 해제 및 계약해지 사실 안내</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2. 주요내용</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">당사는 미국 FEPS와 하기와 같은 장기공급을 합의하는 계약을 체결함. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">가. 공급상대방 : FEPS(Freudenberg E-Power Systems) <br java="http://xml.apache.org/xalan/java">나. 공급제품 : 전기차 배터리 모듈 <br java="http://xml.apache.org/xalan/java">다. 공급물량 : 19GWh <br java="http://xml.apache.org/xalan/java">라. 공급개시일 : 2024년 <br java="http://xml.apache.org/xalan/java">마. 기대효과 : 미래 고성장이 예상되는 상용차(버스, 트럭 등) 시장 대상 판로 확보</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 당사는 Freudenberg E-Power Systems의 전기차 배터리 공급 사업을 위하여 Freudenberg E-Power Systems의 자회사인 Freudenberg Battery Power Systems, LLC와 총 19GWh 규모의 전기차 배터리 공급 계약을 체결한 바 있음 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">- 해당 계약은 계약상대의 배터리 사업 철수에 따른 상호 합의로 2025년 12월 26일자로 해지됨 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">가. 계약상대 : Freudenberg Battery Power Systems, LLC <br java="http://xml.apache.org/xalan/java">나. 계약제품 : 전기차 배터리 모듈 <br java="http://xml.apache.org/xalan/java">다. 계약물량 : 19GWh <br java="http://xml.apache.org/xalan/java">라. 계약금액 : 4,082,377,000,000원 <br java="http://xml.apache.org/xalan/java">마. 계약기간 : 2024년 4월 1일~2031년 12월 31일 <br java="http://xml.apache.org/xalan/java">바. 계약해지 : 2025년 12월 26일</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">가. 본건 계약 예상금액은 확정되지 않았으나 수시 공시 기준금액 이상으로 추정됨에 따라 공시하는 건임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">다, 상기 공급 합의 계약 관련하여 구체적인 사항은 추후 고객과의 협의에 따라 변동될 수 있음.</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">가. 본건 계약 예상금액은 확정되지 않았으나 수시 공시 기준금액 이상으로 추정됨에 따라 공시한 건임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">다. (삭제) <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">라. '2. 주요내용'의 '라. 계약금액'은 최초 계약 기준 물량에 예상 판가를 적용한 계약금액 $2,795,000,000에 해지일 (2025년 12월 26일) 기준 하나 은행 최초 고시 환율(1,460.6원/USD)을 적용하여 산정한 추정 금액임 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">마. 본 계약은 계약상대의 배터리 사업 철수에 따른 상호 합의로 2025년 12월 26일자로 해지되었음. 상세한 내용은 2025년 12월 26일자 '단일판매ㆍ공급계약 해지' 공시를 참조</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">【공시유보 관련사항】</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">1. 유보사항 <br java="http://xml.apache.org/xalan/java">- 구체적인 공급가액 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">2. 유보사유 <br java="http://xml.apache.org/xalan/java">- 경영상 비밀유지 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">3. 유보기한 <br java="http://xml.apache.org/xalan/java">- 2024-12-31</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">1. 유보사항 <br java="http://xml.apache.org/xalan/java">- <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">2. 유보사유 <br java="http://xml.apache.org/xalan/java">- <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">3. 유보기한 <br java="http://xml.apache.org/xalan/java">-</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">- 본 계약이 해지되어 공시유보를 해제하였습니다.</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">구매 공급에 대한 합의서 체결</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">- 당사는 Freudenberg E-Power Systems의 전기차 배터리 공급 사업을 위하여 Freudenberg E-Power Systems의 자회사인 Freudenberg Battery Power Systems, LLC와 총 19GWh 규모의 전기차 배터리 공급 계약을 체결한 바 있음 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 해당 계약은 계약상대의 배터리 사업 철수에 따른 상호 합의로 2025년 12월 26일자로 해지됨 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">가. 계약상대 : Freudenberg Battery Power Systems, LLC <br xmlns:java="http://xml.apache.org/xalan/java">나. 계약제품 : 전기차 배터리 모듈 <br xmlns:java="http://xml.apache.org/xalan/java">다. 계약물량 : 19GWh <br xmlns:java="http://xml.apache.org/xalan/java">라. 계약금액 : 4,082,377,000,000원 <br xmlns:java="http://xml.apache.org/xalan/java">마. 계약기간 : 2024년 4월 1일~2031년 12월 31일 <br xmlns:java="http://xml.apache.org/xalan/java">바. 계약해지 : 2025년 12월 26일</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 이사회결의일(결정일) 또는 사실확인일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2023-02-02</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">가. 본건 계약 예상금액은 확정되지 않았으나 수시 공시 기준금액 이상으로 추정됨에 따라 공시한 건임 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">나. 상기 '3. 이사회결의일(결정일) 또는 사실확인일'은 구매 공급에 대한 합의서 체결일임 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">다. (삭제) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">라. '2. 주요내용'의 '라. 계약금액'은 최초 계약 기준 물량에 예상 판가를 적용한 계약금액 $2,795,000,000에 해지일 (2025년 12월 26일) 기준 하나은행 최초 고시 환율(1,460.6원/USD)을 적용하여 산정한 추정 금액임 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">마. 본 계약은 계약상대의 배터리 사업 철수에 따른 상호 합의로 2025년 12월 26일자로 해지되었음. 상세한 내용은 2025년 12월 26일자 '단일판매ㆍ공급계약 해지' 공시를 참조</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span style="width:475px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20251226000706&amp;rcpno=20251226000706&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2025-12-26 단일판매ㆍ공급계약 해지</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20240401000927&amp;rcpno=20240401000927&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2024-04-01 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div id="LIB_L9081" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:11pt;font-weight:bold;">【공시유보 관련사항】</span> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormG1_Form0_Table0" style="margin:0px 0px 20px 0px;width:597px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="160"> <span style="width:160px;font-size:10pt;">1. 유보사항</span> </td> 
+          <td width="437"> <span class="xforms_input" style="width:437px;font-size:10pt;">-</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="160"> <span style="width:160px;font-size:10pt;">2. 유보사유</span> </td> 
+          <td width="437"> <span class="xforms_input" style="width:437px;font-size:10pt;">-</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="160"> <span style="width:160px;font-size:10pt;">3. 유보기한</span> </td> 
+          <td width="437"> <span class="xforms_input" style="width:437px;font-size:10pt;">-</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

@@ -1,0 +1,210 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>삼성바이오로직스/투자판단 관련 주요경영사항/(2024.06.26)투자판단 관련 주요경영사항</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2024-06-26</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">투자판단 관련 주요경영사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2021-12-23</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">고객사의 요청에 따른 계약기간 및 유보일자 변경</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2. 주요내용</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">4) 계약기간 : 2021.10.30 ~ 2024.06.30</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">4) 계약기간 : 2021.10.30 ~ 2024.07.31</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 계약상대는 경영상 비밀유지 사유로 2024년 6월 30일 이전 공개될 예정이며,해당 일자는 추후 변동 가능함</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 계약상대는 경영상 비밀유지 사유로 2024년 7월 31일 이전 공개될 예정이며,해당 일자는 추후 변동 가능함</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">【공시유보 관련사항】 <br java="http://xml.apache.org/xalan/java">3. 유보기한</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2024-06-30</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2024-07-31</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">-</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">바이오의약품 위탁생산계약 의향서 체결</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">1) 계약 상대방 : 유럽 소재 제약사 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 계약 금액 : 91,369,732,137원 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 의향서 체결일자 : 2021.10.30 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4) 계약기간 : 2021.10.30 ~ 2024.07.31</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 이사회결의일(결정일) 또는 사실확인일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2022-03-30</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">- 당사는 2021년 10월 30일 위탁생산계약 의향서를 체결하였고, 2021년 12월 23일 계약상 특정조건이 충족함에 따라 공시를 진행함 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 계약금액은 직전 공시금액 USD 56,581,000에서 고객사의 요청으로 USD 20,122,939 증가한 확정 금액 USD 76,703,939에 2021년 12월 23일 최초 매매기준율(USD/KRW 1,191.20)을 적용한 금액임 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 계약 금액은 당사의 최근사업연도 매출액(1,164,776,873,641원)의 7.84%에 해당하는 금액임 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 계약 금액은 양사간 계약상 구속력이 있으며, 향후 본계약을 체결할 경우 확정된 내용을 공시할 예정임 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 계약상대는 경영상 비밀유지 사유로 2024년 07월 31일 이전 공개될 예정이며,해당 일자는 추후 변동 가능함</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span style="width:475px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20211223000553&amp;rcpno=20211223000553&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2021-12-23 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20220331000001&amp;rcpno=20220331000001&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2022-03-31 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20220630000901&amp;rcpno=20220630000901&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2022-06-30 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20220913000224&amp;rcpno=20220913000224&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2022-09-13 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20221228000967&amp;rcpno=20221228000967&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2022-12-28 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230328001524&amp;rcpno=20230328001524&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-03-28 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230629000664&amp;rcpno=20230629000664&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-06-29 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230830000295&amp;rcpno=20230830000295&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-08-30 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20231129000277&amp;rcpno=20231129000277&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-11-29 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20240327000758&amp;rcpno=20240327000758&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2024-03-27 투자판단 관련 주요경영사항</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div id="LIB_L9081" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:11pt;font-weight:bold;">【공시유보 관련사항】</span> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormG1_Form0_Table0" style="margin:0px 0px 20px 0px;width:597px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="160"> <span style="width:160px;font-size:10pt;">1. 유보사항</span> </td> 
+          <td width="437"> <span class="xforms_input" style="width:437px;font-size:10pt;">계약 상대방</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="160"> <span style="width:160px;font-size:10pt;">2. 유보사유</span> </td> 
+          <td width="437"> <span class="xforms_input" style="width:437px;font-size:10pt;">경영상 비밀유지</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="160"> <span style="width:160px;font-size:10pt;">3. 유보기한</span> </td> 
+          <td width="437"> <span class="xforms_input" style="width:437px;font-size:10pt;">2024-07-31</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

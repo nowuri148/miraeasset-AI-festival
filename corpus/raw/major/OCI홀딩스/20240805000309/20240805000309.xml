@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11347">주요사항보고서(주식교환ㆍ이전 결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20221018">1.3</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00148896">OCI홀딩스(주)</COMPANY-NAME>
+
+
+<BODY ATOCID="2">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP>
+<COL WIDTH="132"></COL>
+<COL WIDTH="174"></COL>
+<COL WIDTH="267"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="53"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="324" HEIGHT="30">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="276" HEIGHT="30">  2024년     08월     05일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="53"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">OCI 홀딩스 주식회사</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">서 진 석</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">서울특별시 중구 소공로 94</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(전  화) 02-727-9300</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(홈페이지)http://www.oci-holdings.co.kr</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">작 성 책 임 자 :</TD>
+<TD WIDTH="183" HEIGHT="30">(직  책) 전 무</TD>
+<TD WIDTH="276" HEIGHT="30">(성  명) 이 제 영</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(전  화) 02-727-9531</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ATOCID="1">주식교환ㆍ이전 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="CRP_INFO" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="909" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="121"></COL>
+<COL WIDTH="126"></COL>
+<COL WIDTH="74"></COL>
+<COL WIDTH="552"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="348" HEIGHT="30" AUPDATECONT="N">1. 구 분</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="EXCH_MOV" AUNITVALUE="E" VALIGN="MIDDLE" ALIGN="CENTER">주식교환</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="348" HEIGHT="30" AUPDATECONT="N"> - 교환ㆍ이전 형태</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="EXCH_FRM" AUNITVALUE="1" VALIGN="MIDDLE" ALIGN="CENTER">소규모</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="10" VALIGN="MIDDLE" WIDTH="130" HEIGHT="300" AUPDATECONT="N">2. 교환ㆍ이전 대상법인</TD>
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">가. 회사명</TD>
+<TE WIDTH="561" HEIGHT="30" ACODE="EXCH_NM" VALIGN="MIDDLE" ALIGN="CENTER">OCI스페셜티(주)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">나. 대표자</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="EXCH_CEO" ALIGN="CENTER">신선수</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">다. 주요사업</TD>
+<TE WIDTH="561" HEIGHT="30" ACODE="EXCH_MN_BZ" VALIGN="MIDDLE" ALIGN="CENTER">태양광 부품 제조업 등</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">라. 회사와의 관계</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="EXCH_RLT" VALIGN="MIDDLE" ALIGN="CENTER" AUNITVALUE="6">자회사</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="135" HEIGHT="60" AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE">마. 발행주식총수(주)</TD>
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">보통주식</TD>
+<TE WIDTH="561" HEIGHT="30" ACODE="EXCH_CST_CNT" VALIGN="MIDDLE" ALIGN="RIGHT">191,981,831</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종류주식</TD>
+<TE WIDTH="561" HEIGHT="30" ACODE="EXCH_PST_CNT" VALIGN="MIDDLE" ALIGN="RIGHT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="135" HEIGHT="120" AUPDATECONT="N" ROWSPAN="4" VALIGN="MIDDLE">바. 최근 사업연도요약재무내용(원)</TD>
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">자산총계</TD>
+<TE WIDTH="561" HEIGHT="30" ACODE="EXCH_ASST" VALIGN="MIDDLE" ALIGN="RIGHT">38,130,148,741</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">부채총계</TD>
+<TE WIDTH="561" HEIGHT="30" ACODE="EXCH_DPT" VALIGN="MIDDLE" ALIGN="RIGHT">3,440,615,291</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">자본총계</TD>
+<TE WIDTH="561" HEIGHT="30" ACODE="EXCH_CPT_SUM" VALIGN="MIDDLE" ALIGN="RIGHT">34,689,533,450</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">자본금</TD>
+<TE WIDTH="561" HEIGHT="30" ACODE="EXCH_SPT" VALIGN="MIDDLE" ALIGN="RIGHT">95,990,915,500</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="122" AUPDATECONT="N" VALIGN="MIDDLE">3. 교환ㆍ이전 비율</TD>
+
+<TE WIDTH="561" HEIGHT="122" ACODE="EXCH_RT" VALIGN="MIDDLE">OCI홀딩스(주) : OCI스페셜티(주) = 1 : 0.0006885주식교환일 현재 OCI홀딩스(주)를 제외한 나머지 OCI스페셜티(주) 주주가 소유한 OCI스페셜티(주) 주식은 주식교환일에 OCI홀딩스(주)에 이전되고, OCI홀딩스(주)는 그 대가로 주식교환 대상주주에게 신주 발행에 갈음하여 주당 현금 
+<SPAN>146원</SPAN>을 교부할 예정입니다.(상법 제360조의3 제3항 제4호)
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="348" HEIGHT="1662" AUPDATECONT="N">4. 교환ㆍ이전 비율 산출근거</TD>
+
+<TE WIDTH="561" HEIGHT="1662" ACODE="EXCH_BAS" VALIGN="MIDDLE">
+<P></P>
+
+<P>
+<SPAN USERMARK="F-GL11">(1) 완전모회사가 되는 회사(OCI홀딩스(주)) 교환가액</SPAN>
+<SPAN USERMARK="F-GL11">1)완전모회사(OCI홀딩스(주)의 기준시가) </SPAN>
+<SPAN USERMARK="F-GL11">OCI홀딩스(주)의 기준시가는 자본시장과 금융투자업에 관한 법률 시행령 제 176조의5 제1항 제1호 및 제176조의6 제2항에 따라 주식교환을 위한 이사회 결의일(2024년 08월 05일)과 주식교환계약을 체결한 날(2024년 08월 06일) 중 앞서는 날의 전일(2024년 08월 02일)을 기산일로 한 최근 1개월간의 거래량 가중산술평균종가, 최근 1주일간의 거래량 가중산술평균종가, 최근일의 종가를 산술평균한가액으로 산정하였습니다.</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">- 최근 1개월 거래량 가중산술평균종가(2024.07.03 ~ 2024.08.02) : 79,683원</SPAN>
+<SPAN USERMARK=" 0X0000FF"></SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">- 최근 1주일 거래량 가중산술평균종가(2024.07.29 ~ 2024.08.02) : 73,762원</SPAN>
+<SPAN USERMARK=" 0X0000FF"></SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">- 최근일 종가(2024.08.02) : 73,000원</SPAN>
+<SPAN USERMARK=" 0X0000FF"></SPAN>
+<SPAN USERMARK="F-GL11">- 기준시가(산술평균가액) : 75,482원</SPAN>
+<SPAN USERMARK=" 0X0000FF"></SPAN>
+<SPAN USERMARK="F-GL11">2)완전모회사(OCI홀딩스(주)의 자산가치)완</SPAN>
+<SPAN USERMARK="F-GL11">전모회사의 1주당 자산가치는 증권의 발행 및 공시 등에 관한 규정 시행세칙 제5조에 의거하여, 주요사항보고서 제출일이 속하는 사업연도의 직전 사업연도말 현재의 별도 재무제표상의 자본총계에서 일부 조정항목을 가감하여 산정한 순자산가액을 분석기준일 현재의 발행주식총수로 나누어 산정하였습니다. OCI홀딩스(주)의 1주당 자산가치 산정내역은 다음과 같습니다.</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">- 최근 사업연도말 별도재무상태표 상 자본총계 : 2,179,209백만원</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">- 조정항목 : 1,969,493백만원</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">  ① 가산항목 : 2,266,718백만원</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">  ② 차감항목 : 297,226백만원</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">- 조정된 순자산가액 : 4,148,702백만원</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">- 발행주식총수 : 19,563,983주</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">- 주당 자산가치 : 212,058원</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+</P>
+
+<P>
+<SPAN USERMARK="F-GL11">주권상장법인의 교환가액은 자본시장과 금융투자업에 관한 법률 시행령 제176조의5 제 1항 제 2호 가목에 따라, 기준시가를 적용하되 기준시가가 자산가치보다 낮은 경우에는 자산가치로 할 수 있도록 되어 있습니다. 따라서 적정한 주식교환비율에 대한 최선의 방안을 고려하여 교환가액을 자산가치로 합의하여 결정하였습니다.</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+</P>
+<P>- 기준시가 : 75,482원</P>
+<P>- 주당 자산가치 : 212,058원</P>
+<P>- 교환가액 : 212,058원</P>
+
+<P>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">(2) 완전 자회사가 되는 회사(OCI스페셜티(주)) 교환가액</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">자본시장과 금융투자업에 관한 법률 시행령 제176조의5 및 증권의 발행 및 공시 등에 관한 규정 제5-13조와 동 규정 시행세칙 제4조 내지 제6조에 의하면, 비상장법인이 완전자회사가 되는 회사의 주식교환가액은 본질가치(자산가치와 수익가치를 각각 1과 1.5의 비율로 가중산술평균한 가액)로 평가 하도록 규정하고 있으므로, 완전자회사가 되는 회사의 보통주 교환가액의 산정은 본질가치를 적용하였습니다.</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">- 자산가치 : 176원- 수익가치 : 126원- 본질가치(가중산술평균가액) : 146원- 교환가액 : 146원</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">(3) 교환비율 산출</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">상기 교환가액 산출근거에 따라 금번 주식교환의 교환비율은</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">1(OCI홀딩스(주)) : 0.0006885(OCI스페셜티(주))이며, 신주 발행에 갈음하여 OCI홀딩스(주)는  OCI홀딩스(주)를 제외한 나머지 OCI스페셜티(주) 주주에게 주당 현금 </SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">146원을 교부할 예정입니다.</SPAN>
+</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="130" HEIGHT="173" AUPDATECONT="N" ROWSPAN="5" VALIGN="MIDDLE">5. 외부평가에 관한 사항</TD>
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">외부평가 여부</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="EXV_YN" AUNITVALUE="Y" VALIGN="MIDDLE" ALIGN="CENTER">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE">- 근거 및 사유</TD>
+<TE WIDTH="561" HEIGHT="53" ACODE="EXV_BSS">자본시장과 금융투자업에 관한 법률 시행령 제176조의6 제3항에 따라, 주식교환시 교환비율의 적정성에 대하여 외부평가를 실시하였습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">외부평가기관의 명칭</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="EXV_NM" ALIGN="CENTER">삼일회계법인</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">외부평가 기간</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="EXV_PROD" AUNITVALUE="20240722-20240802" ALIGN="CENTER">2024년 07월 22일 ~ 2024년 08월 02일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">외부평가 의견</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="EXV_OPN" ALIGN="CENTER">적정</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="76" AUPDATECONT="N" VALIGN="MIDDLE">6. 교환ㆍ이전 목적</TD>
+<TE WIDTH="561" HEIGHT="76" ACODE="EXCH_RSN">OCI스페셜티(주)를 OCI홀딩스(주)의 비상장 100% 자회사로 전환함으로써, 경영 효율성 및 유연성을 증대하고, OCI홀딩스(주)와의 사업 시너지를 창출하여 기업가치를 제고하고자 합니다</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="260" AUPDATECONT="N" VALIGN="MIDDLE">7. 교환ㆍ이전의 중요영향 및 효과</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="260" ACODE="EXCH_EFT">(1) 회사의 경영에 미치는 중요 영향 및 효과본 건 주식교환 완료 시 OCI홀딩스(주) 기존 주주들의 지분율 및 지배구조 관련 경영권의 변동은 없으며, OCI홀딩스(주) 및 OCI스페셜티(주)는 존속법인으로 계속 남아 있게 됩니다. 주식교환으로 완전모회사가 되는 OCI홀딩스(주)는 주식교환 이후에도 계속 주권상장법인으로, 완전자회사가 되는 OCI스페셜티(주)는 주권비상장법인으로 유지될 예정입니다.(2) 회사의 재무/영업에 미치는 중요 영향 및 효과본 건 주식교환을 통해 OCI스페셜티(주)가 OCI홀딩스(주)의 완전자회사로 편입됨으로써 외부 환경 변화에 탄력적으로 대응할 수 있는 효율적인 경영체계를 갖추고, 보다 빠르고 유연한 경영판단을 통해 기업경영의 효율성을 제고하고자 합니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="16" WIDTH="130" HEIGHT="496" AUPDATECONT="N" VALIGN="MIDDLE">8. 교환ㆍ이전일정</TD>
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">교환ㆍ이전계약일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="MGR_CRT" AUNITVALUE="20240806" VALIGN="MIDDLE" ALIGN="CENTER">2024년 08월 06일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">주주확정기준일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="MGR_DDY" AUNITVALUE="20240820" VALIGN="MIDDLE" ALIGN="CENTER">2024년 08월 20일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="135" HEIGHT="60" AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE">주주명부 폐쇄기간</TD>
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="CLO_BGN_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="CLO_END_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="135" HEIGHT="76" AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE">주식교환ㆍ이전 반대의사 통지접수기간</TD>
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="REV_BGN_DT" AUNITVALUE="20240820" VALIGN="MIDDLE" ALIGN="CENTER">2024년 08월 20일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="83" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU WIDTH="561" HEIGHT="46" AUNIT="REV_END_DT" AUNITVALUE="20240903" VALIGN="MIDDLE" ALIGN="CENTER">2024년 09월 03일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">주주총회 예정일자</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="MGR_SHM_DT" AUNITVALUE="20240926" VALIGN="MIDDLE" ALIGN="CENTER">2024년 09월 26일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="135" HEIGHT="60" AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE">주식매수청구권행사기간</TD>
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="BUY_BGN_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="BUY_END_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="135" HEIGHT="60" AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE">구주권제출기간</TD>
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="OLD_STK_BGN_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="OLD_STK_END_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="135" HEIGHT="60" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2">매매거래정지예정기간</TD>
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="EXV_BGN_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="83" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="EXV_END_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">교환ㆍ이전일자</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="EXV_DT" AUNITVALUE="20241029" VALIGN="MIDDLE" ALIGN="CENTER">2024년 10월 29일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">신주권교부예정일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="MGR_SSY" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="218" HEIGHT="30" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">신주의 상장예정일</TD>
+<TU WIDTH="561" HEIGHT="30" AUNIT="MGR_CSY" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">9. 교환ㆍ이전 후 완전모회사명</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="HLDC_NM" ALIGN="CENTER">OCI홀딩스(주)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="130" HEIGHT="226" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="6">10. 주식매수청구권에 관한 사항</TD>
+<TD COLSPAN="2" WIDTH="218" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE">행사요건</TD>
+<TE WIDTH="561" HEIGHT="53" ACODE="MGR_STO">OCI홀딩스(주)는 본 건 주식교환을 상법 제360조의10에 따른 소규모 주식교환으로 진행하므로 주식교환 반대주주의 주식매수청구권은 부여되지 않습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">매수예정가격</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="MGR_STP" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">행사절차, 방법, 기간, 장소</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="MGR_STD" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">지급예정시기, 지급방법</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="MGR_STY" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE">주식매수청구권 제한 관련 내용</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="53" ACODE="MGR_STC" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">계약에 미치는 효력</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="MGR_STE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">11. 우회상장 해당 여부</TD>
+<TU VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" AUNIT="MGR_BDL" AUNITVALUE="N" ALIGN="CENTER">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">12. 타법인의 우회상장 요건 충족 여부</TD>
+<TU VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" AUNIT="MGR_BDK" AUNITVALUE="N" ALIGN="CENTER">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">13. 이사회결의일(결정일)</TD>
+<TU VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" AUNIT="DRT_RSLT_DT" AUNITVALUE="20240805" ALIGN="CENTER">2024년 08월 05일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="130" HEIGHT="60" AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE"> - 사외이사참석여부</TD>
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">참석(명)</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="ODRT_ATD_CNT" ALIGN="RIGHT">4</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="218" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">불참(명)</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="ODRT_NATD_CNT" ALIGN="RIGHT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE"> - 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+<TU VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" AUNIT="ADT_ATD_YN" AUNITVALUE="-" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">14. 풋옵션 등 계약 체결여부</TD>
+<TU VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" AUNIT="PO_CTRT_YN" AUNITVALUE="N" ALIGN="CENTER">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE"> - 계약내용</TD>
+<TE VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" ACODE="PO_CTRT_DTL" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">15. 증권신고서 제출대상 여부</TD>
+<TU VALIGN="MIDDLE" WIDTH="561" HEIGHT="30" AUNIT="RPT_SM_YN" AUNITVALUE="N" ALIGN="CENTER">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="348" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE"> - 제출을 면제받은 경우 그 사유</TD>
+<TE WIDTH="561" HEIGHT="53" ACODE="RPT_SBM">OCI홀딩스(주)는 본 건 주식교환에 대해 신주 발행에 갈음하여 현금을 교부하고 증권의 모집 또는 매출을 하지 않기 때문에 증권신고서 제출 대상이 아닙니다.</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<P>
+<SPAN>16. 향후 회사구조개편에 관한 계획</SPAN>
+</P>
+<P>OCI홀딩스(주)는 주요사항보고서 제출일 현재 회사 구조개편과 관련하여 구체적으로 결정한 사항이 없으며, 향후 구체적인 사항에 대한 결의가 있는 경우 관련 공시규정에 따라 공시할 계획입니다.17. 기타 투자판단에 참고할 사항</P>
+<P></P>
+<P>가. 상기 '2.교환ㆍ이전 대상법인'의  '바. 최근 사업연도 요약재무내용(원)'은 2024년1분기 회계연도 별도재무제표 기준입니다.</P>
+<P USERMARK=" 0X0000FF"></P>
+
+<P>
+<SPAN>나. OCI홀딩스(주)의 경우 상법 제360조의10 제 1항에 따라 소규모 주식교환 방식으로 진행되므로 상법 제360조의10 제4항의 규정에 의거 주주총회에 갈음하여 이사회의 승인으로 본 건 주식교환을 진행하며, 상기 '8.교환ㆍ이전일정'의  '주주총회 예정일자'는 이사회 예정일자 입니다.</SPAN>
+<SPAN></SPAN>
+<SPAN USERMARK=" 0X0000FF"></SPAN>
+<SPAN></SPAN>
+<SPAN>다. OCI홀딩스(주)는 OCI스페셜티(주)의 주식을  </SPAN>
+<SPAN>78.07%</SPAN>
+<SPAN>(2024년 08월 05일 현재 기준)를 소유하고 있으며, 금번 주식교환의 교환비율은 1(OCI홀딩스(주)) : 0.0006885(OCI스페셜티(주))이지만 교환대가로 신주를 발행하지 아니하고 현금을 교부하며, 주식교환 이후 OCI스페셜티(주)는 OCI홀딩스(주)의 100% 완전 자회사로 존속할 예정입니다.</SPAN>
+<SPAN></SPAN>
+<SPAN USERMARK=" 0X0000FF"></SPAN>
+<SPAN></SPAN>
+<SPAN>라. OCI홀딩스(주)의 경우 상법 제360조의10의 규정에 의거하여 소규모 주식교환 절차에 따라 진행하므로, 주식교환 반대주주의 주식매수청구권은 부여되지 않습니다. 다만, 상법 제360조의10 제5항에 따라 OCI홀딩스(주)의 발행주식총수의 100분의 20 이상에 해당하는 주식을 소유한 주주가 본건 주식교환에 반대하는 경우, 본 주식교환을 본건 소규모 주식교환 절차에 따라 진행할 수 없으며 본 주식교환계약이 해제될 수 있습니다. 본 소규모 주식교환의 반대의사통지 접수기간은 2024년 08월 20일 ~ 2024년 09월 03일입니다.</SPAN>
+<SPAN></SPAN>
+<SPAN USERMARK=" 0X0000FF"></SPAN>
+<SPAN></SPAN>
+<SPAN>마. OCI홀딩스(주)의 이사회 또는 OCI스페셜티(주)의 주주총회에서 본 주식교환계약의 승인 안건이 부결된 경우, 본 계약은 당사자들의 통지에 의하여 소급하여 효력을 상실합니다.</SPAN>
+<SPAN></SPAN>
+<SPAN></SPAN>
+<SPAN></SPAN>
+<SPAN>바. 주식교환계약상 다음과 같은 사유가 발생하는 경우 주식교환계약이 변경되거나 해제될 수 있습니다.</SPAN>
+<SPAN></SPAN>
+<SPAN></SPAN>
+</P>
+
+<TABLE WIDTH="600" BORDER="1" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP>
+<COL WIDTH="591"></COL>
+</COLGROUP>
+
+<TBODY ALIGN="LEFT" VALIGN="TOP">
+
+<TR ACOPY="Y" ADELETE="Y">
+
+<TD WIDTH="600" HEIGHT="628">
+
+<P USERMARK="F-10 B A-J">
+
+<SPAN USERMARK="F-11">제
+<SPAN>10</SPAN>조
+<SPAN> (</SPAN>본 계약의 변경 및 해제
+<SPAN>)</SPAN>
+</SPAN>
+</P>
+
+<P USERMARK=" A-J">1. 본 계약 체결 후 주식교환일까지 본 계약의 조건과 관련된 사항이 관계 법령과 회계기준에 위배되거나 기타 관련 법령이나 회계기준상 필요한 경우
+<SPAN>, </SPAN>오씨아이홀딩스와 오씨아이스페셜티는 상호 합의하여 관계 법령과 회계기준에 적합하게 본 계약을 변경할 수 있다
+<SPAN>.</SPAN>
+</P>
+
+<P USERMARK=" A-J">2. 본 계약 체결 후 주식교환일까지 당사자들은 서면 합의에 의하여 본 계약을 변경하거나 해제할 수 있다
+<SPAN>.</SPAN>
+</P>
+
+<P USERMARK=" A-J">3. 본 계약 체결 후 주식교환일까지 다음의 하나에 해당하는 사항이 발생한 경우 오씨아이홀딩스와 오씨아이스페셜티는 본 계약을 해제할 수 있다
+<SPAN>. </SPAN>단
+<SPAN>, </SPAN>해제 사유 발생에 책임 있는 당사자는 본 계약을 해제할 수 없다
+<SPAN>.</SPAN>
+</P>
+
+<P USERMARK=" A-J">(가) 천재지변 등으로 오씨아이홀딩스 또는 오씨아이스페셜티의 재산 및 경영상태에 중대한 변동이 발생한 경우
+<SPAN></SPAN>
+</P>
+
+<P USERMARK=" A-J">(나) 본건 주식교환으로 인하여 치유할 수 없는 법령위반의 결과가 초래될 경우
+<SPAN></SPAN>
+</P>
+
+<P USERMARK=" A-J">(다) 오씨아이홀딩스의 발행주식총수의 
+<SPAN>100</SPAN>분의 
+<SPAN>20</SPAN>이상에 해당하는 주식을 가진 주주가 서면으로 주식교환에 반대하는 의사를 통지한 경우로서
+<SPAN>, </SPAN>그로부터 
+<SPAN>1</SPAN>월 이내에 당사자들 사이에 정식 주식교환으로의 절차 및 일정 변경에 관한 합의가 이루어지지 않은 경우
+<SPAN></SPAN>
+</P>
+
+<P USERMARK=" A-J">(라) 제
+<SPAN>8</SPAN>조의 선행조건의 전부 또는 일부가 충족될 수 없는 것으로 확정된 경우
+<SPAN></SPAN>
+</P>
+
+<P USERMARK=" A-J">(마) 당사자 일방
+<SPAN>(</SPAN>이하 
+
+<SPAN USERMARK=" U">
+<SPAN>“</SPAN>위반당사자
+<SPAN>”</SPAN>
+</SPAN>
+<SPAN>)</SPAN>의 본 계약상 진술 및 보장이 정확하지 않거나 사실과 일치하지 아니하고 그로 인하여 중대한 부정적 영향이 발생하였거나 중대한 부정적 영향의 발생이 합리적으로 예상되는 경우
+<SPAN>, </SPAN>또는 위반당사자가 본 계약상 확약 기타 의무를 중대하게 위반하고 상대방 당사자
+<SPAN>(</SPAN>이하 
+
+<SPAN USERMARK=" U">
+<SPAN>“</SPAN>비위반당사자
+<SPAN>”</SPAN>
+</SPAN>
+<SPAN>)</SPAN>로부터 시정을 요구하는 서면 통지를 수령한 날로부터
+<SPAN> 7</SPAN>일 이내에 위반 사항이 시정되지 아니하는 경우
+</P>
+
+<P USERMARK=" A-J">4. 오씨아이홀딩스와 오씨아이스페셜티는 주식교환을 위하여 합의가 필요한 사항에 대하여 별도 협약을 체결할 수 있으며
+<SPAN>, </SPAN>그러한 별도 협약은 본 계약의 일부로 간주된다
+<SPAN>.</SPAN>
+</P>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>
+<SPAN></SPAN>
+</P>
+
+<P>
+<SPAN USERMARK=" 0X0000FF"></SPAN>
+<SPAN></SPAN>
+<SPAN>사. 상기 사항 및 일정은 관계기관의 협의나 승인 및 계약 당사자 간의 협의 등을 통해 변경될 수 있습니다.</SPAN>
+<SPAN></SPAN>
+<SPAN></SPAN>
+<SPAN>아. 주식교환과 관련하여 이사회에서 정하지 아니한 구체적인 사항은 대표이사에게 위임합니다.</SPAN>
+</P>
+<P USERMARK=" 0X0000FF"></P>
+<P USERMARK=" 0X0000FF"></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

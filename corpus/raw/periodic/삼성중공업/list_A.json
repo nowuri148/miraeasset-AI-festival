@@ -1,0 +1,189 @@
+[
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2026.03)",
+  "rcept_no": "20260515002303",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20260515",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2025.12)",
+  "rcept_no": "20260312001037",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20260312",
+  "rm": "연"
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2025.09)",
+  "rcept_no": "20251114002181",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20251114",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2025.06)",
+  "rcept_no": "20250814003877",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20250814",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2025.03)",
+  "rcept_no": "20250515001817",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20250515",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]사업보고서 (2024.12)",
+  "rcept_no": "20250319000397",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20250319",
+  "rm": "연"
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]사업보고서 (2024.12)",
+  "rcept_no": "20250312001124",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20250313",
+  "rm": "정연"
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2024.12)",
+  "rcept_no": "20250312001048",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20250312",
+  "rm": "정연"
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2024.09)",
+  "rcept_no": "20241114002657",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20241114",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2024.06)",
+  "rcept_no": "20240814003886",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20240814",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2024.03)",
+  "rcept_no": "20240516001939",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20240516",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]사업보고서 (2023.12)",
+  "rcept_no": "20240315000850",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20240315",
+  "rm": "연"
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2023.12)",
+  "rcept_no": "20240313001401",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20240313",
+  "rm": "정연"
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2023.09)",
+  "rcept_no": "20231114002370",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20231114",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2023.06)",
+  "rcept_no": "20230814002585",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20230814",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2023.03)",
+  "rcept_no": "20230515002381",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20230515",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126478",
+  "corp_name": "삼성중공업",
+  "stock_code": "010140",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2022.12)",
+  "rcept_no": "20230309000699",
+  "flr_nm": "삼성중공업",
+  "rcept_dt": "20230309",
+  "rm": "연"
+ }
+]

@@ -1,0 +1,162 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>셀트리온/투자판단 관련 주요경영사항/(2023.11.24)투자판단 관련 주요경영사항(CT-P42(아일리아 바이오시밀러) 유럽 품목허가 신청)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">CT-P42(아일리아 바이오시밀러) 유럽 품목허가 신청</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">※ 투자유의사항 <br xmlns:java="http://xml.apache.org/xalan/java">임상시험 약물에 대한 허가 신청이 의약품규제기관의 최종적인 허가 결정을 보장하지는 않습니다. <br xmlns:java="http://xml.apache.org/xalan/java">허가 심사 과정에서 기대에 상응하지 못하는 결과가 나올 수 있으며, 이에 따라 당사가 상업화 계획을 변경하거나 포기할 수 있는 가능성도 상존합니다. <br xmlns:java="http://xml.apache.org/xalan/java">투자자는 수시공시 및 사업보고서 등을 통해 공시된 투자 위험을 종합적으로 고려하여 신중히 투자하시기 바랍니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">1) 품목명 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 아일리아 바이오시밀러 CT-P42 (성분명: Aflibercept) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 대상질환명(적응증) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - neovascular (wet) age-related macular degeneration (AMD) [신생혈관성(습성) 연령관련 황반변성] <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - visual impairment due to macular oedema secondary to retinal vein occlusion (branch RVO or central RVO) [망막정맥 폐쇄성 황반부종] <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - visual impairment due to diabetic macular oedema (DME) [당뇨병성 황반부종] <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - visual impairment due to myopic choroidal neovascularisation (myopic CNV) [근시성 맥락막 신생혈관] <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 품목허가 신청일 및 허가기관 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 신청일 : 2023년 11월 23일 (현지 시간 기준) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 품목허가기관 : 유럽의약품청(EMA) / 유럽연합집행위원회(EC) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4) 임상시험 관련 사항 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">① 임상시험 등록번호 : <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - EudraCT Number: 2020-004278-23 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">② 임상시험의 진행 경과 : <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 본 임상은 만 18세 이상의 당뇨병으로 인한 이차적 황반 부종을 가지고 있는 성인 남녀를 대상으로 Eylea와 비교하여 CT-P42의 유효성, 안전성 등을 평가하는 무작위 배정, 활성 대조, 이중 눈가림, 다기관 제 3상 임상 시험임. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 일차 평가 변수로 ETDRS (Early Treatment of Diabetic Retinopathy Study) 차트를 이용한 최대 교정 시력 (Best Corrected Visual Acuity; BCVA)의 베이스 라인 대비 8주 시점의 변화량을 평가하여 CT-P42와 Eylea의 동등함을 입증하고자 함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">③ 임상시험 결과 : <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 당사는 CT-P42의 3상 임상시험을 통해 아래와 같은 임상 결과를 확인할 수 있었음. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">&lt;  아  래  &gt; <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">① 시험대상자수 : 제 3상 348명 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - CT-P42 군 173명, Eylea 군 175명 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">② 유효성 : <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 일차 평가 변수인 최대 교정 시력의 베이스라인 대비 8주 시점의 변화량에 대한 평가 결과, 평균 개선량의 차이 (CT-P42 - Eylea) 및 개선량 차이의 90% 신뢰 구간이 0.58 [-0.52, 1.67] 로 사전에 정의된 동등성 한계인 ± 3 글자 범위내에 들어와 통계적으로 동등성을 입증함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">③ 안전성 : <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 투여 이후 발생된 전체 이상반응 (Treatment-emergent adverse events)은 CT-P42에서 약 50.3%, Eylea에서 약 53.7%의 환자에서 발생하였고, 시험 대상 안구 (Study eye)에 발생한 이상반응은 CT-P42에서 10.4%, Eylea에서 18.3%의 환자에서 발생하였으며, 대부분 경증 또는 중증도임. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 투여 이후 발생된 중대한 이상반응 (Treatment-emergent serious adverse events)은 모두 비-안구 (non-ocular) 전신 반응으로 CT-P42에서 약 5.8%, Eylea에서 약 4.6%의 환자에서 발생하였으며, 특별관심 대상 이상반응 측면에서는 동맥혈전색전증 이 CT-P42와 Eylea 모두 각각 1.7%의 환자, 안구내 주사 관련 이상반응은 CT-P42에서 약 4.6%, Eylea에서 약 8.0%의 환자에서 발생하였음. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5) 기대효과 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 상기 '2) 대상질환명(적응증)'에 기재한 적응증에 대하여 허가 신청하였으며, 추후 보다 많은 환자에게 치료 기회를 제공할 수 있고 또한 의료 보험 시스템의 재정부담을 감소시킬 수 있을 것으로 기대함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">6) 향후 계획 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - 당사는 확보된 임상 데이터를 기반으로 미국, 한국 신청을 비롯하여 금번 유럽 허가 신청을 완료하였으며, 향후 지속적으로 여러 국가별 허가를 신청할 예정임</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 이사회결의일(결정일) 또는 사실확인일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2023-11-23</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">- 상기 3. 사실확인일은 유럽의약품청(EMA)/유럽연합집행위원회(EC)에 품목허가 신청을 제출한 날짜입니다. <br xmlns:java="http://xml.apache.org/xalan/java">- 본 공시 내용은 향후 당사의 보도자료 및 IR 자료로 사용될 예정입니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span style="width:475px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230726000162&amp;rcpno=20230726000162&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-07-26 투자판단 관련 주요경영사항(CT-P42(아일리아 바이오시밀러) 한국 품목허가 신청)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230630000002&amp;rcpno=20230630000002&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-06-30 투자판단 관련 주요경영사항(CT-P42(아일리아 바이오시밀러) 미국 품목허가 신청)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230403000005&amp;rcpno=20230403000005&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-04-03 투자판단 관련 주요경영사항(CT-P42(아일리아 바이오시밀러) 임상 3상 결과 발표)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+   </div> 
+  </div>  
+ </body>
+</html>

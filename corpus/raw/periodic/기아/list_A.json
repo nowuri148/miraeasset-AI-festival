@@ -1,0 +1,178 @@
+[
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2026.03)",
+  "rcept_no": "20260515002675",
+  "flr_nm": "기아",
+  "rcept_dt": "20260515",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2025.12)",
+  "rcept_no": "20260312001224",
+  "flr_nm": "기아",
+  "rcept_dt": "20260312",
+  "rm": "연"
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2025.09)",
+  "rcept_no": "20251114002676",
+  "flr_nm": "기아",
+  "rcept_dt": "20251114",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2025.06)",
+  "rcept_no": "20250814003814",
+  "flr_nm": "기아",
+  "rcept_dt": "20250814",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2025.03)",
+  "rcept_no": "20250515001947",
+  "flr_nm": "기아",
+  "rcept_dt": "20250515",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]사업보고서 (2024.12)",
+  "rcept_no": "20250313001390",
+  "flr_nm": "기아",
+  "rcept_dt": "20250313",
+  "rm": "연"
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2024.12)",
+  "rcept_no": "20250306000691",
+  "flr_nm": "기아",
+  "rcept_dt": "20250306",
+  "rm": "정연"
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2024.09)",
+  "rcept_no": "20241114002124",
+  "flr_nm": "기아",
+  "rcept_dt": "20241114",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2024.06)",
+  "rcept_no": "20240814004358",
+  "flr_nm": "기아",
+  "rcept_dt": "20240814",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2024.03)",
+  "rcept_no": "20240516001819",
+  "flr_nm": "기아",
+  "rcept_dt": "20240516",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]사업보고서 (2023.12)",
+  "rcept_no": "20240312000909",
+  "flr_nm": "기아",
+  "rcept_dt": "20240312",
+  "rm": "연"
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2023.12)",
+  "rcept_no": "20240307000911",
+  "flr_nm": "기아",
+  "rcept_dt": "20240307",
+  "rm": "정연"
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2023.09)",
+  "rcept_no": "20231114002541",
+  "flr_nm": "기아",
+  "rcept_dt": "20231114",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2023.06)",
+  "rcept_no": "20230814002835",
+  "flr_nm": "기아",
+  "rcept_dt": "20230814",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2023.03)",
+  "rcept_no": "20230515002201",
+  "flr_nm": "기아",
+  "rcept_dt": "20230515",
+  "rm": ""
+ },
+ {
+  "corp_code": "00106641",
+  "corp_name": "기아",
+  "stock_code": "000270",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2022.12)",
+  "rcept_no": "20230309000734",
+  "flr_nm": "기아",
+  "rcept_dt": "20230309",
+  "rm": "연"
+ }
+]

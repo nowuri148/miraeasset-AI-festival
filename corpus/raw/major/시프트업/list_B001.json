@@ -1,0 +1,57 @@
+[
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "rcept_no": "20260310002972",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20260310",
+  "rm": ""
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
+  "rcept_no": "20251112000393",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20251112",
+  "rm": ""
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "rcept_no": "20250512000665",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20250512",
+  "rm": ""
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "rcept_no": "20241002000373",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20241002",
+  "rm": ""
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "rcept_no": "20240930000640",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20240930",
+  "rm": "정"
+ }
+]

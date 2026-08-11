@@ -1,0 +1,79 @@
+[
+ {
+  "corp_code": "00258689",
+  "corp_name": "JYP Ent.",
+  "stock_code": "035900",
+  "corp_cls": "K",
+  "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
+  "rcept_no": "20251219000396",
+  "flr_nm": "JYP Ent.",
+  "rcept_dt": "20251219",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00258689",
+  "corp_name": "JYP Ent.",
+  "stock_code": "035900",
+  "corp_cls": "K",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "rcept_no": "20250529000409",
+  "flr_nm": "JYP Ent.",
+  "rcept_dt": "20250529",
+  "rm": ""
+ },
+ {
+  "corp_code": "00258689",
+  "corp_name": "JYP Ent.",
+  "stock_code": "035900",
+  "corp_cls": "K",
+  "report_nm": "[첨부추가]주요사항보고서(회사합병결정)",
+  "rcept_no": "20250408003297",
+  "flr_nm": "JYP Ent.",
+  "rcept_dt": "20250408",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00258689",
+  "corp_name": "JYP Ent.",
+  "stock_code": "035900",
+  "corp_cls": "K",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "rcept_no": "20250409002212",
+  "flr_nm": "JYP Ent.",
+  "rcept_dt": "20250409",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00258689",
+  "corp_name": "JYP Ent.",
+  "stock_code": "035900",
+  "corp_cls": "K",
+  "report_nm": "주요사항보고서(타법인주식및출자증권양도결정)",
+  "rcept_no": "20250221001944",
+  "flr_nm": "JYP Ent.",
+  "rcept_dt": "20250221",
+  "rm": ""
+ },
+ {
+  "corp_code": "00258689",
+  "corp_name": "JYP Ent.",
+  "stock_code": "035900",
+  "corp_cls": "K",
+  "report_nm": "[기재정정]주요사항보고서(유형자산양수결정)",
+  "rcept_no": "20241219000378",
+  "flr_nm": "JYP Ent.",
+  "rcept_dt": "20241219",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00258689",
+  "corp_name": "JYP Ent.",
+  "stock_code": "035900",
+  "corp_cls": "K",
+  "report_nm": "[첨부추가]주요사항보고서(유형자산양수결정)",
+  "rcept_no": "20231024000280",
+  "flr_nm": "JYP Ent.",
+  "rcept_dt": "20231024",
+  "rm": "정"
+ }
+]

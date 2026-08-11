@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11315">주요사항보고서(해외 증권시장 주권등 상장)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20160118">6.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00126380">삼성전자</COMPANY-NAME>
+
+
+<BODY ATOCID="2">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">  2025년     2월     13일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">삼성전자주식회사</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">한 종 희</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">경기도 수원시 영통구 삼성로 129(매탄동)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 
+<SPAN USERMARK="0X000000">031-200-1114</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지)http://
+<SPAN USERMARK="0X000000">www.samsung.com/sec</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+
+<TD WIDTH="174" HEIGHT="23">(직  책) 
+<SPAN USERMARK="0X000000">재경팀장</SPAN>
+</TD>
+
+<TD WIDTH="267" HEIGHT="23">(성  명) 
+<SPAN USERMARK="0X000000">김 동 욱</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 031-277-7218</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Listing of Stocks, etc. in Overseas Markets" ATOCID="1">해외 증권시장 주권등 상장</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="TBL1" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="619" BORDER="1">
+
+<COLGROUP WIDTH="619">
+<COL WIDTH="170"></COL>
+<COL WIDTH="109"></COL>
+<COL WIDTH="340"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="161" HEIGHT="53" AUPDATECONT="N" ENG="1. Class and number of new shares listed">1. 상장주식 종류 및 수</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="100" HEIGHT="23" AUPDATECONT="N" ENG="Common stock (shrs.)">보통주식(주)</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="331" HEIGHT="23" ACODE="LST_CST_CNT">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="100" HEIGHT="23" AUPDATECONT="N" ENG="Different classes of stocks (shrs.)">기타주식(주)</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="331" HEIGHT="23" ACODE="LST_PST_CNT">39,191,100</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="270" HEIGHT="23" AUPDATECONT="N" ENG="2. Stock exchange (Country of location)">2. 상장거래소(소재국가)</TD>
+<TE VALIGN="MIDDLE" WIDTH="331" HEIGHT="23" ACODE="LST_MKT" ALIGN="CENTER">런던증권거래소(영국)</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="270" HEIGHT="23" AUPDATECONT="N" ENG="3. Type (Code)">3. 종목 명 (code)</TD>
+<TE VALIGN="MIDDLE" WIDTH="331" HEIGHT="23" ACODE="ISSU_NM" ALIGN="CENTER">SMSD</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="270" HEIGHT="23" AUPDATECONT="N" ENG="4. Date of listing">4. 상장일자</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="331" HEIGHT="23" AUNIT="TRD_BGN_DT" AUNITVALUE="20250213">2025년 02월 13일</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="270" HEIGHT="23" AUPDATECONT="N" ENG="5. Confirmation date">5. 확인일자</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="331" HEIGHT="23" AUNIT="CONF_DT" AUNITVALUE="20250213">2025년 02월 13일</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="6. Other matters to be factored into investment decisions">6. 기타 투자판단에 참고할 사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P> 
+<SPAN USERMARK="F-GL11 ">- 상기 1항의 상장주식 종류 및 수는 당사 우선주를 기초로 한 주식예탁증서    (Depositary Receipts, DR)이며, 2025년 2월 10일 기준입니다.</SPAN>
+</P>
+
+<P USERMARK="F-GL11 "> -
+<SPAN USERMARK="0X000000"> 당사는 기존에 룩셈부르크증권거래소에 상장된 DR 우선주 1,567,644주를 이전 상장    하기 위하여 런던증권거래소에 상장신청을 하였으며, 2025년 2월 13일 런던증권    거래소는 본건 DR을 상장하였습니다. </SPAN>
+</P>
+
+<P USERMARK="F-GL11 "> 
+<SPAN USERMARK="0X000000">- 당사가 해외 예탁기관에 예탁한 원주(다만 실제 원주는 해외예탁기관을 위해 국내보관     기관인 한국예탁결제원이 보관하게 됨)는 39,191,100주이며 원주와 DR의 교환비율은    25:1입니다. 따라서 당사가 상장한 DR의 수량은 1,567,644주입니다.     아울러, 상기 "1. 상장주식 종류 및 수"의 기타주식 수는 본 DR 우선주에 대한 원주의    주식수와 주식의 종류를 의미합니다.</SPAN>
+</P>
+<P USERMARK="F-GL11 "> - 당사가 발행한 DR의 시세 조회는 런던증권거래소 홈페이지    (www.londonstockexchange.com)에서 가능합니다.</P>
+<P>※ 기타주식에 관한 사항</P>
+
+<TABLE-GROUP ACLASS="STO_ETC" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="619" BORDER="1">
+
+<COLGROUP WIDTH="619">
+<COL WIDTH="224"></COL>
+<COL WIDTH="395"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="55">
+<TD WIDTH="215" HEIGHT="48" AUPDATECONT="N" ENG="Basis in articles of incorporation">정관의 근거</TD>
+
+<TE WIDTH="386" HEIGHT="48" VALIGN="MIDDLE" ACODE="AOI_BAS">
+<P USERMARK="A-L">정관 제8조(주식 및 주권의 종류)에 따라 발행한 우선주를기초로 한 주식예탁증서(Depositary Receipts, DR)임</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD WIDTH="215" HEIGHT="69" AUPDATECONT="N" ENG="Details of stocks">주식의 내용</TD>
+
+<TE WIDTH="386" HEIGHT="69" VALIGN="MIDDLE" ACODE="STO_CNT">
+<P USERMARK="A-L">- 우선주</P>
+<P USERMARK="A-L">  ㆍ비누적적이며 의결권 없음</P>
+
+<P USERMARK="F-10 ">
+<SPAN USERMARK="F-GL11 ">  </SPAN>
+<SPAN USERMARK="F-GL11  0X000000">ㆍ</SPAN>
+<SPAN USERMARK="F-GL11 ">보통주보다 연 1% 추가 배당</SPAN>
+</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="215" HEIGHT="23" AUPDATECONT="N" ENG="Others">기타</TD>
+<TE WIDTH="386" HEIGHT="23" VALIGN="MIDDLE" ACODE="ETC_CNT" ALIGN="CENTER">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

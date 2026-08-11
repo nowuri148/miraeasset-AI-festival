@@ -1,0 +1,168 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>셀트리온/투자판단 관련 주요경영사항/(2023.07.03)투자판단 관련 주요경영사항(CT-P43(스텔라라 바이오시밀러) 미국 품목허가 신청)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">CT-P43(스텔라라 바이오시밀러) 미국 품목허가 신청</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">※ 투자유의사항 <br xmlns:java="http://xml.apache.org/xalan/java">임상시험 약물에 대한 허가 신청이 의약품규제기관의 최종적인 허가 결정을 보장하지는 않습니다. <br xmlns:java="http://xml.apache.org/xalan/java">허가 심사 과정에서 기대에 상응하지 못하는 결과가 나올 수 있으며, 이에 따라 당사가 상업화 계획을 변경하거나 포기할 수 있는 가능성도 상존합니다. <br xmlns:java="http://xml.apache.org/xalan/java">투자자는 수시공시 및 사업보고서 등을 통해 공시된 투자 위험을 종합적으로 고려하여 신중히 투자하시기 바랍니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">1) 품목명 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 스텔라라 바이오시밀러 CT-P43 (성분명: Ustekinumab) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 대상질환명(적응증) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - Plaque psoriasis [판상 건선] <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - Pediatric plaque psoriasis [소아 판상 건선] <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - Psoriatic arthritis [건선성 관절염] <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - Pediatric psoriatic arthritis [소아 건선성 관절염] <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - Crohn's disease [크론병] <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  - Ulcerative colitis [궤양성 대장염] <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 품목허가 신청일 및 허가기관 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 신청일 : 2023년 6월 30일(현지 시간 기준) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 품목허가기관 : 미국 식품의약국(FDA) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4) 임상시험 관련 사항 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">① 임상시험 등록번호 : <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - EudraCT Number: 2020-001045-39 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">② 임상시험의 진행 경과 : <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 본 임상시험은 만 18세 이상의 광선 요법 또는 전신 요법 대상인 중등도 내지 중증 판상형 건선을 가지고 있는 성인 남녀를 대상으로 스텔라라와 비교하여 CT-P43의 유효성, 안전성 등을 평가하는 무작위 배정, 활성 대조, 이중 눈가림, 다기관, 제 3상 임상시험임. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 일차 평가 변수로 12주에 건선 면적 및 중증도 지수 (Psoriasis Area and Severity Index; PASI)의 베이스라인 대비 평균 백분율 개선을 평가하여 CT-P43이 Stelara와 동등함을 입증하고자 함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">③ 임상시험 결과 : <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 당사는 CT-P43의 3상 임상시험을 통해 아래와 같은 임상 결과를 확인할 수 있었음. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">&lt;  아  래  &gt; <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">① 시험대상자수: 제 3상 509명 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">② 유효성: <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 일차 평가 변수인 건선 면적 및 중증도 지수의 베이스라인 대비 12주 시점의 평균 백분율 개선에 대한 평가 결과, 그 치료 차이 (CT-P43 - Stelara) 및 치료 차이의 90% 신뢰구간이 2.05% [-0.23%, 4.32%]로 사전에 정의된 동등성 한계인 ±10% 범위내에 들어와 동등성을 입증함. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 이차 평가 변수인 PASI 평균 백분율 개선도, PASI50/75/90/100 개선율, 의사 평가점수 sGPA (static Physician's Global Assessment, sPGA), 피부과적 삶의 질 지수 (Dermatology Life Quality Index, DLQI)에서 또한 CT-P43과 Stelara 간 유사한 경향성을 확인함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">③ 안전성 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 투여 이후 발생된 이상반응 (Treatment-emergent adverse events)은 CT-P43에서 약 44%, Stelara에서 약 42% 발생하였고, 대부분 경증 또는 중등도에 해당하였고 대부분 회복하였거나 회복 중임. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 투여 이후 발생된 중대한 이상반응은 CT-P43과 Stelara 모두 약 2%씩 각각 발생하였음. CT-P43에서는 총 2명 (0.8%), Stelara에서는 총 1명 (0.4%)이 이상반응으로 인하여 중도탈락 하였음. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 특별관심 대상 이상반응 측면에서는 투여 후 감염이 CT-P43과 Stelara 모두 각각 약 18%씩 발생하였고, 주사 부위 반응은 CT-P43과 Stelara 모두 각각 약 2%씩 발생하였으며, 이외 특별관심 대상으로 지정된 과민반응, 악성종양은 보고례 없었음. 사망례 보고 없었음. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5) 기대효과 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 오리지널 제품이 허가 받은 모든 적응증에 대하여 허가 신청하였으며, 추후 보다 많은 환자에게 치료 기회를 제공할 수 있고 또한 의료 보험 시스템의 재정부담을 감소시킬 수 있을 것으로 기대함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">6) 향후 계획 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 당사는 확보된 임상 데이터를 기반으로 EU, 한국 신청을 비롯하여 금번 미국 허가 신청을 완료하였으며, 향후 지속적으로 여러 국가별 허가를 신청할 예정임</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 이사회결의일(결정일) 또는 사실확인일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2023-07-01</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">- 상기 3. 사실확인일은 미국 식품의약국(FDA)에 품목허가 신청을 제출한 날짜입니다. <br xmlns:java="http://xml.apache.org/xalan/java">- 본 공시 내용은 향후 당사의 보도자료 및 IR 자료로 사용될 예정입니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span style="width:475px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230615000122&amp;rcpno=20230615000122&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-06-15 투자판단 관련 주요경영사항(CT-P43(스텔라라 바이오시밀러) 한국 품목허가 신청)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230526000008&amp;rcpno=20230526000008&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-05-26 투자판단 관련 주요경영사항(CT-P43(스텔라라 바이오시밀러) 유럽 품목허가 신청)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20220907000213&amp;rcpno=20220907000213&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2022-09-07 투자판단 관련 주요경영사항(CT-P43(스텔라라 바이오시밀러) 임상 3상 결과 발표)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+   </div> 
+  </div>  
+ </body>
+</html>

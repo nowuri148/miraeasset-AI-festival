@@ -1,0 +1,79 @@
+[
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2026.03)",
+  "rcept_no": "20260514001484",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20260514",
+  "rm": ""
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2025.12)",
+  "rcept_no": "20260318001672",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20260318",
+  "rm": "연"
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2025.09)",
+  "rcept_no": "20251113001036",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20251113",
+  "rm": ""
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2025.06)",
+  "rcept_no": "20250814004388",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20250814",
+  "rm": ""
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2025.03)",
+  "rcept_no": "20250514001139",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20250514",
+  "rm": ""
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2024.12)",
+  "rcept_no": "20250319000952",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20250319",
+  "rm": ""
+ },
+ {
+  "corp_code": "01384787",
+  "corp_name": "시프트업",
+  "stock_code": "462870",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2024.09)",
+  "rcept_no": "20241113000775",
+  "flr_nm": "시프트업",
+  "rcept_dt": "20241113",
+  "rm": ""
+ }
+]

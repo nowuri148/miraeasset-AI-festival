@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11306">주요사항보고서(유상증자결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20231229">2.8</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00102858">고려아연(주)</COMPANY-NAME>
+
+
+<BODY ATOCID="3">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ATOCID="3">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23"> 2024년    10월    30일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">고려아연 주식회사</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">박  기  덕</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">서울시 종로구 종로 33</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 
+<SPAN USERMARK=" 0X000000">02-6947-2114</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지) 
+<SPAN USERMARK=" 0X000000">http://www.koreazinc.co.kr</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책)  부  사  장</TD>
+<TD WIDTH="267" HEIGHT="23">(성  명)  이  승  호</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화)  02-6947-2422</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ATOCID="1">유상증자 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="CST_CNT" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="600" BORDER="1">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="160"></COL>
+<COL WIDTH="172"></COL>
+<COL WIDTH="268"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="151" HEIGHT="53" AUPDATECONT="N">1. 신주의 종류와 수</TD>
+<TD ALIGN="CENTER" WIDTH="163" HEIGHT="23" AUPDATECONT="N">보통주식 (주)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="CST_CNT">3,732,650</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="163" HEIGHT="23" AUPDATECONT="N">기타주식 (주)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="PST_CNT">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="323" HEIGHT="23" AUPDATECONT="N">2. 1주당 액면가액 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="FVAL">5,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="151" HEIGHT="53" AUPDATECONT="N">3. 증자전     발행주식총수 (주)</TD>
+<TD ALIGN="CENTER" WIDTH="163" HEIGHT="23" AUPDATECONT="N">보통주식 (주)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="BFR_CST_CNT">20,703,283</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="163" HEIGHT="23" AUPDATECONT="N">기타주식 (주)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="BFR_PST_CNT">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="6" VALIGN="MIDDLE" WIDTH="151" HEIGHT="196" AUPDATECONT="N">4. 자금조달의 목적</TD>
+<TD ALIGN="CENTER" WIDTH="163" HEIGHT="23" AUPDATECONT="N">시설자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="FND_USE1">135,052,488,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="163" HEIGHT="23" AUPDATECONT="N">영업양수자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="FND_USE_SQ">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="163" HEIGHT="23" AUPDATECONT="N">운영자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="FND_USE2">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="163" HEIGHT="23" AUPDATECONT="N">채무상환자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="FND_USE_RD">2,300,000,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="163" HEIGHT="46" AUPDATECONT="N">타법인 증권취득자금 (원)</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="259" HEIGHT="46" ACODE="ANC_ACQ_AMT">65,823,012,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="163" HEIGHT="23" AUPDATECONT="N">기타자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="259" HEIGHT="23" ACODE="FND_USE3">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="323" HEIGHT="23" AUPDATECONT="N">5. 증자방식</TD>
+<TU ALIGN="CENTER" WIDTH="259" HEIGHT="23" AUNIT="CI_MTH" AUNITVALUE="5">일반공모증자</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P>※ 기타주식에 관한 사항</P>
+
+<TABLE-GROUP ACLASS="STO_ETC" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="600" BORDER="1">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="235"></COL>
+<COL WIDTH="365"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="226" HEIGHT="23" AUPDATECONT="N">정관의 근거</TD>
+<TE WIDTH="356" HEIGHT="23" VALIGN="MIDDLE" ACODE="AOI_BAS">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="226" HEIGHT="23" AUPDATECONT="N">주식의 내용</TD>
+<TE WIDTH="356" HEIGHT="23" VALIGN="MIDDLE" ACODE="STO_CNT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="226" HEIGHT="23" AUPDATECONT="N">기타</TD>
+<TE WIDTH="356" HEIGHT="23" VALIGN="MIDDLE" ACODE="ETC_CNT">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<P></P>
+
+<LIBRARY>
+<TABLE-GROUP ACLASS="OTH_PUB_INC" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="598" BORDER="1">
+
+<COLGROUP WIDTH="598">
+<COL WIDTH="149"></COL>
+<COL WIDTH="85"></COL>
+<COL WIDTH="116"></COL>
+<COL WIDTH="80"></COL>
+<COL WIDTH="168"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="140" HEIGHT="53" AUPDATECONT="N">6. 신주 발행가액</TD>
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="192" HEIGHT="23" AUPDATECONT="N">보통주식 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="239" HEIGHT="23" ACODE="CST_ISS_VAL" COLSPAN="2" VALIGN="MIDDLE">670,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="192" HEIGHT="23" AUPDATECONT="N">기타주식 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="239" HEIGHT="23" ACODE="PST_ISS_VAL" COLSPAN="2">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">7. 기준주가에 대한 할인율 또는 할증율 (%)</TD>
+<TE ALIGN="RIGHT" WIDTH="239" HEIGHT="23" ACODE="DC_RATE" COLSPAN="2">30</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">8. 우리사주조합원 우선배정비율 (%)</TD>
+<TE ALIGN="RIGHT" WIDTH="239" HEIGHT="23" ACODE="EMP_ALL_RATE" COLSPAN="2">20</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="4" VALIGN="MIDDLE" WIDTH="140" HEIGHT="113" AUPDATECONT="N">9. 청약예정일</TD>
+<TD ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="76" HEIGHT="53" AUPDATECONT="N">우리사주조합</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="107" HEIGHT="23" AUPDATECONT="N">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="EMP_BGN_DT" AUNITVALUE="20241203" COLSPAN="2">2024년 12월 03일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="107" HEIGHT="23" AUPDATECONT="N">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="EMP_END_DT" AUNITVALUE="20241203" COLSPAN="2">2024년 12월 03일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="76" HEIGHT="53" AUPDATECONT="N">일반공모</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="107" HEIGHT="23" AUPDATECONT="N">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="OTH_BGN_DT" AUNITVALUE="20241203" COLSPAN="2">2024년 12월 03일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="107" HEIGHT="23" AUPDATECONT="N">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="OTH_END_DT" AUNITVALUE="20241204" COLSPAN="2">2024년 12월 04일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">10. 납입일</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="PYM_DT" AUNITVALUE="20241206" COLSPAN="2">2024년 12월 06일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">11. 신주의 배당기산일</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="DV_ST_DT" AUNITVALUE="20240101" COLSPAN="2">2024년 01월 01일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">12. 신주권교부예정일</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="NST_GV_DT" AUNITVALUE="-" COLSPAN="2">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">13. 신주의 상장예정일</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="LST_PLN_DT" AUNITVALUE="20241218" COLSPAN="2">2024년 12월 18일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">14. 대표주관회사(직접공모가 아닌 경우)</TD>
+<TE ALIGN="CENTER" WIDTH="239" HEIGHT="23" ACODE="CHF_AGN" COLSPAN="2">미래에셋증권(주)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">15. 이사회결의일(결정일)</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="DRC_DT" AUNITVALUE="20241030" COLSPAN="2">2024년 10월 30일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="140" HEIGHT="53" AUPDATECONT="N">   - 사외이사      참석여부</TD>
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="192" HEIGHT="23" AUPDATECONT="N">참석 (명)</TD>
+<TE ALIGN="CENTER" WIDTH="239" HEIGHT="23" ACODE="ATD_CNT" COLSPAN="2">6</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="192" HEIGHT="23" AUPDATECONT="N">불참 (명)</TD>
+<TE ALIGN="CENTER" WIDTH="239" HEIGHT="23" ACODE="NATD_CNT" COLSPAN="2">1</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">   - 감사(감사위원) 참석여부</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="ADT_ATD_YN" AUNITVALUE="Y" COLSPAN="2">참석</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">16. 증권신고서 제출대상 여부</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="RPT_SM_YN" AUNITVALUE="Y" COLSPAN="2">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">17. 제출을 면제받은 경우 그 사유</TD>
+<TE WIDTH="239" HEIGHT="23" ACODE="RPT_SBM" COLSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="341" HEIGHT="83" AUPDATECONT="N" ROWSPAN="3">18. 청약이 금지되는 공매도 거래 기간</TD>
+<TD WIDTH="71" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N">해당여부</TD>
+<TU WIDTH="159" HEIGHT="23" ALIGN="CENTER" AUNIT="SSL_YN" AUNITVALUE="Y">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="71" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N">시작일</TD>
+<TU WIDTH="159" HEIGHT="23" ALIGN="CENTER" AUNIT="SSL_BGN_DT" AUNITVALUE="20241031">2024년 10월 31일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="71" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N">종료일</TD>
+<TU WIDTH="159" HEIGHT="23" ALIGN="CENTER" AUNIT="SSL_END_DT" AUNITVALUE="20241128">2024년 11월 28일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="341" HEIGHT="23" AUPDATECONT="N">19. 공정거래위원회 신고대상 여부</TD>
+<TU ALIGN="CENTER" WIDTH="239" HEIGHT="23" AUNIT="TRD_YN" AUNITVALUE="N" COLSPAN="2">미해당</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P USERMARK=" B">20. 기타 투자판단에 참고할 사항</P>
+
+<P>
+<SPAN USERMARK="F-BT12 B"></SPAN>
+<SPAN USERMARK="F-BT12 B">가. 신주 발행가액 산정방법</SPAN>
+<SPAN USERMARK="F-BT12 !B">(1) 모집(예정)가액당사는 금번 유상증자의 1주당 예정발행가액을 「증권의 발행 및 공시등에 관한 규정」 제5-16조 및 제5-18조의 일반공모 방식으로 유상증자를 하는 경우의 발행가액 산정 방식을 준용하여 산정한 가액을 기준주가로하여 할인율 30%를 적용하여 산정합니다. 단, 호가단위 미만은 호가단위로 절상하며 액면가 미만인 경우에는 액면가로 합니다.</SPAN>
+</P>
+
+<TABLE BORDER="1" WIDTH="600" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TH WIDTH="591" USERMARK=" BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">「증권의 발행 및 공시등에 관한 규정」 제5-16조 (적용범위 및 용어의 정의)</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="145">
+<TD WIDTH="591" HEIGHT="138">- 중략 -③ 이 절에서 "일반공모증자방식"이란 법 제165조의6제1항제3호에 따른 증자방식을 말하며, "주주우선공모증자방식"이란 법 제165조의6제4항제3호에 따른 방식을 말한다.- 후략 -</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE BORDER="1" WIDTH="600" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TH WIDTH="591" USERMARK=" BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">「증권의 발행 및 공시등에 관한 규정」 제5-18조 (유상증자의 발행가액 결정)</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="168">
+<TD WIDTH="591" HEIGHT="161">① 주권상장법인이 일반공모증자방식 및 제3자배정증자방식으로 유상증자를 하는 경우 그 발행가액은 청약일전 과거 제3거래일부터 제5거래일까지의 가중산술평균주가를 기준주가로 하여 주권상장법인이 정하는 할인율을 적용하여 산정한다. 다만, 일반공모증자방식의 경우에는 그 할인율을 100분의 30 이내로 정하여야 하며, 제3자배정증자방식의 경우에는 그 할인율을 100분의 10 이내로 정하여야 한다.- 후략-</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>모집(예정)가액은 
+<SPAN USERMARK=" 0X000000">최초 이사회결의일 전일(2024년 10월 29일)</SPAN>을 기산일로 하여 산출하며, 기산일로부터 과거 제3거래일부터 제5거래일까지의 가중산술평균주가(총 거래대금÷총 거래량)를 기준주가로 하여 할인율 30%를 적용하여 산정합니다. 산정한 가액이 액면가액 이하일 경우에는 액면가액을 예정 발행가액으로 하며, 호가단위 미만은 호가단위로 절상합니다.
+</P>
+<P>▶  예정 발행가액 산정표</P>
+
+<TABLE BORDER="0" WIDTH="659" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="659">
+<COL WIDTH="392"></COL>
+<COL WIDTH="267"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+
+<TD WIDTH="383" HEIGHT="23">[
+<SPAN USERMARK=" 0X000000">이사회결의일 전일(기산일): 2024년 10월 29일</SPAN>]
+</TD>
+<TD ALIGN="RIGHT" WIDTH="258" VALIGN="MIDDLE" HEIGHT="23">(단위: 주, 원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE BORDER="1" WIDTH="671" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="671">
+<COL WIDTH="48"></COL>
+<COL WIDTH="98"></COL>
+<COL WIDTH="85"></COL>
+<COL WIDTH="121"></COL>
+<COL WIDTH="319"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TH WIDTH="39" USERMARK=" BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">구분</TH>
+<TH WIDTH="89" USERMARK=" BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">일 자</TH>
+<TH WIDTH="76" USERMARK=" BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">거 래 량</TH>
+<TH WIDTH="112" USERMARK=" BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">거 래 대 금</TH>
+<TH WIDTH="310" USERMARK=" BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">비 고</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="39" HEIGHT="23">1</TD>
+<TD WIDTH="89" HEIGHT="23" VALIGN="MIDDLE" ALIGN="CENTER">2024/10/24</TD>
+<TD WIDTH="76" HEIGHT="23" VALIGN="MIDDLE" ALIGN="RIGHT">140,997</TD>
+<TD WIDTH="112" HEIGHT="23" VALIGN="MIDDLE" ALIGN="RIGHT">151,914,182,000</TD>
+
+<TD ROWSPAN="4" ALIGN="CENTER" WIDTH="310" VALIGN="MIDDLE" HEIGHT="117">할인율 
+<SPAN USERMARK=" 0X000000">30</SPAN>%
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="39" HEIGHT="23">2</TD>
+<TD WIDTH="89" HEIGHT="23" VALIGN="MIDDLE" ALIGN="CENTER">2024/10/23</TD>
+<TD WIDTH="76" HEIGHT="23" VALIGN="MIDDLE" ALIGN="RIGHT">105,190</TD>
+<TD WIDTH="112" HEIGHT="23" VALIGN="MIDDLE" ALIGN="RIGHT">92,645,169,000</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="39" HEIGHT="23">3</TD>
+<TD WIDTH="89" HEIGHT="23" VALIGN="MIDDLE" ALIGN="CENTER">2024/10/22</TD>
+<TD WIDTH="76" HEIGHT="23" VALIGN="MIDDLE" ALIGN="RIGHT">104,732</TD>
+<TD WIDTH="112" HEIGHT="23" VALIGN="MIDDLE" ALIGN="RIGHT">90,960,000,000</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="34">
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="137" HEIGHT="27">합 계</TD>
+<TD ALIGN="RIGHT" WIDTH="76" HEIGHT="27" VALIGN="MIDDLE">350,919</TD>
+<TD ALIGN="RIGHT" WIDTH="112" HEIGHT="27" VALIGN="MIDDLE">335,519,351,000</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="137" HEIGHT="23">기준주가</TD>
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="197" VALIGN="MIDDLE" HEIGHT="23">956,116</TD>
+<TD ALIGN="CENTER" WIDTH="310" VALIGN="MIDDLE" HEIGHT="23">총 거래대금 ÷ 총 거래량</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="76">
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="137" VALIGN="MIDDLE" HEIGHT="69">예정 발행가액</TD>
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="197" VALIGN="MIDDLE" HEIGHT="69">670,000</TD>
+<TD ALIGN="CENTER" WIDTH="310" VALIGN="MIDDLE" HEIGHT="69">기준주가 × (1 - 할인율) (단, 호가 단위 미만은 호가 단위로 절상하며,액면가액 이하인 경우에는 액면가액으로 함)</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>(2) 확정 발행가액 산정확정 발행가액은 「증권의 발행 및 공시등에 관한 규정」 5-18조(유상증자의 발행가액 결정)의 산출근거에 의거, 일반공모 청약초일 전 제3거래일부터 제5거래일까지의 가중산술평균주가를 기준주가로 하여 할인율 30%를 적용하여 산정합니다. 따라서 일반공모 청약 초일 전 제3거래일부터 제5거래일까지의 가중산술평균주가(그 기간 동안 증권시장에서 거래된 해당 종목의 총 거래금액을 총 거래량으로 나눈 가격을 말합니다) 를 기준주가로 하여 30%의 할인율을 적용한 확정발행가액을 산출하여 금융위원회(금융감독원) 전자공시시스템에 공시할 예정이며, 회사의 인터넷 홈페이지(http://www.koreazinc.co.kr)에 게재하여 개별통지에 갈음할 예정입니다. 산정한 가액이 액면가액 이하일 경우에는 액면가액을 확정발행가액으로 하며, 호가 단위 미만은 호가 단위로 절상합니다.</P>
+<P USERMARK=" B">나. 청약방법</P>
+
+<P>
+<SPAN>1) 해당 청약사무취급처에서 사전에 정하여 공시하는 청약방법에 따라 청약사무취급처에 실명확인증표와 소정의 청약서, 청약증거금을 제시하고 청약합니다. 단, 청약증거금은 청약금액의 100%로 하며, 청약증거금은 주금납입일에 납입금으로 대체하되, 청약증거금에 대해서는 무이자로 합니다. 청약자는 각 청약처별로 다중청약은 불가능하며, 집합투자기구 중 운용주체가 다른 집합투자기구를 제외한 청약자의 한 개의 청약처에 대한 이중청약은 불가능합니다. 고위험고수익투자신탁은 청약 시 청약사무 취급처에 「증권 인수업무 등에 관한 규정」 제2조 제18호에 따른 요건을 충족하고, 제9조 제4항에 해당하지 않음을 확약하는 서류 및 자산총액이 기재되어 있는 서류를 함께 제출하여야 합니다.2) 본 유상증자에 청약하고자 하는 투자자(「자본시장과 금융투자업에 관한 법률」 제9조 제5항에 규정된 전문투자자 및 「자본시장과 금융투자업에 관한 법률 시행령」 제132조에따라 투자설명서의 교부가 면제되는 자 제외)는 청약 전 반드시 투자설명서를 교부 받아야 하고, 이를 확인하는 서류에 서명 또는 기명날인하여야 합니다.3) 기타</SPAN>
+<SPAN USERMARK=" 0X000000">① 일반공모 청약분을 배정함에 있어 다중청약이 있는 경우에는 미래에셋증권(주)에 대한 청약 신청만 인정됩니다.</SPAN>
+<SPAN></SPAN>
+<SPAN USERMARK=" 0X000000">② </SPAN>
+<SPAN>일반공모 청약분을 배정함에 있어 이중청약이 있는 경우에는 그 청약자의 청약 전부를 청약하지 아니한 것으로 봅니다.</SPAN>
+<SPAN USERMARK=" 0X000000">③ </SPAN>
+<SPAN>청약한도를 초과하는 청약자의 청약부분에 대하여는 청약이 없는 것으로 합니다.</SPAN>
+<SPAN USERMARK=" 0X000000">④ </SPAN>
+<SPAN>청약자는 '금융실명거래및비밀보장에관한법률'에 의거하여 실지 명의에 의해 청약해야 합니다.</SPAN>
+</P>
+
+<P>
+<SPAN USERMARK=" 0X000000">⑤「</SPAN>자본시장과 금융투자업에 관한 법률」 제180조의4  및 「자본시장과 금융투자업에 관한 법률」 제208조의4제1항에 의거, 
+<SPAN USERMARK=" 0X000000">2024년 10월 31일부터 2024년 11월 28일</SPAN>
+<SPAN>까지 당사의 주식을 공매도 하거나 공매도 주문을 위탁한 자는 금번 모집(매출)에 청약할 수 없으며, 이를 위반하여 주식을 취득할 경우 「자본시장과 금융투자업에 관한 법률」 제429조의3제2항에 따라 과징금이 부과될 수 있습니다. 다만, 모집(매출)가액의 공정한 가격형성을 저해하지 않는 경우로서 「자본시장과 금융투자업에 관한 법률」 제208조의4제2항 및 「금융투자업규정」 제6-34조에 해당할 경우에는 예외적으로 주식 취득이 허용됩니다.4) 청약한도① </SPAN>
+<SPAN USERMARK="F-BT12 !B 0X000000">청약은 청약주식의 단위에 따라 할 수 있으며, 자본시장법에 따른 우선배정대상인 우리사주조합을 제외한 모든 청약자는 그 특별관계자(『금융회사의 지배구조에 관한 법률 시행령』 제3조에 따른 특수관계인과『자본시장과 금융투자업에 관한 법률 시행령』제141조 제2항에 따른 공동보유자를 의미함)와 합하여 총 공모주식수(3,732,650주)의 3%(111,979주)를 초과하여 청약할 수 없도록 청약물량을 제한한다. 본 조항에 해당하는 청약자와 그 특별관계자의 합산 청약 수량이 총 공모주식수(3,732,650주)의 3%(111,979주)를 초과한 경우, 청약 한도 내에서 청약자와 특별관계자의 청약수량을 기준으로 안분하여 계산한다. 청약사무취급처는 그 차액을 납입일까지 당해 청약자에게 반환하며, 이 때 받은 날부터의 이자는 지급하지 아니한다. </SPAN>
+<SPAN USERMARK="F-BT12 !B 0X000000"></SPAN>
+<SPAN USERMARK="F-BT12 B">다. 공모주식의 배정방법</SPAN>
+</P>
+
+<P>
+<SPAN>- 우리사주조합 : 신주의 20.0%인 </SPAN>
+<SPAN USERMARK=" 0X000000">746,530</SPAN>
+<SPAN>주는 자본시장과 금융투자업에 관한 법률 제165조의7에 따라 우리사주조합에게 우선 배정합니다.- 일반공모 : 신주의 80%에 해당하는 </SPAN>
+<SPAN USERMARK=" 0X000000">2,986,120</SPAN>
+<SPAN>주를 '자본시장과 금융투자업에 관한 법률' 제165조의 6 및 당사 정관 제10조에 의거 일반에게 공모합니다. 단, 우리사주조합의 배정분 중 청약 미달 잔여주식이 있는 경우에는 이를 일반공모 배정분에 합산하여 배정합니다.</SPAN>
+</P>
+<P>-「증권 인수업무 등에 관한 규정」 제9조 제2항 제3호에 따라 고위험고수익투자신탁에 일반공모 주식수의 5% 이상을 배정합니다. 일반공모 결과 각 청약자유형군에 대한 배정시에는 각 청약자유형군별로 각 청약처의 청약주식수를 모두 합산하여, 각 청약자에게 동일한 배정비율로 통합배정하고, 「증권 인수업무 등에 관한 규정」 제9조제3항에 따라 한 청약자 유형군의 청약수량이 배정비율에 미달하는 경우에는 다른 청약자 유형군에 배정할 수 있습니다.</P>
+<P>-  "고위험고수익투자신탁" 이란 「조세특례제한법」 제91조의15제1항에 따른 투자신탁 등을 말합니다. 다만, 해당 투자신탁 등의 최초 설정일, 설립일로부터 배정일까지의 기간이 6개월 미만인 경우에는 「조세특례제한법 시행령」 제93조제3항제1호 및 제93조제7항에도 불구하고 배정시점의 비우량채권과 코넥스 상장주식을 합한 보유비율이 100분의 45 이상이고 이를 포함한 국내 채권의 보유비율이 100분의 60 이상이어야 합니다.</P>
+<P>- 일반공모에 관한 배정수량 계산 시에는 '모집주선회사'가 청약자 유형군별로 접수한 '총청약수량'을 일반공모 배정분 주식수로 나눈 청약경쟁률에 따라 각 청약자에게 배정합니다. 일반공모 청약결과 일반공모 총 청약자의 청약주식수가 공모주식수를 초과하는 경우에는 청약경쟁률에 따라 5사 6입을 원칙으로 안분 배정하여 잔여주식이 최소화되도록 합니다. 다만, 고위험고수익투자신탁에 대한 공모주식 5%와 개인투자자 및 기관투자자(집합투자업자포함)에 대한 공모주식 95%에 대한 청약경쟁률과 배정은 별도로 산출 및 배정합니다. 다만, 한 그룹만 청약미달이 발생할 경우, 청약미달에 해당하는 주식은 청약초과 그룹에 배정합니다. 이후 최종 잔여주식은 최고청약자부터 순차적으로 우선 배정하되, 동순위 최고청약자가 최종 잔여 주식보다 많은 경우에는 모집주선회사가 무작위 추첨방식을 통하여 배정합니다.- 일반공모 청약결과 일반공모 총 청약 주식수가 일반공모 주식수에 미달하는 경우, 청약주식수대로 배정하고, 최종 미청약된 잔여 주식은 미발행 처리합니다.</P>
+
+<P USERMARK=" B">라. 주권교부에 관한 사항
+<SPAN USERMARK="F-BT12 !B 0X000000">- 신주상장 및 유통개시일(예정): 2024년 12월 18일(2019년 9월 16일 전자증권제도가 시행됨에 따라 실물 주권의 교부 없이 각 주주의 보유 계좌로 상장일에 주식이 등록발행되어 입고되며, 상장일부터 유통 가능합니다. 단, 유관기관과의 업무 협의 과정에서 상기 일정은 변경될 수 있음을 유의하시기 바랍니다.)</SPAN>마. 청약이 금지되는 공매도 거래 기간
+<SPAN USERMARK="F-BT12 !B 0X000000">「자본시장과 금융투자업에 관한 법률」 제180조의4 및 「자본시장과 금융투자업에 관한 법률」 제208조의4제1항에 의거, 2024년 10월 31일부터 2024년 11월 28일까지 당사의 주식을 공매도 하거나 공매도 주문을 위탁한 자는 금번 모집(매출)에 청약할 수 없으며, 이를 위반하여 주식을 취득할 경우 「자본시장과 금융투자업에 관한 법률」 제429조의3제2항에 따라 과징금이 부과될 수 있습니다. 다만, 모집(매출)가액의 공정한 가격형성을 저해하지 않는 경우로서 「자본시장과 금융투자업에 관한 법률」 제208조의4제2항 및 「금융투자업규정」 제6-34조에 해당할 경우에는 예외적으로 주식 취득이 허용됩니다.</SPAN>바. 청약 취급처
+<SPAN USERMARK="F-BT12 !B">(1) 청약기간 : 2024년 12월 03일 ~12월 04일 (2일간)(2) </SPAN>
+<SPAN USERMARK="F-BT12 !B 0X000000">청약사무 취급처 : 미래에셋증권(주) 및 케이비증권(주) 본ㆍ지점</SPAN>
+<SPAN USERMARK=" 0X000000">사. 기타사항</SPAN>
+<SPAN USERMARK="F-BT12 !B 0X000000">1) 본 유상증자 계획은 관계기관의 조정 또는 증권신고서 수리과정 등에서 변경될 수있습니다.</SPAN>
+<SPAN USERMARK="F-BT12 !B"></SPAN>
+<SPAN USERMARK="F-BT12 !B 0X000000">2) 청약증거금은 주금납입일에 주금으로 대체하며, 청약일로부터 납입일까지의 이자는 무이자로 합니다.</SPAN>
+<SPAN USERMARK="F-BT12 !B"></SPAN>
+<SPAN USERMARK="F-BT12 !B 0X000000">3) 본 주요사항보고서에 기재되어 있지 않은 청약의 방법 및 청약의 장소 등 기타 유상증자에 대한 자세한 사항은 2024년 10월 30일 제출한 증권신고서 및 예비투자설명서를 참고하시기 바랍니다.</SPAN>
+<SPAN USERMARK="F-BT12 !B"></SPAN>
+</P>
+</LIBRARY>
+
+
+<P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

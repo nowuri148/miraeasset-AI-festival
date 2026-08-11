@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11344">주요사항보고서(회사합병 결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20221018">6.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="01390344">에이치디현대중공업(주)</COMPANY-NAME>
+
+
+<BODY ATOCID="2">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">  2025년     8월    27일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">에 이 치 디 현 대 중 공 업 주 식 회 사</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD WIDTH="132" HEIGHT="46">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="46">이   상   균</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">울산광역시 동구 방어진순환도로 1000</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 052-202-2114</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지)http://hhi.co.kr</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) 상 무</TD>
+<TD WIDTH="267" HEIGHT="23">(성  명) 고 병 조</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 052-202-2703</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Merger" ATOCID="1">회사합병 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="RSL_MGR" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="875" BORDER="1">
+
+<COLGROUP WIDTH="875">
+<COL WIDTH="65"></COL>
+<COL WIDTH="65"></COL>
+<COL WIDTH="40"></COL>
+<COL WIDTH="41"></COL>
+<COL WIDTH="81"></COL>
+<COL WIDTH="115"></COL>
+<COL WIDTH="114"></COL>
+<COL WIDTH="37"></COL>
+<COL WIDTH="153"></COL>
+<COL WIDTH="164"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="283" AUPDATECONT="N" ENG="1. Merger method" HEIGHT="69">1. 합병방법</TD>
+<TE WIDTH="574" ACODE="MGR_MTH" COLSPAN="5" VALIGN="MIDDLE" HEIGHT="69">HD현대중공업(주)가 HD현대미포(주)를 흡수합병 - 존속회사(합병법인) : HD현대중공업(주)(유가증권시장 상장법인) - 소멸회사(피합병법인) : HD현대미포(주)(유가증권시장 상장법인)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- Type of merger" WIDTH="283" HEIGHT="23">- 합병형태</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_FRM" AUNITVALUE="N" COLSPAN="5" WIDTH="574" HEIGHT="23" ENG="N/A">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD COLSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="2. Purpose of merger" WIDTH="283" HEIGHT="69">2. 합병목적</TD>
+<TE ACODE="MGR_RES" COLSPAN="5" VALIGN="MIDDLE" WIDTH="574" HEIGHT="69">기술ㆍ인력ㆍ자원의 통합을 통해 분산된 역량과 자원을 일원화하여 미래 조선업의 변화에 효과적으로 대응하고, 본원적 경쟁력 강화를 통해 글로벌 시장에서의 경쟁우위를 지속적으로 확보하기 위함입니다. </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="1226">
+<TD COLSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="3. Major impacts and effects of the merger" WIDTH="283" HEIGHT="1219">3. 합병의 중요영향 및 효과</TD>
+
+<TE ACODE="MGR_EFT" COLSPAN="5" VALIGN="MIDDLE" WIDTH="574" HEIGHT="1219">
+<SPAN USERMARK="B">(1) 회사의 경영에 미치는 영향 및 효과</SPAN>
+<SPAN>합병회사 HD현대중공업(주)와 피합병회사 HD현대미포(주)는 독점규제 및 공정거래에 관한 법률 상 HD현대 그룹 기업집단 소속의 계열회사입니다. 본 주요사항보고서 제출일 현재 합병회사인 HD현대중공업(주)의 최대주주는 보통주 74.18%를 보유하고 있는 HD한국조선해양(주)이며, 피합병회사인 HD현대미포(주)의 최대주주는 보통주 42.40%를 보유하고 있는 HD한국조선해양(주)입니다. 본 합병으로 인한 합병회사의 최대주주 및 특수관계인 지분율은 보통주 기준 74.18%에서 69.29%로 변동될 것으로 예상되며, 최대주주의 변경은 없습니다. 이에 최대주주 및 특수관계인의 지배력에 유의미한 변동은 없을 것으로 판단됩니다.합병당사회사는 본 합병이 경영활동의 통합관리를 통한 신속한 의사결정ㆍ경영효율성을 제고하고, 구매/재무 등 규모의 경제를 달성하며, 수익성ㆍ성장성ㆍ안정성 측면에서의 상호 보완 작용, 나아가 미래 신사업 발굴이나 투자 등에서 그룹내 자원을 결집하는 등 경영 효율화 측면에서 다양한 효과를 발생시킬 것으로 기대하고 있습니다.</SPAN>
+<SPAN USERMARK="B">(2) 회사의 재무에 미치는 영향 및 효과</SPAN>
+<SPAN>합병회사인 HD현대중공업(주)는 피합병회사인 HD현대미포(주)를 흡수합병함에 따라, 각사가 영위하는 사업 부문의 일괄 체계를 구축해 불필요한 자원낭비를 줄이고, 인적, 물적 자원을 효율적으로 활용해 일원화된 관리 체제로 운영효율성 향상을 기대하고 있습니다. 이를 통해, 경영효율성을 극대화해 궁극적으로 회사의 재무구조 및 수익성 개선을 달성할 계획입니다.</SPAN>
+<SPAN USERMARK="B">(3) 회사의 영업에 미치는 영향 및 효과</SPAN>
+<SPAN>HD현대중공업(주)와 HD현대미포(주)의 본건 합병은 유사 사업 분야인 선박 건조 부문의 계열회사를 통합하여 시너지를 창출하고 지속적인 성장을 도모하는 것을 목표로 합니다. 양사의 역량과 설비 인프라를 통합하여 함정 영업을 더욱 확대할 수 있고, 건조 실적 통합에 따라 특수목적선 영업 및 수주 경쟁력을 한층 제고할 수 있습니다. 단일 법인으로 통합함으로써 급변하는 업황에 대한 대응 능력을 높이고 영업망 공유를 통해 사업기반을 확장할 수 있을 것으로 기대되며, 궁극적으로는 사업 부문의 양적ㆍ질적 확장을 동시에 달성하여 미래 시장을 선도하는 성장 기반을 마련하고자 합니다.</SPAN>
+<SPAN USERMARK="B">(4) 합병 당사회사 주주가치에 미치는 영향</SPAN>
+<SPAN>합병신주 배정기준일(「주식ㆍ사채 등의 전자등록에 관한 법률」상 병합기준일의 직전 영업일을 의미함) 현재 기준, 합병소멸회사인 HD현대미포(주) 주주명부에 등재되어 있는 보통주 주주들이 보유한 보통주식 1주당 합병회사 HD현대중공업(주) 보통주식 0.4059146주를 발행할 예정입니다.금번 합병의 경우 HD현대미포(주)의 자기주식(주주들의 주식매수청구권 행사로 인하여 취득하거나 보유하게 되는 자기주식 포함)에 대해서는 합병신주를 배정하지 아니합니다.합병 완료 이후 합병존속회사는 상기 명시한 합병 기대효과의 발현을 통해 외형 확장 및 실적 성장을 기대하고 있습니다. 또한, 경영활동의 통합 관리를 통한 신속한 의사결정, 경영효율성 제고, 구매/재무 등 규모의 경제 달성, 수익성ㆍ성장성ㆍ안정성 측면에서의 상호 보완 작용, 나아가 미래 신사업 발굴이나 투자 등에서 그룹 내 자원을 결집하는 등 상호 지속적 성장에 기여할 것으로 기대됩니다. 이러한 합병존속회사의 계속기업가치 증대는 향후 주주환원 측면에서도 긍정적인 결과를 만들어내어 궁극적으로 주주가치를 제고해 나갈 수 있을 것으로 기대하고 있습니다.</SPAN>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="168">
+<TD COLSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="4. Merger ratio" WIDTH="283" HEIGHT="161">4. 합병비율 </TD>
+<TE ACODE="OTH_MGR_RATE" COLSPAN="5" VALIGN="MIDDLE" WIDTH="574" HEIGHT="161">HD현대중공업(주) 보통주 : HD현대미포(주) 보통주 = 1: 0.4059146합병 비율 기준주가는 합병을 위한 이사회결의일(2025년 08월 27일)과 합병계약을 체결한 날(2025년 08월 27일) 중 앞서는 날의 전일(2025년 08월 26일)을 기산일로 하여, 최근 1개월간의 거래량 가중산술평균종가, 최근 1주일간의 거래량 가중산술평균종가, 최근일의 종가를 산술평균한 가액으로 산정하였습니다. 합병가액 산정 시, 산술평균가액에 할증 또는 할인을 적용하지 않았습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="10" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- In the case of an extinctive merger with an SPAC" WIDTH="866" HEIGHT="23">- 기업인수목적회사 소멸합병의 경우</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD VALIGN="MIDDLE" AUPDATECONT="N" WIDTH="56" HEIGHT="69"></TD>
+<TD COLSPAN="4" VALIGN="MIDDLE" AUPDATECONT="N" ENG="A multiple of the reference price on the listing date of the stocks given by merger compared to the closing price on the last trading day of the SPAC" WIDTH="218" HEIGHT="69">기업인수목적회사 마지막 거래일 종가 대비 합병신주의 상장 당일 기준가격의 배수</TD>
+<TE ALIGN="RIGHT" ACODE="MGR_PRC_CMP" COLSPAN="5" VALIGN="MIDDLE" WIDTH="574" HEIGHT="69">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="835">
+<TD COLSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="5. Calculation basis for the merger ratio" WIDTH="283" HEIGHT="828">5. 합병비율 산출근거</TD>
+<TE ACODE="MGR_RT_CALC" COLSPAN="5" VALIGN="MIDDLE" WIDTH="574" HEIGHT="828">본 합병의 당사회사인 HD현대중공업(주)와 HD현대미포(주)는 유가증권시장 상장법인이므로 자본시장과 금융투자업에 관한 법률 시행령 제176조의5 제1항 제1호에 의거 보통주에 대한 기준주가를 합병가액으로 하여 합병비율을 산출하였으며 관련법규는 아래와 같습니다.가. HD현대중공업(주) 기명식 보통주식의 합병가액유가증권시장 상장법인인 HD현대중공업(주)의 보통주 기준시가는 '자본시장과 금융투자업에 관한 법률 시행령 제176조의5'에 따라 합병을 위한 이사회결의일(2025년 08월 27일)과 합병계약을 체결한 날(2025년 08월 27일) 중 앞서는 날의 전일(2025년 08월 26일)을 기산일로 하여, 최근 1개월간의 거래량 가중산술평균종가, 최근 1주일간의 거래량 가중산술평균종가, 최근일의 종가를 산술평균한 가액으로 산정하였습니다. 합병가액 산정 시, 산술평균가액에 할증 또는 할인을 적용하지 않았습니다.- 최근 1개월 가중산술평균종가(2025년 07월 28일 ~ 2025년 08월 26일) : 471,665원- 최근 1주일 가중산술평균종가(2025년 08월 20일 ~ 2025년 08월 26일) : 472,834원- 최근일 종가(2025년 08월 26일) : 468,000원- HD현대중공업(주) 합병가액 : 470,833원나. HD현대미포(주) 기명식 보통주식의 합병가액유가증권시장 상장법인인 HD현대미포(주)의 보통주 기준시가는 '자본시장과 금융투자업에 관한 법률 시행령 제176조의5'에 따라 합병을 위한 이사회결의일(2025년 08월 27일)과 합병계약을 체결한 날(2025년 08월 27일) 중 앞서는 날의 전일(2025년 08월 26일)을 기산일로 하여, 최근 1개월간의 거래량 가중산술평균종가, 최근 1주일간의 거래량 가중산술평균종가, 최근일의 종가를 산술평균한 가액으로 산정하였습니다. 합병가액 산정 시, 산술평균가액에 할증 또는 할인을 적용하지 않았습니다.- 최근 1개월 가중산술평균종가(2025년 07월 28일 ~ 2025년 08월 26일) : 196,446원- 최근 1주일 가중산술평균종가(2025년 08월 20일 ~ 2025년 08월 26일) : 188,409원- 최근일 종가(2025년 08월 26일) : 188,500원- HD현대미포(주) 합병가액 : 191,118원이에 따라 합병비율은 1 : 0.4059146 (HD현대중공업(주) : HD현대미포(주))로 결정되었습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD VALIGN="MIDDLE" AUPDATECONT="N" ROWSPAN="5" COLSPAN="2" ENG="6. Matters related to external evaluation" WIDTH="121" HEIGHT="212">6. 외부평가에 관한 사항</TD>
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ALIGN="CENTER" ENG="Whether external valuation was conducted" WIDTH="153" HEIGHT="23">외부평가 여부</TD>
+<TU ALIGN="CENTER" AUNIT="EXV_YN" AUNITVALUE="N" COLSPAN="5" WIDTH="574" HEIGHT="23" ENG="Non-applicable">미해당</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ALIGN="CENTER" ENG="- Basis and reasons" WIDTH="153" HEIGHT="92">- 근거 및 사유</TD>
+<TE ACODE="EXV_BSS" COLSPAN="5" VALIGN="MIDDLE" WIDTH="574" HEIGHT="92">본건 합병은 유가증권시장 주권상장법인 간의 합병으로 자본시장 및 금융투자업에 관한 법률 제165조의4 및 동법 시행령 제176조의5 제1항 제1호에 의거 보통주에 대한 기준주가를 합병가액으로 하여 합병비율을 산출하였습니다. 이에 외부평가기관의 평가는 받지 않았습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ALIGN="CENTER" ENG="External evaluator’s name" WIDTH="153" HEIGHT="23">외부평가기관의 명칭</TD>
+<TE ACODE="EXV_NM" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="574" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ALIGN="CENTER" ENG="Period of external valuation" WIDTH="153" HEIGHT="23">외부평가 기간</TD>
+<TU ALIGN="CENTER" AUNIT="EXV_PROD" AUNITVALUE="-" COLSPAN="5" WIDTH="574" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ALIGN="CENTER" ENG="Opinion of external valuation" WIDTH="153" HEIGHT="23">외부평가 의견</TD>
+<TE ACODE="EXV_OPN" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="574" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" VALIGN="MIDDLE" AUPDATECONT="N" ROWSPAN="2" ENG="7. Class and number of new shares to be distributed following merger" WIDTH="202" HEIGHT="53">7. 합병신주의 종류와 수(주)</TD>
+<TD VALIGN="MIDDLE" AUPDATECONT="N" ALIGN="CENTER" ENG="Common stock" WIDTH="72" HEIGHT="23">보통주식</TD>
+<TE ACODE="MGR_CST" COLSPAN="5" VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="574" HEIGHT="23">16,189,618</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD VALIGN="MIDDLE" AUPDATECONT="N" ALIGN="CENTER" ENG="Class shares" WIDTH="72" HEIGHT="23">종류주식</TD>
+<TE ACODE="MGR_PST" COLSPAN="5" VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="574" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="31">
+<TD VALIGN="MIDDLE" AUPDATECONT="N" ROWSPAN="10" COLSPAN="2" ENG="8. Merger counterparty" WIDTH="121" HEIGHT="318">8. 합병상대회사</TD>
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Company name" WIDTH="153" HEIGHT="24">회사명</TD>
+
+<TE COLSPAN="5" ACODE="OTH_INC" ALIGN="CENTER" WIDTH="574" HEIGHT="24">HD현대미포(주) (
+<SPAN USERMARK="F-12 ">HD HYUNDAI MIPO CO., LTD.(약호 HMD))</SPAN>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="31">
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Main business" WIDTH="153" HEIGHT="24">주요사업</TD>
+<TE COLSPAN="5" ACODE="OTH_PRB" ALIGN="CENTER" USERMARK="F-12 " WIDTH="574" HEIGHT="24">선박 건조업</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Relationship to company" WIDTH="153" HEIGHT="23">회사와의 관계</TD>
+<TU ALIGN="CENTER" AUNIT="OTH_RLT" AUNITVALUE="5" COLSPAN="5" WIDTH="574" HEIGHT="23" ENG="Affiliated company">계열회사</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ROWSPAN="3" ENG="Financial details in the latest fiscal year (KRW)" WIDTH="153" HEIGHT="83">최근 사업연도 재무내용(원)</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total assets" WIDTH="106" HEIGHT="23">자산총계</TD>
+<TE ACODE="OTH_ASST" ALIGN="RIGHT" COLSPAN="2" WIDTH="142" HEIGHT="23">5,108,867,288,419</TE>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Issued capital" WIDTH="144" HEIGHT="23">자본금</TD>
+<TE ACODE="OTH_CPT" ALIGN="RIGHT" WIDTH="155" HEIGHT="23">199,710,745,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total liabilities" WIDTH="106" HEIGHT="23">부채총계</TD>
+<TE ACODE="OTH_DPT" ALIGN="RIGHT" COLSPAN="2" WIDTH="142" HEIGHT="23">3,002,436,521,893</TE>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Sales" WIDTH="144" HEIGHT="23">매출액</TD>
+<TE ACODE="OTH_SALE" ALIGN="RIGHT" WIDTH="155" HEIGHT="23">4,630,048,753,890</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total equity" WIDTH="106" HEIGHT="23">자본총계</TD>
+<TE ACODE="OTH_CPT_SUM" ALIGN="RIGHT" COLSPAN="2" WIDTH="142" HEIGHT="23">2,106,430,766,526</TE>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Profit" WIDTH="144" HEIGHT="23">당기순이익</TD>
+<TE ACODE="OTH_NP" ALIGN="RIGHT" WIDTH="155" HEIGHT="23">113,248,354,496</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="- Whether external audit was conducted" WIDTH="153" HEIGHT="23"> - 외부감사 여부</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Name of institution" WIDTH="106" HEIGHT="23">기관명</TD>
+<TE ACODE="OTH_CNM" ALIGN="CENTER" COLSPAN="2" WIDTH="142" HEIGHT="23">삼정회계법인</TE>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Audit opinion" WIDTH="144" HEIGHT="23">감사의견</TD>
+<TE ACODE="OTH_GOP" ALIGN="CENTER" WIDTH="155" HEIGHT="23">적정</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="8" ENG="- In the case of an extinctive merger with an SPAC" WIDTH="736" HEIGHT="23"> - 기업인수목적회사 소멸합병의 경우</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" WIDTH="31" HEIGHT="76"></TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ENG="CEO" WIDTH="113" HEIGHT="23">대표이사</TD>
+<TE VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ACODE="EX_CEO" WIDTH="220" HEIGHT="23">-</TE>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ENG="Establishment date" WIDTH="181" HEIGHT="23">설립연월일</TD>
+<TU VALIGN="MIDDLE" ALIGN="CENTER" AUNIT="EX_EST_DT" AUNITVALUE="-" WIDTH="155" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ENG="Location of head office:" WIDTH="113" HEIGHT="46">본점소재지</TD>
+<TE VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ACODE="EX_ADDR" WIDTH="220" HEIGHT="46">-</TE>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ENG="Scheduled date of submission of registration statement" WIDTH="181" HEIGHT="46">증권신고서제출예정일</TD>
+<TU VALIGN="MIDDLE" ALIGN="CENTER" AUNIT="EX_SUB_DT" AUNITVALUE="-" WIDTH="155" HEIGHT="46">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD VALIGN="MIDDLE" AUPDATECONT="N" ROWSPAN="7" COLSPAN="2" ENG="9. New company to be established by the merger" WIDTH="121" HEIGHT="226">9. 신설합병회사</TD>
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ALIGN="CENTER" ENG="Company name" WIDTH="153" HEIGHT="23">회사명</TD>
+<TE COLSPAN="5" ACODE="MGR_INC" ALIGN="CENTER" WIDTH="574" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ROWSPAN="3" ALIGN="CENTER" ENG="Financial details at the time of establishment (KRW)" WIDTH="153" HEIGHT="83">설립시 재무내용(원)</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total assets" WIDTH="106" HEIGHT="23">자산총계</TD>
+<TE ACODE="MGR_ASST" ALIGN="RIGHT" COLSPAN="2" WIDTH="142" HEIGHT="23">-</TE>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total liabilities" WIDTH="144" HEIGHT="23">부채총계</TD>
+<TE ACODE="MGR_DPT" ALIGN="RIGHT" WIDTH="155" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total equity" WIDTH="106" HEIGHT="23">자본총계</TD>
+<TE ACODE="MGR_DPT_SUM" ALIGN="RIGHT" COLSPAN="2" WIDTH="142" HEIGHT="23">-</TE>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Issued capital" WIDTH="144" HEIGHT="23">자본금</TD>
+<TE ACODE="MGR_CPT" ALIGN="RIGHT" WIDTH="155" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TU AUNIT="MGR_NDY" AUNITVALUE="-" COLSPAN="3" ALIGN="CENTER" WIDTH="257" HEIGHT="23">-</TU>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" COLSPAN="2" ENG="As of now" WIDTH="308" HEIGHT="23">현재기준</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Sales of newly established business division for the latest fiscal year (KRW)" WIDTH="153" HEIGHT="46">신설사업부문 최근 사업연도 매출액(원)</TD>
+<TE COLSPAN="5" ACODE="MGR_SAL" ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="574" HEIGHT="46">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Main business" WIDTH="153" HEIGHT="23">주요사업</TD>
+<TE COLSPAN="5" ACODE="MGR_PRB" ALIGN="CENTER" WIDTH="574" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Whether applied for re-listing" WIDTH="153" HEIGHT="23">재상장신청 여부</TD>
+<TU COLSPAN="5" AUNIT="MGR_RR" AUNITVALUE="A" ALIGN="CENTER" WIDTH="574" HEIGHT="23" ENG="N/A">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="20" VALIGN="MIDDLE" AUPDATECONT="N" COLSPAN="2" ENG="10. Merger schedule" WIDTH="121" HEIGHT="657">10. 합병일정</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Date of merger contract" WIDTH="153" HEIGHT="23">합병계약일</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_CRT" AUNITVALUE="20250827" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 08월 27일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Record date for determining eligible shareholders" WIDTH="153" HEIGHT="23">주주확정기준일</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_DDY" AUNITVALUE="20250912" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 09월 12일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Shareholders’ register closure period" WIDTH="72" HEIGHT="53">주주명부폐쇄기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="72" HEIGHT="23">시작일</TD>
+<TU ALIGN="CENTER" AUNIT="CLO_BGN_DT" AUNITVALUE="-" COLSPAN="5" WIDTH="574" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="72" HEIGHT="23">종료일</TD>
+<TU ALIGN="CENTER" AUNIT="CLO_END_DT" AUNITVALUE="-" COLSPAN="5" WIDTH="574" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Filing period for opposition to merger" WIDTH="72" HEIGHT="69">합병반대의사통지 접수기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="72" HEIGHT="23">시작일</TD>
+<TU ALIGN="CENTER" AUNIT="REV_BGN_DT" AUNITVALUE="20251002" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 10월 02일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="46">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="72" HEIGHT="39">종료일</TD>
+<TU ALIGN="CENTER" AUNIT="REV_END_DT" AUNITVALUE="20251022" COLSPAN="5" WIDTH="574" HEIGHT="39">2025년 10월 22일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Scheduled date of general shareholders’ meeting" WIDTH="153" HEIGHT="23">주주총회예정일자</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_SHM_DT" AUNITVALUE="20251023" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 10월 23일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Exercise period of the appraisal rights" WIDTH="72" HEIGHT="69">주식매수청구권행사기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="72" HEIGHT="23">시작일</TD>
+<TU ALIGN="CENTER" AUNIT="BUY_BGN_DT" AUNITVALUE="20251023" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 10월 23일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="46">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="72" HEIGHT="39">종료일</TD>
+<TU ALIGN="CENTER" AUNIT="BUY_END_DT" AUNITVALUE="20251112" COLSPAN="5" WIDTH="574" HEIGHT="39">2025년 11월 12일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Period for submission of old share certificates" WIDTH="72" HEIGHT="53">구주권제출기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="72" HEIGHT="23">시작일</TD>
+<TU ALIGN="CENTER" AUNIT="OLD_STK_BGN_DT" AUNITVALUE="-" COLSPAN="5" WIDTH="574" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="72" HEIGHT="23">종료일</TD>
+<TU ALIGN="CENTER" AUNIT="OLD_STK_END_DT" AUNITVALUE="-" COLSPAN="5" WIDTH="574" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Scheduled period for suspending trading" WIDTH="72" HEIGHT="69">매매거래 정지예정기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="72" HEIGHT="23">시작일</TD>
+<TU ALIGN="CENTER" AUNIT="SCD_STK_BGN_DT" AUNITVALUE="-" COLSPAN="5" WIDTH="574" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="46">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="72" HEIGHT="39">종료일</TD>
+<TU ALIGN="CENTER" AUNIT="SCD_STK_END_DT" AUNITVALUE="-" COLSPAN="5" WIDTH="574" HEIGHT="39">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Creditor objection submission period" WIDTH="72" HEIGHT="69">채권자이의 제출기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="72" HEIGHT="23">시작일</TD>
+<TU ALIGN="CENTER" AUNIT="PRT_PRD_BGN_DT" AUNITVALUE="20251023" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 10월 23일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="46">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="72" HEIGHT="39">종료일</TD>
+<TU ALIGN="CENTER" AUNIT="PRT_PRD_END_DT" AUNITVALUE="20251124" COLSPAN="5" WIDTH="574" HEIGHT="39">2025년 11월 24일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Merger date" WIDTH="153" HEIGHT="23">합병기일</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_DT" AUNITVALUE="20251201" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 12월 01일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Date of shareholders' meeting to report the completion" WIDTH="153" HEIGHT="23">종료보고 총회일</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_ENY" AUNITVALUE="20251201" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 12월 01일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="scheduled registration date for merger" WIDTH="153" HEIGHT="23">합병등기예정일자</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_RGS_DT" AUNITVALUE="20251201" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 12월 01일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Scheduled delivery date of new share certificates" WIDTH="153" HEIGHT="23">신주권교부예정일</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_SSY" AUNITVALUE="-" COLSPAN="5" WIDTH="574" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Scheduled listing date of new shares" WIDTH="153" HEIGHT="23">신주의 상장예정일</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_CSY" AUNITVALUE="20251215" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 12월 15일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="11. Whether deemed a backdoor listing" WIDTH="283" HEIGHT="23">11. 우회상장 해당 여부</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_BDL" AUNITVALUE="N" COLSPAN="5" WIDTH="574" HEIGHT="23" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="12. Whether satisfying backdoor listing requirements by other corporations" WIDTH="283" HEIGHT="23">12. 타법인의 우회상장 요건 충족여부</TD>
+<TU ALIGN="CENTER" AUNIT="MGR_BDK" AUNITVALUE="A" COLSPAN="5" WIDTH="574" HEIGHT="23" ENG="N/A">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="490">
+<TD ROWSPAN="6" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ENG="13. Matters related to the appraisal rights" WIDTH="121" HEIGHT="2427">13. 주식매수청구권에 관한 사항</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Terms and conditions for exercise" WIDTH="153" HEIGHT="483">행사요건</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STO" COLSPAN="5" WIDTH="574" HEIGHT="483">상법 제522조의3 및 자본시장과 금융투자업에 관한 법률 제165조의5에 의거 주주 확정 기준일 현재 주주명부에 등재된 주주를 대상으로 하여 합병에 관한 이사회결의에 반대하는 주주는 주주총회 결의일 전일까지 당해 법인에 대하여 서면으로 그 결의에 반대하는 의사를 통지한 경우에 한하여 자기가 소유하고 있는 주식을 당해 법인에 대하여 주주총회 결의일부터 20일 이내에 주식의 종류와 수를 기재한 서면으로 매수를 청구할 수 있으며, 소유 주식 중 일부에 대한 매수 청구도 가능합니다.다만, 자본시장과 금융투자업에 관한 법률 제165조의5 제1항 및 동법 시행령 제176조의7 제2항에 따라 주식매수청구권은 본 합병에 대한 합병 당사회사의 이사회결의가 공시되기 이전에 취득하였음을 증명하거나, 이사회 결의 사실이 공시된 날의 다음 영업일까지 (i) 해당 주식에 관한 매매계약의 체결, (ii) 해당 주식의 소비대차계약의 해지 또는 (iii) 해당 주식의 취득에 관한 법률행위가 있었던 경우 이를 증명할 수 있고, 주식매수청구권 행사일까지 이를 계속 보유한 주식에 한하여 부여되고, 동 기간 내에 매각 후 재취득한 주식에 대해서는 매수청구권이 상실되며, 또한 주식매수청구권을 행사한 이후에는 이를 취소할 수 없습니다.또한 사전에 서면으로 합병의 이사회 결의에 반대하는 의사를 통지한 주주가 주주총회에서 합병에 찬성한 경우에는 주식매수청구권을 행사할 수 없습니다. 합병 당사회사들은 모두 주권상장법인이므로 자본시장과 금융투자업에관한법률 제165조의5 2항에 따라 주식매수청구에 대하여 주식매수청구기간이 종료하는 날로부터 1개월 이내에 당해 주식을 매수하여야 합니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Estimated purchase price" WIDTH="153" HEIGHT="23">매수예정가격</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" ACODE="MGR_STP" COLSPAN="5" WIDTH="574" HEIGHT="23">462,626</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="1226">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Exercise procedure, method, period, and location" WIDTH="153" HEIGHT="1219">행사절차, 방법, 기간, 장소</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STD" COLSPAN="5" WIDTH="574" HEIGHT="1219">가. 반대의사의 표시방법상법 제522조의3 및 자본시장과 금융투자업에 관한 법률 제165조의5에 의거, 주주확정 기준일(2025년 09월 12일) 현재 합병당사회사의 주주명부에 등재된 주주(자본시장과 금융투자업에관한 법률 제165조의5에 의거, 주식매수청구권은 본 합병에 대한 합병당사회사의 이사회결의 공시일(2025년 08월 27일)까지 주식의 취득계약을 체결하였음을 증명할 수 있거나, 이사회 결의 사실이 공시된 날의 다음 영업일(2025년 08월 28일)까지 (i) 해당주식에 관한 매매계약의 체결, (ii) 해당 주식의 소비대차계약의 해지 또는 (iii) 해당 주식의 취득에 관한 법률행위가 있었던 경우 이를 증명할 수 있고, 주식매수청구권 행사일까지 계속 보유한 주주에 한하여 부여됩니다.)는 주주총회 전까지 회사에 대하여 서면으로 합병에 관한 이사회결의에 반대하는 의사를 통지하여야 합니다.단, 주권을 증권회사(금융투자업자)에 위탁하고 있는 실질주주의 경우에는 당해 증권회사에 통지하여야 합니다. 이때, 반대의사 표시는 주주총회 3영업일 전(2025년 10월 20일)까지 하여야 합니다. 증권회사에서는 실질주주의 반대의사 표시를 취합하여 주주총회일 2영업일 전(2025년 10월 21일)까지 예탁기관인 한국예탁결제원에 통보하여야 합니다. 한국예탁결제원에서는 주주총회일 1영업일 전(2025년 10월 22일)에 실질주주를 대신하여 회사에 반대 의사를 통지하여야 합니다.나. 매수청구 방법상법 제522조의3 및 자본시장과 금융투자업에 관한 법률 제165조의5에 의거 합병에 관한 이사회의 결의에 반대하는 주주는 주주총회 전에 회사에 대하여 서면으로 그 결의에 반대하는 의사를 통지한 경우 그 총회의 결의일부터 20일 이내에 주식의 종류와 수를 기재한 서면으로 회사에 대하여 자기가 소유하고 있는 주식의 일부 또는 전부의 매수를 청구할 수 있습니다.단, 주권을 증권회사(금융투자업자)에 위탁하고 있는 실질 주주의 경우에는 해당 증권회사에 위탁보유하고 있는 주식수에 대하여 주식매수청구권 행사신청서를 작성하여 당해 증권회사에 제출함으로써 회사에 대하여 자기가 소유하고 있는 주식의 매수를 청구할 수 있습니다. 실질 주주는 주식매수청구기간 종료일의 2영업일 전 (2025년 11월 10일) 까지 거래 증권회사에 주식 매수를 청구하면 예탁기관인 한국예탁결제원에서 이를 대신 신청합니다.주식매수청구권을 행사한 이후에는 회사의 승낙이 없는 한 주식매수청구를 취소하거나 철회할 수 없습니다.다. 접수 장소(1) HD현대중공업(주) (합병회사)- 특별주주 (기존 명부주주): 울산광역시 동구 방어진순환도로 1000- 일반주주 (기존 실질주주): 해당 거래 증권회사(2) HD현대미포(주) (피합병회사)- 특별주주 (기존 명부주주): 울산광역시 동구 방어진순환도로 100- 일반주주 (기존 실질주주): 해당 거래 증권회사라. 청구기간- 합병반대의사 통지 접수기간 : 2025년 10월 02일 ~ 2025년 10월 22일- 주주총회 예정일자 : 2025년 10월 23일- 주식매수청구권 행사기간 : 2025년 10월 23일 ~ 2025년 11월 12일 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="352">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Payment schedule and method" WIDTH="153" HEIGHT="345">지급예정시기, 지급방법</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STY" COLSPAN="5" WIDTH="574" HEIGHT="345">가. 주식매수대금의 지급 방법특별주주(기존 '명부주주')의 경우 주주가 신고한 은행 계좌로 이체할 예정입니다. 주권을 증권회사에 위탁하고 있는 일반주주(기존 '실질주주')의 경우 해당 증권회사의 본인 계좌로 이체할 예정입니다.나. 주식매수대금의 지급예정시기주식매수청구권 행사에 따른 주식매수대금 지급 예정일은 다음과 같습니다.- HD현대중공업(주) : 2025년 11월 24일- HD현대미포(주) : 2025년 11월 24일상기 주식매수대금의 지급예정시기는 합병당사회사의 사정으로 인해 변동될 수 있습니다</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="214">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Restrictions on appraisal rights" WIDTH="153" HEIGHT="207">주식매수청구권 제한 관련 내용</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STC" COLSPAN="5" WIDTH="574" HEIGHT="207">상법 제522조의3에 따라 합병에 관한 이사회 결의에 반대하는 주주는 주주총회 전 회사에 대하여 서면으로 그 결의에 반대하는 의사를 통지한 경우에 자기가 소유하고 있는 주식을 매수하여 줄 것을 해당 법인에 대하여 주주총회 결의일로부터 20일 이내에 주식의 종류와 수를 기재한 서면으로 청구할 수 있습니다.단, 동 기간 내에 매각 후 재취득한 주식에 대해서는 주식매수청구권이 상실되며, 또한 주식매수청구권을 행사한 이후에는 이를 취소할 수 없습니다. 또한 사전에 서면으로 합병의 이사회 결의에 반대하는 의사를 통지한 주주가 주주총회에서 합병에 찬성한 경우에는 주식매수청구권을 행사할 수 없습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="122">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Effects on contract" WIDTH="153" HEIGHT="115">계약에 미치는 효력</TD>
+<TE VALIGN="BOTTOM" ACODE="MGR_STE" COLSPAN="5" WIDTH="574" HEIGHT="115">합병존속회사 및 합병소멸회사 주주들의 주식매수청구권 행사 주식수에 주식매수예정가격(자본시장과 금융투자업에 관한 법률 제165조의5 제3항 단서 및 동법 시행령 제176조의7 제3항에 의하여 산정된 금액을 의미)을 곱한 금액의 합계가 총 1.5조원을 초과하는 경우에는, 합병계약서 13조(선행조건)가 성취되지 아니함에 따라 본건 합병계약이 해제될 수 있습니다. </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" AUPDATECONT="N" VALIGN="MIDDLE" ENG="14. Board resolution date (decision date)" WIDTH="283" HEIGHT="23">14. 이사회결의일(결정일)</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" AUNIT="DRT_RSLT_DT" AUNITVALUE="20250827" COLSPAN="5" WIDTH="574" HEIGHT="23">2025년 08월 27일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE" COLSPAN="2" ENG="- Attendance of outside directors" WIDTH="121" HEIGHT="53">- 사외이사참석여부</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Present (No.)" WIDTH="153" HEIGHT="23">참석(명)</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" ACODE="ODRT_ATD_CNT" COLSPAN="5" WIDTH="574" HEIGHT="23">3</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Absent (No.)" WIDTH="153" HEIGHT="23">불참(명)</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" ACODE="ODRT_NATD_CNT" COLSPAN="5" WIDTH="574" HEIGHT="23">0</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD COLSPAN="5" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Attendance of auditors (members of Audit Committee who are not outside directors)" WIDTH="283" HEIGHT="46">- 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" AUNIT="ADT_ATD_YN" AUNITVALUE="-" COLSPAN="5" WIDTH="574" HEIGHT="46" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" AUPDATECONT="N" VALIGN="MIDDLE" ENG="15. Whether signed a put option contact, etc." WIDTH="283" HEIGHT="23">15. 풋옵션 등 계약 체결여부</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" AUNIT="PO_CTRT_YN" AUNITVALUE="N" COLSPAN="5" WIDTH="574" HEIGHT="23" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Contract details" WIDTH="283" HEIGHT="23">- 계약내용</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" ACODE="PO_CTRT_DTL" COLSPAN="5" WIDTH="574" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" AUPDATECONT="N" VALIGN="MIDDLE" ENG="16. Whether subject to file securities registration statement" WIDTH="283" HEIGHT="23">16. 증권신고서 제출대상 여부</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" AUNIT="RPT_SM_YN" AUNITVALUE="Y" COLSPAN="5" WIDTH="574" HEIGHT="23" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Reasons for exemption from filing securities registration statement, if exempted" WIDTH="283" HEIGHT="23">- 제출을 면제받은 경우 그 사유</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" ACODE="RPT_SBM" COLSPAN="5" WIDTH="574" HEIGHT="23">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" AUPDATECONT="N" ENG="17. Plans for future corporate restructuring" HEIGHT="23">17. 향후 회사구조개편에 관한 계획</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>합병당사는 합병 발표 당일(2025년 8월 27일) 기업설명회(IR)를 통해 합병 및 사업재편에 대한 배경, 목표, 비전 등에 대해 설명하고 이와 관련하여 질의응답을 진행하였습니다. 합병당사를 비롯한 HD현대그룹은 본 합병 진행에 맞춰 사업구조 재편을 통해 해외 사업 거점을 싱가포르 투자법인으로 일원화하여 다수의 해외 법인을 통합적으로 관리ㆍ운영하고, 글로벌 시장에서 보다 신속하며 유연하게 대응할 계획입니다. 본건 합병과는 별개로 이뤄지는 싱가포르 투자법인의 설립에 관한 사항(투자금액, 방식, 일정 및 규모 등)은 추후 이사회 결의를 통해 결정될 예정입니다. 향후 사업구조 재편에 관한 자세한 사항은 당사의 홈페이지에 게재된 기업설명회(IR) 자료 등을 참고해주시기 바랍니다.
+<SPAN USERMARK="0X1814FF"> </SPAN>
+<SPAN>※ 기업설명회(IR) 자료 : 당사 홈페이지(https://www.hhi.co.kr/) 투자정보>IR자료실> IR프레젠테이션</SPAN>
+</P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" AUPDATECONT="N" ENG="18. Other matters to be factored into investment decisions" HEIGHT="23">18. 기타 투자판단과 관련한 중요사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>가. '상법 제522조 및 제434조'에 따라 합병 승인에 대한 주주총회에서 결의는 특별결의사항에 해당됩니다. 따라서 본 합병의 승인을 위한 임시주주총회에서 참석주주 의결권의 3 분의 2 이상의 수와 발행주식총수의 3 분의 1 이상의 수의 승인을 얻지 못할 경우 합병이 무산될 수 있습니다.</P>
+<P> </P>
+<P>나. 신주배정 시 발생하는 단주 처리 방법에 따라 지급되는 금전 이외에 금번 합병에 참여하는 회사의 주주에게는 어떠한 교부금도 지급하지 않습니다.</P>
+<P>다. 상기 '8. 합병상대회사'인 HD현대미포(주)의 최근 사업연도 재무내용은 2024년말 연결재무제표 기준입니다.</P>
+<P> </P>
+<P>라. 상기 '10. 합병일정'은 제출일 현재 예상 일정으로, 관계법령상의 인허가 승인 및 관계기관과의 협의·승인 과정 등에 의해 변경될 수 있습니다.</P>
+<P> </P>
+<P>마. 상기 '10. 합병일정'의 종료보고 총회는 '상법 제526조 제3항' 규정에 의거하여 2025년 12월 01일 이사회 결의 공고 절차로 갈음합니다.</P>
+<P> </P>
+<P>바. HD현대중공업(주)는 '독점규제 및 공정거래에 관한 법률 제11조 및 동법 시행령 제18조'에 따른 대규모회사로서 본 합병에 대하여 사전 기업결합신고가 필요합니다. 따라서 공정거래위원회로부터 기업결합신고 수리(승인)를 받기 이전에는 합병 절차를 완료할 수 없습니다. 본건 합병은 계열회사 간 합병으로서 기업결합 심사기준에 따른 간이심사대상 기업결합에 해당합니다.</P>
+<P> </P>
+<P>사. 법령상 주주총회에서 합병에 대한 승인이 부결되면 주식매수청구권도 소멸되며, 합병계약도 효력이 발생하지 않게 됩니다.</P>
+<P> </P>
+<P>아. 주식매수청구자는 주식매수청구기간 종료일 이후 주식매수청구권을 취소할 수 없습니다.</P>
+<P> </P>
+<P>자. 본 합병계약서에 기재된 계약의 해제조건은 아래와 같습니다.</P>
+<P></P>
+
+<TABLE BORDER="1" WIDTH="606" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="606">
+<COL WIDTH="606"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="835">
+
+<TD WIDTH="597" HEIGHT="828">
+
+<P>
+<SPAN USERMARK="B">제13조 (선행조건)</SPAN>합병당사회사들이 본 계약에 따라 본건 합병을 이행할 의무는 다음 각 항의 조건이 성취될 것을 선행조건으로 한다. 다만 각 합병당사회사는 각자 서면으로 다음 각 항에서 규정하는 선행조건의 일부 또는 전부를 포기 또는 면제할 수 있다. (1) 합병당사회사들의 이사회 및/또는 주주총회에서 본 계약 체결 및 본건 합병이 적법하게 승인되었을 것(2) 상대방 합병당사회사가 제공한 진술 및 보장이 본 계약 체결일 및 합병기일 현재 중요한 점에서 진실하고 정확할 것.(3) 상대방 합병당사회사가 본 계약상 확약 및 의무사항을 중요한 점에서 이행하고 준수하였을 것.(4) 본건 합병을 금지하거나 제한하는 법령이 존재하지 아니하고, 본건 합병을 금지하거나 제한하는 법원의 가처분 등 결정, 판결이나 정부기관의 금지명령 기타 결정이 없을 것.(5) 본 계약 체결일 이후 본건 합병기일까지 어느 합병당사회사의 재산, 경영실적, 영업상태 또는 전망에 중대한 부정적 변경이 발견되거나 발생하지 아니하였을 것(6) 본건 필요적 정부승인이 완료되었을 것.(7) 존속회사 또는 소멸회사의 주주 중 본건 합병에 반대하는 주주의 주식매수청구권행사로 인하여, 존속회사 및 소멸회사가 그 주주들에게 지급하여야 할 주식매수대금(자본시장과금융투자업에 관한 법률 제165조의5 제3항 단서 및 동법 시행령 제176조의7  제3항에 의하여 산정된금액을 의미함)의 합산액이 총 금 1,500,000,000,000원을 초과하지 아니할 것. 
+<SPAN USERMARK="B">제14조 (계약의 변경 및 해제)</SPAN>14.1 본 계약은 본건 합병기일 전에 다음과 같은 사유가 발생하는 경우 해제할 수 있다 (1) 본 계약을 해제하기로 하는 합병당사회사들의 서면 합의가 있는 경우(2) 본 계약 제13조의 선행조건이 충족될 수 없는 것으로 확정되는 경우, 해당 선행조건 미충족에 책임 없는 합병당사회사에 의하여(3) 일방 합병당사회사가 본 계약을 위반하고, 그 위반이 시정 불가능하거나 또는 상대방 합병당사회사로부터 이행 또는 시정 요청을 받은 후 10일 내에 이를 이행 또는 시정하지 아니하는 경우, 상대방 합병당사회사에 의하여 14.2 본 계약의 해제에도 불구하고 그 성격상 존속이 예정되어 있는 조항(본 계약 제14조 내지 제19조를 포함함)은 그 효력을 상실하지 아니한다.
+<SPAN USERMARK="B">제15조 (일부 무효)</SPAN>본 계약의 어느 규정이 무효나 집행 불능인 것으로 판정될 경우, 그 규정은 무효이거나 집행 불능인 범위에서 효력이 없으며 본 계약에 편입되지 않는 것으로 간주한다. 그러나 본 계약의 나머지 규정은 무효로 되지 아니한다.
+</P>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>차. 단, 본건 합병의 경우 HD현대미포(주) 주주의 주식매수청구권 행사에 따라 HD현대미포(주)가 취득하게 될 자기주식에 대하여는 합병 신주를 배정하지 않으므로, 상기 발행 예정 합병 신주의 수는 최종 합병 시점에 변동될 수 있습니다.  ※ 보다 자세한 사항은 추후 제출할 예정인 HD현대중공업(주)의 증권신고서를 참조하시기 바랍니다.</P>
+
+<P></P>
+
+</SECTION-1></BODY></DOCUMENT>

@@ -1,0 +1,261 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>셀트리온/신규시설투자등/(2024.11.12)신규시설투자등</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2024-11-12</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">신규시설투자등</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2020-11-18</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">공사 정산 완료에 따른 투자금액 정정</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2. 투자내역 <br java="http://xml.apache.org/xalan/java">   - 투자금액(원)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">274,000,000,000</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">256,204,000,000</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2. 투자내역 <br java="http://xml.apache.org/xalan/java">   - 자기자본대비(%)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">9.43</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">8.81</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">7.  기타 투자판단과 관련한 중요사항</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">3. 증설 개요 <br java="http://xml.apache.org/xalan/java">② 투자규모: 제3공장 신설 2,740억</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">3. 증설 개요 <br java="http://xml.apache.org/xalan/java">② 투자규모: 제3공장 신설 2,562억</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">-</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">신규 시설투자 등</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:601px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">1. 투자구분</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">신규시설투자</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">- 투자대상</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">제3공장 신설</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="150"> <span style="width:150px;font-size:10pt;">2. 투자내역</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">투자금액(원)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">256,204,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">자기자본(원)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">2,906,958,188,321</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">자기자본대비(%)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">8.81</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">3. 투자목적</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">제품 포트폴리오 확대에 따른 생산능력 확보</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="150"> <span style="width:150px;font-size:10pt;">4. 투자기간</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">2021-01-01</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">2024-11-30</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">5. 이사회결의일(결정일)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">2020-11-18</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="150"> <span style="width:150px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">4</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">1</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="150"> <span style="width:150px;font-size:10pt;">6. 공시유보 관련내용</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" width="267"> <span style="width:267px;font-size:10pt;">7. 기타 투자판단과 관련한 중요사항</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">1. 상기 자기자본은 2019년말 연결재무제표 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  기준입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2. 상기 시설투자와 관련하여 기존 보유 토지에 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  시설을 신축함에 따라 금번 투자금액에 토지 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  취득 관련 투자금액은 포함하지 않았습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3. 증설 개요 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  ① 소재지: 인천광역시 연수구 송도동 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->             ㈜셀트리온 본사 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  ② 투자규모: 제3공장 신설 2,562억 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  ③ 생산능력: 신설 후 총 25만 리터(바이오리 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->               액터 생산능력 기준) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->     - 기존 설비: 19만 리터(1공장 10만 리터 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->                  [1공장 증설 완료로 증설부분 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->                  포함], 2공장 9만 리터) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->     - 금번 투자: 6만 리터(3공장 신설 6만리터) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4. 프로젝트 기간 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 3공장 완공: 2021년 1월 ~ 2023년 11월 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->                 (35개월) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->   - 3공장 밸리데이션: 2023년 12월 ~ 2024년 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->                       11월(12개월) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5. 상기 투자금액은 부가가치세를 제외한 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  금액입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">6. 자금조달 계획: 내부유보자금 및 장기 차입금 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">7. 상기 투자금액 및 투자기간은 시설의 인허가 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  여부, 향후 공사진행 경과 및 경영환경 변화 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  등에 따라 변동될 수 있습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="90"> <span style="width:90px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td width="244"> <span style="width:244px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20220902000512&amp;rcpno=20220902000512&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2022-09-02 신규시설투자등</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20201118000082&amp;rcpno=20201118000082&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2020-11-18 신규시설투자등</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

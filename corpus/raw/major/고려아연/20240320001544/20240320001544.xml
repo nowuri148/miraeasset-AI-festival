@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11312">주요사항보고서(소송 등의 제기)</DOCUMENT-NAME>
+<FORMULA-VERSION SUBVER="1" ADATE="20160118">1.2</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00102858">고려아연(주)</COMPANY-NAME>
+
+
+<BODY ATOCID="2">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP>
+<COL WIDTH="132"></COL>
+<COL WIDTH="174"></COL>
+<COL WIDTH="267"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="53"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="324" HEIGHT="30">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="276" HEIGHT="30">  2024년     3월     20일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="53"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">고려아연 주식회사</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">박 기 덕</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">서울특별시 강남구 강남대로 542</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(전  화) 02-519-3416</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(홈페이지)http://www.koreazinc.co.kr</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">작 성 책 임 자 :</TD>
+<TD WIDTH="183" HEIGHT="30">(직  책) 부 사 장 </TD>
+<TD WIDTH="276" HEIGHT="30">(성  명) 김 기 준</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(전  화) 02-519-3460</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ATOCID="1">소송 등의 제기</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="SUE_APPL" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="598" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="241"></COL>
+<COL WIDTH="339"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="250" HEIGHT="30" AUPDATECONT="N">1. 사건의 명칭</TD>
+
+<TE WIDTH="348" HEIGHT="30" ACODE="SUE_NM">
+<SPAN USERMARK=" 0X1814FF"></SPAN>신주발행무효의 소
+</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="250" HEIGHT="30" AUPDATECONT="N">2. 원고ㆍ신청인</TD>
+<TE WIDTH="348" HEIGHT="30" ACODE="APP_NM">주식회사 영풍</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="250" HEIGHT="214" AUPDATECONT="N">3. 청구내용</TD>
+
+<TE WIDTH="348" HEIGHT="214" ACODE="RQST_CONT">. 원고 : 주
+<SPAN>식회사 영풍. 피고 : </SPAN>고려아연 주식회사1. 피고가 2023.9.13.에 한 액면금 5,000원의 보통주식 1,045,430주의 신주 발행을 무효로 한다.2. 소송비용은 피고가 부담한다.라는 판결을 구합니다. 
+</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="250" HEIGHT="30" AUPDATECONT="N">4. 관할법원</TD>
+<TE WIDTH="348" HEIGHT="30" ACODE="COURT">서울중앙지방법원</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="250" HEIGHT="30" AUPDATECONT="N">5. 향후대책</TD>
+<TE WIDTH="348" HEIGHT="30" ACODE="FTR_SCHD">당사는 법적인 절차에 따라 대응할 예정입니다.</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="250" HEIGHT="30" AUPDATECONT="N">6. 제기일자</TD>
+<TU WIDTH="348" HEIGHT="30" AUNIT="APPL_DT" AUNITVALUE="20240306">2024년 03월 06일</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="250" HEIGHT="30" AUPDATECONT="N">7. 확인일자</TD>
+<TU WIDTH="348" HEIGHT="30" AUNIT="CONF_DT" AUNITVALUE="20240318">2024년 03월 18일</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P>8. 기타 투자판단에 참고할 사항</P>
+<P></P>
+
+<P>1) 상기 사건의 사건번호는 
+<SPAN>서울중앙지방법원 </SPAN>
+<SPAN>2</SPAN>024가합
+<SPAN>52067호</SPAN>
+<SPAN USERMARK=" 0X1814FF"> </SPAN>
+<SPAN USERMARK=" 0X0000FF"></SPAN>입니다.2) 상기 '3. 청구내용'은 청구취지에 따른 핵심적인 부분만 기재하였습니다. 3) 상기 '6. 제기일자'는 원고ㆍ신청인이 법원에 소장을 접수한 일자입니다.4) 상기 '7. 확인일자'는 
+<SPAN>당사가 서울중앙지방법원으로부터 해당소장을 수령한 일자입니다.</SPAN>5) 당사는 향후 진행사항 및 확정사실 등이 있을 경우 지체없이 관련사항을 공시할 예정입니다.
+</P>
+
+<P>6) 관련공시- 2023
+<SPAN>년 08월 30일 주요사항보고서(유상증자결정)- 2023년 </SPAN>
+<SPAN>09월 13일 유상증자또는주식관련사채등의발행결과(자율공시)</SPAN>
+</P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11348">주요사항보고서(자본으로인정되는채무증권발행결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20220310">6.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="01376715">(주)디앤디파마텍</COMPANY-NAME>
+
+
+<BODY ATOCID="2">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">  2025년    6월    11일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">주식회사 디앤디파마텍</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">이 슬 기</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD WIDTH="132" HEIGHT="46">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="46">경기도 성남시 수정구 금토로80번길 27,4층(금토동,텔레칩스)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">
+<SPAN>(전  화) </SPAN>
+<SPAN USERMARK="0X000000">031-8019-7771</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">
+<SPAN>(홈페이지)</SPAN>
+<SPAN USERMARK="0X000000">http://www.ddpharmatech.com</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+
+<TD WIDTH="174" HEIGHT="23">
+<SPAN>(직  책) </SPAN>
+<SPAN USERMARK="0X000000">경영관리팀장</SPAN>
+</TD>
+
+<TD WIDTH="267" HEIGHT="23">
+<SPAN>(성  명) </SPAN>
+<SPAN USERMARK="0X000000">박 평 아</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">
+<SPAN>(전  화) </SPAN>
+<SPAN USERMARK="0X000000">031-8019-7771</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Issuance of Debt Securities Recognized as Capital" ATOCID="1">자본으로 인정되는 채무증권 발행결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="CB_PUB" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="972" BORDER="1">
+
+<COLGROUP WIDTH="972">
+<COL WIDTH="120"></COL>
+<COL WIDTH="82"></COL>
+<COL WIDTH="144"></COL>
+<COL WIDTH="82"></COL>
+<COL WIDTH="41"></COL>
+<COL WIDTH="45"></COL>
+<COL WIDTH="35"></COL>
+<COL WIDTH="423"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="1. Type of bonds">1. 사채의 종류</TD>
+<TD ALIGN="CENTER" WIDTH="73" HEIGHT="23" AUPDATECONT="N" ENG="Ordinal">회차</TD>
+<TE ALIGN="CENTER" WIDTH="32" HEIGHT="23" ACODE="SEQ_NO">1</TE>
+<TD ALIGN="CENTER" WIDTH="36" HEIGHT="23" AUPDATECONT="N" ENG="Class of shares">종류</TD>
+<TE COLSPAN="2" ALIGN="CENTER" WIDTH="449" HEIGHT="23" ACODE="PL_KND">무기명식 이권부 무보증 사모 후순위 영구전환사채</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="2.Total face (or electronically registered) value of bonds (KRW)">2. 사채의 권면(전자등록)총액 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="DNM_SUM">34,326,120,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="4" VALIGN="MIDDLE" WIDTH="111" HEIGHT="113" AUPDATECONT="N" ENG="2-1. Overseas issuance">2-1. 해외발행</TD>
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Total face (or electronically registered) value (currency unit)">권면(전자등록)총액(통화단위)</TD>
+<TE COLSPAN="4" ALIGN="RIGHT" WIDTH="194" HEIGHT="23" ACODE="FRN_AMT">-</TE>
+<TU ALIGN="CENTER" WIDTH="414" HEIGHT="23" AUNIT="AMT_UNIT" AUNITVALUE="-" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Base exchange rate, etc.">기준환율등</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="EXC_RT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Region of issuance">발행지역</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="ISSU_AREA">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Name of exchange (Overseas listing)">해외상장시 시장의 명칭</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="FRN_NM">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="6" VALIGN="MIDDLE" WIDTH="111" HEIGHT="173" AUPDATECONT="N" ENG="3. Purpose of funding">3. 자금조달의    목적</TD>
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Facility investment (KRW)">시설자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="FND_USE1">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Business acquisition (KRW)">영업양수자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="FND_USE_SQ">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Operating capital (KRW)">운영자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="FND_USE2">19,650,000,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Debt repayment (KRW)">채무상환자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="FND_USE_RD">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Acquisition of securities issued by other corporations (KRW)">타법인 증권 취득자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="ANC_ACQ_PRC">14,676,120,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Other purposes (KRW)">기타 자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="FND_USE3">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="111" HEIGHT="53" AUPDATECONT="N" ENG="4. Interest rate of bonds">4. 사채의 이율</TD>
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Coupon rate (%)">표면이자율 (%)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="PRFT_RATE">0</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Yield to maturity (%)">만기이자율 (%)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="617" HEIGHT="23" ACODE="LST_RTN_RT">0</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="5. Bond maturity date (period)">5. 사채만기일(기간)</TD>
+<TU ALIGN="CENTER" WIDTH="114" HEIGHT="23" AUNIT="EXP_DT" AUNITVALUE="20550620" COLSPAN="2">2055.06.20</TU>
+<TE COLSPAN="3" ALIGN="CENTER" WIDTH="494" HEIGHT="23" ACODE="EXP_DT_DUR" VALIGN="MIDDLE">30년</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD WIDTH="111" HEIGHT="297" AUPDATECONT="N" ROWSPAN="4" VALIGN="MIDDLE" ENG="6. Method of interest payment and terms">6. 이자지급방법    및 조건</TD>
+<TD COLSPAN="2" WIDTH="217" HEIGHT="92" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Method of interest payment">이자지급방법</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="92" ACODE="INT_GV_MTH" VALIGN="MIDDLE">전환사채에 대한 이자는 매 분기마다 지급되며, 회사는 단독 재량으로 해당 이자의 지급을 누적하여 이연(연기)할 수 있다. 이자지급일에 이자 지급을 중단하거나 이연하는 경우, 해당 이자지급일에 이자를 지급할 의무가 없으며, 이자 미지급에 따라 연체이자가 발생하지 않는다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="92" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Possibility of interest payment suspension (deferral) and conditions">이자지급 정지(유예) 가능 여부및 조건</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="92" ACODE="INT_STP" VALIGN="MIDDLE">전환되거나 조기상환되지 않는 한, 발행일로부터 30년이 경과한 날 (만기일) 에 회사는 모든전환사채의 원금 및 이에 대한 미지급 이자를 전액 상환한다.단, 회사는 만기일 10영업일 전까지 사채권자에게 서면으로 통지함으로써, 본 계약과 동일한조건으로 만기일을 30년 단위로 연장할 수 있으며, 연장의 횟수에는 제한이 없다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Whether deferred interest accumulates">유예이자 누적 여부</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="23" ACODE="INT_STP_ACM" VALIGN="MIDDLE">회사는 단독 재량으로 이자의 지급을 누적하여 이연(연기)할 수 있다.,</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="69" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Interest rate adjustment terms, including step-up terms">금리상향조정(Step up)조건 등이자율 조정 조건</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="69" ACODE="INT_ST_UP" VALIGN="MIDDLE">사채의 이율: 발행일로부터 6년까지 연 [0.00]%                  발행일로부터 6년이 도래한 날부터 11년까지 연 [2.00]%                  발행일로부터 11년이 도래한 날부터 연 [4.00]%</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD WIDTH="111" HEIGHT="221" AUPDATECONT="N" ROWSPAN="3" VALIGN="MIDDLE" ENG="7. Method of principal repayment">7. 원금상환방법</TD>
+<TD COLSPAN="2" WIDTH="217" HEIGHT="92" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Maturity repayment method">만기상환방법</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="92" ACODE="RTN_MTH" VALIGN="MIDDLE">전환되거나 조기상환되지 않는 한, 발행일로부터 30년이 경과한 날 (만기일) 에 회사는 모든전환사채의 원금 및 이에 대한 미지급 이자를 전액 상환한다.단, 회사는 만기일 10영업일 전까지 사채권자에게 서면으로 통지함으로써, 본 계약과 동일한조건으로 만기일을 30년 단위로 연장할 수 있으며, 연장의 횟수에는 제한이 없다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="69" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Early redemption timing, conditions, and methods">조기상환 가능시점ㆍ조건및 방법</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="69" ACODE="ERL_RTN_MTH" VALIGN="MIDDLE">조기상환권: 회사는 발행일로부터 3년이 경과한 날로부터 2주간, 발행일로부터 5년이 경과한 날로부터 1개월간 사채의 원금 및 해당 원금에 대한 연 2%의 이자를 가산한 금액을 지급함으로써 조기상환할 수 있다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Terms and methods for extending maturity">만기연장 조건 및 방법</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="46" ACODE="EXP_RNW_MTH" VALIGN="MIDDLE">회사는 만기일 10영업일 전까지 사채권자에게 서면으로 통지함으로써, 본 계약과 동일한 조건으로 만기일을 30년 단위로 연장할 수 있으며, 연장의 횟수에는 제한이 없다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="8. Method of bond issuance">8. 사채발행방법</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="617" HEIGHT="23" AUNIT="ISSU_MTH" AUNITVALUE="2" ENG="Private placement">사모</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="3" VALIGN="MIDDLE" WIDTH="111" HEIGHT="83" AUPDATECONT="N" ENG="9. Details on debt adjustment">9. 채무재조정에    관한 사항</TD>
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Cause of debt adjustment">채무재조정의 사유</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="23" ACODE="DP_RSCH_RSN" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Scope of debt adjustment">채무재조정의 범위</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="23" ACODE="DP_RSCH_SCP" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="217" HEIGHT="23" AUPDATECONT="N" ENG="Methods used to determine scope of debt adjustment">채무재조정의 범위 결정방법</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="23" ACODE="DP_RSCH_MTH" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="214">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="207" AUPDATECONT="N" ENG="9-1. Details of option">9-1. 옵션에 관한 사항</TD>
+
+<TE COLSPAN="5" WIDTH="617" HEIGHT="207" ACODE="OPT_FCT">
+<SPAN USERMARK="0X000000">(1) 발행회사의 전환사채매수청구권(Call Option)발행자는 현물출자 투자자를 대상으로 각 투자자가 보유한 전환사채 총 원금의 최대 30%까지, 발행일로부터 2주년까지 언제든지 원금에 2%를 가산한 금액으로 매입(콜옵션 행사)할 수 있다. 해당 매입은 발행자 본인 또는 발행자가 지정한 자를 통해 이루어질 수 있다.</SPAN>(2) 사채권자는 어떠한 경우에도 본 사채의 중도상환을 요구할 수 없다.*) 옵션과 관련된 자세한 내용은 하단 '19. 기타 투자판단에 참고할 사항을 참조하여 주시기 바랍니다.
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="10. Subscription date">10. 청약일</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="617" HEIGHT="23" AUNIT="SBSC_DT" AUNITVALUE="20250620">2025년 06월 20일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="11. Payment date">11. 납입일 </TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="617" HEIGHT="23" AUNIT="PYM_DT" AUNITVALUE="20250620">2025년 06월 20일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="12. Lead underwriter">12. 대표주관회사</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="23" ACODE="CHF_AGN" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="13. Guarantor">13. 보증기관</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="23" ACODE="WTY_ORG" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="14. Board resolution date (decision date)">14. 이사회결의일(결정일)</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="617" HEIGHT="23" AUNIT="DRC_DT" AUNITVALUE="20250611">2025년 06월 11일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" COLSPAN="2" VALIGN="MIDDLE" WIDTH="193" HEIGHT="53" AUPDATECONT="N" ENG="- Attendance of outside directors">   - 사외이사 참석여부</TD>
+<TD ALIGN="CENTER" WIDTH="135" HEIGHT="23" AUPDATECONT="N" ENG="Present (No.)">참석 (명)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="617" HEIGHT="23" ACODE="ATD_CNT">2</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="135" HEIGHT="23" AUPDATECONT="N" ENG="Absent (No.)">불참 (명)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="617" HEIGHT="23" ACODE="NATD_CNT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="- Attendance of auditors (members of Audit Committee)">   - 감사(감사위원) 참석여부</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="617" HEIGHT="23" AUNIT="ADT_ATD_YN" AUNITVALUE="Y" ENG="Present">참석</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="15. Whether subject to file securities registration statement">15. 증권신고서 제출대상 여부</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="617" HEIGHT="23" AUNIT="RPT_SM_YN" AUNITVALUE="N" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="16. Reasons for exemption from filing securities registration statement, if exempted">16. 제출을 면제받은 경우 그 사유</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="23" ACODE="RPT_SBM" ALIGN="CENTER">사모발행 (사채발행일로부터 1년간 전환권 행사 금지 및 거래단위 분할/병합 금지)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="17. Details of securities lending and borrowing transactions related to overseas issuance of bonds">17. 당해 사채의 해외발행과 연계된 대차거래 내역</TD>
+<TE COLSPAN="5" WIDTH="617" HEIGHT="23" ACODE="TRD_BD" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="337" HEIGHT="23" AUPDATECONT="N" ENG="18. Whether subject to the Fair Trade Commission reporting requirements">18. 공정거래위원회 신고대상 여부 </TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="617" HEIGHT="23" AUNIT="TRD_YN" AUNITVALUE="N" ENG="Non-applicable">미해당</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="19. Other matters to be factored into investment decisions">19. 기타 투자판단에 참고할 사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>(1) 전환에 관한 사항</P>
+<P>1) 전환청구에 따라 발행할 주식의 종류: 기명식 보통주식</P>
+<P>2) 전환비율: 전환사채 권면금액의[100]%</P>
+
+<P>
+<SPAN>3) 전환가액: </SPAN>
+<SPAN USERMARK="0X000000">금[84,067]원</SPAN>
+</P>
+<P>4) 전환주식 수: 각 사채권의 권면금액 합계액에 전환비율을 곱한 금액을 전환가액으로 나눈 주식수. 다만, 1주 미만의 단주는 당해 단주에 해당하는 금액을 행사 주권 교부시 발행회사가 사채권자에게 현금으로 지급함.</P>
+<P>5) 전환가액의 조정:</P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="N" WIDTH="904" BORDER="0">
+
+<COLGROUP WIDTH="904">
+<COL WIDTH="904"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="421">
+
+<TD WIDTH="895" HEIGHT="414">
+<P USERMARK="A-J">(가). 회사 보통주식의 주식분할, 주식배당, 주식병합, 자본감소 및 무상증자에 의하여 전환가액 조정이 필요한 경우 전환가액은 전환권자가 그러한 행위 직전에 전환권을 행사한 것과 동일한 수의 보통주를 받을 수 있도록 전환가액을 즉시 비례적으로 조정함. (i) 주식분할, 주식배당, 주식병합 또는 자본감소의 경우 해당 사건 발생일에 조정하고, (ii) 무상증자 또는 이익잉여금 또는 자본잉여금의 자본전입을 통한 보통주 발행의 경우 해당 보통주의 발행일에 조정함.</P>
+<P USERMARK="A-J">(나). 자본재편, 자본재분류, 주식교환, 합병 등에 의하여 전환가액의 조정이 필요한 경우, 그 직전에 전환권이 행사되어 전액 주식으로 전환되었더라면 사채권자가 가질 수 있었던 주식수에 상응하는 주식, 유가증권 또는 자산을 수령할 수 있도록 합법적이고 적절한 조치를 취함. 이러한 경우, 전환사채권자의 권리와 이익이 계속 보장될 수 있도록 전환사채계약의 규정(특히 본 전환가액의 조정 규정 포함)이 향후에도 최대한 유사하게 적용될 수 있도록 필요한 조치를 취함.</P>
+<P USERMARK="A-J">(다) 전환가액은 발행일로부터36개월 간 매 3개월 마다 아래의 방식에 따라 조정됨. </P>
+<P USERMARK="A-J">(i) 전환가액은 발행일로부터 36개월간,매 3개월 마다 본 조항에 따라 분기별로 재조정함.(ii) 각 재조정일 직전일을 기준으로 「증권의 발행 및 공시 등에 관한 규정」 제5-22조 제1항(제3호 제외)에 따라 산정된 가치(이하 “가중산술평균가격”)가 최초 전환가액보다 낮은 경우(단, 전환가액이 이미 전환가액의 조정 규정(5.(1), (2), (3))에 따라 조정된 경우에는 그러한 조정된 전환가액을 최초 전환가액으로 간주함), 전환가액을 해당 가중산술평균가격으로 조정함. 단, 조정된 전환가액은 최초 전환가액의 70% 이상이어야 함.(iii) 가중산술평균가격이 전환가액(이미 전환가액의 조정 규정(5.(1), (2), (3))에 따라 조정된 경우, 그러한 조정된 전환가액을 전환가액으로 간주함)보다 높은 경우, 전환가액을 해당 가중산술평균가격으로 조정함. 단, 조정된 전환가액은 최초 전환가액을 초과할 수 없음. (iv) 조정된 전환가액이 정수가 아닌 경우, 소수점 이하를 올림하여 가장 가까운 정수로 조정함.</P>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P USERMARK="F-13 ">6) 전환의 효력발생: 전환통지서 및 증서가 회사에 제출된 때에 효력이 발생함. </P>
+<P USERMARK="F-13 ">7) 전환청구기간: 본 사채 발행일로부터1년이 경과한 날 이후</P>
+<P USERMARK="F-13 ">8) 미발행 주식의 보유: 회사는 전환청구기간 종료 시까지 회사가 발행할 주식의 총수 중에 전환청구로 인하여 발행될 주식수를 미발행 주식으로 보유하여야 함.</P>
+
+<P>
+<SPAN USERMARK="F-BT13 ">9) 기타 사항: 그 외 전환에 관한 사항에 대해서는 상법, 주식·사채 등의 전자등록에 관한 법률 등에 따라 결정됨.</SPAN>
+<SPAN USERMARK="F-GL13 "> </SPAN>
+</P>
+<P></P>
+
+<P>
+<SPAN USERMARK="0X000000">(2) 발행회사의 조기상환권에 관한 사항1) 회사는 발행일로부터 3주년이 되는 날로부터 2주 이내에 서면통지를 사채권자에게 제공함으로써, 전환사채의 전부 또는 일부를 조기상환할 수 있다. 이 경우, 해당 전환사채의 원금에 발행일로부터 실제 상환일까지 연 2%의 이자를 가산한 금액으로 최대한 신속하게 상환한다.2) 회사는 발행일로부터 5주년이 되는 날로부터 1개월 이내에 서면통지를 사채권자에게 제공함으로써, 전환사채의 전부 또는 일부를 조기상환할 수 있다.이 경우, 해당 전환사채의 원금에 발행일로부터 실제 상환일까지 연 2%의 이자를 가산한 금액으로 최대한 신속하게 상환한다.(3) 발행회사의 전환사채매수청구권(Call Option)에 관한 사항1) 회사는 발행일로부터 콜옵션 만료일까지(이하 “콜옵션 행사기간”) 언제든지, 현물출자 투자자를 대상으로 각 투자자가 보유한 전환사채(발행일 기준)의 최대 30%까지를 원금 및 발행일로부터 콜옵션 행사일까지의 연 2% 이자를 합산한 금액(이하 “콜옵션 행사금액”)으로 매수할 수 있는 권리(콜옵션)를 가진다.해당 매수는 회사 또는 회사가 지정하는 제3자를 통해 진행할 수 있다.2) 회사는 콜옵션 행사기간 중 투자자에게 서면(콜옵션 행사통지서)으로 통지함으로써 콜옵션을 행사할 수 있다.별도의 추가 조건이나 절차 없이, 관련 법령상 필요 승인만 이행되면 콜옵션을 행사할 수 있다.3) 콜옵션 행사 및 전환사채 매매와 관련하여 법령상 필요한 승인이 있을 경우, 투자자와 매수인은 각자 및 그 계열사가 해당 승인을 신속히 취득할 수 있도록 최대한 협조한다.4) 콜옵션 행사통지일(이하 “콜옵션 행사일”) 또는 관련 승인 취득일 중 늦은 날로부터 5영업일 이내(이하 “콜옵션 종결일”)에, 투자자는 해당 전환사채를 매수인에게 양도하고, 매수인은 콜옵션 행사금액을 지급한다.투자자는 콜옵션 종결일에 전환사채 증서 및 양도서류를 매수인에게 제출하며, 회사는 채권자 명부를 갱신하여 투자자에게 제공한다.5) 필요한 승인을 취득하지 못하거나 법령상 제한이 있는 경우, 당사자들은 법령상 허용 범위 내에서 콜옵션 행사와 동일한 효과를 내는 대체방안을 마련한다.6) 콜옵션 행사금액은 콜옵션 종결일에 현금(대한민국 원화)으로, 투자자가 사전에 지정한 계좌로 이체하여 지급한다.</SPAN>
+<SPAN USERMARK="0X000000">(4) 이자율의 조정 및 이자지급의 유예1) 사채의 이율: 발행일로부터 6년까지 연 [0.00]%                       발행일로부터 6년이 도래한 날부터 11년까지 연 [2.00]%                       발행일로부터 11년이 도래한 날부터 연 [4.00]%2) 이자율의 지급방법과 지급기일: 이자는 분기별로 지급한다. 회사는 단독 재량으로 해당 이자의 지급을 누적하여 이연(연기)할 수 있다. 이자지급일에 이자 지급을 중단하거나 이연하는 경우, 해당 이자지급일에 이자를 지급할 의무가 없으며, 이자 미지급에 따라 연체이자가 발생하지 않는다.</SPAN>
+</P>
+
+<TABLE-GROUP ACLASS="CRP_ISSU" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="【Issuance of Bonds for Specific Persons per Recipient】">【특정인에 대한 대상자별 사채발행내역】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="N" WIDTH="716" BORDER="1">
+
+<COLGROUP WIDTH="716">
+<COL WIDTH="291"></COL>
+<COL WIDTH="213"></COL>
+<COL WIDTH="212"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TH VALIGN="MIDDLE" WIDTH="282" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Name">발행 대상자명</TH>
+<TH VALIGN="MIDDLE" WIDTH="204" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Relationship to company or the largest shareholder">회사 또는 최대주주와의 관계</TH>
+<TH VALIGN="MIDDLE" WIDTH="203" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Total face (or electronically registered) value (KRW)">발행권면(전자등록) 총액(원)</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="N" HEIGHT="30">
+<TE WIDTH="282" HEIGHT="23" ACODE="ISSU_NM">Aquila Investments XX </TE>
+<TE WIDTH="204" HEIGHT="23" ACODE="RLT" ALIGN="CENTER">-</TE>
+<TE ALIGN="RIGHT" WIDTH="203" HEIGHT="23" ACODE="ISSU_AMT">19,650,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TE WIDTH="282" HEIGHT="23" ACODE="ISSU_NM">OV Principal Investments LLC </TE>
+<TE WIDTH="204" HEIGHT="23" ACODE="RLT" ALIGN="CENTER">-</TE>
+<TE ALIGN="RIGHT" WIDTH="203" HEIGHT="23" ACODE="ISSU_AMT">2,765,361,500</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TE WIDTH="282" HEIGHT="23" ACODE="ISSU_NM">Octave Tech Investment V26 LLC </TE>
+<TE WIDTH="204" HEIGHT="23" ACODE="RLT" ALIGN="CENTER">-</TE>
+<TE ALIGN="RIGHT" WIDTH="203" HEIGHT="23" ACODE="ISSU_AMT">1,256,982,500</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TE WIDTH="282" HEIGHT="23" ACODE="ISSU_NM">㈜동구바이오제약 </TE>
+<TE WIDTH="204" HEIGHT="23" ACODE="RLT" ALIGN="CENTER">-</TE>
+<TE ALIGN="RIGHT" WIDTH="203" HEIGHT="23" ACODE="ISSU_AMT">3,395,891,100</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+
+<TE WIDTH="282" HEIGHT="23" ACODE="ISSU_NM">
+<SPAN USERMARK="0X000000">㈜</SPAN>로프티록인베스트먼트 
+</TE>
+<TE WIDTH="204" HEIGHT="23" ACODE="RLT" ALIGN="CENTER">-</TE>
+<TE ALIGN="RIGHT" WIDTH="203" HEIGHT="23" ACODE="ISSU_AMT">3,262,718,900</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TE WIDTH="282" HEIGHT="23" ACODE="ISSU_NM">㈜하나보</TE>
+<TE WIDTH="204" HEIGHT="23" ACODE="RLT" ALIGN="CENTER">-</TE>
+<TE ALIGN="RIGHT" WIDTH="203" HEIGHT="23" ACODE="ISSU_AMT">665,861,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TE WIDTH="282" HEIGHT="23" ACODE="ISSU_NM">이재욱 </TE>
+<TE WIDTH="204" HEIGHT="23" ACODE="RLT" ALIGN="CENTER">-</TE>
+<TE ALIGN="RIGHT" WIDTH="203" HEIGHT="23" ACODE="ISSU_AMT">665,861,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TE WIDTH="282" HEIGHT="23" ACODE="ISSU_NM">박지수 </TE>
+<TE WIDTH="204" HEIGHT="23" ACODE="RLT" ALIGN="CENTER">-</TE>
+<TE ALIGN="RIGHT" WIDTH="203" HEIGHT="23" ACODE="ISSU_AMT">665,861,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TE WIDTH="282" HEIGHT="23" ACODE="ISSU_NM">THE CAPITAL EL PTE. LTD. </TE>
+<TE WIDTH="204" HEIGHT="23" ACODE="RLT" ALIGN="CENTER">-</TE>
+<TE ALIGN="RIGHT" WIDTH="203" HEIGHT="23" ACODE="ISSU_AMT">1,997,583,000</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+
+<TABLE-GROUP ACLASS="TBL_FND" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="776" BORDER="0">
+
+<COLGROUP WIDTH="776">
+<COL WIDTH="776"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="767" HEIGHT="23" AUPDATECONT="N" ENG="【Intended Use of Funds in Detail】">【조달자금의 구체적 사용 목적】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="779" BORDER="1">
+
+<COLGROUP WIDTH="779">
+<COL WIDTH="779"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="145">
+
+<TE WIDTH="770" HEIGHT="138" ACODE="FND_USE_PPS">
+<P>주식회사 디앤디파마텍은 빠르게 진행되는 AI기술의 발전과 적응범위 확대로 인해 자회사의 Valted Seq.의 사업이 지노믹스 관련 AI 플랫폼 사업으로 확대되는 바, 미국 현지에서의 사업적 협력 및 자금조달을 원활히 진행하기 위해 지배력을 강화하기로 판단함. 이에, Valted Seq, Inc.의 외부주주가 보유하고 있던 보통주 및 우선주 (25%)의 취득을 결정 하였으며, 본 건 전환사채의 납입은 발행인과 인수인 사이에 체결한 주식회사 디앤디파마텍 제1회 무기명식 이권부 무보증 사모 후순위 영구전환사채 인수계약서 및 Valted Seq, Inc. 주식양도 확인 및 주주명부 갱신 요청서에 따라 Valted Seq, Inc. 보통주 및 우선주 양수도대금과 본 건 전환사 채 인수대금을 상계처리할 예정임.</P>
+</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

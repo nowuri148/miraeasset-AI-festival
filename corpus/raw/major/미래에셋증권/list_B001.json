@@ -1,0 +1,90 @@
+[
+ {
+  "corp_code": "00111722",
+  "corp_name": "미래에셋증권",
+  "stock_code": "006800",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식처분결정)",
+  "rcept_no": "20260224004501",
+  "flr_nm": "미래에셋증권",
+  "rcept_dt": "20260224",
+  "rm": ""
+ },
+ {
+  "corp_code": "00111722",
+  "corp_name": "미래에셋증권",
+  "stock_code": "006800",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]주요사항보고서(자기주식취득결정)",
+  "rcept_no": "20260127000099",
+  "flr_nm": "미래에셋증권",
+  "rcept_dt": "20260127",
+  "rm": ""
+ },
+ {
+  "corp_code": "00111722",
+  "corp_name": "미래에셋증권",
+  "stock_code": "006800",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득결정)",
+  "rcept_no": "20260126000516",
+  "flr_nm": "미래에셋증권",
+  "rcept_dt": "20260126",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00111722",
+  "corp_name": "미래에셋증권",
+  "stock_code": "006800",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]주요사항보고서(자기주식취득결정)",
+  "rcept_no": "20250828001452",
+  "flr_nm": "미래에셋증권",
+  "rcept_dt": "20250828",
+  "rm": ""
+ },
+ {
+  "corp_code": "00111722",
+  "corp_name": "미래에셋증권",
+  "stock_code": "006800",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득결정)",
+  "rcept_no": "20250828001211",
+  "flr_nm": "미래에셋증권",
+  "rcept_dt": "20250828",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00111722",
+  "corp_name": "미래에셋증권",
+  "stock_code": "006800",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득결정)",
+  "rcept_no": "20240807000021",
+  "flr_nm": "미래에셋증권",
+  "rcept_dt": "20240807",
+  "rm": ""
+ },
+ {
+  "corp_code": "00111722",
+  "corp_name": "미래에셋증권",
+  "stock_code": "006800",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득결정)",
+  "rcept_no": "20240125000187",
+  "flr_nm": "미래에셋증권",
+  "rcept_dt": "20240125",
+  "rm": ""
+ },
+ {
+  "corp_code": "00111722",
+  "corp_name": "미래에셋증권",
+  "stock_code": "006800",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득결정)",
+  "rcept_no": "20231018000008",
+  "flr_nm": "미래에셋증권",
+  "rcept_dt": "20231018",
+  "rm": ""
+ }
+]

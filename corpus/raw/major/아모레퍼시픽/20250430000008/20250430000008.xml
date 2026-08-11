@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11340">타법인 주식 및 출자증권 양수결정</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20231229">6.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00583424">(주)아모레퍼시픽</COMPANY-NAME>
+
+
+<BODY ATOCID="3">
+
+<LIBRARY>
+<CORRECTION>
+<TITLE ATOC="Y" AASSOCNOTE="CORRECTION" ENG="Report of Disclosure Revision" ATOCID="3">정 정 신 고 (보고)</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" ALIGN="RIGHT">2025년 04월 29일</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="165"></COL>
+<COL WIDTH="435"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="156" VALIGN="MIDDLE" AUPDATECONT="N" ENG="1. Disclosure document to be revised:" HEIGHT="23">1. 정정대상 공시서류 :</TD>
+<TD WIDTH="426" VALIGN="MIDDLE" HEIGHT="23">주요사항보고서(타법인 주식 및 출자증권 양수결정)</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="260"></COL>
+<COL WIDTH="340"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="251" VALIGN="MIDDLE" AUPDATECONT="N" ENG="2. First submission date of disclosure document to be revised:" HEIGHT="23">2. 정정대상 공시서류의 최초제출일 :</TD>
+<TD WIDTH="331" VALIGN="MIDDLE" HEIGHT="23"> 2023.10.31</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="894" BORDER="0">
+
+<COLGROUP WIDTH="894">
+<COL WIDTH="894"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="885" HEIGHT="23" VALIGN="MIDDLE" AUPDATECONT="N" ENG="3. Revised Information">3. 정정사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="N" WIDTH="896" BORDER="1">
+
+<COLGROUP WIDTH="896">
+<COL WIDTH="150"></COL>
+<COL WIDTH="150"></COL>
+<COL WIDTH="298"></COL>
+<COL WIDTH="298"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TH WIDTH="141" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Items" HEIGHT="23">항  목</TH>
+<TH WIDTH="141" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Reason for revision" HEIGHT="23">정정사유</TH>
+<TH WIDTH="289" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Before revision" HEIGHT="23">정 정 전</TH>
+<TH WIDTH="289" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="After revision" HEIGHT="23">정 정 후</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="76">
+<TD WIDTH="141" HEIGHT="69">1. 발행회사 :자본금(원)</TD>
+<TD WIDTH="141" HEIGHT="69">임직원 주식매수선택권 행사로 인한 자본금 증가</TD>
+<TD VALIGN="MIDDLE" WIDTH="289" HEIGHT="69">50,950,000</TD>
+<TD VALIGN="MIDDLE" WIDTH="289" HEIGHT="69">51,500,000</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="76">
+<TD WIDTH="141" HEIGHT="69">1. 발행회사 :발행주식총수(주)</TD>
+<TD WIDTH="141" HEIGHT="69">임직원 주식매수선택권 행사로 인한 발행주식총수 증가</TD>
+<TD VALIGN="MIDDLE" WIDTH="289" HEIGHT="69">509,500</TD>
+<TD VALIGN="MIDDLE" WIDTH="289" HEIGHT="69">515,000</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="76">
+<TD WIDTH="141" HEIGHT="69">5. 양수예정일자</TD>
+<TD WIDTH="141" HEIGHT="69">연장 합의서 체결에 따른 2차 매매 거래종결일 연장</TD>
+<TD VALIGN="MIDDLE" WIDTH="289" HEIGHT="69">2025년 04월 30일</TD>
+<TD VALIGN="MIDDLE" WIDTH="289" HEIGHT="69">2030년 04월 30일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="352">
+<TD WIDTH="141" HEIGHT="345">7. 거래대금지급  2) 대금지급시기</TD>
+<TD WIDTH="141" HEIGHT="345">연장 합의서 체결에 따른 2차 매매 거래종결일 연장</TD>
+<TD WIDTH="289" HEIGHT="345">- 1차 거래대금 지급일: 2024년 4월 30일   2차 거래대금 지급일: 2025년 4월 30일- 양수금액 755,108,455,462원 중 608,019,589,272원은 1차 거래대금 지급일에 지급될 예정이며, 147,088,866,190원은 2차 거래대금 지급일에 지급될 예정- 발행회사의 운영 성과에 따라 지급가능한 최대 주당 매매대금은 어떠한 경우에도 1,500,000,000,000원을 대상회사 발행 보통주식총수에서 자기주식수를 공제한 주식수로 나눈 금액을 상한으로 하며, 발행회사의 운영 성과에 따라 2024년 중 1차 거래대금액, 2025년 중 2차 거래대금액이 결정될 예정</TD>
+
+<TD WIDTH="289" HEIGHT="345">
+<SPAN USERMARK="0X000000">- 1차 거래대금 지급일: 2024년 4월 30일   2차 거래대금 지급일: 2030년 4월 30일- 양수금액 755,108,455,462원 중 608,019,589,272원은 1차 거래대금 지급일에 지급될 예정이며, 147,088,866,190원은 2차 거래대금 지급일에 지급될 예정-</SPAN>
+<SPAN USERMARK="F-GL11 B 0X000000"> </SPAN>
+<SPAN USERMARK="0X000000">발행회사의 운영 성과에 따라 2024년 중 1차 거래대금액, 상기 '5. 양수예정일자' 또는 그 이전의 날에 잔여지분 48,000주에 대한 2차 거래대금액이 결정될 예정</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="191">
+<TD WIDTH="141" HEIGHT="184">12. 공정거래위원회 신고대상 여부</TD>
+<TD WIDTH="141" HEIGHT="184">거래상대방은 1차 매매 거래 이행에 따른 지분율 증가로 기업집단 아모레퍼시픽의 특수관계인으로 편입되었으며 매매금액이 대규모내부거래에 해당함</TD>
+<TD VALIGN="MIDDLE" WIDTH="289" HEIGHT="184">미해당</TD>
+<TD VALIGN="MIDDLE" WIDTH="289" HEIGHT="184">해당</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="168">
+<TD WIDTH="141" HEIGHT="161">15. 기타투자판단에 관한 사항 2) </TD>
+<TD WIDTH="141" HEIGHT="161">임직원 주식매수선택권 행사에 따른 발행 주식총수 증가</TD>
+<TD WIDTH="289" HEIGHT="161">상기 '1. 발행회사 '중'발행주식총수' 의 경우 2023년 4월 및 2024년 4월 임직원 4인이 주식매수선택권을 행사하여 발행한 주식 9,500주가 포함되었으며, '자본금'의 경우 신주 9,500주 발행에 따른 950,000원의 증가를 반영한 금액입니다.</TD>
+<TD WIDTH="289" HEIGHT="161">상기 '1. 발행회사 '중'발행주식총수' 의 경우 2023년 4월, 2024년 4월 및 2025년 4월 임직원 13인이 주식매수선택권을 행사하여 발행한 주식 15,000주가 포함되었으며, '자본금'의 경우 신주 15,000주 발행에 따른 1,500,000원의 증가를 반영한 금액입니다.</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="559">
+<TD WIDTH="141" HEIGHT="552">15. 기타투자판단에 관한 사항 3) </TD>
+<TD WIDTH="141" HEIGHT="552">연장 합의서 체결에 따른 2차 매매 거래종결일 연장 및 2차 매매대금액 변경 가능성 기재</TD>
+<TD WIDTH="289" HEIGHT="552">본 건 거래는 1차 매수와 2차 매수로 나뉘어져있으며, ① 1차 매수에 대한 거래대금은 2022년과 2023년도 외부감사인의 감사보고서에 따라 작성된 재무제표를 기준으로 산정되며, ② 2차 매수에 대한 거래대금은 2024년도 외부감사인의 감사보고서에 따라 작성된 재무제표를 기준으로 산정됩니다. 한편 주당 매매대금은 어떠한 경우에도 금일조오천억원을 대상회사 발행 보통주식총수에서 자기주식수를 공제한 주식수로 나눈 금액을 상한으로 합니다. 상기 '2. 양수내역의 양수금액'은 ① 2022년도 감사보고서에 기반하여 매매대금이 산정되는 168,000주에 대한 대금액 386,481,127,734원, ② 2023년도 감사보고서에 기반하여 매매대금이 산정되는 72,000주에 대한 최대 대금 221,538,461,538원과 2024년도 감사보고서에 기반하여 매매대금이 산정되는 48,000주에 대한 최대 대금 147,088,866,190원을 합산한 금액이며, 향후 양수대상회사의 실제 영업 성과에 따라 변동될 수 있습니다.</TD>
+<TD WIDTH="289" HEIGHT="552">본 건 거래는 1차 매수와 2차 매수로 나뉘어져있으며, ① 1차 매수에 대한 거래대금은 2022년과 2023년도 외부감사인의 감사보고서에 따라 작성된 재무제표를 기준으로 산정되며, ② 2차 매수에 대한 거래대금은 2024년도 외부감사인의 감사보고서에 따라 작성된 재무제표를 기준으로 산정하되 매매대금지급 연장에 따른 추가금액이 발생할 수 있습니다. 다만, 2차 거래대금액의 경우, 대금 지급일 연장에 따라, 양 당사자가 별도 합의하는 기준에 의하여 그 금액이 변동될 수 있습니다. 상기 '2. 양수내역의 양수금액'은 ① 2022년도 감사보고서에 기반하여 매매대금이 산정되는 168,000주에 대한 대금액 386,481,127,734원, ② 2023년도 감사보고서에 기반하여 매매대금이 산정되는 72,000주에 대한 최대 대금 221,538,461,538원과 2024년도 감사보고서에 기반하여 매매대금이 산정되는 48,000주에 대한 최대 대금 147,088,866,190원을 합산한 금액이며, 향후 양수대상회사의 실제 영업 성과 등을 종합하여 양 당사자 간 별도 합의하는 기준에 따라 그 금액이 변동될 수 있습니다.</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="168">
+<TD WIDTH="141" HEIGHT="161">15. 기타투자판단에 관한 사항 11) </TD>
+<TD WIDTH="141" HEIGHT="161">상기 타법인주식 양수결정과 별 건으로 매수하는 (주)코스알엑스 임직원 보유 주식 매매 건에 대하여 투자자 정보제공 차원에서 기재함 </TD>
+<TD WIDTH="289" HEIGHT="161">상기 타법인주식 양수 건의 거래상대방이 되는 최대주주 외 (주)코스알엑스 임직원 4인의 보유주식 총 9,500주를 2024년 4월 30일 당사 보유 현금을 통해 24,067,442,500원에 매수 예정입니다.</TD>
+<TD WIDTH="289" HEIGHT="161">상기 타법인주식 양수 건의 거래상대방이 되는 최대주주 외 (주)코스알엑스 임직원 4인의 보유주식 총 9,500주를 2024년 4월 30일 당사 보유 현금을 통해 24,067,442,500원에 매수하였으며, 9인의 보유주식 총 5,500주는 2025년 4월 30일 당사 보유 현금을 통해 16,853,930,500원에 매수 예정입니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</CORRECTION>
+</LIBRARY>
+
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23"> 2023 년     10월     31일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(주)아모레퍼시픽</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">김 승 환</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">서울특별시 용산구 한강대로 100</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-6040-5114</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지)http://www.apgroup.com</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) 법무디비전장</TD>
+<TD WIDTH="267" HEIGHT="23">(성  명) 안 재 성</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-6040-5864</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Acquisition of Shares or Investment Securities of Other Corporations" ATOCID="1">타법인 주식 및 출자증권 양수결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="TBL_ACOC" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" WIDTH="778" BORDER="1">
+
+<COLGROUP WIDTH="778">
+<COL WIDTH="174"></COL>
+<COL WIDTH="167"></COL>
+<COL WIDTH="118"></COL>
+<COL WIDTH="112"></COL>
+<COL WIDTH="95"></COL>
+<COL WIDTH="112"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="136" COLSPAN="2" ROWSPAN="4" VALIGN="MIDDLE" AUPDATECONT="N" ENG="1. Issuing company">1. 발행회사</TD>
+<TD WIDTH="109" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Company name">회사명</TD>
+<TE WIDTH="310" HEIGHT="23" COLSPAN="3" ACODE="PC_NM" ALIGN="CENTER">주식회사 코스알엑스 (COSRX INC.)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="109" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Nationality">국적</TD>
+<TE WIDTH="103" HEIGHT="23" ACODE="PC_NT" ALIGN="CENTER">대한민국</TE>
+<TD WIDTH="86" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Representative">대표자</TD>
+<TE WIDTH="103" HEIGHT="23" ACODE="PC_CEO" ALIGN="CENTER">전상훈</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="109" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Issued capital (KRW)">자본금(원)</TD>
+<TE WIDTH="103" HEIGHT="23" ACODE="PC_CPT" ALIGN="RIGHT">51,500,000</TE>
+<TD WIDTH="86" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Relationship to company">회사와 관계</TD>
+<TU WIDTH="103" HEIGHT="23" VALIGN="MIDDLE" ALIGN="CENTER" AUNIT="PC_RLT" AUNITVALUE="-" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD WIDTH="109" HEIGHT="46" ALIGN="CENTER" AUPDATECONT="N" ENG="Total number of shares issued (shrs.)">발행주식총수(주)</TD>
+<TE WIDTH="103" HEIGHT="46" ACODE="PC_STK_CNT" VALIGN="MIDDLE" ALIGN="RIGHT">515,000</TE>
+<TD WIDTH="86" HEIGHT="46" VALIGN="MIDDLE" ALIGN="CENTER" AUPDATECONT="N" ENG="Main business">주요사업</TD>
+<TE WIDTH="103" HEIGHT="46" ACODE="PC_MNB" VALIGN="MIDDLE" ALIGN="CENTER">화장품 제조,판매</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD WIDTH="332" HEIGHT="46" COLSPAN="2" AUPDATECONT="N" ENG="- Whether new shares were acquired within the last six months by third-party allotment">   - 최근 6월 이내 제3자 배정에 의한     신주취득 여부</TD>
+<TU WIDTH="428" HEIGHT="46" COLSPAN="4" VALIGN="MIDDLE" ALIGN="CENTER" AUNIT="AQ_NST_YN" AUNITVALUE="A" ENG="N/A">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="165" HEIGHT="173" ROWSPAN="6" VALIGN="MIDDLE" AUPDATECONT="N" ENG="2. Details of acquisition">2. 양수내역</TD>
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Number of shares to be acquired">양수주식수(주)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="AC_STK_CNT" VALIGN="MIDDLE" ALIGN="RIGHT">288,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Acquisition amount (KRW)(A)">양수금액(원)(A)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="AC_AMT" VALIGN="MIDDLE" ALIGN="RIGHT">755,108,455,462</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Total assets (KRW) (B)">총자산(원)(B)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="CRP_ASST" VALIGN="MIDDLE" ALIGN="RIGHT">5,801,783,178,159</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Ratio to total assets (%) (A/B)">총자산대비(%)(A/B)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="ASST_RT" VALIGN="MIDDLE" ALIGN="RIGHT">13.02</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Equity (KRW)(C)">자기자본(원)(C)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="CRP_EQT" VALIGN="MIDDLE" ALIGN="RIGHT">4,779,275,104,059</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Ratio to equity (%) (A/C)">자기자본대비(%)(A/C)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="EQT_RT" VALIGN="MIDDLE" ALIGN="RIGHT">15.80</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="53" COLSPAN="2" ROWSPAN="2" VALIGN="MIDDLE" AUPDATECONT="N" ENG="3. Number of shares held and shareholding ratio after acquisition">3. 양수후 소유주식수 및 지분비율</TD>
+<TD WIDTH="109" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Number of shares held (shrs.)">소유주식수(주)</TD>
+<TE WIDTH="310" HEIGHT="23" COLSPAN="3" ALIGN="RIGHT" ACODE="AFT_AC_STK_CNT">480,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="109" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Shareholding ratio (%)">지분비율(%)</TD>
+<TE WIDTH="310" HEIGHT="23" COLSPAN="3" ALIGN="RIGHT" ACODE="AFT_AC_SHR_RT">93.20</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="4. Purpose of acquisition">4. 양수목적</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="AC_PPS" ALIGN="CENTER">지배지분 확보 및 기능성 화장품 포트폴리오 강화</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="5. Scheduled acquisition date">5. 양수예정일자</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="AC_EXT_DT" AUNITVALUE="20300430">2030년 04월 30일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="165" HEIGHT="143" ROWSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="6. Counterparty">6. 거래상대방</TD>
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Company name (Entity name)">회사명(성명)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" ACODE="OTH_NM">전상훈 외 2인</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Issued capital (KRW)">자본금(원)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="RIGHT" ACODE="OTH_CPT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Main business">주요사업</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="OTH_MNB" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Location of head office (Address)">본점소재지(주소)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="OTH_ADRS" ALIGN="CENTER">서울특별시 강남구 테헤란로 231, 웨스트동 5층(센터필드)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Relationship to company">회사와의 관계</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="OTH_RLT" AUNITVALUE="1" ENG="Largest shareholder">최대주주</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="260">
+<TD WIDTH="332" HEIGHT="253" COLSPAN="2" AUPDATECONT="N" ENG="7. Transaction payment">7. 거래대금지급</TD>
+
+<TE WIDTH="428" HEIGHT="253" COLSPAN="4" ACODE="PRC_PAY" VALIGN="MIDDLE">1) 대금 지급방법 : 현금지급2) 대금 지급시기 : - 1차 거래대금 지급일: 2024년 4월 30일   
+<SPAN USERMARK="0X000000">2차 거래대금 지급일: 2030년 4월 30일</SPAN>- 양수금액 755,108,455,462원 중 608,019,589,272원은 1차 거래대금 지급일에 지급될 예정이며, 147,088,866,190원은 2차 거래대금 지급일에 지급될 예정- 발행회사의 운영 성과에 따라 2024년 중 1차 거래대금액, 
+<SPAN USERMARK="0X000000"> 상기 '5. 양수예정일자' 또는 그 이전의 날에 잔여지분 48,000주에 대한 2차 거래대금액이 결정될 예정</SPAN>3) 자금조달 방법: 1차 거래대금은 자체보유 자금으로 지급
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="165" HEIGHT="212" ROWSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="8. Matters related to external evaluation">8. 외부평가에 관한 사항</TD>
+<TD WIDTH="158" HEIGHT="23" AUPDATECONT="N" ENG="Whether external valuation was conducted">외부평가 여부</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="EXV_YN" AUNITVALUE="Y" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD WIDTH="158" HEIGHT="92" AUPDATECONT="N" ENG="- Basis and reasons"> - 근거 및 사유</TD>
+<TE WIDTH="428" HEIGHT="92" COLSPAN="4" ACODE="EXV_BSS" VALIGN="MIDDLE">자본시장과 금융투자업에 관한 법률 제165조의4 제1항 제2호 및 제2항, 동법 시행령 제176조의6 제3항에 의한 적정성 평가 및 동법 시행령 제171조에 따라 제출하는 주요사항보고서의 첨부서류로 활용</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" AUPDATECONT="N" ENG="External evaluator’s name">외부평가기관의 명칭</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="EXV_NM" ALIGN="CENTER">삼정회계법인</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" AUPDATECONT="N" ENG="Period of external valuation">외부평가 기간</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="EXV_PROD" AUNITVALUE="20230713-20231029">2023년 07월 13일 ~ 2023년 10월 29일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" AUPDATECONT="N" ENG="Opinion of external valuation">외부평가 의견</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="EXV_OPN" ALIGN="CENTER">적정</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="9. Board resolution date (decision date)">9. 이사회결의일(결정일)</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="DRT_RSLT_DT" AUNITVALUE="20231030">2023년 10월 30일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="165" HEIGHT="53" ROWSPAN="2" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- Attendance of outside directors">   - 사외이사참석여부</TD>
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Present (No.)">참석(명)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="RIGHT" ACODE="ODRT_ATD_CNT">6</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="158" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Absent (No.)">불참(명)</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="RIGHT" ACODE="ODRT_NATD_CNT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="- Attendance of auditors (members of Audit Committee who are not outside directors)">   - 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="ADT_ATD_YN" AUNITVALUE="-" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="10. Whether deemed a backdoor listing">10. 우회상장 해당 여부</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="BDL_YN" AUNITVALUE="N" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="- Plans for capital increase by third-party allotment, etc. within the next 6 months">   - 향후 6월이내 제3자배정 증자 등 계획</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="INC_PLAN_YN" AUNITVALUE="N" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="11. Whether satisfying backdoor listing requirements for the issuing company (Other corporation)">11. 발행회사(타법인)의 우회상장 요건 충족여부</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="BDL_RQST_YN" AUNITVALUE="N" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="12. Whether subject to the Fair Trade Commission reporting requirements">12. 공정거래위원회 신고대상 여부</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="FTC_RPT_YN" AUNITVALUE="Y" ENG="Applicable">해당</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="13. Whether signed a put option contract, etc.">13. 풋옵션 등 계약 체결여부</TD>
+<TU WIDTH="428" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" AUNIT="PO_CTRT_YN" AUNITVALUE="N" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="332" HEIGHT="23" COLSPAN="2" AUPDATECONT="N" ENG="- Contract details">   - 계약내용</TD>
+<TE WIDTH="428" HEIGHT="23" COLSPAN="4" ACODE="PO_CTRT_DTL" ALIGN="CENTER">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="14. Plans for future corporate restructuring">14. 향후 회사구조개편에 관한 계획</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>: 해당사항 없음</P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="15. Other matters to be factored into investment decisions">15. 기타 투자판단과 관련한 중요사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>
+<SPAN USERMARK="0X000000">1) 본 주식양수 거래는 전상훈, 한재임, 전민호가 보유한 주식회사 코스알엑스의 주식 288,000주를 양수하는 것으로, 2023년 10월 30일 주식매매계약 체결 건입니다.2) 상기 '1. 발행회사' 중 '발행주식총수'의 경우 2023년 4월, 2024년 4월 및 2025년 4월 임직원 13인이 주식매수선택권을 행사하여 발행한 주식 15,000주가 포함되었으며, '자본금'의 경우 신주 15,000주 발행에 따른 1,500,000원의 증가를 반영한 금액입니다.3) </SPAN>
+<SPAN USERMARK="0X000000">본 건 거래는 1차 매수와 2차 매수로 나뉘어져있으며, ① 1차 매수에 대한 거래대금은 2022년과 2023년도 외부감사인의 감사보고서에 따라 작성된 재무제표를 기준으로 산정되며, ② 2차 매수에 대한 거래대금은 2024년도 외부감사인의 감사보고서에 따라 작성된 재무제표를 기준으로 산정하되 매매대금지급 연장에 따른 추가금액이 발생할 수 있습니다. 다만, 2차 거래대금액의 경우, 대금 지급일 연장에 따라, 양 당사자가 별도 합의하는 기준에 의하여 그 금액이 변동될 수 있습니다. 상기 '2. 양수내역의 양수금액'은 ① 2022년도 감사보고서에 기반하여 매매대금이 산정되는 168,000주에 대한 대금액 386,481,127,734원, ② 2023년도 감사보고서에 기반하여 매매대금이 산정되는 72,000주에 대한 최대 대금 221,538,461,538원과 2024년도 감사보고서에 기반하여 매매대금이 산정되는 48,000주에 대한 최대 대금 147,088,866,190원을 합산한 금액이며, 향후 양수대상회사의 실제 영업 성과 등을 종합하여 양 당사자 간 별도 합의하는 기준에 따라 그 금액이 변동될 수 있습니다.</SPAN>
+<SPAN USERMARK="0X000000">4) 상기 '2. 양수내역' 중 '총자산' 및 '자기자본'은 당사의 2022년말 연결재무제표 기준입니다. 5) 상기 '3. 양수후 소유주식수 및 지분비율'은  2차 거래대금 지급이 완료된 이후의 최종 지분율로, 가득기간이 도래한 임직원 주식매수선택권이 모두 행사되었다고 가정한 대상회사의 발행주식총수를 기준으로 산정하였습니다.6) 상기 '5. 양수예정일자'와 관련하여, 1차 매수 대상 주식 240,000주에 대한 거래종결일 및 2차 매수 대상 주식 48,000주에 대한 거래 종결일은 거래진행과정에서 관계기관의 승인과 양수도 당사자간의 합의에 따라 변경될 수 있습니다.7) 상기 '6. 거래상대방'에는 대상회사 최대주주 전상훈, 기존주주 한재임, 기존주주 전민호가 포함되어있습니다.8) 상기 '7.거래대금지급'의 자금조달방법은 1차 거래대금은 당사 보유현금을 통해 지급할 예정이며, 본 공시제출일 현재 2차 거래대금 지급에 대한 자금조달방법이 확정되지 않아, 해당사항 확정 후 정정공시 예정입니다.9) 본 공시사항과 관련하여 확정 또는 변동이 있는 경우, 관련 공시 등을 통해 재공시할 예정입니다.10) 기타 세부내역은 첨부된 '외부평가기관의 평가의견서'를 참조하시기 바랍니다.11) 상기 타법인주식 양수 건의 거래상대방이 되는 최대주주 외 (주)코스알엑스 임직원 4인의 보유주식 총 9,500주를 2024년 4월 30일 당사 보유 현금을 통해 24,067,442,500원에 매수하였으며, 9인의 보유주식 총 5,500주는 2025년 4월 30일 당사 보유 현금을 통해 16,853,930,500원에 매수 예정입니다.</SPAN>
+</P>
+<P>※ 관련공시 : 해당없음</P>
+<P></P>
+<P></P>
+
+<TABLE-GROUP ACLASS="TBL_PC_FS" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="611" BORDER="0">
+
+<COLGROUP WIDTH="611">
+<COL WIDTH="611"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="602" HEIGHT="23" AUPDATECONT="N" ENG="【 Condensed Financial Statement of Issuing Company 】">【 발행회사의 요약 재무상황 】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="1041" BORDER="0">
+
+<COLGROUP WIDTH="1041">
+<COL WIDTH="1041"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TU ALIGN="RIGHT" WIDTH="1032" HEIGHT="23" AUNIT="WON" AUNITVALUE="1" ENG="(Unit: KRW)">(단위 : 원)</TU>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="1045" BORDER="1">
+
+<COLGROUP WIDTH="1045">
+<COL WIDTH="78"></COL>
+<COL WIDTH="140"></COL>
+<COL WIDTH="131"></COL>
+<COL WIDTH="140"></COL>
+<COL WIDTH="99"></COL>
+<COL WIDTH="140"></COL>
+<COL WIDTH="131"></COL>
+<COL WIDTH="78"></COL>
+<COL WIDTH="108"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TH VALIGN="MIDDLE" WIDTH="69" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Category">구  분</TH>
+<TH VALIGN="MIDDLE" WIDTH="131" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Total assets">자산총계</TH>
+<TH VALIGN="MIDDLE" WIDTH="122" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Total liabilities">부채총계</TH>
+<TH VALIGN="MIDDLE" WIDTH="131" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Total equity">자본총계</TH>
+<TH VALIGN="MIDDLE" WIDTH="90" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Issued capital">자본금</TH>
+<TH VALIGN="MIDDLE" WIDTH="131" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Sales">매출액</TH>
+<TH VALIGN="MIDDLE" WIDTH="122" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Profit">당기순이익</TH>
+<TH VALIGN="MIDDLE" WIDTH="69" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Audit opinion">감사의견</TH>
+<TH VALIGN="MIDDLE" WIDTH="99" HEIGHT="23" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="External auditor">외부감사인</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="31">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="69" HEIGHT="24" AUPDATECONT="N" ENG="Current year">당해연도</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="24" ACODE="PC_ASST_01" USERMARK="F-BT12 ">224,713,500,150</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="122" HEIGHT="24" ACODE="PC_DBT_01" USERMARK="F-BT12 ">68,870,460,262</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="24" ACODE="PC_CPT_SUM_01" USERMARK="F-BT12 ">155,843,039,888</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="90" HEIGHT="24" ACODE="PC_CPT_01" USERMARK="F-BT12 ">50,750,000</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="24" ACODE="PC_SALE_01" USERMARK="F-BT12 ">190,229,056,823</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="122" HEIGHT="24" ACODE="PC_NP_01" USERMARK="F-BT12 ">58,779,034,240</TE>
+<TE VALIGN="MIDDLE" WIDTH="69" HEIGHT="24" ACODE="PC_AD_OPN_01" ALIGN="CENTER">-</TE>
+<TE VALIGN="MIDDLE" WIDTH="99" HEIGHT="24" ACODE="PC_EXAD_01" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="31">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="69" HEIGHT="24" AUPDATECONT="N" ENG="Previous fiscal year">전년도</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="24" ACODE="PC_ASST_02" USERMARK="F-BT12 ">120,297,530,777</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="122" HEIGHT="24" ACODE="PC_DBT_02" USERMARK="F-BT12 ">25,010,977,027</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="24" ACODE="PC_CPT_SUM_02" USERMARK="F-BT12 ">95,286,553,750</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="90" HEIGHT="24" ACODE="PC_CPT_02" USERMARK="F-BT12 ">50,000,000</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="24" ACODE="PC_SALE_02" USERMARK="F-BT12 ">204,354,232,277</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="122" HEIGHT="24" ACODE="PC_NP_02" USERMARK="F-BT12 ">36,818,483,762</TE>
+<TE VALIGN="MIDDLE" WIDTH="69" HEIGHT="24" ACODE="PC_AD_OPN_02" ALIGN="CENTER">적정</TE>
+<TE VALIGN="MIDDLE" WIDTH="99" HEIGHT="24" ACODE="PC_EXAD_02" ALIGN="CENTER">삼덕회계법인</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="31">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="69" HEIGHT="24" AUPDATECONT="N" ENG="Two fiscal years prior">전전년도</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="24" ACODE="PC_ASST_03" USERMARK="F-BT12 ">67,239,482,125</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="122" HEIGHT="24" ACODE="PC_DBT_03" USERMARK="F-BT12 ">13,823,706,804</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="24" ACODE="PC_CPT_SUM_03" USERMARK="F-BT12 ">53,415,775,321</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="90" HEIGHT="24" ACODE="PC_CPT_03" USERMARK="F-BT12 ">50,000,000</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="24" ACODE="PC_SALE_03" USERMARK="F-BT12 ">123,348,458,402</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="122" HEIGHT="24" ACODE="PC_NP_03" USERMARK="F-BT12 ">17,949,513,228</TE>
+<TE VALIGN="MIDDLE" WIDTH="69" HEIGHT="24" ACODE="PC_AD_OPN_03" ALIGN="CENTER">적정</TE>
+<TE VALIGN="MIDDLE" WIDTH="99" HEIGHT="24" ACODE="PC_EXAD_03" ALIGN="CENTER">삼덕회계법인</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P>주1) 상기 발행회사의 요약 재무상황은 대한민국의 회계감사기준을 준용하여 작성된 코스알엑스의 재무제표 기준이며, 당해년도 요약 재무제표는 감사인의 감사 또는 검토를 받지 않은 재무제표입니다.주2) 상기 재무정보는 당해년도 (2023년 1~6월), 전년도(2022년), 전전년도 (2021년)기준으로 작성하였습니다.</P>
+<P></P>
+
+<P></P>
+<P></P>
+
+<P></P>
+<P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

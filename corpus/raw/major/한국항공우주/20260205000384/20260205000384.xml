@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11324">주요사항보고서(전환사채권 발행결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20251230">6.3</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00309503">한국항공우주산업(주)</COMPANY-NAME>
+
+
+<BODY ATOCID="3">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="3">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">2026 년    02 월    05 일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">한국항공우주산업 주식회사</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">차 재 병</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">경상남도 사천시 사남면 공단1로 78</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 055-851-1000</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지) https://www.koreaaero.com/</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) 재무본부장</TD>
+<TD WIDTH="267" HEIGHT="23">(성  명) 남 연 식</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 055-851-1000</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Issuance of Convertible Bonds" ATOCID="1">전환사채권 발행결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="CB_PUB" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="1108" BORDER="1">
+
+<COLGROUP WIDTH="1108">
+<COL WIDTH="227"></COL>
+<COL WIDTH="197"></COL>
+<COL WIDTH="21"></COL>
+<COL WIDTH="141"></COL>
+<COL WIDTH="65"></COL>
+<COL WIDTH="68"></COL>
+<COL WIDTH="68"></COL>
+<COL WIDTH="202"></COL>
+<COL WIDTH="119"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="1. Type of bonds">1. 사채의 종류</TD>
+<TD ALIGN="CENTER" WIDTH="56" HEIGHT="23" AUPDATECONT="N" ENG="Ordinal">회차</TD>
+<TE ALIGN="CENTER" WIDTH="59" HEIGHT="23" ACODE="SEQ_NO">31</TE>
+<TD ALIGN="CENTER" WIDTH="59" HEIGHT="23" AUPDATECONT="N" ENG="Class of shares">종류</TD>
+<TE COLSPAN="2" ALIGN="CENTER" WIDTH="312" HEIGHT="23" ACODE="PL_KND">무기명식 무보증 사모 전환사채</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="2. Total face (or electronically registered) value of bonds (KRW)">2. 사채의 권면(전자등록)총액 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="DNM_SUM">500,000,000,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="2-1. Remaining issuance limit under the articles of incorporation (KRW)">2-1. 정관상 잔여 발행한도 (원)</TD>
+<TE COLSPAN="5" VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="ARI_LMT">500,000,000,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="4" VALIGN="MIDDLE" WIDTH="218" HEIGHT="113" AUPDATECONT="N" ENG="2-2. (Overseas issuance)">2-2. (해외발행)</TD>
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Total face (or electronically registered) value (currency unit)">권면(전자등록)총액(통화단위)</TD>
+<TE COLSPAN="4" ALIGN="CENTER" WIDTH="394" HEIGHT="23" ACODE="FRN_AMT" VALIGN="MIDDLE">-</TE>
+<TU ALIGN="CENTER" WIDTH="110" HEIGHT="23" AUNIT="AMT_UNIT" AUNITVALUE="-" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Base exchange rate, etc.">기준환율등</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="EXC_RT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Region of issuance">발행지역</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="ISSU_AREA">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Name of exchange (Overseas listing)">해외상장시 시장의 명칭</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="FRN_NM">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="6" VALIGN="MIDDLE" WIDTH="218" HEIGHT="173" AUPDATECONT="N" ENG="3. Purpose of funding">3. 자금조달의    목적</TD>
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Facility investment (KRW)">시설자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="FND_USE1">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Business acquisition (KRW)">영업양수자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="FND_USE_SQ">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Operating capital (KRW)">운영자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="FND_USE2">500,000,000,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Debt repayment (KRW)">채무상환자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="FND_USE_RD">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Acquisition of securities issued by other corporations (KRW)">타법인 증권 취득자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="ANC_ACQ_PRC">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Other purposes (KRW)">기타자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="FND_USE3">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="218" HEIGHT="53" AUPDATECONT="N" ENG="4. Interest rate of bonds">4. 사채의 이율</TD>
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Coupon rate (%)">표면이자율 (%)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="PRFT_RATE">0.0</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Yield to maturity (%)">만기이자율 (%)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="LST_RTN_RT">0.0</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="5. Bond maturity date">5. 사채만기일</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="EXP_DT" AUNITVALUE="20310304">2031년 03월 04일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="6. Method of interest payment">6. 이자지급방법</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="23" ACODE="INT_GV_MTH">본 사채는 표면이자율이 0.0%로 별도의 이자지급기일은 없습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="145">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="138" AUPDATECONT="N" ENG="7. Method of principal repayment">7. 원금상환방법</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="138" ACODE="RTN_MTH">만기까지 보유하고 있는 "본 사채" 의 전자등록금액에 대하여는 만기일에 전자등록금액의 100%에 해당하는 금액을 일시 상환한다. 단, 상환기일이 영업일(공휴일이 아닌 날로서 서울에서 은행들이 일상적인 업무를 영위하는 날을 말하며, 다만 일부 은행 또는 은행의 일부 점포만이 영업하는 날은 제외한다, 이하 같다.)이 아닌 경우에는 그 다음 영업일에 상환하되, 만기일 이후의 이자는 계산하지 아니한다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="8. Method of bond issuance">8. 사채발행방법</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="ISSU_MTH" AUNITVALUE="2" ENG="Private placement">사모</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="12" VALIGN="MIDDLE" WIDTH="218" HEIGHT="1825" AUPDATECONT="N" ENG="9. Matters concerning conversion">9. 전환에 관한    사항</TD>
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Conversion ratio (%)">전환비율 (%)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="EXE_RT">100</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="350" HEIGHT="23" AUPDATECONT="N" ENG="Conversion price (KRW/share)">전환가액 (원/주)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="513" HEIGHT="23" ACODE="EXE_PRC">185,165</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="283">
+<TD COLSPAN="3" WIDTH="350" HEIGHT="276" AUPDATECONT="N" ENG="Determination method for the conversion price">전환가액 결정방법</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="276" ACODE="EXE_FUNC" VALIGN="MIDDLE">"본 사채"의 전환가격은 "본 사채" 발행을 위한 "발행회사"의 이사회결의일(2026년 02월 05일) 전일을 기산일로 하여 그 기산일로부터 소급하여 산정한 다음 각호의 가액 중 가장 높은 가액을 기준주가로 하여, 기준주가의 110%에 해당하는 가액을 전환가격으로 하되, 원단위 미만은 절상한다. 단, 전환가격이 "발행회사"의 보통주의 액면가 미만일 경우에는 "발행회사"의 보통주의 액면가를 전환가격으로 한다. 가. "발행회사"의 보통주의 1개월 가중산술평균주가(그 기간 동안 한국거래소에서 거래된 해당 종목의 총 거래금액을 총 거래량으로 나눈 가격을 말한다. 이하 같다), 1주일 가중산술평균주가 및 최근일 가중산술평균주가를 산술 평균한 가격나. "발행회사"의 보통주의 최근일 가중산술평균주가</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="209" HEIGHT="106" AUPDATECONT="N" ROWSPAN="3" VALIGN="MIDDLE" ENG="Shares to be issued by conversion">전환에 따라발행할 주식</TD>
+<TD WIDTH="132" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Class of shares">종류</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="23" ACODE="STK_KND" VALIGN="MIDDLE" ALIGN="CENTER">한국항공우주산업 주식회사 기명식 보통주</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Number of shares">주식수</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="23" ACODE="STK_CNT" VALIGN="MIDDLE" ALIGN="RIGHT">2,700,294</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD WIDTH="132" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Ratio to total number of shares (%)">주식총수 대비비율(%)</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="46" ACODE="STK_RT" VALIGN="MIDDLE" ALIGN="RIGHT">2.77</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" COLSPAN="2" VALIGN="MIDDLE" WIDTH="209" HEIGHT="53" AUPDATECONT="N" ENG="Conversion request period">전환청구기간</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23" AUPDATECONT="N" ENG="Start date">시작일</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="SB_BGN_DT" AUNITVALUE="20270304">2027년 03월 04일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23" AUPDATECONT="N" ENG="End date">종료일</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="SB_END_DT" AUNITVALUE="20310204">2031년 02월 04일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="1134">
+<TD COLSPAN="3" WIDTH="350" HEIGHT="1127" AUPDATECONT="N" ENG="Details of conversion price adjustment">전환가액 조정에 관한 사항</TD>
+
+<TE COLSPAN="5" WIDTH="513" HEIGHT="1127" ACODE="EXE_REG" ALIGN="RIGHT" VALIGN="MIDDLE">
+<P USERMARK="A-J">가. "본 사채"를 소유한 자가 전환청구권 행사를 하기 전에 "발행회사"가 시가를 하회하는 발행가액으로 유상증자, 무상증자, 주식배당 및 준비금의 자본전입 등을 함으로써 주식을 발행하거나 또는 시가를 하회하는 전환가격 또는 행사가격으로 전환사채 또는 신주인수권부사채를 발행하는 경우에는 아래와 같이 전환가격을 조정한다. 단, 유·무상증자를 병행 실시하는 경우, 유상증자의 1주당 발행가액이 조정 전 전환가격을 상회하는 때에는 유상증자에 의한 신규 발행주식수는 전환가격 조정에 적용하지 아니하고 무상증자에 의한 신규 발행주식수만 적용한다.</P>
+<P USERMARK="A-J">조정후전환가격 = 조정전전환가격 × [{A+(B×C/D)} / (A+B)]</P>
+<P USERMARK="A-J">A: 기발행주식수,  B: 신규 발행주식수,  C: 1주당 발행가액,  D: 시가</P>
+<P USERMARK="A-J">다만, 위 산식 중 "기발행주식수"는 당해 조정사유가 발생하기 직전일 현재의 발행주식 총수로 하며, 전환사채 또는 신주인수권부사채를 발행할 경우 "신규 발행주식수"는 당해 사채 발행시 전환가격으로 전부 주식으로 전환되거나 당해 사채 발행시 행사가격으로 신주인수권이 전부 행사될 경우 발행될 주식의 수로 한다. 또한, 위 산식 중 "1주당 발행가액"은 주식분할, 무상증자, 주식배당의 경우에는 영(0)으로 하고, 전환사채 또는 신주인수권부사채를 발행할 경우에는 당해 사채 발행시 전환가격 또는 행사가격으로 하며, 위 산식에서 "시가"라 함은 "증권의 발행 및 공시 등에 관한 규정"에서 규정하는 발행가격 산정의 기준이 되는 기준주가 또는 이론권리락주가(유상증자 이외의 경우에는 조정사유 발생 전일을 기산일로 하여 계산한 기준주가)로 한다.</P>
+<P USERMARK="A-J">나. 합병, 자본의 감소, 주식분할 및 병합 등에 의하여 전환가격의 조정이 필요한 경우에는 당해 사유 발생 직전에 전환청구권이 행사되어 전액 주식으로 인수되었더라면 "본 사채"의 "사채권자"가 가질 수 있었던 동일한 효과가 날 수 있도록 조정한다. 합병, 자본의 감소, 주식분할 및 병합의 사유가 중복하여 발생한 경우에는 각각 그 비율을 고려하여 전환가격을 조정한다. "발행회사"가 이러한 조치를 하지 못함으로 인하여 "본 사채"의 "사채권자"가 손해를 입은 경우 "발행회사"는 그 손해를 배상하여야 한다. 또한, "발행회사"는 "사채권자"의 권리에 불리한 영향을 미치게 되는 방식으로 합병, 분할 및 영업양수도 행위를 하여서는 아니 되며, 계속하여 상장을 유지할 의무를 부담한다.</P>
+<P USERMARK="A-J">다. 감자 및 주식 병합 등 주식가치 상승사유가 발생하는 경우 감자 및 주식 병합 등으로 인한 조정비율만큼 상향하여 반영하는 조건으로 전환가격을 조정한다. 단, 감자 및 주식병합 등을 위한 주주총회 결의일 전일을 기산일로 하여 "증권의 발행 및 공시등에 관한 규정" 제5-22조 제1항 본문의 규정에 의하여 산정(제3호는 제외한다)한 가액(이하 "산정가액"이라 한다)이 액면가액 미만이면서 기산일 전에 전환가격을 액면가액으로 이미 조정한 경우(전환가격을 액면가액 미만으로 조정할 수 있는 경우는 제외한다)에는 조정 후 전환가격은 산정가액을 기준으로 감자 및 주식병합 등으로 인한 조정비율만큼 상향 조정한 가액 이상으로 조정한다.</P>
+<P USERMARK="A-J"></P>
+<P USERMARK="A-J">라. 위 가.목 내지 다.목에 의하여 조정된 전환가격이 주식의 액면가 이하일 경우에는 액면가를 전환가격으로 하며, 각 전환사채에 부여된 전환청구권의 행사로 인하여 발행할 주식의 발행가액의 합계액은 각 전환사채의 발행가액을 초과할 수 없다.</P>
+<P USERMARK="A-J">마. 본호에 의한 조정 후 전환가격 중 원단위 미만은 절상한다.</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="3" COLSPAN="2" VALIGN="MIDDLE" WIDTH="209" HEIGHT="175" AUPDATECONT="N" ENG="Adjustment of the conversion prices due to a decrease in the market price">시가하락에따른전환가액조정</TD>
+<TD VALIGN="MIDDLE" WIDTH="132" HEIGHT="23" AUPDATECONT="N" ENG="Minimum refixing price (KRW)">최저 조정가액 (원)</TD>
+<TE COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="513" HEIGHT="23" ACODE="MIN_PRC">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="132" HEIGHT="23" AUPDATECONT="N" ENG="Legal basis of minimum refixing">최저 조정가액 근거</TD>
+<TE COLSPAN="5" VALIGN="MIDDLE" WIDTH="513" HEIGHT="23" ACODE="MIN_RSN" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="122">
+<TD VALIGN="MIDDLE" WIDTH="132" HEIGHT="115" AUPDATECONT="N" ENG="The remaining issuance limit that may be adjusted to below 70% of the conversion price at the time of issuance (KRW)">발행당시 전환가액의70% 미만으로조정가능한 잔여발행한도 (원)</TD>
+<TE COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="513" HEIGHT="115" ACODE="CTR_LMT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="260">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="253" AUPDATECONT="N" ENG="9-1. Details of option">9-1. 옵션에 관한 사항</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="253" ACODE="OPT_FCT">[조기상환청구권(Put Option)]본 사채의 "사채권자"는 "본 사채"의 발행일로부터 36개월이 되는 2029년 03월 04일 및 이후 매 3개월에 해당되는 날(이하 "조기상환지급기일"이라 한다)에 전자등록금액에 조기상환율을 곱한 금액의 전부 또는 일부에 대하여 만기 전 조기상환을 청구할 수 있다. 단, 조기상환지급기일이 영업일이 아닌 경우에는 그 다음 영업일에 상환하고 조기상환지급기일 이후의 이자는 계산하지 아니한다. (*) 이외 Put Option에 관한 세부 내용은 "23. 기타 투자판단에 참고할 사항"을 참고하여 주시기 바랍니다. </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="10. Matters related to merger">10. 합병 관련 사항</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="23" ACODE="MRG_FCT" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="11. Subscription date">11. 청약일</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="SBSC_DT" AUNITVALUE="20260304">2026년 03월 04일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="12. Payment date">12. 납입일 </TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="PYM_DT" AUNITVALUE="20260304">2026년 03월 04일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="13. Methods of payment">13. 납입방법 </TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="PYM_DET" AUNITVALUE="1" ENG="Cash">현금</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="14. Lead underwriter">14. 대표주관회사</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="23" ACODE="CHF_AGN" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="15. Guarantor">15. 보증기관</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="23" ACODE="WTY_ORG" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="16. Details of the provision of collateral">16. 담보제공에 관한 사항</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="23" ACODE="MOR_OFR" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="17. Board resolution date (decision date)">17. 이사회결의일(결정일)</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="DRC_DT" AUNITVALUE="20260205">2026년 02월 05일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" COLSPAN="2" VALIGN="MIDDLE" WIDTH="415" HEIGHT="53" AUPDATECONT="N" ENG="- Attendance of outside directors">   - 사외이사 참석여부</TD>
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ENG="Present (No.)">참석 (명)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" ACODE="ATD_CNT">5</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ENG="Absent (No.)">불참 (명)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" ACODE="NATD_CNT">1</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="- Attendance of auditors (members of Audit Committee)">   - 감사(감사위원) 참석여부</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="ADT_ATD_YN" AUNITVALUE="Y" ENG="Present">참석</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="18. Whether subject to file securities registration statement">18. 증권신고서 제출대상 여부</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="RPT_SM_YN" AUNITVALUE="N" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="19. Reasons for exemption from filing securities registration statement, if exempted">19. 제출을 면제받은 경우 그 사유</TD>
+<TE COLSPAN="5" VALIGN="BOTTOM" WIDTH="513" HEIGHT="23" ACODE="RPT_SBM" ALIGN="CENTER">면제(사모발행에 의한 1년간 거래단위 분할 및 전환금지)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="83" AUPDATECONT="N" ENG="20. Short selling transaction period during which the acquisition of  bonds is prohibited" ROWSPAN="3">20. 본 건 전환사채의 취득이 금지되는 공매도 거래 기간</TD>
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="124" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Whether applicable">해당여부</TD>
+<TU COLSPAN="3" VALIGN="MIDDLE" WIDTH="380" HEIGHT="23" AUNIT="SSL_YN" AUNITVALUE="N" ALIGN="CENTER" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="124" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Start date">시작일</TD>
+<TU COLSPAN="3" VALIGN="MIDDLE" WIDTH="380" HEIGHT="23" AUNIT="SSL_BGN_DT" AUNITVALUE="-" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="124" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="End date">종료일</TD>
+<TU COLSPAN="3" VALIGN="MIDDLE" WIDTH="380" HEIGHT="23" AUNIT="SSL_END_DT" AUNITVALUE="-" ALIGN="CENTER">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="92" AUPDATECONT="N" ENG="21. Details of securities lending and borrowing transactions related to overseas issuance of bonds">21. 당해 사채의 해외발행과 연계된 대차거래 내역   - 목적, 주식수, 대여자 및 차입자 인적사항,예정처분시기, 대차조건(기간, 상환조건, 이율),상환방식, 당해 전환사채 발행과의 연계성, 수수료 등</TD>
+<TE COLSPAN="5" WIDTH="513" HEIGHT="92" ACODE="TRD_BD" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" WIDTH="577" HEIGHT="23" AUPDATECONT="N" ENG="22. Whether subject to the Fair Trade Commission reporting requirements">22. 공정거래위원회 신고대상 여부 </TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="513" HEIGHT="23" AUNIT="TRD_YN" AUNITVALUE="N" ENG="Non-applicable">미해당</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="1107" BORDER="0">
+
+<COLGROUP WIDTH="1107">
+<COL WIDTH="1107"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="1098" HEIGHT="23" AUPDATECONT="N" ENG="23. Other matters to be factored into investment decisions">23. 기타 투자판단에 참고할 사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>가. 조기상환청구권(Put Option)에 관한 사항본 사채의 "사채권자"는 "본 사채"의 발행일로부터 36개월이 되는 2029년 03월 04일 및 이후 매 3개월에 해당되는 날(이하 "조기상환지급기일"이라 한다)에 전자등록금액에 조기상환율을 곱한 금액의 전부 또는 일부에 대하여 만기 전 조기상환을 청구할 수 있다. 단, 조기상환지급기일이 영업일이 아닌 경우에는 그 다음 영업일에 상환하고 조기상환지급기일 이후의 이자는 계산하지 아니한다. </P>
+<P></P>
+
+<TABLE BORDER="1" WIDTH="603" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="603">
+<COL WIDTH="49"></COL>
+<COL WIDTH="139"></COL>
+<COL WIDTH="139"></COL>
+<COL WIDTH="138"></COL>
+<COL WIDTH="138"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="2" WIDTH="40" USERMARK="BC0XD7D7D7" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="53">구분</TD>
+<TD COLSPAN="2" WIDTH="269" USERMARK="BC0XD7D7D7" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">조기상환 청구기간</TD>
+<TD ROWSPAN="2" WIDTH="129" USERMARK="BC0XD7D7D7" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="53">조기상환지급기일</TD>
+<TD ROWSPAN="2" WIDTH="129" USERMARK="BC0XD7D7D7" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="53">조기상환율</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="130" USERMARK="BC0XD7D7D7" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">FROM</TD>
+<TD WIDTH="130" USERMARK="BC0XD7D7D7" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">TO</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="40" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">1차</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-01-03</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-02-02</TD>
+<TD WIDTH="129" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-03-04</TD>
+<TD WIDTH="129" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">100%</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="40" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2차</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-04-05</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-05-08</TD>
+<TD WIDTH="129" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-06-04</TD>
+<TD WIDTH="129" ALIGN="CENTER" HEIGHT="23">100%</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="40" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">3차</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-07-06</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-08-06</TD>
+<TD WIDTH="129" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-09-04</TD>
+<TD WIDTH="129" ALIGN="CENTER" HEIGHT="23">100%</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="40" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">4차</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-10-05</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-11-05</TD>
+<TD WIDTH="129" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2029-12-04</TD>
+<TD WIDTH="129" ALIGN="CENTER" HEIGHT="23">100%</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="40" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">5차</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-01-03</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-02-06</TD>
+<TD WIDTH="129" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-03-04</TD>
+<TD WIDTH="129" ALIGN="CENTER" HEIGHT="23">100%</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="40" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">6차</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-04-05</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-05-07</TD>
+<TD WIDTH="129" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-06-04</TD>
+<TD WIDTH="129" ALIGN="CENTER" HEIGHT="23">100%</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="40" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">7차</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-07-06</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-08-05</TD>
+<TD WIDTH="129" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-09-04</TD>
+<TD WIDTH="129" ALIGN="CENTER" HEIGHT="23">100%</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="40" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">8차</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-10-05</TD>
+<TD WIDTH="130" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-11-04</TD>
+<TD WIDTH="129" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">2030-12-04</TD>
+<TD WIDTH="129" ALIGN="CENTER" HEIGHT="23">100%</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>(1) 조기상환청구장소: "발행회사"의 본점</P>
+<P>(2) 조기상환지급장소: (주)우리은행 삼성타운기업영업지원팀</P>
+<P>(3) 조기상환청구기간: "사채권자"는 조기상환지급일 60일전부터 30일 전까지 한국예탁결제원을 통하여 "발행회사"에게 조기상환 청구를 해야 한다. 단, 조기상환청구기간의 종료일이 영업일이 아닌 경우에는 그 다음 영업일까지로 한다.</P>
+<P>(4) 조기상환청구절차: "사채권자"는 본 사채가 고객계좌에 전자등록된 경우에는 해당 계좌관리기관을 통하여 한국예탁결제원에 조기상환을 청구하고, 계좌관리기관 자기계좌에 전자등록된 경우에는 한국예탁결제원에 조기상환을 청구하면 한국예탁결제원이 이를 취합하여 청구장소에 조기상환 청구한다.</P>
+<P></P>
+
+<TABLE-GROUP ACLASS="CRP_ISSU" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="916" BORDER="0">
+
+<COLGROUP WIDTH="916">
+<COL WIDTH="916"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="907" HEIGHT="23" AUPDATECONT="N" ENG="【Issuance of Bonds for Specific Persons per Recipient】">【특정인에 대한 대상자별 사채발행내역】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="N" WIDTH="917" BORDER="1">
+
+<COLGROUP WIDTH="917">
+<COL WIDTH="165"></COL>
+<COL WIDTH="108"></COL>
+<COL WIDTH="333"></COL>
+<COL WIDTH="113"></COL>
+<COL WIDTH="150"></COL>
+<COL WIDTH="48"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TH VALIGN="MIDDLE" WIDTH="156" HEIGHT="92" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Name">발행 대상자명</TH>
+<TH VALIGN="MIDDLE" WIDTH="99" HEIGHT="92" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Relationship to company or the largest shareholder">회사 또는최대주주와의관계</TH>
+<TH VALIGN="MIDDLE" WIDTH="324" HEIGHT="92" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Circumstances of selection">선정경위</TH>
+<TH VALIGN="MIDDLE" WIDTH="104" HEIGHT="92" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Transaction details and plan within 6 months before and after issuance decision">발행결정 전후6월이내거래내역 및계획</TH>
+<TH VALIGN="MIDDLE" WIDTH="141" HEIGHT="92" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Total face (or electronically registered) value (KRW)">발행권면(전자등록)총액(원)</TH>
+<TH VALIGN="MIDDLE" WIDTH="39" HEIGHT="92" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Note">비고</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="N" HEIGHT="53">
+<TE WIDTH="156" HEIGHT="46" ACODE="ISSU_NM" ALIGN="CENTER" VALIGN="MIDDLE">엔에이치투자증권(주)</TE>
+<TE WIDTH="99" HEIGHT="46" ACODE="RLT" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+<TE WIDTH="324" HEIGHT="46" ACODE="ISSU_SLT" ALIGN="CENTER" VALIGN="MIDDLE">회사 경영상 필요자금을 신속히 조달하기 위해 납입능력 및 투자시기 등을 고려하여 선정</TE>
+<TE WIDTH="104" HEIGHT="46" ACODE="ISSU_HST" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+<TE ALIGN="CENTER" WIDTH="141" HEIGHT="46" ACODE="ISSU_AMT" VALIGN="MIDDLE">500,000,000,000</TE>
+<TE ALIGN="CENTER" WIDTH="39" HEIGHT="46" ACODE="ISSU_ETC" VALIGN="MIDDLE">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="【Intended Use of Funds in Detail】">【조달자금의 구체적 사용 목적】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<LIBRARY>
+<TABLE-GROUP ACLASS="TBL_FND1" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="973" BORDER="0">
+
+<COLGROUP WIDTH="973">
+<COL WIDTH="973"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="964" HEIGHT="23" AUPDATECONT="N" ENG="[In the case of operating capital and other purposes]">【운영자금ㆍ기타자금의 경우】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="973" BORDER="0">
+
+<COLGROUP WIDTH="973">
+<COL WIDTH="459"></COL>
+<COL WIDTH="514"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="450" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE"></TD>
+<TU WIDTH="505" HEIGHT="23" VALIGN="MIDDLE" ALIGN="RIGHT" AUNIT="WON" AUNITVALUE="3" ENG="(Unit: KRW million)">(단위 : 백만원)</TU>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" WIDTH="973" BORDER="1">
+
+<COLGROUP WIDTH="973">
+<COL WIDTH="78"></COL>
+<COL WIDTH="588"></COL>
+<COL WIDTH="71"></COL>
+<COL WIDTH="65"></COL>
+<COL WIDTH="100"></COL>
+<COL WIDTH="71"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="69" HEIGHT="53" AUPDATECONT="N" ENG="Purpose of fund use">자금용도</TD>
+<TD ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="579" HEIGHT="53" AUPDATECONT="N" ENG="Details*">세부내역*</TD>
+<TD COLSPAN="4" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="298" HEIGHT="23" AUPDATECONT="N" ENG="Estimated amount to use by year">연도별 사용 예정 금액</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="62" HEIGHT="23" ACODE="FND1_PRD1">2026년</TE>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="56" HEIGHT="23" ACODE="FND1_PRD2">2027년</TE>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="91" HEIGHT="23" ACODE="FND1_PRD3">2028년 이후</TE>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="62" HEIGHT="23" AUPDATECONT="N" ENG="Total">합계</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="N" HEIGHT="30">
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23" AUNIT="FND1_PPS" AUNITVALUE="1" ENG="Operating capital">운영자금</TU>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="579" HEIGHT="23" ACODE="FND1_DTL">KF-21/LAH 양산사업 본격화 대비 제작·생산 대금 투자</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="62" HEIGHT="23" ACODE="FND1_AMT1">400,000</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="56" HEIGHT="23" ACODE="FND1_AMT2">-</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="91" HEIGHT="23" ACODE="FND1_AMT3">-</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="62" HEIGHT="23" ACODE="FND1_AMTT">400,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23" AUNIT="FND1_PPS" AUNITVALUE="1" ENG="Operating capital">운영자금</TU>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="579" HEIGHT="23" ACODE="FND1_DTL">FA-50/KUH 수출 적기 납품 위한 재료비 및 수주경쟁력 강화 위한 구성품 선발주 투자</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="62" HEIGHT="23" ACODE="FND1_AMT1">100,000</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="56" HEIGHT="23" ACODE="FND1_AMT2">-</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="91" HEIGHT="23" ACODE="FND1_AMT3">-</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="62" HEIGHT="23" ACODE="FND1_AMTT">100,000</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+</LIBRARY>
+
+<P></P>
+
+<TABLE-GROUP ACLASS="TBL_NSB" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="842" BORDER="0">
+
+<COLGROUP WIDTH="842">
+<COL WIDTH="842"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="833" HEIGHT="23" AUPDATECONT="N" ENG="[Matters Related to Unredeemed Equity-Related Bonds]">【미상환 주권 관련 사채권에 관한 사항】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="N" WIDTH="846" BORDER="1">
+
+<COLGROUP WIDTH="846">
+<COL WIDTH="60"></COL>
+<COL WIDTH="85"></COL>
+<COL WIDTH="48"></COL>
+<COL WIDTH="129"></COL>
+<COL WIDTH="90"></COL>
+<COL WIDTH="40"></COL>
+<COL WIDTH="84"></COL>
+<COL WIDTH="277"></COL>
+<COL WIDTH="33"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD WIDTH="51" HEIGHT="166" ROWSPAN="5" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Shares to be issued by conversion/exercise">전환(행사)가능주식</TD>
+<TD WIDTH="76" HEIGHT="106" ROWSPAN="3" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Outstanding unredeemed bonds">기발행미상환사채권</TD>
+<TD WIDTH="39" HEIGHT="46" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Class of shares">종류</TD>
+<TD WIDTH="120" HEIGHT="46" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Outstanding balance (KRW)">잔액(원)</TD>
+<TD WIDTH="81" HEIGHT="46" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Conversion/exercise price (KRW)">전환(행사)가액(원)</TD>
+<TD WIDTH="115" HEIGHT="46" COLSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Number of shares to be issued by conversion/exercise (shrs.)">전환(행사)가능주식수(주)</TD>
+<TD WIDTH="268" HEIGHT="46" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Conversion/exercise period">전환(행사)가능기간</TD>
+<TD WIDTH="24" HEIGHT="46" ALIGN="CENTER" VALIGN="MIDDLE" AUPDATECONT="N" ENG="Note">비고</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="N" HEIGHT="30">
+<TE WIDTH="39" HEIGHT="23" ALIGN="CENTER" ACODE="DEB_KND">-</TE>
+<TE WIDTH="120" HEIGHT="23" ALIGN="RIGHT" ACODE="BAL_AMT">-</TE>
+<TE WIDTH="81" HEIGHT="23" ALIGN="RIGHT" ACODE="EXE_MN">-</TE>
+<TE WIDTH="115" HEIGHT="23" COLSPAN="2" ALIGN="RIGHT" ACODE="EXE_STK">-</TE>
+<TU WIDTH="268" HEIGHT="23" ALIGN="CENTER" AUNIT="EXE_DT" AUNITVALUE="-">-</TU>
+<TE WIDTH="24" HEIGHT="23" ALIGN="CENTER" ACODE="NOTE_CONT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="39" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="Subtotal">소계</TD>
+<TE WIDTH="120" HEIGHT="23" ALIGN="RIGHT" ACODE="SUB_TOT_BAL">-</TE>
+<TE WIDTH="81" HEIGHT="23" ALIGN="RIGHT" ACODE="SUB_TOT_EXE">-</TE>
+<TD WIDTH="31" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="(A)">(A)</TD>
+<TE WIDTH="75" HEIGHT="23" ALIGN="RIGHT" ACODE="SUB_TOT_STK">-</TE>
+<TD WIDTH="268" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N">-</TD>
+<TE WIDTH="24" HEIGHT="23" ALIGN="CENTER" ACODE="SUB_NOTE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="124" HEIGHT="23" COLSPAN="2" ALIGN="CENTER" AUPDATECONT="N" ENG="On-the-run convertible bonds">신규 발행 사채권</TD>
+<TE WIDTH="120" HEIGHT="23" ALIGN="RIGHT" ACODE="ISSU_BAL">500,000,000,000</TE>
+<TE WIDTH="81" HEIGHT="23" ALIGN="RIGHT" ACODE="ISSU_EXE">185,165</TE>
+<TD WIDTH="31" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N" ENG="(B)">(B)</TD>
+<TE WIDTH="75" HEIGHT="23" ALIGN="RIGHT" ACODE="ISSU_STK">2,700,294</TE>
+<TU WIDTH="268" HEIGHT="23" ALIGN="CENTER" AUNIT="ISSU_DT" AUNITVALUE="20270304-20310204">2027년 03월 04일 ~ 2031년 02월 04일</TU>
+<TE WIDTH="24" HEIGHT="23" ALIGN="CENTER" ACODE="ISSU_NOTE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="124" HEIGHT="23" COLSPAN="2" ALIGN="CENTER" AUPDATECONT="N" ENG="Total">합계</TD>
+<TE WIDTH="120" HEIGHT="23" ALIGN="RIGHT" ACODE="TOT_BAL">500,000,000,000</TE>
+<TE WIDTH="81" HEIGHT="23" ALIGN="RIGHT" ACODE="TOT_EXE">-</TE>
+<TE WIDTH="115" HEIGHT="23" COLSPAN="2" ALIGN="RIGHT" ACODE="TOT_STK">2,700,294</TE>
+<TD WIDTH="268" HEIGHT="23" ALIGN="CENTER" AUPDATECONT="N">-</TD>
+<TE WIDTH="24" HEIGHT="23" ALIGN="CENTER" ACODE="TOT_NOTE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="403" HEIGHT="23" COLSPAN="5" ALIGN="CENTER" AUPDATECONT="N" ENG="Total number of shares issued (shrs.) (C)">기발행주식 총수(주) (C)</TD>
+<TE WIDTH="425" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" ACODE="ISSU_TOT">97,475,107</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="403" HEIGHT="23" COLSPAN="5" ALIGN="CENTER" AUPDATECONT="N" ENG="Ratio to total number of shares issued (%) (D=(A+B)/C)">기발행주식총수 대비 비율(%) (D=(A+B)/C)</TD>
+<TE WIDTH="425" HEIGHT="23" COLSPAN="4" ALIGN="CENTER" ACODE="ISSU_STK_RT">2.77</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

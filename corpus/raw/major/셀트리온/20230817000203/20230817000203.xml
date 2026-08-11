@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart3.xsd">
+
+<DOCUMENT-NAME ACODE="11344">주요사항보고서(회사합병 결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20221018">1.6</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00413046">(주)셀트리온</COMPANY-NAME>
+
+
+<BODY>
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP>
+<COL WIDTH="132"></COL>
+<COL WIDTH="193"></COL>
+<COL WIDTH="248"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="53"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="343" HEIGHT="30">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="257" HEIGHT="30">  2023년   08월   17일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="53"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(주)셀트리온</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">기 우 성</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">인천광역시 연수구 아카데미로 23</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(전  화) 1661-8722</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(홈페이지) http://www.celltrion.com</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">작 성 책 임 자 :</TD>
+<TD WIDTH="202" HEIGHT="30">(직  책) 신고업무담당이사</TD>
+<TD WIDTH="257" HEIGHT="30">   (성  명)  신 민 철</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(전  화) 1661-8722</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0">회사합병 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="RSL_MGR" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="925" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="56"></COL>
+<COL WIDTH="56"></COL>
+<COL WIDTH="31"></COL>
+<COL WIDTH="32"></COL>
+<COL WIDTH="72"></COL>
+<COL WIDTH="85"></COL>
+<COL WIDTH="38"></COL>
+<COL WIDTH="110"></COL>
+<COL WIDTH="141"></COL>
+<COL WIDTH="214"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="292" HEIGHT="76" AUPDATECONT="N">1. 합병방법</TD>
+<TE WIDTH="633" HEIGHT="76" ACODE="MGR_MTH" COLSPAN="5" VALIGN="MIDDLE">(주)셀트리온이 (주)셀트리온헬스케어를 흡수합병- 존속회사(합병법인) : (주)셀트리온(유가증권시장 상장법인)- 소멸회사(피합병법인) : (주)셀트리온헬스케어(코스닥시장 상장법인)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="292" HEIGHT="30" AUPDATECONT="N">- 합병형태</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_FRM" AUNITVALUE="N" COLSPAN="5">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="292" HEIGHT="76" AUPDATECONT="N">2. 합병목적</TD>
+<TE WIDTH="633" HEIGHT="76" ACODE="MGR_RES" COLSPAN="5" VALIGN="MIDDLE">대규모 투자를 위한 자산의 통합, 개발-생산-판매 기능 통합에 따른 원가경쟁력 강화 및 제품 차별화, 거래구조 단순화로 인한 투명성 및 투자자 신뢰 제고 등을 통해 바이오시밀러를 넘어서 신약으로 도약하는 진정한 Global Big Pharma로 성장하기 위함입니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="292" HEIGHT="1386" AUPDATECONT="N">3. 합병의 중요영향 및 효과</TD>
+
+<TE WIDTH="633" HEIGHT="1386" ACODE="MGR_EFT" COLSPAN="5" VALIGN="MIDDLE" USERMARK=" 0X0000FF B">
+
+<P>
+<SPAN USERMARK="F-GL11 B">(1) 회사의 경영에 미치는 영향 및 효과</SPAN>
+<SPAN USERMARK="F-GL11">  합병회사인 (주)셀트리온은 셀트리온 기업집단 소속의 계열회사이며, 피합병회사인 (주)셀트리온헬스케어 또한 셀트리온 기업집단 소속의 계열회사입니다. 본 주요사항보고서 제출일 현재 합병회사인 (주)셀트리온의 최대주주는 20.05%를 보유한 (주)셀트리온홀딩스이며, 소멸회사인 (주)셀트리온헬스케어의 최대주주는 24.29%를 보유한 (주)셀트리온홀딩스입니다.  본 합병이 완료될 경우 합병회사인 (주)셀트리온은 존속회사로 남게되며 최대주주는 (주)셀트리온홀딩스로 변동사항이 없습니다. 이에 최대주주 및 특수관계인의 지배력에 유의미한 변동은 없을 것으로 판단됩니다. 합병 후, 피합병법인인 (주)셀트리온헬스케어는 해산할 예정입니다. </SPAN>
+</P>
+
+<P>
+<SPAN USERMARK="F-GL11 B">(2) 회사의 재무에 미치는 영향 및 효과</SPAN>
+<SPAN USERMARK="F-GL11"> 합병당사회사 중 (주)셀트리온은 바이오의약품의 개발과 생산 사업을 담당하고 있으며 합병당사회사 중 (주)셀트리온헬스케어는 (주)셀트리온과 공동개발자로 (주)셀트리온이 개발한 바이오시밀러를 포함한 바이오의약품에 대한 독점 판매권(국내 제외)을 보유하고 있습니다. 금번 합병에 따라 각사가 담당하고 있는 사업부의 일원화, 효율화된 관리체계를 구축할 수 있을 것으로 기대하고 있으며, 궁극적으로는 경영효율성의 극대화를 통해 회사의 재무구조 및 수익개선이 달성될 것으로 기대하고 있습니다. 한편, 소멸회사인 (주)셀트리온헬스케어가 존속회사인 (주)셀트리온에 흡수합병됨에 따라 판매권기본계약은 소멸되고, 판매권기본계약에 따른 특수관계자 거래 매출이 제거됨에 따라 존속회사인 (주)셀트리온의 합병 후 매출액은 소멸회사 (주)셀트리온헬스케어의 매출액과 (주)셀트리온의 기존 CMO, 케미컬 매출 등으로 구성되며, 합병 전 (주)셀트리온의 원가가 합병 후 (주)셀트리온의 원가로 반영됩니다. 회사는 합병 후 원가율 개선에 따라 판매 마진이 개선되어 다양한 마케팅 전략을 수립할 수 있을 것으로 기대하고 있습니다. 합병 당사회사는 향후 유연한 가격 차별화 전략을 통해 성장 잠재력이 높은 신규 시장 진출을 모색하고 있습니다.</SPAN>
+</P>
+
+<P>
+<SPAN USERMARK="F-GL11 B">(3) 회사의 영업에 미치는 영향 및 효과</SPAN>
+<SPAN USERMARK="F-GL11"> (주)셀트리온 및 (주)셀트리온헬스케어의 사업과 매출은 서로 긴밀하게 연관되어있으므로 본 합병은 셀트리온그룹 입장에서 경영 시너지를 발휘하여 사업경쟁력 강화와 동시에 개발, 임상, 허가, 생산, 마케팅 및 판매 조직의 수직계열화를 통해 업무 효율성을 도모하고, 신속한 의사결정으로  제품 경쟁력이 더욱 강화될 것으로 기대됩니다.  개발부터 생산, 판매까지 일원화된 기업 구조를 통해 차별화된 제품 경쟁력을 강화해 나가고 우수한 원가 경쟁력 확보로 시장 점유율을 극대화하고자 합니다. 합병 전 상황에서는 판매 회사인 (주)셀트리온헬스케어가 판매할 수 있는 제품의 원가는 (주)셀트리온으로부터 매입해온 가격으로 가격 탄력성이 낮았으나, 합병 후 통합법인의 생산원가는 기존 (주)셀트리온의 생산원가로 변경되어 유연한 가격 차별화 전략 수립이 가능합니다. 이를 통해 공격적인 가격 전략 및 영업 활동으로 판매지역 확대 및 시장 점유율을 극대화 할 계획입니다.</SPAN>
+</P>
+<P USERMARK="F-GL11 B">(4) 합병 당사회사 주주가치에 미치는 영향</P>
+<P USERMARK="F-GL11">합병신주 배정기준일 현재 기준, (주)셀트리온헬스케어 주주명부에 등재되어 있는 보통주 주주들이 보유한 보통주식 1주당 (주)셀트리온 보통주식 0.4492620주를 발행할 예정입니다.</P>
+<P USERMARK="F-GL11">또한, 합병 소멸회사 (주)셀트리온헬스케어가 현재 보유하고 있는 자기주식(소멸회사 (주)셀트리온헬스케어 주주들의 주식매수청구권 행사로 인하여 자기주식으로 취득하게 되는 주식을 포함)에 대해서도 합병신주를 배정할 예정입니다.</P>
+<P USERMARK="F-GL11"> 합병회사는 상기 명시한 합병 기대효과 및 시너지를 통해 원가경쟁력 기반으로 판매 지역 확대 및 점유율 극대화하여 외형 성장뿐만 아니라 수익성을 개선할 수 있을 것이라 판단하고 있습니다. 이렇듯 합병회사는 기업가치를 지속적으로 향상시켜서 궁극적으로 주주가치를 제고해 나갈 수 있을 것으로 판단합니다.</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="292" HEIGHT="99" AUPDATECONT="N">4. 합병비율 </TD>
+<TE WIDTH="633" HEIGHT="99" ACODE="OTH_MGR_RATE" COLSPAN="5" VALIGN="MIDDLE">(주)셀트리온 보통주 : (주)셀트리온헬스케어 보통주 = 1: 0.4492620합병 비율 기준주가는 이사회 결의일 전일을 기산일로 최근 1개월, 최근 1주일, 최근일의 평균종가를 산술평균하여 산정하였습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="10" VALIGN="MIDDLE" WIDTH="925" HEIGHT="30" AUPDATECONT="N">- 기업인수목적회사 소멸합병의 경우</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD VALIGN="MIDDLE" WIDTH="65" HEIGHT="76" AUPDATECONT="N"></TD>
+<TD COLSPAN="4" VALIGN="MIDDLE" WIDTH="227" HEIGHT="76" AUPDATECONT="N">기업인수목적회사 마지막 거래일 종가 대비 합병신주의 상장 당일 기준가격의 배수</TD>
+<TE ALIGN="RIGHT" WIDTH="633" HEIGHT="76" ACODE="MGR_PRC_CMP" COLSPAN="5" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="292" HEIGHT="1120" AUPDATECONT="N">5. 합병비율 산출근거</TD>
+
+<TE WIDTH="633" HEIGHT="1120" ACODE="MGR_RT_CALC" COLSPAN="5" VALIGN="MIDDLE">
+
+<P>
+<SPAN USERMARK="F-GL11">본 합병의 당사회사인 (주)셀트리온과 (주)셀트리온헬스케어는 각각 유가증권시장 및 코스닥시장 상장법인이므로 자본시장과 금융투자업에 관한 법률 시행령 제176조의5 제1항 제1호에 의거 보통주에 대한 기준주가를 합병가액으로 하여 합병비율을 산출하였으며 관련법규는 아래와 같습니다.</SPAN>
+<SPAN USERMARK="F-GL11 B">가. (주)셀트리온 기명식 보통주식의 합병가액</SPAN>
+</P>
+<P USERMARK="F-GL11">유가증권시장 상장법인인 (주)셀트리온의 보통주 기준시가는 '자본시장과 금융투자업에 관한 법률 시행령 제176조의5'에 따라 합병을 위한 이사회결의일(2023년 08월 17일)과 합병계약을 체결한 날(2023년 08월 17일) 중 앞서는 날의 전일(2023년 08월 16일)을 기산일로 하여, 최근 1개월간의 거래량 가중산술평균종가, 최근 1주일간의 거래량 가중산술평균종가, 최근일의 종가를 산술평균한 가액으로 산정하였습니다. 합병가액 산정 시, 산술평균가액에 할증 또는 할인을 적용하지 않았습니다.- 최근 1개월 가중산술평균종가(2023년 07월 17일 ~ 2023년 08월 16일) :148,966원- 최근 1주일 가중산술평균종가(2023년 08월 10일 ~ 2023년 08월 16일) : 151,892원- 최근일 종가(2023년 08월 16일) : 145,700원- (주)셀트리온 합병가액 : 148,853원</P>
+
+<P>
+<SPAN USERMARK="F-GL11 B">나. (주)셀트리온헬스케어 기명식 보통주식의 합병가액</SPAN>
+</P>
+<P USERMARK="F-GL11">코스닥시장 상장법인인 (주)셀트리온헬스케어의 보통주 기준시가는 '자본시장과 금융투자업에 관한 법률 시행령 제176조의5'에 따라 합병을 위한 이사회결의일(2023년 08월 17일)과 합병계약을 체결한 날(2023년 08월 17일) 중 앞서는 날의 전일(2023년 08월 16일)을 기산일로 하여, 최근 1개월간의 거래량 가중산술평균종가, 최근 1주일간의 거래량 가중산술평균종가, 최근일의 종가를 산술평균한 가액으로 산정하였습니다. 합병가액 산정 시, 산술평균가액에 할증 또는 할인을 적용하지 않았습니다.- 최근 1개월 가중산술평균종가(2023년 07월 17일 ~ 2023년 08월 16일) : 66,351원- 최근 1주일 가중산술평균종가(2023년 08월 10일 ~ 2023년 08월 16일) : 69,270원- 최근일 종가(2023년 08월 16일) : 65,000원</P>
+
+<P>
+<SPAN USERMARK="F-GL11">- (주)셀트리온헬스케어 합병가액 : 66,874원</SPAN>
+<SPAN USERMARK="F-GL11">이에 따라 합병비율은 1 : 0.4492620 ((주)셀트리온 : (주)셀트리온헬스케어)로 결정되었습니다.</SPAN>
+</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD VALIGN="MIDDLE" WIDTH="130" HEIGHT="219" AUPDATECONT="N" ROWSPAN="5" COLSPAN="2">6. 외부평가에 관한 사항</TD>
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="162" HEIGHT="30" AUPDATECONT="N" ALIGN="CENTER">외부평가 여부</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="EXV_YN" AUNITVALUE="N" COLSPAN="5">미해당</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="162" HEIGHT="99" AUPDATECONT="N" ALIGN="CENTER">- 근거 및 사유</TD>
+<TE WIDTH="633" HEIGHT="99" ACODE="EXV_BSS" COLSPAN="5" VALIGN="MIDDLE">본건 합병은 유가증권시장 및 코스닥시장 주권상장법인 간의 합병으로 자본시장 및 금융투자업에 관한 법률 제165조의4 및 동법 시행령 제176조의5 제1항 제1호에 의거 보통주에 대한 기준주가를 합병가액으로 하여 합병비율을 산출하였습니다. 이에 외부평가기관의 평가는 받지 않았습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="162" HEIGHT="30" AUPDATECONT="N" ALIGN="CENTER">외부평가기관의 명칭</TD>
+<TE WIDTH="633" HEIGHT="30" ACODE="EXV_NM" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="162" HEIGHT="30" AUPDATECONT="N" ALIGN="CENTER">외부평가 기간</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="EXV_PROD" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="162" HEIGHT="30" AUPDATECONT="N" ALIGN="CENTER">외부평가 의견</TD>
+<TE WIDTH="633" HEIGHT="30" ACODE="EXV_OPN" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="4" VALIGN="MIDDLE" WIDTH="211" HEIGHT="60" AUPDATECONT="N" ROWSPAN="2">7. 합병신주의 종류와 수(주)</TD>
+<TD VALIGN="MIDDLE" WIDTH="81" HEIGHT="30" AUPDATECONT="N" ALIGN="CENTER">보통주식</TD>
+<TE WIDTH="633" HEIGHT="30" ACODE="MGR_CST" COLSPAN="5" VALIGN="MIDDLE" ALIGN="RIGHT">73,887,750</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD VALIGN="MIDDLE" WIDTH="81" HEIGHT="30" AUPDATECONT="N" ALIGN="CENTER">종류주식</TD>
+<TE WIDTH="633" HEIGHT="30" ACODE="MGR_PST" COLSPAN="5" VALIGN="MIDDLE" ALIGN="RIGHT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD VALIGN="MIDDLE" WIDTH="130" HEIGHT="346" AUPDATECONT="N" ROWSPAN="10" COLSPAN="2">8. 합병상대회사</TD>
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="162" HEIGHT="53" AUPDATECONT="N">회사명</TD>
+<TE WIDTH="633" HEIGHT="53" COLSPAN="5" ACODE="OTH_INC" ALIGN="CENTER">(주)셀트리온헬스케어(Celltrion Healthcare Co., Ltd.)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="162" HEIGHT="30" AUPDATECONT="N">주요사업</TD>
+<TE WIDTH="633" HEIGHT="30" COLSPAN="5" ACODE="OTH_PRB" ALIGN="CENTER">바이오의약품(바이오시밀러, 바이오 신약 등)의 글로벌 마케팅 및 판매업</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="162" HEIGHT="30" AUPDATECONT="N">회사와의 관계</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="OTH_RLT" AUNITVALUE="5" COLSPAN="5">계열회사</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="90" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ROWSPAN="3">최근 사업연도 재무내용(원)</TD>
+<TD WIDTH="94" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">자산총계</TD>
+<TE WIDTH="166" HEIGHT="30" ACODE="OTH_ASST" ALIGN="RIGHT" COLSPAN="2">4,454,598,566,766</TE>
+<TD WIDTH="150" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">자본금</TD>
+<TE WIDTH="223" HEIGHT="30" ACODE="OTH_CPT" ALIGN="RIGHT">158,242,322,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="94" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">부채총계</TD>
+<TE WIDTH="166" HEIGHT="30" ACODE="OTH_DPT" ALIGN="RIGHT" COLSPAN="2">2,392,807,160,111</TE>
+<TD WIDTH="150" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">매출액</TD>
+<TE WIDTH="223" HEIGHT="30" ACODE="OTH_SALE" ALIGN="RIGHT">1,972,188,076,381</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="94" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">자본총계</TD>
+<TE WIDTH="166" HEIGHT="30" ACODE="OTH_CPT_SUM" ALIGN="RIGHT" COLSPAN="2">2,061,791,406,655</TE>
+<TD WIDTH="150" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">당기순이익</TD>
+<TE WIDTH="223" HEIGHT="30" ACODE="OTH_NP" ALIGN="RIGHT">147,178,596,149</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3"> - 외부감사 여부</TD>
+<TD WIDTH="94" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">기관명</TD>
+<TE WIDTH="166" HEIGHT="30" ACODE="OTH_CNM" ALIGN="CENTER" COLSPAN="2">한영회계법인</TE>
+<TD WIDTH="150" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">감사의견</TD>
+<TE WIDTH="223" HEIGHT="30" ACODE="OTH_GOP" ALIGN="CENTER">적정</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="795" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="8"> - 기업인수목적회사 소멸합병의 경우</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="40" HEIGHT="83" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2"></TD>
+<TD WIDTH="122" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER">대표이사</TD>
+<TE WIDTH="141" HEIGHT="30" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ACODE="EX_CEO">-</TE>
+<TD WIDTH="269" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER">설립연월일</TD>
+<TU WIDTH="223" HEIGHT="30" VALIGN="MIDDLE" ALIGN="CENTER" AUNIT="EX_EST_DT" AUNITVALUE="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="122" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER">본점소재지</TD>
+<TE WIDTH="141" HEIGHT="53" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ACODE="EX_ADDR">-</TE>
+<TD WIDTH="269" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER">증권신고서제출예정일</TD>
+<TU WIDTH="223" HEIGHT="53" VALIGN="MIDDLE" ALIGN="CENTER" AUNIT="EX_SUB_DT" AUNITVALUE="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD VALIGN="MIDDLE" WIDTH="130" HEIGHT="233" AUPDATECONT="N" ROWSPAN="7" COLSPAN="2">9. 신설합병회사</TD>
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="162" HEIGHT="30" AUPDATECONT="N" ALIGN="CENTER">회사명</TD>
+<TE WIDTH="633" HEIGHT="30" COLSPAN="5" ACODE="MGR_INC" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="90" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ROWSPAN="3" ALIGN="CENTER">설립시 재무내용(원)</TD>
+<TD WIDTH="94" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">자산총계</TD>
+<TE WIDTH="166" HEIGHT="30" ACODE="MGR_ASST" ALIGN="RIGHT" COLSPAN="2">-</TE>
+<TD WIDTH="150" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">부채총계</TD>
+<TE WIDTH="223" HEIGHT="30" ACODE="MGR_DPT" ALIGN="RIGHT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="94" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">자본총계</TD>
+<TE WIDTH="166" HEIGHT="30" ACODE="MGR_DPT_SUM" ALIGN="RIGHT" COLSPAN="2">-</TE>
+<TD WIDTH="150" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">자본금</TD>
+<TE WIDTH="223" HEIGHT="30" ACODE="MGR_CPT" ALIGN="RIGHT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TU WIDTH="260" HEIGHT="30" AUNIT="MGR_NDY" AUNITVALUE="-" COLSPAN="3" ALIGN="CENTER">-</TU>
+<TD WIDTH="373" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" COLSPAN="2">현재기준</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">신설사업부문 최근 사업연도 매출액(원)</TD>
+<TE WIDTH="633" HEIGHT="53" COLSPAN="5" ACODE="MGR_SAL" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">주요사업</TD>
+<TE WIDTH="633" HEIGHT="30" COLSPAN="5" ACODE="MGR_PRB" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">재상장신청 여부</TD>
+<TU WIDTH="633" HEIGHT="30" COLSPAN="5" AUNIT="MGR_RR" AUNITVALUE="N" ALIGN="CENTER">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="20" VALIGN="MIDDLE" WIDTH="130" HEIGHT="664" AUPDATECONT="N" COLSPAN="2">10. 합병일정</TD>
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">합병계약일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_CRT" AUNITVALUE="20230817" COLSPAN="5">2023년 08월 17일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">주주확정기준일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_DDY" AUNITVALUE="20230901" COLSPAN="5">2023년 09월 01일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="60" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2">주주명부폐쇄기간</TD>
+<TD WIDTH="81" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="CLO_BGN_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="CLO_END_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="76" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2">합병반대의사통지 접수기간</TD>
+<TD WIDTH="81" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="REV_BGN_DT" AUNITVALUE="20230925" COLSPAN="5">2023년 09월 25일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="46" AUNIT="REV_END_DT" AUNITVALUE="20231020" COLSPAN="5" VALIGN="MIDDLE">2023년 10월 20일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">주주총회예정일자</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_SHM_DT" AUNITVALUE="20231023" COLSPAN="5">2023년 10월 23일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="76" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2">주식매수청구권행사기간</TD>
+<TD WIDTH="81" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="BUY_BGN_DT" AUNITVALUE="20231023" COLSPAN="5">2023년 10월 23일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="46" AUNIT="BUY_END_DT" AUNITVALUE="20231113" COLSPAN="5" VALIGN="MIDDLE">2023년 11월 13일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="60" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2">구주권제출기간</TD>
+<TD WIDTH="81" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="OLD_STK_BGN_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="OLD_STK_END_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="76" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2">매매거래 정지예정기간</TD>
+<TD WIDTH="81" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="SCD_STK_BGN_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="46" AUNIT="SCD_STK_END_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="76" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2">채권자이의 제출기간</TD>
+<TD WIDTH="81" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="PRT_PRD_BGN_DT" AUNITVALUE="20231024" COLSPAN="5">2023년 10월 24일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="81" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="46" AUNIT="PRT_PRD_END_DT" AUNITVALUE="20231124" COLSPAN="5" VALIGN="MIDDLE">2023년 11월 24일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">합병기일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_DT" AUNITVALUE="20231228" COLSPAN="5">2023년 12월 28일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">종료보고 총회일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_ENY" AUNITVALUE="20231228" COLSPAN="5">2023년 12월 28일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">합병등기예정일자</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_RGS_DT" AUNITVALUE="20231228" COLSPAN="5">2023년 12월 28일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">신주권교부예정일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_SSY" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">신주의 상장예정일</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_CSY" AUNITVALUE="20240112" COLSPAN="5">2024년 01월 12일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="292" HEIGHT="30" AUPDATECONT="N">11. 우회상장 해당 여부</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_BDL" AUNITVALUE="N" COLSPAN="5">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="292" HEIGHT="30" AUPDATECONT="N">12. 타법인의 우회상장 요건 충족여부</TD>
+<TU ALIGN="CENTER" WIDTH="633" HEIGHT="30" AUNIT="MGR_BDK" AUNITVALUE="A" COLSPAN="5">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="6" WIDTH="130" HEIGHT="2384" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2">13. 주식매수청구권에 관한 사항</TD>
+<TD WIDTH="162" HEIGHT="467" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3">행사요건</TD>
+<TE VALIGN="MIDDLE" WIDTH="633" HEIGHT="467" ACODE="MGR_STO" COLSPAN="5">상법 제522조의3 및 자본시장과 금융투자업에 관한 법률 제165조의5에 의거 주주 확정 기준일 현재 주주명부에 등재된 주주를 대상으로 하여 합병에 관한 이사회결의에 반대하는 주주는 주주총회 결의일 전일까지 당해 법인에 대하여 서면으로 그 결의에 반대하는 의사를 통지한 경우에 한하여 자기가 소유하고 있는 주식을 당해 법인에 대하여 주주총회 결의일부터 20일 이내에 주식의 종류와 수를 기재한 서면으로 매수를 청구할 수 있으며, 소유 주식 중 일부에 대한 매수 청구도 가능합니다.다만, 자본시장과 금융투자업에 관한 법률 제165조의5 제1항 및 동법 시행령 제176조의7 제2항에 따라 주식매수청구권은 본 합병에 대한 합병 당사회사의 이사회결의가 공시되기 이전에 취득하였음을 증명하거나, 이사회 결의 사실이 공시된 날의 다음 영업일까지 (i) 해당 주식에 관한 매매계약의 체결, (ii) 해당 주식의 소비대차계약의 해지 또는 (iii) 해당 주식의 취득에 관한 법률행위가 있었던 경우 이를 증명할 수 있고, 주식매수청구권 행사일까지 이를 계속 보유한 주식에 한하여 부여되고, 동 기간 내에 매각 후 재취득한 주식에 대해서는 매수청구권이 상실되며, 또한 주식매수청구권을 행사한 이후에는 이를 취소할 수 없습니다.또한 사전에 서면으로 합병의 이사회 결의에 반대하는 의사를 통지한 주주가 주주총회에서 합병에 찬성한 경우에는 주식매수청구권을 행사할 수 없습니다. 합병 당사회사들은 모두 주권상장법인이므로 자본시장과 금융투자업에관한법률 제165조의5 2항에 따라 주식매수청구에 대하여 주식매수청구기간이 종료하는 날로부터 1개월 이내에 당해 주식을 매수하여야 합니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3">매수예정가격</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="633" HEIGHT="30" ACODE="MGR_STP" COLSPAN="5">150,813</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="1180" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3">행사절차, 방법, 기간, 장소</TD>
+<TE WIDTH="633" HEIGHT="1180" ACODE="MGR_STD" COLSPAN="5">가. 반대의사의 표시방법상법 제522조의3 및 자본시장과 금융투자업에 관한 법률 제165조의5에 의거, 주주확정 기준일(2023년 9월 1일) 현재 합병당사회사의 주주명부에 등재된 주주(자본시장과 금융투자업에관한 법률 제165조의5에 의거, 주식매수청구권은 본 합병에 대한 합병당사회사의 이사회결의 공시일(2023년 8월 17일)까지 주식의 취득계약을 체결하였음을 증명할 수 있거나, 이사회 결의 사실이 공시된 날의 다음 영업일(2023년 8월 18일)까지 (i) 해당주식에 관한 매매계약의 체결, (ii) 해당 주식의 소비대차계약의 해지 또는 (iii) 해당 주식의 취득에 관한 법률행위가 있었던 경우 이를 증명할 수 있고, 주식매수청구권 행사일까지 계속 보유한 주주에 한하여 부여됩니다.)는 주주총회 전까지 회사에 대하여 서면으로 합병에 관한 이사회결의에 반대하는 의사를 통지하여야 합니다.단, 주권을 증권회사(금융투자업자)에 위탁하고 있는 실질주주의 경우에는 당해 증권회사에 통지하여야 합니다. 이때, 반대의사 표시는 주주총회 3영업일 전(2023년 10월 18일)까지 하여야 합니다. 증권회사에서는 실질주주의 반대의사 표시를 취합하여 주주총회일 2영업일 전(2023년 10월 19일)까지 예탁기관인 한국예탁결제원에 통보하여야 합니다. 한국예탁결제원에서는 주주총회일 1영업일 전(2023년 10월 20일)에 실질주주를 대신하여 회사에 반대 의사를 통지하여야 합니다.나. 매수청구 방법상법 제522조의3 및 자본시장과 금융투자업에 관한 법률 제165조의5에 의거 합병에 관한 이사회의 결의에 반대하는 주주는 주주총회 전에 회사에 대하여 서면으로 그 결의에 반대하는 의사를 통지한 경우 그 총회의 결의일부터 20일 이내에 주식의 종류와 수를 기재한 서면으로 회사에 대하여 자기가 소유하고 있는 주식의 일부 또는 전부의 매수를 청구할 수 있습니다.단, 주권을 증권회사(금융투자업자)에 위탁하고 있는 실질 주주의 경우에는 해당 증권회사에 위탁보유하고 있는 주식수에 대하여 주식매수청구권 행사신청서를 작성하여 당해 증권회사에 제출함으로써 회사에 대하여 자기가 소유하고 있는 주식의 매수를 청구할 수 있습니다. 실질 주주는 주식매수청구기간 종료일의 2영업일 전 (2023년 11월 9일) 까지 거래 증권회사에 주식 매수를 청구하면 예탁기관인 한국예탁결제원에서 이를 대신 신청합니다.주식매수청구권을 행사한 이후에는 회사의 승낙이 없는 한 주식매수청구를 취소하거나 철회할 수 없습니다.다. 접수 장소(1) (주)셀트리온 (합병회사)  - 특별주주 (기존 명부주주): 인천광역시 연수구 아카데미로 23  - 일반주주 (기존 실질주주): 해당 거래 증권회사(2) (주)셀트리온헬스케어 (피합병회사)  - 특별주주 (기존 명부주주): 인천광역시 연수구 아카데미로51번길19, 4층  - 일반주주 (기존 실질주주): 해당 거래 증권회사라. 청구기간- 합병반대의사 통지 접수기간 :  2023년 09월 25일 ~ 2023년 10월 20일- 주주총회 예정일자 : 2023년 10월 23일- 주식매수청구권 행사기간 : 2023년 10월 23일 ~ 2023년 11월 13일- 주식매수청구대금 지급 예정일자 : 2023년 12월 13일</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="358" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3">지급예정시기, 지급방법</TD>
+
+<TE WIDTH="633" HEIGHT="358" ACODE="MGR_STY" COLSPAN="5">
+<P USERMARK="F-GL11">가. 주식매수대금의 지급 방법특별주주(기존 '명부주주')의 경우 주주가 신고한 은행 계좌로 이체할 예정입니다. 주권을 증권회사에 위탁하고 있는 일반주주(기존 '실질주주')의 경우 해당 증권회사의 본인 계좌로 이체할 예정입니다.나. 주식매수대금의 지급예정시기</P>
+<P USERMARK="F-GL11">주식매수청구권 행사에 따른 주식매수대금 지급 예정일은 다음과 같습니다.</P>
+<P USERMARK="F-GL11">- (주)셀트리온 : 2023년 12월 13일- (주)셀트리온헬스케어 : 2023년 12월 13일</P>
+<P USERMARK="F-GL11"></P>
+<P USERMARK="F-GL11">상기 주식매수대금의 지급예정시기는 합병당사회사의 사정으로 인해 변동될 수 있습니다.</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="250" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3">주식매수청구권 제한 관련 내용</TD>
+
+<TE WIDTH="633" HEIGHT="250" ACODE="MGR_STC" COLSPAN="5">
+<P USERMARK="F-GL11">상법 제522조의3에 따라 합병에 관한 이사회 결의에 반대하는 주주는 주주총회 전 회사에 대하여 서면으로 그 결의에 반대하는 의사를 통지한 경우에 자기가 소유하고 있는 주식을 매수하여 줄 것을 해당 법인에 대하여 주주총회 결의일로부터 20일 이내에 주식의 종류와 수를 기재한 서면으로 청구할 수 있습니다. 단, 동 기간 내에 매각 후 재취득한 주식에 대해서는 주식매수청구권이 상실되며, 또한 주식매수청구권을 행사한 이후에는 이를 취소할 수 없습니다. 또한 사전에 서면으로 합병의 이사회 결의에 반대하는 의사를 통지한 주주가 주주총회에서 합병에 찬성한 경우에는 주식매수청구권을 행사할 수 없습니다.</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="99" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3">계약에 미치는 효력</TD>
+<TE WIDTH="633" HEIGHT="99" ACODE="MGR_STE" COLSPAN="5">각 합병당사회사의 주주총회에서 본건 합병을 승인한 이후, 각 합병당사회사에게 주식매수청구권이 행사된 주식에 대한 각 주식매수가액의 합계액이 주식매수청구권 행사기간 만료 시점을 기준으로 금 1조원을 초과하는 경우에는 합병 당사회사는 이사회 결의를 통하여 본 합병의 진행 여부를 결정할 수 있습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" WIDTH="292" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">14. 이사회결의일(결정일)</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="633" HEIGHT="30" AUNIT="DRT_RSLT_DT" AUNITVALUE="20230817" COLSPAN="5">2023년 08월 17일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="130" HEIGHT="60" AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE" COLSPAN="2">- 사외이사참석여부</TD>
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">참석(명)</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="633" HEIGHT="30" ACODE="ODRT_ATD_CNT" COLSPAN="5">5</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="162" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER">불참(명)</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="633" HEIGHT="30" ACODE="ODRT_NATD_CNT" COLSPAN="5">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" WIDTH="292" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE">- 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="633" HEIGHT="53" AUNIT="ADT_ATD_YN" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" WIDTH="292" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">15. 풋옵션 등 계약 체결여부</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="633" HEIGHT="30" AUNIT="PO_CTRT_YN" AUNITVALUE="N" COLSPAN="5">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" WIDTH="292" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">- 계약내용</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="633" HEIGHT="30" ACODE="PO_CTRT_DTL" COLSPAN="5">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" WIDTH="292" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">16. 증권신고서 제출대상 여부</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="633" HEIGHT="30" AUNIT="RPT_SM_YN" AUNITVALUE="Y" COLSPAN="5">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="5" WIDTH="292" HEIGHT="30" AUPDATECONT="N" VALIGN="MIDDLE">- 제출을 면제받은 경우 그 사유</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="633" HEIGHT="30" ACODE="RPT_SBM" COLSPAN="5">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+<P USERMARK=" B">17. 향후 회사구조개편에 관한 계획</P>
+<P>본 보고서 제출일 현재 추진 중이거나 합병 완료 후 계획 중인 회사의 구조 개편에 관하여 확정된 사항은 없습니다.</P>
+<P USERMARK=" B">18. 기타 투자판단과 관련한 중요사항</P>
+<P></P>
+<P>가. '상법 제522조 및 제434조'에 따라 합병 승인에 대한 주주총회에서 결의는 특별결의사항에 해당됩니다. 따라서 본 합병의 승인을 위한 임시주주총회에서 참석주주 의결권의 3 분의 2 이상의 수와 발행주식총수의 3 분의 1 이상의 수의 승인을 얻지 못할 경우 합병이 무산될 수 있습니다.</P>
+<P> </P>
+<P>나. 신주배정 시 발생하는 단주 처리 방법에 따라 지급되는 금전 이외에 금번 합병에 참여하는 회사의 주주에게는 어떠한 교부금도 지급하지 않습니다.</P>
+
+<P>다. 상기 '8. 합병상대회사'인 
+<SPAN USERMARK="F-GL11">(주)</SPAN>셀트리온헬스케어의 최근 사업연도 재무내용은 2022년말 연결재무제표 기준입니다.
+</P>
+<P> </P>
+<P>라. 상기 '10. 합병일정'은 제출일 현재 예상 일정으로, 관계법령상의 인허가 승인 및 관계기관과의 협의·승인 과정 등에 의해 변경될 수 있습니다.</P>
+<P> </P>
+<P>마. 상기 '10. 합병일정'의 종료보고 총회는 '상법 제526조 제3항' 규정에 의거하여 2023년 12월 28일 이사회 결의 공고 절차로 갈음합니다.</P>
+<P> </P>
+
+<P>바. 
+<SPAN USERMARK="F-GL11">(주)</SPAN>셀트리온은 '독점규제 및 공정거래에 관한 법률 제11조 및 동법 시행령 제18조'에 따른 대규모회사로서 본 합병에 대하여 사전 기업결합신고가 필요합니다. 따라서 공정거래위원회로부터 기업결합신고 수리(승인)를 받기 이전에는 합병 절차를 완료할 수 없습니다. 다만, 본건 합병은 계열회사 간 합병으로서 기업결합 심사기준(공정거래위원회고시 제2023-20호)에 따른 간이심사대상 기업결합에 해당합니다.
+</P>
+<P> </P>
+<P>사. 법령상 주주총회에서 합병에 대한 승인이 부결되면 주식매수청구권도 소멸되며, 합병계약도 효력이 발생하지 않게 됩니다.</P>
+<P> </P>
+<P>아. 주식매수청구자는 주식매수청구기간 종료일 이후 주식매수청구권을 취소할 수 없습니다.</P>
+<P> </P>
+<P>자. 본 합병계약서에 기재된 계약의 해제조건은 아래와 같습니다.</P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="N" BORDER="1" WIDTH="600">
+
+<COLGROUP>
+<COL WIDTH="591"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y">
+
+<TD WIDTH="600" HEIGHT="904">
+<P>17조 (계약의 해제) (1) 당사자들은 본 계약 체결 이후 합병기일 전에는 언제든지 서면합의에 의하여 본 계약을 해제할 수 있다.</P>
+<P>(2) 다음 각 호에 해당하는 경우 각 당사자는 이사회 결의를 거쳐 상대방 당사자에 대한 서면 통지로써 본 계약을 해제할 수 있다. 다만, 다음 각 호의 해제사유의 발생에 책임이 있는 당사자는 그 사유를 가지고 본 계약을 해제할 수 없다. </P>
+<P> 1. 본 계약 체결일부터 합병기일까지 어느 당사자의 재산 및 영업상태에 중대한 부정적 영향을 초래하거나 초래할 것이 객관적으로 예상되는 사정을 발견한 경우</P>
+<P> 2. 본건 합병과 관련하여 존속회사와 소멸회사에 대하여 주식매수청구권이 행사된 주식에 대한 주식매수가액의 합계액이 주식매수청구권 행사기간 만료시점을 기준으로 금 일조원(\1,000,000,000,000)을 초과하는 경우(주식매수가액에 대하여 각 당사자의 주주와 각 당사자 간에 매수가액이 합의되지 않더라도 매수예상가액이 금 일조원(\1,000,000,000,000)을 초과할 것이 합리적으로 예상되는 경우를 포함함) </P>
+<P> 3. 본건 합병의 효력이 2024. 1. 31.(“거래종결시한”)까지 발생하지 아니하는 경우</P>
+<P> 4. 본건 합병과 관련하여 필요한 정부기관의 승인 중 (i) 당사자들의 영업이나 본건 합병의 진행에 중대한 영향을 미치는 승인이 확정적으로 거부된 경우 또는 (ii) 취득한 승인과 관련하여 그 준수가 불가능하거나 합병 후 존속회사의 영업, 재산에 중대한 부정적 영향을 초래할 것이 객관적으로 명백히 예상되는 조건이 부과된 경우</P>
+<P> 5. 어느 당사자(“위반당사자”)의 본 계약상 진술 및 보장이 정확하지 않거나 허위이고 이로 인하여 중대한 부정적 영향이 발생하였거나 발생할 것으로 합리적으로 예상되는 경우 또는 어느 일방 당사자의 본 계약상 의무 또는 확약에 관한 중대한 불이행이 있고, 그에 관한 상대방 당사자의 서면 시정요구에도 불구하고 15일 이내에 그 위반 또는 불이행의 치유가 이루어지지 않은 경우</P>
+<P>(3) 본 계약이 해제되는 경우 본 계약에 달리 규정된 경우를 제외하고, 존속회사와 소멸회사는 더 이상 본 계약에 따른 권리를 가지거나 의무를 부담하지 아니한다. </P>
+<P>(4) 본 계약이 해제되더라도 본 계약의 불이행 또는 위반으로 인하여 일방 당사자가 상대방 당사자에 대하여 갖는 손해배상청구권 기타 다른 권리나 구제방법에는 영향을 미치지 아니한다.</P>
+<P>제18조  (기타)(1) 본 계약은 체결과 동시에 그 효력이 발생한다. 다만, 어느 당사자가 제6조의 주주총회에서 본 계약의 승인을 얻지 못한 경우 본 계약은 자동으로 효력을 상실한다.</P>
+<P>(중략)</P>
+<P>(4) 본 계약의 어느 규정이 무효나 집행 불능인 것으로 판정될 경우, 그 규정은 무효이거나 집행 불능인 범위에서 효력이 없으며 본 계약에 편입되지 않는 것으로 간주한다. 그러나 본 계약의 나머지 규정은 무효로 되지 아니한다.(5) 본 계약은 당사자들간의 서면 합의에 의해서 수정될 수 있다.(6) 본 계약과 관련하여 발생한 법적 분쟁은 존속법인의 본점 소재지를 관할하는 지방법원을 전속적 제1심 관할법원으로 하여 해결하기로 한다. </P>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>※ 2023년 7월 12일 조회공시요구(풍문 또는 보도)에 대한 답변 공시는 본 공시로 갈음합니다.</P>
+<P>※ 관련공시</P>
+<P>- 2023.07.12 조회공시요구(풍문 또는 보도)- 2023.07.13 조회공시요구(풍문 또는 보도)에 대한 답변(미확정)- 2023.08.14 조회공시요구(풍문 또는 보도)에 대한 답변(미확정)</P>
+<P></P>
+
+<P></P>
+
+</SECTION-1></BODY></DOCUMENT>

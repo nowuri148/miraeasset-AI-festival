@@ -1,0 +1,219 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>고려아연/신규시설투자등(자율공시)/(2025.01.20)신규시설투자등(자율공시)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2025-01-20</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">신규 시설투자 등(자율공시)</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2022-11-23</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">추가 증설에 따른 투자비 증액 및 공사기간 연장</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2. 투자내역 <br java="http://xml.apache.org/xalan/java">- 투자금액(원) <br java="http://xml.apache.org/xalan/java">- 자기자본대비(%)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">69,800,000,000 <br java="http://xml.apache.org/xalan/java">0.9</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">89,200,000,000 <br java="http://xml.apache.org/xalan/java">1.2</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">4. 투자기간 종료일</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2025-01-31</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2026-06-30</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">5. 이사회결의일(결정일) <br java="http://xml.apache.org/xalan/java">- 사외이사 참석여부 : 참석(명)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2022-11-23 <br java="http://xml.apache.org/xalan/java">6</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2025-01-20 <br java="http://xml.apache.org/xalan/java">-</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">6. 기타 투자판단과 관련한 중요사항</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 동제련 최대 2만톤 증설 효과 <br java="http://xml.apache.org/xalan/java">- 연간 약 8만5천톤 탄소배출 저감을 통해 저탄소제품 생산체계 구축 <br java="http://xml.apache.org/xalan/java">- 폐기물로부터 동박의 원료인 동을 생산하는 공정개발을 통해 자원순환사업과 제련사업의 시너지효과 구현</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 상기 '5. 이사회결의일(결정일)'은 내부 결정일 입니다. <br java="http://xml.apache.org/xalan/java">- 당사는 이그니오, Kataman 등을 통해 미국, 유럽 등의 지역으로부터 원료를 추가 확보하였으며, 지속적으로 안정적인 공급이 가능해짐에 따라 후단 복합로 변경, 전해 전체 개조, 제품 보관장 확충 등 기존 투자의 변경 및 보완 투자를 결정했습니다. <br java="http://xml.apache.org/xalan/java">- 동제련 최대 3만 5천톤 증설 효과 <br java="http://xml.apache.org/xalan/java">- 연간 약 10만 3천톤 탄소배출 저감을 통해 저탄소제품 생산체계 구축 <br java="http://xml.apache.org/xalan/java">- 폐기물로부터 동박의 원료인 동을 생산하는 공정개발을 통해 자원순환사업과 제련사업의 시너지효과 구현</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">- 공시내용 중 자기자본은 2022-11-23 최초 공시했던 2021년말 기준임.</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">신규 시설투자 등(자율공시)</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD13_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">1. 투자구분</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">신규시설투자</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">- 투자대상</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">온산제련소 퓨머(Fumer)</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="151"> <span style="width:151px;font-size:10pt;">2. 투자내역</span> </td> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">투자금액(원)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">89,200,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">자기자본(원)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">7,734,234,462,824</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">자기자본대비(%)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">1.2</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">3. 투자목적</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">아연, 연 제련공정 후에 남은 부산물에서 추가 유가금속을 회수하는 6기의 퓨머 설비 중 1기의 퓨머 설비를 리사이클링 동 제련 설비로 개조하여,당사 동박제조 자회사인 케이잼의 6만톤 규모 생산 증설에 대비해 안정적 원료수급 도모</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="151"> <span style="width:151px;font-size:10pt;">4. 투자기간</span> </td> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">2023-01-01</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">2026-06-30</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">5. 이사회결의일(결정일)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">2025-01-20</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="151"> <span style="width:151px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" width="274"> <span style="width:274px;font-size:10pt;">6. 기타 투자판단과 관련한 중요사항</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">- 상기 '5. 이사회결의일(결정일)'은 내부 결정일 입니다. <br xmlns:java="http://xml.apache.org/xalan/java">- 당사는 이그니오, Kataman 등을 통해 미국, 유럽 등의 지역으로부터 원료를 추가 확보하였으며, 지속적으로 안정적인 공급이 가능해짐에 따라 후단 복합로 변경, 전해 전체 개조, 제품 보관장 확충 등 기존 투자의 변경 및 보완 투자를 결정했습니다. <br xmlns:java="http://xml.apache.org/xalan/java">- 동제련 최대 3만 5천톤 증설 효과 <br xmlns:java="http://xml.apache.org/xalan/java">- 연간 약 10만 3천톤 탄소배출 저감을 통해 저탄소제품 생산체계 구축 <br xmlns:java="http://xml.apache.org/xalan/java">- 폐기물로부터 동박의 원료인 동을 생산하는 공정개발을 통해 자원순환사업과 제련사업의 시너지효과 구현</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="98"> <span style="width:98px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td width="228"> <span class="xforms_input" style="width:228px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

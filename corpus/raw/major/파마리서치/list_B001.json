@@ -1,0 +1,46 @@
+[
+ {
+  "corp_code": "00970453",
+  "corp_name": "파마리서치",
+  "stock_code": "214450",
+  "corp_cls": "K",
+  "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+  "rcept_no": "20250708000069",
+  "flr_nm": "파마리서치",
+  "rcept_dt": "20250708",
+  "rm": ""
+ },
+ {
+  "corp_code": "00970453",
+  "corp_name": "파마리서치",
+  "stock_code": "214450",
+  "corp_cls": "K",
+  "report_nm": "주요사항보고서(회사분할결정)",
+  "rcept_no": "20250613000005",
+  "flr_nm": "파마리서치",
+  "rcept_dt": "20250613",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00970453",
+  "corp_name": "파마리서치",
+  "stock_code": "214450",
+  "corp_cls": "K",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "rcept_no": "20240930000403",
+  "flr_nm": "파마리서치",
+  "rcept_dt": "20240930",
+  "rm": ""
+ },
+ {
+  "corp_code": "00970453",
+  "corp_name": "파마리서치",
+  "stock_code": "214450",
+  "corp_cls": "K",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "rcept_no": "20240905000279",
+  "flr_nm": "파마리서치",
+  "rcept_dt": "20240905",
+  "rm": "정"
+ }
+]

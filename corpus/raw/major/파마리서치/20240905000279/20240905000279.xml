@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11306">주요사항보고서(유상증자결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20231229">2.8</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00970453">(주)파마리서치</COMPANY-NAME>
+
+
+<BODY ATOCID="2">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP>
+<COL WIDTH="132"></COL>
+<COL WIDTH="174"></COL>
+<COL WIDTH="267"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="53"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="324" HEIGHT="30">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="276" HEIGHT="30">2024년    9월   5일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="53"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">주식회사 파마리서치</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">강 기 석, 김 신 규</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">강원특별자치도 강릉시 과학단지로 77-19</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(전  화) 031-8039-1500</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(홈페이지)http:///pharmaresearch.co.kr</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30">작 성 책 임 자 :</TD>
+<TD WIDTH="183" HEIGHT="30">(직  책) 전무이사</TD>
+<TD WIDTH="276" HEIGHT="30">(성  명) 김원권</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD WIDTH="141" HEIGHT="30"></TD>
+<TD COLSPAN="2" WIDTH="459" HEIGHT="30">(전  화) 031-8039-1569</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="3" WIDTH="600" HEIGHT="30"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ATOCID="1">유상증자 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="CST_CNT" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="600" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="151"></COL>
+<COL WIDTH="163"></COL>
+<COL WIDTH="259"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="160" HEIGHT="60" AUPDATECONT="N">1. 신주의 종류와 수</TD>
+<TD ALIGN="CENTER" WIDTH="172" HEIGHT="30" AUPDATECONT="N">보통주식 (주)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="CST_CNT">- </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ALIGN="CENTER" WIDTH="172" HEIGHT="30" AUPDATECONT="N">기타주식 (주)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="PST_CNT">1,175,647 </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="2" WIDTH="332" HEIGHT="30" AUPDATECONT="N">2. 1주당 액면가액 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="FVAL">500 </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="160" HEIGHT="60" AUPDATECONT="N">3. 증자전     발행주식총수 (주)</TD>
+<TD ALIGN="CENTER" WIDTH="172" HEIGHT="30" AUPDATECONT="N">보통주식 (주)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="BFR_CST_CNT">10,464,152 </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ALIGN="CENTER" WIDTH="172" HEIGHT="30" AUPDATECONT="N">기타주식 (주)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="BFR_PST_CNT">- </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ROWSPAN="6" VALIGN="MIDDLE" WIDTH="160" HEIGHT="203" AUPDATECONT="N">4. 자금조달의 목적</TD>
+<TD ALIGN="CENTER" WIDTH="172" HEIGHT="30" AUPDATECONT="N">시설자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="FND_USE1">- </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ALIGN="CENTER" WIDTH="172" HEIGHT="30" AUPDATECONT="N">영업양수자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="FND_USE_SQ">- </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="172" HEIGHT="30" AUPDATECONT="N">운영자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="FND_USE2">199,999,891,993 </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="172" HEIGHT="30" AUPDATECONT="N">채무상환자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="FND_USE_RD">- </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="172" HEIGHT="53" AUPDATECONT="N">타법인 증권취득자금 (원)</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="268" HEIGHT="53" ACODE="ANC_ACQ_AMT">- </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD ALIGN="CENTER" WIDTH="172" HEIGHT="30" AUPDATECONT="N">기타자금 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="268" HEIGHT="30" ACODE="FND_USE3">- </TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="332" HEIGHT="30" AUPDATECONT="N">5. 증자방식</TD>
+<TU ALIGN="CENTER" WIDTH="268" HEIGHT="30" AUNIT="CI_MTH" AUNITVALUE="6">제3자배정증자</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P>※ 기타주식에 관한 사항</P>
+
+<TABLE-GROUP ACLASS="STO_ETC" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="600" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="226"></COL>
+<COL WIDTH="356"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="235" HEIGHT="2013" AUPDATECONT="N">정관의 근거</TD>
+
+<TE WIDTH="365" HEIGHT="2013" VALIGN="MIDDLE" ACODE="AOI_BAS">
+
+<P>
+<SPAN USERMARK="F-GL11">제9조(주식의 종류, 수 및 내용)</SPAN>
+<SPAN USERMARK="F-GL11">① 회사는 보통주식과 우선주식을 발행할 수 있다.</SPAN>
+</P>
+<P USERMARK="F-GL11">② 제5조의 발행예정주식총수 중 우선주식의 발행한도는 25%이내로 한다.</P>
+<P USERMARK="F-GL11">③ 우선주식에 대한 최저 배당률은 연 액면금액 0% 이상으로 발행 시 이사회가 우선배당률을 정하며, 회사가 청산될 경우 잔여재산분배에 있어 우선주식 발행 시 이사회에서 정한 금액을 한도로 보통주를 보유한 주주에 우선하여 잔여 재산의 분배를 받을 권리를 가진다.</P>
+<P USERMARK="F-GL11">④ 우선주식에 대하여 제3항의 규정에 의한 배당을 하지 못한 사업연도가 있는 경우에는 미배당 분은 누적하여 다음 사업연도의 배당 시에 우선하여 배당한다.</P>
+<P USERMARK="F-GL11">⑤ 우선주식의 주주는 우선주 1주당 의결권 한 표를 갖는다. 단 전환비율이 변동되어 보통주로 전환되는 경우 전환후의 보통주식은 일주당 의결권 한표를 갖는다.</P>
+<P USERMARK="F-GL11">⑥ 우선주식의 존속기간은 발행일로부터 10년으로 하고, 이 기간의 만료와 동시에 보통주식으로 전환된다. 다만, 존속기간 중 소정의 배당을 하지 못한 경우에는 소정의 배당이 완료될 때까지 그 기간은 연장된다.</P>
+<P USERMARK="F-GL11">⑦ 우선주식의 전환된 주식에 대한 이익의 배당에 관하여는 제12조의 규정을 준용한다.</P>
+
+<P USERMARK="F-10">
+<SPAN USERMARK="F-GL11">⑧ 회사가 유상증자 또는 무상증자를 실시하는 경우 우선주식에 대한 신주의 배당은 유상증자의 경우에는 회사가 발행하기로 한 주식으로, 무상증자의 경우에는 그와 같은 종류의 주식으로 한다.</SPAN>
+<SPAN USERMARK="F-GL11"></SPAN>
+<SPAN USERMARK="F-GL11">⑨ 회사는 이사회의 결의에 의하여 아래의 조건에 따라 보통주식으로 전환되거나 회사의 이익으로 상환되는 우선주식을 발행할 수 있다.    </SPAN>
+</P>
+<P USERMARK="F-GL11">1. 회사는 우선주식의 발행총수 범위 내에서 우선주식 주주의 청구에 따라 상환되는 상환우선주를 발행할 수 있다.  </P>
+<P USERMARK="F-GL11">가. 상환주식의 상환가액은 발행가 및 이에 대하여 발행일로부터 상환일까지 연 20% 이하의 범위 내에서 발행시 이사회에서 정한 비율에 따라 연 복리로 산정한 금액으로 하되, 회사의 직전 연도 당기순이익 등을 고려하여 이사회가 정하는 바에 따라 가감할 수 있는 것으로 한다. 다만 상환시 상환 주식에 대하여 이미 지급된 배당금은 상환가액에서 공제하기로 한다.</P>
+<P USERMARK="F-GL11">나. 상환주식의 상환청구권 행사기간은 발행일로부터 상환주식이 보통주식으로 전환되는 시점 1개월 전까지 하되, 발행 시 이사회가 정하는 별도의 조건이 있는 경우에는 이를 적용한다.</P>
+<P USERMARK="F-GL11">다. 상환주식의 상환방법은 회사가 주주로부터 상환 청구를 받으면 그러한 청구가 있는 날로부터 1개월 이내에 회사가 주주로부터 주권을 제출 받고 상환가액을 주주에게 지급하여 상환하되, 발행 시 이사회가 정한 별도의 조건이 있는 경우에는 이를 적용한다.</P>
+<P USERMARK="F-GL11">라. 상환주식의 상환은 회사에 배당 가능한 이익이 있을 경우에만 가능하며 상환청구가 있었음에도 상환되지 아니하거나 우선 배당을 받지 못한 경우에는 상환기간은 상환 및 배당이 완료될 때까지 연장되는 것으로 한다.</P>
+<P USERMARK="F-GL11">2.  회사는 우선주식의 발행총수 범위 내에서 주주의 청구에 따라 보통주로 전환되는 전환주식을 발행할 수 있다.</P>
+<P USERMARK="F-GL11">가. 전환주식의 전환조건은 전환주식 1주를 보통주식 1주로 전환하는 것으로 한다.</P>
+<P USERMARK="F-GL11">나. 전환청구기간은 최초 발행일 이후부터 존속기간 만료 전일 까지로 하고 전환 청구기간 내에 전환청구 시 보통 주로 전환될 수 있으며, 발행 시 이사회가 정하는 별도의 조건이 있을 경우에는 이를 적용한다.</P>
+<P USERMARK="F-GL11">다. 우선주로써 전환할 수 있는 보통주에 대한 전환비율은 우선주 1주당 보통주 1주로 하되, 회사의 유,무상증자, 주식배당, 합병, 주식분할, 주식매입선택권의 부여 또는 회사의 목표 순이익 미 달성이나 상장 시 적절한 희망 공모가의 미 도달 등 발행가액에 불리한 영향이 있다고 판단하여 이사회가 정하는 경우 등에는 발행 시 이사회가 정하는 바에 따라 전환조건을 조정할 수 있다.    </P>
+
+<P USERMARK="F-GL10">
+<SPAN USERMARK="F-11">3. 회사는 위1호 및2호의 성격을 동시에 지닌 주식을 발행할 수 있다</SPAN>.
+</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="235" HEIGHT="30" AUPDATECONT="N">주식의 내용</TD>
+<TE WIDTH="365" HEIGHT="30" VALIGN="MIDDLE" ACODE="STO_CNT">상환전환우선주</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="235" HEIGHT="30" AUPDATECONT="N">기타</TD>
+<TE WIDTH="365" HEIGHT="30" VALIGN="MIDDLE" ACODE="ETC_CNT">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<LIBRARY>
+<TABLE-GROUP ACLASS="TG_RDT_CVT" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="599" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="92"></COL>
+<COL WIDTH="93"></COL>
+<COL WIDTH="145"></COL>
+<COL WIDTH="233"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="5" VALIGN="MIDDLE" WIDTH="101" HEIGHT="932" AUPDATECONT="N" ALIGN="CENTER">상환에관한 사항</TD>
+<TD ALIGN="CENTER" WIDTH="256" HEIGHT="513" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">상환조건</TD>
+<TE WIDTH="242" HEIGHT="513" ACODE="RDT_CDT">1) 상환방법 : 인수인은 본 주식의 전부 또는 일부에 대해 상환을 청구할 수 있으며, 발행회사는 상환요청이 이루어진 날로부터 15일 이내에 본 계약에 따른 상환가액을 현금으로 상환한다.2) 상환청구기간 : 발행일로부터 3년이 되는 날로부터 10년이 되는 날까지의 기간3) 상환가액 주당 상환가액은 주당 발행가액 및  동 금액에 대하여  발행일로부터 실제 상환일까지 상환일을 포함한 기간에 대하여 연복리 4.00%를 적용한 금액의 합산액이며, 주당 발행가액은 본 계약에 따라 변동하는 금액을 반영한다. 이 때 상환 주식에 대하여 이미 지급된 배당금은 상환가액에서 공제한다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" WIDTH="256" HEIGHT="306" AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE">상환방법</TD>
+<TE WIDTH="242" HEIGHT="306" ACODE="RDT_MTD">상환일에 본 주식을 소유한 주주는발행회사의 서면 수신 담당자에게 서면으로 작성한 상환 청구서를 직접 전달하거나, 등기우편 또는 이메일로 전송한다. 단 통지는 영업일 내, 수신지 기준 오후 5시 이전에 수신된 것에 대해서 유효하며 오후 5시 이후에 완료된 경우에는 다음 영업일에 유효한 것으로 간주한다. 발행회사는 상환 청구서를 서면 통지를 받은날로부터 15일 이내에 주주에게 상환가액을 현금으로 지급한다. </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" WIDTH="256" HEIGHT="30" AUPDATECONT="N" COLSPAN="2">상환기간</TD>
+<TU ALIGN="CENTER" WIDTH="242" HEIGHT="30" AUNIT="RDT_PRD" AUNITVALUE="20271204-20341204">2027.12.04 ~ 2034.12.04</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" WIDTH="256" HEIGHT="30" AUPDATECONT="N" COLSPAN="2">주당 상환가액</TD>
+<TE ALIGN="RIGHT" WIDTH="242" HEIGHT="30" ACODE="RDT_VAL">170,119 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" WIDTH="256" HEIGHT="53" AUPDATECONT="N" COLSPAN="2">1년 이내상환 예정인 경우</TD>
+<TE WIDTH="242" HEIGHT="53" ACODE="RDT_INY1" VALIGN="MIDDLE" ALIGN="CENTER">해당사항 없음</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="12" VALIGN="MIDDLE" WIDTH="101" HEIGHT="1786" AUPDATECONT="N" ALIGN="CENTER">전환에관한 사항</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="256" HEIGHT="30" AUPDATECONT="N" COLSPAN="2">전환비율(%)</TD>
+<TE WIDTH="242" HEIGHT="30" ACODE="EXE_RT" VALIGN="MIDDLE" ALIGN="RIGHT">100 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="256" HEIGHT="30" AUPDATECONT="N" COLSPAN="2">전환가액(원/주)</TD>
+<TE WIDTH="242" HEIGHT="30" ACODE="EXE_PRC" VALIGN="MIDDLE" ALIGN="RIGHT">170,119 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="256" HEIGHT="536" AUPDATECONT="N" COLSPAN="2">전환가액결정방법</TD>
+
+<TE WIDTH="242" HEIGHT="536" ACODE="EXE_FUNC" VALIGN="MIDDLE">1) 발행가액 : 증권의 발행 및 공시 등에 관한 규정 제5-18조 2항에 의거 본 신주 발행 이사회 결의일 전일을 기산일로 하여 과거 1개월간의 가중산술평균주가, 1주일간의 가중산술평균주가, 최근일 가중산술평균주가를 산술평균한 가격과, 최근일 가중산술평균주가 중 낮은 가격을 기준주가로 하여 할증률 0.847%를 적용하여 산정한다.2) 전환가액 : 
+
+<SPAN>증권의 발행 및 공시등에 관한 규정' 제5-24조의2 및 제5-22조에 의거 본
+<SPAN> </SPAN>
+</SPAN>
+<SPAN>신주 발행 이사회 결의일 전일을 기산일로 하여 그 기산일로부터 소급하여 산정한 1개월 가중산술평균주가, 1주일 가중산술평균주가 및 최근일 가중산술평균주가를 산술평균한 가액과 최근일 가중산술평균주가 및 청약일 전 제3거래일 가중산술평균주가 중 높은 가액으로 산정한다.</SPAN>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="102" HEIGHT="113" AUPDATECONT="N" ROWSPAN="3">전환에 따라발행할 주식</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="154" HEIGHT="30" AUPDATECONT="N">종류</TD>
+<TE WIDTH="242" HEIGHT="30" ACODE="CVT_KND" VALIGN="MIDDLE" ALIGN="CENTER">(주) 파마리서치 기명식 보통주</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="154" HEIGHT="30" AUPDATECONT="N">주식수</TD>
+
+<TE WIDTH="242" HEIGHT="30" ACODE="CVT_CNT" VALIGN="MIDDLE" ALIGN="RIGHT" USERMARK=" 0X0000FF">
+<SPAN USERMARK=" 0X000000">1,175,647 </SPAN>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="154" HEIGHT="53" AUPDATECONT="N">주식총수대비 비율(%)</TD>
+<TE WIDTH="242" HEIGHT="53" ACODE="CVT_RT" VALIGN="MIDDLE" ALIGN="RIGHT">10.21 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="102" HEIGHT="60" AUPDATECONT="N" ROWSPAN="2">전환청구기간</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="154" HEIGHT="30" AUPDATECONT="N">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="242" HEIGHT="30" AUNIT="CVT_BGN_DT" AUNITVALUE="20251204">2025.12.04</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="154" HEIGHT="30" AUPDATECONT="N">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="242" HEIGHT="30" AUNIT="CVT_END_DT" AUNITVALUE="20341203">2034.12.03</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="256" HEIGHT="858" AUPDATECONT="N" COLSPAN="2">전환가액 조정에 관한 사항</TD>
+
+<TE WIDTH="242" HEIGHT="858" ACODE="EXE_REG" VALIGN="MIDDLE">
+<SPAN>1) 무상증자, 액면분할, 액면병합,주권 재분류등에 의하여 전환비율의 조정이 필요한 경우에는 당해 무상증자, 자본의 감소, 주식분할,주식병합 등의 직전에 전환권이 행사되었다면 인수회사가 가질 수 있었던 보통주 주식수를 산출할 수 있는 비율로 전환비율을 조정한다.2) 발행사가 본건 우선주의 1주당 발행가액을 하회하는 가격으로 (i) 신주를 발행하는 경우, (ii) 전환가액, 교환가액, 행사가 등을 기초로 하는 지분증권의 발행 또는 매출 (iii) 그러한 전환가액, 교환가액, 행사가액, 또는 기타 가액을 재산정 또는 조정하는 경우  본건 우선주의 1주당 전환되는 보통주의 수를 정하는 전환비율을 다음과 같이 조정한다.(조정 후 전환가액) = (조정 전 전환가액)  X  </SPAN>
+<SPAN>(A + B) / (A + C)</SPAN>
+<SPAN>A : 기 발행주식 수B : 기존 전환가액으로 발행된다고 가정했을 때 발행 될 수 있는 주식수C : 신발행주식수3) 발행사의 합병, 분할, 주식병합으로 주당 가격이 본건 우선주의 발행가액을 하회하는 경우, 합병, 분할, 주식병합의 주당 가격으로 전환비율을 조정한다.</SPAN>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="102" HEIGHT="159" AUPDATECONT="N" ROWSPAN="3">시가하락에따른전환가액조정</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="154" HEIGHT="30" AUPDATECONT="N">최저 조정가액(원)</TD>
+<TE ALIGN="CENTER" WIDTH="242" HEIGHT="30" ACODE="MIN_PRC" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="154" HEIGHT="30" AUPDATECONT="N">최저 조정가액 근거</TD>
+<TE WIDTH="242" HEIGHT="30" ACODE="MIN_RSN" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="154" HEIGHT="99" AUPDATECONT="N">발행당시 전환가액의70%미만으로조정가능한잔여발행한도(원)</TD>
+<TE ALIGN="CENTER" WIDTH="242" HEIGHT="99" ACODE="CTR_LMT" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="357" HEIGHT="30" AUPDATECONT="N">존속기간(우선주권리의 유효기간)</TD>
+<TU WIDTH="242" HEIGHT="30" AUNIT="EXT_DT" AUNITVALUE="20341204" VALIGN="MIDDLE" ALIGN="CENTER">2034.12.04</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="357" HEIGHT="53" AUPDATECONT="N">의결권에 관한 사항</TD>
+<TE WIDTH="242" HEIGHT="53" ACODE="VTR_INFO" VALIGN="MIDDLE" ALIGN="CENTER">본건 우선주는 보통주와 동일하게 1주당 1개의 의결권을 갖는다</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="357" HEIGHT="30" AUPDATECONT="N">옵션에 관한 사항</TD>
+<TE WIDTH="242" HEIGHT="30" ACODE="OPT_FCT" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="357" HEIGHT="490" AUPDATECONT="N">이익배당에 관한 사항</TD>
+<TE WIDTH="242" HEIGHT="490" ACODE="DVD_INFO">1) 연간 우선배당률 : 회사는 본건 우선주에 대해 발행가액의 연 1%에 해당하는 금원을 보통주식에 비하여 우선 배당한다2) 누적적 우선주 : 회계연도 내 우선배당률 만큼 배당을 받지 못한 경우 누적된 미배당분을 다음 배당시 우선하여 배당받는다. 발행회사는 본건 우선주에 대한 우선 배당이 이루어지기 전에는 보통주식 기타 어떠한 다른 종류의 주식에 대하여 배당을 할 수 없다.3) 참가적 우선주 : 본건 우선주를 보유하는 동안 보통주의 배당률이 본건 우선주의 배당률을 초과하는 경우에는 그 초과분에 대하여 보통주식과 동일한 배당률로 참가하여 배당을 받는다</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" WIDTH="357" HEIGHT="53" AUPDATECONT="N">기타 약정사항(주주간 약정 및 재무약정 사항 등)</TD>
+<TE WIDTH="242" HEIGHT="53" ACODE="ETC_CTR_INFO" VALIGN="MIDDLE">인수인은 주식발행일로부터 3년간 본 주식에 대한 양도 제한</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+</LIBRARY>
+
+<P></P>
+
+<LIBRARY>
+<TABLE-GROUP ACLASS="THD_ASN_INC" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="599" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="140"></COL>
+<COL WIDTH="191"></COL>
+<COL WIDTH="80"></COL>
+<COL WIDTH="152"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="149" HEIGHT="60" AUPDATECONT="N">6. 신주 발행가액</TD>
+<TD ALIGN="CENTER" WIDTH="200" HEIGHT="30" AUPDATECONT="N">보통주식 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="250" HEIGHT="30" ACODE="CST_ISS_VAL" COLSPAN="2">- </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" WIDTH="200" HEIGHT="30" AUPDATECONT="N">기타주식 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="250" HEIGHT="30" ACODE="PST_ISS_VAL" COLSPAN="2">170,119 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="149" HEIGHT="60" AUPDATECONT="N">7. 기준주가</TD>
+<TD ALIGN="CENTER" WIDTH="200" HEIGHT="30" AUPDATECONT="N">보통주식 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="250" HEIGHT="30" ACODE="CST_STD_VAL" COLSPAN="2">- </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" WIDTH="200" HEIGHT="30" AUPDATECONT="N">기타주식 (원)</TD>
+<TE ALIGN="RIGHT" WIDTH="250" HEIGHT="30" ACODE="PST_STD_VAL" COLSPAN="2">168,691 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="168" AUPDATECONT="N">7-1. 기준주가 산정방법</TD>
+<TU WIDTH="250" HEIGHT="168" AUNIT="STD_MTH" AUNITVALUE="2" COLSPAN="2">최소값[이사회결의일 전일을 기산일로 하여 과거 1개월간ㆍ1주일간ㆍ최근일 가중산술평균주가의 단순평균, 최근일 가중산술평균주가]</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="53" AUPDATECONT="N">7-2. 기준주가에 대한 할인율 또는 할증율 (%)</TD>
+<TE ALIGN="CENTER" WIDTH="250" HEIGHT="53" ACODE="DC_RATE" COLSPAN="2" VALIGN="MIDDLE">0.847</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="122" AUPDATECONT="N">7-3. 할인율(할증률) 산정 근거</TD>
+<TE WIDTH="250" HEIGHT="122" ACODE="DC_RATE_RS" COLSPAN="2">1) 증권의 발행 및 공시등에 관한 규정 제5-18조 제2항2) 당사 이사회 결의</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="53" AUPDATECONT="N">8. 제3자배정에 대한 정관의 근거</TD>
+<TE WIDTH="250" HEIGHT="53" ACODE="ART_BAS" COLSPAN="2">정관 제10조(신주인수권) 제2항의 제7호</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="30" AUPDATECONT="N">9. 납입일</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="PYM_DT" AUNITVALUE="20241204" COLSPAN="2">2024.12.04</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="30" AUPDATECONT="N">10. 신주의 배당기산일</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="DV_ST_DT" AUNITVALUE="20240101" COLSPAN="2">2024.01.01</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="30" AUPDATECONT="N">11. 신주권교부예정일</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="NST_GV_DT" AUNITVALUE="20241224" COLSPAN="2">2024.12.24</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="30" AUPDATECONT="N">12. 신주의 상장 예정일</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="LST_PLN_DT" AUNITVALUE="-" COLSPAN="2">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="349" HEIGHT="30" AUPDATECONT="N">13. 현물출자로 인한 우회상장 해당여부</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="PIN_BL_YN" AUNITVALUE="N" COLSPAN="2">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="349" HEIGHT="30" AUPDATECONT="N">   - 현물출자가 있는지 여부</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="PIN_EXT_YN" AUNITVALUE="N" COLSPAN="2">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="349" HEIGHT="76" AUPDATECONT="N">   - 현물출자 재산 중 주권비상장법인주식이       있는지 여부</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="76" AUNIT="PIN_SLC_YN" AUNITVALUE="A" COLSPAN="2">해당없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="149" HEIGHT="83" AUPDATECONT="N">   - 납입예정 주식의      현물출자 가액</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="200" HEIGHT="30" AUPDATECONT="N">현물출자가액(원)</TD>
+<TE ALIGN="CENTER" WIDTH="250" HEIGHT="30" ACODE="PIN_VAL" COLSPAN="2">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="200" HEIGHT="53" AUPDATECONT="N">당사 최근사업연도 자산총액 대비(%)</TD>
+<TE ALIGN="CENTER" WIDTH="250" HEIGHT="53" ACODE="PIN_AST_RT" COLSPAN="2">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="349" HEIGHT="30" AUPDATECONT="N">   - 납입예정 주식수</TD>
+<TE ALIGN="CENTER" WIDTH="250" HEIGHT="30" ACODE="PAY_EXP_CNT" COLSPAN="2">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="349" HEIGHT="30" AUPDATECONT="N">14. 우회상장 요건 충족여부</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="BL_CON_YN" AUNITVALUE="A" COLSPAN="2">해당없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="349" HEIGHT="30" AUPDATECONT="N">15. 이사회결의일(결정일)</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="DRC_DT" AUNITVALUE="20240905" COLSPAN="2">2024.09.05</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="149" HEIGHT="60" AUPDATECONT="N">   - 사외이사      참석여부</TD>
+<TD ALIGN="CENTER" WIDTH="200" HEIGHT="30" AUPDATECONT="N">참석 (명)</TD>
+<TE ALIGN="CENTER" WIDTH="250" HEIGHT="30" ACODE="ATD_CNT" COLSPAN="2">3</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD ALIGN="CENTER" WIDTH="200" HEIGHT="30" AUPDATECONT="N">불참 (명)</TD>
+<TE ALIGN="CENTER" WIDTH="250" HEIGHT="30" ACODE="NATD_CNT" COLSPAN="2">0</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="30" AUPDATECONT="N">   - 감사(감사위원) 참석여부</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="ADT_ATD_YN" AUNITVALUE="Y" COLSPAN="2">참석</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="30" AUPDATECONT="N">16. 증권신고서 제출대상 여부</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="RPT_SM_YN" AUNITVALUE="N" COLSPAN="2">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="91" AUPDATECONT="N">17. 제출을 면제받은 경우 그 사유</TD>
+
+<TE WIDTH="250" HEIGHT="91" ACODE="RPT_SBM" COLSPAN="2" VALIGN="MIDDLE" ALIGN="CENTER">
+<P>면제</P>
+<P>(제3자 배정(사모), 1년간 보호예수)</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="349" HEIGHT="90" AUPDATECONT="N" ROWSPAN="3">18. 청약이 금지되는 공매도 거래 기간</TD>
+<TD WIDTH="89" HEIGHT="30" ALIGN="CENTER" AUPDATECONT="N">해당여부</TD>
+<TU WIDTH="161" HEIGHT="30" ALIGN="CENTER" AUNIT="SSL_YN" AUNITVALUE="N">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="89" HEIGHT="30" ALIGN="CENTER" AUPDATECONT="N">시작일</TD>
+<TU WIDTH="161" HEIGHT="30" ALIGN="CENTER" AUNIT="SSL_BGN_DT" AUNITVALUE="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="89" HEIGHT="30" ALIGN="CENTER" AUPDATECONT="N">종료일</TD>
+<TU WIDTH="161" HEIGHT="30" ALIGN="CENTER" AUNIT="SSL_END_DT" AUNITVALUE="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="2" WIDTH="349" HEIGHT="30" AUPDATECONT="N">19. 공정거래위원회 신고대상 여부</TD>
+<TU ALIGN="CENTER" WIDTH="250" HEIGHT="30" AUNIT="TRD_YN" AUNITVALUE="N" COLSPAN="2">미해당</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P>20. 기타 투자판단에 참고할 사항</P>
+
+<P>
+<SPAN USERMARK=" B">(1) 주금납입처</SPAN>
+<SPAN> : 하나은행 분당금융센터지점</SPAN>
+<SPAN USERMARK=" B">(2) 신주발행가액 산정 기준</SPAN>
+</P>
+
+<P>
+<SPAN>금번 발행 예정인 상환전환우선주는 비상장주식으로 발행됩니다. 증권의 발행</SPAN>
+<SPAN> 및 공시 등에 관한 규정 제5-18조(유상증자 발행가액결정)  제2항에 의거 본 주식의 발행가액은 </SPAN>
+<SPAN>신주발행을 위한 이사회결의일 전일을 기산일로 하여 </SPAN>
+<SPAN>(i) </SPAN>
+<SPAN>과거</SPAN>
+<SPAN> 1</SPAN>
+<SPAN>개월간의 가중산술평균주가, 1주일간의 가중산술평균주가 및 최근일 가중산술평균주가를 산술 평균한 가격과</SPAN>
+<SPAN> (ii) </SPAN>
+<SPAN>최근일 가중산술평균주가 중 낮은가격을 기준으로 하여 할</SPAN>
+<SPAN>증율 0.847% </SPAN>
+<SPAN></SPAN>
+<SPAN>적용 하여 산정하였습니다.</SPAN>
+</P>
+
+<LIBRARY>
+<P>[발행가액 산정]</P>
+
+<TABLE-GROUP ACLASS="THD_STD_MTH2" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="639" BORDER="0">
+
+<COLGROUP>
+<COL WIDTH="293"></COL>
+<COL WIDTH="328"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N">
+<TD VALIGN="BOTTOM" WIDTH="302" HEIGHT="30" AUPDATECONT="N"></TD>
+<TU ALIGN="RIGHT" VALIGN="BOTTOM" WIDTH="337" HEIGHT="30" AUNIT="STOCKWON" AUNITVALUE="1">(단위 : 주, 원)</TU>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="642" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="259"></COL>
+<COL WIDTH="87"></COL>
+<COL WIDTH="148"></COL>
+<COL WIDTH="112"></COL>
+</COLGROUP>
+
+<THEAD ALIGN="LEFT" VALIGN="TOP">
+
+<TR ACOPY="N" ADELETE="N">
+<TH VALIGN="MIDDLE" WIDTH="268" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">구 분</TH>
+<TH VALIGN="MIDDLE" WIDTH="96" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">거래량</TH>
+<TH VALIGN="MIDDLE" WIDTH="157" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">거래대금</TH>
+<TH VALIGN="MIDDLE" WIDTH="121" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">가중산술평균주가</TH>
+</TR>
+</THEAD>
+
+<TBODY ALIGN="LEFT" VALIGN="TOP">
+
+<TR ACOPY="N" ADELETE="N">
+<TD VALIGN="MIDDLE" WIDTH="268" HEIGHT="30" AUPDATECONT="N">과거 1개월간의 가중산술평균주가(A)</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="96" HEIGHT="30" ACODE="BSN_AMT_A">6,070,982 </TE>
+
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="157" HEIGHT="30" ACODE="BSN_PRC_A">
+<SPAN>  </SPAN>1,027,279,720,800 
+</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="121" HEIGHT="30" ACODE="AVG_VAL_A">169,211 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD VALIGN="MIDDLE" WIDTH="268" HEIGHT="30" AUPDATECONT="N">과거 1주일간의 가중산술평균주가(B)</TD>
+
+<TE ALIGN="RIGHT" WIDTH="96" HEIGHT="30" ACODE="BSN_AMT_B">
+<SPAN>    </SPAN>813,538 
+</TE>
+
+<TE ALIGN="RIGHT" WIDTH="157" HEIGHT="30" ACODE="BSN_PRC_B">
+<SPAN>    </SPAN>140,296,965,700 
+</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="121" HEIGHT="30" ACODE="AVG_VAL_B">172,453 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD VALIGN="MIDDLE" WIDTH="268" HEIGHT="30" AUPDATECONT="N">최근일 가중산술평균주가(C)</TD>
+
+<TE ALIGN="RIGHT" WIDTH="96" HEIGHT="30" ACODE="BSN_AMT_C">
+<SPAN>    </SPAN>178,044 
+</TE>
+
+<TE ALIGN="RIGHT" WIDTH="157" HEIGHT="30" ACODE="BSN_PRC_C">
+<SPAN>      </SPAN>30,034,430,400 
+</TE>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="121" HEIGHT="30" ACODE="AVG_VAL_C">168,691 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="521" HEIGHT="30" AUPDATECONT="N">(A),(B),(C)의 산술평균주가(D)</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="121" HEIGHT="30" ACODE="AVG_VAL_D">170,119 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="521" HEIGHT="30" AUPDATECONT="N">기준주가 : (C)와(D)중 낮은 가액</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="121" HEIGHT="30" ACODE="STD_VAL">168,691 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="521" HEIGHT="30" AUPDATECONT="N">할인율 또는 할증률 (%)</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="121" HEIGHT="30" ACODE="DC_RATE">0.847 </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="521" HEIGHT="30" AUPDATECONT="N">발행가액</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="121" HEIGHT="30" ACODE="ISS_VAL">170,119 </TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+</LIBRARY>
+
+
+<P>
+<SPAN USERMARK=" B"></SPAN>
+<SPAN USERMARK=" B">(3) 의결권에 관한 사항</SPAN>
+<SPAN>본건 우선주는 보통주와 동일하게 1주당 1개의 의결권을 갖는다.</SPAN>
+<SPAN USERMARK=" B">(4) 우선권에 관한 사항</SPAN>
+<SPAN>1) 본건 주식은 이익배당에 관하여 참가적, 누적적 우선주로 발행한다.2) 우선배당률 : 우선주의 보유자는 보통주 보유자보다 우선적으로 배당금을 받을 권리가 있으며, 회사는 본건 우선주에 대해 발행가액의 연 1%에 해당하는 금원을 보통주식에 비하여 우선 배당한다.3) 참가적 우선주 : 보통주의 배당률이 본건 우선주의 배당률을 초과하는 경우에는 그 초과분에 대하여 보통주식과 동일한 배당률로 참여하여 배당을 받는다.4) 누적적 우선주 : 회계연도 내 우선배당률 만큼 배당을 받지 못한 경우, 누적된 미배당분을 다음 배당시 우선하여 배당받는다. 발행회사는 누적된 미배당금이 전액 지급되기 전까지는 보통주식 및 기타 어떠한 다른 종류의 주식에 대하여 배당을 할 수 없다.5) 신주의 배당 기산일 : 2024.01.016) 배당금 지급 시기 :</SPAN>
+<SPAN USERMARK="F-DU"> </SPAN>
+<SPAN></SPAN>
+<SPAN>배당금의 지급시기를 주주총회에서 따로 정하지 아니한 경우 회사는 주주총회에서 재무제표의 승인 및 배당결의가 있은 날로부터 </SPAN>
+<SPAN>1</SPAN>
+<SPAN>개월 이내에 본건 우선주 주주에게 배당금을 지급하여야 한다</SPAN>
+<SPAN>.</SPAN>
+<SPAN></SPAN>
+<SPAN USERMARK=" B"></SPAN>
+<SPAN USERMARK=" B"></SPAN>
+<SPAN USERMARK=" B">(5) 상환권에 관한 사항</SPAN>
+<SPAN>1) 인수인은 상환기간 내에 본 주식의 전부 또는 일부에 대해 상환을 청구할 수 있다2) 상환청구기간 : 발행일로부터 3년이 되는 날로부터 10년이 되는 날까지의 기간3) 상환재원 : 상법 및 기타 법률에 따라 계산되고 주주총회 결의에 따라 결정된 배당가능이익4)</SPAN> 상환가액: 주당 상환가액은 주당 발행가액 및  동 금액에 대하여  발행일로부터 실제 상환일까지 상환일을 포함한 기간에 대하여 연복리 4.00%를 적용한 금액의 합산액이며, 주당 발행가액은 본 계약에 따라 변동하는 금액을 반영한다. 이 때 상환 주식에 대하여 이미 지급된 배당금은 상환가액에서 공제한다.5) 상환방법 : 회사가 주주로부터 상환 청구를 받으면 그러한 청구가 있는 날로부터 15일 이내에 상환가액을 현금으로 지급한
+<SPAN></SPAN>
+<SPAN>다. 단 상환청구가 있었음에도 회사의 분배 가능한 이익 내에서 상환이 되지 못한 경우, 상환기간은 상환이 완료될 때까지 연장된다.</SPAN>
+<SPAN USERMARK=" B"></SPAN>
+<SPAN USERMARK=" B"></SPAN>
+<SPAN USERMARK=" B"></SPAN>
+<SPAN USERMARK=" B">(6) 전환권에 관한 사항</SPAN>
+<SPAN>1) 전환권자 : 본 주식을 소유한 주주2) 전환으로 인하여 발행할 주식 : (주) 파마리서치 기명식 보통주3) 전환조건 : 우선주 1주당 보통주식 1주4) 전환청구기간 : 발행일로부터 1년이 되는 날로부터 만료일 직전 기간까지5) 전환가액 : 최초 전환가액은 본건 주식의 주당 발행가액으로 한다. 전환가액은 아래 전환가액 조정 항목에 따라 조정될 수 있다. </SPAN>
+<SPAN></SPAN>
+<SPAN>6) 전환가액의 조정 :  1. 무상증자, 액면분할, 액면병합, 주권 재분류등에 의하여 전환비율의 조정이 필요한 경우에는 당해 무상증자, 자본의 감소, 주식분할, 주식병합 등의 직전에 전환권이 행사되었다면 인수회사가 가질 수 있었던 보통주 주식수를 산출할 수 있는 비율로 전환비율을 조정한다.2. 발행사가 본건 우선주의 1주당 발행가액을 하회하는 가격으로 (i) 신주를 발행하는 경우, (ii) 전환가액, 교환가액, 행사가 등을 기초로 하는 지분증권, (iii) 그러한 전환가액, 교환가액, 행사가액, 또는 기타 가액을 재산정 또는 조정하는 경우  본건 우선주의 1주당 전환되는 보통주의 수를 정하는 전환비율을 다음과 같이 조정한다.(조정 후 전환가액) = (조정 전 전환가액)  X  </SPAN>
+<SPAN>(A + B) / (A + C)</SPAN>
+<SPAN>A : 기 발행주식 수B : 기존 전환가액으로 발행된다고 가정했을 때 발행 될 수 있는 주식수C : 신발행주식수3. 합병, 분할, 주식병합의 주당 가격이 본건 우선주의 발행가액을 하회하는 경우, 합병, 분할, 주식병합의 주당 가격으로 전환비율을 조정한다.</SPAN>
+<SPAN USERMARK=" 0X0000FF"> </SPAN>
+<SPAN>7) 전환절차 : 투자자는 본 건 주식을 보통주식으로 전환하고자 하는 경우, 전자증권법 등에 따라 투자자의 계좌관리기관에 전환권의 행사를 신청하고 계좌관리기관으로 하여금 투자자가 전환권의 행사를 신청한 전환청구일까지 전환권 행사신청서를 한국예탁결제원에 제출하도록 하여 한국예탁결제원으로 하여금 전환권을 행사하도록 하여야 한다. 투자사가 한국예탁결제원을 통하여 회사에 전환권을 행사한 경우 회사는 전환권의 행사일로부터 15영업일 이내에 전자증권법에 따라 전환권이 행사된 본 건 주식에 대하여 발행하는 보통주의 신규 전자 등록을 완료하여야 한다. 본 건 주식의 전환에 있어 보통주의 단주는 발행하지 아니하며, 회사는 단주대금을 전자증권법에 따라 전환권의 행사일이 속하는 다음날 20일에 지급한다. 다만, 회사의 책임없는 사유로 15영업일 이내에 위와 같은 전환주식 등록 절차를 완료하지 못할 경우 그 기한은 해당 사유가 해소될 때까지 연장된다. 8) 전환효력의 발생 : 투자자의 전환요청서가 발행회사에 제출 및 전달된 시점에 전환의 효력이 발생한다.9) 우선주 존속기한 만료 시 보통주 전환에 관한 사항 : 본건 주식이 존속기한(만기일)내에 보통주식으로 전환되지 아니한 경우, 존속기한(만기일) 다음날 별도의 절차 없이 보통주식으로 자동 전환된다. 이 때, 존속기한(만기일) 만료 시까지 본건 주식이 아직 상환이 완료되지 아니한 경우 본건 주식에 대한 배당금 지급결의가 있었음에도 지급되지 아니한 배당액이 있는 경우에는 각각 그 상환 또는 지급이 완료될 때까지 존속기한이 연장된다.</SPAN>
+<SPAN USERMARK=" B">(7) 기타사항</SPAN>
+<SPAN USERMARK=" B"></SPAN>
+<SPAN>1) 본 우선주의 발행, 전환 및 상환 등에 관한 세부사항은 상법, 정관 및 인수계약서에 따릅니다.</SPAN>
+<SPAN>2) 상기 일정은 관계 기관과의 협의 등 제반사정에 따라 변경될 수 있습니다.</SPAN>
+<SPAN>3) 금번 유상증자로 발행되는 상환전환우선주 전량에 대하여 의무보호예수일로부터 1년간 한국예탁결제원에 보호예수될 예정입니다.</SPAN>
+</P>
+
+<TABLE-GROUP ACLASS="THD_ASN_OBJ" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP>
+<COL WIDTH="591"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="600" HEIGHT="30" AUPDATECONT="N">【제3자배정 근거, 목적 등】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="N" WIDTH="600" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="291"></COL>
+<COL WIDTH="291"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N">
+<TH VALIGN="MIDDLE" WIDTH="300" HEIGHT="30" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">제3자배정 근거가 되는 정관규정</TH>
+<TH VALIGN="MIDDLE" WIDTH="300" HEIGHT="30" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">제3자배정 증자의 목적</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="N">
+
+<TE WIDTH="300" HEIGHT="1250" ACODE="RULE">
+<P></P>
+
+<P USERMARK="F-11">
+<SPAN USERMARK="F-GL">정관 제10조(신주인수권)</SPAN>
+<SPAN USERMARK="F-GL"></SPAN>
+<SPAN USERMARK="F-GL"> </SPAN>
+<SPAN USERMARK="F-GL">제 2항의 7</SPAN>
+<SPAN USERMARK="F-GL"></SPAN>
+<SPAN USERMARK="F-GL">① 주주는 그가 소유한 주식의 수에 비례하여 신주의 배정을 받을 권리를 갖는다.</SPAN>
+</P>
+<P USERMARK="F-GL11">② 회사는 제1항의 규정에도 불구하고 다음 각 호의 경우에는 주주이외의 자에게 신주를 배정할 수 있다.</P>
+<P USERMARK="F-GL11">1. 주주우선공모의 방식으로 신주를 발행하는 경우</P>
+<P USERMARK="F-GL11">2. 자본시장과 금융투자업에 관한 법률 제165조의6에 의하여 발행주식총수의 100분의 50을 초과하지 않는 범위 내에서 이사회의 결의로 일반공모증자 방식으로 신주를 발행하는 경우</P>
+<P USERMARK="F-GL11">3. 상법 제542조의3에 의한 주식매수선택권의 행사로 인하여 신주를 발행하는 경우</P>
+<P USERMARK="F-GL11">4. 발행하는 주식총수의 100분의 20 범위 내에서 우리사주조합원에게 주식을 우</P>
+<P USERMARK="F-GL11">선배정하는 경우</P>
+<P USERMARK="F-GL11">5. 근로복지기본법 제39조의 규정에 의한 우리사주매수선택권의 행사로 인하여 신주를 발행하는 경우</P>
+<P USERMARK="F-GL11">6. 발행주식총수의 100분의 20을 초과하지 않는 범위 내에서 긴급한 자금조달을</P>
+<P USERMARK="F-GL11">위하여 국내외 금융기관, 제휴회사, 국내외 합작법인, 현물출자자 및 기타투</P>
+<P USERMARK="F-GL11">자 등에게 신주를 발행하는 경우</P>
+<P USERMARK="F-GL11">7. 상법 제418조 제2항의 규정에 따라 발행주식총수의 100분의 20을 초과하지 않는 범위 내에서 신기술의 도입, 재무구조 개선 등 회사의 경영상 목적을 달성 하기 위하여 필요한 경우</P>
+<P USERMARK="F-GL11">8. 외국 금융기관, 기타 외국인 투자 및 외자 도입에 관한 법률에 따른 외국인 자본참여를 위하여 발행주식총수의 100분의 20을 초과하지 않는 범위 내에서 신주를 발행할 경우</P>
+<P USERMARK="F-GL11">9. 우리사주 조합원을 대상으로 신주를 발행하는 경우</P>
+<P USERMARK="F-GL11">10. 주권을 유가증권시장 또는 코스닥시장에 상장하기 위하여 신주를 모집하거나인수인에게 인수하게 하는 경우</P>
+<P USERMARK="F-GL11">③ 제2항 각 호 중 어느 하나의 규정에 의해 신주를 발행할 경우 발행할 주식의 종류와 수 및 발행가격 등은 이사회의 결의로 정한다.</P>
+</TE>
+<TE WIDTH="300" HEIGHT="1250" ACODE="OBJ" VALIGN="MIDDLE" ALIGN="CENTER">경영상의 목적 달성(에스테틱 사업 강화 및 신사업 발굴)</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+
+<TABLE-GROUP ACLASS="THD_ASN_LST" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="1290" BORDER="0">
+
+<COLGROUP>
+<COL WIDTH="1281"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N">
+<TD WIDTH="1290" HEIGHT="30" AUPDATECONT="N">【제3자배정 대상자별 선정경위, 거래내역, 배정내역 등】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="N" WIDTH="1294" BORDER="1">
+
+<COLGROUP>
+<COL WIDTH="167"></COL>
+<COL WIDTH="134"></COL>
+<COL WIDTH="429"></COL>
+<COL WIDTH="282"></COL>
+<COL WIDTH="116"></COL>
+<COL WIDTH="112"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N">
+<TH VALIGN="MIDDLE" WIDTH="176" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">제3자배정 대상자</TH>
+<TH VALIGN="MIDDLE" WIDTH="143" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">회사 또는최대주주와의 관계</TH>
+<TH VALIGN="MIDDLE" WIDTH="438" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">선정경위</TH>
+<TH VALIGN="MIDDLE" WIDTH="291" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">증자결정 전후 6월이내 거래내역 및 계획</TH>
+<TH VALIGN="MIDDLE" WIDTH="125" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">배정주식수 (주)</TH>
+<TH VALIGN="MIDDLE" WIDTH="121" HEIGHT="53" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">비 고</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="N">
+<TE WIDTH="176" HEIGHT="53" ACODE="PART" VALIGN="MIDDLE" ALIGN="CENTER">Polish Company Limited</TE>
+<TE WIDTH="143" HEIGHT="53" ACODE="RLT" VALIGN="MIDDLE" ALIGN="CENTER">없음</TE>
+<TE WIDTH="438" HEIGHT="53" ACODE="SLT_JDG" VALIGN="MIDDLE" ALIGN="CENTER">글로벌 진출을 위한 파트너쉽 확보 및 신성장동력 발굴을 위해 투자자의 의향 및 실현 능력, 시기 등을 고려하여 최종선정</TE>
+<TE WIDTH="291" HEIGHT="53" ACODE="MNTH" VALIGN="MIDDLE" ALIGN="CENTER">해당사항 없음</TE>
+<TE ALIGN="CENTER" WIDTH="125" HEIGHT="53" ACODE="ALL_CNT" VALIGN="MIDDLE">1,175,647</TE>
+<TE WIDTH="121" HEIGHT="53" ACODE="ETC" VALIGN="MIDDLE" ALIGN="CENTER">1년간 전량 보호예수</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+</LIBRARY><P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

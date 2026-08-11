@@ -1,0 +1,165 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>삼성E&A/단일판매ㆍ공급계약체결/(2025.02.03)단일판매ㆍ공급계약체결</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결</span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:594px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">공사수주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">- 체결계약명</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">UAE Methanol Project</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="144"> <span style="width:144px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;text-align:right;">2,478,818,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;text-align:right;">10,624,917,993,595</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;text-align:right;">23.33</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">ABU DHABI NATIONAL OIL COMPANY (ADNOC)</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">UAE (Al Ruwais Industrial City, Taziz Derivatives Complex)</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="144"> <span style="width:144px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">2025-02-07</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">2028-09-18</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="144"> <span style="width:144px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">계약금ㆍ선급금 유무</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">유</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">대금지급 조건 등</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">공사 진행에 따라 청구 및 지급</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">7. 계약(수주)일자</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">2025-01-31</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="144"> <span style="width:144px;font-size:10pt;">8. 공시유보 관련내용</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="594"> <span style="width:594px;font-size:10pt;">9. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="594"> <span class="xforms_input" style="width:594px;font-size:10pt;">- 본 프로젝트는 UAE 루와이스(Ruwais) 산업단지의 타지즈(TA'ZIZ) 공단에 건설되는 일산 5천톤의 메탄올 생산시설 입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2. 계약금액은 본사계약분 USD 1,706,000,000.00에 2025년 2월 3일 최초 매매기준환율 (1,453.00)을 적용하여 환산한 금액입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2 매출액과 대규모 법인여부는 2023년말 연결 재무제표 기준으로 작성하였습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 계약기간, 계약금액 등은 프로젝트 수행 과정상 변동 될 수 있습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="144"> <span style="width:144px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="450"> <span class="xforms_input" style="width:450px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

@@ -1,0 +1,164 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>HD현대중공업/단일판매ㆍ공급계약체결/(2024.04.17)단일판매ㆍ공급계약체결</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">기타 판매ㆍ공급계약</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">- 체결계약명</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">함정 4척 건조용 자재 및 장비 공급</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="153"> <span style="width:153px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">640,600,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">11,963,900,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">5.35</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">SERVICIOS INDUSTRIALES DE LA MARINA S.A.</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">페루</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">2024-04-16</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">2030-01-16</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">7. 계약(수주)일자</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">2024-04-16</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">8. 공시유보 관련내용</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="596"> <span style="width:596px;font-size:10pt;">9. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">1) 상기 최근매출액은 2023년 연결재무제표 기준임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 상기 계약금액 및 최근매출액은 억원 미만에서 반올림함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 상기 계약금액은 계약일 최초 고시환율인 USD 1 = 1,383.70 원을 적용하여 계산한 금액임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4) 해당 공시는 2024년 3월 29일 수시공시의무관련사항(공정공시)의 확정공시 사항임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5) 본 계약은 조건부 계약이며, 변경사항 발생시 즉시 재공시예정임.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="153"> <span style="width:153px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="3" width="443"> <span style="width:443px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20240329004156&amp;rcpno=20240329004156&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2024-03-29 수시공시의무관련사항(공정공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

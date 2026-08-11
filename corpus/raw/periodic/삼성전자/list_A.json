@@ -1,0 +1,156 @@
+[
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2026.03)",
+  "rcept_no": "20260515002181",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20260515",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2025.12)",
+  "rcept_no": "20260310002820",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20260310",
+  "rm": "연"
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2025.09)",
+  "rcept_no": "20251114002447",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20251114",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2025.06)",
+  "rcept_no": "20250814003156",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20250814",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2025.03)",
+  "rcept_no": "20250515001922",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20250515",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2024.12)",
+  "rcept_no": "20250311001085",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20250311",
+  "rm": "연"
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2024.09)",
+  "rcept_no": "20241114002642",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20241114",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2024.06)",
+  "rcept_no": "20240814003284",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20240814",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2024.03)",
+  "rcept_no": "20240516001421",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20240516",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2023.12)",
+  "rcept_no": "20240312000736",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20240312",
+  "rm": "연"
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2023.09)",
+  "rcept_no": "20231114002109",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20231114",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "반기보고서 (2023.06)",
+  "rcept_no": "20230814002534",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20230814",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "분기보고서 (2023.03)",
+  "rcept_no": "20230515002335",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20230515",
+  "rm": ""
+ },
+ {
+  "corp_code": "00126380",
+  "corp_name": "삼성전자",
+  "stock_code": "005930",
+  "corp_cls": "Y",
+  "report_nm": "사업보고서 (2022.12)",
+  "rcept_no": "20230307000542",
+  "flr_nm": "삼성전자",
+  "rcept_dt": "20230307",
+  "rm": "연"
+ }
+]

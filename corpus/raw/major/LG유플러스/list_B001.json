@@ -1,0 +1,24 @@
+[
+ {
+  "corp_code": "00231363",
+  "corp_name": "LG유플러스",
+  "stock_code": "032640",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득신탁계약해지결정)",
+  "rcept_no": "20260210000941",
+  "flr_nm": "LG유플러스",
+  "rcept_dt": "20260210",
+  "rm": ""
+ },
+ {
+  "corp_code": "00231363",
+  "corp_name": "LG유플러스",
+  "stock_code": "032640",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득신탁계약체결결정)",
+  "rcept_no": "20250721000270",
+  "flr_nm": "LG유플러스",
+  "rcept_dt": "20250721",
+  "rm": ""
+ }
+]

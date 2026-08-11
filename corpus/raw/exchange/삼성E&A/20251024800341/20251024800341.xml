@@ -1,0 +1,231 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>삼성E&A/단일판매ㆍ공급계약체결/(2025.10.24)단일판매ㆍ공급계약체결</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2025-10-24</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">단일판매ㆍ공급계약체결</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2024-01-29</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">종료일 변경</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">5. 계약기간 - 종료일</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2025-10-26</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2026-01-29</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">-</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결</span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:594px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">공사수주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">- 체결계약명</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">BAPCO Modernization Program(BMP)</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="144"> <span style="width:144px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;text-align:right;">1,719,659,644,816</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;text-align:right;">7,009,433,382,245</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;text-align:right;">24.53</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">The Bahrain Petroleum Company B.S.C</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">바레인</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="144"> <span style="width:144px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">2018-02-26</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">2026-01-29</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="144"> <span style="width:144px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">계약금ㆍ선급금 유무</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">무</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">대금지급 조건 등</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">7. 계약(수주)일자</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">2018-02-02</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="144"> <span style="width:144px;font-size:10pt;">8. 공시유보 관련내용</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="594"> <span style="width:594px;font-size:10pt;">9. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="594"> <span class="xforms_input" style="width:594px;font-size:10pt;">1) 상기 계약은 2017년 12월 1일 자율공시한 건에 대한 본 계약입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 상기 2 매출액과 대규모 법인여부는 2016년말 연결 재무제표 기준으로 작성되었습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 상기 2. 계약금액은 USD 1,601,620,233.60을 원화 환산한 금액입니다. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  *최초 공시일(2018.02.27)의 최초매매기준환율(1,073.70) 적용 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4) 해당 프로젝트는 약 4.8조원(USD 44억) 규모의 정유플랜트 건설 공사로 당사와 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  테크닙사, 테크니카스 레우니다스(Tecnicas Reunidas,TR)사와 공동수주 하였습니다. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  공동 수행사와 합작법인을 설립하였으며 당사 지분율은 32%로 지분법 적용 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  대상입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5) 프로젝트 개요 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  · 계약명 : BAPCO Modernization Program(BMP) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  · 발주처 : The Bahrain Petroleum Company B.S.C <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  · 내용 : 바레인 시트라 공단 내의 밥코 정유플랜트를 현대화하여 일일 원유처리량을 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->            기존 267,000 배럴에서 380,000배럴로 확대하는 프로젝트 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">6) 공사기간, 계약금액 등 공사 진행 과정상 변동 될 수 있습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="144"> <span style="width:144px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="450"> <span style="width:450px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20171201000051&amp;rcpno=20171201000051&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2017-12-01 기타 경영사항(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20180205001036&amp;rcpno=20180205001036&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2018-02-05 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20180227001025&amp;rcpno=20180227001025&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2018-02-27 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20190619000473&amp;rcpno=20190619000473&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2019-06-19 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20190904000465&amp;rcpno=20190904000465&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2019-09-04 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20191023000260&amp;rcpno=20191023000260&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2019-10-23 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20191218000236&amp;rcpno=20191218000236&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2019-12-18 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20200508000307&amp;rcpno=20200508000307&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2020-05-08 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20200714000181&amp;rcpno=20200714000181&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2020-07-14 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20210204000789&amp;rcpno=20210204000789&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2021-02-04 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20210430000559&amp;rcpno=20210430000559&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2021-04-30 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20211223000443&amp;rcpno=20211223000443&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2021-12-23 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20221007000234&amp;rcpno=20221007000234&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2022-10-07 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20240129001020&amp;rcpno=20240129001020&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2024-01-29 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

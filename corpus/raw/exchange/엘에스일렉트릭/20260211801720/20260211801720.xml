@@ -1,0 +1,160 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>엘에스일렉트릭/단일판매ㆍ공급계약 체결(자율공시)/(2026.02.11)단일판매ㆍ공급계약 체결(자율공시)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결(자율공시)</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD14_Form0_Table0" style="margin:0px 0px 20px 0px;width:595px;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">공사수주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">- 세부내용</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">영광 그린 태양광 발전사업 공사도급계약</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="139"> <span style="width:139px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;text-align:right;">76,370,160,600</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;text-align:right;">4,551,837,252,467</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;text-align:right;">1.7</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">㈜케이이엔</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">전라남도 영광군 염산면 일원</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="139"> <span style="width:139px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="139"> <span style="width:139px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">계약금ㆍ선급금 유무</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">유</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">대금지급 조건 등</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">공급계약 진행에 따른 청구 및 지급</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">7. 계약(수주)일</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">2026-02-11</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="595"> <span style="width:595px;font-size:10pt;">8. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="595"> <span class="xforms_input" style="width:595px;font-size:10pt;">- 본 계약은 전라남도 영광군 염산면 일원에 약 90MW 규모의 태양광 발전설비 및 약 54km의 154kV 송전선로를 설치하는 EPC 공사로, 당사와 일진전기가 공동도급 형태로 수행하는 사업입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 본 계약의 총 계약금액은 1,865억원(VAT 제외)이며, 상기 2의 계약금액은 당사의 공사 수행 범위에 해당하는 금액입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 5의 계약기간은 착공지시서(NTP) 발행일을 기준으로 상업운전개시(COD)까지 약 21.5개월, 최종완공까지 약 25.5개월로 예정되어 있으며, 실제 착공지시서 수령 시 확정 계약기간에 대하여 추가 공시할 예정입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 본 계약은 프로젝트 진행 과정에서 인허가, 공정 조정 등 제반 사유에 따라 계약기간 및 계약금액 등이 변경될 수 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 당사는 동일한 거래상대방과 동일 일자에 본 사업과 관련하여 약 494억원(VAT 제외) 규모의 「영광 그린 태양광 발전사업 관리운영위탁계약」을 추가로 체결하였습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 최근 매출액은 2024년 말 연결재무제표 기준입니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="139"> <span style="width:139px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="456"> <span class="xforms_input" style="width:456px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

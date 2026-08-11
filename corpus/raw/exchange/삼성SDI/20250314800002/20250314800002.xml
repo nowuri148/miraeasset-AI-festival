@@ -1,0 +1,168 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>삼성SDI/단일판매ㆍ공급계약 체결(자율공시)/(2025.03.14)단일판매ㆍ공급계약 체결(자율공시)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결(자율공시)</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD14_Form0_Table0" style="margin:0px 0px 20px 0px;width:595px;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">기타 판매ㆍ공급계약</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">- 세부내용</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">ESS 배터리 공급계약</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="139"> <span style="width:139px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;text-align:right;">437,429,850,083</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;text-align:right;">22,708,300,498,633</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;text-align:right;">1.93</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">NextEra Energy</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">미국</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="139"> <span style="width:139px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">2024-04-15</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">2025-11-20</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="139"> <span style="width:139px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">계약금ㆍ선급금 유무</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">무</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="157"> <span style="width:157px;font-size:10pt;text-align:center;">대금지급 조건 등</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="296"> <span style="width:296px;font-size:10pt;">7. 계약(수주)일</span> </td> 
+       <td width="299"> <span class="xforms_input" style="width:299px;font-size:10pt;">2025-03-13</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="595"> <span style="width:595px;font-size:10pt;">8. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="595"> <span class="xforms_input" style="width:595px;font-size:10pt;">- 본 공시는 2024년 7월 5일 "풍문 또는 보도에 대한 해명(미확정)" 공시에 대한 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 확정 공시입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 당사는 NextEra Energy와 2025년 3월 13일 ESS 배터리 공급계약을 체결하였습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 동 고객에 대한 ESS 공급은 다수의 프로젝트로 나누어 진행될 예정이며, <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 이 중 계약을 체결한 프로젝트 건에 대한 공시 사항입니다. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 추후 확정되는 공급계약에 대해서는 수시공시 기준에 따라 공시하겠습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 계약금액은 USD 301M으로 계약일(2025.03.13) 최초 고시환율(1,452.00)을 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 적용하여 원화 환산한 금액입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 5.계약기간의 시작일은 양사 합의로 일부 공급을 시작한 날짜를 기재하였습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="139"> <span style="width:139px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="456"> <span style="width:456px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20240705000019&amp;rcpno=20240705000019&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2024-07-05 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20240802000534&amp;rcpno=20240802000534&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2024-08-02 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20241101000554&amp;rcpno=20241101000554&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2024-11-01 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20250131000672&amp;rcpno=20250131000672&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2025-01-31 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

@@ -1,0 +1,79 @@
+[
+ {
+  "corp_code": "00261443",
+  "corp_name": "NC",
+  "stock_code": "036570",
+  "corp_cls": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(유형자산양도결정)",
+  "rcept_no": "20250728000380",
+  "flr_nm": "NC",
+  "rcept_dt": "20250728",
+  "rm": ""
+ },
+ {
+  "corp_code": "00261443",
+  "corp_name": "NC",
+  "stock_code": "036570",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(유형자산양도결정)",
+  "rcept_no": "20250724000172",
+  "flr_nm": "NC",
+  "rcept_dt": "20250724",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00261443",
+  "corp_name": "NC",
+  "stock_code": "036570",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+  "rcept_no": "20241128001098",
+  "flr_nm": "NC",
+  "rcept_dt": "20241128",
+  "rm": ""
+ },
+ {
+  "corp_code": "00261443",
+  "corp_name": "NC",
+  "stock_code": "036570",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(회사분할결정)",
+  "rcept_no": "20241021000037",
+  "flr_nm": "NC",
+  "rcept_dt": "20241021",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00261443",
+  "corp_name": "NC",
+  "stock_code": "036570",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]주요사항보고서(회사분할결정)",
+  "rcept_no": "20240913000790",
+  "flr_nm": "NC",
+  "rcept_dt": "20240913",
+  "rm": ""
+ },
+ {
+  "corp_code": "00261443",
+  "corp_name": "NC",
+  "stock_code": "036570",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(회사분할결정)",
+  "rcept_no": "20240624000362",
+  "flr_nm": "NC",
+  "rcept_dt": "20240624",
+  "rm": "정"
+ },
+ {
+  "corp_code": "00261443",
+  "corp_name": "NC",
+  "stock_code": "036570",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득결정)",
+  "rcept_no": "20240509000521",
+  "flr_nm": "NC",
+  "rcept_dt": "20240509",
+  "rm": ""
+ }
+]

@@ -1,0 +1,35 @@
+[
+ {
+  "corp_code": "01390344",
+  "corp_name": "HD현대중공업",
+  "stock_code": "329180",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "rcept_no": "20250827000423",
+  "flr_nm": "HD현대중공업",
+  "rcept_dt": "20250827",
+  "rm": ""
+ },
+ {
+  "corp_code": "01390344",
+  "corp_name": "HD현대중공업",
+  "stock_code": "329180",
+  "corp_cls": "Y",
+  "report_nm": "[첨부정정]주요사항보고서(회사합병결정)",
+  "rcept_no": "20231026000162",
+  "flr_nm": "HD현대중공업",
+  "rcept_dt": "20231026",
+  "rm": ""
+ },
+ {
+  "corp_code": "01390344",
+  "corp_name": "HD현대중공업",
+  "stock_code": "329180",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(회사합병결정)",
+  "rcept_no": "20231025000484",
+  "flr_nm": "HD현대중공업",
+  "rcept_dt": "20231025",
+  "rm": "정"
+ }
+]

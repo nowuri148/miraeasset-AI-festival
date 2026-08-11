@@ -1,0 +1,161 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>HD현대일렉트릭/단일판매ㆍ공급계약 체결(자율공시)/(2024.08.30)단일판매ㆍ공급계약 체결(자율공시)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결(자율공시)</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD14_Form0_Table0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">상품공급</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">- 세부내용</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">415/140KV 750MVA 및 500MVA 변압기 5대</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="107"> <span style="width:107px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;text-align:right;">66,200,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;text-align:right;">2,702,800,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;text-align:right;">2.45</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">스웨덴</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="107"> <span style="width:107px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">2024-08-29</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">2029-02-28</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">7. 계약(수주)일</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">2024-08-29</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="600"> <span style="width:600px;font-size:10pt;">8. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="600"> <span class="xforms_input" style="width:600px;font-size:10pt;">1) 상기 최근매출액은 2023년말 연결재무제표 기준임. <br xmlns:java="http://xml.apache.org/xalan/java">2) 상기 계약금액 및 최근매출액은 억원 미만에서 반올림함. <br xmlns:java="http://xml.apache.org/xalan/java">3) 상기 계약금액은 계약액 EUR 44,560,199를 원화환산하여 기재하였음. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->(적용환율 : 8/29일자 KEB하나은행 최초고시 매매기준환율 1 EUR = 1,484.79 원) <br xmlns:java="http://xml.apache.org/xalan/java">4) 상기 계약은 상품 추가 공급 옵션을 포함하고 있으며, 계약상대방의 옵션 행사 결정에 따라 계약금액 및 계약기간이 변경될 수 있음. <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->(2항의 '계약금액'은 옵션가를 제외한 계약금액임.) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->- 옵션은 계약일자로부터 1년까지 유효하며 옵션 행사에 따라 계약의 변경이 발생할 경우 정정공시할 예정임. <br xmlns:java="http://xml.apache.org/xalan/java">5) 3항의 '계약상대'는 계약기간 종료 후 공시 예정임.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="107"> <span style="width:107px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="3" width="493"> <span class="xforms_input" style="width:493px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

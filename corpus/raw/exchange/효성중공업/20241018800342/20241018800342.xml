@@ -1,0 +1,228 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>효성중공업/단일판매ㆍ공급계약체결/(2024.10.18)단일판매ㆍ공급계약체결</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2024-10-18</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">단일판매·공급계약 체결</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2022-06-30</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">공사금액 및 공사기간 변동</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2. 계약내역 - 계약금액(원)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">78,767,307,505</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">88,517,626,344</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2. 계약내역 - 매출액대비(%)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2.55</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2.86</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">9. 기타 투자판단과 관련한 <br java="http://xml.apache.org/xalan/java">   중요사항</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 본 계약은 서울특별시 강남 <br java="http://xml.apache.org/xalan/java">  구 삼성동 일원에 지하 4층, <br java="http://xml.apache.org/xalan/java">  지상 10층 규모의 APT 3개 <br java="http://xml.apache.org/xalan/java">  동을 건축하는 공사도급 <br java="http://xml.apache.org/xalan/java">  계약임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">- 상기 2항의 계약금액은 부가 <br java="http://xml.apache.org/xalan/java">  가치세 3,127,697,859원을 <br java="http://xml.apache.org/xalan/java">  포함한 금액이며, 공급가액 <br java="http://xml.apache.org/xalan/java">  75,639,609,646원(부가가치 <br java="http://xml.apache.org/xalan/java">  세 제외) 중 44,362,631,057 <br java="http://xml.apache.org/xalan/java">  원은 면세분임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">- 상기 2항의 최근매출액은 효 <br java="http://xml.apache.org/xalan/java">  성중공업(주)의 2021년말 <br java="http://xml.apache.org/xalan/java">  연결재무제표 기준임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">- 계약기간은 실착공일로부터 <br java="http://xml.apache.org/xalan/java">  28개월임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">- 상기 계약금액 및 계약기간 <br java="http://xml.apache.org/xalan/java">  은 공사진행과정 중 변경될 <br java="http://xml.apache.org/xalan/java">  수 있음.</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 본 계약은 서울특별시 강남 <br java="http://xml.apache.org/xalan/java">  구 삼성동 일원에 지하 4층, <br java="http://xml.apache.org/xalan/java">  지상 10층 규모의 APT 3개 <br java="http://xml.apache.org/xalan/java">  동을 건축하는 공사도급 <br java="http://xml.apache.org/xalan/java">  계약임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">- 상기 2항의 계약금액은 부가 <br java="http://xml.apache.org/xalan/java">  가치세 3,520,766,291원을 <br java="http://xml.apache.org/xalan/java">  포함한 금액이며, 공급가액 <br java="http://xml.apache.org/xalan/java">  84,996,860,054원(부가가치 <br java="http://xml.apache.org/xalan/java">  세 제외) 중 49,789,197,148 <br java="http://xml.apache.org/xalan/java">  원은 면세분임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">- 상기 2항의 최근매출액은 효 <br java="http://xml.apache.org/xalan/java">  성중공업(주)의 2021년말 <br java="http://xml.apache.org/xalan/java">  연결재무제표 기준임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">- 계약기간은 실착공일로부터 <br java="http://xml.apache.org/xalan/java">  36개월임. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">- 상기 계약금액 및 계약기간 <br java="http://xml.apache.org/xalan/java">  은 공사진행과정 중 변경될 <br java="http://xml.apache.org/xalan/java">  수 있음.</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">-</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">공사수주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">- 체결계약명</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">삼성동98번지일원 가로주택정비사업 공사도급계약</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="153"> <span style="width:153px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">88,517,626,344</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">3,094,698,644,786</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">2.86</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">삼성동98번지일원가로주택정비사업조합</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">서울특별시 강남구 삼성동 98-1 외 7필지</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">7. 계약(수주)일자</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">2022-06-30</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">8. 공시유보 관련내용</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="596"> <span style="width:596px;font-size:10pt;">9. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">- 본 계약은 서울특별시 강남구 삼성동 일원에 지하 4층, 지상 10층 규모의 APT 3개동을 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 건축하는 공사도급계약임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2항의 계약금액은 부가가치세 3,520,766,291원을 포함한 금액이며, <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 공급가액 84,996,860,054원(부가가치세 제외) 중 49,789,197,148원은 면세분임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2항의 최근매출액은 효성중공업(주)의 2021년말 연결재무제표 기준임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 계약기간은 실착공일로부터 36개월임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 계약금액 및 계약기간은 공사진행과정 중 변경될 수 있음.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="153"> <span style="width:153px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="3" width="443"> <span class="xforms_input" style="width:443px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

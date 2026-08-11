@@ -1,0 +1,221 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>레인보우로보틱스/투자판단 관련 주요경영사항/(2024.04.26)투자판단 관련 주요경영사항(민군겸용 기술개발사업(다중임무용 다족형 로봇의 통합운동제어 기술개발))</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2024-04-26</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">투자판단 관련 주요경영사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2022.06.28</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">국가연구개발 예산 삭감으로 인한 정부출연금 등 변경</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">총 사업비</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">16,003,671,000</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">14,904,338,000</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">정부출연금</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">13,000,000,000</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">12,124,000,000</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 응용 3차년도</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">1,800,000,000원 <br java="http://xml.apache.org/xalan/java">(당사:956,000,000원)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">924,000,000원 <br java="http://xml.apache.org/xalan/java">(당사:449,000,000원)</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">기업부담금</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">3,083,338,000원 <br java="http://xml.apache.org/xalan/java">(당사:2,250,002,000원)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2,780,338,000원 <br java="http://xml.apache.org/xalan/java">(당사:2,001,335,000원)</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 당사 부담금</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">당사현물:2,025,000,000원 <br java="http://xml.apache.org/xalan/java">당사현금:225,002,000원</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">당사현물:1,801,200,000원 <br java="http://xml.apache.org/xalan/java">당사현금:200,135,000원</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 응용 3차년도</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">431,334,000원 <br java="http://xml.apache.org/xalan/java">(당사: 318,667,000원)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">208,001,000원 <br java="http://xml.apache.org/xalan/java">(당사: 149,667,000원)</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">자기자본대비 정부출연금 비율</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">14.10%</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">13.04%</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">기타 투자판단과 관련한 중요사항</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-상기2. 주요내용의 4)자기자본은 2021년말 연결재무제표 기준 자기자본 금액 입니다. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">-상기 사실발생(확인)일 및 결정일은 협약서수령 및 확인일 입니다.</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-상기2. 주요내용의 4)자기자본은 2021년말 연결재무제표 기준 자기자본 금액 입니다. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">-상기 사실발생(확인)일 및 결정일은 협약서수령 및 확인일 입니다. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">-(추가) 기업부담금 중 응용 1,2차년도의 경우 코로나 19 대응을 위한 특별지침 제정으로 인한 기업부담금 비율이 감소되어 일부 금액 정정되었습니다. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">-(추가) 기업부담금 중 응용 3차년도의 경우, 국가연구개발 예산 삭감으로 인한 정부지원금 축소로 기업부담금 또한 그 비율에 맞게 감소하였습니다.</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">-</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">국책과제 선정(민군겸용 기술개발사업)</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">당사는 산업통상자원부,방위사업청 민군겸용기술개발사업 신규과제의 국책과제 주관기관으로 선정되어 협약을 체결하였으며, 주요 내용은 다음과 같습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">1) 사업명 : 민군기술개발사업(비정형 복잡한 환경에서 매니퓰레이터(로봇팔)를 이용한 다중 임무용 다족형 로봇의 통합운동제어 기술 개발) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 연구기관 : <br xmlns:java="http://xml.apache.org/xalan/java">- 주관연구기관 : (주)레인보우로보틱스 <br xmlns:java="http://xml.apache.org/xalan/java">- 공동연구기관 : 한국과학기술원, 한국기술교육대학교등 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->                <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 수행기간 : 2022.06.01 ~ 2027.05.31(총60개월) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">*응용단계 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">-1차년도 : 2022.06.01 ~ 2022.12.31(7개월) <br xmlns:java="http://xml.apache.org/xalan/java">-2차년도 : 2023.01.01 ~ 2023.12.31(12개월) <br xmlns:java="http://xml.apache.org/xalan/java">-3차년도 : 2024.01.01 ~ 2024.12.31(12개월) <br xmlns:java="http://xml.apache.org/xalan/java">-4차년도 : 2025.01.01 ~ 2025.05.31(5개월) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">*시험단계 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">-1차년도 : 2025.06.01 ~ 2025.12.31(7개월) <br xmlns:java="http://xml.apache.org/xalan/java">-2차년도 : 2026.01.01 ~ 2026.12.31(12개월) <br xmlns:java="http://xml.apache.org/xalan/java">-3차년도 : 2027.01.01 ~ 2027.05.31(5개월) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4)사업비 : 총 사업비 14,904,338,000원 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">(1)정부출연금 : 12,124,000,000원 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">-응용1차년도 : 3,000,000,000원(당사:1,594,000,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-응용2차년도 : 1,800,000,000원(당사:  956,000,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-응용3차년도 :   924,000,000원(당사:  449,000,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-응용4차년도 : 1,400,000,000원(당사:  744,000,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-시험1차년도 : 1,000,000,000원(당사:  500,000,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-시험2차년도 : 3,000,000,000원(당사:1,500,000,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-시험3차년도 : 1,000,000,000원(당사:  500,000,000원) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">(2)기업부담금 : 2,780,338,000원(당사:2,001,335,000원) <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  (당사현물:1,801,200,000원, 당사현금:200,135,000원) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">-응용1차년도 : 555,244,000원(당사: 367,910,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-응용2차년도 : 515,091,000원(당사: 402,424,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-응용3차년도 : 208,001,000원(당사: 149,667,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-응용4차년도 : 335,334,000원(당사: 248,000,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-시험1차년도 : 233,334,000원(당사: 166,667,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-시험2차년도 : 700,000,000원(당사: 500,000,000원) <br xmlns:java="http://xml.apache.org/xalan/java">-시험3차년도 : 233,334,000원(당사: 166,667,000원) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">(3)자기자본(연결) : 47,887,486,275원 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">(4)자기자본대비 정부출연금 비율 : 13.04% <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5)사업내용 및 개발목표 : <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">실내외 험지환경에서 매니퓰레이터(로봇팔)를 활용하여 지뢰와 같은 위험물 탐지, 지하시설 내 감시 및 진단 등의 다양한 임무를 수행할 수있는 다족 로봇의 통합운동제어 기술의 개발을 목표로 함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">6)기대효과 : <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">(1) 장탈착 가능한 다족 로봇용 매니퓰레이터(로봇팔)모듈 개발 <br xmlns:java="http://xml.apache.org/xalan/java">(2) 유연하고 컴플라이언트한 구동이 가능한 다족형 로봇플랫폼 개발 <br xmlns:java="http://xml.apache.org/xalan/java">(3) 로봇다리/팔의 전신제어를 통한 통합 매니퓰레이션 제어 기술 개발 <br xmlns:java="http://xml.apache.org/xalan/java">(4) 시각센서를 이용하여 로봇 환경을 재구성하고 원격으로 로봇을 통제 가능한 원격통제 제어기술 개발 <br xmlns:java="http://xml.apache.org/xalan/java">(5) 근거리 저지연 고화질 데이터 통신기술 개발 <br xmlns:java="http://xml.apache.org/xalan/java">(6) 민군겸용기술로 다양한 산업분야의 확장성이 가능함.</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 사실발생(확인)일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2022-06-28</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">4. 결정일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2022-06-28</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">5. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">-상기2. 주요내용의 4)자기자본은 2021년말 연결재무제표 기준 자기자본 금액 입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">-상기 사실발생(확인)일 및 결정일은 협약서수령 및 확인일 입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">-기업부담금 중 응용 1,2차년도의 경우, 코로나 19 대응을 위한 특별지침 제정으로 인하여 기업부담금 비율이 감소되어 일부 금액 정정되었습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">-기업부담금 중 응용 3차년도의 경우, 국가연구개발 예산 삭감으로 인한 정부출연금 축소로 기업부담금 또한 그 비율에 맞게 감소하였습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span class="xforms_input" style="width:475px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+   </div> 
+  </div>  
+ </body>
+</html>

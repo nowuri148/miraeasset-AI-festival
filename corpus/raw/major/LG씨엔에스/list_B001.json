@@ -1,0 +1,24 @@
+[
+ {
+  "corp_code": "00139834",
+  "corp_name": "LG씨엔에스",
+  "stock_code": "064400",
+  "corp_cls": "Y",
+  "report_nm": "[기재정정]주요사항보고서(유상증자결정)",
+  "rcept_no": "20250117000531",
+  "flr_nm": "LG씨엔에스",
+  "rcept_dt": "20250117",
+  "rm": ""
+ },
+ {
+  "corp_code": "00139834",
+  "corp_name": "LG씨엔에스",
+  "stock_code": "064400",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(유상증자결정)",
+  "rcept_no": "20241205000567",
+  "flr_nm": "LG씨엔에스",
+  "rcept_dt": "20241205",
+  "rm": "정"
+ }
+]

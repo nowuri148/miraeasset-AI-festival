@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11336">영업양수 결정</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20221018">6.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00164779">sk하이닉스</COMPANY-NAME>
+
+
+<BODY ATOCID="3">
+
+<LIBRARY>
+<CORRECTION>
+<TITLE ATOC="Y" AASSOCNOTE="CORRECTION" ENG="Report of Disclosure Revision" ATOCID="2">정 정 신 고 (보고)</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="RIGHT" WIDTH="591" HEIGHT="23">2025년 03월 17일</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="165"></COL>
+<COL WIDTH="435"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="156" VALIGN="MIDDLE" AUPDATECONT="N" ENG="1. Disclosure document to be revised:" HEIGHT="23">1. 정정대상 공시서류 :</TD>
+<TD WIDTH="426" VALIGN="MIDDLE" HEIGHT="23">주요사항보고서(영업양수결정)</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="260"></COL>
+<COL WIDTH="340"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="251" VALIGN="MIDDLE" AUPDATECONT="N" ENG="2. First submission date of disclosure document to be revised:" HEIGHT="23">2. 정정대상 공시서류의 최초제출일 :</TD>
+<TD WIDTH="331" VALIGN="MIDDLE" HEIGHT="23">2020년 10월 20일</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" VALIGN="MIDDLE" AUPDATECONT="N" ENG="3. Revised Information" HEIGHT="23">3. 정정사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="N" WIDTH="1047" BORDER="1">
+
+<COLGROUP WIDTH="1047">
+<COL WIDTH="254"></COL>
+<COL WIDTH="248"></COL>
+<COL WIDTH="239"></COL>
+<COL WIDTH="306"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TH WIDTH="245" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Items" HEIGHT="23">항  목</TH>
+<TH WIDTH="239" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Reason for revision" HEIGHT="23">정정사유</TH>
+<TH WIDTH="230" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Before revision" HEIGHT="23">정 정 전</TH>
+<TH WIDTH="297" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="After revision" HEIGHT="23">정 정 후</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD VALIGN="MIDDLE" WIDTH="245" HEIGHT="46">6. 양수예정일자</TD>
+<TD VALIGN="MIDDLE" WIDTH="239" HEIGHT="46">거래 진행 상황에 따른 거래종결일(2차 Closing) 일자 정정</TD>
+
+<TD VALIGN="MIDDLE" WIDTH="230" HEIGHT="46">
+
+<TABLE WIDTH="230" BORDER="1" ACLASS="NORMAL">
+
+<COLGROUP WIDTH="230">
+<COL WIDTH="93"></COL>
+<COL WIDTH="137"></COL>
+</COLGROUP>
+
+<TBODY ALIGN="LEFT" VALIGN="TOP">
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="84" VALIGN="MIDDLE" ALIGN="CENTER" HEIGHT="23">양수기준일</TD>
+<TD WIDTH="128" VALIGN="MIDDLE" ALIGN="CENTER" HEIGHT="23">2025년 03월 15일</TD>
+</TR>
+</TBODY>
+</TABLE>
+</TD>
+
+<TD VALIGN="MIDDLE" WIDTH="297" HEIGHT="46" ALIGN="CENTER">
+
+<TABLE WIDTH="230" ACLASS="NORMAL" AFIXTABLE="N" BORDER="1">
+
+<COLGROUP WIDTH="230">
+<COL WIDTH="93"></COL>
+<COL WIDTH="137"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="84" HEIGHT="23">양수기준일</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="128" HEIGHT="23">2025년 03월 31일</TD>
+</TR>
+</TBODY>
+</TABLE>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="245" HEIGHT="23">16. 향후 회사구조개편에 관한 계획</TD>
+<TD VALIGN="MIDDLE" WIDTH="239" HEIGHT="23">서식 변경에 따른 내용 추가</TD>
+<TD VALIGN="MIDDLE" WIDTH="230" HEIGHT="23" ALIGN="CENTER">-</TD>
+<TD VALIGN="MIDDLE" WIDTH="297" HEIGHT="23">-. 보고서 제출일 현재, 해당사항 없습니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</CORRECTION>
+</LIBRARY>
+
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="3">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">  2025년     03월     17일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">에스케이하이닉스 주식회사</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">곽 노 정</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">경기도 이천시 부발읍 경충대로 2091</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 031-5185-4114</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지)http://www.skhynix.com</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) 재무 담당</TD>
+<TD WIDTH="267" HEIGHT="23">(성  명) 김 우 현</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 031-8093-4801</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Business Acquisition" ATOCID="1">영업양수 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="TBL_ACB" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" WIDTH="613" BORDER="1">
+
+<COLGROUP WIDTH="613">
+<COL WIDTH="174"></COL>
+<COL WIDTH="155"></COL>
+<COL WIDTH="95"></COL>
+<COL WIDTH="95"></COL>
+<COL WIDTH="94"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD WIDTH="320" COLSPAN="2" AUPDATECONT="N" ENG="1. Business to be acquired" HEIGHT="69">1. 양수영업</TD>
+<TE WIDTH="275" COLSPAN="3" ACODE="AC_OBJ" ALIGN="CENTER" HEIGHT="69">Intel社의 Non-volatile Memory Solutions Group(이하 NSG)의 옵테인 사업부를 제외한 NAND 사업 부문 전체</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="2. Details of business to be acquired" WIDTH="320" HEIGHT="92">2. 양수영업 주요내용</TD>
+<TE COLSPAN="3" ACODE="AC_DTL" ALIGN="CENTER" WIDTH="275" HEIGHT="92"> Intel社의 SSD 사업 부문, NAND 단품 및 웨이퍼 비즈니스, 중국 Dalian 생산시설을 포함한 NAND 사업(옵테인 사업부 제외)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="3. Acquisition price (KRW)" WIDTH="320" HEIGHT="23">3. 양수가액(원)</TD>
+<TE COLSPAN="3" ALIGN="RIGHT" ACODE="AC_AMT" WIDTH="275" HEIGHT="23">10,310,400,000,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="- Whether the entire business is to be acquired" WIDTH="320" HEIGHT="23">   - 영업전부의 양수 여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="AC_ALL_YN" AUNITVALUE="N" WIDTH="275" HEIGHT="23" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD ROWSPAN="4" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- Financial details (KRW)" WIDTH="165" HEIGHT="205">   - 재무내용(원)</TD>
+<TD AUPDATECONT="N" WIDTH="146" HEIGHT="46"></TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Business to be acquired (A)" WIDTH="86" HEIGHT="46">양수대상영업부문(A)</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Total (B)" WIDTH="86" HEIGHT="46">당사전체(B)</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Exercise ratio (%) (A/B)" WIDTH="85" HEIGHT="46">비중(%)(A/B)</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Assets" WIDTH="146" HEIGHT="46">자산액</TD>
+<TE ALIGN="RIGHT" ACODE="AC_ASST" WIDTH="86" HEIGHT="46">7,835,904,000,000</TE>
+<TE ALIGN="RIGHT" ACODE="CRP_ASST" WIDTH="86" HEIGHT="46">64,789,494,368,860</TE>
+<TE ALIGN="RIGHT" ACODE="ASST_RT" WIDTH="85" HEIGHT="46">12.09</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Sales" WIDTH="146" HEIGHT="46">매출액</TD>
+<TE ALIGN="RIGHT" ACODE="AC_SALE" WIDTH="86" HEIGHT="46">4,652,281,600,000</TE>
+<TE ALIGN="RIGHT" ACODE="CRP_SALE" WIDTH="86" HEIGHT="46">26,990,732,675,981</TE>
+<TE ALIGN="RIGHT" ACODE="SALE_RT" WIDTH="85" HEIGHT="46">17.24</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Liabilities" WIDTH="146" HEIGHT="46">부채액</TD>
+<TE ALIGN="RIGHT" ACODE="AC_DBT" WIDTH="86" HEIGHT="46">4,790,899,200,000</TE>
+<TE ALIGN="RIGHT" ACODE="CRP_DBT" WIDTH="86" HEIGHT="46">16,846,298,942,122</TE>
+<TE ALIGN="RIGHT" ACODE="DBT_RT" WIDTH="85" HEIGHT="46">28.44</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="4. Purpose of acquisition" WIDTH="320" HEIGHT="23">4. 양수목적</TD>
+<TE COLSPAN="3" ACODE="AC_PPS" ALIGN="CENTER" WIDTH="275" HEIGHT="23">NAND 사업 경쟁력 강화</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="5. Impact of acquisition" WIDTH="320" HEIGHT="92">5. 양수영향</TD>
+<TE COLSPAN="3" ACODE="AC_EFT" ALIGN="CENTER" WIDTH="275" HEIGHT="92">1) SSD 솔루션 역량 강화 2) 고부가가치 제품 포트폴리오 구축 3) 메모리 반도체 사업군 간의 균형 확보 및 NAND Flash 경쟁력 강화</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" AUPDATECONT="N" ENG="6. Scheduled acquisition date" WIDTH="165" HEIGHT="53">6. 양수예정일자</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Contract conclusion date" WIDTH="146" HEIGHT="23">계약체결일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="AC_CTRT_DT" AUNITVALUE="20201020" WIDTH="275" HEIGHT="23">2020년 10월 20일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Acquisition base date" WIDTH="146" HEIGHT="23">양수기준일</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="AC_BSC_DT" AUNITVALUE="20250331" WIDTH="275" HEIGHT="23">2025년 03월 31일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="7. Counterparty" WIDTH="165" HEIGHT="166">7. 거래상대방</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Company name (Entity name)" WIDTH="146" HEIGHT="23">회사명(성명)</TD>
+<TE COLSPAN="3" ALIGN="CENTER" ACODE="OTH_NM" WIDTH="275" HEIGHT="23">Intel Corporation</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Issued capital (KRW)" WIDTH="146" HEIGHT="23">자본금(원)</TD>
+<TE COLSPAN="3" ALIGN="RIGHT" ACODE="OTH_CPT" WIDTH="275" HEIGHT="23">29,231,129,600,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Main business" WIDTH="146" HEIGHT="23">주요사업</TD>
+<TE COLSPAN="3" ACODE="OTH_MNB" ALIGN="CENTER" WIDTH="275" HEIGHT="23">반도체 설계 및 제조 업체</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Location of head office (Address)" WIDTH="146" HEIGHT="46">본점소재지(주소)</TD>
+<TE COLSPAN="3" ACODE="OTH_ADRS" ALIGN="CENTER" WIDTH="275" HEIGHT="46">2200 Mission College  Boulevard, Santa Clara, CA, 95054-1549, United States</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Relationship to company" WIDTH="146" HEIGHT="23">회사와의 관계</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="OTH_RLT" AUNITVALUE="-" WIDTH="275" HEIGHT="23" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="191">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="8. Details of payment" WIDTH="320" HEIGHT="184">8. 양수대금지급</TD>
+<TE COLSPAN="3" ACODE="PRC_PAY" ALIGN="CENTER" WIDTH="275" HEIGHT="184">1) 지급형태: 현금지급 (USD) 2) 지급시기: 2021년 말로 예상되는 1차 Closing 시점에 8조 192억원(USD 70억)이 지급될 예정이며, 잔액인 2조 2,912억원(USD 20억)은 2차 Closing 예상 시점인 2025년 3월에 지급될 예정임 3) 자금조달방법: 보유 현금, 차입 등을 통해 조달</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="5" VALIGN="MIDDLE" AUPDATECONT="N" ENG="9. Matters related to external valuation" WIDTH="165" HEIGHT="465">9. 외부평가에 관한 사항</TD>
+<TD AUPDATECONT="N" ENG="Whether external valuation was conducted" WIDTH="146" HEIGHT="23">외부평가 여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="EXV_YN" AUNITVALUE="Y" WIDTH="275" HEIGHT="23" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD AUPDATECONT="N" ENG="- Basis and reasons" WIDTH="146" HEIGHT="92"> - 근거 및 사유</TD>
+<TE COLSPAN="3" ACODE="EXV_BSS" ALIGN="CENTER" WIDTH="275" HEIGHT="92">자본시장과 금융투자업에 관한 법률 제165조의4 제1항 제2호 및  동법 시행령 제176조의6 제3항에 의한 적정성 평가</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="External evaluator’s name" WIDTH="146" HEIGHT="23">외부평가기관의 명칭</TD>
+<TE COLSPAN="3" ACODE="EXV_NM" ALIGN="CENTER" WIDTH="275" HEIGHT="23">안진회계법인</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="Period of external valuation" WIDTH="146" HEIGHT="23">외부평가 기간</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="EXV_PROD" AUNITVALUE="20200827-20201020" WIDTH="275" HEIGHT="23">2020년 08월 27일 ~ 2020년 10월 20일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="283">
+<TD AUPDATECONT="N" ENG="Opinion of external valuation" WIDTH="146" HEIGHT="276">외부평가 의견</TD>
+<TE COLSPAN="3" ACODE="EXV_OPN" ALIGN="CENTER" WIDTH="275" HEIGHT="276">당 법인이 현금흐름할인법(DCF법: Discounted Cash Flow Method)을 적용하여 평가한 양수대상 사업부의 가치는 평가기준일 현재 9조 5,944억원(USD 8,375백만)에서 11조 1,123억원(USD 9,700백만)의 범위에 있을 것으로 산출됩니다. 이에 따라 평가대상사업부의 평가기준일 시점 현재가치로 할인된 양수예정가액 10조 836억원(USD 8,802백만)은 동 평가 범위안에 있어 중요성의 관점에서 부적정하다고 판단할 근거가 발견되지 아니하였습니다. </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="10. Whether subject to a special resolution of the general shareholders’ meeting" WIDTH="320" HEIGHT="23">10. 주주총회 특별결의 여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="GM_SD_YN" AUNITVALUE="N" WIDTH="275" HEIGHT="23" ENG="Non-applicable">미해당</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="- Scheduled date of general shareholders’ meeting" WIDTH="320" HEIGHT="23">   - 주주총회 예정일자</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="GM_DUE_DT" AUNITVALUE="-" WIDTH="275" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="6" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- Matters related to the appraisal rights" WIDTH="165" HEIGHT="242">   - 주식매수청구권에     관한 사항</TD>
+<TD AUPDATECONT="N" ENG="Terms and conditions for exercise" WIDTH="146" HEIGHT="23">행사요건</TD>
+<TE COLSPAN="3" ACODE="CSPR_RQMT" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="275" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="Estimated purchase price" WIDTH="146" HEIGHT="23">매수예정가격</TD>
+<TE COLSPAN="3" ALIGN="CENTER" ACODE="CSPR_EPT_PRC" VALIGN="MIDDLE" WIDTH="275" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD AUPDATECONT="N" ENG="Exercise procedure, method, period, and location" WIDTH="146" HEIGHT="46">행사절차, 방법,기간, 장소</TD>
+<TE COLSPAN="3" ACODE="CSPR_DTL" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="275" HEIGHT="46">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD AUPDATECONT="N" ENG="Payment schedule and method" WIDTH="146" HEIGHT="46">지급예정시기,지급방법</TD>
+<TE COLSPAN="3" ACODE="CSPR_PAY_DTL" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="275" HEIGHT="46">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD AUPDATECONT="N" ENG="Restrictions on appraisal rights" WIDTH="146" HEIGHT="46">주식매수청구권 제한관련 내용</TD>
+<TE COLSPAN="3" ACODE="CSPR_LMT" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="275" HEIGHT="46">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ENG="Effects on contract" WIDTH="146" HEIGHT="23">계약에 미치는 효력</TD>
+<TE COLSPAN="3" ACODE="CSPR_EFT" ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="275" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="11. Board resolution date (decision date)" WIDTH="320" HEIGHT="23">11. 이사회결의일(결정일)</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="DRT_RSLT_DT" AUNITVALUE="20201020" VALIGN="MIDDLE" WIDTH="275" HEIGHT="23">2020년 10월 20일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- Attendance of outside directors" WIDTH="165" HEIGHT="53">   - 사외이사참석여부</TD>
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Present (No.)" WIDTH="146" HEIGHT="23">참석(명)</TD>
+<TE COLSPAN="3" ALIGN="RIGHT" ACODE="ODRT_ATD_CNT" WIDTH="275" HEIGHT="23">6</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" AUPDATECONT="N" ENG="Absent (No.)" WIDTH="146" HEIGHT="23">불참(명)</TD>
+<TE COLSPAN="3" ALIGN="RIGHT" ACODE="ODRT_NATD_CNT" WIDTH="275" HEIGHT="23">0</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="- Attendance of auditors (members of Audit Committee who are not outside directors)" WIDTH="320" HEIGHT="23">   - 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="ADT_ATD_YN" AUNITVALUE="-" WIDTH="275" HEIGHT="23" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="12. Whether deemed a backdoor listing" WIDTH="320" HEIGHT="23">12. 우회상장 해당 여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="BDL_YN" AUNITVALUE="N" WIDTH="275" HEIGHT="23" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="- Plans for capital increase by third-party allotment, etc. within the next 6 months" WIDTH="320" HEIGHT="23">   - 향후 6월이내 제3자배정 증자 등 계획</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="INC_PLAN_YN" AUNITVALUE="N" WIDTH="275" HEIGHT="23" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="13. Whether satisfying backdoor listing requirements by other corporations" WIDTH="320" HEIGHT="23">13. 타법인의 우회상장 요건 충족여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="BDL_RQST_YN" AUNITVALUE="N" WIDTH="275" HEIGHT="23" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="14. Whether subject to the Fair Trade Commission reporting requirements" WIDTH="320" HEIGHT="23">14. 공정거래위원회 신고대상 여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="FTC_RPT_YN" AUNITVALUE="Y" WIDTH="275" HEIGHT="23" ENG="Applicable">해당</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="15. Whether signed a put option contact, etc." WIDTH="320" HEIGHT="23">15. 풋옵션 등 계약 체결여부</TD>
+<TU COLSPAN="3" ALIGN="CENTER" AUNIT="PO_CTRT_YN" AUNITVALUE="N" WIDTH="275" HEIGHT="23" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" ENG="- Contract details" WIDTH="320" HEIGHT="23">   - 계약내용</TD>
+<TE COLSPAN="3" ACODE="PO_CTRT_DTL" ALIGN="CENTER" WIDTH="275" HEIGHT="23">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" AUPDATECONT="N" ENG="16. Plans for future corporate restructuring" HEIGHT="23">16. 향후 회사구조개편에 관한 계획</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>-. 보고서 제출일 현재, 해당사항 없습니다.</P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" AUPDATECONT="N" ENG="17. Other matters to be factored into investment decisions" HEIGHT="23">17. 기타 투자판단과 관련한 중요사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>
+<SPAN>1) 본 영업양수는 Intel社의 NSG 사업부 가운데 옵테인 사업부를 제외한 전체 NAND 사업 부문을 대상으로 하고 있으며, 해당 영업부문 및 자산은 두번에 나뉘어 이전될 예정입니다. 각국 정부의 규제 승인 완료 및 관련 대금 지급(이하 1차 Closing)에 따라 중국 Dalian 생산시설과 SSD 사업부문(SSD 관련 IP 및 인력 포함)이 당사가 100% 출자한 해외 자회사를 통해 2021년 12월 30일부로 최종 인수 완료되었습니다. 이후 2025년 3월(이하 2차 Closing)까지 그 외 NAND IP, R&D 및 생산시설 운영 인력 등 NAND 사업을 맡게 되는 Intel社의 자회사 지분이 신설 자회사를 통해 인수될 예정입니다.2) 1차 Closing 시점부터 2차 Closing 전까지는 별도 계약을 통해 Intel社의 자회사가 Dalian 생산시설을 운영하게 되며, 1차 Closing 시점에 인수되는 SSD 사업부가 웨이퍼를 공급 받을 예정입니다.3) 본 건 영업양수도와 관련하여 거래종결 이전에 취득하거나 이행해야 하는 모든 정부기관의 허가, 인가, 동의, 승인, 신고수리 등이 모두 적법하게 취득되거나 이행되지 않을 경우 영업양수도는 최종적으로 성사되지 않을 수 있습니다.4) 3. 양수가액과 양수대상 영업부분의 재무내용, 7. 거래상대방의 자본금, 8. 양수대금지급의 지급금액, 9. 외부평가의견의 가치평가액은 이사회결의일 전일(2020년 10월 19일) 기준 하나은행 최초 고시 매매기준율(1,145.60원/USD)을 USD 백만 단위 이상에 대하여 적용한 금액이며, 실제 지급금액은 상이할 수 있습니다.5) 3. 양수가액(원)의 양수대상 영업부문의 재무내용은 평가대상사업부로부터 제시받은 NSG 사업부의 옵테인 사업부를 제외한 전체 NAND 부문과 관련된 재무정보를 분리(Carve-out)하여 작성된 2019년 1월 1일~2019년 12월 31일 연결 재무제표 기준이며, 이는 금번 영업양수로 인하여 최종 인수하는 자산액, 부채액을 의미하지 않습니다. 당사 대비 비중에서 당사 실적의 경우 2019년 1월 1일~2019년 12월 31일 연결 재무제표 기준입니다.6) 6. 양수기준일은 2차 Closing에 대한 영업의 양수 및 양수대금 지급 절차가 완료되는 거래종결일을 의미하며, 이는 향후 양사간 거래 진행 상황에 따라 변동이 될 수 있습니다.7) 7. 거래상대방의 자본금은 2020년 6월 말 연결재무제표 기준입니다.8) 8. 1차 Closing에 필요한 인수자금 및 운영자금 제공을 위하여, 이사회(2021년 12월 22일)를 통해 당사가 설립한 완전자회사인 SK hynix Semiconductor (Dalian) Co., Ltd.에 대해 USD 4,229mn의 금전대여와 USD 2,600mn의 출자, SK hynix NAND Product Solutions Corp.에 USD 1,134mn의 출자를 결의한 바 있습니다. 이후 인수 및 대금지급의 주체인 SK hynix Semiconductor (Dalian) Co., Ltd.와 SK hynix NAND Product Solutions Corp.은 관련 법령상 규제에 따라 필요한 절차를 거쳐 1차 Closing을 완료하였습니다. 최종 본 거래 종결을 위한 2차 Closing 대금의 지급시기는 진행 과정에 따라 변동될 수 있습니다.</SPAN>
+<SPAN USERMARK="F-BT12 B"></SPAN>9) 상기 양수가액의 적정성에 관하여는 외부평가기관의 평가를 받았습니다. 기타 세부내역은 첨부된 외부평가기관의 평가의견서를 참조 바랍니다.10) 본 건 영업양수는 최종적으로 회사가 설립한 해외 자회사를 통해 이행될 예정으로 당사 입장에서 상법 제374조가 적용되는 영업양수에 해당하지 않아 주주총회는 개최하지 않습니다.11) 본 건 영업양수의 이행을 위해 필요한 행위와 세부사항 및 추후 변경이 필요한 사항에 대한 결정은 대표이사에게 위임하였습니다.12) 본 건 영업양수의 3. 양수가액 및 재무내용, 8. 양수대금지급의 양수대금 등은 최종 잔여 대금 지급의 완료를 통하여 본 영업양수가 종료되는 시점에 환율 변동을 반영하여 재공시할 예정입니다.
+</P>
+<P></P>
+<P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

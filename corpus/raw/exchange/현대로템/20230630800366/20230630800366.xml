@@ -1,0 +1,261 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>현대로템/단일판매ㆍ공급계약체결/(2023.06.30)단일판매ㆍ공급계약체결</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2023-06-30</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">단일판매ㆍ공급계약 체결</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2023-06-29</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">경영상 비밀유지 약정 해제</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">1.체결계약명</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">호주 QTMP 전동차 사업</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2.계약내역 / 계약금액(원)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">1,216,444,225,023</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2.계약내역 / 매출액대비(%)</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">38.5</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">3.계약상대</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">Downer EDI Rail</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">5.계약기간 / 시작일</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2023-06-29</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">5.계약기간 / 종료일</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2031-12-18</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">7. 계약(수주)일자</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2023-06-29</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">8. 공시유보 관련내용 / 유보사유</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">경영상 비밀유지</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">8. 공시유보 관련내용 / 유보기한</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">2023-07-06</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">-</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">9.기타투자판단과 관련한 주요사항</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">1) 상기 계약은 매출액 2.5% 이상에 해당하는 계약임 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">2) 상기 계약은 발주처와 당사간 경영상 비밀유지 약정에 따라 2023년 7월 6일까지 계약에 관한 상세내용 공개를 유보함 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">3) 상기 2항 매출액은 '22년도 연결재무제표 기준임 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">4) 공시유보기간 내에 정정공시를 통해 계약에 관한 상세내용을 공개할 예정임 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">5) 계약기간, 계약금액 등은 진행 과정상 변동 가능함</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">1) 상기2항 계약금액은 계약액 AUD 1,412,777,981.05 을 원화환산하여 기재하였음 <br java="http://xml.apache.org/xalan/java">   (적용환율: 6/29일자 KEB하나은행 최초고시 매매기준환율 1AUD = 861.03원) <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">2) 상기2항 매출액은 '22년 연결재무제표 기준임 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">3) 본 사업의 주체는 현대로템-Downer QTMP PTY LTD 조인트벤처이며, 법인별 지분율은 각각 85.6%, 14.4% 입니다. <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">4) 계약기간, 계약금액 등은 진행과정상 변동 가능함 <br java="http://xml.apache.org/xalan/java"> <br java="http://xml.apache.org/xalan/java">5) 본 공시는 ＇23.02.22 공시된 풍문 또는 보도에 대한 해명(미확정)에 대한 확정 공시입니다.</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">- 당사와 발주처간 경영상 비밀보호 유지 약정 해제에 따른 정정공시입니다.</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">기타 판매ㆍ공급계약</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">- 체결계약명</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">호주 QTMP 전동차 사업</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="153"> <span style="width:153px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">1,216,444,225,023</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">3,163,343,614,791</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;text-align:right;">38.5</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">Downer EDI Rail</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">호주</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">2023-06-29</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">2031-12-18</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="261"> <span style="width:261px;font-size:10pt;">7. 계약(수주)일자</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">2023-06-29</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">8. 공시유보 관련내용</span> </td> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="335"> <span class="xforms_input" style="width:335px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="596"> <span style="width:596px;font-size:10pt;">9. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">1) 상기2항 계약금액은 계약액 AUD 1,412,777,981.05 을 원화환산하여 기재하였음 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?-->  (적용환율: 6/29일자 KEB하나은행 최초고시 매매기준환율 1AUD = 861.03원) <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 상기2항 매출액은 '22년 연결재무제표 기준임 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 본 사업의 주체는 현대로템-Downer QTMP PTY LTD 조인트벤처이며, 법인별 지분율은 각각 85.6%, 14.4% 입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4) 계약기간, 계약금액 등은 진행과정상 변동 가능함 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5) 본 공시는 ＇23.02.22 공시된 풍문 또는 보도에 대한 해명(미확정)에 대한 확정 공시입니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="153"> <span style="width:153px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="3" width="443"> <span style="width:443px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230629000753&amp;rcpno=20230629000753&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-06-29 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230620000235&amp;rcpno=20230620000235&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-06-20 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230321000495&amp;rcpno=20230321000495&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-03-21 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20230222000878&amp;rcpno=20230222000878&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2023-02-22 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

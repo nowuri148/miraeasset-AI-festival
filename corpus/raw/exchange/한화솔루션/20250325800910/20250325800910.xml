@@ -1,0 +1,128 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>한화솔루션/투자판단 관련 주요경영사항/(2025.03.25)투자판단 관련 주요경영사항</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:596px;font-weight:bold;text-align:center;">투자판단 관련 주요경영사항</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD2_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">1. 제목</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">자금보충 합의 체결</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">2. 주요내용</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">○ 개요 <br xmlns:java="http://xml.apache.org/xalan/java">당사는 해외 종속회사인 Hanwha Q CELLS Americas Holdings Corp.이 차주로써 조달하는 신종자본대출 (이하 "대출약정") (총 대출약정금액 금 사천오백억원 상당 미달러화) 관련, <br xmlns:java="http://xml.apache.org/xalan/java">대주인 키스온제오차 주식회사, 키스온제육차 주식회사, 필릭스대신큐아 주식회사 (이하 총칭하여 "SPC")와 자금보충에 관한 합의서를 체결하기로 결정 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">○ 세부내역 <br xmlns:java="http://xml.apache.org/xalan/java">Hanwha Q CELLS Americas Holdings Corp.는 신종자본대출에 대한 원리금을 각 SPC에 지급하고, 각 SPC는 Hanwha Q CELLS Americas Holdings Corp.로부터 지급받은 원리금을 재원으로 각 투자자들과 체결하는 투자계약 또는 대출계약상 원리금을 상환하는 구조임 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">당사는 자금보충에 관한 합의서에 따라 차주인 Hanwha Q CELLS Americas Holdings Corp.가 대출약정상 지급기일이 도래한 금원을 지급기일까지 대주에게 지급을 하지 않는 경우, 대주의 자금보충 요청에 따라 각 SPC에 미지급 금액 상당액을 대여하기로 함 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 자금보충금액 : 대출약정과 관련하여 차주가 지급의무를 부담하는 미지급 금액 상당액 <br xmlns:java="http://xml.apache.org/xalan/java">- 자금보충사유 : 대출약정상 지급기일이 도래한 금원에 대하여 차주가 지급기일까지 지급하지 않은 경우 <br xmlns:java="http://xml.apache.org/xalan/java">- 자금보충기간 : 대출약정에 따른 대출 실행일부터 대출만기일 및 조기상환일 중 먼저 도래하는 날까지 <br xmlns:java="http://xml.apache.org/xalan/java">- 자금보충에 관한 합의서 체결 예정일 : 2025년 3월 28일 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">자금보충사유 발생으로 당사가 대주에게 대여를 실행하게 될 경우, 당사는 대주로부터 대여금 상환 전까지 대주가 통지한 이자율을 적용한 대여이자를 수취할 예정 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 자기자본 : 약 9조 2,802억원 (한화솔루션 2023년말 연결재무제표 기준) <br xmlns:java="http://xml.apache.org/xalan/java">- 자기자본대비 : 4.85% (대출약정금액 금 사천오백억원 기준)</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">3. 이사회결의일(결정일) 또는 사실확인일</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">2025-03-25</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="121"> <span style="width:121px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">5</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="94"> <span style="width:94px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;text-align:right;">0</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="215"> <span style="width:215px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td width="381"> <span class="xforms_input" style="width:381px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span style="width:596px;font-size:10pt;">4. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="596"> <span class="xforms_input" style="width:596px;font-size:10pt;">- 상기 2.주요내용의 자금보충에 관한 합의서 체결 예정일은 진행 과정에서 변경될 수 있습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="121"> <span style="width:121px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="475"> <span class="xforms_input" style="width:475px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+   </div> 
+  </div>  
+ </body>
+</html>

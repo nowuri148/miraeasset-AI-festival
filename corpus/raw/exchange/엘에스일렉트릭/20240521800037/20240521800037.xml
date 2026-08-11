@@ -1,0 +1,154 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>엘에스일렉트릭/신규시설투자등(자율공시)/(2024.05.21)신규시설투자등(자율공시)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">신규 시설투자 등(자율공시)</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD13_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">1. 투자구분</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">시설증설</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">- 투자대상</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">초고압 변압기 생산을 위한 시설 증설 투자</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="151"> <span style="width:151px;font-size:10pt;">2. 투자내역</span> </td> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">투자금액(원)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">80,300,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">자기자본(원)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">1,724,042,303,163</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">자기자본대비(%)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">4.7</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">3. 투자목적</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">수주 증가 물량 대응을 위한 초고압 변압기 자작 Capa 확보</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="151"> <span style="width:151px;font-size:10pt;">4. 투자기간</span> </td> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">2024-06-01</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">2025-09-30</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">5. 이사회결의일(결정일)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">2024-05-21</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="151"> <span style="width:151px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="123"> <span style="width:123px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="274"> <span style="width:274px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" width="274"> <span style="width:274px;font-size:10pt;">6. 기타 투자판단과 관련한 중요사항</span> </td> 
+       <td colspan="2" width="326"> <span class="xforms_input" style="width:326px;font-size:10pt;">1. 상기 투자금액 및 투자기간은 향후 추진 과정에서 변동될 수 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2. 상기 자기자본은 2023년도 연결재무제표(K-IFRS)기준 입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3. 상기 이사회결의일은 내부결정일입니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="98"> <span style="width:98px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td width="228"> <span class="xforms_input" style="width:228px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

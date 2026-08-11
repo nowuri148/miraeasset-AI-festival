@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11348">주요사항보고서(자본으로인정되는채무증권발행결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20220310">1.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="01160363">(주)에코프로비엠</COMPANY-NAME>
+
+
+<BODY ATOCID="3">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ATOCID="3">주 요 사 항 보 고 서</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="138"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="279"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="312" HEIGHT="23">금융위원회 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="270" HEIGHT="23">  2024년   10월   28일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="129" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="453" HEIGHT="23">(주)에코프로비엠</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="129" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="453" HEIGHT="23">주재환, 최문호</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="129" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="453" HEIGHT="23">충청북도 청주시 청원구 오창읍 2산단로 100(송대리 329)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="129" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="453" HEIGHT="23">(전  화) 043-240-7700</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="129" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="453" HEIGHT="23">(홈페이지) http://www.ecoprobm.co.kr</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="129" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="453" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="129" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) 경영지원본부장</TD>
+<TD WIDTH="270" HEIGHT="23">(성  명) 김장우</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="129" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="453" HEIGHT="23">(전  화) 043-240-7700</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ATOCID="1">자본으로 인정되는 채무증권 발행결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="CB_PUB" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="1115" BORDER="1">
+
+<COLGROUP WIDTH="1115">
+<COL WIDTH="189"></COL>
+<COL WIDTH="145"></COL>
+<COL WIDTH="80"></COL>
+<COL WIDTH="75"></COL>
+<COL WIDTH="69"></COL>
+<COL WIDTH="91"></COL>
+<COL WIDTH="130"></COL>
+<COL WIDTH="336"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">1. 사채의 종류</TD>
+<TD ALIGN="CENTER" WIDTH="66" HEIGHT="23" AUPDATECONT="N">회차</TD>
+<TE ALIGN="CENTER" WIDTH="60" HEIGHT="23" ACODE="SEQ_NO">7-2</TE>
+<TD ALIGN="CENTER" WIDTH="82" HEIGHT="23" AUPDATECONT="N">종류</TD>
+<TE COLSPAN="2" ALIGN="CENTER" WIDTH="457" HEIGHT="23" ACODE="PL_KND">국내 무기명식 이권부 무보증사채(채권형 신종자본증권)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">2. 사채의 권면(전자등록)총액 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="DNM_SUM">92,000,000,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="4" VALIGN="MIDDLE" WIDTH="180" HEIGHT="113" AUPDATECONT="N">2-1. 해외발행</TD>
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">권면(전자등록)총액(통화단위)</TD>
+<TE COLSPAN="4" ALIGN="CENTER" WIDTH="356" HEIGHT="23" ACODE="FRN_AMT" VALIGN="MIDDLE">-</TE>
+<TU ALIGN="CENTER" WIDTH="327" HEIGHT="23" AUNIT="AMT_UNIT" AUNITVALUE="-" VALIGN="MIDDLE">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">기준환율등</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="EXC_RT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">발행지역</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="ISSU_AREA">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">해외상장시 시장의 명칭</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="FRN_NM">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="6" VALIGN="MIDDLE" WIDTH="180" HEIGHT="173" AUPDATECONT="N">3. 자금조달의    목적</TD>
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">시설자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="FND_USE1">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">영업양수자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="FND_USE_SQ">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="216" HEIGHT="23" AUPDATECONT="N">운영자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="FND_USE2">92,000,000,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="216" HEIGHT="23" AUPDATECONT="N">채무상환자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="FND_USE_RD">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="216" HEIGHT="23" AUPDATECONT="N">타법인 증권 취득자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="ANC_ACQ_PRC">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">기타 자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="FND_USE3">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="180" HEIGHT="53" AUPDATECONT="N">4. 사채의 이율</TD>
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">표면이자율 (%)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="PRFT_RATE">6.638</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">만기이자율 (%)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="692" HEIGHT="23" ACODE="LST_RTN_RT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">5. 사채만기일(기간)</TD>
+<TU ALIGN="CENTER" WIDTH="135" HEIGHT="23" AUNIT="EXP_DT" AUNITVALUE="20541029" COLSPAN="2">2054년 10월 29일</TU>
+<TE COLSPAN="3" ALIGN="CENTER" WIDTH="548" HEIGHT="23" ACODE="EXP_DT_DUR" VALIGN="MIDDLE">30년</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD WIDTH="180" HEIGHT="1930" AUPDATECONT="N" ROWSPAN="4" VALIGN="MIDDLE">6. 이자지급방법    및 조건</TD>
+<TD COLSPAN="2" WIDTH="216" HEIGHT="92" AUPDATECONT="N" VALIGN="MIDDLE">이자지급방법</TD>
+<TE COLSPAN="5" WIDTH="692" HEIGHT="92" ACODE="INT_GV_MTH" VALIGN="MIDDLE">이자는 본 사채의 발행일로부터 만기일 전일까지 본 사채의 인수계약서 발행조건 제15항에서 정한 이자율에 따라 발생한다. 이자는 매 3개월마다 연 이자율의 1/4씩 분할하여 후급하며, 이자지급기일은 매년 01월 29일, 04월 29일, 07월 29일, 10월 29일(각각 “이자지급기일”)이다. 다만, 이자지급기일이 영업일이 아닌 경우에는 그 다음 영업일에 지급하되, 이자지급기일 이후의 이자는 계산하지 아니한다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="628">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="621" AUPDATECONT="N" VALIGN="MIDDLE">이자지급 정지(유예) 가능 여부및 조건</TD>
+
+<TE COLSPAN="5" WIDTH="692" HEIGHT="621" ACODE="INT_STP" VALIGN="MIDDLE">
+<P USERMARK=" A-J">(1) 선택적 연기: 발행회사는 그 재량으로, 예정된 이자지급일로부터 10 영업일 전까지 보유자, 한국예탁결제원 및 지급대리인에게 통지하여 이자지급기일에 예정된 이자 지급을 차회 이자지급기일까지 연기할 수 있다. </P>
+<P USERMARK=" A-J">(2) 지급의무의 부존재: 본 항 제(1)호에 따라 유효하게 이자(미지급이자 및 추가 이자 포함)의 지급을 연기하기로 선택한 경우, 발행회사는 어느 이자지급기일에 해당 이자를 지급할 의무가 없으며, 발행회사가 이자를 지급하지 아니한다고 하더라도 이는 본 사채에 관하여 발행회사의 채무불이행을 구성하지 않는다. </P>
+<P USERMARK=" A-J">(3) 누적적 연기: 본 항 제(1)호에 따라 지급이 연기된 이자는 “미지급이자”가 된다. 발행회사는 그 전적인 재량으로 미지급이자 지급을 추가로 연기할 수 있다. 발행회사는 본 조항에 따라 이자와 미지급이자를 연기하는 횟수에 대해서는 어떠한 제한도 받지 않는다. 미지급이자 각 금액은 마치 본 사채의 원금을 구성하는 것과 같이 이자율에 따라 이자가 발생하고 미지급이자에 대한 이러한 이자금액(이하 “추가 이자”)은 본 조에 정한 바에 따라 기한이 도래하며, 추가 이자는 미지급이자에 본 사채의 이자율을 3개월 복리로 적용하여 산정된다. 어느 이자지급기일까지 발생한 추가 이자는 그 이후 발생하는 추가 이자 산정 목적상 해당 이자지급기일까지 지급되지 않은 잔여 미지급이자에 가산하여 이를 미지급이자로 취급한다.</P>
+<P USERMARK=" A-J">(4) 이자 지급 연기에 따른 제약: 만일 이자지급일에 동 일자에 예정된 모든 이자의 지급이 본 항 제(1)호에 따른 연기를 이유로 완전히 이루어지지 않는 경우 발행회사는 모든 미지급이자 및 추가 이자를 완전히 지급하기 전에는 그리고 완전히 지급하지 않는 한, (x) 발행회사의 보통주식에 대한 배당결의 또는, (y) 후순위채무 및 동순위채무에 관하여 배당금, 배분금 또는 기타 금액을 지급하겠다는 선언 또는 결의 또는, (z) 유상으로 이루어지는 후순위채무 및 동순위채무의 상환, 감액, 소각, 재매입 또는 취득(단, 임직원이나 컨설턴트를 위한 근로자복지제도나 유사한 조치와 관련된 경우는 그러하지 아니하며, 동순위채무의 경우 본 사채와 동일한 비율로 상환 등을 하는 경우는 제외한다)을 하여서는 아니된다.</P>
+<P USERMARK=" A-J">(5) 미지급이자 (관련 추가 이자 포함)의 완제: 발행회사는 (x) 언제라도 한국예탁결제원과 원리금지급대행기관에게 통지서에 기재된 지급기일로부터 10 영업일 전까지 통지한 후 미지급이자 및 추가 이자(전부 또는 일부)를 지급할 수 있으며, (y) (i) 본 사채의 발행조건에 따른 본 사채의 중도상환일 및 (ii) 제17항에 따라 지급기일이 도래한 날 중 더 먼저 도래하는 날에는 반드시 미지급이자 및 추가 이자를(일부가 아닌 전부) 상환하여야 한다. 단, 미지급이자 및 추가이자는 발행회사가 직접 지급하기로 한다.</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="122">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="115" AUPDATECONT="N" VALIGN="MIDDLE">유예이자 누적 여부</TD>
+<TE COLSPAN="5" WIDTH="692" HEIGHT="115" ACODE="INT_STP_ACM" VALIGN="MIDDLE">미지급이자 (관련 추가 이자 포함)의 완제: 발행회사는 (x) 언제라도 한국예탁결제원과 원리금지급대행기관에게 통지서에 기재된 지급기일로부터 10 영업일 전까지 통지한 후 미지급이자 및 추가 이자(전부 또는 일부)를 지급할 수 있으며, (y) (i) 본 사채의 발행조건에 따른 본 사채의 중도상환일 및 (ii) 제17항에 따라 지급기일이 도래한 날 중 더 먼저 도래하는 날에는 반드시 미지급이자 및 추가 이자를(일부가 아닌 전부) 상환하여야 한다. 단, 미지급이자 및 추가이자는 발행회사가 직접 지급하기로 한다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="1088">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="1081" AUPDATECONT="N" VALIGN="MIDDLE">금리상향조정(Step up)조건 등이자율 조정 조건</TD>
+
+<TE COLSPAN="5" WIDTH="692" HEIGHT="1081" ACODE="INT_ST_UP" VALIGN="MIDDLE">
+<P USERMARK=" A-J">(1) 본 사채 발행일(당일 포함)로부터 2027년 10월 29일(이하 "최초재설정일")(당일 불포함)까지의 기간에 적용되는 이자율은 연 [6.638]%로 한다(이자의 계산단위는 발행금액 기준이며 원단위 미만은 절사한다).</P>
+<P USERMARK=" A-J">(2) 최초재설정일(당일 포함)로부터 2028년 10월 29일("2차재설정일")(당일 불포함)까지의 기간은 (x) 최초재설정일의 2영업일 전에 민간채권평가회사 4사(한국자산평가, KIS자산평가, 나이스피앤아이, 에프앤자산평가)에서 최종으로 제공하는 발행회사 3년 만기 무보증 회사채 개별 민평수익률의 산술평균(소수점 넷째 자리 이하 절사, 이하 "개별민평금리"), (y) 연 [6.638]%에서 발행일 2영업일전의 개별민평금리를 차감한 금리([2.600%], 이하 "가산금리"), (z) 연 2.000%("Step-up 마진")를 합한 이자율로 한다. 단, 민간채권평가회사 4사 중 최초재설정일의 2영업일 전 기준으로 한 발행회사 3년 만기 무보증 회사채 개별 민평수익률을 제공하지 않는 회사가 있을 경우, 당해 회사를 제외한 나머지 회사의 산술평균(소수점 넷째 자리 이하 절사)을 개별민평금리로 한다.</P>
+<P USERMARK=" A-J">(3) 또한 이자율은 2차재설정일부터 매년 재산정하며, 특정 금리재설정일에 재산정된 이자율은 해당 금리재설정일(당일 포함)부터 다음 금리재설정일(당일 불포함)까지의 기간동안 1년씩 적용된다. "재설정일"이란 "2차재설정일"로부터 매 1년째되는 날과 그 이후 매 1년마다 그날에 해당하는 날을 의미한다. 2차재설정일(당일 포함)부터 바로 다음 재설정일(당일 불포함)에 재산정되는 이자율은 (x) 각 기간의 초일의 2영업일 전에 발표하는 개별민평금리, (y) 가산금리, (z) Step-up 마진, (u) 연 1.000%(이하 "추가 마진")을 합한 이자율로 한다.각 재설정일(당일 포함)로부터 그 다음 재설정일(당일 불포함)까지의 기간에 적용되는 이자율은 (x) 각 기간의 초일의 2영업일 전에 발표하는 개별민평금리, (y) 가산금리, (z) Step-up 마진, (u) 추가 마진을 합한 이후 (u) 추가 마진과 (v) 2차재설정일부터 해당 금리재설정일까지 본 사채의 이자율이 재산정된 횟수(이하 "누적 재산정횟수")를 곱한 이자율을 합한 이자율로 한다. 단, 민간채권평가회사 4사 중 각 기간의 초일의 2영업일 전 기준으로 한 발행회사 3년 만기 무보증 회사채 개별 민평수익률을 제공하지 않는 회사가 있을 경우, 당해 회사를 제외한 나머지 회사의 산술평균(소수점 넷째 자리 이하 절사)을 개별민평금리로 한다.</P>
+<P USERMARK=" A-J">(4) 제13항 제(3)호 나.목에 따른 대주주변경사유가 발생하였으나 발행회사가 본 사채를 중도상환하지 않을 경우 본 사채의 이자율은 다음과 같다.</P>
+<P USERMARK=" A-J">(A) 제13항 제(3)호에 따른 중도상환일(대주주변경사유가 발생한 이후 최초로 도래하는 이자지급일)이 최초재설정일(당일 불포함) 전일 경우 중도상환일(당일 포함)로부터 최초재설정일(당일 불포함)까지의 기간에 적용되는 이자율은 연 [6.638]%에 연 1.000%(이하 “최대주주 변경으로 인한 이자율”이라 한다)을 가산한 이자율로 한다. 이후 최초재설정일(당일 포함)부터 제15항 제(2)호 및 제15항 제(3)호에 따라 매년 조정된 이자율에 대해 최대주주 변경으로 인한 이자율을 가산한 이자율을 최종 이자율로 한다.</P>
+<P USERMARK=" A-J">(B) 제13항 제(3)호에 따른 중도상환일이 최초재설정일(당일 포함)부터 2차재설정일(당일 불포함) 전일 경우 중도상환일(당일 포함)로부터 2차재설정일(당일 불포함)까지의 기간에 적용되는 이자율은 제15항 제(2)호에 따라 조정된 이자율에 최대주주 변경으로 인한 이자율을 가산한 이자율로 한다. 이후 2차재설정일(당일 포함)부터 제15항 제(3)호에 따라 매년 조정된 이자율에 대해 최대주주 변경으로 인한 이자율을 가산한 이자율을 최종 이자율로 한다.</P>
+<P USERMARK=" A-J">(C) 제13항 제(3)호에 따른 중도상환일이 2차재설정일(당일 포함) 이후인 경우 중도상환일(당일 포함)로부터 최초로 도래하는 재설정일(당일 불포함)까지의 기간에 적용되는 이자율은 제15항 제(3)호에 따라 조정된 이자율에 최대주주 변경으로 인한 이자율을 가산한 이자율로 한다. 이후 각 재설정일(당일 포함)부터 제15항 제(3)호에 따라 매년 조정된 이자율에 대해 최대주주 변경으로 인한 이자율을 가산한 이자율을 최종 이자율로 한다.</P>
+<P USERMARK=" A-J">(5) 본 항에 따른 이자율을 산정함에 있어 개별민평금리를 산정할 수 없는 경우, 민간채권평가회사 4사(한국자산평가, KIS자산평가, 나이스피앤아이, 에프앤자산평가)에서 제공하는 수익률에 근거하여 발행회사가 속한 등급의 3년 만기 무보증 회사채 등급 민평수익률의 산술평균을 대신하여 적용한다.</P>
+<P USERMARK=" A-J">(6) 본 항에 따라 이자율이 변경되는 경우, 발행회사는 변경된 이자율이 확정되는 즉시 한국예탁결제원 및 원리금지급대행기관에 이를 통지하여야 한다.</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="168">
+<TD WIDTH="180" HEIGHT="796" AUPDATECONT="N" ROWSPAN="3" VALIGN="MIDDLE">7. 원금상환방법</TD>
+<TD COLSPAN="2" WIDTH="216" HEIGHT="161" AUPDATECONT="N" VALIGN="MIDDLE">만기상환방법</TD>
+
+<TE COLSPAN="5" WIDTH="692" HEIGHT="161" ACODE="RTN_MTH" VALIGN="MIDDLE">본 발행조건에 따라 사전에 상환되지 않는 한, 본 사채는 만기일까지 발생하였으나 지급되지 아니한 이자(미지급이자 및 추가이자 포함)와 원금에 상당하는 금액으로 2054년 10월 29일(이하 “
+<SPAN USERMARK=" U">만기일</SPAN>
+<SPAN>”)에 상환된다. 만기일이 영업일이 아닌 경우에는 그 다음 영업일에 상환하되 만기일 이후의 이자는 계산하지 아니한다. 단, 발행회사는 그 선택에 따라 만기일 30영업일 전까지 한국예탁결제원 및 원리금지급대행기관에 서면으로 통지한 후 본 발행조건과 동일한 조건으로 만기를 연장할 수 있고, 만기를 연장하는 횟수에 대하여 어떠한 제한도 받지 않는다. 본 사채의 만기가 연장되고 있는 동안 사채권자는 본 사채를 자동채권으로 하여 발행회사의 사채권자에 대한 어떠한 채권과도 상계할 수 없다.</SPAN>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="536">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="529" AUPDATECONT="N" VALIGN="MIDDLE">조기상환 가능시점ㆍ조건및 방법</TD>
+
+<TE COLSPAN="5" WIDTH="692" HEIGHT="529" ACODE="ERL_RTN_MTH" VALIGN="MIDDLE">
+<P USERMARK=" A-J">(1) 사채권자는 어떠한 경우에도 본 사채의 중도상환을 요구할 수 없다.</P>
+
+<P USERMARK="F-BT12 A-J">
+<SPAN USERMARK="F-GL11">(2) 발행회사의 선택에 의한 본 사채의 중도상환: 발행회사는 그 선택에 의하여 본 사채의 발행일로부터 3년째 되는 날(이하 “</SPAN>
+<SPAN USERMARK="F-GL11 U">최초콜행사일</SPAN>
+<SPAN USERMARK="F-GL11">”) 또는 그 이후의 각 이자지급기일(이하, 최초콜행사일과 총칭하여 “</SPAN>
+<SPAN USERMARK="F-GL11 U">중도상환일</SPAN>
+<SPAN USERMARK="F-GL11">”)에 본 사채의 전부를 상환할 수 있다. 발행회사는 이 경우 본 사채의 원금과 해당 중도상환일까지 발생하였으나 지급되지 아니한 이자(미지급이자 및 추가이자 포함)를 합한 금액을 상환하여야 한다. 중도상환일이 영업일이 아닌 경우에는 그 다음 영업일에 중도상환하되, 중도상환일 이후의 이자는 계산하지 아니한다.</SPAN>
+</P>
+<P USERMARK=" A-J">(3)  다음 각 목의 어느 한 상황이 발생할 경우, 발행회사는 그 선택에 의하여 본 사채의 전부를 매 이자지급일에 중도상환할 수 있다. 발행회사는 이 경우 본 사채의 원금과 해당 상환일까지 발생하였으나 지급되지 아니한 이자(미지급이자 및 추가이자 포함)를 상환하여야 한다. 중도상환일이 영업일이 아닌 경우에는 그 다음 영업일에 중도상환하되, 중도상환일 이후의 이자는 계산하지 아니한다.</P>
+<P USERMARK=" A-J">가. 발행회사가 국제적으로 공인된 독립적 회계 감사기관(발행회사의 외부감사인도 가능함)으로부터 본 사채의 전부 또는 일부가 K-IFRS 또는 재무제표를 보고하는 곳에서 채택하고 있는 회계기준에 의하여 자본으로 간주되지 않는다는 의견을 받을 경우</P>
+<P USERMARK=" A-J">나. 대주주변경사유가 발생하는 경우(제1조 정의에 따름)</P>
+<P USERMARK=" A-J">다. 국내 신용평가회사 3개사(한국신용평가, 한국기업평가, NICE신용평가)에 대한 신종자본증권 평가방법의 변경 또는 수정의 결과, 본 사채의 전부 또는 일부가 상기 3개사 중 어느 한곳으로부터 자본인정을 전혀 받지 못하는 경우(자본인정비율 "0%")</P>
+<P USERMARK=" A-J">라. 세금 관련법령의 개정 또는 법해석의 변경, 세금 관련 정책의 변경 등으로 인하여 발행회사가 지급하는 본 사채의 이자에 대한 법인세 손금을 인정받지 못하게 되었거나 인정받지 못하게 될 것임이 결정된 경우</P>
+<P USERMARK=" A-J">(4) 공고 및 통지: 발행회사는 본 항에 따른 중도상환을 하고자 할 경우 해당 상환일의 30 영업일 전까지 한국예탁결제원 및 원리금지급대행기관에 서면으로 통지하여야 한다.</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="92" AUPDATECONT="N" VALIGN="MIDDLE">만기연장 조건 및 방법</TD>
+<TE COLSPAN="5" WIDTH="692" HEIGHT="92" ACODE="EXP_RNW_MTH" VALIGN="MIDDLE">발행회사는 그 선택에 따라 만기일 30영업일 전까지 한국예탁결제원 및 원리금지급대행기관에 서면으로 통지한 후 본 발행조건과 동일한 조건으로 만기를 연장할 수 있고, 만기를 연장하는 횟수에 대하여 어떠한 제한도 받지 않는다. 본 사채의 만기가 연장되고 있는 동안 사채권자는 본 사채를 자동채권으로 하여 발행회사의 사채권자에 대한 어떠한 채권과도 상계할 수 없다</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">8. 사채발행방법</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="692" HEIGHT="23" AUNIT="ISSU_MTH" AUNITVALUE="2">사모</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="3" VALIGN="MIDDLE" WIDTH="180" HEIGHT="83" AUPDATECONT="N">9. 채무재조정에    관한 사항</TD>
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">채무재조정의 사유</TD>
+<TE COLSPAN="5" WIDTH="692" HEIGHT="23" ACODE="DP_RSCH_RSN" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">채무재조정의 범위</TD>
+<TE COLSPAN="5" WIDTH="692" HEIGHT="23" ACODE="DP_RSCH_SCP" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="216" HEIGHT="23" AUPDATECONT="N">채무재조정의 범위 결정방법</TD>
+<TE COLSPAN="5" WIDTH="692" HEIGHT="23" ACODE="DP_RSCH_MTH" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="582">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="575" AUPDATECONT="N">9-1. 옵션에 관한 사항</TD>
+
+<TE COLSPAN="5" WIDTH="692" HEIGHT="575" ACODE="OPT_FCT">
+<P>(1) 사채권자는 어떠한 경우에도 본 사채의 중도상환을 요구할 수 없다.</P>
+
+<P>
+<SPAN>(2) 발행회사의 선택에 의한 본 사채의 중도상환 : 발행회사는 그 선택에 의하여 본 사채의 발행일로부터 3년째 되는 날(이하 “</SPAN>
+<SPAN USERMARK=" U">최초콜행사일</SPAN>
+<SPAN>”) 또는 그 이후의 각 이자지급기일(이하, 최초콜행사일과 총칭하여 “</SPAN>
+<SPAN USERMARK=" U">중도상환일</SPAN>
+<SPAN>”)에 본 사채의 전부를 상환할 수 있다. 발행회사는 이 경우 본 사채의 원금과 해당 중도상환일까지 발생하였으나 지급되지 아니한 이자(미지급이자 및 추가이자 포함)를 합한 금액을 상환하여야 한다. 중도상환일이 영업일이 아닌 경우에는 그 다음 영업일에 중도상환하되, 중도상환일 이후의 이자는 계산하지 아니한다.</SPAN>
+</P>
+<P>(3) 다음 각 목의 어느 한 상황이 발생할 경우, 발행회사는 그 선택에 의하여 본 사채의 전부를 매 이자지급일에 중도상환할 수 있다. 발행회사는 이 경우 본 사채의 원금과 해당 상환일까지 발생하였으나 지급되지 아니한 이자(미지급이자 및 추가이자 포함)를 상환하여야 한다. 중도상환일이 영업일이 아닌 경우에는 그 다음 영업일에 중도상환하되, 중도상환일 이후의 이자는 계산하지 아니한다.</P>
+<P>가. 발행회사가 국제적으로 공인된 독립적 회계 감사기관(발행회사의 외부감사인도 가능함)으로부터 본 사채의 전부 또는 일부가 K-IFRS 또는 재무제표를 보고하는 곳에서 채택하고 있는 회계기준에 의하여 자본으로 간주되지 않는다는 의견을 받을 경우</P>
+<P>나. 대주주변경사유가 발생하는 경우(“대주주변경사유“란 에코프로 그룹 계열회사(2024년 5월 14일 기준 독점규제 및 공정거래에 관한 법률 제31조 제1항 전단에 따라 공정거래위원회가 지정한 "에코프로" 기업집단에 소속된 회사를 의미한다)가 발행회사의 최대주주의 지위를 상실하는 상황을 의미한다.)</P>
+<P>다. 국내 신용평가회사 3개사(한국신용평가, 한국기업평가, NICE신용평가)에 대한 신종자본증권 평가방법의 변경 또는 수정의 결과, 본 사채의 전부 또는 일부가 상기 3개사 중 어느 한곳으로부터 자본인정을 전혀 받지 못하는 경우(자본인정비율 "0%")</P>
+<P>라. 세금 관련법령의 개정 또는 법해석의 변경, 세금 관련 정책의 변경 등으로 인하여 발행회사가 지급하는 본 사채의 이자에 대한 법인세 손금을 인정받지 못하게 되었거나 인정받지 못하게 될 것임이 결정된 경우</P>
+<P>(4) 공고 및 통지: 발행회사는 본 항에 따른 중도상환을 하고자 할 경우 해당 상환일의 30 영업일 전까지 한국예탁결제원 및 원리금지급대행기관에 서면으로 통지하여야 한다.</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">10. 청약일</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="692" HEIGHT="23" AUNIT="SBSC_DT" AUNITVALUE="20241029">2024년 10월 29일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">11. 납입일 </TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="692" HEIGHT="23" AUNIT="PYM_DT" AUNITVALUE="20241029">2024년 10월 29일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">12. 대표주관회사</TD>
+<TE COLSPAN="5" WIDTH="692" HEIGHT="23" ACODE="CHF_AGN" VALIGN="MIDDLE" ALIGN="CENTER">한국투자증권 주식회사</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">13. 보증기관</TD>
+<TE COLSPAN="5" WIDTH="692" HEIGHT="23" ACODE="WTY_ORG" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">14. 이사회결의일(결정일)</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="692" HEIGHT="23" AUNIT="DRC_DT" AUNITVALUE="20241028">2024년 10월 28일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="2" COLSPAN="2" VALIGN="MIDDLE" WIDTH="325" HEIGHT="53" AUPDATECONT="N">   - 사외이사 참석여부</TD>
+<TD ALIGN="CENTER" WIDTH="71" HEIGHT="23" AUPDATECONT="N">참석 (명)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="692" HEIGHT="23" ACODE="ATD_CNT">6</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="71" HEIGHT="23" AUPDATECONT="N">불참 (명)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="692" HEIGHT="23" ACODE="NATD_CNT">0</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">   - 감사(감사위원) 참석여부</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="692" HEIGHT="23" AUNIT="ADT_ATD_YN" AUNITVALUE="Y">참석</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">15. 증권신고서 제출대상 여부</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="692" HEIGHT="23" AUNIT="RPT_SM_YN" AUNITVALUE="N">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">16. 제출을 면제받은 경우 그 사유</TD>
+<TE COLSPAN="5" VALIGN="MIDDLE" WIDTH="692" HEIGHT="23" ACODE="RPT_SBM" ALIGN="CENTER">사모발행</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">17. 당해 사채의 해외발행과 연계된 대차거래 내역</TD>
+<TE COLSPAN="5" WIDTH="692" HEIGHT="23" ACODE="TRD_BD" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="405" HEIGHT="23" AUPDATECONT="N">18. 공정거래위원회 신고대상 여부 </TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="692" HEIGHT="23" AUNIT="TRD_YN" AUNITVALUE="N">미해당</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P>19. 기타 투자판단에 참고할 사항</P>
+<P>- 상기 청약 및 납입일정 등은 본건 진행과정에서 변경될 수 있습니다. </P>
+<P></P>
+
+<TABLE-GROUP ACLASS="CRP_ISSU" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N">【특정인에 대한 대상자별 사채발행내역】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="N" WIDTH="851" BORDER="1">
+
+<COLGROUP WIDTH="851">
+<COL WIDTH="516"></COL>
+<COL WIDTH="127"></COL>
+<COL WIDTH="208"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TH VALIGN="MIDDLE" WIDTH="507" HEIGHT="46" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">발행 대상자명</TH>
+<TH VALIGN="MIDDLE" WIDTH="118" HEIGHT="46" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">회사 또는 최대주주와의 관계</TH>
+<TH VALIGN="MIDDLE" WIDTH="199" HEIGHT="46" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N">발행권면(전자등록) 총액(원)</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="N" HEIGHT="30">
+<TE WIDTH="507" HEIGHT="23" ACODE="ISSU_NM" VALIGN="MIDDLE">한국투자증권㈜</TE>
+<TE WIDTH="118" HEIGHT="23" ACODE="RLT" VALIGN="MIDDLE" ALIGN="CENTER">없음</TE>
+<TE ALIGN="RIGHT" WIDTH="199" HEIGHT="23" ACODE="ISSU_AMT">22,000,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+
+<TE WIDTH="507" HEIGHT="23" ACODE="ISSU_NM" VALIGN="MIDDLE">대신증권
+<SPAN USERMARK=" 0X000000">㈜</SPAN>
+</TE>
+<TE WIDTH="118" HEIGHT="23" ACODE="RLT" VALIGN="MIDDLE" ALIGN="CENTER">없음</TE>
+<TE ALIGN="RIGHT" WIDTH="199" HEIGHT="23" ACODE="ISSU_AMT">10,000,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+
+<TE WIDTH="507" HEIGHT="23" ACODE="ISSU_NM" VALIGN="MIDDLE">키스플러스제이십구차
+<SPAN USERMARK=" 0X000000">㈜</SPAN>
+</TE>
+<TE WIDTH="118" HEIGHT="23" ACODE="RLT" VALIGN="MIDDLE" ALIGN="CENTER">없음</TE>
+<TE ALIGN="RIGHT" WIDTH="199" HEIGHT="23" ACODE="ISSU_AMT">40,000,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+
+<TE WIDTH="507" HEIGHT="23" ACODE="ISSU_NM" VALIGN="MIDDLE">필릭스에코비
+<SPAN USERMARK=" 0X000000">㈜</SPAN>
+</TE>
+<TE WIDTH="118" HEIGHT="23" ACODE="RLT" VALIGN="MIDDLE" ALIGN="CENTER">없음</TE>
+<TE ALIGN="RIGHT" WIDTH="199" HEIGHT="23" ACODE="ISSU_AMT">20,000,000,000</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+
+<TABLE-GROUP ACLASS="TBL_FND" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N">【조달자금의 구체적 사용 목적】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="600" BORDER="1">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TE WIDTH="591" HEIGHT="46" ACODE="FND_USE_PPS">본 사채는 재무건전성 확보(자본확충)를 목적으로 발행되었으며, 발행금액 920억원은 운영자금으로 사용 예정입니다,</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

@@ -1,0 +1,149 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>한미약품/단일판매ㆍ공급계약 해지(자율공시)/(2023.02.27)단일판매ㆍ공급계약 해지(자율공시)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 해지(자율공시)</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD15_Form0_Table0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="245"> <span style="width:245px;font-size:10pt;">1. 판매ㆍ공급계약 해지 구분</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">기타 판매ㆍ공급계약</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="245"> <span style="width:245px;font-size:10pt;">- 세부물건</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">(주)제넥신과의 코로나19 백신 위탁생산 계약해지 합의</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="102"> <span style="width:102px;font-size:10pt;">2. 해지내역</span> </td> 
+       <td width="143"> <span style="width:143px;font-size:10pt;text-align:center;">해지금액(원)</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;text-align:right;">23,419,586,850</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="143"> <span style="width:143px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;text-align:right;">1,075,853,605,008</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="143"> <span style="width:143px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;text-align:right;">2.18</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="143"> <span style="width:143px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">미해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="245"> <span style="width:245px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">주식회사 제넥신 (Genexine)</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="245"> <span style="width:245px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="102"> <span style="width:102px;font-size:10pt;">4. 계약기간</span> </td> 
+       <td width="143"> <span style="width:143px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">2021-05-18</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="143"> <span style="width:143px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">2023-02-27</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="245"> <span style="width:245px;font-size:10pt;">5. 해지 주요사유</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">계약상대방의 코로나19 백신(GX-19N) 개발 중단 결정</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="245"> <span style="width:245px;font-size:10pt;">6. 해지일자</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">2023-02-27</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" width="245"> <span style="width:245px;font-size:10pt;">7. 기타 투자판단과 관련한 중요사항</span> </td> 
+       <td colspan="2" width="355"> <span class="xforms_input" style="width:355px;font-size:10pt;">1) 상기 건은 2021년 5월 18일, 단일판매ㆍ공급계약 체결에 대한 해지건 입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">2) 상기 '해지금액'은 부가가치세를 포함한 금액입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">3) 상기 '최근매출액'은 최초공시 시점의 최근 사업연도인 2020년도 연결재무제표 기준 매출액입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">4) 계약체결일로부터 해지일까지 이행실적은 1,113,933,150원이며, 전체 계약금액에 대한 이행률은 4.5%입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">5) 상기 '해지일자'는 계약해지 합의서 체결일입니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="108"> <span style="width:108px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td width="247"> <span style="width:247px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20210518000091&amp;rcpno=20210518000091&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2021-05-18 단일판매ㆍ공급계약 체결(자율공시)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

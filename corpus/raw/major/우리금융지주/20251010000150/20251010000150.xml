@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11329">상각형 조건부자본증권 발행결정</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20191209">6.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="01350869">(주)우리금융지주</COMPANY-NAME>
+
+
+<BODY ATOCID="3">
+
+<LIBRARY>
+<CORRECTION>
+<TITLE ATOC="Y" AASSOCNOTE="CORRECTION" ENG="Report of Disclosure Revision" ATOCID="3">정 정 신 고 (보고)</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" ALIGN="RIGHT">2025년 10월 10일</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="165"></COL>
+<COL WIDTH="435"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="156" VALIGN="MIDDLE" AUPDATECONT="N" ENG="1. Disclosure document to be revised:" HEIGHT="23">1. 정정대상 공시서류 :</TD>
+<TD WIDTH="426" VALIGN="MIDDLE" HEIGHT="23">주요사항보고서(상각형 조건부자본증권 발행결정)</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="260"></COL>
+<COL WIDTH="340"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="251" VALIGN="MIDDLE" AUPDATECONT="N" ENG="2. First submission date of disclosure document to be revised:" HEIGHT="23">2. 정정대상 공시서류의 최초제출일 :</TD>
+<TD WIDTH="331" VALIGN="MIDDLE" HEIGHT="23">2025년 07월 25일</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" VALIGN="MIDDLE" AUPDATECONT="N" ENG="3. Revised Information">3. 정정사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="N" WIDTH="1037" BORDER="1">
+
+<COLGROUP WIDTH="1037">
+<COL WIDTH="258"></COL>
+<COL WIDTH="152"></COL>
+<COL WIDTH="314"></COL>
+<COL WIDTH="313"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TH WIDTH="249" HEIGHT="23" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Items">항  목</TH>
+<TH WIDTH="143" HEIGHT="23" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Reason for revision">정정사유</TH>
+<TH WIDTH="305" HEIGHT="23" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Before revision">정 정 전</TH>
+<TH WIDTH="304" HEIGHT="23" VALIGN="MIDDLE" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="After revision">정 정 후</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="168">
+<TD WIDTH="249" HEIGHT="161">7. 원금상환방법</TD>
+<TD WIDTH="143" HEIGHT="1277" ROWSPAN="6" ALIGN="CENTER" VALIGN="MIDDLE">증권신고서 제출에 따른 정정</TD>
+<TD WIDTH="305" HEIGHT="161">- 발행회사의 선택에 의한 본건의 중도상환은 발행일로부터 5년 이후 10년 이내의 기간동안 미리 금융감독원장의 승인을 얻는 경우에 한하여 본 사채의 발행 시에 정한 조건에 따라 이루어질 수 있습니다. 만기가 발행회사의 휴무일에 해당하는 경우 그 다음 영업일에 원금을 지급합니다.</TD>
+
+<TD WIDTH="304" HEIGHT="161">
+<SPAN>- 발행회사의 선택에 의한 본건의 중도상환은 발행일로부터 </SPAN>
+<SPAN USERMARK="B 0XFF1200">5년이 경과(5년이 되는날 포함)한 이후</SPAN>
+<SPAN> 미리 금융감독원장의 승인을 얻는 경우에 한하여 본 사채의 발행 시에 정한 조건에 따라 이루어질 수 있습니다. 만기가 발행회사의 휴무일에 해당하는 경우 그 다음 영업일에 원금을 지급합니다.</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="191">
+<TD WIDTH="249" HEIGHT="184">9-1. 옵션에 관한 사항</TD>
+<TD WIDTH="305" HEIGHT="184">- 옵션의 종류 : 중도상환옵션(call option)- 옵션행사자 : 발행회사- 옵션의 구조 : 사채만기일이 영구채임에도 불구, 5년 이후 10년 이내 중도상환옵션 있음. (옵션도래일 이후 발행회사의 선택에 의해 미리 금융감독원장의 승인을 얻은 경우에 한하여 매 이자(배당)기일(3개월) 마다 중도상환 가능)</TD>
+
+<TD WIDTH="304" HEIGHT="184">
+<SPAN>- 옵션의 종류 : 중도상환옵션(call option)- 옵션행사자 : 발행회사- 옵션의 구조 : 사채만기일이 영구채임에도 불구, </SPAN>
+<SPAN USERMARK="B 0XFF1200">5년</SPAN>
+<SPAN> 중도상환옵션 있음. (옵션도래일 이후 발행회사의 선택에 의해 미리 금융감독원장의 승인을 얻은 경우에 한하여 매 이자(배당)기일(3개월) 마다 중도상환 가능)</SPAN>
+</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="249" HEIGHT="23">10. 청약일</TD>
+<TD WIDTH="305" HEIGHT="23">-</TD>
+<TD WIDTH="304" HEIGHT="23" USERMARK="B 0XFF1200">2025년 10월 22일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="249" HEIGHT="23">11. 납입일 </TD>
+<TD WIDTH="305" HEIGHT="23">-</TD>
+<TD WIDTH="304" HEIGHT="23" USERMARK="B 0XFF1200">2025년 10월 22일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="249" HEIGHT="23">12. 대표주관회사</TD>
+<TD WIDTH="305" HEIGHT="23">-</TD>
+<TD WIDTH="304" HEIGHT="23" USERMARK="B 0XFF1200">교보증권(주), 한양증권(주)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="835">
+<TD WIDTH="249" HEIGHT="828">19. 기타 투자판단에 참고할 사항</TD>
+<TD WIDTH="305" HEIGHT="828">(1) 상기 공시내용은 기타기본자본 확충을 통해 BIS 자기자본비율을 제고하기 위한 목적이 있습니다.(2) 상기 '2.사채의 권면(전자등록)총액'은 향후 수요예측 결과에 따라 이사회에서 결의한 발행금액 이내에서 결정할 예정입니다. 이사회에서 결의한 발행금액은 4,000억원 이내입니다.(3) 상기 '4.사채의 이율'의 표면이자율 및 만기이자율은 향후 수요예측 결과에 따라 발행 당시 시장 실세금리를 반영하여 결정할 예정입니다.(4) 상기 '5.사채만기일'은 특정하고 있지 아니하고, 다음의 일자 중 먼저 도래하는 날에 만기일이 도달한 것으로 합니다.① '채무자 회생 및 파산에 관한 법률' 또는 이를 대체하는 법령에 의하여 발행회사 에 대해 파산이 선고되어 파산절차 또는 이에 상응하는 절차가 개시되는 날② 발행회사에 대해 파산이나 회생절차에 의하지 않는 청산절차가 개시되는 날(5) 상기 '5.사채만기일'은 영구적인 형태임에도 불구, 발행일로부터 5년 이후 10년이내 중도상환 옵션이 부여된 조건으로 발행되며, 미리 금융감독원장의 승인을 얻은 경우에 한하여 옵션도래일 이후 매 이자(배당)기일(3개월) 마다 발행회사의 선택에 의해 중도상환 가능합니다.(6) 상기 '10.청약일' 및 '11.납입일'은 감독당국과의 협의 일정, 발행시장의 여건 등에 따라 결정할 예정입니다.(7) 상기 '12.대표주관회사'는 현재 확정되지 않았으며, 확정시 재공시할 예정입니다.(8) 기타 본 증권과 관련한 자세한 사항은 추후 제출 예정인 증권신고서를 참고하시기 바랍니다.</TD>
+
+<TD WIDTH="304" HEIGHT="828">
+<SPAN>(1) 상기 공시내용은 기타기본자본 확충을 통해 BIS 자기자본비율을 제고하기 위한 목적이 있습니다.(2) 상기 '2.사채의 권면(전자등록)총액'은 향후 수요예측 결과에 따라 이사회에서 결의한 발행금액 이내에서 결정할 예정입니다. 이사회에서 결의한 발행금액은 4,000억원 이내입니다.(3) 상기 '4.사채의 이율'의 표면이자율 및 만기이자율은 향후 수요예측 결과에 따라 발행 당시 시장 실세금리를 반영하여 결정할 예정입니다.(4) 상기 '5.사채만기일'은 특정하고 있지 아니하고, 다음의 일자 중 먼저 도래하는 날에 만기일이 도달한 것으로 합니다.① '채무자 회생 및 파산에 관한 법률' 또는 이를 대체하는 법령에 의하여 발행회사 에 대해 파산이 선고되어 파산절차 또는 이에 상응하는 절차가 개시되는 날② 발행회사에 대해 파산이나 회생절차에 의하지 않는 청산절차가 개시되는 날(5) 상기 '5.사채만기일'은 영구적인 형태임에도 불구, 발행일로부터 </SPAN>
+<SPAN USERMARK="B 0XFF1200">5년</SPAN>
+<SPAN> 중도상환 옵션이 부여된 조건으로 발행되며, 미리 금융감독원장의 승인을 얻은 경우에 한하여 옵션도래일 이후 매 이자(배당)기일(3개월) 마다 발행회사의 선택에 의해 중도상환 가능합니다.(6) 상기 '10.청약일' 및 '11.납입일'은 감독당국과의 협의 일정, 발행시장의 여건 등에 따라 </SPAN>
+<SPAN USERMARK="B 0XFF1200">변경될 수 있습니다. (7)</SPAN>
+<SPAN> 기타 본 증권과 관련한 자세한 사항은 추후 제출 예정인 증권신고서를 참고하시기 바랍니다.</SPAN>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</CORRECTION>
+</LIBRARY>
+
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">2025 년  7월  25일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(주) 우리금융지주</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">임 종 룡</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">서울특별시 중구 소공로 51 (회현동 1가)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-2125-2000</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지) https://www.woorifg.com</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) 부부장 </TD>
+<TD WIDTH="267" HEIGHT="23">(성  명) 최 승 구</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-2125-2076</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Issuance of Amortized Contingent Capital Securities" ATOCID="1">상각형 조건부자본증권 발행결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="CCS_PUB" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="663" BORDER="1">
+
+<COLGROUP WIDTH="663">
+<COL WIDTH="120"></COL>
+<COL WIDTH="82"></COL>
+<COL WIDTH="131"></COL>
+<COL WIDTH="54"></COL>
+<COL WIDTH="53"></COL>
+<COL WIDTH="53"></COL>
+<COL WIDTH="53"></COL>
+<COL WIDTH="117"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="111">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="104" AUPDATECONT="N" ENG="1. Type of bonds">1. 사채의 종류</TD>
+<TD ALIGN="CENTER" WIDTH="45" HEIGHT="104" AUPDATECONT="N" ENG="Ordinal">회차</TD>
+<TE ALIGN="CENTER" WIDTH="44" HEIGHT="104" ACODE="SEQ_NO">20</TE>
+<TD ALIGN="CENTER" WIDTH="44" HEIGHT="104" AUPDATECONT="N" ENG="Class of shares">종류</TD>
+<TE COLSPAN="2" ALIGN="CENTER" WIDTH="161" HEIGHT="104" ACODE="PL_KND">국내 무기명식무보증 무담보상각형 조건부자본증권(신종자본증권)</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="2.Total face (or electronically registered) value of bonds (KRW)">2. 사채의 권면(전자등록)총액 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="321" HEIGHT="23" ACODE="DNM_SUM">270,000,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="4" VALIGN="MIDDLE" WIDTH="111" HEIGHT="113" AUPDATECONT="N" ENG="2-1. (Overseas issuance)"> 2-1. (해외발행)</TD>
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Total face (or electronically registered) value (currency unit)">권면(전자등록)총액(통화단위)</TD>
+<TE COLSPAN="4" ALIGN="CENTER" WIDTH="204" HEIGHT="23" ACODE="FRN_AMT">-</TE>
+<TU ALIGN="CENTER" WIDTH="108" HEIGHT="23" AUNIT="AMT_UNIT" AUNITVALUE="-" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Base exchange rate, etc.">기준환율등</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="EXC_RT">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Region of issuance">발행지역</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="ISSU_AREA">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Name of exchange (Overseas listing)">해외상장시 시장의 명칭</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="FRN_NM">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="6" VALIGN="MIDDLE" WIDTH="111" HEIGHT="173" AUPDATECONT="N" ENG="3. Purpose of funding">3. 자금조달의    목적</TD>
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Facility investment (KRW)">시설자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="FND_USE1">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Business acquisition (KRW)">영업양수자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="FND_USE_SQ">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Operating capital (KRW)">운영자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="321" HEIGHT="23" ACODE="FND_USE2" VALIGN="MIDDLE">70,000,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Debt repayment (KRW)">채무상환자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="RIGHT" WIDTH="321" HEIGHT="23" ACODE="FND_USE_RD">200,000,000,000</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Acquisition of securities issued by other corporations (KRW)">타법인 증권 취득자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="ANC_ACQ_PRC">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Other purposes (KRW)">기타자금 (원)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="FND_USE3">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="111" HEIGHT="53" AUPDATECONT="N" ENG="4. Interest rate of bonds">4. 사채의 이율</TD>
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Coupon rate (%)">표면이자율 (%)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="PRFT_RATE">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Yield to maturity (%)">만기이자율 (%)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="LST_RTN_RT">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="5. Bond maturity date">5. 사채만기일</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" AUNIT="EXP_DT" AUNITVALUE="-">-</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="1088">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="1081" AUPDATECONT="N" ENG="6. Method of interest payment">6. 이자지급방법</TD>
+<TE COLSPAN="5" WIDTH="321" HEIGHT="1081" ACODE="INT_GV_MTH">- 본 증권의 이자(배당)는 발행일로부터 원금상환기일 전까지 매 3개월마다 사채의 이율을 적용한 연간 이자(배당)를 1/4씩 분할 후급하되, 이자(배당)지급기일이 은행의 휴업일에 해당할 경우 그 다음 첫번째 영업일에 지급하고, 그 같이 늦추어 지급하더라도 늦추어진 일수에 대하여는 따로 이자(배당)를 계산하여 지급하지 않습니다.- 본 증권에 대한 이자(배당)는 은행업감독업무시행세칙 <별표3>(신용/운영리스크 위험가중자산에 대한 자기자본비율 산출기준(바젤Ⅲ기준))- 6.기타기본자본 - 나. 기타기본자본의 인정요건)에 근거한 배당가능이익에서 지급됩니다.[임의적 이자(배당) 지급의 정지]발행회사는 본 증권의 이자(배당)지급 취소에 대한 완전한 재량권을 가지며, 이자(배당)의 지급취소는 보통주 주주에 대한 배당 관련사항 이외에 어떠한 제약요인으로도 작용하지 않습니다. 또한 이자(배당)의 지급취소는 부도사건으로 간주되지 않고, 발행회사는 취소된 금액을 만기가 도래한 채무의 이행에 사용할 수 있는 완전한 권리를 가지게 됩니다.[강제적 이자(배당) 지급의 정지]다음 중 어느 하나에 해당하는 사유가 발생하는 경우, 해당 사유가 발생한 때부터 해당 사유가 해소될 때까지의 기간(이하 "이자(배당)지급정지기간") 이자(배당)지급의무는 모두 소멸되고, 이러한 이자(배당)지급의무의 소멸은 채무불이행 또는 부도사유로 간주되지 않습니다.(1) 발행회사가 「금융산업의구조개선에관한법률」에서 정하는 부실금융기관으로 지정된 경우이거나, 금융위원회로부터 금융지주회사감독규정 제36조 내지 제38조에 따른 '경영개선권고', '경영개선요구' 또는 '경영개선명령'을 받은 경우, 제40조에 따른 긴급조치를 부과받은 경우 그 사유가 해소될 때까지(2) 금융지주회사감독규정 제25조 제5항에 따라 자본보전완충자본을 포함한 자본비율이 금융지주회사감독규정 <별표3-2>에서 정하는 자본비율에 미달함으로 인하여, 금융지주회사감독규정<별표3-3>에서 정하는 이익배당 등의 최저 내부유보비율을 준수하기 위하여 필요한 경우</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="605">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="598" AUPDATECONT="N" ENG="7. Method of principal repayment">7. 원금상환방법</TD>
+
+<TE COLSPAN="5" WIDTH="321" HEIGHT="598" ACODE="RTN_MTH">- 본 증권의 중도상환은 발행회사가 상환여부를 전적으로 자율적 판단 할 수 있으며 다음의 조건중 어느 하나를 만족하는 상황에서 미리 금융감독원장의 승인을 받아야 합니다.(1) 본 증권이 양질 또는 동질의 자본이면서 발행회사의 수익력 등을 감안할 때 충분히 부담할 수 있는 조건으로 대체되는 경우(2) 본 증권의 상환 후에도 자본이 관련 규정에서 정하는 비율을 상회하는 경우로서 미리 금융감독원장의 승인을 얻은 경우에 본 증권의 액면금액에 대하여 상환할 수 있습니다.- 발행회사의 선택에 의한 본건의 중도상환은 발행일로부터 
+<SPAN USERMARK="B 0XFF1200">5년이 경과(5년이 되는날 포함)한 이후</SPAN> 미리 금융감독원장의 승인을 얻는 경우에 한하여 본 사채의 발행 시에 정한 조건에 따라 이루어질 수 있습니다. 만기가 발행회사의 휴무일에 해당하는 경우 그 다음 영업일에 원금을 지급합니다.- 또한, 본건 사채에는 투자자로 하여금 상환될 것이라는 기대를 유발하거나 발행회사에게 사실상 상환을 하도록 부담을 부과하는 어떠한 조건도 부가되어 있지 않습니다.
+</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="8. Method of bond issuance">8. 사채발행방법</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" AUNIT="ISSU_MTH" AUNITVALUE="1" ENG="Public offering">공모</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="76">
+<TD ROWSPAN="3" VALIGN="MIDDLE" WIDTH="111" HEIGHT="244" AUPDATECONT="N" ENG="9. Details on debt adjustment">9. 채무재조정에    관한 사항</TD>
+<TD COLSPAN="2" WIDTH="204" HEIGHT="69" AUPDATECONT="N" ENG="Cause of debt adjustment">채무재조정의 사유</TD>
+<TE COLSPAN="5" WIDTH="321" HEIGHT="69" ACODE="DTAJ_RSN">발행회사가 「금융산업의 구조개선에 관한 법률」제2조 제2호의 규정에 따라 부실금융기관으로 지정된 경우</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" WIDTH="204" HEIGHT="23" AUPDATECONT="N" ENG="Scope of debt adjustment">채무재조정의 범위</TD>
+<TE COLSPAN="5" WIDTH="321" HEIGHT="23" ACODE="DTAJ_RNG">사채의 원리금 전액</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="145">
+<TD COLSPAN="2" WIDTH="204" HEIGHT="138" AUPDATECONT="N" ENG="Methods used to determine scope of debt adjustment">채무재조정의 범위 결정방법</TD>
+<TE COLSPAN="5" WIDTH="321" HEIGHT="138" ACODE="DTAJ_MTD">발행회사가 채무재조정의 사유가 발생한 경우  본 사채는 전액 영구상각 되며, 이때 본 사채의 상각은 채무불이행 또는 부도 사유로 간주되지 않음. 상각의 효력은 채무재조정의 사유가 발생한 날로부터 제 3영업일이 되는 날에 발생합니다.</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="168">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="161" AUPDATECONT="N" ENG="9-1. Details of option">9-1. 옵션에 관한 사항</TD>
+
+<TE COLSPAN="5" WIDTH="321" HEIGHT="161" ACODE="OPT_FCT">- 옵션의 종류 : 중도상환옵션(call option)- 옵션행사자 : 발행회사- 옵션의 구조 : 사채만기일이 영구채임에도 불구, 
+<SPAN USERMARK="B 0XFF1200">5년</SPAN> 중도상환옵션 있음. (옵션도래일 이후 발행회사의 선택에 의해 미리 금융감독원장의 승인을 얻은 경우에 한하여 매 이자(배당)기일(3개월) 마다 중도상환 가능)
+</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="10. Subscription date">10. 청약일</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" AUNIT="SBSC_DT" AUNITVALUE="20251022">2025년 10월 22일</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="11. Payment date">11. 납입일 </TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" AUNIT="PYM_DT" AUNITVALUE="20251022">2025년 10월 22일</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="12. Lead underwriter">12. 대표주관회사</TD>
+<TE COLSPAN="5" WIDTH="321" HEIGHT="23" ACODE="CHF_AGN" ALIGN="CENTER" USERMARK="B 0XFF1200">교보증권(주), 한양증권(주)</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="13. Guarantor">13. 보증기관</TD>
+<TE COLSPAN="5" WIDTH="321" HEIGHT="23" ACODE="WTY_ORG" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="14. Board resolution date (decision date)">14. 이사회결의일(결정일)</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" AUNIT="DRC_DT" AUNITVALUE="20250725">2025년 07월 25일</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="2" COLSPAN="2" VALIGN="MIDDLE" WIDTH="193" HEIGHT="53" AUPDATECONT="N" ENG="- Attendance of outside directors">   - 사외이사 참석여부</TD>
+<TD ALIGN="CENTER" WIDTH="122" HEIGHT="23" AUPDATECONT="N" ENG="Present (No.)">참석 (명)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="ATD_CNT">7</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" WIDTH="122" HEIGHT="23" AUPDATECONT="N" ENG="Absent (No.)">불참 (명)</TD>
+<TE COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" ACODE="NATD_CNT">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="- Attendance of auditors (members of Audit Committee)">   - 감사(감사위원) 참석여부</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" AUNIT="ADT_ATD_YN" AUNITVALUE="-" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="15. Whether subject to file securities registration statement">15. 증권신고서 제출대상 여부</TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" AUNIT="RPT_SM_YN" AUNITVALUE="Y" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="16. Reasons for exemption from filing securities registration statement, if exempted">16. 제출을 면제받은 경우 그 사유</TD>
+<TE COLSPAN="5" VALIGN="MIDDLE" WIDTH="321" HEIGHT="23" ACODE="RPT_SBM" ALIGN="CENTER">해당사항 없음</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="46" AUPDATECONT="N" ENG="17. Details of securities lending and borrowing transactions related to overseas issuance of bonds">17. 당해 사채의 해외발행과 연계된 대차거래 내역</TD>
+<TE COLSPAN="5" WIDTH="321" HEIGHT="46" ACODE="TRD_BD" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="324" HEIGHT="23" AUPDATECONT="N" ENG="18. Whether subject to the Fair Trade Commission reporting requirements">18. 공정거래위원회 신고대상 여부 </TD>
+<TU COLSPAN="5" ALIGN="CENTER" WIDTH="321" HEIGHT="23" AUNIT="TRD_YN" AUNITVALUE="N" ENG="Non-applicable">미해당</TU>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="19. Other matters to be factored into investment decisions">19. 기타 투자판단에 참고할 사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>(1) 상기 공시내용은 기타기본자본 확충을 통해 BIS 자기자본비율을 제고하기 위한 목적이 있습니다.(2) 상기 '2.사채의 권면(전자등록)총액'은 향후 수요예측 결과에 따라 이사회에서 결의한 발행금액 이내에서 결정할 예정입니다. 이사회에서 결의한 발행금액은 4,000억원 이내입니다.(3) 상기 '4.사채의 이율'의 표면이자율 및 만기이자율은 향후 수요예측 결과에 따라 발행 당시 시장 실세금리를 반영하여 결정할 예정입니다.(4) 상기 '5.사채만기일'은 특정하고 있지 아니하고, 다음의 일자 중 먼저 도래하는 날에 만기일이 도달한 것으로 합니다.① '채무자 회생 및 파산에 관한 법률' 또는 이를 대체하는 법령에 의하여 발행회사 에 대해 파산이 선고되어 파산절차 또는 이에 상응하는 절차가 개시되는 날② 발행회사에 대해 파산이나 회생절차에 의하지 않는 청산절차가 개시되는 날(5) 상기 '5.사채만기일'은 영구적인 형태임에도 불구, 발행일로부터 
+<SPAN USERMARK="B 0XFF1200">5년</SPAN> 중도상환 옵션이 부여된 조건으로 발행되며, 미리 금융감독원장의 승인을 얻은 경우에 한하여 옵션도래일 이후 매 이자(배당)기일(3개월) 마다 발행회사의 선택에 의해 중도상환 가능합니다.(6) 상기 '10.청약일' 및 '11.납입일'은 감독당국과의 협의 일정, 발행시장의 여건 등에 따라 
+<SPAN USERMARK="B 0XFF1200">변경될 수 있습니다. (7)</SPAN> 기타 본 증권과 관련한 자세한 사항은 추후 제출 예정인 증권신고서를 참고하시기 바랍니다.
+</P>
+<P></P>
+
+<TABLE-GROUP ACLASS="CRP_ISSU" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="【Issuance of Bonds for Specific Persons per Recipient】">【특정인에 대한 대상자별 사채발행내역】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="N" WIDTH="599" BORDER="1">
+
+<COLGROUP WIDTH="599">
+<COL WIDTH="200"></COL>
+<COL WIDTH="200"></COL>
+<COL WIDTH="199"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TH VALIGN="MIDDLE" WIDTH="191" HEIGHT="46" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Name">발행 대상자명</TH>
+<TH VALIGN="MIDDLE" WIDTH="191" HEIGHT="46" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Relationship to company or the largest shareholder">회사 또는최대주주와의 관계</TH>
+<TH VALIGN="MIDDLE" WIDTH="190" HEIGHT="46" ACOPYCOL="N" ADELETECOL="N" AMOVECOL="N" AUPDATECONT="N" ENG="Total face (or electronically registered) value (KRW)">발행권면(전자등록)총액 (원)</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="N" HEIGHT="30">
+<TE WIDTH="191" HEIGHT="23" ACODE="ISSU_NM" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+<TE WIDTH="191" HEIGHT="23" ACODE="RLT" ALIGN="CENTER" VALIGN="MIDDLE">-</TE>
+<TE ALIGN="CENTER" WIDTH="190" HEIGHT="23" ACODE="ISSU_AMT" VALIGN="MIDDLE">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+
+<TABLE-GROUP ACLASS="TBL_FND" ADELETETABLE="N">
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="【Intended Use of Funds in Detail】">【조달자금의 구체적 사용 목적】</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="600" BORDER="1">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TE WIDTH="591" HEIGHT="46" ACODE="FND_USE_PPS">자금조달의 목적은 기타기본자본 확충을 통해 BIS자기자본비율을 제고하기 위함이며, 조달자금은 채무상환자금 및 운영자금 등으로 사용될 예정입니다.</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+<P></P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

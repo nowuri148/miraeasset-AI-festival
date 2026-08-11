@@ -1,0 +1,165 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>한전기술/단일판매ㆍ공급계약체결/(2025.12.24)단일판매ㆍ공급계약체결</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결</span> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:594px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">공사수주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">- 체결계약명</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">신안 읍동 넥서스 ESS 발전사업 건설공사계약(EPC)</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="144"> <span style="width:144px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;text-align:right;">42,686,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;text-align:right;">553,362,978,026</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;text-align:right;">7.71</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">미해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">넥서스그린에너지(주)</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">국내</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="144"> <span style="width:144px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="144"> <span style="width:144px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">계약금ㆍ선급금 유무</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">유</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">대금지급 조건 등</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">[선급금 수령] <br xmlns:java="http://xml.apache.org/xalan/java">- 선금 지급조건이 충족될 경우 계약금액의 <br xmlns:java="http://xml.apache.org/xalan/java">20%에 해당되는 금액을 한도로 선금지급을 청구할 수 있음. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">[대금 지급] <br xmlns:java="http://xml.apache.org/xalan/java">- 공사비 지급일정에 따라 규정된 지급조건이 충족될 경우, 지급을 청구할 수 있음.</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="300"> <span style="width:300px;font-size:10pt;">7. 계약(수주)일자</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">2025-12-24</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="144"> <span style="width:144px;font-size:10pt;">8. 공시유보 관련내용</span> </td> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="156"> <span style="width:156px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td width="294"> <span class="xforms_input" style="width:294px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="594"> <span style="width:594px;font-size:10pt;">9. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="3" width="594"> <span class="xforms_input" style="width:594px;font-size:10pt;">- 본 계약은 PF(Project Financing)계약으로 PF가 불가능할 경우 계약 해지될 수 있음. <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 최근 매출액은 2024년 회계연도 매출액 기준임. <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 계약금액은 부가세 미포함 금액임. <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 계약금액은 총 계약금액 56,053,000,000원 중 76.15%에 해당하는 금액임. <br xmlns:java="http://xml.apache.org/xalan/java">- 계약금액, 계약기간 등은 용역 진행과정 등에 따라 변동될 수 있음. <br xmlns:java="http://xml.apache.org/xalan/java">- 계약기간의 경우 착공일로부터 9개월이나, 착수지시서 발급은 PF계약 후 가능하며 현재 착수시점의 특정이 불가함. 착수지시서 발급 시 정정공시 예정.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="144"> <span style="width:144px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="2" width="450"> <span class="xforms_input" style="width:450px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

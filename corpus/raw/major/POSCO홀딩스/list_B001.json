@@ -1,0 +1,24 @@
+[
+ {
+  "corp_code": "00155319",
+  "corp_name": "POSCO홀딩스",
+  "stock_code": "005490",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식취득결정)",
+  "rcept_no": "20240712000097",
+  "flr_nm": "POSCO홀딩스",
+  "rcept_dt": "20240712",
+  "rm": ""
+ },
+ {
+  "corp_code": "00155319",
+  "corp_name": "POSCO홀딩스",
+  "stock_code": "005490",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식처분결정)",
+  "rcept_no": "20230317000935",
+  "flr_nm": "POSCO홀딩스",
+  "rcept_dt": "20230317",
+  "rm": ""
+ }
+]

@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11347">주요사항보고서(주식교환ㆍ이전 결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20221018">6.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00872984">(주)이마트</COMPANY-NAME>
+
+
+<BODY ATOCID="3">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="3">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">  2026년     03월     10일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">주식회사 이마트</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">한 채 양</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">서울특별시 중구 세종대로7길 37(순화동)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-380-5678</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지) http://www.emartcompany.com</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) 재무담당</TD>
+<TD WIDTH="267" HEIGHT="23">(성  명) 이 용 명</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-380-9288</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Exchange or Transfer of Shares" ATOCID="1">주식교환ㆍ이전 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="CRP_INFO" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="1045" BORDER="1">
+
+<COLGROUP WIDTH="1045">
+<COL WIDTH="130"></COL>
+<COL WIDTH="135"></COL>
+<COL WIDTH="73"></COL>
+<COL WIDTH="707"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="329" AUPDATECONT="N" ENG="1. Category" HEIGHT="23">1. 구 분</TD>
+<TU WIDTH="698" AUNIT="EXCH_MOV" AUNITVALUE="E" VALIGN="MIDDLE" ALIGN="CENTER" HEIGHT="23" ENG="Share Swap">주식교환</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ENG="- Type of exchange or transfer" WIDTH="329" HEIGHT="23"> - 교환ㆍ이전 형태</TD>
+<TU AUNIT="EXCH_FRM" AUNITVALUE="1" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23" ENG="Small-scale">소규모</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD ROWSPAN="10" VALIGN="MIDDLE" AUPDATECONT="N" ENG="2. Counterparty of stock exchange and transfer" WIDTH="121" HEIGHT="316">2. 교환ㆍ이전 대상법인</TD>
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="A. Company name" WIDTH="199" HEIGHT="46">가. 회사명</TD>
+
+<TE ACODE="EXCH_NM" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="46">주식회사 신세계푸드(
+<SPAN USERMARK="F-10  0X333333">SHINSEGAE FOOD Inc.</SPAN>)
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="B. Representative" WIDTH="199" HEIGHT="23">나. 대표자</TD>
+<TE VALIGN="MIDDLE" ACODE="EXCH_CEO" ALIGN="CENTER" WIDTH="698" HEIGHT="23">강승협</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="C. Main business" WIDTH="199" HEIGHT="23">다. 주요사업</TD>
+<TE ACODE="EXCH_MN_BZ" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">상품중개업 및 기타음식점업</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="D. Relationship to company" WIDTH="199" HEIGHT="23">라. 회사와의 관계</TD>
+<TU AUNIT="EXCH_RLT" VALIGN="MIDDLE" ALIGN="CENTER" AUNITVALUE="6" WIDTH="698" HEIGHT="23" ENG="Subsidiary company">자회사</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE" ENG="E. Total number of shares issued (shrs.)" WIDTH="126" HEIGHT="53">마. 발행주식총수(주)</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Common stock" WIDTH="64" HEIGHT="23">보통주식</TD>
+<TE ACODE="EXCH_CST_CNT" VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="698" HEIGHT="23">3,872,480</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Class shares" WIDTH="64" HEIGHT="23">종류주식</TD>
+<TE ACODE="EXCH_PST_CNT" VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ROWSPAN="4" VALIGN="MIDDLE" ENG="F. Summary of financial details in the latest fiscal year (KRW)" WIDTH="126" HEIGHT="113">바. 최근 사업연도요약재무내용(원)</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total assets" WIDTH="64" HEIGHT="23">자산총계</TD>
+<TE ACODE="EXCH_ASST" VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="698" HEIGHT="23">833,687,666,448</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total liabilities" WIDTH="64" HEIGHT="23">부채총계</TD>
+<TE ACODE="EXCH_DPT" VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="698" HEIGHT="23">540,195,226,718</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total equity" WIDTH="64" HEIGHT="23">자본총계</TD>
+<TE ACODE="EXCH_CPT_SUM" VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="698" HEIGHT="23">293,492,439,730</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Issued capital" WIDTH="64" HEIGHT="23">자본금</TD>
+<TE ACODE="EXCH_SPT" VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="698" HEIGHT="23">19,362,400,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="122">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="3. Ratio of exchange or transfer" WIDTH="329" HEIGHT="115">3. 교환ㆍ이전 비율</TD>
+<TE ACODE="EXCH_RT" VALIGN="MIDDLE" WIDTH="698" HEIGHT="115">(주)이마트 : (주)신세계푸드 = 1:0.5031313주식교환일 현재 (주)신세계푸드의 주주가 소유하고 있는 (주)신세계푸드 주식((주)이마트가 보유중인 (주)신세계푸드 주식 제외)을 (주)이마트에 이전하고, 그 대가로 주식교환 대상주주에게 (주)신세계푸드 보통주식 1주당 (주)이마트가 보유한 보통주 자기주식 0.5031313주를 교환하여 지급합니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="927">
+<TD COLSPAN="3" VALIGN="MIDDLE" AUPDATECONT="N" ENG="4. Calculation basis for the ratio of exchange or transfer" WIDTH="329" HEIGHT="920">4. 교환ㆍ이전 비율 산출근거</TD>
+
+<TE ACODE="EXCH_BAS" WIDTH="698" HEIGHT="920">(주)이마트와 (주)신세계푸드는 모두 주권상장법인으로 자본시장과 금융투자업에 관한 법률 제165조의4, 동법 시행령 제176조의5 제1항 및 제176조의6 제2항에 따라 교환가액을 산정한 후, 이를 기준으로 교환비율을 산출하였습니다.양 사의 교환가액은 주식교환을 위한 이사회 결의일(2026년 03월 10일)과 주식의 포괄적 교환계약 체결일(2026년 03월 11일) 중 앞서는 날의 전영업일(2026년 03월 09일)을 기산일로 하여 ① 최근 1개월 거래량 가중산술평균종가, ② 최근 1주일거래량 가중산술평균종가, ③ 최근일 종가를 산술평균한 가액[(①+②+③)÷3]으로 산출합니다.또한, 자본시장과 금융투자업에 관한 법률 시행령 제176조의6 제2항 및 제176조의5 제1항 제1호에 따르면 상술한 방법으로 산출된 가액을 기준으로 주권상장법인 간 주식교환의 경우에는 100분의 10(주권상장법인인 기업인수목적회사와 다른 법인간 주식교환 경우에는 100분의 30)의 범위에서 할인 또는 할증한 가액을 적용할 수 있습니다. 본건 주식교환은 계열회사 간 주식교환으로써 (주)이마트와 (주)신세계푸드가 각자의 특별위원회와 이사회에서 검토하고 상호 협상하여 합의한 바에 따라 (주)이마트의 경우 할증 또는 할인 없이 상술한 기준시가를 교환가액으로 적용하였으며, (주)신세계푸드의 경우 기준시가를 기준으로 100분의 10의 범위 내인 3.0% 할증한 가액을 교환가액으로 적용하였습니다.
+<SPAN USERMARK="0X0000FF"></SPAN>1) 완전모회사가 되는 회사: (주)이마트-최근 1개월 거래량 가중산술평균종가(2026.02.10 ~ 2026.03.09) : 113,939원-최근 1주일 거래량 가중산술평균종가(2026.03.03 ~ 2026.03.09) : 92,931원-최근일 종가(2026.03.09) : 92,400원-산술평균가액 : 99,757원-교환가액 : 99,757원2) 완전자회사가 되는 회사: (주)신세계푸드-최근 1개월 거래량 가중산술평균종가(2026.02.10 ~ 2026.03.09) : 49,348원-최근 1주일 거래량 가중산술평균종가(2026.03.03 ~ 2026.03.09) : 48,938원-최근일 종가(2026.03.09) : 47,900원-산술평균가액 : 48,729원-교환가액 : 50,191원 (산술평균가액 48,729원에 할증률 3.0% 적용)3) 교환비율 산출상기 근거로 산출한 교환가액에 따라 본건 주식교환의 교환비율은 (주)이마트 : (주)신세계푸드 = 1 : 0.5031313으로 산출되었으며, (주)이마트는 (주)신세계푸드 주주에게 (주)신세계푸드 보통주 1주당 (주)이마트가 보유한 보통주 자기주식 0.5031313주를 교환하여 지급합니다.(주)이마트는 상기 방법으로 산정된 교환비율에 따라 주식교환 대상주주에게 (주)이마트의 주식을 배정함에 있어 1주 미만의 단주가 발생하는 경우, 단주가 귀속될 주식교환 대상주주에게 주식교환일 종가(한국거래소 유가증권시장에서 거래되는 종가를 의미)를 기준으로 계산된 금액을 주식교환일로부터 1개월 이내에 현금으로 지급할 예정입니다.
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ROWSPAN="5" VALIGN="MIDDLE" ENG="5. Matters related to external evaluation" WIDTH="121" HEIGHT="212">5. 외부평가에 관한 사항</TD>
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Whether external valuation was conducted" WIDTH="199" HEIGHT="23">외부평가 여부</TD>
+<TU AUNIT="EXV_YN" AUNITVALUE="N" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23" ENG="Non-applicable">미해당</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Basis and reasons" WIDTH="199" HEIGHT="92">- 근거 및 사유</TD>
+<TE VALIGN="MIDDLE" ACODE="EXV_BSS" WIDTH="698" HEIGHT="92">본건 주식교환은 주권상장법인 간의 주식교환으로 자본시장과 금융투자업에 관한 법률 제165조의4, 동법 시행령 제176조의5 및 제176조의6에 따라 교환가액을 산정한 후, 이를 기준으로 교환비율을 산출하였으므로, 동법 시행령 제176조의6 제4항에 의하여 교환가액의 적정성에 대한 외부평가기관의 평가가 요구되지 않습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="External evaluator’s name" WIDTH="199" HEIGHT="23">외부평가기관의 명칭</TD>
+<TE VALIGN="MIDDLE" ACODE="EXV_NM" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Period of external valuation" WIDTH="199" HEIGHT="23">외부평가 기간</TD>
+<TU AUNIT="EXV_PROD" AUNITVALUE="-" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Opinion of external valuation" WIDTH="199" HEIGHT="23">외부평가 의견</TD>
+<TE VALIGN="MIDDLE" ACODE="EXV_OPN" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="6. Purpose of exchange or transfer" WIDTH="329" HEIGHT="69">6. 교환ㆍ이전 목적</TD>
+<TE VALIGN="MIDDLE" ACODE="EXCH_RSN" WIDTH="698" HEIGHT="69">(주)이마트는 자회사인 (주)신세계푸드와의 중복상장 구조를 해소하고, 지배구조 단순화를 통한 의사결정 효율화 및 자원배분 최적화를 실현함으로써 경영 효율성과 주주가치 제고를 도모하기 위해 (주)신세계푸드를 완전자회사로 하는 주식의 포괄적 교환을 결정하였습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="812">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="7. Major impacts and effects of exchange or transfer" WIDTH="329" HEIGHT="805">7. 교환ㆍ이전의 중요영향 및 효과</TD>
+<TE VALIGN="MIDDLE" ACODE="EXCH_EFT" WIDTH="698" HEIGHT="805">1) 회사의 경영에 미치는 영향 및 효과본건 주식교환 완료 시 지배구조 관련 경영권 변동은 없으며, (주)이마트 및 (주)신세계푸드는 100% 모자회사 관계의 독립된 존속법인으로 유지됩니다. 본건 주식교환 이후 완전모회사인 (주)이마트는 주권상장법인으로 유지되고, 완전자회사인 (주)신세계푸드는 관련 법령 및 절차에 의거하여 주권비상장법인으로 변경될 예정입니다.또한, 주식의 포괄적 교환 계약에 따라 본건 주식교환 이전에 취임한 (주)이마트의 이사 및 감사의 임기는 상법 제360조의13에도 불구하고 종전의 임기를 그대로 적용하며, 본건 주식교환으로 인하여 새로 선임되는 임원은 없습니다.2) 회사의 재무, 영업 등에 미치는 중요 영향 및 효과(주)이마트의 경우 교환대가로 자기주식을 교부함에 따라 자본차감 항목 제거로 인한 자본총계가 증가합니다. (주)신세계푸드는 자산 및 부채의 변동 없이 오직 주주 구성만 변동되며,지배구조가 안정됨에 따라 신용도 제고 및 경영 효율화가 기대됩니다.(주)신세계푸드가 (주)이마트의 완전자회사로 편입됨으로써, (i) 양 사는 외부환경변화에 탄력적으로 대응할 수 있는 효율적인 경영체계를 갖추어 보다 빠르고 유연한 경영판단이 가능해지고, (ii) 자회사 이중 상장 해소에 따른 중복 투자와 관리 비용 절감 및 기업가치의 합리적 평가가 기대됩니다.(주)신세계푸드는 본건 주식교환 과정에서 반대주주의 주식매수청구권 행사에 따른 매수대금 지급 및 별도로 예정하고 있는 기 보유 자기주식 소각 외에는 대규모 재무적 자금 유출이 발생하지 않으며, (주)신세계푸드의 자산, 부채, 자본 등 재무구조에 미치는 직접적이고 중대한 변동은 없습니다.3) (주)이마트 및 (주)신세계푸드 주주가치에 미치는 영향본건 주식교환은 지배구조를 단순화하여 구조적 디스카운트를 해소함으로써 양 사의 주주가치를 증대하고, 특히 (주)신세계푸드의 거래량 부족에 따른 유동성 문제를 해결하여 환금성을 제고할 것으로 기대됩니다.4) 상장에 미치는 효과유가증권상장법인인 (주)이마트는 유가증권상장법인으로서의 지위를 유지하며, 유가증권상장법인인 (주)신세계푸드는 금번 주식의 포괄적 교환에 따라 상장폐지절차를 진행할 예정입니다. </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="16" AUPDATECONT="N" VALIGN="MIDDLE" ENG="8. Schedule of exchange or transfer" WIDTH="121" HEIGHT="489">8. 교환ㆍ이전일정</TD>
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="Contract date of exchange or transfer" WIDTH="199" HEIGHT="23">교환ㆍ이전계약일</TD>
+<TU AUNIT="MGR_CRT" AUNITVALUE="20260311" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">2026년 03월 11일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="Record date for determining eligible shareholders" WIDTH="199" HEIGHT="23">주주확정기준일</TD>
+<TU AUNIT="MGR_DDY" AUNITVALUE="20260325" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">2026년 03월 25일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE" ENG="Shareholders’ register closure period" WIDTH="126" HEIGHT="53">주주명부 폐쇄기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="64" HEIGHT="23">시작일</TD>
+<TU AUNIT="CLO_BGN_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="64" HEIGHT="23">종료일</TD>
+<TU AUNIT="CLO_END_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE" ENG="Filing period for opposition to exchange or transfer of shares" WIDTH="126" HEIGHT="69">주식교환ㆍ이전 반대의사 통지접수기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="64" HEIGHT="23">시작일</TD>
+<TU AUNIT="REV_BGN_DT" AUNITVALUE="20260325" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">2026년 03월 25일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="46">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="64" HEIGHT="39">종료일</TD>
+<TU AUNIT="REV_END_DT" AUNITVALUE="20260408" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="39">2026년 04월 08일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="Scheduled date of general shareholders’ meeting" WIDTH="199" HEIGHT="23">주주총회 예정일자</TD>
+<TU AUNIT="MGR_SHM_DT" AUNITVALUE="20260416" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">2026년 04월 16일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE" ENG="Exercise period of the appraisal rights" WIDTH="126" HEIGHT="53">주식매수청구권행사기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="64" HEIGHT="23">시작일</TD>
+<TU AUNIT="BUY_BGN_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="64" HEIGHT="23">종료일</TD>
+<TU AUNIT="BUY_END_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE" ENG="Period for submission of old share certificates" WIDTH="126" HEIGHT="53">구주권제출기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="64" HEIGHT="23">시작일</TD>
+<TU AUNIT="OLD_STK_BGN_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="64" HEIGHT="23">종료일</TD>
+<TU AUNIT="OLD_STK_END_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" ENG="Scheduled period for suspending trading" WIDTH="126" HEIGHT="53">매매거래정지예정기간</TD>
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date" WIDTH="64" HEIGHT="23">시작일</TD>
+<TU AUNIT="EXV_BGN_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date" WIDTH="64" HEIGHT="23">종료일</TD>
+<TU AUNIT="EXV_END_DT" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="Date of exchange or transfer" WIDTH="199" HEIGHT="23">교환ㆍ이전일자</TD>
+<TU AUNIT="EXV_DT" AUNITVALUE="20260608" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">2026년 06월 08일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="Scheduled delivery date of new share certificates" WIDTH="199" HEIGHT="23">신주권교부예정일</TD>
+<TU AUNIT="MGR_SSY" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" COLSPAN="2" VALIGN="MIDDLE" ENG="Scheduled listing date of new shares" WIDTH="199" HEIGHT="23">신주의 상장예정일</TD>
+<TU AUNIT="MGR_CSY" AUNITVALUE="-" VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="9. Name of wholly owning parent company after exchange or transfer" WIDTH="329" HEIGHT="46">9. 교환ㆍ이전 후 완전모회사명</TD>
+<TE VALIGN="MIDDLE" ACODE="HLDC_NM" ALIGN="CENTER" WIDTH="698" HEIGHT="46">주식회사 이마트(E-MART Inc.)</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="6" ENG="10. Matters relating to the appraisal rights" WIDTH="121" HEIGHT="219">10. 주식매수청구권에 관한 사항</TD>
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Terms and conditions for exercise" WIDTH="199" HEIGHT="46">행사요건</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STO" ALIGN="CENTER" WIDTH="698" HEIGHT="46">상법 제360조의10에 의거하여 소규모 주식교환 절차에 따라 진행되므로(주)이마트의 주주에게는 주식매수청구권이 부여되지 않습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Estimated purchase price" WIDTH="199" HEIGHT="23">매수예정가격</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STP" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Exercise procedure, method, period, and location" WIDTH="199" HEIGHT="23">행사절차, 방법, 기간, 장소</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STD" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Payment schedule and method" WIDTH="199" HEIGHT="23">지급예정시기, 지급방법</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STY" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Restrictions on appraisal rights" WIDTH="199" HEIGHT="46">주식매수청구권 제한 관련 내용</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STC" ALIGN="CENTER" WIDTH="698" HEIGHT="46">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ENG="Effects on contract" WIDTH="199" HEIGHT="23">계약에 미치는 효력</TD>
+<TE VALIGN="MIDDLE" ACODE="MGR_STE" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="11. Whether deemed a backdoor listing" WIDTH="329" HEIGHT="23">11. 우회상장 해당 여부</TD>
+<TU VALIGN="MIDDLE" AUNIT="MGR_BDL" AUNITVALUE="A" ALIGN="CENTER" WIDTH="698" HEIGHT="23" ENG="N/A">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="12. Whether satisfying backdoor listing requirements by other corporations" WIDTH="329" HEIGHT="23">12. 타법인의 우회상장 요건 충족 여부</TD>
+<TU VALIGN="MIDDLE" AUNIT="MGR_BDK" AUNITVALUE="A" ALIGN="CENTER" WIDTH="698" HEIGHT="23" ENG="N/A">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="13. Board resolution date (decision date)" WIDTH="329" HEIGHT="23">13. 이사회결의일(결정일)</TD>
+<TU VALIGN="MIDDLE" AUNIT="DRT_RSLT_DT" AUNITVALUE="20260310" ALIGN="CENTER" WIDTH="698" HEIGHT="23">2026년 03월 10일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE" ENG="- Attendance of outside directors" WIDTH="121" HEIGHT="53"> - 사외이사참석여부</TD>
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Present (No.)" WIDTH="199" HEIGHT="23">참석(명)</TD>
+<TE VALIGN="MIDDLE" ACODE="ODRT_ATD_CNT" ALIGN="RIGHT" WIDTH="698" HEIGHT="23">4</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="2" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Absent (No.)" WIDTH="199" HEIGHT="23">불참(명)</TD>
+<TE VALIGN="MIDDLE" ACODE="ODRT_NATD_CNT" ALIGN="RIGHT" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Attendance of auditors (members of Audit Committee who are not outside directors)" WIDTH="329" HEIGHT="23"> - 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+<TU VALIGN="MIDDLE" AUNIT="ADT_ATD_YN" AUNITVALUE="-" ALIGN="CENTER" WIDTH="698" HEIGHT="23" ENG="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="14. Whether signed a put option contract, etc." WIDTH="329" HEIGHT="23">14. 풋옵션 등 계약 체결여부</TD>
+<TU VALIGN="MIDDLE" AUNIT="PO_CTRT_YN" AUNITVALUE="N" ALIGN="CENTER" WIDTH="698" HEIGHT="23" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Contract details" WIDTH="329" HEIGHT="23"> - 계약내용</TD>
+<TE VALIGN="MIDDLE" ACODE="PO_CTRT_DTL" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="15. Whether subject to file securities registration statement" WIDTH="329" HEIGHT="23">15. 증권신고서 제출대상 여부</TD>
+<TU VALIGN="MIDDLE" AUNIT="RPT_SM_YN" AUNITVALUE="Y" ALIGN="CENTER" WIDTH="698" HEIGHT="23" ENG="Yes">예</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Reasons for exemption from filing securities registration statement, if exempted" WIDTH="329" HEIGHT="23"> - 제출을 면제받은 경우 그 사유</TD>
+<TE VALIGN="MIDDLE" ACODE="RPT_SBM" ALIGN="CENTER" WIDTH="698" HEIGHT="23">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="N" WIDTH="1041" BORDER="0">
+
+<COLGROUP WIDTH="1041">
+<COL WIDTH="1041"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD WIDTH="1032" HEIGHT="46">주1) 상기 '2. 교환ㆍ이전 대상법인'의 '바. 최근 사업연도 요약재무내용(원)'의 자산총계, 부채총계, 자본총계는 2024년 회계연도 연결재무제표 기준이며, 자본금은 2024년 회계연도 별도재무제표 기준입니다.</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="16. Plans for future corporate restructuring">16. 향후 회사구조개편에 관한 계획</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P>
+<SPAN>주요사항보고서 제출일 현재 구체적으로 결정된 사항은 없으며, 향후 구체적인 사항에 대한 결의가 있는 경우 관련 공</SPAN>시규정에 따라 공시할 계획입니다.
+</P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="17. Other matters to be factored into investment decisions">17. 기타 투자판단과 관련한 중요사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>(1) (주)이마트는 본건 주식교환에 있어 주주 간 이해상충을 방지하고 절차적 적정성 및 투명성을 확보하기 위해 회사로부터 독립되고, 본건 주식교환과 특별이해관계가 없음이 확인된 사외이사 4인으로 구성된 특별위원회를 선제적으로 설치·운영하였습니다. 특별위원회는 외부 독립 자문사의 조력을 받아 수회에 거쳐 본건 주식교환 절차 및 조건을 심도 있게 검토하였으며, 그 결과 본건 주식교환이 (ㄱ) 주주에 대한 직접손해 발생 가능성이 낮고, (ㄴ) 대주주와 이해상충을 야기하지 않으며, (ㄷ) (주)신세계푸드가 요청하는 소수주주에 대한 추가 보호 조치에 대한 수용 타당성이 있다는 의견으로 위원 전원의 결의후 (주)이마트의 이사회에 이를 보고하였습니다.(2) (주)이마트는 기존 (주)신세계푸드 주주들에게 추가적인 투자회수 기회를 제공하고 주주가치를 제고하기 위해 2025년 12월 11일 이사회결의를 통하여 (주)신세계푸드의 지분을 추가 취득하기 위한 공개매수를 2025년 12월 15일부터 2026년 01월 05일까지 (주)신세계푸드 발행 보통주식 1,467,319주((주)이마트가 보유하고 있는 (주)신세계푸드 주식 2,148,133주 및 (주)신세계푸드 자기주식 257,028주를 제외한 발행주식 전부에 해당함)에 대하여 주당 48,120원(공개매수가격)으로 진행하였습니다. 공개매수 결과는 다음과 같습니다.</P>
+<P></P>
+
+<TABLE BORDER="1" WIDTH="691" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="691">
+<COL WIDTH="333"></COL>
+<COL WIDTH="104"></COL>
+<COL WIDTH="78"></COL>
+<COL WIDTH="176"></COL>
+</COLGROUP>
+
+<THEAD>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TH WIDTH="324" USERMARK="BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">구분</TH>
+<TH WIDTH="95" USERMARK="BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">주식수(주)</TH>
+<TH WIDTH="69" USERMARK="BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">비율(%)</TH>
+<TH WIDTH="167" USERMARK="BC0XDCDCDC" VALIGN="MIDDLE" ACOPYCOL="Y" ADELETECOL="Y" AMOVECOL="N" HEIGHT="23">비고</TH>
+</TR>
+</THEAD>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="324" HEIGHT="23">(주)신세계푸드 발행주식(A)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="95" HEIGHT="23">3,872,480</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23">100.00%</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="167" HEIGHT="23">-</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="324" HEIGHT="23">(주)이마트 보유주식(B)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="95" HEIGHT="23">2,148,133</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23">55.47%</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="167" HEIGHT="23">공개매수 이전 지분율</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="324" HEIGHT="23">(주)신세계푸드 자사주(C)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="95" HEIGHT="23">257,028</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23">6.64%</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="167" HEIGHT="23">-</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="324" HEIGHT="23">공개매수 예정 주식(D)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="95" HEIGHT="23">1,467,319</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23">37.89%</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="167" HEIGHT="23">(A - B - C)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="324" HEIGHT="23">공개매수 청약 주식(E)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="95" HEIGHT="23">425,206</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23">10.98%</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="167" HEIGHT="23">-</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="324" HEIGHT="23">공개매수 후 (주)이마트 보유주식(F)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="95" HEIGHT="23">2,573,339</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23">66.45%</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="167" HEIGHT="23">(B + E)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="324" HEIGHT="23">주식교환 대상 주식</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="95" HEIGHT="23">1,042,112</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="69" HEIGHT="23">26.91%</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="167" HEIGHT="23">(A - C - F)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="N" WIDTH="699" BORDER="0">
+
+<COLGROUP WIDTH="699">
+<COL WIDTH="699"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD WIDTH="690" HEIGHT="46">주1) (주)신세계푸드는 공개매수 신고서 제출일 이후 주식매수청구권 행사에 따른 자기주식 1주를 취득하여, 현재 기준 보유 자기주식수는 257,029주이며, 이를 고려하여 주식교환 대상 주식을 계산함</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<P>본건 공개매수 결과, (주)이마트는 (주)신세계푸드 주식 425,206주를 추가 취득함으로써 (주)신세계푸드 지분 66.45%(의결권 기준 71.18%)를 소유하게 되었습니다. 주식교환일 현재 (주)이마트가 소유한 (주)신세계푸드 주식은 본건 주식교환의 대상에 포함되지 아니하며, 본건 주식교환의 대가로 (주)신세계푸드 주주들에게 교부할 (주)이마트 기보유 자기주식 총수((주)이마트가 단주처리를 위하여 취득하는 주식 포함)는 524,319주입니다. 다만, 위 교부주식수는 본건 주식교환일 이전에 (주)신세계푸드 주주들의 주식매수청구권 행사로 인하여 취득한 자기주식을 소각하는 등의 사유로 인하여 변경될 수 있습니다. (3) 자본시장과 금융투자업에 관한 법률 시행령 제176조의6 제2항 및 제176조의5 제1항 제1호에 따르면 주권상장법인 간 주식교환의 경우에는 시가를 기준으로 산출된 가액에 100분의 10(주권상장법인인 기업인수목적회사와 다른 법인간 주식교환 경우에는 100분의 30)의 범위에서 할인 또는 할증을 적용할 수 있습니다. 본건 주식교환은 계열회사 간 주식교환으로, (주)이마트와 (주)신세계푸드가 각자 검토하고 상호 협상하여 합의한 바에 따라 (주)이마트의 경우 할증 또는 할인 없이 상술한 기준시가를 교환가액으로 적용하였으며, (주)신세계푸드의 경우 기준시가에 100분의 10의 범위 내인 3.0%를 할증한 가액을 교환가액으로 적용하였습니다.(주)신세계푸드는 본건 주식교환이 지배구조 개편의 일환으로 이루어지는 일련의 거래라는 점에서 양사 및 양사 주주 모두의 경제적 효익의 고려가 필요하다는 점을 들어 본건 주식교환비율 산정 시 (주)신세계푸드의 교환가액을 100분의 10의 범위 내에서 할증하는 방안을 제안하였고, (주)이마트의 특별위원회와 이사회는 이에 대하여 아래와 같이 검토하였습니다.① 본건 주식교환이 지배구조 개편의 일환으로 이루어지는 일련의 거래라는 점에서 양사 및 양사 주주 모두의 경제적 효익의 고려가 필요하다는 점, ② 할증을 통해 (주)신세계푸드의 소수주주를 설득할 경우 본건 주식교환 및 상장폐지를 원활하게 진행할 수 있는 점, ③ (주)이마트 입장에서 주식교환의 대가로 교부하는 (주)이마트의 자기주식의 수량이 약 2%에 불과할 정도로 주주에 미치는 영향이 미미하다는 점에서 자본시장법 등 법령이 허용하는 범위에서 할증을 적용할 경우 (주)이마트 및 (주)이마트 주주의 이익에 부합하는 결과가 될 수 있다는 점에 공감하였습니다다만, (주)이마트의 이사회는 할증을 적용하더라도 (주)이마트 주주의 입장에서 필요하고 정당화되는 조치임을 담보하기 위해 할증을 적용한 후 산정된 주식교환 비율이 (주)이마트의 특별위원회가 선임한 회계 자문사가 독립적으로 산정한 적정한 교환비율의 범위 내에 있어야 하고, (주)이마트가 기존 공시한 기업가치 제고 계획에 모순되지 않아야 한다고 판단하였습니다. 이에 (주)이마트 이사회는 (주)이마트 특별위원회가 외부 회계 자문사를 통해 독립적인 검토하여 산정한 (주)이마트와 (주)신세계푸드의 적정 교환비율의 범위를 초과하지 않고, (주)이마트가 기존에 공시한 기업가치 제고계획상 자기주식 소각 계획의 준수를 위하여 추가로 현금을 지출하여 자기주식을 매입하지 않아도 되는 범위 내에서 (주)신세계푸드 기준시가를 할증하여 교환가액을 결정하는 것이 (주)이마트 및 (주)이마트 주주의 이해관계에 가장 부합한다는 결론을 내렸습니다. 이에 따라 (주)이마트는 (주)신세계푸드와의 합의를 거쳐 2026년 03월 09일을 기산일로 한 (주)신세계푸드의 기준시가 48,729원에 3.0%의 할증을 적용한 교환가액 50,191원을 기준으로 본건 주식의 포괄적 교환의 교환비율을 산정하였습니다.종합적으로, 교환비율 산정 시 (주)신세계푸드의 기준시가에 3.0%의 할증을 적용한 교환가액으로 교환비율을 산정하는 방안을 수용하더라도 (주)이마트와 (주)이마트 주주 모두에게 손해보다 이익이 더 큰 것으로 판단하여 할증을 적용한 교환가액으로 최종 교환비율을 결정하였습니다.</P>
+<P>(4) (주)이마트의 경우 상법 제360조의10에 따라 소규모 주식교환 방식으로 진행되므로 주주총회에 갈음하여 이사회의 승인으로 본건 주식교환을 진행하며, 상기 '8. 교환ㆍ이전일정'의 '주주총회 예정일자'는 주주총회에 갈음하는 이사회 승인 예정일자 입니다.(5) (주)이마트의 경우 상법 제360조의10의 규정에 의거하여 소규모 주식교환 절차에 따라 진행하므로, 주식교환 반대주주의 주식매수청구권은 부여되지 않습니다. 다만, (주)이마트 발행주식총수의 100분의 20 이상에 해당하는 주식을 가지는 주주가 상법 제360조의10 제5항에 따라 서면으로 본건 주식교환에 반대하는 의사를 통지한 경우, (주)이마트의 서면 통지에 의하여 본건 주식교환 계약을 해제하거나 이사회 결의에 의해 소규모 주식교환이 아닌 일반 주식교환 절차에 의해 본건 주식교환을 추진하는 것을 결정할 수 있습니다. 본건 주식교환의 반대의사통지 접수기간은 2026년 03월 25일 ~ 2026년 04월 08일입니다.(6) (주)신세계푸드의 기보유 자기주식(257,029주) 및 주식매수청구권 행사에 의해 취득하는 자기주식에 대하여는 교환대가인 (주)이마트의 자사주를 배정하지 않고, 주식교환일 이전 관련 법령에 따라 소각 예정입니다. 향후 구체적인 사항이 결정될 경우, 관련 공시규정에 따라 공시할 계획입니다.(7) (주)이마트의 이사회 또는 (주)신세계푸드의 주주총회에서 본건 주식교환 계약의 승인 안건이 부결되는 경우, 본건 주식교환 계약은 당사자들의 별도의 조치 없이 소급하여 그 효력을 상실합니다.(8) 본건 주식교환 계약상 다음과 같은 사유가 발생하는 경우 계약이 변경되거나 해제될 수 있습니다.</P>
+
+<TABLE BORDER="1" WIDTH="600" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="952">
+
+<TD WIDTH="591" USERMARK="B 0X0000FF" HEIGHT="945">
+<P USERMARK="B">제12조  계약의 변경 및 해제</P>
+<P USERMARK="A-J">(1) 본 계약 체결 후 주식교환일까지 본 계약의 조건과 관련된 사항이 관련 법령 또는 회계기준에 위반되는 경우, 당사자들은 서면 합의에 의하여 관련 법령과 회계기준에 적합하게 본 계약을 변경할 수 있고, 위 변경에 관한 합의 권한은 각 당사자의 대표이사에게 위임한다. </P>
+<P USERMARK="A-J"> </P>
+<P USERMARK="A-J">(2) 본 계약은 주식교환일 전에 한하여 다음 각 호에 따라 해제된다.</P>
+<P USERMARK="A-J"> </P>
+<P USERMARK="A-J">1. 각 당사자는 주식교환일 전에는 언제라도 상대방 당사자와의 서면합의에 의하여 본 계약을 해제할 수 있다.</P>
+<P USERMARK="A-J">2. 이마트의 발행주식총수의 20% 이상에 해당하는 주식을 소유한 주주가 상법 제360조의10 제4항에 의한 소규모 주식교환에 대한 공고 또는 통지일로부터 2주 내에 서면으로 주식교환에 반대한다는 의사를 통지한 경우, 이마트는 신세계푸드에 대한 서면 통지로써 본 계약을 해제할 수 있다. 다만, 본 계약 제4조 제1항 단서에 따라 이마트의 이사회가 본건 주식교환을 일반 주식교환 절차로 진행하기로 결의하는 경우는 제외한다. </P>
+<P USERMARK="A-J">3. 당사자 일방의 자산, 부채, 경영상태에 중대한 변화가 발생하거나 예측할 수 없었던 중대한 하자, 부실 기타 주식교환과 관련된 중대한 사정변경이 있는 경우 당사자들은 합의에 의해 본 계약의 조건을 조정하거나 본 계약을 해제할 수 있다. </P>
+<P USERMARK="A-J">4. 각 당사자는 제9조의 선행조건이 충족될 수 없는 것으로 확정된 경우 상대방 당사자에 대한 서면 통지로써 본 계약을 해제할 수 있다.</P>
+
+<P USERMARK="F-12  A-J">
+<SPAN USERMARK="F-11 ">5. 당사자 일방(“</SPAN>
+<SPAN USERMARK="F-11 U">위반당사자</SPAN>
+<SPAN USERMARK="F-11 ">”)의 본 계약상 진술 및 보장이 정확하지 않거나 사실과 일치하지 아니하고 그로 인하여 중대한 부정적 영향이 발생하였거나 중대한 부정적 영향의 발생이 합리적으로 예상되는 경우, 또는 위반당사자가 본 계약상 확약 기타 의무를 중대하게 위반하고 상대방 당사자(“</SPAN>
+<SPAN USERMARK="F-11 U">비위반당사자</SPAN>
+<SPAN USERMARK="F-11 ">”)로부터 시정을 요구하는 서면 통지를 수령한 날로부터 7일 이내에 위반 사항이 시정되지 아니하는 경우, 비위반당사자는 위반당사자에 대한 서면 통지로써 본 계약을 해제할 수 있다.</SPAN>
+</P>
+<P USERMARK="A-J">(3) 당사자들은 본건 주식교환을 위하여 추가 합의가 필요한 사항에 대하여 별도 계약을 체결할 수 있고, 위 별도 계약은 본 계약의 일부로 간주된다.</P>
+<P USERMARK="A-J">(4) 본건 주식교환의 조건과 관련된 내용이 변경되는 경우, 당사자들은 이를 확인하는 합의서를 작성하고, 위 합의서는 본 계약의 일부로 간주된다.</P>
+<P USERMARK="A-J">(5) 본 계약이 본 조의 규정에 따라 해제 또는 변경되거나 제11조에 따라 그 효력이 상실되는 경우 각 당사자 및 그 주주, 임직원, 대리인 기타 대표자는 본 계약상 또는 본 계약에 따른 거래와 관련하여 어떠한 책임도 부담하지 아니한다. </P>
+<P USERMARK="A-J">(6) 본 계약의 해제 내지 효력 상실에도 불구하고 그 성격상 존속이 예정되어 있는 조항(본 계약 제12조 내지 제16조를 포함하되 이에 한정되지 아니함) 또는 권리의무는 계속하여 그 효력을 유지한다.</P>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<P USERMARK="F-10  A-L">
+<SPAN USERMARK="F-12 ">(9) 주식의 포괄적 교환 후 완전자회사가 되는 (주)신세계푸드의 경우 주요사항보고서 제출일 현재 유가증권시장 상장법인이나, 관련 법령 및 절차에 의거하여 상장폐지될 예정입니다.</SPAN>
+<SPAN USERMARK="F-12  0X0000FF"></SPAN>
+<SPAN USERMARK="F-12 ">(10) 자기주식보유처분계획2026년 3월 6일 공포 및 시행된 개정 상법에 따라, 회사는 상기 포괄적 주식교환에따른 자기주식 처분이 포함된 자기주식보유처분계획을 2026년 3월 26일 예정된정기주주총회에서 승인받을 예정입니다.(11) 상기 사항 및 일정은 관계기관의 협의나 승인 및 계약 당사자 간의 협의 등을 통해 변경될 수 있습니다.(12) 주식교환과 관련하여 이사회에서 정하지 아니한 구체적인 사항을 포함하여, 향후 세부 일정, 절차 및 최종적으로 교부할 (주)이마트의 자기주식 수 등에 대해서는 대표이사에게 위임합니다.</SPAN>
+</P>
+<P USERMARK="0X0000FF A-L"> </P>
+<P USERMARK="A-L">※ 본 공시는 독점규제 및 공정거래에 관한 법률 제26조(대규모내부거래의 이사회 의결 및 공시)에서 정한 공시의무사항에도 해당되고, 이에 따라 해당 공시는 본 공시로 갈음합니다. 보다 자세한 사항은 추후 제출할 예정인 (주)이마트의 증권신고서를 참조하시기 바랍니다. </P>
+</SECTION-1>
+</BODY>
+</DOCUMENT>

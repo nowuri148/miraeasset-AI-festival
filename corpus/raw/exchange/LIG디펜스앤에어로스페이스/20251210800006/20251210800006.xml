@@ -1,0 +1,213 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>LIG넥스원/신규시설투자등/(2025.12.10)신규시설투자등</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <div id="LIB_LC000" style="width:600px;font-size:10pt;;padding:0 0 20 0"> 
+     <div> 
+      <div> 
+       <span style="width:600px;font-size:10pt;font-weight:bold;text-align:center;">정정신고(보고)</span> 
+       <table border="0" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table1" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;"> 
+        <tbody> 
+         <tr> 
+          <td width="434"> <span style="width:434px;font-size:10pt;text-align:right;">정정일자</span> </td> 
+          <td width="166"> <span class="xforms_input" style="width:166px;font-size:10pt;">2025-12-10</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_RepeatTable0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">1. 정정관련 공시서류</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">신규 시설투자 등</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">2. 정정관련 공시서류제출일</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">2025-12-04</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;">3. 정정사유</span> </td> 
+          <td colspan="2" width="400"> <span class="xforms_input" style="width:400px;font-size:10pt;">시설투자 소재지 주소 오기입에 따른 정정</span> </td> 
+         </tr> 
+         <tr> 
+          <td colspan="3" width="600"> <span style="width:600px;font-size:10pt;">4. 정정사항</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정항목</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정전</span> </td> 
+          <td width="200"> <span style="width:200px;font-size:10pt;text-align:center;">정정후</span> </td> 
+         </tr> 
+         <tr> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">7. 기타 투자판단과 관련한 중요사항</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 시설투자 소재지 : 경상북도 구미시 산호대로 364-18 일대</span> </td> 
+          <td width="200"> <span class="xforms_input" style="width:200px;font-size:10pt;">- 시설투자 소재지 : 경상북도 구미시 산호대로 354-18 일대</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD8_Form0_Table0" style="margin:0px 0px 20px 0px;width:599px;font-size:10pt;border:1px solid #7f7f7f;"> 
+        <tbody> 
+         <tr> 
+          <td width="599"> <span class="xforms_input" style="width:599px;font-size:10pt;">-</span> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">신규 시설투자 등</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:601px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">1. 투자구분</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">신규시설투자</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">- 투자대상</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">구미 생산시설</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="150"> <span style="width:150px;font-size:10pt;">2. 투자내역</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">투자금액(원)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">374,010,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">자기자본(원)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">1,237,435,235,062</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">자기자본대비(%)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">30.22</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">3. 투자목적</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">중장기 생산 인프라 확보</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="150"> <span style="width:150px;font-size:10pt;">4. 투자기간</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">2025-12-04</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">2029-06-30</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">5. 이사회결의일(결정일)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">2025-12-04</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="150"> <span style="width:150px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">4</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">참석</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="150"> <span style="width:150px;font-size:10pt;">6. 공시유보 관련내용</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" width="267"> <span style="width:267px;font-size:10pt;">7. 기타 투자판단과 관련한 중요사항</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">- 시설투자 소재지 : 경상북도 구미시 산호대로 354-18 일대 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2항의 자기자본은 2024년 연결재무제표 기준입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2항의 투자금액은 부가세 제외 금액입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 4항의 투자기간의 시작일은 이사회 결의일 기준이며, 종료일은 준공완료 예상 시점입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 당사의 감사위원회는 전원 사외이사로 구성되어 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 향후 투자 진행과정에서 경영환경의 변화 및 내부 진행일정에 따라 변동될 수 있습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="90"> <span style="width:90px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td width="244"> <span style="width:244px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20251204000593&amp;rcpno=20251204000593&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2025-12-04 신규시설투자등</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

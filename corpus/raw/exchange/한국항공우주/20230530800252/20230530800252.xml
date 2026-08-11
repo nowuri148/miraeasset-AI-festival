@@ -1,0 +1,155 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>한국항공우주/단일판매ㆍ공급계약 체결(자율공시)/(2023.05.30)단일판매ㆍ공급계약 체결(자율공시)</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 체결(자율공시)</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD14_Form0_Table0" style="margin:0px 0px 20px 0px;width:600px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">1. 판매ㆍ공급계약 구분</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">상품공급</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">- 세부내용</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">콜린스사 낫셀 부품 공급 계약</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="107"> <span style="width:107px;font-size:10pt;">2. 계약내역</span> </td> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">계약금액(원)</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;text-align:right;">34,768,454,530</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;text-align:right;">2,786,888,282,702</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;text-align:right;">1.2</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">Collins Aerospace</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">4. 판매ㆍ공급지역</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">미국</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="107"> <span style="width:107px;font-size:10pt;">5. 계약기간</span> </td> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">2023-05-29</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="129"> <span style="width:129px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">2035-12-31</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">6. 주요 계약조건</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">가. 주내용 : B787, A320NEO, A220 기종 엔진 낫셀 부품 납품 <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">나. 계약금액 : $26,228,466</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="236"> <span style="width:236px;font-size:10pt;">7. 계약(수주)일</span> </td> 
+       <td colspan="2" width="364"> <span class="xforms_input" style="width:364px;font-size:10pt;">2023-05-29</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="600"> <span style="width:600px;font-size:10pt;">8. 기타 투자판단과 관련한 중요사항</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" width="600"> <span class="xforms_input" style="width:600px;font-size:10pt;">가. 본 건은 당사 신규고객인 콜린스 사로 3개 기종 (B787, A320NEO, A220)의 엔진 낫셀 (Nacelle)에 장착되는 기계가공 부품을 생산, 공급하는 신규 수주 계약입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">나. 상기 2항의 계약금액은 이번 계약으로 인한 순 수주금액이며, 공시일('23.05.30)기준의 서울외국환중개 최초고시회차 매매기준율 1,325.60원/$을 적용하여 기재하였습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">다. 상기 2항의 최근매출액은 2022년말 연결재무제표 기준입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">라. 상기의 내용은 향후 진행상황에 따라 변경될 수 있으며, 변경이 생길 경우 재공시 하겠습니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="107"> <span style="width:107px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td colspan="3" width="493"> <span class="xforms_input" style="width:493px;font-size:10pt;">-</span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

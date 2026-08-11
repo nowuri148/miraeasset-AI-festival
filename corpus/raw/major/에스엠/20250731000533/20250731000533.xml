@@ -1,0 +1,1924 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dart4.xsd">
+
+<DOCUMENT-NAME ACODE="11344">주요사항보고서(회사합병 결정)</DOCUMENT-NAME>
+<FORMULA-VERSION ADATE="20221018">6.0</FORMULA-VERSION>
+<COMPANY-NAME AREGCIK="00260930">주식회사 에스엠엔터테인먼트</COMPANY-NAME>
+
+
+<BODY ATOCID="2">
+
+<LIBRARY>
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-0-0-0" ENG="Report on Major Issues／Reporting Obligations to the KRX" ATOCID="2">주요사항보고서 / 거래소 신고의무 사항</TITLE>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="141"></COL>
+<COL WIDTH="183"></COL>
+<COL WIDTH="276"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="2" VALIGN="MIDDLE" WIDTH="315" HEIGHT="23">금융위원회 / 한국거래소 귀중</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="267" HEIGHT="23">2025 년   7 월  31 일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="46"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">회     사     명  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">주식회사 에스엠엔터테인먼트</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">대  표   이  사  :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">장 철 혁, 탁 영 준 (공동대표이사)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">본 점  소 재 지 :</TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">서울특별시 성동구 왕십리로 83-21</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-6240-9800</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(홈페이지)http://www.smentertainment.com</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23">작 성 책 임 자 :</TD>
+<TD WIDTH="174" HEIGHT="23">(직  책) C F O</TD>
+<TD WIDTH="267" HEIGHT="23">(성  명) 장 정 민</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="132" HEIGHT="23"></TD>
+<TD COLSPAN="2" WIDTH="450" HEIGHT="23">(전  화) 02-6240-9800</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD COLSPAN="3" WIDTH="591" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<PGBRK></PGBRK>
+</SECTION-1>
+</LIBRARY>
+
+
+<SECTION-1 ACLASS="MANDATORY" APARTSOURCE="SOURCE">
+<TITLE ATOC="Y" AASSOCNOTE="D-0-1-0-0" ENG="Decision on Merger" ATOCID="1">회사합병 결정</TITLE>
+<P></P>
+
+<TABLE-GROUP ACLASS="RSL_MGR" ADELETETABLE="N">
+
+<TABLE ACLASS="EXTRACTION" AFIXTABLE="Y" WIDTH="778" BORDER="1">
+
+<COLGROUP WIDTH="778">
+<COL WIDTH="65"></COL>
+<COL WIDTH="65"></COL>
+<COL WIDTH="40"></COL>
+<COL WIDTH="41"></COL>
+<COL WIDTH="81"></COL>
+<COL WIDTH="94"></COL>
+<COL WIDTH="47"></COL>
+<COL WIDTH="78"></COL>
+<COL WIDTH="90"></COL>
+<COL WIDTH="177"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="99">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="283" HEIGHT="92" AUPDATECONT="N" ENG="1. Merger method">1. 합병방법</TD>
+
+<TE WIDTH="477" HEIGHT="92" ACODE="MGR_MTH" COLSPAN="5" VALIGN="MIDDLE">
+<P>㈜에스엠엔터테인먼트(존속회사)가 ㈜에스엠스튜디오스(소멸회사)를 흡수합병</P>
+<P>- 존속회사(합병회사): ㈜에스엠엔터테인먼트 (주권상장법인)</P>
+<P>- 소멸회사(피합병회사): ㈜에스엠스튜디오스 (주권비상장법인)</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="283" HEIGHT="23" AUPDATECONT="N" ENG="- Type of merger">- 합병형태</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_FRM" AUNITVALUE="A" COLSPAN="5" ENG="Small-scale merger">소규모합병</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="283" HEIGHT="46" AUPDATECONT="N" ENG="2. Purpose of merger">2. 합병목적</TD>
+<TE WIDTH="477" HEIGHT="46" ACODE="MGR_RES" COLSPAN="5" VALIGN="MIDDLE">경영 자원의 통합을 통한 시너지 효과 창출, 경영 효율성 달성 및 사업 경쟁력 강화</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="260">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="283" HEIGHT="253" AUPDATECONT="N" ENG="3. Major impacts and effects of the merger">3. 합병의 중요영향 및 효과</TD>
+
+<TE WIDTH="477" HEIGHT="253" ACODE="MGR_EFT" COLSPAN="5">
+<P>가. 회사의 경영에 미치는 영향 및 효과</P>
+<P>본 보고서 제출일 현재 ㈜에스엠엔터테인먼트는 ㈜에스엠스튜디오스의발행주식총수 전부를 소유하고 있으므로, 본 합병은 합병신주를 발행하지 않는 무증자합병 방식으로 진행합니다. 따라서, 본 합병으로 인해 합병회사의 경영권 변동 등에 미치는 영향은 없습니다.</P>
+<P> </P>
+<P>나. 회사의 재무에 미치는 영향 및 효과</P>
+<P>본 합병을 통해 경영자원 및 조직의 통합 운영에 따른 비용 절감 및 경영 효율성 달성을 목표하고 있으며, 이러한 시너지 효과를 바탕으로 한 사업 경쟁력 강화 및 회사의 재무에 대한 긍정적 효과를 기대하고 있습니다.</P>
+</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="283" HEIGHT="23" AUPDATECONT="N" ENG="4. Merger ratio">4. 합병비율 </TD>
+<TE WIDTH="477" HEIGHT="23" ACODE="OTH_MGR_RATE" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER">㈜에스엠엔터테인먼트 : ㈜에스엠스튜디오스 = 1.0000000 : 0.0000000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="10" VALIGN="MIDDLE" WIDTH="769" HEIGHT="23" AUPDATECONT="N" ENG="- In the case of an extinctive merger with an SPAC">- 기업인수목적회사 소멸합병의 경우</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD VALIGN="MIDDLE" WIDTH="56" HEIGHT="69" AUPDATECONT="N"></TD>
+<TD COLSPAN="4" VALIGN="MIDDLE" WIDTH="218" HEIGHT="69" AUPDATECONT="N" ENG="A multiple of the reference price on the listing date of the stocks given by merger compared to the closing price on the last trading day of the SPAC">기업인수목적회사 마지막 거래일 종가 대비 합병신주의 상장 당일 기준가격의 배수</TD>
+<TE WIDTH="477" HEIGHT="69" ACODE="MGR_PRC_CMP" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="122">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="283" HEIGHT="115" AUPDATECONT="N" ENG="5. Calculation basis for the merger ratio">5. 합병비율 산출근거</TD>
+<TE WIDTH="477" HEIGHT="115" ACODE="MGR_RT_CALC" COLSPAN="5" VALIGN="MIDDLE">합병회사 ㈜에스엠엔터테인먼트는 피합병회사 ㈜에스엠스튜디오스의발행주식 전부를 소유하고 있으므로, 본 합병은 피합병회사 주주에게 합병신주를 발행하지 않고 기타 합병대가를 교부하지 않는 무증자합병 방식으로 진행하는바, 합병비율은 1.0000000 : 0.0000000으로 산출하였습니다. </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="121" HEIGHT="258" AUPDATECONT="N" ROWSPAN="5" COLSPAN="2" ENG="6. Matters related to external evaluation">6. 외부평가에 관한 사항</TD>
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ALIGN="CENTER" ENG="Whether external valuation was conducted">외부평가 여부</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="EXV_YN" AUNITVALUE="N" COLSPAN="5" ENG="Non-applicable">미해당</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="145">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="153" HEIGHT="138" AUPDATECONT="N" ALIGN="CENTER" ENG="- Basis and reasons">- 근거 및 사유</TD>
+<TE WIDTH="477" HEIGHT="138" ACODE="EXV_BSS" COLSPAN="5" VALIGN="MIDDLE">「자본시장과 금융투자업에 관한 법률 시행령」 제176조의5 제8항 제2호 나목 단서는 다른 회사의 발행주식총수를 소유하고 있는 회사가 그 다른 회사를 합병하면서 신주를 발행하지 않는 경우에는 합병가액의 적정성에 대한 외부평가기관의 평가를 요구하지 아니하는 것으로 규정하고 있는바, 본 합병은 이에 해당하므로 위 규정에 따라 외부평가기관의 평가를 거치지 아니하였습니다. </TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ALIGN="CENTER" ENG="External evaluator’s name">외부평가기관의 명칭</TD>
+<TE WIDTH="477" HEIGHT="23" ACODE="EXV_NM" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ALIGN="CENTER" ENG="Period of external valuation">외부평가 기간</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="EXV_PROD" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ALIGN="CENTER" ENG="Opinion of external valuation">외부평가 의견</TD>
+<TE WIDTH="477" HEIGHT="23" ACODE="EXV_OPN" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="4" VALIGN="MIDDLE" WIDTH="202" HEIGHT="53" AUPDATECONT="N" ROWSPAN="2" ENG="7. Class and number of new shares to be distributed following merger">7. 합병신주의 종류와 수(주)</TD>
+<TD VALIGN="MIDDLE" WIDTH="72" HEIGHT="23" AUPDATECONT="N" ALIGN="CENTER" ENG="Common stock">보통주식</TD>
+<TE WIDTH="477" HEIGHT="23" ACODE="MGR_CST" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="72" HEIGHT="23" AUPDATECONT="N" ALIGN="CENTER" ENG="Class shares">종류주식</TD>
+<TE WIDTH="477" HEIGHT="23" ACODE="MGR_PST" COLSPAN="5" VALIGN="MIDDLE" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="121" HEIGHT="316" AUPDATECONT="N" ROWSPAN="10" COLSPAN="2" ENG="8. Merger counterparty">8. 합병상대회사</TD>
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ENG="Company name">회사명</TD>
+<TE WIDTH="477" HEIGHT="23" COLSPAN="5" ACODE="OTH_INC" ALIGN="CENTER">㈜에스엠스튜디오스</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ENG="Main business">주요사업</TD>
+<TE WIDTH="477" HEIGHT="23" COLSPAN="5" ACODE="OTH_PRB" ALIGN="CENTER">경영컨설팅, 지주회사업</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ENG="Relationship to company">회사와의 관계</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="OTH_RLT" AUNITVALUE="6" COLSPAN="5" ENG="Subsidiary company">자회사</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="83" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ROWSPAN="3" ENG="Financial details in the latest fiscal year (KRW)">최근 사업연도 재무내용(원)</TD>
+<TD WIDTH="85" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total assets">자산총계</TD>
+<TE WIDTH="116" HEIGHT="23" ACODE="OTH_ASST" ALIGN="RIGHT" COLSPAN="2" VALIGN="MIDDLE">145,225,985,340</TE>
+<TD WIDTH="81" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Issued capital">자본금</TD>
+<TE WIDTH="168" HEIGHT="23" ACODE="OTH_CPT" ALIGN="RIGHT" VALIGN="MIDDLE">978,240,000</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="85" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total liabilities">부채총계</TD>
+<TE WIDTH="116" HEIGHT="23" ACODE="OTH_DPT" ALIGN="RIGHT" COLSPAN="2" VALIGN="MIDDLE">338,518,726</TE>
+<TD WIDTH="81" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Sales">매출액</TD>
+<TE WIDTH="168" HEIGHT="23" ACODE="OTH_SALE" ALIGN="RIGHT" VALIGN="MIDDLE">0</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="85" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total equity">자본총계</TD>
+<TE WIDTH="116" HEIGHT="23" ACODE="OTH_CPT_SUM" ALIGN="RIGHT" COLSPAN="2" VALIGN="MIDDLE">144,887,466,614</TE>
+<TD WIDTH="81" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Profit">당기순이익</TD>
+<TE WIDTH="168" HEIGHT="23" ACODE="OTH_NP" ALIGN="RIGHT" VALIGN="MIDDLE">-16,828,286,502</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="- Whether external audit was conducted"> - 외부감사 여부</TD>
+<TD WIDTH="85" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Name of institution">기관명</TD>
+<TE WIDTH="116" HEIGHT="23" ACODE="OTH_CNM" ALIGN="CENTER" COLSPAN="2">삼일회계법인</TE>
+<TD WIDTH="81" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Audit opinion">감사의견</TD>
+<TE WIDTH="168" HEIGHT="23" ACODE="OTH_GOP" ALIGN="CENTER">적정</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="639" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="8" ENG="- In the case of an extinctive merger with an SPAC"> - 기업인수목적회사 소멸합병의 경우</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="31" HEIGHT="76" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2"></TD>
+<TD WIDTH="113" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ENG="CEO">대표이사</TD>
+<TE WIDTH="132" HEIGHT="23" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ACODE="EX_CEO">-</TE>
+<TD WIDTH="159" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ENG="Establishment date">설립연월일</TD>
+<TU WIDTH="168" HEIGHT="23" VALIGN="MIDDLE" ALIGN="CENTER" AUNIT="EX_EST_DT" AUNITVALUE="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD WIDTH="113" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ENG="Location of head office:">본점소재지</TD>
+<TE WIDTH="132" HEIGHT="46" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ACODE="EX_ADDR">-</TE>
+<TD WIDTH="159" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ALIGN="CENTER" ENG="Scheduled date of submission of registration statement">증권신고서제출예정일</TD>
+<TU WIDTH="168" HEIGHT="46" VALIGN="MIDDLE" ALIGN="CENTER" AUNIT="EX_SUB_DT" AUNITVALUE="-">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="121" HEIGHT="226" AUPDATECONT="N" ROWSPAN="7" COLSPAN="2" ENG="9. New company to be established by the merger">9. 신설합병회사</TD>
+<TD COLSPAN="3" VALIGN="MIDDLE" WIDTH="153" HEIGHT="23" AUPDATECONT="N" ALIGN="CENTER" ENG="Company name">회사명</TD>
+<TE WIDTH="477" HEIGHT="23" COLSPAN="5" ACODE="MGR_INC" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="83" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ROWSPAN="3" ALIGN="CENTER" ENG="Financial details at the time of establishment (KRW)">설립시 재무내용(원)</TD>
+<TD WIDTH="85" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total assets">자산총계</TD>
+<TE WIDTH="116" HEIGHT="23" ACODE="MGR_ASST" ALIGN="RIGHT" COLSPAN="2">-</TE>
+<TD WIDTH="81" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total liabilities">부채총계</TD>
+<TE WIDTH="168" HEIGHT="23" ACODE="MGR_DPT" ALIGN="RIGHT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="85" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Total equity">자본총계</TD>
+<TE WIDTH="116" HEIGHT="23" ACODE="MGR_DPT_SUM" ALIGN="RIGHT" COLSPAN="2">-</TE>
+<TD WIDTH="81" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Issued capital">자본금</TD>
+<TE WIDTH="168" HEIGHT="23" ACODE="MGR_CPT" ALIGN="RIGHT">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TU WIDTH="210" HEIGHT="23" AUNIT="MGR_NDY" AUNITVALUE="-" COLSPAN="3" ALIGN="CENTER">-</TU>
+<TD WIDTH="258" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" COLSPAN="2" ENG="As of now">현재기준</TD>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD WIDTH="153" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Sales of newly established business division for the latest fiscal year (KRW)">신설사업부문 최근 사업연도 매출액(원)</TD>
+<TE WIDTH="477" HEIGHT="46" COLSPAN="5" ACODE="MGR_SAL" ALIGN="RIGHT" VALIGN="MIDDLE">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Main business">주요사업</TD>
+<TE WIDTH="477" HEIGHT="23" COLSPAN="5" ACODE="MGR_PRB" ALIGN="CENTER">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Whether applied for re-listing">재상장신청 여부</TD>
+<TU WIDTH="477" HEIGHT="23" COLSPAN="5" AUNIT="MGR_RR" AUNITVALUE="A" ALIGN="CENTER" ENG="N/A">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD ROWSPAN="20" VALIGN="MIDDLE" WIDTH="121" HEIGHT="657" AUPDATECONT="N" COLSPAN="2" ENG="10. Merger schedule">10. 합병일정</TD>
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Date of merger contract">합병계약일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_CRT" AUNITVALUE="20250804" COLSPAN="5">2025년 08월 04일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Record date for determining eligible shareholders">주주확정기준일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_DDY" AUNITVALUE="20250818" COLSPAN="5">2025년 08월 18일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="72" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Shareholders’ register closure period">주주명부폐쇄기간</TD>
+<TD WIDTH="72" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="CLO_BGN_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="72" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="CLO_END_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="72" HEIGHT="69" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Filing period for opposition to merger">합병반대의사통지 접수기간</TD>
+<TD WIDTH="72" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="REV_BGN_DT" AUNITVALUE="20250818" COLSPAN="5">2025년 08월 18일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="46">
+<TD WIDTH="72" HEIGHT="39" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="39" AUNIT="REV_END_DT" AUNITVALUE="20250901" COLSPAN="5" VALIGN="MIDDLE">2025년 09월 01일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Scheduled date of general shareholders’ meeting">주주총회예정일자</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_SHM_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="72" HEIGHT="69" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Exercise period of the appraisal rights">주식매수청구권행사기간</TD>
+<TD WIDTH="72" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="BUY_BGN_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="46">
+<TD WIDTH="72" HEIGHT="39" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="39" AUNIT="BUY_END_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="72" HEIGHT="53" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Period for submission of old share certificates">구주권제출기간</TD>
+<TD WIDTH="72" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="OLD_STK_BGN_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="72" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="OLD_STK_END_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="72" HEIGHT="69" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Scheduled period for suspending trading">매매거래 정지예정기간</TD>
+<TD WIDTH="72" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="SCD_STK_BGN_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="46">
+<TD WIDTH="72" HEIGHT="39" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="39" AUNIT="SCD_STK_END_DT" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="72" HEIGHT="69" AUPDATECONT="N" VALIGN="MIDDLE" ROWSPAN="2" COLSPAN="2" ENG="Creditor objection submission period">채권자이의 제출기간</TD>
+<TD WIDTH="72" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="Start date">시작일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="PRT_PRD_BGN_DT" AUNITVALUE="20250902" COLSPAN="5">2025년 09월 02일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="46">
+<TD WIDTH="72" HEIGHT="39" AUPDATECONT="N" VALIGN="MIDDLE" ALIGN="CENTER" ENG="End date">종료일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="39" AUNIT="PRT_PRD_END_DT" AUNITVALUE="20251002" COLSPAN="5" VALIGN="MIDDLE">2025년 10월 02일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Merger date">합병기일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_DT" AUNITVALUE="20251003" COLSPAN="5">2025년 10월 03일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Date of shareholders' meeting to report the completion">종료보고 총회일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_ENY" AUNITVALUE="20251010" COLSPAN="5">2025년 10월 10일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="scheduled registration date for merger">합병등기예정일자</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_RGS_DT" AUNITVALUE="20251010" COLSPAN="5">2025년 10월 10일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Scheduled delivery date of new share certificates">신주권교부예정일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_SSY" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Scheduled listing date of new shares">신주의 상장예정일</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_CSY" AUNITVALUE="-" COLSPAN="5">-</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="283" HEIGHT="23" AUPDATECONT="N" ENG="11. Whether deemed a backdoor listing">11. 우회상장 해당 여부</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_BDL" AUNITVALUE="A" COLSPAN="5" ENG="N/A">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" VALIGN="MIDDLE" WIDTH="283" HEIGHT="23" AUPDATECONT="N" ENG="12. Whether satisfying backdoor listing requirements by other corporations">12. 타법인의 우회상장 요건 충족여부</TD>
+<TU ALIGN="CENTER" WIDTH="477" HEIGHT="23" AUNIT="MGR_BDK" AUNITVALUE="A" COLSPAN="5" ENG="N/A">해당사항없음</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="76">
+<TD ROWSPAN="6" WIDTH="121" HEIGHT="288" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="2" ENG="13. Matters related to the appraisal rights">13. 주식매수청구권에 관한 사항</TD>
+<TD WIDTH="153" HEIGHT="69" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Terms and conditions for exercise">행사요건</TD>
+<TE VALIGN="MIDDLE" WIDTH="477" HEIGHT="69" ACODE="MGR_STO" COLSPAN="5">본 합병은 상법 제527조의3 규정에 따라 소규모합병 절차로 진행되므로㈜에스엠엔터테인먼트 주주에게는 주식매수청구권이 부여되지 않습니다.</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Estimated purchase price">매수예정가격</TD>
+<TE ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="477" HEIGHT="23" ACODE="MGR_STP" COLSPAN="5">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD WIDTH="153" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Exercise procedure, method, period, and location">행사절차, 방법, 기간, 장소</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="46" ACODE="MGR_STD" COLSPAN="5">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD WIDTH="153" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Payment schedule and method">지급예정시기, 지급방법</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="46" ACODE="MGR_STY" COLSPAN="5">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD WIDTH="153" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Restrictions on appraisal rights">주식매수청구권 제한 관련 내용</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="46" ACODE="MGR_STC" COLSPAN="5">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ENG="Effects on contract">계약에 미치는 효력</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="23" ACODE="MGR_STE" COLSPAN="5">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" WIDTH="283" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ENG="14. Board resolution date (decision date)">14. 이사회결의일(결정일)</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="23" AUNIT="DRT_RSLT_DT" AUNITVALUE="20250731" COLSPAN="5">2025년 07월 31일</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="121" HEIGHT="53" AUPDATECONT="N" ROWSPAN="2" VALIGN="MIDDLE" COLSPAN="2" ENG="- Attendance of outside directors">- 사외이사참석여부</TD>
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Present (No.)">참석(명)</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="23" ACODE="ODRT_ATD_CNT" COLSPAN="5">6</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="153" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" COLSPAN="3" ALIGN="CENTER" ENG="Absent (No.)">불참(명)</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="23" ACODE="ODRT_NATD_CNT" COLSPAN="5">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="53">
+<TD COLSPAN="5" WIDTH="283" HEIGHT="46" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Attendance of auditors (members of Audit Committee who are not outside directors)">- 감사(사외이사가 아닌 감사위원) 참석여부</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="46" AUNIT="ADT_ATD_YN" AUNITVALUE="Y" COLSPAN="5" ENG="Present">참석</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" WIDTH="283" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ENG="15. Whether signed a put option contact, etc.">15. 풋옵션 등 계약 체결여부</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="23" AUNIT="PO_CTRT_YN" AUNITVALUE="N" COLSPAN="5" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" WIDTH="283" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Contract details">- 계약내용</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="23" ACODE="PO_CTRT_DTL" COLSPAN="5">-</TE>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" WIDTH="283" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ENG="16. Whether subject to file securities registration statement">16. 증권신고서 제출대상 여부</TD>
+<TU ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="23" AUNIT="RPT_SM_YN" AUNITVALUE="N" COLSPAN="5" ENG="No">아니오</TU>
+</TR>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD COLSPAN="5" WIDTH="283" HEIGHT="23" AUPDATECONT="N" VALIGN="MIDDLE" ENG="- Reasons for exemption from filing securities registration statement, if exempted">- 제출을 면제받은 경우 그 사유</TD>
+<TE ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="477" HEIGHT="23" ACODE="RPT_SBM" COLSPAN="5">-</TE>
+</TR>
+</TBODY>
+</TABLE>
+</TABLE-GROUP>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="17. Plans for future corporate restructuring">17. 향후 회사구조개편에 관한 계획</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>보고서 제출일 현재 합병 완료 후 추진 중이거나 계획 중인 회사구조개편에 관하여 확정된 사항은 없습니다. </P>
+
+<TABLE ACLASS="NORMAL" AFIXTABLE="Y" WIDTH="600" BORDER="0">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="600"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="N" ADELETE="N" HEIGHT="30">
+<TD WIDTH="591" HEIGHT="23" AUPDATECONT="N" ENG="18. Other matters to be factored into investment decisions">18. 기타 투자판단과 관련한 중요사항</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>가. 본 합병은 상법 제527조의3 규정에 의한 소규모합병 절차에 따라 진행되므로 ㈜에스엠엔터테인먼트 주주에게 주식매수청구권이 부여되지 아니하며, 합병 승인은 주주총회를 개최하지 아니하고 이사회 결의로 갈음합니다. 피합병법인인 ㈜에스엠스튜디오스는 정식 합병으로 진행하여, 주주총회에서 합병 승인을 득할 예정입니다.</P>
+<P>나. 본 합병은 소규모합병으로 진행되나, 상법 제527조의3 제4항 규정에 의하여 ㈜에스엠엔터테인먼트 발행주식총수의 100분의 20 이상에 해당하는 주식을 소유한 주주가 소규모합병 공고일로부터 2주 내에 서면으로 본 합병에 반대하는 의사를 통지하는 때에는 소규모합병으로 진행할 수 없으므로, 본 합병의 진행 여부 및 일정이 변동될 수 있습니다.</P>
+<P>다. 상기 '8. 합병상대회사'의 최근 사업연도 재무내용은 2024년말 재무제표 기준입니다.</P>
+<P>라. 합병계약 체결일로부터 합병기일(또는 합병계약서에서 정한 기한)까지 사이에 천재지변 기타의 사유로 ㈜에스엠엔터테인먼트와 ㈜에스엠스튜디오스의 재산 또는 경영상태에 중대한 부정적인 변화가 발생하거나, 합병계약 체결 당시 예측할 수 없었던 중대한 하자, 부실이 발생 또는 발견되거나, 기타 본 합병과 관련된 중대한 사정변경이 있는 경우, 합병당사회사들 간 상호 합의하여 본 합병 조건을 변경하거나 합병계약을 해제할 수 있습니다.</P>
+
+<P USERMARK="F-10 ">
+<SPAN USERMARK="F-12 ">마. 상기 합병일정은 보고서 제출일 현재의 예상 일정이며, 관계기관과 협의, 승인 과정 및 실무진행 경과에 따라 변경될 수 있습니다.</SPAN>
+</P>
+<P>바. 상법 제526조 제3항 규정에 따라 합병종료보고총회는 합병종료보고 이사회 결의 및 ㈜에스엠엔터테인먼트 인터넷 홈페이지를 통한 공고로 갈음할 예정입니다.</P>
+
+<P>
+<SPAN USERMARK="F-GL ">※ 관련공시</SPAN>
+</P>
+<P>-</P>
+<P></P>
+
+<P></P>
+
+<LIBRARY>
+<SECTION-2 ACLASS="MANDATORY">
+<TITLE ATOC="N" ENG="【Details of Key Matters Related to Merger】">【합병관련 주요사항 상세기재】</TITLE>
+<P></P>
+
+<SECTION-3 ACLASS="MANDATORY">
+<TITLE ATOC="N" ENG="1. Overview of merger">1. 합병의 개요</TITLE>
+<P USERMARK="F-GL "></P>
+<P USERMARK="B">가. 합병에 관한 기본사항</P>
+<P>(1) 목적</P>
+<P>1) 합병 등의 상대방</P>
+
+<TABLE BORDER="1" WIDTH="601" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="601">
+<COL WIDTH="160"></COL>
+<COL WIDTH="151"></COL>
+<COL WIDTH="290"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="4" WIDTH="151" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="113">합병 후 존속회사(합병회사)</TD>
+<TD WIDTH="142" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">상호</TD>
+<TD WIDTH="281" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">㈜에스엠엔터테인먼트</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="142" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">소재지</TD>
+<TD WIDTH="281" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">서울특별시 성동구 왕십리로 83-21</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="142" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">대표이사</TD>
+<TD WIDTH="281" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">장철혁, 탁영준</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="142" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">상장여부</TD>
+<TD WIDTH="281" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">코스닥시장 상장법인</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE BORDER="1" WIDTH="601" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="601">
+<COL WIDTH="160"></COL>
+<COL WIDTH="151"></COL>
+<COL WIDTH="290"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ROWSPAN="4" WIDTH="151" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="113">합병 후 소멸회사(피합병회사)</TD>
+<TD WIDTH="142" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">상호</TD>
+<TD WIDTH="281" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">㈜에스엠스튜디오스</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="142" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">소재지</TD>
+<TD WIDTH="281" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">서울특별시 성동구 왕십리로 83-21</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="142" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">대표이사</TD>
+<TD WIDTH="281" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">이성수</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="142" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">상장여부</TD>
+<TD WIDTH="281" ALIGN="CENTER" VALIGN="MIDDLE" HEIGHT="23">주권비상장법인</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P USERMARK="F-GL "> </P>
+<P>2) 합병 배경 및 목적</P>
+<P>본 합병의 배경 및 목적은 합병회사 ㈜에스엠엔터테인먼트가 피합병회사 ㈜에스엠스튜디오스를 흡수합병함으로써 불필요한 비용을 절감하고, 의사결정 구조를 합리화하여 경영 효율성을 제고하며, 사업 경쟁력을 강화하는 데 있습니다. 당사는 본 합병을 통한 일원화된 구조에서 발생하는 사업간 시너지 효과를 바탕으로 기업가치 제고를 기대하고 있습니다. </P>
+<P> </P>
+<P>3) 회사의 경영, 재무, 영업 등에 미치는 중요 영향 및 효과</P>
+<P>① 회사의 경영에 미치는 영향</P>
+<P>보고서 제출일 현재 합병회사인 ㈜에스엠엔터테인먼트는 피합병회사인 ㈜에스엠스튜디오스의 발행주식총수 전부를 소유하고 있습니다. 이에 본 합병은 합병신주를 발행하거나 기타 합병대가를 교부하지 않는 무증자합병 방식으로 진행하며, 합병비율은 1.0000000 : 0.0000000입니다. 본 합병에 따라 ㈜에스엠엔터테인먼트는 존속하고, ㈜에스엠엔터테인먼트의 최대주주 등 주주 구성에 변동은 없습니다.</P>
+<P>② 회사의 재무 및 영업에 미치는 영향</P>
+<P>본 합병을 통해 불필요한 비용의 절감 및 의사결정 구조 일원화를 실현하고, 이를 통해 경영 효율성 및 사업 경쟁력 강화를 달성할 수 있을 것으로 기대하고 있습니다. </P>
+<P> </P>
+<P>4) 우회상장 해당여부</P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>5) 향후 경영구조 개편에 관한 사항 </P>
+<P>보고서 제출일 현재 합병 완료 후 추진 중이거나 계획 중인 회사구조개편에 관해 확정된 사항은 없습니다. </P>
+<P> </P>
+<P>(2) 상대방회사의 개요</P>
+<P>이하 '2. 합병 상대방회사에 관한 사항'을 참고</P>
+<P> </P>
+<P>(3) 합병의 형태</P>
+<P>1) 합병 방법</P>
+<P>본 합병은 존속회사인 ㈜에스엠엔터테인먼트가 소멸회사인 ㈜에스엠스튜디오스를 흡수합병하는 방식으로 진행됩니다. </P>
+<P>2) 소규모합병 또는 간이합병 해당여부 및 근거</P>
+<P>본 합병은 합병에 의한 신주를 발행하거나 기타 합병대가를 교부하지 않는 무증자합병 방식으로 진행하므로, 본 합병은 당사에 대하여 상법 제527조의3에 따른 소규모합병에 해당하며, 합병 승인은 이사회 승인으로 갈음합니다.</P>
+<P> </P>
+<P>3) 흡수합병 후 존속하는 회사의 상장계획에 관한 사항</P>
+<P>존속회사인 ㈜에스엠엔터테인먼트는 보고서 제출일 현재 코스닥시장에 상장된 법인이며, 합병 후에도 이에 관한 변동사항은 없습니다.</P>
+
+<P USERMARK="F-GL ">
+<SPAN USERMARK="F-BT ">4) 합병의 방법상 특기할 만한 사항</SPAN>
+</P>
+<P>본 합병은 소규모합병 절차에 따라 진행되므로, (i) 상법 제527조의3 제4항에 의하여 ㈜에스엠엔터테인먼트 발행주식총수의 100분의 20 이상에 해당하는 주식을 소유한 주주가 소규모합병 공고일로부터 2주 내에 서면으로 본 합병에 반대하는 의사를 통지하는 때에는 소규모합병으로 진행할 수 없으며, 이 경우 본 합병의 진행 여부 및 일정이 변동될 수 있습니다. (ii) 또한 상법 제527조의3 제5항에 따라 ㈜에스엠엔터테인먼트 주주에게 주식매수청구권이 부여되지 않습니다.</P>
+<P USERMARK="F-GL "> </P>
+<P>(4) 진행경과 및 일정</P>
+<P>1) 중요한 진행 경과 및 주요 일정 </P>
+<P>㈜에스엠엔터테인먼트는 2025년 7월 31일 완전자회사인 ㈜에스엠스튜디오스와의 합병계약 체결을 승인하는 이사회 결의를 하였습니다. 주요 일정은 아래와 같습니다.</P>
+
+<TABLE BORDER="1" WIDTH="590" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="590">
+<COL WIDTH="107"></COL>
+<COL WIDTH="335"></COL>
+<COL WIDTH="148"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23" USERMARK="BC0XD7D7D7">일자</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23" USERMARK="BC0XD7D7D7">내용</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23" USERMARK="BC0XD7D7D7">비고</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 07. 31.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">이사회 결의 (합병계약 체결 승인, 기준일 설정)</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 07. 31.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">반대의사표시 주주확정 기준일 공고</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23">당사 홈페이지 공고</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 08. 04.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">합병계약 체결</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 08. 18.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">소규모합병 공고</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23">당사 홈페이지 공고</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 08. 18.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">소규모합병 반대의사표시 접수 개시</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 09. 01.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">소규모합병 반대의사표시 접수 마감</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 09. 02.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">합병 승인 이사회 결의</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 09. 02.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">채권자 이의제출 공고 및 통지</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23">당사 홈페이지 공고</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 10. 02.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">채권자 이의제출기간 만료</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 10. 03.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">합병기일</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 10. 10.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">합병보고총회 갈음 이사회 결의</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 10. 10.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">합병보고 공고</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23">당사 홈페이지 공고</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="98" ALIGN="CENTER" HEIGHT="23">2025. 10. 10.</TD>
+<TD WIDTH="326" ALIGN="CENTER" HEIGHT="23">합병등기 신청 예정일</TD>
+<TD WIDTH="139" ALIGN="CENTER" HEIGHT="23"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>* 상기 일정은 향후 유관기관 협의 등에 따라 일부 수정, 변경될 수 있음. </P>
+<P>(주1) 합병법인인 ㈜에스엠엔터테인먼트는 상법 제527조의3에 따른 소규모합병 절차로 진행하므로, 합병을 위한 주주총회 승인을 이사회 승인으로 갈음하며, 합병 반대주주에게 주식매수청구권이 부여되지 않습니다.</P>
+<P>(주2) 상기 '주주확정 기준일'은 ㈜에스엠엔터테인먼트의 소규모합병에 반대하는 의사표시를 할 주주를 확정하기 위한 기준일을 의미합니다.</P>
+<P>(주3) 합병종료보고총회는 이사회 결의 및 당사 홈페이지를 통한 공고로 갈음합니다.</P>
+<P>(주4) 상기 합병 주요 일정은 보고서 제출일 현재 기준 예상 일정이며, 관계 법령상의 인허가, 승인, 관계기관과의 협의 및 실무 진행 경과 등에 따라 변경될 수 있습니다.</P>
+<P USERMARK="F-GL "> </P>
+<P>2) 증권신고서 관련 </P>
+<P>본 합병은 합병신주를 발행하거나 기타 합병대가를 교부하지 않는 무증자합병 방식으로 진행되므로, 본 합병 과정에서 증권신고서 제출이 필요한 증권의 모집이나 매출이 이루어지지 않습니다.</P>
+<P USERMARK="F-GL "> </P>
+<P>(5) 합병의 성사 조건</P>
+<P>합병법인인 ㈜에스엠엔터테인먼트는 본 합병을 상법 제527조의3에 따른 소규모합병절차로 진행하며, 합병 승인을 위한 주주총회에 갈음하는 이사회에서 이사 과반수의출석과 출석이사 과반수의 승인을 얻지 못할 경우 합병계약이 해제되거나 그 진행 일정이 변동될 수 있습니다.</P>
+<P>또한, 상법 제527조의3 제4항 규정에 의하여 ㈜에스엠엔터테인먼트 발행주식총수의100분의 20 이상에 해당하는 주식을 소유한 주주가 소규모합병 공고일로부터 2주 내에 서면으로 본 합병에 반대하는 의사를 통지하는 때에는 소규모합병 절차에 따라 진행할 수없으므로, 그 경우 본 합병의 진행 여부 및 일정이 변동될 수 있습니다.</P>
+<P>  </P>
+<P>(6) 관련법령상의 규제 또는 특칙</P>
+<P>본 합병 시 상법 제527조의5에 규정된 채권자 보호 절차를 비롯하여 상법, 코스닥시장 상장규정 등 본 합병을 위한 모든 규정을 준수하여야 합니다. 그 밖의 사항은 아래 '라. 투자위험요소'를 참조하시기 바랍니다.</P>
+<P USERMARK="F-GL "> </P>
+<P USERMARK="B">나. 합병가액 및 그 산출근거</P>
+<P>(1) 합병비율 및 가액 </P>
+<P>주요사항보고서 제출일 현재 ㈜에스엠엔터테인먼트가 ㈜에스엠스튜디오스의 발행주식 전부를 소유하고 있으므로 본 합병은 합병신주를 발행하거나 기타 합병대가를 교부하지 않는 무증자합병 방식으로 진행 예정이고, 합병비율을 1.0000000 : 0.000000로 산정하였으며, 합병가액 산정은 생략하였습니다.</P>
+<P USERMARK="F-GL "> </P>
+<P>(2) 외부평가</P>
+<P>「자본시장과 금융투자업에 관한 법률 시행령」제176조의5 제8항 제2호 나목 단서는 다른 회사의 발행주식 총수를 소유하고 있는 회사가 그 다른 회사를 합병하면서 신주를 발행하지 않는 경우에는 합병가액의 적정성에 대한 외부평가기관의 평가를 요구하지 않는 것으로 규정하고 있는바, 본 합병은 이에 해당하므로 위 규정에 따라 외부평가기관의 평가를 거치지 아니하였습니다. </P>
+<P> </P>
+<P USERMARK="B">다. 합병등의 요령</P>
+<P>(1) 신주의 배정</P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>(2) 교부금 등 지급</P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>(3) 특정주주에 대한 보상</P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>(4) 합병 등 소요비용</P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>(5) 자기주식 등 소유현황 및 처리현황</P>
+<P>본 합병은 합병신주를 발행하거나 기타 합병대가를 교부하지 않는 무증자합병 방식으로 진행하므로 합병 이후 자기주식의 변동은 없습니다.</P>
+<P USERMARK="F-GL "> </P>
+
+<P USERMARK="F-GL B 0X0000FF">
+<SPAN USERMARK="F-BT !B 0X000000">(6) 근로계약관계의 이전합병법인 ㈜에스엠엔터테인먼트는 합병기일에 피합병법인 ㈜에스엠스튜디오스의 근로자 전원을 ㈜에스엠엔터테인먼트의 근로자로 승계합니다</SPAN>
+<SPAN USERMARK="F-BT9 !B 0X000000"> </SPAN>
+<SPAN USERMARK="F-BT !B 0X000000">. </SPAN>
+</P>
+<P USERMARK="F-GL "></P>
+<P>(7) 채권자 보호 절차 </P>
+<P>상법 제527조의5 규정에 따라 당사의 주주총회에 갈음하는 이사회 결의일 또는 ㈜에스엠스튜디오스의 합병 승인을 위한 주주총회일로부터 2주 이내에 1월 이상의 채권자 이의제출 기간을 정하여 공고하고, 알고 있는 채권자에게 별도로 최고할 예정입니다.</P>
+<P>(8) 그 밖의 합병 조건</P>
+<P>합병계약에서 정한 것 외에 본 합병과 관련해서 필요한 사항이 있는 경우, 합병계약의 취지에 기초해서 합병당사회사들의 대표이사가 협의하여 결정합니다.</P>
+<P USERMARK="F-GL "> </P>
+<P USERMARK="B">라. 투자위험요소</P>
+<P>(1) 합병과 관련한 투자위험요소 등</P>
+<P>1) 일정조건의 충족·불충족에 따른 합병등의 계약의 해제·취소 등의 위험</P>
+
+<P>
+<SPAN>① 합병계약서상 해제 조건</SPAN>
+<SPAN USERMARK="F-9 "> </SPAN>
+</P>
+
+<TABLE BORDER="1" WIDTH="601" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="601">
+<COL WIDTH="601"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="751">
+
+<TD WIDTH="592" HEIGHT="744">
+<P USERMARK="F-BT12 ">제11조   (합병선행조건)</P>
+<P USERMARK="F-BT12  A-J">본건 합병은 다음과 같은 조건이 합병기일 또는 그 이전에 성취될 것을 선행조건으로 한다. 다만, 당사자들은 각자 서면으로 아래에서 규정하고 있는 선행조건의 일부또는 전부를 포기 또는 면제할 수 있다.</P>
+<P USERMARK="F-BT12  A-J">(1)           본 계약을 체결하고 본건 합병을 이행 및 완료하기 위하여 관련 법령 및 정관상 당사자들에게 요구되는 이사회 승인 및 주주총회 승인 절차가 완료될 것.(2)           당사자들이 본 계약을 체결하고 본건 합병을 완료하기 위하여 관련 법령상 합병에 선행하여 요구되는 인가, 허가, 수리를 요하는 신고의 수리, 재가 기타의 명칭을 불문한 모든 정부인허가를 모두 취득하였을 것.(3)           본건 합병을 금지하거나 제한하는 법령 또는 법원의 판결, 결정이나 정부기관의 금지명령이 존재하지 않을 것.</P>
+<P USERMARK="F-BT12 "> </P>
+<P USERMARK="F-BT12 ">제12조   (본계약의효력및해제) </P>
+
+<P USERMARK="F-13 B">
+<SPAN USERMARK="F-BT12 !B 0X000001">12.3 </SPAN>
+<SPAN USERMARK="F-BT12 !B">다음 각 항에서 정하는 사유가 발생하는 경우 본 계약의 일방당사자는 합병기일 또는 그이전에 상대방 당사자에 대한 서면통지로써 본 계약을 즉시 해제할 수 있다. 다만, 다음 각 항의 사유발생에 책임이 있는 당사자는 해당 사유를 이유로 본 계약을 해제할 수 없다. </SPAN>
+</P>
+<P USERMARK="F-BT12  A-J">(1)            본 계약 체결일부터 본건 합병기일에 이르기까지 천재지변 기타의 사유로 존속회사 또는 소멸회사의 재산 또는 경영상태에 중대한 부정적인 변화가 발생하거나, 본 계약 체결 당시 예측할 수 없었던 중대한 하자, 부실이 발생 또는 발견되거나, 기타 본건 합병과 관련된 중대한 사정변경이 있는 경우, 각 당사자에 의하여.</P>
+<P USERMARK="F-BT12  A-J">(2)            본 계약 제11조에 규정된 선행조건이 충족되지 아니한 경우, 각 당사자에 의하여. </P>
+<P USERMARK="F-BT12  A-J">(3)            [상법 제527조의5에 따른 채권자보호절차를 이행한 결과 각 당사자의 채권자들로부터 상당한 규모의 이의가 제기되었고, 이러한 이의 제기에 대하여 채권자들이 만족할 수 있는 조치를 취하는 것이 합리적인 관점에서 어려운 것으로 판단되는 경우, 각 당사자에 의하여.]</P>
+<P USERMARK="F-BT12  A-J">(4)            ["존속회사"의 발행주식총수의 100분의 20 이상에 해당하는 주식을 소유한 주주가 본건 합병의 공고일로부터 2주간 내에 서면으로 본 계약에 대한 주주총회의 승인을 이사회의 승인으로 갈음하는 것에 반대하는 의사를 통지한 경우, 존속회사에 의하여.]</P>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P> </P>
+
+<P>
+<SPAN>② ㈜에스엠엔터테인먼트의 발행주식총수의 100분의 20 이상에 해당하는 주식을 소유한 주주가 소규모합병 공고 또는 통지를 한 날로부터 2주 내에 서면으로 소규모합병에 반대하는 의사를 통지한 경우 ㈜에스엠엔터테인먼트는 상법 제522조의 규정에 의한 정식 합병의 절차로서 본 합병을 진행하거나, 서면 통지로써 본 계약을 해제할 수 있습니다</SPAN>
+<SPAN USERMARK="F-9 "> </SPAN>
+<SPAN>.</SPAN>
+</P>
+<P></P>
+<P>2) 합병 등의 신주 상장추진 또는 상장폐지 가능성에 대한 사항</P>
+<P>본 합병은 우회상장에 해당하지 않는바, 본 합병으로 인한 상장폐지 가능성이 없습니다.</P>
+<P USERMARK="F-GL "> </P>
+<P>3) 관련 증권을 투자함에 있어 고려해야 할 위험요소</P>
+<P>본 합병은 ㈜에스엠엔터테인먼트가 발행주식총수 전부를 소유하고 있는 완전자회사인 ㈜에스엠스튜디오스를 흡수하는 무증자합병 방식의 소규모합병으로 진행되므로, 본 합병과 관련한 모집 또는 매출의 대상이 되는 증권은 없습니다. 또한, ㈜에스엠스튜디오스가 본 보고서 제출일 현재 보유하고 있는 모든 종류의 자산 및 부채 등 일체의 권리 의무는 합병기일에 추가 절차나 계약 없이 ㈜에스엠엔터테인먼트가 승계하나, ㈜에스엠스튜디오스가 ㈜에스엠엔터테인먼트의 완전자회사인 점을 고려하면 본 합병이 ㈜에스엠엔터테인먼트의 재무, 영업에 유의미한 영향을 미치지 않을 것이므로, 증권을 투자함에 있어 고려해야 할 위험요소 또한 제한적일 것으로 판단됩니다.</P>
+<P USERMARK="F-GL "> </P>
+<P USERMARK="B">마. 주식매수청구권에 관한 사항</P>
+<P>합병법인 ㈜에스엠엔터테인먼트는 본 합병을 상법 제527조의3에 따른 소규모합병절차로 진행하므로, 합병 반대주주에게 주식매수청구권이 부여되지 않습니다.</P>
+<P> </P>
+<P USERMARK="B">바. 당사회사간의 이해관계 등</P>
+<P>(1) 당사회사간의 관계</P>
+<P>1) 계열회사 또는 자회사 등의 관계</P>
+<P>본 보고서 제출일 현재 합병당사회사들은 '카카오' 기업집단에 소속된 계열회사이고, 합병회사인 ㈜에스엠엔터테인먼트는 피합병회사인 ㈜에스엠스튜디오스의 발행주식총수 전부를 소유하고 있는 완전모회사입니다.</P>
+<P>2) 임원간의 상호 겸직</P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>3) 일방 당사회사의 대주주가 타방 당사회사의 특수관계인인지 여부</P>
+<P>합병회사인 ㈜에스엠엔터테인먼트가 피합병회사인 ㈜에스엠스튜디오스의 발행주식총수 전부를 소유하고 있으므로, 일방 당사회사의 대주주 및 특수관계인은 타방 당사회사의 특수관계인에 해당합니다.</P>
+<P USERMARK="F-GL "> </P>
+<P>(2) 당사회사간의 거래내용</P>
+<P>1) 출자</P>
+<P>본 보고서 제출일 현재 ㈜에스엠엔터테인먼트가 ㈜에스엠스튜디오스의 발행주식총수 전부를 소유하고 있습니다.</P>
+<P> </P>
+<P>2) 채무보증 </P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>3) 담보제공</P>
+<P>해당사항 없습니다.</P>
+<P USERMARK="F-GL "> </P>
+<P>4) 매출 및 매입거래(2024년)</P>
+
+<TABLE BORDER="0" WIDTH="779" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="779">
+<COL WIDTH="779"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="RIGHT" WIDTH="770" USERMARK="F-12 " HEIGHT="24">(단위 : 천원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE WIDTH="778" BORDER="1" ACLASS="NORMAL">
+
+<COLGROUP WIDTH="778">
+<COL WIDTH="165"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="122"></COL>
+<COL WIDTH="122"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="156" ROWSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="76">거래상대방</TD>
+<TD WIDTH="360" COLSPAN="3" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">매출 등</TD>
+<TD WIDTH="235" COLSPAN="2" ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" HEIGHT="23">매입 등</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">매출 </TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">리스채권이자수익</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">기타수익</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="113" HEIGHT="46">영업비용</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="113" HEIGHT="46">기타비용</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="156" HEIGHT="23" ALIGN="CENTER" VALIGN="MIDDLE">㈜에스엠스튜디오스</TD>
+<TD WIDTH="114" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="114" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">10,139</TD>
+<TD WIDTH="114" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="113" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="113" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>(2023년)</P>
+
+<TABLE BORDER="0" WIDTH="779" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="779">
+<COL WIDTH="779"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="RIGHT" WIDTH="770" USERMARK="F-12 " HEIGHT="24">(단위 : 천원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+
+<TABLE WIDTH="779" ACLASS="NORMAL" AFIXTABLE="N" BORDER="1">
+
+<COLGROUP WIDTH="779">
+<COL WIDTH="165"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="122"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" ROWSPAN="2" WIDTH="156" HEIGHT="76">거래상대방</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="3" WIDTH="360" HEIGHT="23">매출 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="2" WIDTH="236" HEIGHT="23">매입 등</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">매출 </TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">리스채권이자수익</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">기타수익</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">영업비용</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="113" HEIGHT="46">기타비용</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="156" HEIGHT="23">㈜에스엠스튜디오스</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="114" HEIGHT="23">74,748</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="114" HEIGHT="23">20,740</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="114" HEIGHT="23">-</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="114" HEIGHT="23">-</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="113" HEIGHT="23">-</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P></P>
+<P>(2022년)</P>
+
+<TABLE BORDER="0" WIDTH="779" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="779">
+<COL WIDTH="779"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="RIGHT" WIDTH="770" USERMARK="F-12 " HEIGHT="24">(단위 : 천원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE WIDTH="779" ACLASS="NORMAL" AFIXTABLE="N" BORDER="1">
+
+<COLGROUP WIDTH="779">
+<COL WIDTH="165"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="123"></COL>
+<COL WIDTH="122"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" ROWSPAN="2" WIDTH="156" HEIGHT="76">거래상대방</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="3" WIDTH="360" HEIGHT="23">매출 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="2" WIDTH="236" HEIGHT="23">매입 등</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">매출 </TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">리스채권이자수익</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">기타수익</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="114" HEIGHT="46">영업비용</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="113" HEIGHT="46">기타비용</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="156" HEIGHT="23">㈜에스엠스튜디오스</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="114" HEIGHT="23">112,395</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="114" HEIGHT="23">23,801</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="114" HEIGHT="23">-</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="114" HEIGHT="23">-</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="113" HEIGHT="23">-</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>5) 영업상 채권, 채무 및 미지급금, 미수금(2024년)</P>
+
+<TABLE BORDER="0" WIDTH="777" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="777">
+<COL WIDTH="777"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="RIGHT" WIDTH="768" USERMARK="F-12 " HEIGHT="24">(단위 : 천원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE WIDTH="777" ACLASS="NORMAL" AFIXTABLE="N" BORDER="1">
+
+<COLGROUP WIDTH="777">
+<COL WIDTH="165"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" ROWSPAN="2" WIDTH="156" HEIGHT="53">거래상대방</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="3" WIDTH="297" HEIGHT="23">채권</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="3" WIDTH="297" HEIGHT="23">채무</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">매출채권 등 </TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">기타자산 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">대여금 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">매입채무 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">기타부채 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">리스채권</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="156" HEIGHT="23" ALIGN="CENTER" VALIGN="MIDDLE">㈜에스엠스튜디오스</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">16,527</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">95,380</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P USERMARK="F-GL "></P>
+<P>(2023년)</P>
+
+<TABLE BORDER="0" WIDTH="777" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="777">
+<COL WIDTH="777"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="RIGHT" WIDTH="768" USERMARK="F-12 " HEIGHT="24">(단위 : 천원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE WIDTH="776" ACLASS="NORMAL" AFIXTABLE="N" BORDER="1">
+
+<COLGROUP WIDTH="776">
+<COL WIDTH="165"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="101"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" ROWSPAN="2" WIDTH="156" HEIGHT="53">거래상대방</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="3" WIDTH="297" HEIGHT="23">채권</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="3" WIDTH="296" HEIGHT="23">채무</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">매출채권 등 </TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">기타자산 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">대여금 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">매입채무 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">기타부채 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="92" HEIGHT="23">리스채권</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="156" HEIGHT="23" ALIGN="CENTER" VALIGN="MIDDLE">㈜에스엠스튜디오스</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">49,590</TD>
+<TD WIDTH="92" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">322,723</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P USERMARK="F-GL "></P>
+<P>(2022년)</P>
+
+<TABLE BORDER="0" WIDTH="777" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="777">
+<COL WIDTH="777"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="RIGHT" WIDTH="768" USERMARK="F-12 " HEIGHT="24">(단위 : 천원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE WIDTH="776" ACLASS="NORMAL" AFIXTABLE="N" BORDER="1">
+
+<COLGROUP WIDTH="776">
+<COL WIDTH="165"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="102"></COL>
+<COL WIDTH="101"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" ROWSPAN="2" WIDTH="156" HEIGHT="53">거래상대방</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="3" WIDTH="297" HEIGHT="23">채권</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" COLSPAN="3" WIDTH="296" HEIGHT="23">채무</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">매출채권 등 </TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">기타자산 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">대여금 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">매입채무 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="93" HEIGHT="23">기타부채 등</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="92" HEIGHT="23">리스채권</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="156" HEIGHT="23" ALIGN="CENTER" VALIGN="MIDDLE">㈜에스엠스튜디오스</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">153,498</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">-</TD>
+<TD WIDTH="93" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">80,100</TD>
+<TD WIDTH="92" HEIGHT="23" ALIGN="RIGHT" VALIGN="MIDDLE">586,102</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P USERMARK="F-GL "></P>
+<P>(3) 당사회사 대주주와의 거래내용</P>
+<P>해당사항 없습니다.</P>
+<P USERMARK="B">사. 그 밖에 투자자 보호를 위하여 필요한 사항</P>
+<P>(1) 과거 합병 등의 내용</P>
+<P>공시대상기간 중 해당사항 없습니다.</P>
+<P>(2) 대주주의 지분현황 등1) 합병 전후 대주주의 지분 변동</P>
+
+<TABLE BORDER="0" WIDTH="885" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="885">
+<COL WIDTH="885"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD WIDTH="876" USERMARK="F-12 " HEIGHT="24" VALIGN="MIDDLE">(기준일: 2025년 3월 31일)                                                                                                                    (단위 : 주, %)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE WIDTH="885" ACLASS="NORMAL" AFIXTABLE="N" BORDER="1">
+
+<COLGROUP WIDTH="885">
+<COL WIDTH="197"></COL>
+<COL WIDTH="126"></COL>
+<COL WIDTH="72"></COL>
+<COL WIDTH="149"></COL>
+<COL WIDTH="97"></COL>
+<COL WIDTH="154"></COL>
+<COL WIDTH="90"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="79">
+<TD ROWSPAN="2" ALIGN="CENTER" WIDTH="188" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="103">주주명</TD>
+<TD ROWSPAN="2" ALIGN="CENTER" WIDTH="117" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="103">관계</TD>
+<TD ROWSPAN="2" ALIGN="CENTER" WIDTH="63" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="103">주식의종류</TD>
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="237" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="72">합병 전㈜에스엠스튜디오스</TD>
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="235" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="72">합병 후㈜에스엠엔터테인먼트</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="CENTER" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" WIDTH="140" HEIGHT="24">주식수</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" WIDTH="88" HEIGHT="24">지분율</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" WIDTH="145" HEIGHT="24">주식수</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" WIDTH="81" HEIGHT="24">지분율</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="188" HEIGHT="24">㈜카카오</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="117" HEIGHT="24">최대주주</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="63" HEIGHT="24">보통주</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="140" HEIGHT="24">4,946,821</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="88" HEIGHT="24">21.61</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="145" HEIGHT="24">4,946,821</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="81" HEIGHT="24">21.61</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="188" HEIGHT="24">㈜카카오엔터테인먼트</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="117" HEIGHT="24">주요주주</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="63" HEIGHT="24">보통주</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="140" HEIGHT="24">4,554,220</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="88" HEIGHT="24">19.89</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="145" HEIGHT="24">4,554,220</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="81" HEIGHT="24">19.89</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="55">
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="188" HEIGHT="48">탁영준</TD>
+
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="117" HEIGHT="48">
+<P USERMARK="F-12  A-C">특수관계</P>
+<P USERMARK="F-12  A-C">(대표이사)</P>
+</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="63" HEIGHT="48">보통주</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="140" HEIGHT="48">30,000</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="88" HEIGHT="48">0.13</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="145" HEIGHT="48">30,000</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="81" HEIGHT="48">0.13</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" COLSPAN="2" WIDTH="314" HEIGHT="24">계</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="63" HEIGHT="24">합계</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="140" HEIGHT="24">9,531,041</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="88" HEIGHT="24">41.63</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="145" HEIGHT="24">9,531,041</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="81" HEIGHT="24">41.63</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>본 합병은 합병신주를 발행하지 않고 기타 합병대가를 교부하지 않는 무증자합병 방식으로 진행하므로 본 합병 전후로 발생하는 대주주의 지분율 변동은 없으며, 발행주식총수, 종류 및 종류별 주식의 수, 자본금도 변동이 없습니다.</P>
+<P>본 보고서 제출일 현재 ㈜에스엠엔터테인먼트는 ㈜에스엠스튜디오스의 발행주식총수 전부를 소유하고 있으며, 소유주식수는 보통주식 195,648주입니다.</P>
+<P>2) 합병 후 존속하는 회사의 대주주의 향후 지분 양수도에 관하여 합병 전후 대주주간에 사전합의가 있는 경우</P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>3) 합병 후 대주주의 지분 매각 제한 및 근거</P>
+<P>해당사항 없습니다.</P>
+
+<P USERMARK="F-GL B 0X0000FF">
+<SPAN USERMARK="F-BT !B 0X000000">(3) 경영방침 및 임원구성 등 </SPAN>
+</P>
+<P>합병이 완료된 후 존속회사의 향후 중요 경영방침, 임원의 구성방법 등에 관하여 변동사항은 없습니다.</P>
+<P>(4) 사업계획 등본 합병이 완료된 후 합병 전 ㈜에스엠스튜디오스가 영위하던 사업에 대한 변경, 폐지 등의 계획은 없습니다.(5) 물적분할의 경우 물적분할 추진에 대한 검토내용</P>
+<P>해당사항 없습니다.(6) 물적분할의 경우 주주보호방안</P>
+<P>해당사항 없습니다.</P>
+<P>(7) 합병 이후 대차대조표(재무상태표)</P>
+
+<TABLE BORDER="0" WIDTH="807" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="807">
+<COL WIDTH="807"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="RIGHT" WIDTH="798" USERMARK="F-12 " HEIGHT="24">(단위 : 백만원)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<TABLE BORDER="1" WIDTH="808" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="808">
+<COL WIDTH="210"></COL>
+<COL WIDTH="205"></COL>
+<COL WIDTH="188"></COL>
+<COL WIDTH="205"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ROWSPAN="3" ALIGN="CENTER" WIDTH="201" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="86">구        분</TD>
+<TD COLSPAN="2" ALIGN="CENTER" WIDTH="384" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="24">합병 전</TD>
+<TD ALIGN="CENTER" WIDTH="196" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" HEIGHT="24">합병 후 (추정)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="CENTER" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">㈜에스엠엔터테인먼트</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">㈜에스엠스튜디오스</TD>
+<TD ROWSPAN="2" ALIGN="CENTER" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" WIDTH="196" HEIGHT="55">㈜에스엠엔터테인먼트</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD ALIGN="CENTER" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">(존속회사)</TD>
+<TD ALIGN="CENTER" USERMARK="F-12 B BC0XD7D7D7" VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">(소멸회사)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24"></TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24"></TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">I. 유동자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">353,190</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">7,785</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">        360,975 </TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   현금및현금성자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">53,434</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">7,565</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">         60,999 </TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   매출채권및기타채권</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">215,162</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">9</TD>
+<TD USERMARK="F-12 " VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="196" HEIGHT="24">215,172</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   기타금융자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">15,103</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">-</TD>
+<TD USERMARK="F-12 " VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="196" HEIGHT="24">         15,103</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   재고자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">15,711</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">-</TD>
+<TD USERMARK="F-12 " VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="196" HEIGHT="24">         15,711</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   기타유동자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">53,780</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">210</TD>
+<TD USERMARK="F-12 " VALIGN="MIDDLE" ALIGN="RIGHT" WIDTH="196" HEIGHT="24">53,991</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">II. 비유동자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">625,027</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">140,363</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">        651,913</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   기타비유동채권</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">50,288</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">-</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">         50,197</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   기타비유동금융자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">26,182</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">17</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">         26,182</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   유가증권</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">432,808</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">140,106</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">        459,624</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   유형자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">14,485</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">12</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">         14,497</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   무형자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">26,887</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">144</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">         27,032</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   기타비유동자산</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">74,377</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">84</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">74,380</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">자산총계</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">978,217</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">148,148</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">     1,012,888</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">부채</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24"></TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24"></TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">I. 유동부채</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">310,654</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">264</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">        310,917</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   매입채무및기타유동채무</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">181,003</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">2</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">181,005</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   선수금</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">451</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">-</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">              451</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   기타유동부채</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">129,200</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">262</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">129,462</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">II. 비유동부채</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">86,337</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">84</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">         86,305</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   기타비유동채무</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">3,419</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">-</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">           3,403</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   충당부채</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">9,408</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">10</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">           9,418</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">   기타비유동부채</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">73,511</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">74</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">73,485</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">부채총계</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">396,991</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">347</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">        397,222</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">자본</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24"></TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24"></TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24"></TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">I.  자본금</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">11,915</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">978</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">         11,915</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">II.  자본잉여금</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">266,652</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">243,584</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">        301,091</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">III.  기타포괄손익누계액</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">(2,289)</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">-</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">(2,289)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">IV. 이익잉여금</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">304,948</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">(96,762)</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">        304,948</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">자본총계</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">581,227</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">147,800</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">        615,666</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="31">
+<TD USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="201" HEIGHT="24">부채와자본총계</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">978,217</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="179" HEIGHT="24">148,148</TD>
+<TD ALIGN="RIGHT" USERMARK="F-12 " VALIGN="MIDDLE" WIDTH="196" HEIGHT="24">     1,012,888</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P>주1) 상기 재무정보는 본 보고서 제출일 현재 이용 가능한 최근 재무제표인 ㈜에스엠엔터테인먼트와 ㈜에스엠스튜디오스, 각각의 2025년 6월 30일 별도 재무제표를 기준으로 작성하였습니다.주2) 상기 합병 후 추정 대차대조표(재무상태표)는 개략적으로 작성된 자료로서 기업회계기준에 따라 작성한 대차대조표(재무상태표)와 실제 합병기준일에 작성될 재무제표와 차이가 발생할 수 있습니다.</P>
+<P>(8) 그 밖에 투자의사결정에 필요한 사항해당사항 없습니다. </P>
+</SECTION-3>
+
+<SECTION-3 ACLASS="MANDATORY">
+<TITLE ATOC="N" ENG="2. Matters concerning counterparty to merger">2. 합병 상대방회사에 관한 사항</TITLE>
+<P USERMARK="B">가. 회사의 개요</P>
+
+<TABLE BORDER="1" WIDTH="602" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="602">
+<COL WIDTH="301"></COL>
+<COL WIDTH="301"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">구분</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">내용</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">회사명</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">㈜에스엠스튜디오스</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">회사설립일</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">2021년 05월 14일</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">대표자</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">이성수</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="53">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="46" VALIGN="MIDDLE">본사 주소</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="46" VALIGN="MIDDLE">서울특별시 성동구 왕십리로 83-21, 디타워17층(성수동1가, 아크로서울포레스트)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">전화번호</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">02-6240-9800</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">중소기업 해당 여부</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">-</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">주요 사업의 내용</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">경영컨설팅, 지주회사업</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">신용평가에 관한 사항</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">-</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">주권상장여부</TD>
+<TD WIDTH="292" ALIGN="CENTER" HEIGHT="23" VALIGN="MIDDLE">아니오</TD>
+</TR>
+</TBODY>
+</TABLE>
+<P USERMARK="F-GL "> </P>
+<P USERMARK="B">나. 사업의 내용</P>
+<P>㈜에스엠스튜디오스는 2021년 5월 14일 설립되었으며, 경영 컨설팅, 지주회사업 등을 주요 사업으로 영위하고 있습니다.</P>
+<P> </P>
+<P USERMARK="B">다. 재무에 관한 사항</P>
+<P>(1) 최근 3개년 요약 재무상태표</P>
+
+<TABLE WIDTH="602" ACLASS="NORMAL" AFIXTABLE="N" BORDER="1">
+
+<COLGROUP WIDTH="602">
+<COL WIDTH="181"></COL>
+<COL WIDTH="141"></COL>
+<COL WIDTH="140"></COL>
+<COL WIDTH="140"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="172" USERMARK="BC0XD7D7D7" HEIGHT="23">과목</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="132" USERMARK="BC0XD7D7D7" HEIGHT="23">2024년</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="131" USERMARK="BC0XD7D7D7" HEIGHT="23">2023년</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" WIDTH="131" USERMARK="BC0XD7D7D7" HEIGHT="23">2022년</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="172" HEIGHT="23">유동자산</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">4,823,535,414</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">5,517,499,030</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">8,732,605,422</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="172" HEIGHT="23">비유동자산</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">140,402,449,926</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">156,761,010,968</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">173,623,090,457</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="172" HEIGHT="23">자산총계</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">145,225,985,340</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">162,278,509,998</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">182,355,695,879</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="172" HEIGHT="23">유동부채</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">250,016,071</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">265,739,373</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">1,440,564,621</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="172" HEIGHT="23">비유동부채</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">88,502,655</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">297,017,509</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">736,594,243</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="172" HEIGHT="23">부채총계</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">338,518,726</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">562,756,882</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">2,177,158,864</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="172" HEIGHT="23">자본총계</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">144,887,466,614</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">161,715,753,116</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">180,178,537,015</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P USERMARK="F-GL ">
+<SPAN USERMARK="F-BT ">(2) 최근 3개년 요약 손익계산서 </SPAN>
+</P>
+
+<TABLE WIDTH="600" ACLASS="NORMAL" AFIXTABLE="N" BORDER="1">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="179"></COL>
+<COL WIDTH="141"></COL>
+<COL WIDTH="140"></COL>
+<COL WIDTH="140"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="170" HEIGHT="23">과목</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="132" HEIGHT="23">2024년</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="131" HEIGHT="23">2023년</TD>
+<TD ALIGN="CENTER" VALIGN="MIDDLE" USERMARK="BC0XD7D7D7" WIDTH="131" HEIGHT="23">2022년</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">매출액</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">-</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">310,445,159</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">210,932,022</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">영업비용</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">812,902,569</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">3,508,150,036</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">2,224,376,330</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">영업손익</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">(812,902,569)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">(3,197,704,877)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">(2,013,444,308)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">금융수익</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">50,707,759</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">193,621,769</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">104,194,123</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">금융비용</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">13,137,102</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">106,014,906</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">62,020,710</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">기타수익</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">34,215,385</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">80,181,427</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">54,122,077</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">기타비용</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">16,087,169,975</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">15,432,867,312</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">56,880,803,070</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">법인세비용차감전순손익</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">(16,828,286,502)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">(18,462,783,899)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">(58,797,951,888)</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">법인세비용</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">-</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">-</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">-</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="170" HEIGHT="23">당기순손익</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="132" HEIGHT="23">(16,828,286,502)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">(18,462,783,899)</TD>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE" WIDTH="131" HEIGHT="23">(58,797,951,888)</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P USERMARK="F-GL B">
+<SPAN USERMARK="F-BT ">라. 외부감사인의 감사의견</SPAN>
+</P>
+
+<TABLE BORDER="1" WIDTH="600" ACLASS="NORMAL" AFIXTABLE="N">
+
+<COLGROUP WIDTH="600">
+<COL WIDTH="150"></COL>
+<COL WIDTH="150"></COL>
+<COL WIDTH="150"></COL>
+<COL WIDTH="150"></COL>
+</COLGROUP>
+
+<TBODY>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" WIDTH="141" ALIGN="CENTER" HEIGHT="23">사업연도</TD>
+<TD VALIGN="MIDDLE" WIDTH="141" ALIGN="CENTER" HEIGHT="23">감사인</TD>
+<TD VALIGN="MIDDLE" WIDTH="141" ALIGN="CENTER" HEIGHT="23">감사의견</TD>
+<TD VALIGN="MIDDLE" WIDTH="141" ALIGN="CENTER" HEIGHT="23">감사보고서 특기사항</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">2024년</TD>
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">삼일회계법인</TD>
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">적정</TD>
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">-</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">2023년</TD>
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">삼일회계법인</TD>
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">적정</TD>
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">-</TD>
+</TR>
+
+<TR ACOPY="Y" ADELETE="Y" HEIGHT="30">
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">2022년</TD>
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">삼일회계법인</TD>
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">적정</TD>
+<TD VALIGN="MIDDLE" ALIGN="CENTER" WIDTH="141" HEIGHT="23">-</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<P USERMARK="F-GL ">
+<SPAN USERMARK="F-BT ">(주) 합병상대회사인 ㈜에스엠스튜디오스는 2023년도까지 「주식회사등의 외부감사에 관한 법률」에서 지정한 외부회계감사법인 대상 기준에 해당하지 아니하여 감사를 받지 아니하였습니다</SPAN>
+<SPAN>.</SPAN>
+</P>
+<P USERMARK="F-GL "> </P>
+<P USERMARK="B">마. 이사회 등 회사의 기관에 관한 사항</P>
+<P>㈜에스엠스튜디오스는 자본금 10억원 미만의 비상장법인으로서 등기임원으로 총 2명의 등기이사와 감사 1명이 재직하고 있으며, 이사회 내 위원회는 운영하고 있지 않습니다.</P>
+<P USERMARK="F-GL "> </P>
+<P USERMARK="B">바. 주주에 관한 사항</P>
+<P>㈜에스엠엔터테인먼트가 ㈜에스엠스튜디오스의 발행주식총수 전부를 소유하고 있습니다.</P>
+<P USERMARK="F-GL "> </P>
+<P USERMARK="B">사. 임원 및 직원 등에 관한 사항</P>
+<P>보고서 제출일 현재 ㈜에스엠스튜디오스에는 등기임원 3명을 포함하여 임직원 5명이 재직하고 있습니다.</P>
+<P USERMARK="F-GL "> </P>
+
+<P USERMARK="F-GL B">아. 계열회사 등에 관한 사항
+<SPAN USERMARK="F-BT !B">보고서 제출일 기준 ㈜에스엠스튜디오스 및 그 종속회사는 모두 ㈜에스엠엔터테인먼트와 동일한 '카카오' 기업집단에 속해 있습니다. 계열회사 등에 관한 자세한 내용은 당사의 2024년 사업보고서 및 2025년 1분기 보고서를 참고하시기 바랍니다.</SPAN>
+</P>
+<P USERMARK="F-GL11 "> </P>
+
+<P USERMARK="B">자. 그 밖에 투자자 보호를 위하여 필요한 사항
+<SPAN USERMARK="!B">1) 중요한 소송사건</SPAN>
+</P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>2) 그 밖의 우발채무 등</P>
+<P>해당사항 없습니다.</P>
+<P> </P>
+<P>3) 제재현황</P>
+<P>해당사항 없습니다.</P>
+</SECTION-3>
+</SECTION-2>
+</LIBRARY>
+
+</SECTION-1>
+</BODY>
+</DOCUMENT>

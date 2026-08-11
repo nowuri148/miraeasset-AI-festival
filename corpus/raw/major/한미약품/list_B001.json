@@ -1,0 +1,24 @@
+[
+ {
+  "corp_code": "00828497",
+  "corp_name": "한미약품",
+  "stock_code": "128940",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(자기주식처분결정)",
+  "rcept_no": "20260109000717",
+  "flr_nm": "한미약품",
+  "rcept_dt": "20260109",
+  "rm": ""
+ },
+ {
+  "corp_code": "00828497",
+  "corp_name": "한미약품",
+  "stock_code": "128940",
+  "corp_cls": "Y",
+  "report_nm": "주요사항보고서(무상증자결정)",
+  "rcept_no": "20231214000332",
+  "flr_nm": "한미약품",
+  "rcept_dt": "20231214",
+  "rm": ""
+ }
+]

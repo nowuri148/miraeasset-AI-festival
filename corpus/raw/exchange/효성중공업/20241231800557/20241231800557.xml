@@ -1,0 +1,182 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>효성중공업/단일판매ㆍ공급계약 해지/(2024.12.31)단일판매ㆍ공급계약 해지</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:592px;font-weight:bold;text-align:center;">단일판매ㆍ공급계약 해지</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:596px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">1. 판매ㆍ공급계약 해지 구분</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">공사수주</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">- 해지계약명</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">청담동 고급 주상복합 신축공사 도급계약</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="153"> <span style="width:153px;font-size:10pt;">2. 해지내역</span> </td> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">해지금액(원)</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;text-align:right;">91,001,900,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">최근매출액(원)</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;text-align:right;">3,094,698,644,786</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">매출액대비(%)</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;text-align:right;">2.94</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">3. 계약상대</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">(주)주성알앤디</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">- 회사와의 관계</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">4. 계약기간</span> </td> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">5. 해지 주요사유</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">시행사(계약상대)가 계약조건 충족이 불가능함에 따라 계약 해지</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="264"> <span style="width:264px;font-size:10pt;">6. 해지일자</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">2024-12-31</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="153"> <span style="width:153px;font-size:10pt;">7. 공시유보 관련내용</span> </td> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="111"> <span style="width:111px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" width="264"> <span style="width:264px;font-size:10pt;">8. 기타 투자판단과 관련한 중요사항</span> </td> 
+       <td colspan="2" width="332"> <span class="xforms_input" style="width:332px;font-size:10pt;">- 본 건은 2022년 12월 19일 (주)주성알앤디(시 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 행사)와 서울시 강남구 청담동에 주상복합을 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 신축하는 공사도급계약을 체결하여 공시하였던 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 건임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 최초 계약 체결 이후 당사와 시행사 간 사업 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 조건 협상을 진행중이었으나, 시행사가 계약 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 조건 충족이 불가능함에 따라 해당 공사도급 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 계약을 해지함. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2. 해지내역의 해지금액은 부가가치세를 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 포함한 금액이며, 최근매출액은 최초 계약 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 체결 공시 당시 적용하였던 2021년말 연결재무 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 제표 기준임. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 4. 계약기간은 실착공일로부터 44개월 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 이며, 본 계약은 착공 이전 사업 조건을 협의 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 하는 단계에서 해지가 이루어짐. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 6. 해지일자는 당사가 계약 해지 동의 <br xmlns:java="http://xml.apache.org/xalan/java">
+         <!--?javax.xml.transform.disable-output-escaping?--> 
+         <!--?javax.xml.transform.enable-output-escaping?--> 공문을 발송한 일자임.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="86"> <span style="width:86px;font-size:10pt;">관련공시</span> </td> 
+       <td width="246"> <span style="width:246px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20221219000296&amp;rcpno=20221219000296&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2022-12-19 단일판매ㆍ공급계약체결</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>

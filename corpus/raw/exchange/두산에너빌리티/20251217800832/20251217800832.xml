@@ -1,0 +1,163 @@
+<html>
+ <head> 
+  <meta content="gdi" http-equiv="X-UA-TextLayoutMetrics"> 
+  <meta content="text/html; charset=euc-kr" http-equiv="Content-Type"> 
+  <STYLE>
+.xforms * { font-family: 돋움체;}
+.xforms_title * { font-size: 13pt; padding : 0 0 10 0;}
+
+.xforms table {
+    font-size: 10px;
+    padding:0px;
+    border-collapse:collapse;
+    color: #3D3D3D;
+}
+.xforms td {
+    padding-left:0px;
+    padding-top:0px;
+    border-collapse:collapse;
+    line-height:22px;
+    color: #3D3D3D;
+    /*text-align:right;*/
+    vertical-align:middle;
+    border: 1px solid #7f7f7f;
+}
+
+.xforms span {
+    /*display: inline-block;*/
+    padding-left:3px;
+    padding-right: 1px;
+    line-height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+    vertical-align:middle;
+    border: 0px solid #DBDBDB;
+}
+
+.xforms.img{
+    border : 0px;
+}
+
+.xforms a:link {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:active {
+
+    color: #194866;
+    text-decoration: none;
+}
+.xforms a:visited {
+    color: #194866;
+    text-decoration: none;
+}
+
+.xforms A:hover {
+    color:008BE3;
+    text-decoration: none;
+}
+
+.xforms_input{
+    border: 0px solid #DBDBDB;
+    padding-left:3px;
+    padding-right: 1px;
+    height:22px;
+    padding-top:0px;
+    padding-bottom:0px;
+    text-align:left;
+}
+</STYLE> 
+  <title>두산에너빌리티/신규시설투자등/(2025.12.17)신규시설투자등</title> 
+ </head> 
+ <body> 
+  <div class="xforms"> 
+   <div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <div class="xforms_title"> 
+     <div> 
+      <span style="width:598px;font-weight:bold;text-align:center;">신규 시설투자 등</span> 
+     </div> 
+    </div> 
+    <span class="noprint" style="display:none;width:600px;font-size:10pt;"> </span> 
+    <table border="1" bordercolordark="white" bordercolorlight="#666666" cellpadding="1" cellspacing="0" id="XFormD1_Form0_Table0" style="margin:0px 0px 20px 0px;width:601px;font-size:10pt;border:1px solid #7f7f7f;"> 
+     <tbody> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">1. 투자구분</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">신규시설투자</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">- 투자대상</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">SMR  전용공장 신축 및 기존 공장 최적화, 혁신제조 시설 구축</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="4" width="150"> <span style="width:150px;font-size:10pt;">2. 투자내역</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">투자금액(원)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">806,800,000,000</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">자기자본(원)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">11,661,092,248,377</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">자기자본대비(%)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">6.92</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">대규모법인여부</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">해당</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">3. 투자목적</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">SMR 사업확대에 따른 제작 Capacity 확보</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="150"> <span style="width:150px;font-size:10pt;">4. 투자기간</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">시작일</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">2026-03-01</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">종료일</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">2031-06-30</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">5. 이사회결의일(결정일)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">2025-12-17</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="150"> <span style="width:150px;font-size:10pt;">- 사외이사 참석여부</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">참석(명)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">4</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">불참(명)</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;text-align:right;">0</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" width="267"> <span style="width:267px;font-size:10pt;">- 감사(사외이사가 아닌 감사위원) 참석여부</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td rowspan="2" width="150"> <span style="width:150px;font-size:10pt;">6. 공시유보 관련내용</span> </td> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">유보사유</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="117"> <span style="width:117px;font-size:10pt;text-align:center;">유보기한</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">-</span> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2" rowspan="2" width="267"> <span style="width:267px;font-size:10pt;">7. 기타 투자판단과 관련한 중요사항</span> </td> 
+       <td colspan="2" width="334"> <span class="xforms_input" style="width:334px;font-size:10pt;">- 상기 2. 투자내역은 데이터 센터 등 글로벌 전력 수요 증가에 따른 SMR 수주 물량 증가에 대응하기 위하여, 창원공장 부지에 SMR 전용공장 신축 및 기존공장 최적화, 혁신제조시설 구축하는 건으로, 건축물 및 기계설비 등 관련 유형자산의 취득을 포함하고 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2. 투자내역의 투자금액은 향후 경영환경 및 투자 진행과정에서 변경될 수 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 2. 투자내역의 자기자본은 최근 사업연도말(2024.12.31) K-IFRS에 따라 작성된 연결재무제표 기준 입니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 상기 4. 투자기간의 시작일과 종료일은 착공예정일을 기준으로 산정되었으며, 향후 경영환경 및 투자 진행 과정에서 변경될 수 있습니다. <br xmlns:java="http://xml.apache.org/xalan/java"> <br xmlns:java="http://xml.apache.org/xalan/java">- 본 공시는 2025년 12월 12일자 보도에 대한 '풍문 또는 보도에 대한 해명(미확정)'에 관한 확정 공시 사항입니다.</span> </td> 
+      </tr> 
+      <tr> 
+       <td width="90"> <span style="width:90px;font-size:10pt;">※ 관련공시</span> </td> 
+       <td width="244"> <span style="width:244px;font-size:10pt;"> <a href="http://kind.krx.co.kr/common/disclsviewer.do?method=search&amp;acptno=20251212000218&amp;rcpno=20251212000218&amp;orgid=G&amp;tran=Y&amp;langTpCd=0" target="_blank" xmlns="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">2025-12-12 풍문 또는 보도에 대한 해명(미확정)</a> <br xmlns:java="http://xml.apache.org/xalan/java"> </span> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>
