@@ -12,7 +12,7 @@
 
 import os
 import re
-from collections import Counter
+from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -117,42 +117,102 @@ def strip_particle(token: str) -> str:
     return token
 
 
-def build_company_lookup(universe: pd.DataFrame) -> dict:
+def normalize_alias_key(text: str) -> str:
+    return text.casefold()
+
+
+def get_generic_prefixes(name: str, max_prefix_length: int = 5) -> set:
+    prefixes = set()
+    for token in re.findall(r"[가-힣A-Za-z0-9]+", name):
+        folded = normalize_alias_key(token)
+        if len(folded) < 2:
+            continue
+        for i in range(2, min(len(folded), max_prefix_length) + 1):
+            prefixes.add(folded[:i])
+    return prefixes
+
+
+@dataclass
+class CompanyLookup:
+    alias_to_canonical: Dict[str, str]
+    ambiguous_aliases: Dict[str, List[str]]
+    alias_count: int
+    unique_company_count: int
+
+
+def build_company_lookup(universe: pd.DataFrame) -> CompanyLookup:
     """
     universe.csv의 corp_name / listed_name / corp_eng_name / stock_code를
     모두 '별칭 -> 공식 법인명(corp_name)' 형태로 펼친 룩업 테이블 생성
     """
-    lookup = {}
+    alias_to_canonical = {}
+    alias_to_canonicals = defaultdict(set)
+    canonical_names = set()
+
     for _, row in universe.iterrows():
         canonical = row["corp_name"]
+        canonical_names.add(canonical)
         for alias in [row["corp_name"], row["listed_name"], row["corp_eng_name"], row["stock_code"]]:
             if isinstance(alias, str) and alias.strip():
-                lookup[alias.strip()] = canonical
+                key = normalize_alias_key(alias.strip())
+                alias_to_canonicals[key].add(canonical)
+                if key not in alias_to_canonical:
+                    alias_to_canonical[key] = canonical
 
     # 수동 별칭 병합 (README에서 확인된 특수 케이스 + 흔한 축약형)
     for alias, canonical_hint in MANUAL_ALIASES.items():
-        # canonical_hint가 실제 universe의 corp_name과 매칭되는지 확인 후 등록
+        key = normalize_alias_key(alias)
         matches = universe[universe["corp_name"].str.contains(canonical_hint, na=False, regex=False)]
         if len(matches):
-            lookup[alias] = matches.iloc[0]["corp_name"]
+            canonical = matches.iloc[0]["corp_name"]
         else:
-            lookup[alias] = canonical_hint  # universe에 없으면 일단 힌트 그대로 저장
+            canonical = canonical_hint
+        alias_to_canonicals[key].add(canonical)
+        if key not in alias_to_canonical:
+            alias_to_canonical[key] = canonical
 
-    return lookup
+    prefix_candidates = defaultdict(set)
+    for name in canonical_names:
+        for prefix in get_generic_prefixes(name):
+            prefix_candidates[prefix].add(name)
+
+    ambiguous_aliases = {
+        alias: sorted(canonicals)
+        for alias, canonicals in alias_to_canonicals.items()
+        if len(canonicals) > 1
+    }
+    for prefix, names in prefix_candidates.items():
+        if len(names) > 1 and prefix not in alias_to_canonical:
+            ambiguous_aliases[prefix] = sorted(names)
+
+    return CompanyLookup(
+        alias_to_canonical=alias_to_canonical,
+        ambiguous_aliases=ambiguous_aliases,
+        alias_count=len(alias_to_canonical),
+        unique_company_count=len(canonical_names),
+    )
 
 
-def find_company_mentions(question: str, lookup: dict, fuzzy_threshold: int = 80) -> list:
+def find_company_mentions(question: str, company_lookup: CompanyLookup, fuzzy_threshold: int = 80) -> list:
     """
     질의 텍스트에서 회사명(정확 매칭 + 유사 매칭)을 찾아
     [{'matched_text':.., 'canonical_name':.., 'score':..}, ...] 형태로 반환
     """
     results = []
     seen_canonical = set()
+    question_folded = normalize_alias_key(question)
 
     # 1) 정확 매칭 (긴 이름부터 먼저 검사해야 "삼성" vs "삼성전자" 같은 부분 겹침 방지)
-    for alias in sorted(lookup.keys(), key=len, reverse=True):
-        if alias and alias in question:
-            canonical = lookup[alias]
+    for alias in sorted(company_lookup.alias_to_canonical.keys(), key=len, reverse=True):
+        if alias and alias in question_folded:
+            if alias in company_lookup.ambiguous_aliases:
+                return [{
+                    "matched_text": alias,
+                    "ambiguous": True,
+                    "candidate_names": company_lookup.ambiguous_aliases[alias],
+                    "score": 100,
+                }]
+            canonical = company_lookup.alias_to_canonical[alias]
             if canonical not in seen_canonical:
                 results.append({"matched_text": alias, "canonical_name": canonical, "score": 100})
                 seen_canonical.add(canonical)
@@ -162,16 +222,24 @@ def find_company_mentions(question: str, lookup: dict, fuzzy_threshold: int = 80
 
     # 2) 유사 매칭 (오타/변형 대비) — 질문을 어절 단위로 쪼개서 각각 조사 제거 후 비교
     tokens = re.findall(r"[가-힣A-Za-z0-9]+", question)
-    candidates = list(lookup.keys())
+    candidates = list(company_lookup.alias_to_canonical.keys())
 
     for token in tokens:
         cleaned = strip_particle(token)
         if len(cleaned) < 2:
             continue
-        match = process.extractOne(cleaned, candidates, scorer=fuzz.WRatio, score_cutoff=fuzzy_threshold)
+        cleaned_key = normalize_alias_key(cleaned)
+        if cleaned_key in company_lookup.ambiguous_aliases:
+            return [{
+                "matched_text": token,
+                "ambiguous": True,
+                "candidate_names": company_lookup.ambiguous_aliases[cleaned_key],
+                "score": 100,
+            }]
+        match = process.extractOne(cleaned_key, candidates, scorer=fuzz.WRatio, score_cutoff=fuzzy_threshold)
         if match:
             matched_alias, score, _ = match
-            canonical = lookup[matched_alias]
+            canonical = company_lookup.alias_to_canonical[matched_alias]
             if canonical not in seen_canonical:
                 results.append({"matched_text": token, "canonical_name": canonical, "score": round(score, 1)})
                 seen_canonical.add(canonical)
@@ -386,15 +454,19 @@ if __name__ == "__main__":
     key = "nv-53d015cd5a4f4240abb926ad7c755937abxC"
     
     company_lookup = build_company_lookup(universe)
-    print(f"회사명 룩업 테이블 크기: {len(company_lookup)}개 별칭")
+    print(f"회사명 룩업 테이블 크기: {company_lookup.alias_count}개 별칭")
+    print(f"로드한 회사 수: {company_lookup.unique_company_count}개")
 
-    sample_questions = [
-        "삼성전자의 2025년 연결기준 매출액은 얼마인가?",
-        "2차전지 기업 A와 B 중 2025년 설비투자 규모가 더 큰 기업은 어디인가?",
-        "현대차가 2025년에 실시한 자금조달 내역을 유형별로 정리해줘",
-        "삼전 2026년 1분기 분기보고서를 기준으로 주요 투자 계획을 정리해줘",
-        "케이티가 2023년 사업보고서와 2025년 사업보고서를 비교했을 때 핵심 사업은 어떻게 변화했는지 설명해줘",
-    ]
+    # sample_questions = [
+    #     "삼성전자의 2025년 연결기준 매출액은 얼마인가?",
+    #     "2차전지 기업 A와 B 중 2025년 설비투자 규모가 더 큰 기업은 어디인가?",
+    #     "현대차가 2025년에 실시한 자금조달 내역을 유형별로 정리해줘",
+    #     "삼전 2026년 1분기 분기보고서를 기준으로 주요 투자 계획을 정리해줘",
+    #     "케이티가 2023년 사업보고서와 2025년 사업보고서를 비교했을 때 핵심 사업은 어떻게 변화했는지 설명해줘",
+    # ]
+    
+    print("== input을 입력하세요 ==")
+    question = input("질의: ")
 
     # for q in sample_questions:
     #     result = extract_keywords(q, company_lookup)
@@ -411,18 +483,17 @@ if __name__ == "__main__":
     if endpoint:
         print("\nHyperClovaX API 연동 예시를 실행합니다...")
         api_client = HyperClovaXKeywordExtractor(api_endpoint=endpoint, api_key=key)
-        for q in sample_questions[:]:
-            try:
-                model_result = extract_keywords(q, company_lookup, model_client=api_client)
-                print(f"\n[모델] 질의: {q}")
-                print(f"  task_type: {model_result.task_type}")
-                print(f"  companies: {model_result.companies}")
-                print(f"  doc_types: {model_result.doc_types}")
-                print(f"  periods: {model_result.periods}")
-                print(f"  metrics: {model_result.metrics}")
-                print(f"  actions: {model_result.actions}")
-                print(f"  topic_keywords: {model_result.topic_keywords}")
-            except Exception as exc:
-                print(f"  HyperClovaX API 호출 실패: {exc}")
+        try:
+            model_result = extract_keywords(question, company_lookup, model_client=api_client)
+            print(f"\n[모델] 질의: {question}")
+            print(f"  task_type: {model_result.task_type}")
+            print(f"  companies: {model_result.companies}")
+            print(f"  doc_types: {model_result.doc_types}")
+            print(f"  periods: {model_result.periods}")
+            print(f"  metrics: {model_result.metrics}")
+            print(f"  actions: {model_result.actions}")
+            print(f"  topic_keywords: {model_result.topic_keywords}")
+        except Exception as exc:
+            print(f"  HyperClovaX API 호출 실패: {exc}")
     else:
         print("\nHYPERCLOVA_X_ENDPOINT 환경변수가 설정되지 않아 HyperClovaX API 예시는 실행되지 않습니다.")
