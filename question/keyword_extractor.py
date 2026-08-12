@@ -164,30 +164,65 @@ def normalize_group_mention(text: str) -> str:
     return normalize_alias_key(normalized)
 
 
-def build_choice_map(user_choice: str, ambiguous_mentions: list, ambiguous_companies: list) -> dict:
+def build_choice_map(
+    user_choice: str,
+    ambiguous_mentions: list,
+    ambiguous_companies: list,
+    ambiguous_candidate_groups: Optional[Dict[str, list]] = None,
+) -> dict:
     choice_map: dict[str, str] = {}
     alias_lookup = {normalize_alias_key(alias): canonical for alias, canonical in MANUAL_ALIASES.items()}
     alias_lookup.update({normalize_alias_key(candidate): candidate for candidate in ambiguous_companies})
+    alias_lookup.update({normalize_alias_key(mention): mention for mention in ambiguous_mentions})
 
     normalized_candidates = {normalize_alias_key(candidate): candidate for candidate in ambiguous_companies}
-    for choice in split_user_choices(user_choice):
-        choice = normalize_group_choice(choice)
-        normalized_choice = normalize_alias_key(choice)
+    candidate_to_mention: dict[str, str] = {}
+    if ambiguous_candidate_groups:
+        for mention, candidates in ambiguous_candidate_groups.items():
+            for candidate in candidates:
+                candidate_to_mention[normalize_alias_key(candidate)] = mention
 
-        resolved_choice = alias_lookup.get(normalized_choice) or normalized_candidates.get(normalized_choice) or choice
-        if resolved_choice in normalized_candidates.values():
-            candidate = resolved_choice
+    mention_by_number = {str(idx): mention for idx, mention in enumerate(ambiguous_mentions, start=1)}
+
+    for choice in split_user_choices(user_choice):
+        normalized_choice = normalize_alias_key(normalize_group_choice(choice))
+
+        if normalized_choice in mention_by_number:
+            mention = mention_by_number[normalized_choice]
+            choice_map[mention] = mention
+            continue
+
+        resolved_choice = alias_lookup.get(normalized_choice) or normalized_candidates.get(normalized_choice)
+        if resolved_choice:
+            if resolved_choice in normalized_candidates.values():
+                candidate = resolved_choice
+                candidate_key = normalize_alias_key(candidate)
+                mapped_mention = candidate_to_mention.get(candidate_key)
+                if mapped_mention:
+                    choice_map[mapped_mention] = candidate
+                    continue
+                for mention in ambiguous_mentions:
+                    if normalize_alias_key(mention) in candidate_key:
+                        choice_map[mention] = candidate
+                        break
+                continue
+
             for mention in ambiguous_mentions:
-                if normalize_alias_key(mention) in normalize_alias_key(candidate):
-                    choice_map[mention] = candidate
+                if normalize_alias_key(mention) == normalize_alias_key(resolved_choice):
+                    choice_map[mention] = mention
                     break
             continue
 
         for mention in ambiguous_mentions:
-            mention_norm = normalize_alias_key(mention)
-            if mention_norm in normalized_choice:
-                choice_map[mention] = resolved_choice
+            if normalize_alias_key(mention) in normalized_choice:
+                choice_map[mention] = choice
                 break
+
+        if ambiguous_candidate_groups:
+            for mention, candidates in ambiguous_candidate_groups.items():
+                if normalize_alias_key(mention) == normalized_choice:
+                    choice_map[mention] = mention
+                    break
 
     return choice_map
 
@@ -592,6 +627,7 @@ class ExtractedKeywords:
     companies: list = field(default_factory=list)
     ambiguous_companies: list = field(default_factory=list)
     ambiguous_mentions: list = field(default_factory=list)
+    ambiguous_candidate_groups: dict = field(default_factory=dict)
     clarification_prompt: Optional[str] = None
     doc_types: list = field(default_factory=list)
     periods: list = field(default_factory=list)
@@ -617,7 +653,35 @@ class ExtractedKeywords:
         }
 
 
-def build_ambiguity_prompt(question: str, candidates: List[str], ambiguous_mentions: Optional[list] = None) -> str:
+def summarize_group_label(label: str) -> str:
+    if not label:
+        return "기타"
+    label_key = normalize_alias_key(label)
+    summary_map = {
+        normalize_alias_key("방산"): "방산",
+        normalize_alias_key("방산분야"): "방산",
+        normalize_alias_key("항공우주"): "방산",
+        normalize_alias_key("소비재"): "소비재",
+        normalize_alias_key("유통"): "소비재",
+        normalize_alias_key("소비재유통"): "소비재",
+        normalize_alias_key("엔터"): "엔터",
+        normalize_alias_key("엔터테인먼트"): "엔터",
+        normalize_alias_key("조선"): "조선",
+        normalize_alias_key("원전"): "원전",
+    }
+    if label_key in summary_map:
+        return summary_map[label_key]
+    if label_key.endswith(normalize_alias_key("그룹")):
+        return label.replace("그룹", "그룹")
+    return label
+
+
+def build_ambiguity_prompt(
+    question: str,
+    candidate_groups: Optional[Dict[str, List[str]]] = None,
+    ambiguous_mentions: Optional[list] = None,
+    candidates: Optional[List[str]] = None,
+) -> str:
     if ambiguous_mentions:
         if len(ambiguous_mentions) == 1:
             group_hint = f"전체 {ambiguous_mentions[0]} 그룹"
@@ -627,15 +691,20 @@ def build_ambiguity_prompt(question: str, candidates: List[str], ambiguous_menti
         group_hint = "전체 그룹"
 
     grouped_candidates: Dict[str, List[str]] = defaultdict(list)
-    for candidate in candidates:
-        matched_group = "기타 그룹"
-        candidate_key = normalize_alias_key(candidate)
-        for mention in ambiguous_mentions or []:
-            mention_key = normalize_alias_key(mention)
-            if mention_key in candidate_key or candidate_key in mention_key:
-                matched_group = f"{mention} 그룹"
-                break
-        grouped_candidates[matched_group].append(candidate)
+    if candidate_groups:
+        for mention, group_candidates in candidate_groups.items():
+            group_name = summarize_group_label(mention)
+            grouped_candidates[group_name].extend(group_candidates)
+    elif candidates:
+        for candidate in candidates:
+            matched_group = "기타"
+            candidate_key = normalize_alias_key(candidate)
+            for mention in ambiguous_mentions or []:
+                mention_key = normalize_alias_key(mention)
+                if mention_key in candidate_key or candidate_key in mention_key:
+                    matched_group = f"{mention} 그룹"
+                    break
+            grouped_candidates[matched_group].append(candidate)
 
     lines = [
         f"질문이 모호합니다. '{question}'에서 어떤 회사를 의미하나요?",
@@ -644,7 +713,7 @@ def build_ambiguity_prompt(question: str, candidates: List[str], ambiguous_menti
     ]
 
     for idx, (group_name, group_items) in enumerate(grouped_candidates.items(), start=1):
-        lines.append(f"{idx}. {group_name}:")
+        lines.append(f"{idx}. {group_name}")
         for item in sorted(set(group_items)):
             lines.append(f"   - {item}")
 
@@ -668,12 +737,17 @@ def extract_keywords(question: str, company_lookup: CompanyLookup, model_client:
     ambiguous_mentions = []
     clarification_prompt = None
     if companies and isinstance(companies[0], dict) and companies[0].get("ambiguous"):
+        ambiguous_candidate_groups = {
+            company.get("matched_text"): company.get("candidate_names", [])
+            for company in companies
+            if company.get("matched_text")
+        }
         ambiguous_companies = sorted({
             candidate
-            for company in companies
-            for candidate in company.get("candidate_names", [])
+            for candidates in ambiguous_candidate_groups.values()
+            for candidate in candidates
         })
-        ambiguous_mentions = [company.get("matched_text") for company in companies if company.get("matched_text")]
+        ambiguous_mentions = list(ambiguous_candidate_groups.keys())
         companies = []
         if model_client is not None and ambiguous_companies:
             try:
@@ -681,13 +755,18 @@ def extract_keywords(question: str, company_lookup: CompanyLookup, model_client:
             except Exception:
                 clarification_prompt = None
         if not clarification_prompt and ambiguous_companies:
-            clarification_prompt = build_ambiguity_prompt(question, ambiguous_companies, ambiguous_mentions)
+            clarification_prompt = build_ambiguity_prompt(
+                question,
+                ambiguous_candidate_groups,
+                ambiguous_mentions,
+            )
 
         return ExtractedKeywords(
             question=question,
             companies=[],
             ambiguous_companies=ambiguous_companies,
             ambiguous_mentions=ambiguous_mentions,
+            ambiguous_candidate_groups=ambiguous_candidate_groups,
             clarification_prompt=clarification_prompt,
             doc_types=find_doc_type_mentions(question),
             periods=find_period_mentions(question),
@@ -785,11 +864,14 @@ if __name__ == "__main__":
                 if model_result.ambiguous_companies:
                     prompt = model_result.clarification_prompt or build_ambiguity_prompt(
                         question,
-                        model_result.ambiguous_companies,
+                        model_result.ambiguous_candidate_groups or {
+                            mention: model_result.ambiguous_companies
+                            for mention in model_result.ambiguous_mentions
+                        },
                         model_result.ambiguous_mentions,
                     )
                     print(f"\n확인 질문: {prompt}\n")
-                    user_choice = input("회사명을 입력하세요: \n").strip()
+                    user_choice = input("회사명 또는 그룹 번호/이름을 입력하세요: ").strip()
                     if not user_choice:
                         print("회사명을 다시 선택해 주세요.")
                         continue
@@ -799,6 +881,7 @@ if __name__ == "__main__":
                         user_choice,
                         model_result.ambiguous_mentions,
                         model_result.ambiguous_companies,
+                        model_result.ambiguous_candidate_groups,
                     )
                     if not choice_map:
                         print("입력한 회사명을 인식하지 못했습니다. 후보 중 하나를 정확히 입력해 주세요.\n")
