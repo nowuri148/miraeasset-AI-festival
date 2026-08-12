@@ -39,7 +39,8 @@ METRIC_KEYWORDS = [
 ]
 
 ACTION_KEYWORDS = [
-    "정리", "요약", "설명", "비교", "순위", "추이", "변화", "이후", "전망", "유형별", "원인", "분석", "구분", "정정",
+    "정리", "요약", "설명", "비교", "더 큰", "더 높은", "가장 큰", "가장 높은", "많은", "높은", "낮은",
+    "순위", "추이", "변화", "이후", "전망", "유형별", "원인", "분석", "구분", "정정",
     "요청", "요청해", "찾아", "알려줘", "알려주세요", "비교해", "확인", "나열", "정리해줘"
 ]
 
@@ -98,6 +99,7 @@ MANUAL_ALIASES = {
     "JYP": "JYP Ent",
     "jyp": "JYP Ent",
     "제이와이피": "JYP Ent",
+    "LIG": "LIG디펜스앤에어로스페이스",
     "LIG넥스원": "LIG디펜스앤에어로스페이스",
     "LIG디펜스": "LIG디펜스앤에어로스페이스",
     "삼전": "삼성전자",
@@ -761,6 +763,7 @@ def extract_keywords(question: str, company_lookup: CompanyLookup, model_client:
                 ambiguous_mentions,
             )
 
+        extras = extract_question_keywords(question)
         return ExtractedKeywords(
             question=question,
             companies=[],
@@ -771,9 +774,9 @@ def extract_keywords(question: str, company_lookup: CompanyLookup, model_client:
             doc_types=find_doc_type_mentions(question),
             periods=find_period_mentions(question),
             task_type=classify_task_type(question, companies if companies else ambiguous_mentions),
-            metrics=[],
-            actions=[],
-            topic_keywords=[],
+            metrics=extras["metrics"],
+            actions=extras["actions"],
+            topic_keywords=extras["topic_keywords"],
         )
 
     if model_client is not None:
@@ -847,6 +850,7 @@ if __name__ == "__main__":
     if endpoint:
         print("\nHyperClovaX API 연동 예시를 실행합니다...")
         api_client = HyperClovaXKeywordExtractor(api_endpoint=endpoint, api_key=key)
+        final_result = None
         while True:
             try:
                 model_result = extract_keywords(question, company_lookup, model_client=api_client)
@@ -890,28 +894,47 @@ if __name__ == "__main__":
                     for mention, selection in choice_map.items():
                         new_question = replace_mention_with_selection(new_question, mention, selection)
                     question = new_question
+                    print(f"\n선택 반영 후 질문: {question}\n")
 
                     if not find_period_mentions(question):
                         print(f"\n기간 확인: {build_period_clarification_prompt(question)}\n")
                         period_input = input("기간을 입력하세요: ").strip()
                         if period_input:
                             question = f"{question} {period_input}"
+                            final_result = extract_keywords(question, company_lookup, model_client=api_client)
                         else:
                             print("기간을 다시 입력해 주세요.\n")
                             continue
-                    continue
+                    else:
+                        final_result = model_result
+                    break
 
                 if not find_period_mentions(question):
                     print(f"\n기간 확인: {build_period_clarification_prompt(question)}\n")
                     period_input = input("기간을 입력하세요: ").strip()
                     if period_input:
                         question = f"{question} {period_input}"
+                        final_result = extract_keywords(question, company_lookup, model_client=api_client)
                     else:
                         print("기간을 다시 입력해 주세요.\n")
                         continue
+                else:
+                    final_result = model_result
                 break
             except Exception as exc:
                 print(f"  HyperClovaX API 호출 실패: {exc}")
                 break
+
+        if final_result is not None:
+            print("\n=== 최종 추출 결과 ===")
+            print(f"질문: {question}")
+            print(f"  task_type: {final_result.task_type}")
+            print(f"  companies: {final_result.companies}")
+            print(f"  ambiguous_companies: {final_result.ambiguous_companies}")
+            print(f"  doc_types: {final_result.doc_types}")
+            print(f"  periods: {final_result.periods}")
+            print(f"  metrics: {final_result.metrics}")
+            print(f"  actions: {final_result.actions}")
+            print(f"  topic_keywords: {final_result.topic_keywords}")
     else:
         print("\nHYPERCLOVA_X_ENDPOINT 환경변수가 설정되지 않아 HyperClovaX API 예시는 실행되지 않습니다.")
