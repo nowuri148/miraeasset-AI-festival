@@ -95,6 +95,9 @@ MANUAL_ALIASES = {
     "엔씨": "NC",
     "엔씨소프트": "NC",
     "NC소프트": "NC",
+    "JYP": "JYP Ent",
+    "jyp": "JYP Ent",
+    "제이와이피": "JYP Ent",
     "LIG넥스원": "LIG디펜스앤에어로스페이스",
     "LIG디펜스": "LIG디펜스앤에어로스페이스",
     "삼전": "삼성전자",
@@ -103,11 +106,15 @@ MANUAL_ALIASES = {
     "네이버": "NAVER",
     "카카오": "카카오",
     "포스코": "POSCO홀딩스",
+    "현대 그룹": "현대 그룹",
+    "현대 그룹 전체": "현대 그룹",
+    "두산 그룹": "두산 그룹",
+    "두산 그룹 전체": "두산 그룹",
 }
 
 # 회사명 뒤에 흔히 붙는 조사 — 매칭 전에 제거해야 정확도가 올라감
-PARTICLES = ["은", "는", "이", "가", "의", "와", "과", "을", "를",
-             "에서", "에게", "보다", "이나", "나", "에", "만", "도"]
+PARTICLES = ["은", "는", "이", "가", "의", "와", "과", "랑", "이랑", "하고", "를",
+             "에서", "에게", "보다", "이나", "나", "에", "만", "도", "며"]
 
 
 def strip_particle(token: str) -> str:
@@ -117,8 +124,85 @@ def strip_particle(token: str) -> str:
     return token
 
 
+def normalize_choice_text(text: str) -> str:
+    if not text:
+        return ""
+    normalized = text.strip()
+    normalized = re.sub(r"[，,]", " ", normalized)
+    normalized = re.sub(r"(?:을|를|이|가)?\s*(말해|알려줘|알려주세요|말해줘|비교해|비교해줘|부탁해요|주세요)$", "", normalized)
+    normalized = re.sub(r"\s+", " ", normalized)
+    return normalized.strip()
+
+
+def split_user_choices(raw_choice: str) -> list[str]:
+    if not raw_choice:
+        return []
+    parts = re.split(
+        r"[，,]|(?:\s*그리고\s*)|(?:\s*및\s*)|(?:\s*이랑\s*)|(?:\s*랑\s*)|(?:\s*와\s*)|(?:\s*과\s*)|(?:\s*하고\s*)|(?:\s*&\s*)",
+        raw_choice,
+    )
+    return [normalize_choice_text(part) for part in parts if normalize_choice_text(part)]
+
+
+def normalize_group_choice(choice: str) -> str:
+    if not choice:
+        return ""
+    normalized = choice
+    normalized = re.sub(r"\b전체\s*(현대|두산|삼성|LG|SK)\s*그룹\b", r"\1 그룹", normalized)
+    normalized = re.sub(r"\b(현대|두산|삼성|LG|SK)\s*전체\s*그룹\b", r"\1 그룹", normalized)
+    normalized = re.sub(r"\b(현대|두산|삼성|LG|SK)\s*그룹\s*전체\b", r"\1 그룹", normalized)
+    normalized = re.sub(r"\b(기업|회사|업체|분야|업종|섹터|산업)\b", "", normalized)
+    normalized = re.sub(r"\s+", " ", normalized)
+    return normalized.strip()
+
+
+def normalize_group_mention(text: str) -> str:
+    if not text:
+        return ""
+    normalized = text.strip()
+    normalized = re.sub(r"(?:기업|회사|업체|분야|업종|섹터|산업)$", "", normalized)
+    return normalize_alias_key(normalized)
+
+
+def build_choice_map(user_choice: str, ambiguous_mentions: list, ambiguous_companies: list) -> dict:
+    choice_map: dict[str, str] = {}
+    alias_lookup = {normalize_alias_key(alias): canonical for alias, canonical in MANUAL_ALIASES.items()}
+    alias_lookup.update({normalize_alias_key(candidate): candidate for candidate in ambiguous_companies})
+
+    normalized_candidates = {normalize_alias_key(candidate): candidate for candidate in ambiguous_companies}
+    for choice in split_user_choices(user_choice):
+        choice = normalize_group_choice(choice)
+        normalized_choice = normalize_alias_key(choice)
+
+        resolved_choice = alias_lookup.get(normalized_choice) or normalized_candidates.get(normalized_choice) or choice
+        if resolved_choice in normalized_candidates.values():
+            candidate = resolved_choice
+            for mention in ambiguous_mentions:
+                if normalize_alias_key(mention) in normalize_alias_key(candidate):
+                    choice_map[mention] = candidate
+                    break
+            continue
+
+        for mention in ambiguous_mentions:
+            mention_norm = normalize_alias_key(mention)
+            if mention_norm in normalized_choice:
+                choice_map[mention] = resolved_choice
+                break
+
+    return choice_map
+
+
+def replace_mention_with_selection(question: str, mention: str, selection: str) -> str:
+    token_pattern = "|".join(re.escape(p) for p in sorted(PARTICLES, key=len, reverse=True))
+    pattern = fr"{re.escape(mention)}(?:{token_pattern})?"
+    return re.sub(pattern, selection, question, count=1)
+
+
 def normalize_alias_key(text: str) -> str:
-    return text.casefold()
+    folded = text.casefold()
+    folded = re.sub(r"\s+", "", folded)
+    folded = re.sub(r"[^\w가-힣]", "", folded)
+    return folded
 
 
 def get_generic_prefixes(name: str, max_prefix_length: int = 5) -> set:
@@ -136,8 +220,33 @@ def get_generic_prefixes(name: str, max_prefix_length: int = 5) -> set:
 class CompanyLookup:
     alias_to_canonical: Dict[str, str]
     ambiguous_aliases: Dict[str, List[str]]
+    generic_prefixes: Dict[str, List[str]]
+    group_aliases: Dict[str, List[str]]
     alias_count: int
     unique_company_count: int
+
+
+def expand_group_aliases(value: str) -> List[str]:
+    if not value or not isinstance(value, str):
+        return []
+    raw_parts = re.split(r"[/&|,·\s]+", value.strip())
+    aliases = set()
+    for part in raw_parts:
+        cleaned = part.strip()
+        if not cleaned:
+            continue
+        aliases.add(cleaned)
+        if cleaned.endswith("분야"):
+            aliases.add(cleaned[:-2])
+        if cleaned.endswith("업종"):
+            aliases.add(cleaned[:-2])
+        if "엔터" in cleaned or "테인먼트" in cleaned:
+            aliases.add("엔터")
+            aliases.add("엔터테인먼트")
+        if "방산" in cleaned:
+            aliases.add("방산")
+            aliases.add("방산분야")
+    return sorted({normalize_alias_key(alias) for alias in aliases if alias})
 
 
 def build_company_lookup(universe: pd.DataFrame) -> CompanyLookup:
@@ -148,6 +257,7 @@ def build_company_lookup(universe: pd.DataFrame) -> CompanyLookup:
     alias_to_canonical = {}
     alias_to_canonicals = defaultdict(set)
     canonical_names = set()
+    group_aliases: Dict[str, List[str]] = defaultdict(list)
 
     for _, row in universe.iterrows():
         canonical = row["corp_name"]
@@ -158,6 +268,12 @@ def build_company_lookup(universe: pd.DataFrame) -> CompanyLookup:
                 alias_to_canonicals[key].add(canonical)
                 if key not in alias_to_canonical:
                     alias_to_canonical[key] = canonical
+
+        for field_name in ["sector", "industry"]:
+            field_value = row.get(field_name)
+            if isinstance(field_value, str) and field_value.strip():
+                for alias in expand_group_aliases(field_value):
+                    group_aliases[alias].append(canonical)
 
     # 수동 별칭 병합 (README에서 확인된 특수 케이스 + 흔한 축약형)
     for alias, canonical_hint in MANUAL_ALIASES.items():
@@ -185,9 +301,23 @@ def build_company_lookup(universe: pd.DataFrame) -> CompanyLookup:
         if len(names) > 1 and prefix not in alias_to_canonical:
             ambiguous_aliases[prefix] = sorted(names)
 
+    generic_prefixes = {
+        prefix: sorted(names)
+        for prefix, names in prefix_candidates.items()
+        if len(names) > 1
+    }
+
+    normalized_group_aliases = {
+        alias: sorted(set(companies))
+        for alias, companies in group_aliases.items()
+        if len(set(companies)) > 1
+    }
+
     return CompanyLookup(
         alias_to_canonical=alias_to_canonical,
         ambiguous_aliases=ambiguous_aliases,
+        generic_prefixes=generic_prefixes,
+        group_aliases=normalized_group_aliases,
         alias_count=len(alias_to_canonical),
         unique_company_count=len(canonical_names),
     )
@@ -199,24 +329,48 @@ def find_company_mentions(question: str, company_lookup: CompanyLookup, fuzzy_th
     [{'matched_text':.., 'canonical_name':.., 'score':..}, ...] 형태로 반환
     """
     results = []
+    ambiguous_results = []
     seen_canonical = set()
     question_folded = normalize_alias_key(question)
+
+    matched_group_aliases = set()
+    for token in re.findall(r"[가-힣A-Za-z0-9]+", question):
+        cleaned = strip_particle(token)
+        if len(cleaned) < 2:
+            continue
+        group_key = normalize_group_mention(cleaned)
+        if group_key in company_lookup.group_aliases:
+            matched_group_aliases.add(group_key)
+
+    for alias in sorted(matched_group_aliases, key=len, reverse=True):
+        ambiguous_results.append({
+            "matched_text": alias,
+            "ambiguous": True,
+            "candidate_names": company_lookup.group_aliases[alias],
+            "score": 100,
+        })
+
+    if ambiguous_results:
+        return ambiguous_results
 
     # 1) 정확 매칭 (긴 이름부터 먼저 검사해야 "삼성" vs "삼성전자" 같은 부분 겹침 방지)
     for alias in sorted(company_lookup.alias_to_canonical.keys(), key=len, reverse=True):
         if alias and alias in question_folded:
             if alias in company_lookup.ambiguous_aliases:
-                return [{
+                ambiguous_results.append({
                     "matched_text": alias,
                     "ambiguous": True,
                     "candidate_names": company_lookup.ambiguous_aliases[alias],
                     "score": 100,
-                }]
+                })
+                continue
             canonical = company_lookup.alias_to_canonical[alias]
             if canonical not in seen_canonical:
                 results.append({"matched_text": alias, "canonical_name": canonical, "score": 100})
                 seen_canonical.add(canonical)
 
+    if ambiguous_results:
+        return ambiguous_results
     if results:
         return results  # 정확히 찾았으면 굳이 유사매칭까지 안 감 (오탐 방지)
 
@@ -230,12 +384,21 @@ def find_company_mentions(question: str, company_lookup: CompanyLookup, fuzzy_th
             continue
         cleaned_key = normalize_alias_key(cleaned)
         if cleaned_key in company_lookup.ambiguous_aliases:
-            return [{
-                "matched_text": token,
+            ambiguous_results.append({
+                "matched_text": cleaned,
                 "ambiguous": True,
                 "candidate_names": company_lookup.ambiguous_aliases[cleaned_key],
                 "score": 100,
-            }]
+            })
+            continue
+        if cleaned_key in company_lookup.generic_prefixes:
+            ambiguous_results.append({
+                "matched_text": cleaned,
+                "ambiguous": True,
+                "candidate_names": company_lookup.generic_prefixes[cleaned_key],
+                "score": 100,
+            })
+            continue
         match = process.extractOne(cleaned_key, candidates, scorer=fuzz.WRatio, score_cutoff=fuzzy_threshold)
         if match:
             matched_alias, score, _ = match
@@ -243,6 +406,9 @@ def find_company_mentions(question: str, company_lookup: CompanyLookup, fuzzy_th
             if canonical not in seen_canonical:
                 results.append({"matched_text": token, "canonical_name": canonical, "score": round(score, 1)})
                 seen_canonical.add(canonical)
+
+    if ambiguous_results:
+        return ambiguous_results
 
     return results
 
@@ -385,6 +551,36 @@ class HyperClovaXKeywordExtractor:
             topic_keywords=topic_keywords,
         )
 
+    def ask_disambiguation(self, question: str, candidate_names: List[str]) -> str:
+        if requests is None:
+            raise ImportError("requests 라이브러리가 필요합니다. pip install requests")
+        if not self.api_endpoint:
+            raise ValueError("HyperClovaX API endpoint가 설정되어야 합니다. HYPERCLOVA_X_ENDPOINT 환경변수를 확인하세요.")
+
+        candidate_text = ", ".join(candidate_names)
+        prompt = (
+            "질문에서 언급된 회사명이 모호합니다.\n"
+            f"질문: {question}\n"
+            f"회사 후보: {candidate_text}\n"
+            "위 후보 중에서 질문 작성자가 어떤 회사를 의미하는지 명확히 물어보는 한국어 문장을 생성하세요."
+        )
+
+        payload = {
+            "model": self.model_name,
+            "input": prompt,
+        }
+        headers = {"Content-Type": "application/json"}
+        if self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
+
+        response = requests.post(self.api_endpoint, json=payload, headers=headers, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+        body = data.get("output") or data
+        if isinstance(body, dict):
+            return body.get("text") or body.get("output") or str(body)
+        return str(body)
+
 
 # ---------------------------------------------------------------
 # 5. 통합 추출 함수
@@ -394,6 +590,9 @@ class HyperClovaXKeywordExtractor:
 class ExtractedKeywords:
     question: str
     companies: list = field(default_factory=list)
+    ambiguous_companies: list = field(default_factory=list)
+    ambiguous_mentions: list = field(default_factory=list)
+    clarification_prompt: Optional[str] = None
     doc_types: list = field(default_factory=list)
     periods: list = field(default_factory=list)
     task_type: str = ""
@@ -405,6 +604,9 @@ class ExtractedKeywords:
         return {
             "question": self.question,
             "companies": self.companies,
+            "ambiguous_companies": self.ambiguous_companies,
+            "clarification_prompt": self.clarification_prompt,
+            "ambiguous_mentions": self.ambiguous_mentions,
             "doc_types": self.doc_types,
             "periods": self.periods,
             "task_type": self.task_type,
@@ -415,14 +617,94 @@ class ExtractedKeywords:
         }
 
 
-def extract_keywords(question: str, company_lookup: dict, model_client: Optional[HyperClovaXKeywordExtractor] = None) -> ExtractedKeywords:
+def build_ambiguity_prompt(question: str, candidates: List[str], ambiguous_mentions: Optional[list] = None) -> str:
+    if ambiguous_mentions:
+        if len(ambiguous_mentions) == 1:
+            group_hint = f"전체 {ambiguous_mentions[0]} 그룹"
+        else:
+            group_hint = " 또는 ".join(f"전체 {mention} 그룹" for mention in ambiguous_mentions)
+    else:
+        group_hint = "전체 그룹"
+
+    grouped_candidates: Dict[str, List[str]] = defaultdict(list)
+    for candidate in candidates:
+        matched_group = "기타 그룹"
+        candidate_key = normalize_alias_key(candidate)
+        for mention in ambiguous_mentions or []:
+            mention_key = normalize_alias_key(mention)
+            if mention_key in candidate_key or candidate_key in mention_key:
+                matched_group = f"{mention} 그룹"
+                break
+        grouped_candidates[matched_group].append(candidate)
+
+    lines = [
+        f"질문이 모호합니다. '{question}'에서 어떤 회사를 의미하나요?",
+        "============================================================================",
+        f"다음 후보 중 하나를 선택하거나 '{group_hint}'처럼 전체 범위를 말해 주세요.",
+    ]
+
+    for idx, (group_name, group_items) in enumerate(grouped_candidates.items(), start=1):
+        lines.append(f"{idx}. {group_name}:")
+        for item in sorted(set(group_items)):
+            lines.append(f"   - {item}")
+
+    if not grouped_candidates:
+        lines.append(f"- 후보: {', '.join(candidates)}")
+
+    return "\n".join(lines)
+
+
+def build_period_clarification_prompt(question: str) -> str:
+    return (
+        "질문에 필요한 기간 정보가 부족합니다. "
+        "최소 연도 단위(예: 2024년, 2025년, 2025년 1분기) 중 어느 기간을 의미하나요? "
+        f"질문 원문: '{question}'"
+    )
+
+
+def extract_keywords(question: str, company_lookup: CompanyLookup, model_client: Optional[HyperClovaXKeywordExtractor] = None) -> ExtractedKeywords:
+    companies = find_company_mentions(question, company_lookup)
+    ambiguous_companies = []
+    ambiguous_mentions = []
+    clarification_prompt = None
+    if companies and isinstance(companies[0], dict) and companies[0].get("ambiguous"):
+        ambiguous_companies = sorted({
+            candidate
+            for company in companies
+            for candidate in company.get("candidate_names", [])
+        })
+        ambiguous_mentions = [company.get("matched_text") for company in companies if company.get("matched_text")]
+        companies = []
+        if model_client is not None and ambiguous_companies:
+            try:
+                clarification_prompt = model_client.ask_disambiguation(question, ambiguous_companies)
+            except Exception:
+                clarification_prompt = None
+        if not clarification_prompt and ambiguous_companies:
+            clarification_prompt = build_ambiguity_prompt(question, ambiguous_companies, ambiguous_mentions)
+
+        return ExtractedKeywords(
+            question=question,
+            companies=[],
+            ambiguous_companies=ambiguous_companies,
+            ambiguous_mentions=ambiguous_mentions,
+            clarification_prompt=clarification_prompt,
+            doc_types=find_doc_type_mentions(question),
+            periods=find_period_mentions(question),
+            task_type=classify_task_type(question, companies if companies else ambiguous_mentions),
+            metrics=[],
+            actions=[],
+            topic_keywords=[],
+        )
+
     if model_client is not None:
         try:
-            return model_client.extract_keywords(question)
+            extracted = model_client.extract_keywords(question)
+            if extracted.companies:
+                return extracted
         except Exception:
             pass
 
-    companies = find_company_mentions(question, company_lookup)
     doc_types = find_doc_type_mentions(question)
     periods = find_period_mentions(question)
     extras = extract_question_keywords(question)
@@ -431,6 +713,8 @@ def extract_keywords(question: str, company_lookup: dict, model_client: Optional
     return ExtractedKeywords(
         question=question,
         companies=companies,
+        ambiguous_companies=ambiguous_companies,
+        clarification_prompt=clarification_prompt,
         doc_types=doc_types,
         periods=periods,
         task_type=task_type,
@@ -466,7 +750,8 @@ if __name__ == "__main__":
     # ]
     
     print("== input을 입력하세요 ==")
-    question = input("질의: ")
+    original_question = input("질의: ")
+    question = original_question
 
     # for q in sample_questions:
     #     result = extract_keywords(q, company_lookup)
@@ -483,17 +768,67 @@ if __name__ == "__main__":
     if endpoint:
         print("\nHyperClovaX API 연동 예시를 실행합니다...")
         api_client = HyperClovaXKeywordExtractor(api_endpoint=endpoint, api_key=key)
-        try:
-            model_result = extract_keywords(question, company_lookup, model_client=api_client)
-            print(f"\n[모델] 질의: {question}")
-            print(f"  task_type: {model_result.task_type}")
-            print(f"  companies: {model_result.companies}")
-            print(f"  doc_types: {model_result.doc_types}")
-            print(f"  periods: {model_result.periods}")
-            print(f"  metrics: {model_result.metrics}")
-            print(f"  actions: {model_result.actions}")
-            print(f"  topic_keywords: {model_result.topic_keywords}")
-        except Exception as exc:
-            print(f"  HyperClovaX API 호출 실패: {exc}")
+        while True:
+            try:
+                model_result = extract_keywords(question, company_lookup, model_client=api_client)
+                print(f"\n[모델] 질의: {question}")
+                print(f"  task_type: {model_result.task_type}")
+                print(f"  companies: {model_result.companies}")
+                print(f"  ambiguous_companies: {model_result.ambiguous_companies}")
+                print(f"  clarification_prompt: {model_result.clarification_prompt}")
+                print(f"  doc_types: {model_result.doc_types}")
+                print(f"  periods: {model_result.periods}")
+                print(f"  metrics: {model_result.metrics}")
+                print(f"  actions: {model_result.actions}")
+                print(f"  topic_keywords: {model_result.topic_keywords}")
+
+                if model_result.ambiguous_companies:
+                    prompt = model_result.clarification_prompt or build_ambiguity_prompt(
+                        question,
+                        model_result.ambiguous_companies,
+                        model_result.ambiguous_mentions,
+                    )
+                    print(f"\n확인 질문: {prompt}\n")
+                    user_choice = input("회사명을 입력하세요: \n").strip()
+                    if not user_choice:
+                        print("회사명을 다시 선택해 주세요.")
+                        continue
+                    if user_choice.lower() == "취소":
+                        break
+                    choice_map = build_choice_map(
+                        user_choice,
+                        model_result.ambiguous_mentions,
+                        model_result.ambiguous_companies,
+                    )
+                    if not choice_map:
+                        print("입력한 회사명을 인식하지 못했습니다. 후보 중 하나를 정확히 입력해 주세요.\n")
+                        continue
+                    new_question = original_question
+                    for mention, selection in choice_map.items():
+                        new_question = replace_mention_with_selection(new_question, mention, selection)
+                    question = new_question
+
+                    if not find_period_mentions(question):
+                        print(f"\n기간 확인: {build_period_clarification_prompt(question)}\n")
+                        period_input = input("기간을 입력하세요: ").strip()
+                        if period_input:
+                            question = f"{question} {period_input}"
+                        else:
+                            print("기간을 다시 입력해 주세요.\n")
+                            continue
+                    continue
+
+                if not find_period_mentions(question):
+                    print(f"\n기간 확인: {build_period_clarification_prompt(question)}\n")
+                    period_input = input("기간을 입력하세요: ").strip()
+                    if period_input:
+                        question = f"{question} {period_input}"
+                    else:
+                        print("기간을 다시 입력해 주세요.\n")
+                        continue
+                break
+            except Exception as exc:
+                print(f"  HyperClovaX API 호출 실패: {exc}")
+                break
     else:
         print("\nHYPERCLOVA_X_ENDPOINT 환경변수가 설정되지 않아 HyperClovaX API 예시는 실행되지 않습니다.")
