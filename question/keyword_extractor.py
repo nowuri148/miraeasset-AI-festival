@@ -102,6 +102,10 @@ MANUAL_ALIASES = {
     "LIG": "LIG디펜스앤에어로스페이스",
     "LIG넥스원": "LIG디펜스앤에어로스페이스",
     "LIG디펜스": "LIG디펜스앤에어로스페이스",
+    "신재생": "신재생에너지",
+    "신재생에너지": "신재생에너지",
+    "SM": "SM",
+    "에스엠": "SM",
     "삼전": "삼성전자",
     "SK하닉": "SK하이닉스",
     "하이닉스": "SK하이닉스",
@@ -286,6 +290,25 @@ def expand_group_aliases(value: str) -> List[str]:
     return sorted({normalize_alias_key(alias) for alias in aliases if alias})
 
 
+def expand_company_aliases(value: str) -> List[str]:
+    if not value or not isinstance(value, str):
+        return []
+    compiled = set()
+    raw = value.strip()
+    if not raw:
+        return []
+    compiled.add(raw)
+    compiled.add(raw.replace("&", "and"))
+    compact = re.sub(r"[^A-Za-z0-9]", "", raw)
+    if compact:
+        compiled.add(compact)
+    for part in re.split(r"[\s&/.-]+", raw):
+        cleaned = part.strip()
+        if cleaned and len(cleaned) >= 2:
+            compiled.add(cleaned)
+    return [alias for alias in sorted(compiled, key=len, reverse=True) if alias]
+
+
 def build_company_lookup(universe: pd.DataFrame) -> CompanyLookup:
     """
     universe.csv의 corp_name / listed_name / corp_eng_name / stock_code를
@@ -300,8 +323,10 @@ def build_company_lookup(universe: pd.DataFrame) -> CompanyLookup:
         canonical = row["corp_name"]
         canonical_names.add(canonical)
         for alias in [row["corp_name"], row["listed_name"], row["corp_eng_name"], row["stock_code"]]:
-            if isinstance(alias, str) and alias.strip():
-                key = normalize_alias_key(alias.strip())
+            if not isinstance(alias, str) or not alias.strip():
+                continue
+            for expanded in expand_company_aliases(alias):
+                key = normalize_alias_key(expanded)
                 alias_to_canonicals[key].add(canonical)
                 if key not in alias_to_canonical:
                     alias_to_canonical[key] = canonical
