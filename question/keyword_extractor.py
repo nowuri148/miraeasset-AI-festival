@@ -12,6 +12,7 @@
 
 import os
 import re
+import sys
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -19,6 +20,12 @@ from typing import Any, Dict, List, Optional
 
 import pandas as pd
 from rapidfuzz import fuzz, process
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from Config import CLOVA_STUDIO_API_KEY  # noqa: E402
 
 try:
     import requests  # type: ignore[import]
@@ -842,7 +849,7 @@ if __name__ == "__main__":
         encoding="utf-8-sig",
     )
     
-    key = "nv-53d015cd5a4f4240abb926ad7c755937abxC"
+    key = os.getenv("CLOVA_STUDIO_API_KEY", CLOVA_STUDIO_API_KEY)
     
     company_lookup = build_company_lookup(universe)
     print(f"회사명 룩업 테이블 크기: {company_lookup.alias_count}개 별칭")
@@ -872,7 +879,7 @@ if __name__ == "__main__":
     #     print(f"  토픽 키워드: {result.topic_keywords}")
 
     endpoint = os.getenv("HYPERCLOVA_X_ENDPOINT", "https://clovastudio.stream.ntruss.com/")
-    if endpoint:
+    if endpoint and key:
         print("\nHyperClovaX API 연동 예시를 실행합니다...")
         api_client = HyperClovaXKeywordExtractor(api_endpoint=endpoint, api_key=key)
         final_result = None
@@ -962,4 +969,7 @@ if __name__ == "__main__":
             print(f"  actions: {final_result.actions}")
             print(f"  topic_keywords: {final_result.topic_keywords}")
     else:
-        print("\nHYPERCLOVA_X_ENDPOINT 환경변수가 설정되지 않아 HyperClovaX API 예시는 실행되지 않습니다.")
+        print(
+            "\nHYPERCLOVA_X_ENDPOINT 또는 CLOVA_STUDIO_API_KEY 환경변수가 "
+            "설정되지 않아 HyperClovaX API 예시는 실행되지 않습니다."
+        )

@@ -1,0 +1,8 @@
+# Local secrets
+Config.py
+
+# Generated caches
+__pycache__/
+*.pyc
+Dataset/.qa_generation_cache.jsonl
+
