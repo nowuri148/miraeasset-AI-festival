@@ -13,6 +13,7 @@
 import os
 import re
 import sys
+import json
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -77,17 +78,42 @@ TASK_LABELS = {
 }
 
 MODEL_PROMPT_TEMPLATE = (
-    "질의를 분석하여 아래 JSON 스키마에 맞게 응답하세요.\n"
-    "1) task_type: 검색_정보추출 / 다중조회_비교연산 / 복합문서추론 중 하나\n"
-    "2) companies: 질문에 언급된 회사 이름의 canonical 명칭 목록\n"
-    "3) doc_types: 관련 문서 유형 목록\n"
-    "4) periods: 언급된 기간 목록\n"
-    "5) metrics: 질문 핵심 지표 목록\n"
-    "6) actions: 질문 핵심 동사/행동 목록\n"
-    "7) topic_keywords: 핵심 키워드 목록\n"
+    "질의를 분석하여 반드시 JSON 객체로만 응답하세요.\n"
+    "\n"
+    "1) task_type:\n"
+    "   검색_정보추출 / 다중조회_비교연산 / 복합문서추론 중 하나\n"
+    "\n"
+    "2) companies:\n"
+    "   질문에 명시적으로 언급된 회사의 canonical 명칭 목록\n"
+    "\n"
+    "3) doc_types:\n"
+    "   반드시 아래 문서 유형 중 질문에서 명시적으로 확인되는 것만 선택\n"
+    "   - 사업보고서\n"
+    "   - 반기보고서\n"
+    "   - 분기보고서\n"
+    "   - 주요사항보고서\n"
+    "   - 거래소공시\n"
+    "   - 지분공시\n"
+    "   질문에 문서 유형이 명시되지 않았다면 빈 배열 []\n"
+    "   추측해서 문서 유형을 추가하지 말 것\n"
+    "\n"
+    "4) periods:\n"
+    "   질문에 명시적으로 언급된 기간 목록\n"
+    "\n"
+    "5) metrics:\n"
+    "   질문의 핵심 지표 목록\n"
+    "\n"
+    "6) actions:\n"
+    "   질문의 핵심 동사 또는 행동 목록\n"
+    "\n"
+    "7) topic_keywords:\n"
+    "   질문의 핵심 키워드 목록\n"
+    "\n"
+    "반드시 유효한 JSON 객체만 출력하세요.\n"
+    "Markdown 코드 블록이나 추가 설명은 출력하지 마세요.\n"
+    "\n"
     "질문: {question}"
 )
-
 # ---------------------------------------------------------------
 # 1. 회사명 별칭 테이블 구축
 # ---------------------------------------------------------------
@@ -568,36 +594,111 @@ def classify_task_type(question: str, company_mentions: list) -> str:
 
     return "검색_정보추출"
 
+def parse_json_content(content: str | dict[str, Any]) -> dict[str, Any]:
+    if isinstance(content, dict):
+        return content
+
+    text = content.strip()
+
+    # ```json ... ``` 제거
+    text = re.sub(r"^```(?:json)?\s*", "", text)
+    text = re.sub(r"\s*```$", "", text)
+
+    return json.loads(text)
+
 
 class HyperClovaXKeywordExtractor:
-    def __init__(self, api_endpoint: Optional[str] = None, api_key: Optional[str] = None, model_name: str = "hyperclovax"):
-        self.api_endpoint = api_endpoint or os.getenv("HYPERCLOVA_X_ENDPOINT") or "https://clovastudio.stream.ntruss.com/"
-        self.api_key = api_key or os.getenv("HYPERCLOVA_X_API_KEY")
+    def __init__(
+        self,
+        api_endpoint: Optional[str] = None,
+        api_key: Optional[str] = None,
+        model_name: str = "HCX-005",
+    ):
+        base_url = (
+            api_endpoint
+            or os.getenv("HYPERCLOVA_X_ENDPOINT")
+            or "https://clovastudio.stream.ntruss.com/v1/openai"
+        )
+
+        self.api_endpoint = (
+            base_url.rstrip("/")
+            + "/chat/completions"
+        )
+
+        self.api_key = (
+            api_key
+            or os.getenv("CLOVA_STUDIO_API_KEY")
+        )
+
         self.model_name = model_name
 
-    def extract_keywords(self, question: str) -> "ExtractedKeywords":
+    def extract_keywords(
+        self,
+        question: str,
+    ) -> "ExtractedKeywords":
+
         if requests is None:
-            raise ImportError("requests 라이브러리가 필요합니다. pip install requests")
-        if not self.api_endpoint:
-            raise ValueError("HyperClovaX API endpoint가 설정되어야 합니다. HYPERCLOVA_X_ENDPOINT 환경변수를 확인하세요.")
+            raise ImportError(
+                "requests 라이브러리가 필요합니다. "
+                "pip install requests"
+            )
 
         payload = {
             "model": self.model_name,
-            "input": MODEL_PROMPT_TEMPLATE.format(question=question),
-            "metadata": {
-                "task": "keyword_extraction",
-                "schema": ["task_type", "companies", "doc_types", "periods", "metrics", "actions", "topic_keywords"],
-            },
+            "messages": [
+                {
+                    "role": "system",
+                    "content": (
+                        "사용자의 금융 질의를 분석하여 "
+                        "JSON 형식으로 핵심 정보를 추출하세요."
+                    ),
+                },
+                {
+                    "role": "user",
+                    "content": MODEL_PROMPT_TEMPLATE.format(
+                        question=question
+                    ),
+                },
+            ],
+            "temperature": 0.0,
+            "max_tokens": 1000,
         }
-        headers = {"Content-Type": "application/json"}
-        if self.api_key:
-            headers["Authorization"] = f"Bearer {self.api_key}"
 
-        response = requests.post(self.api_endpoint, json=payload, headers=headers, timeout=15)
+        headers = {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authorization": (
+                f"Bearer {self.api_key}"
+            ),
+        }
+        
+        response = requests.post(
+            self.api_endpoint,
+            json=payload,
+            headers=headers,
+            timeout=30,
+        )
+
+        print(f"[DEBUG] status_code = {response.status_code}")
+        print(f"[DEBUG] response text = {response.text}")
+
         response.raise_for_status()
+
         data = response.json()
 
-        return self._parse_api_response(data, question)
+        print(f"[DEBUG] response json = {data}")
+
+        content = data["choices"][0]["message"]["content"]
+
+        print(f"[DEBUG] model content = {repr(content)}")
+
+        body = parse_json_content(content)
+        
+        print(f"[DEBUG] parsed body = {body}")
+
+        result = self._parse_api_response(body, question)
+        print(f"[DEBUG] parsed result = {result}")
+        return result
 
     def _parse_api_response(self, response: Dict[str, Any], question: str) -> "ExtractedKeywords":
         body = response.get("output") or response
@@ -620,35 +721,68 @@ class HyperClovaXKeywordExtractor:
             topic_keywords=topic_keywords,
         )
 
-    def ask_disambiguation(self, question: str, candidate_names: List[str]) -> str:
+    def ask_disambiguation(
+        self,
+        question: str,
+        candidate_names: List[str],
+    ) -> str:
         if requests is None:
-            raise ImportError("requests 라이브러리가 필요합니다. pip install requests")
+            raise ImportError(
+                "requests 라이브러리가 필요합니다. pip install requests"
+            )
+
         if not self.api_endpoint:
-            raise ValueError("HyperClovaX API endpoint가 설정되어야 합니다. HYPERCLOVA_X_ENDPOINT 환경변수를 확인하세요.")
+            raise ValueError(
+                "HyperClovaX API endpoint가 설정되어야 합니다."
+            )
 
         candidate_text = ", ".join(candidate_names)
+
         prompt = (
             "질문에서 언급된 회사명이 모호합니다.\n"
             f"질문: {question}\n"
             f"회사 후보: {candidate_text}\n"
-            "위 후보 중에서 질문 작성자가 어떤 회사를 의미하는지 명확히 물어보는 한국어 문장을 생성하세요."
+            "위 후보 중 어떤 회사를 의미하는지 사용자에게 "
+            "확인하는 짧은 한국어 질문을 작성하세요."
         )
 
         payload = {
             "model": self.model_name,
-            "input": prompt,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": (
+                        "사용자의 금융 질의에서 모호한 회사명을 "
+                        "명확히 확인하는 질문을 작성하세요."
+                    ),
+                },
+                {
+                    "role": "user",
+                    "content": prompt,
+                },
+            ],
+            "temperature": 0.0,
+            "max_tokens": 300,
         }
-        headers = {"Content-Type": "application/json"}
-        if self.api_key:
-            headers["Authorization"] = f"Bearer {self.api_key}"
 
-        response = requests.post(self.api_endpoint, json=payload, headers=headers, timeout=15)
+        headers = {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authorization": f"Bearer {self.api_key}",
+        }
+
+        response = requests.post(
+            self.api_endpoint,
+            json=payload,
+            headers=headers,
+            timeout=30,
+        )
+
         response.raise_for_status()
+
         data = response.json()
-        body = data.get("output") or data
-        if isinstance(body, dict):
-            return body.get("text") or body.get("output") or str(body)
-        return str(body)
+
+        return data["choices"][0]["message"]["content"].strip()
 
 
 # ---------------------------------------------------------------
@@ -765,78 +899,91 @@ def build_period_clarification_prompt(question: str) -> str:
     )
 
 
-def extract_keywords(question: str, company_lookup: CompanyLookup, model_client: Optional[HyperClovaXKeywordExtractor] = None) -> ExtractedKeywords:
-    companies = find_company_mentions(question, company_lookup)
-    ambiguous_companies = []
-    ambiguous_mentions = []
-    clarification_prompt = None
-    if companies and isinstance(companies[0], dict) and companies[0].get("ambiguous"):
-        ambiguous_candidate_groups = {
-            company.get("matched_text"): company.get("candidate_names", [])
-            for company in companies
-            if company.get("matched_text")
-        }
-        ambiguous_companies = sorted({
-            candidate
-            for candidates in ambiguous_candidate_groups.values()
-            for candidate in candidates
-        })
-        ambiguous_mentions = list(ambiguous_candidate_groups.keys())
-        companies = []
-        if model_client is not None and ambiguous_companies:
-            try:
-                clarification_prompt = model_client.ask_disambiguation(question, ambiguous_companies)
-            except Exception:
-                clarification_prompt = None
-        if not clarification_prompt and ambiguous_companies:
-            clarification_prompt = build_ambiguity_prompt(
-                question,
-                ambiguous_candidate_groups,
-                ambiguous_mentions,
-            )
+# def extract_keywords(question: str, company_lookup: CompanyLookup, model_client: Optional[HyperClovaXKeywordExtractor] = None) -> ExtractedKeywords:
+#     companies = find_company_mentions(question, company_lookup)
+#     ambiguous_companies = []
+#     ambiguous_mentions = []
+#     clarification_prompt = None
+#     if companies and isinstance(companies[0], dict) and companies[0].get("ambiguous"):
+#         ambiguous_candidate_groups = {
+#             company.get("matched_text"): company.get("candidate_names", [])
+#             for company in companies
+#             if company.get("matched_text")
+#         }
+#         ambiguous_companies = sorted({
+#             candidate
+#             for candidates in ambiguous_candidate_groups.values()
+#             for candidate in candidates
+#         })
+#         ambiguous_mentions = list(ambiguous_candidate_groups.keys())
+#         companies = []
+#         if model_client is not None and ambiguous_companies:
+#             try:
+#                 clarification_prompt = model_client.ask_disambiguation(question, ambiguous_companies)
+#             except Exception:
+#                 clarification_prompt = None
+#         if not clarification_prompt and ambiguous_companies:
+#             clarification_prompt = build_ambiguity_prompt(
+#                 question,
+#                 ambiguous_candidate_groups,
+#                 ambiguous_mentions,
+#             )
 
-        extras = extract_question_keywords(question)
-        return ExtractedKeywords(
-            question=question,
-            companies=[],
-            ambiguous_companies=ambiguous_companies,
-            ambiguous_mentions=ambiguous_mentions,
-            ambiguous_candidate_groups=ambiguous_candidate_groups,
-            clarification_prompt=clarification_prompt,
-            doc_types=find_doc_type_mentions(question),
-            periods=find_period_mentions(question),
-            task_type=classify_task_type(question, companies if companies else ambiguous_mentions),
-            metrics=extras["metrics"],
-            actions=extras["actions"],
-            topic_keywords=extras["topic_keywords"],
-        )
+#         extras = extract_question_keywords(question)
+#         return ExtractedKeywords(
+#             question=question,
+#             companies=[],
+#             ambiguous_companies=ambiguous_companies,
+#             ambiguous_mentions=ambiguous_mentions,
+#             ambiguous_candidate_groups=ambiguous_candidate_groups,
+#             clarification_prompt=clarification_prompt,
+#             doc_types=find_doc_type_mentions(question),
+#             periods=find_period_mentions(question),
+#             task_type=classify_task_type(question, companies if companies else ambiguous_mentions),
+#             metrics=extras["metrics"],
+#             actions=extras["actions"],
+#             topic_keywords=extras["topic_keywords"],
+#         )
+
+#     if model_client is not None:
+#         try:
+#             return model_client.extract_keywords(question)
+#         except Exception as exc:
+#             raise RuntimeError(
+#                 f"HyperCLOVA X API 호출 실패: {exc}"
+#             ) from exc
+
+#     doc_types = find_doc_type_mentions(question)
+#     periods = find_period_mentions(question)
+#     extras = extract_question_keywords(question)
+#     task_type = classify_task_type(question, companies)
+
+#     return ExtractedKeywords(
+#         question=question,
+#         companies=companies,
+#         ambiguous_companies=ambiguous_companies,
+#         clarification_prompt=clarification_prompt,
+#         doc_types=doc_types,
+#         periods=periods,
+#         task_type=task_type,
+#         metrics=extras["metrics"],
+#         actions=extras["actions"],
+#         topic_keywords=extras["topic_keywords"],
+#     )
+
+def extract_keywords(
+    question: str,
+    company_lookup: CompanyLookup,
+    model_client: Optional["HyperClovaXKeywordExtractor"] = None,
+) -> "ExtractedKeywords":
 
     if model_client is not None:
-        try:
-            extracted = model_client.extract_keywords(question)
-            if extracted.companies:
-                return extracted
-        except Exception:
-            pass
+        print("[INFO] HyperCLOVA X ONLY mode")
+        return model_client.extract_keywords(question)
 
-    doc_types = find_doc_type_mentions(question)
-    periods = find_period_mentions(question)
-    extras = extract_question_keywords(question)
-    task_type = classify_task_type(question, companies)
-
-    return ExtractedKeywords(
-        question=question,
-        companies=companies,
-        ambiguous_companies=ambiguous_companies,
-        clarification_prompt=clarification_prompt,
-        doc_types=doc_types,
-        periods=periods,
-        task_type=task_type,
-        metrics=extras["metrics"],
-        actions=extras["actions"],
-        topic_keywords=extras["topic_keywords"],
+    raise RuntimeError(
+        "model_client가 없습니다. 현재는 HyperCLOVA X ONLY 모드입니다."
     )
-
 
 # ---------------------------------------------------------------
 # 데모
@@ -878,7 +1025,10 @@ if __name__ == "__main__":
     #     print(f"  행동: {result.actions}")
     #     print(f"  토픽 키워드: {result.topic_keywords}")
 
-    endpoint = os.getenv("HYPERCLOVA_X_ENDPOINT", "https://clovastudio.stream.ntruss.com/")
+    endpoint = os.getenv(
+        "HYPERCLOVA_X_ENDPOINT",
+        "https://clovastudio.stream.ntruss.com/v1/openai"
+    )
     if endpoint and key:
         print("\nHyperClovaX API 연동 예시를 실행합니다...")
         api_client = HyperClovaXKeywordExtractor(api_endpoint=endpoint, api_key=key)
