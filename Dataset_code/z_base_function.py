@@ -1143,6 +1143,818 @@ def normalize_question(question: str) -> str:
         question.casefold(),
     )
 
+
+# =====================================================================
+# Shared QA / evidence / training utilities
+# =====================================================================
+
+ALLOWED_GENERATED_TASK_TYPES = {
+    "정보추출",
+    "조건결합",
+    "계산",
+    "요약",
+    "다중조회",
+    "비교연산",
+    "복합추론",
+    "근거부족",
+}
+
+TASK_TYPE_ALIASES = {
+    # 사실 조회 계열
+    "사실 추출": "정보추출",
+    "사실추출": "정보추출",
+    "정보 추출": "정보추출",
+    "정보조회": "정보추출",
+    "사실 조회": "정보추출",
+
+    # 조건 결합
+    "조건 결합": "조건결합",
+
+    # 비교/연산
+    "비교 연산": "비교연산",
+    "비교": "비교연산",
+
+    # 복합 추론
+    "복합 추론": "복합추론",
+    "복합 문서 추론": "복합추론",
+
+    # 근거 부족
+    "근거 부족": "근거부족",
+    "답변불가": "근거부족",
+    "답변 불가": "근거부족",
+}
+
+def response_schema() -> dict[str, Any]:
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "grounded_financial_qa",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "qas": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "task_type": {
+                                    "type": "string",
+                                    "enum": [
+                                        "정보추출", "조건결합", "계산", "요약",
+                                        "다중조회", "비교연산", "복합추론", "근거부족",
+                                    ],
+                                },
+                                "question": {"type": "string"},
+                                "answer": {"type": "string"},
+                                "answerable": {"type": "boolean"},
+                                "evidence": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "document": {"type": "string"},
+                                            "field": {"type": "string"},
+                                            "quote": {"type": "string"},
+                                        },
+                                        "required": ["document", "field", "quote"],
+                                        "additionalProperties": False,
+                                    },
+                                },
+                            },
+                            "required": ["task_type", "question", "answer", "answerable", "evidence"],
+                            "additionalProperties": False,
+                        },
+                    }
+                },
+                "required": ["qas"],
+                "additionalProperties": False,
+            },
+        },
+    }
+
+def split_context_documents(context: str) -> list[tuple[str, str]]:
+    """Context를 ("문서 N", 문서본문) 목록으로 분리한다."""
+    matches = list(re.finditer(r"(?m)^\[문서 (\d+)\]\s*$", context))
+    documents: list[tuple[str, str]] = []
+    for idx, match in enumerate(matches):
+        start = match.end()
+        end = matches[idx + 1].start() if idx + 1 < len(matches) else len(context)
+        documents.append((f"문서 {match.group(1)}", context[start:end].strip()))
+    return documents
+
+def locate_evidence_document(context: str, quote: str) -> str | None:
+    """quote가 실제로 들어 있는 문서 번호를 Context에서 직접 찾는다."""
+    for document, body in split_context_documents(context):
+        if quote in body:
+            return document
+    return None
+
+def normalize_field_name_for_match(value: str) -> str:
+    """필드명 비교용 정규화."""
+    text = (value or "").strip().casefold()
+    text = re.sub(r"\s+", "", text)
+    text = re.sub(r"[^0-9a-z가-힣]", "", text)
+    return text
+
+def find_context_line_by_field(
+    context: str,
+    field: str,
+    preferred_document: str = "",
+) -> tuple[str, str] | None:
+    """
+    field와 일치하는 실제 Context 라인을 찾는다.
+
+    preferred_document가 있으면 해당 문서에서 먼저 찾고,
+    찾지 못하면 전체 문서를 다시 탐색한다.
+    """
+
+    field_key = normalize_field_name_for_match(field)
+
+    if not field_key:
+        return None
+
+    generic_fields = {
+        "본문",
+        "내용",
+        "기타",
+        "정보",
+        "근거",
+    }
+
+    if field.strip() in generic_fields:
+        return None
+
+    documents = split_context_documents(context)
+
+    # --------------------------------------------------------
+    # 1. reviewer가 지정한 문서에서 먼저 탐색
+    # --------------------------------------------------------
+    preferred_document = normalize_text(
+        preferred_document
+    )
+
+    if preferred_document:
+        for document, body in documents:
+            if (
+                normalize_text(document)
+                != preferred_document
+            ):
+                continue
+
+            for line in body.splitlines():
+                stripped = line.strip()
+
+                if ":" not in stripped:
+                    continue
+
+                line_field, _ = stripped.split(
+                    ":",
+                    1,
+                )
+
+                if (
+                    normalize_field_name_for_match(
+                        line_field
+                    )
+                    == field_key
+                ):
+                    return document, stripped
+
+    # --------------------------------------------------------
+    # 2. 지정 문서에서 못 찾으면 전체 문서 탐색
+    # --------------------------------------------------------
+    for document, body in documents:
+        for line in body.splitlines():
+            stripped = line.strip()
+
+            if ":" not in stripped:
+                continue
+
+            line_field, _ = stripped.split(
+                ":",
+                1,
+            )
+
+            if (
+                normalize_field_name_for_match(
+                    line_field
+                )
+                == field_key
+            ):
+                return document, stripped
+
+    return None
+
+def normalize_evidence_field(field: str, quote: str) -> str:
+    """field가 비어 있거나 부정확하면 '필드명: 값' 형태의 quote에서 필드명을 복구한다."""
+    field = safe_text(field, 200).strip()
+    if field:
+        return field
+    if ":" in quote:
+        return quote.split(":", 1)[0].strip()
+    return "본문"
+
+def repair_evidence_item(
+    context: str,
+    document: str,
+    field: str,
+    quote: str,
+) -> dict[str, str] | None:
+    """
+    evidence를 deterministic하게 검증/복구한다.
+
+    탐색 순서:
+    1. reviewer가 지정한 document 안에서 quote 확인
+    2. 전체 Context에서 quote 확인
+    3. 지정 document에서 field 기반 원문 라인 복구
+    4. 전체 Context에서 field 기반 원문 라인 복구
+
+    따라서 single-document 기존 동작도 유지된다.
+    """
+
+    document = safe_text(
+        document,
+        50,
+    ).strip()
+
+    field = safe_text(
+        field,
+        200,
+    ).strip()
+
+    quote = safe_text(
+        quote,
+        1500,
+    ).strip()
+
+    documents = split_context_documents(context)
+
+    # --------------------------------------------------------
+    # 1. 지정된 문서 안에서 quote 직접 확인
+    # --------------------------------------------------------
+    if document and quote:
+        normalized_document = normalize_text(
+            document
+        )
+
+        for actual_document, body in documents:
+            if (
+                normalize_text(actual_document)
+                != normalized_document
+            ):
+                continue
+
+            if quote in body:
+                return {
+                    "document": actual_document,
+                    "field": normalize_evidence_field(
+                        field,
+                        quote,
+                    ),
+                    "quote": quote,
+                }
+
+    # --------------------------------------------------------
+    # 2. 지정 문서에서 못 찾았어도 전체 Context에서 quote 탐색
+    #
+    # single 호환성을 위해 반드시 fallback 유지
+    # --------------------------------------------------------
+    if quote:
+        located_document = locate_evidence_document(
+            context,
+            quote,
+        )
+
+        if located_document is not None:
+            return {
+                "document": located_document,
+                "field": normalize_evidence_field(
+                    field,
+                    quote,
+                ),
+                "quote": quote,
+            }
+
+    # --------------------------------------------------------
+    # 3~4. field 기반 복구
+    #
+    # preferred_document에서 먼저 찾고
+    # 실패하면 함수 내부에서 전체 문서를 탐색한다.
+    # --------------------------------------------------------
+    repaired = find_context_line_by_field(
+        context,
+        field,
+        preferred_document=document,
+    )
+
+    if repaired is None:
+        return None
+
+    repaired_document, repaired_quote = repaired
+
+    return {
+        "document": repaired_document,
+        "field": normalize_evidence_field(
+            field,
+            repaired_quote,
+        ),
+        "quote": repaired_quote,
+    }
+
+def normalize_task_type(value: str) -> str:
+    text = safe_text(value, 30).strip()
+
+    if text in ALLOWED_GENERATED_TASK_TYPES:
+        return text
+
+    return TASK_TYPE_ALIASES.get(text, text)
+
+def normalize_qas_container(
+    data: dict[str, Any] | list[Any],
+) -> list[Any]:
+    if isinstance(data, list):
+        return data
+
+    if isinstance(data, dict):
+        raw_qas = (
+            data.get("qas")
+            or data.get("questions")
+            or []
+        )
+        return raw_qas if isinstance(raw_qas, list) else []
+
+    return []
+
+def task_type_diversity_summary(
+    qas: list[dict[str, Any]],
+) -> tuple[int, dict[str, int]]:
+    counts: dict[str, int] = {}
+
+    for qa in qas:
+        task_type = str(
+            qa.get("task_type") or ""
+        ).strip()
+
+        if not task_type:
+            continue
+
+        counts[task_type] = counts.get(task_type, 0) + 1
+
+    return len(counts), counts
+
+
+# ---------------------------------------------------------------------------
+# Answer grounding checks
+# ---------------------------------------------------------------------------
+
+SUPPORTED_NUMERIC_UNITS = (
+    "억원",
+    "만원",
+    "천원",
+    "원",
+    "달러",
+    "USD",
+    "%",
+    "대",
+    "주",
+    "개",
+    "배",
+    "명",
+    "건",
+)
+
+
+def normalize_numeric_token(value: str) -> str:
+    """숫자 비교용 정규화: 97,000.00 -> 97000"""
+    cleaned = (value or "").replace(",", "").strip()
+
+    try:
+        if "." in cleaned:
+            number = float(cleaned)
+            if number.is_integer():
+                return str(int(number))
+            return cleaned.rstrip("0").rstrip(".")
+        return str(int(cleaned))
+    except ValueError:
+        return cleaned
+
+
+def extract_numeric_tokens(text: str) -> set[str]:
+    """텍스트의 숫자 토큰을 비교 가능한 형태로 추출한다."""
+    if not text:
+        return set()
+
+    values = re.findall(
+        r"(?<![A-Za-z0-9])\d[\d,]*(?:\.\d+)?",
+        text,
+    )
+
+    return {
+        normalize_numeric_token(value)
+        for value in values
+        if normalize_numeric_token(value)
+    }
+
+
+def extract_number_unit_pairs(text: str) -> set[tuple[str, str]]:
+    """
+    숫자에 직접 붙은 단위를 추출한다.
+
+    예:
+      97,000원 -> ("97000", "원")
+      5.37% -> ("5.37", "%")
+      3,500대 -> ("3500", "대")
+      USD 78,856,650 -> ("78856650", "USD")
+    """
+    if not text:
+        return set()
+
+    pairs: set[tuple[str, str]] = set()
+
+    unit_pattern = "|".join(
+        sorted(
+            (re.escape(unit) for unit in SUPPORTED_NUMERIC_UNITS),
+            key=len,
+            reverse=True,
+        )
+    )
+
+    # 숫자 뒤 단위: 5.37%, 3,500대, 1,062억원
+    suffix_pattern = re.compile(
+        rf"(\d[\d,]*(?:\.\d+)?)\s*({unit_pattern})",
+        flags=re.IGNORECASE,
+    )
+
+    for match in suffix_pattern.finditer(text):
+        number = normalize_numeric_token(match.group(1))
+        unit = match.group(2)
+        if unit.upper() == "USD":
+            unit = "USD"
+        pairs.add((number, unit))
+
+    # 단위가 숫자 앞에 오는 대표적인 경우: USD 78,856,650
+    prefix_pattern = re.compile(
+        r"\b(USD)\s*(\d[\d,]*(?:\.\d+)?)",
+        flags=re.IGNORECASE,
+    )
+
+    for match in prefix_pattern.finditer(text):
+        number = normalize_numeric_token(match.group(2))
+        pairs.add((number, "USD"))
+
+    return pairs
+
+
+def validate_answer_units(
+    answer: str,
+    evidence: list[dict[str, Any]],
+) -> tuple[bool, set[tuple[str, str]]]:
+    """
+    answer에 숫자+단위가 있으면 동일 숫자+단위가 evidence.quote에도
+    직접 존재하는지 확인한다.
+
+    숫자만 답하는 경우에는 이 검사에서 제한하지 않는다.
+    """
+    answer_pairs = extract_number_unit_pairs(answer)
+
+    if not answer_pairs:
+        return True, set()
+
+    evidence_text = "\n".join(
+        str(item.get("quote", ""))
+        for item in evidence
+    )
+
+    evidence_pairs = extract_number_unit_pairs(evidence_text)
+
+    unsupported = answer_pairs - evidence_pairs
+
+    return not unsupported, unsupported
+
+
+CALCULATION_QUESTION_TOKENS = (
+    "계산",
+    "환산",
+    "합계",
+    "평균",
+    "차이",
+    "증감",
+    "몇 배",
+    "비율을 구",
+)
+
+CALCULATION_ANSWER_MARKERS = (
+    "=",
+    "+",
+    "×",
+    "x",
+    "÷",
+    "/",
+    "계산",
+    "합계",
+    "평균",
+    "차이",
+    "증가",
+    "감소",
+)
+
+
+def looks_like_fake_calculation(
+    question: str,
+    answer: str,
+    task_type: str,
+    evidence: list[dict[str, Any]],
+) -> bool:
+    """
+    '계산/환산'을 요구했는데 실제 계산 없이 evidence의 숫자 하나를
+    그대로 답한 경우를 보수적으로 탐지한다.
+
+    실제 계산 결과가 evidence에 없는 정상 계산 QA는 이 조건에 걸리지 않는다.
+    """
+    asks_calculation = (
+        task_type == "계산"
+        or any(token in question for token in CALCULATION_QUESTION_TOKENS)
+    )
+
+    if not asks_calculation:
+        return False
+
+    answer_numbers = extract_numeric_tokens(answer)
+    if len(answer_numbers) != 1:
+        return False
+
+    evidence_text = "\n".join(
+        str(item.get("quote", ""))
+        for item in evidence
+    )
+    evidence_numbers = extract_numeric_tokens(evidence_text)
+
+    # 결과 숫자가 근거에 그대로 없다면 실제 연산으로 생성된 값일 수 있으므로 허용.
+    if not answer_numbers.issubset(evidence_numbers):
+        return False
+
+    # 답변 자체에 계산 과정/관계 표현이 있으면 허용.
+    if any(marker in answer for marker in CALCULATION_ANSWER_MARKERS):
+        return False
+
+    return True
+
+
+def validate_reviewed_qas_minimal(
+    data: dict[str, Any] | list[Any],
+    bundle: ContextBundle,
+    target_count: int,
+) -> tuple[list[dict[str, Any]], list[str]]:
+    """
+    2차 HCX 검수 후에는 의미 판단을 다시 Python에서 과도하게 하지 않는다.
+
+    남기는 검증:
+    - 기본 필드 존재
+    - task_type 허용값 정규화
+    - 중복 질문 제거
+    - answerable=true이면 evidence 최소 1개
+    - evidence.quote가 Context에 실제 존재
+    - evidence.document는 quote 위치 기준으로 코드가 재결정
+    - answer의 숫자+단위는 evidence에 동일하게 존재해야 함
+    - 계산/환산 질문이 단순 원문 숫자 복사로 끝나면 제외
+    """
+    valid: list[dict[str, Any]] = []
+    errors: list[str] = []
+    seen: set[str] = set()
+
+    raw_qas = normalize_qas_container(
+        data
+    )
+
+    for idx, qa in enumerate(raw_qas):
+        if not isinstance(qa, dict):
+            errors.append(
+                f"qa[{idx}] is not an object"
+            )
+            continue
+
+        question = safe_text(
+            qa.get("question"),
+            2000,
+        )
+        answer = safe_text(
+            qa.get("answer"),
+            4000,
+        )
+
+        raw_task_type = str(
+            qa.get("task_type")
+            or qa.get("type")
+            or "정보추출"
+        )
+        task_type = normalize_task_type(
+            raw_task_type
+        )
+
+        if task_type not in ALLOWED_GENERATED_TASK_TYPES:
+            errors.append(
+                f"qa[{idx}] unsupported task_type: "
+                f"{raw_task_type}"
+            )
+            continue
+
+        if not question or not answer:
+            errors.append(
+                f"qa[{idx}] empty question/answer"
+            )
+            continue
+
+        key = normalize_question(
+            question
+        )
+        if not key or key in seen:
+            errors.append(
+                f"qa[{idx}] duplicate question"
+            )
+            continue
+
+        answerable = bool(
+            qa.get("answerable")
+        )
+
+        raw_evidence = (
+            qa.get("evidence")
+            if isinstance(
+                qa.get("evidence"),
+                list,
+            )
+            else []
+        )
+
+        verified = []
+
+        for item in raw_evidence:
+            # evidence마다 값 초기화
+            document = ""
+            field = ""
+            quote = ""
+
+            if isinstance(item, str):
+                quote = safe_text(
+                    item,
+                    1500,
+                )
+
+            elif isinstance(item, dict):
+                document = safe_text(
+                    item.get("document"),
+                    50,
+                )
+
+                quote = safe_text(
+                    item.get("quote"),
+                    1500,
+                )
+
+                field = safe_text(
+                    item.get("field"),
+                    200,
+                )
+
+            else:
+                continue
+
+            repaired_item = repair_evidence_item(
+                bundle.context,
+                document,
+                field,
+                quote,
+            )
+
+            if repaired_item is None:
+                continue
+
+            verified.append(
+                repaired_item
+            )
+
+        if answerable and not verified:
+            errors.append(
+                f"qa[{idx}] has no verifiable evidence"
+            )
+            continue
+
+        if answerable:
+            units_ok, unsupported_units = validate_answer_units(
+                answer,
+                verified,
+            )
+
+            if not units_ok:
+                formatted_units = sorted(
+                    f"{number}{unit}"
+                    for number, unit in unsupported_units
+                )
+                errors.append(
+                    f"qa[{idx}] answer contains unsupported units: "
+                    f"{formatted_units}"
+                )
+                continue
+
+            if looks_like_fake_calculation(
+                question,
+                answer,
+                task_type,
+                verified,
+            ):
+                errors.append(
+                    f"qa[{idx}] calculation question appears to "
+                    "copy an evidence value without an actual calculation"
+                )
+                continue
+
+        seen.add(key)
+
+        valid.append({
+            "task_type": task_type,
+            "question": question,
+            "answer": answer,
+            "answerable": answerable,
+            "evidence": verified,
+        })
+
+        if len(valid) >= target_count:
+            break
+
+    return valid, errors
+
+def training_text(question: str, context: str, include_context: bool) -> str:
+    if not include_context:
+        return question
+    return f"{context}\n\n[질문]\n{question}"
+
+def format_evidence_text(
+    field: str,
+    quote: str,
+) -> str:
+    """
+    evidence.field와 quote의 중복을 방지한다.
+
+    예:
+      field="관계"
+      quote="회사와의 관계: 자회사"
+        -> "회사와의 관계: 자회사"
+
+      field="회사와의 관계"
+      quote="회사와의 관계: 자회사"
+        -> "회사와의 관계: 자회사"
+
+      field="계약금액"
+      quote="97,000,000,000"
+        -> "계약금액: 97,000,000,000"
+    """
+    field = (field or "").strip()
+    quote = (quote or "").strip()
+
+    if not quote:
+        return ""
+
+    if not field or field == "본문":
+        return quote
+
+    # quote 자체가 이미 "어떤 필드명: 값" 형태면 quote를 그대로 사용한다.
+    # 모델이 field를 "관계"처럼 짧게 줘도
+    # "관계: 회사와의 관계: 자회사" 같은 중복을 만들지 않는다.
+    if re.match(r"^[^:\n]{1,100}\s*:", quote):
+        return quote
+
+    # quote가 field로 이미 시작하는 경우도 그대로 사용
+    if re.match(
+        rf"^{re.escape(field)}\s*[:：]?",
+        quote,
+    ):
+        return quote
+
+    return f"{field}: {quote}"
+
+def training_completion(qa: dict[str, Any]) -> str:
+    lines = [f"답변: {qa['answer']}", "근거:"]
+
+    if qa["evidence"]:
+        for item in qa["evidence"]:
+            document = item["document"]
+            field = item["field"].strip()
+            quote = item["quote"].strip()
+
+            evidence_text = format_evidence_text(
+                field,
+                quote,
+            )
+
+            lines.append(
+                f"- {document} | {evidence_text}"
+            )
+    else:
+        lines.append("- 제공된 문서에서 답변에 필요한 정보를 확인할 수 없음")
+
+    return "\n".join(lines)
+
 class ClovaClient:
     """Shared HyperCLOVA X OpenAI-compatible client."""
 
@@ -1520,3 +2332,222 @@ def build_rows(
             rows.append(row)
 
     return rows, all_errors
+
+
+def validate_comparison_qas(
+    reviewed: dict[str, Any] | list[Any],
+    bundle: ContextBundle,
+    target_count: int,
+) -> tuple[list[dict[str, Any]], list[str]]:
+    """
+    비교 QA 전용 validator.
+
+    1. 공통 validate_reviewed_qas_minimal() 먼저 적용
+    2. factual answer인데 evidence 없음 -> reject
+    3. 비교/다중문서 질문인데 한 문서만 근거로 사용 -> reject
+    4. 사실 답변을 하면서 answerable=False -> reject
+    5. multi dataset인데 사실상 single-document 질문 -> reject
+    """
+
+    # --------------------------------------------------------
+    # 1. 공통 validator 먼저 적용
+    # --------------------------------------------------------
+    base_qas, base_errors = validate_reviewed_qas_minimal(
+        reviewed,
+        bundle,
+        target_count,
+    )
+
+    errors = list(base_errors)
+    valid_qas: list[dict[str, Any]] = []
+
+    # Context 안에 실제 몇 개 문서가 있는지 확인
+    document_ids = set(
+        re.findall(
+            r"\[문서\s*(\d+)\]",
+            bundle.context,
+        )
+    )
+
+    multi_document_context = len(document_ids) >= 2
+
+    for idx, qa in enumerate(base_qas):
+        question = normalize_text(
+            qa.get("question")
+        )
+        answer = normalize_text(
+            qa.get("answer")
+        )
+
+        answerable = bool(
+            qa.get("answerable", True)
+        )
+
+        evidence = qa.get("evidence", [])
+        if not isinstance(evidence, list):
+            evidence = []
+
+        # ----------------------------------------------------
+        # 2. answerable=False인데 실제 factual answer가 있으면 reject
+        # ----------------------------------------------------
+        no_answer_markers = {
+            "",
+            "확인할 수 없음",
+            "알 수 없음",
+            "근거 부족",
+            "제공된 문서에서 확인할 수 없음",
+            "제공된 문서에서 답변에 필요한 정보를 확인할 수 없음",
+        }
+
+        normalized_answer = answer.strip()
+
+        if (
+            not answerable
+            and normalized_answer
+            and normalized_answer not in no_answer_markers
+        ):
+            errors.append(
+                f"compare qa[{idx}] answerable=False "
+                "but contains a factual answer"
+            )
+            continue
+
+        # ----------------------------------------------------
+        # 3. factual answer인데 evidence가 없으면 reject
+        # ----------------------------------------------------
+        if answerable and not evidence:
+            errors.append(
+                f"compare qa[{idx}] factual answer has no evidence"
+            )
+            continue
+
+        # ----------------------------------------------------
+        # 4. evidence가 '근거 없음' sentinel이면 reject
+        # ----------------------------------------------------
+        evidence_quotes = [
+            normalize_text(
+                item.get("quote")
+                if isinstance(item, dict)
+                else ""
+            )
+            for item in evidence
+        ]
+
+        invalid_evidence_markers = (
+            "제공된 문서에서 답변에 필요한 정보를 확인할 수 없음",
+            "제공된 문서에서 확인할 수 없음",
+            "근거 없음",
+            "알 수 없음",
+        )
+
+        if answerable and any(
+            any(
+                marker in quote
+                for marker in invalid_evidence_markers
+            )
+            for quote in evidence_quotes
+        ):
+            errors.append(
+                f"compare qa[{idx}] uses invalid no-evidence marker"
+            )
+            continue
+
+        # ----------------------------------------------------
+        # 5. evidence가 몇 개 문서를 사용하는지 확인
+        # ----------------------------------------------------
+        evidence_documents: set[str] = set()
+
+        for item in evidence:
+            if not isinstance(item, dict):
+                continue
+
+            document = normalize_text(
+                item.get("document")
+            )
+
+            match = re.search(
+                r"문서\s*(\d+)",
+                document,
+            )
+
+            if match:
+                evidence_documents.add(
+                    match.group(1)
+                )
+
+        # ----------------------------------------------------
+        # 6. 질문이 실제 비교/다중문서 질문인지 판별
+        # ----------------------------------------------------
+        comparison_tokens = (
+            "비교",
+            "각",
+            "두 ",
+            "두 문서",
+            "두 계약",
+            "각각",
+            "더 큰",
+            "더 작은",
+            "차이",
+            "어느",
+            "어떤 계약",
+            "변화",
+            "증가",
+            "감소",
+            "높은",
+            "낮은",
+            "동일",
+            "다른",
+            "차이는",
+        )
+
+        looks_multi_question = any(
+            token in question
+            for token in comparison_tokens
+        )
+
+        # ----------------------------------------------------
+        # 7. 비교 질문인데 한 문서만 evidence로 사용하면 reject
+        # ----------------------------------------------------
+        if (
+            multi_document_context
+            and looks_multi_question
+            and len(evidence_documents) < 2
+        ):
+            errors.append(
+                f"compare qa[{idx}] comparison question "
+                "does not use evidence from at least 2 documents"
+            )
+            continue
+
+        # ----------------------------------------------------
+        # 8. multi dataset인데 사실상 single-document 정보추출이면 reject
+        # ----------------------------------------------------
+        explicit_single_tokens = (
+            "문서 1",
+            "문서1",
+            "첫 번째 문서",
+            "문서 2",
+            "문서2",
+            "두 번째 문서",
+        )
+
+        explicitly_single = any(
+            token in question
+            for token in explicit_single_tokens
+        )
+
+        if (
+            multi_document_context
+            and not looks_multi_question
+            and len(evidence_documents) <= 1
+            and not explicitly_single
+        ):
+            errors.append(
+                f"compare qa[{idx}] appears to be "
+                "a single-document question"
+            )
+            continue
+
+        valid_qas.append(qa)
+
+    return valid_qas, errors

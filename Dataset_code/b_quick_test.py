@@ -1,9 +1,7 @@
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
-
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -14,15 +12,32 @@ if str(PROJECT_ROOT) not in sys.path:
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-
 import Config as cfg
 
-from a_dataset_single import load_input_records
-from a_dataset_single import (
+# ------------------------------------------------------------
+# 공통 기능: z_base_function.py
+# ------------------------------------------------------------
+from z_base_function import (
     ClovaClient,
+    build_rows,
+    load_input_records,
+    normalize_qas_container,
+    response_schema,
+    training_completion,
+    training_text,
+    validate_comparison_qas,
+)
+
+# ------------------------------------------------------------
+# 비교 데이터셋 전용 기능: b_dataset_multi.py
+# ------------------------------------------------------------
+from b_dataset_multi import (
+    COMPARE_GENERATOR_SYSTEM_PROMPT,
+    COMPARE_REVIEWER_SYSTEM_PROMPT,
     ComparisonGroup,
+    comparison_generation_prompt,
     comparison_group_to_bundle,
-    generate_comparison_dataset,
+    comparison_review_prompt,
     record_company,
     record_identity,
     record_report_type,
@@ -33,35 +48,86 @@ from a_dataset_single import (
 # ============================================================
 # USER SETTINGS
 # ============================================================
+# 여기를 직접 수정해서 테스트한다.
+#
+# 반드시 서로 비교할 2~4개 XML / JSON / JSONL 파일을 넣는다.
+# ============================================================
 
-# 비교할 파일을 직접 지정.
-# 반드시 2~4개 파일을 넣는다.
 FILE_PATHS = [
-    r"C:\Users\User\.vscode\mirea_asset\corpus\raw\exchange\회사명\접수번호1\문서1.xml",
-    r"C:\Users\User\.vscode\mirea_asset\corpus\raw\exchange\회사명\접수번호2\문서2.xml",
+    r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\HD현대일렉트릭\20230131800162\20230131800162.xml",
+    r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\HD현대일렉트릭\20230911800103\20230911800103.xml",
+    # r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\LG유플러스\20250429800933\20250429800933.xml",
+    # r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\LG이노텍\20240220800842\20240220800842.xml"
 ]
 
-# 테스트용 비교 유형 라벨.
-# pairing에는 사용하지 않고 prompt/context metadata 용도로만 사용.
+# 수동 quick test에서는 grouping 로직에 사용하지 않고
+# Context metadata / 결과 JSON 표시용 라벨로만 사용한다.
 COMPARE_TYPE = "manual_compare"
 
-# 생성할 QA 개수
+# 최종 생성할 비교 QA 개수
 QUESTIONS_PER_GROUP = 4
 
-# Context 최대 길이
-MAX_CONTEXT_CHARS = cfg.MAX_CONTEXT_CHARS
+# 비교 Context 최대 길이
+MAX_CONTEXT_CHARS = getattr(
+    cfg,
+    "MAX_CONTEXT_CHARS",
+    9000,
+)
+
+# HCX 생성 설정
+MAX_GENERATION_TOKENS = getattr(
+    cfg,
+    "MAX_GENERATION_TOKENS",
+    4096,
+)
+
+GENERATION_TEMPERATURE = getattr(
+    cfg,
+    "GENERATION_TEMPERATURE",
+    0.65,
+)
+
+CLOVA_BASE_URL = getattr(
+    cfg,
+    "CLOVA_BASE_URL",
+    "https://clovastudio.stream.ntruss.com/v1/openai",
+)
+
+CLOVA_MODEL = getattr(
+    cfg,
+    "CLOVA_MODEL",
+    "HCX-005",
+)
+
+API_TIMEOUT_SECONDS = getattr(
+    cfg,
+    "API_TIMEOUT_SECONDS",
+    120,
+)
+
+API_RETRIES = getattr(
+    cfg,
+    "API_RETRIES",
+    3,
+)
+
+TUNING_SYSTEM_PROMPT = getattr(
+    cfg,
+    "TUNING_SYSTEM_PROMPT",
+    "",
+)
 
 # 결과 저장 위치
 OUTPUT_JSON = (
     PROJECT_ROOT
-    / "Dataset_compare"
-    / "quick_test_result.json"
+    / "Dataset"
+    / "quick_multi_test_result.json"
 )
 
-# quick test 전용 cache
+# Quick test 전용 cache
 CACHE_PATH = (
     PROJECT_ROOT
-    / "Dataset_compare"
+    / "Dataset"
     / ".qa_compare_quick_test_cache.jsonl"
 )
 
@@ -81,7 +147,8 @@ def load_one_document(path: Path) -> dict:
 
     if len(records) > 1:
         print(
-            f"[WARN] {path} returned {len(records)} records. "
+            f"[WARN] {path} returned "
+            f"{len(records)} records. "
             "Only the first record will be used."
         )
 
@@ -95,12 +162,19 @@ def main() -> None:
     if hasattr(sys.stderr, "reconfigure"):
         sys.stderr.reconfigure(encoding="utf-8")
 
+    # --------------------------------------------------------
+    # 0. 입력 확인
+    # --------------------------------------------------------
     if not 2 <= len(FILE_PATHS) <= 4:
         raise ValueError(
             "FILE_PATHS must contain 2 to 4 files."
         )
 
-    if not cfg.CLOVA_STUDIO_API_KEY:
+    if not getattr(
+        cfg,
+        "CLOVA_STUDIO_API_KEY",
+        "",
+    ):
         raise RuntimeError(
             "CLOVA_STUDIO_API_KEY is empty in Config.py"
         )
@@ -110,12 +184,14 @@ def main() -> None:
     print(f"documents      : {len(FILE_PATHS)}")
     print(f"compare type   : {COMPARE_TYPE}")
     print(f"QA count       : {QUESTIONS_PER_GROUP}")
+    print(f"context chars  : {MAX_CONTEXT_CHARS}")
+    print(f"cache          : {CACHE_PATH}")
     print("=" * 70)
 
     # --------------------------------------------------------
     # 1. 직접 지정한 파일 로드
     # --------------------------------------------------------
-    records = []
+    records: list[dict] = []
 
     for index, raw_path in enumerate(
         FILE_PATHS,
@@ -170,28 +246,50 @@ def main() -> None:
     # --------------------------------------------------------
     client = ClovaClient(
         cfg.CLOVA_STUDIO_API_KEY,
-        cfg.CLOVA_BASE_URL,
-        cfg.CLOVA_MODEL,
-        cfg.API_TIMEOUT_SECONDS,
-        cfg.API_RETRIES,
+        CLOVA_BASE_URL,
+        CLOVA_MODEL,
+        API_TIMEOUT_SECONDS,
+        API_RETRIES,
     )
 
     # --------------------------------------------------------
-    # 5. 기존 2-stage HCX build_rows 재사용
+    # 5. 비교 QA 생성
+    #
+    # 공통 실행 엔진은 z_base_function.build_rows를 사용하고,
+    # 비교 전용 prompt는 b_dataset_multi에서 주입한다.
     # --------------------------------------------------------
-    from a_dataset_compare import build_rows
-
     rows, errors = build_rows(
         [bundle],
         client,
         single_count=0,
         multi_count=QUESTIONS_PER_GROUP,
-        max_tokens=cfg.MAX_GENERATION_TOKENS,
-        temperature=cfg.GENERATION_TEMPERATURE,
+        max_tokens=MAX_GENERATION_TOKENS,
+        temperature=GENERATION_TEMPERATURE,
         include_context=True,
-        system_prompt=cfg.TUNING_SYSTEM_PROMPT,
+        system_prompt=TUNING_SYSTEM_PROMPT,
         cache_path=CACHE_PATH,
         limit=0,
+
+        # 비교 전용 prompt
+        generation_prompt_fn=comparison_generation_prompt,
+        review_prompt_fn=comparison_review_prompt,
+
+        # 공통 QA 처리/검증
+        normalize_qas_fn=normalize_qas_container,
+        validate_reviewed_fn=validate_comparison_qas,
+        training_text_fn=training_text,
+        training_completion_fn=training_completion,
+
+        # 비교 전용 HCX system prompt
+        generator_system_prompt=COMPARE_GENERATOR_SYSTEM_PROMPT,
+        reviewer_system_prompt=COMPARE_REVIEWER_SYSTEM_PROMPT,
+
+        # 공통 response schema
+        response_schema=response_schema(),
+
+        # single cache와 완전히 분리된 compare quick-test namespace
+        generator_cache_version="GENERATOR_COMPARE_QUICK_V1",
+        reviewer_cache_version="REVIEWER_COMPARE_QUICK_V1",
     )
 
     # --------------------------------------------------------
@@ -201,15 +299,20 @@ def main() -> None:
     print(f"Generated QA rows: {len(rows)}")
     print("=" * 70)
 
-    for index, row in enumerate(rows, start=1):
+    for index, row in enumerate(
+        rows,
+        start=1,
+    ):
         print(f"\n[QA {index}]")
         print(row["Text"])
+
         print("\n[Completion]")
         print(row["Completion"])
         print("-" * 70)
 
     if errors:
         print("\n[Errors / Warnings]")
+
         for error in errors:
             print("-", error)
 
@@ -230,7 +333,8 @@ def main() -> None:
     )
 
     print(
-        f"\nSaved quick-test result: {OUTPUT_JSON}"
+        f"\nSaved quick-test result: "
+        f"{OUTPUT_JSON}"
     )
 
 
