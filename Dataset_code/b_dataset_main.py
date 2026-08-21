@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""Build company-level intermediates and final CLOVA tuning datasets.
-
-Pipeline:
-  source JSON/XML -> document-level split -> company JSONL intermediates
-  -> train.csv / validation.csv / test.csv
-
-All common paths and generation settings live in the project-root Config.py.
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -157,6 +147,85 @@ def safe_filename(company: str) -> str:
     return f"{cleaned[:70]}_{suffix}.jsonl"
 
 
+def safe_dirname(value: str) -> str:
+    """Windows에서도 안전한 디렉터리명으로 변환."""
+    cleaned = re.sub(r"[^0-9A-Za-z가-힣._-]+", "_", value).strip("._")
+    return cleaned[:80] or "unknown"
+
+
+def document_json_filename(record: dict[str, Any]) -> str:
+    """
+    입력 문서 1개당 JSON 파일명 생성.
+
+    우선순위:
+      1) rcept_no / receipt_no
+      2) 원본 파일 stem
+      3) record identity hash
+    """
+    receipt = normalize_text(
+        record.get("rcept_no") or record.get("receipt_no")
+    )
+    if receipt:
+        base = receipt
+    else:
+        source = Path(str(record.get("_source_path") or ""))
+        base = source.stem if source.stem else "document"
+
+    cleaned = re.sub(
+        r"[^0-9A-Za-z가-힣._-]+",
+        "_",
+        base,
+    ).strip("._") or "document"
+
+    identity = record_identity(record)
+    suffix = hashlib.sha1(
+        identity.encode("utf-8")
+    ).hexdigest()[:8]
+
+    return f"{cleaned[:80]}_{suffix}.json"
+
+
+def write_document_json(
+    path: Path,
+    *,
+    split_name: str,
+    company: str,
+    record: dict[str, Any],
+    rows: list[dict[str, Any]],
+    errors: list[str],
+) -> None:
+    """
+    입력 문서 하나에 대한 생성 결과를 JSON 하나로 저장한다.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    payload = {
+        "split": split_name,
+        "company": company,
+        "source": normalize_text(record.get("_source_path")),
+        "receipt_no": normalize_text(
+            record.get("rcept_no") or record.get("receipt_no")
+        ),
+        "title": normalize_text(
+            record.get("title") or record.get("question")
+        ),
+        "year": record_year(record),
+        "generated_count": len(rows),
+        "rejected_count": len(errors),
+        "rows": rows,
+        "errors": errors,
+    }
+
+    path.write_text(
+        json.dumps(
+            payload,
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+
 def group_by_company(records: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for record in records:
@@ -215,9 +284,12 @@ def generate_all(
     limit_companies: int,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    intermediate_dir = output_dir / "generated"
+
+    # 입력 문서별 JSON 저장 위치
+    document_json_dir = output_dir / "generated"
+
     rejected_dir = output_dir / "rejected"
-    intermediate_dir.mkdir(parents=True, exist_ok=True)
+    document_json_dir.mkdir(parents=True, exist_ok=True)
     rejected_dir.mkdir(parents=True, exist_ok=True)
 
     client = ClovaClient(
@@ -227,6 +299,7 @@ def generate_all(
         cfg.API_TIMEOUT_SECONDS,
         cfg.API_RETRIES,
     )
+
     row_counts: dict[str, int] = {}
     rejected_counts: dict[str, int] = {}
     pipeline_errors: list[str] = []
@@ -234,56 +307,172 @@ def generate_all(
     for split_name in SPLIT_NAMES:
         final_rows: list[dict[str, Any]] = []
         rejected_total = 0
-        companies = list(group_by_company(split_map[split_name]).items())
+
+        companies = list(
+            group_by_company(
+                split_map[split_name]
+            ).items()
+        )
+
         if limit_companies > 0:
             companies = companies[:limit_companies]
-        for company_index, (company, records) in enumerate(companies, start=1):
-            print(f"[{split_name}] {company_index}/{len(companies)} {company}: {len(records)} records")
-            bundles = make_bundles(
-                records,
-                max_context_chars=cfg.MAX_CONTEXT_CHARS,
-                multi_doc_size=cfg.MULTI_DOCUMENT_SIZE,
-                include_multi=cfg.INCLUDE_MULTI_DOCUMENT,
+
+        for company_index, (company, records) in enumerate(
+            companies,
+            start=1,
+        ):
+            print(
+                f"[{split_name}] "
+                f"{company_index}/{len(companies)} "
+                f"{company}: {len(records)} records"
             )
-            try:
-                rows, errors = build_rows(
-                    bundles,
-                    client,
-                    single_count=cfg.QUESTIONS_PER_DOCUMENT,
-                    multi_count=cfg.QUESTIONS_PER_MULTI_CONTEXT,
-                    max_tokens=cfg.MAX_GENERATION_TOKENS,
-                    temperature=cfg.GENERATION_TEMPERATURE,
-                    include_context=True,
-                    system_prompt=cfg.TUNING_SYSTEM_PROMPT,
-                    cache_path=cfg.DATASET_CACHE_PATH,
-                    limit=0,
+
+            company_dir = (
+                document_json_dir
+                / split_name
+                / safe_dirname(company)
+            )
+            company_dir.mkdir(
+                parents=True,
+                exist_ok=True,
+            )
+
+            # -------------------------------------------------
+            # 핵심 변경:
+            # 회사 전체 records를 한 번에 처리하지 않고
+            # 입력 문서(record) 하나씩 처리한다.
+            # -------------------------------------------------
+            for document_index, record in enumerate(
+                records,
+                start=1,
+            ):
+                source = normalize_text(
+                    record.get("_source_path")
                 )
-            except Exception as exc:  # continue other companies and report at the end
-                pipeline_errors.append(f"[{split_name}] {company}: {exc}")
-                continue
 
-            company_path = intermediate_dir / split_name / safe_filename(company)
-            write_rows(rows, company_path, "jsonl", cfg.TUNING_SYSTEM_PROMPT)
-            if errors:
-                error_path = rejected_dir / split_name / (safe_filename(company) + ".errors.log")
-                error_path.parent.mkdir(parents=True, exist_ok=True)
-                error_path.write_text("\n".join(errors), encoding="utf-8")
-            rejected_total += len(errors)
-            final_rows.extend(rows)
+                print(
+                    f"  - document "
+                    f"{document_index}/{len(records)}: "
+                    f"{source or record_identity(record)}"
+                )
 
+                # 문서 1개에 대해서만 bundle 생성.
+                # 여기서는 입력 문서별 JSON이 목적이므로
+                # multi-document bundle은 만들지 않는다.
+                bundles = make_bundles(
+                    [record],
+                    max_context_chars=cfg.MAX_CONTEXT_CHARS,
+                    multi_doc_size=cfg.MULTI_DOCUMENT_SIZE,
+                    include_multi=False,
+                )
+
+                try:
+                    rows, errors = build_rows(
+                        bundles,
+                        client,
+                        single_count=cfg.QUESTIONS_PER_DOCUMENT,
+                        multi_count=cfg.QUESTIONS_PER_MULTI_CONTEXT,
+                        max_tokens=cfg.MAX_GENERATION_TOKENS,
+                        temperature=cfg.GENERATION_TEMPERATURE,
+                        include_context=True,
+                        system_prompt=cfg.TUNING_SYSTEM_PROMPT,
+                        cache_path=cfg.DATASET_CACHE_PATH,
+                        limit=0,
+                    )
+
+                except Exception as exc:
+                    message = (
+                        f"[{split_name}] "
+                        f"{company} | "
+                        f"{source or record_identity(record)}: "
+                        f"{exc}"
+                    )
+                    pipeline_errors.append(message)
+
+                    # 실패한 입력 문서도 JSON은 남겨서
+                    # 어떤 문서가 실패했는지 추적 가능하게 함.
+                    rows = []
+                    errors = [str(exc)]
+
+                # 문서 내부 C_ID는 우선 0부터 정렬
+                reindex_rows(rows)
+
+                document_path = (
+                    company_dir
+                    / document_json_filename(record)
+                )
+
+                write_document_json(
+                    document_path,
+                    split_name=split_name,
+                    company=company,
+                    record=record,
+                    rows=rows,
+                    errors=errors,
+                )
+
+                print(
+                    f"    -> JSON: {document_path} "
+                    f"({len(rows)} rows)"
+                )
+
+                rejected_total += len(errors)
+
+                # 전체 CSV용 집계
+                final_rows.extend(rows)
+
+        # -----------------------------------------------
+        # 최종 split CSV는 기존처럼 유지
+        # -----------------------------------------------
         reindex_rows(final_rows)
-        final_path = output_dir / f"{split_name}.csv"
-        write_rows(final_rows, final_path, "csv", cfg.TUNING_SYSTEM_PROMPT)
+
+        final_path = (
+            output_dir
+            / f"{split_name}.csv"
+        )
+
+        write_rows(
+            final_rows,
+            final_path,
+            "csv",
+            cfg.TUNING_SYSTEM_PROMPT,
+        )
+
         row_counts[split_name] = len(final_rows)
         rejected_counts[split_name] = rejected_total
-        print(f"Wrote {final_path}: {len(final_rows)} rows")
 
-    write_manifest(output_dir / "manifest.json", split_map, row_counts, rejected_counts)
+        print(
+            f"Wrote {final_path}: "
+            f"{len(final_rows)} rows"
+        )
+
+    write_manifest(
+        output_dir / "manifest.json",
+        split_map,
+        row_counts,
+        rejected_counts,
+    )
+
     if pipeline_errors:
-        (rejected_dir / "pipeline.errors.log").write_text("\n".join(pipeline_errors), encoding="utf-8")
-    print(f"Manifest: {output_dir / 'manifest.json'}")
+        (
+            rejected_dir
+            / "pipeline.errors.log"
+        ).write_text(
+            "\n".join(pipeline_errors),
+            encoding="utf-8",
+        )
+
+    print(
+        f"Manifest: "
+        f"{output_dir / 'manifest.json'}"
+    )
+
     if pipeline_errors:
-        print(f"Pipeline errors: {len(pipeline_errors)} (see rejected/pipeline.errors.log)")
+        print(
+            f"Pipeline errors: "
+            f"{len(pipeline_errors)} "
+            f"(see rejected/pipeline.errors.log)"
+        )
 
 
 def main() -> None:
