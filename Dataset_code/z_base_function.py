@@ -2548,6 +2548,115 @@ def validate_comparison_qas(
             )
             continue
 
+                # ----------------------------------------------------
+        # 질문에서 명시적으로 요구한 Context field가
+        # evidence에 모두 포함되어 있는지 검사
+        # ----------------------------------------------------
+        context_field_labels = set()
+
+        for line in bundle.context.splitlines():
+            stripped = line.strip()
+
+            if ":" not in stripped:
+                continue
+
+            label, _ = stripped.split(
+                ":",
+                1,
+            )
+
+            label = normalize_text(label)
+
+            if label:
+                context_field_labels.add(label)
+
+        # 질문에 실제로 언급된 field만 추출
+        requested_fields: set[str] = set()
+
+        for label in context_field_labels:
+            # 띄어쓰기 차이를 조금 허용
+            normalized_label = re.sub(
+                r"\s+",
+                "",
+                label,
+            )
+            normalized_question = re.sub(
+                r"\s+",
+                "",
+                question,
+            )
+
+            if normalized_label in normalized_question:
+                requested_fields.add(label)
+
+        # 실제 evidence에서 사용한 field
+        evidence_fields: set[str] = set()
+
+        for item in evidence:
+            if not isinstance(item, dict):
+                continue
+
+            field = normalize_text(
+                item.get("field")
+            )
+
+            if field:
+                evidence_fields.add(field)
+
+        # field 명칭의 띄어쓰기 차이를 제거해서 비교
+        normalized_requested = {
+            re.sub(r"\s+", "", field)
+            for field in requested_fields
+        }
+
+        normalized_evidence = {
+            re.sub(r"\s+", "", field)
+            for field in evidence_fields
+        }
+
+        missing_fields = (
+            normalized_requested
+            - normalized_evidence
+        )
+
+        if missing_fields:
+            errors.append(
+                f"compare qa[{idx}] missing evidence "
+                f"for requested fields: "
+                f"{sorted(missing_fields)}"
+            )
+            continue
+
+        # ----------------------------------------------------
+        # 계약상대와 국가/국적/소재지를 임의로 연결한 질문 차단
+        # ----------------------------------------------------
+        compact_question = re.sub(
+            r"\s+",
+            "",
+            question,
+        )
+
+        party_country_patterns = (
+            ("계약상대", "국가"),
+            ("계약상대", "국적"),
+            ("계약상대", "소재지"),
+            ("계약상대", "어느나라"),
+        )
+
+        invalid_party_country_relation = any(
+            left in compact_question
+            and right in compact_question
+            for left, right in party_country_patterns
+        )
+
+        if invalid_party_country_relation:
+            errors.append(
+                f"compare qa[{idx}] infers country/nationality/"
+                "location of contract counterparty without "
+                "an explicit source field"
+            )
+            continue
+
         valid_qas.append(qa)
 
     return valid_qas, errors

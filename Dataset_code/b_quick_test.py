@@ -54,10 +54,10 @@ from b_dataset_multi import (
 # ============================================================
 
 FILE_PATHS = [
-    r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\HD현대일렉트릭\20230131800162\20230131800162.xml",
-    r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\HD현대일렉트릭\20230911800103\20230911800103.xml",
-    # r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\LG유플러스\20250429800933\20250429800933.xml",
-    # r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\LG이노텍\20240220800842\20240220800842.xml"
+    # r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\HD현대일렉트릭\20230131800162\20230131800162.xml",
+    # r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\HD현대일렉트릭\20230911800103\20230911800103.xml",
+    r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\LG유플러스\20250429800933\20250429800933.xml",
+    r"C:\mirae\miraeasset-AI-festival\corpus\raw\exchange\LG이노텍\20240220800842\20240220800842.xml"
 ]
 
 # 수동 quick test에서는 grouping 로직에 사용하지 않고
