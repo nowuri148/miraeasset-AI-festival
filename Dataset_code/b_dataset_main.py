@@ -1,297 +1,173 @@
 from __future__ import annotations
 
-import argparse
-import hashlib
-import json
-import re
 import sys
-from collections import Counter, defaultdict
 from pathlib import Path
-from typing import Any
-
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCRIPT_DIR = Path(__file__).resolve().parent
+
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-import Config as cfg  # noqa: E402
-from a_dataset_try1 import load_input_records, normalize_text  # noqa: E402
-from a_dataset_try2 import (  # noqa: E402
+import Config as cfg
+
+from z_base_function import (
+    COMPARE_TYPES,
     ClovaClient,
-    build_rows,
-    make_bundles,
-    write_rows,
+    enrich_records_from_manifest,
+    generate_comparison_dataset,
+    is_index_record,
+    load_manifest_index,
+    split_records,
+    load_input_records
 )
 
 
-SPLIT_NAMES = ("train", "validation", "test")
+# ============================================================
+# USER SETTINGS
+# ============================================================
+
+# 1 = 같은 회사 + 같은 공시 유형 + 다른 시점
+# 2 = 같은 사건의 원공시/정정공시
+# 3 = 같은 회사 + 같은 metric + 다른 분기/연도
+# 4 = 다른 회사 + 같은 공시 유형 + 비슷한 기간
+COMPARE_TYPE = 1
+
+# 한 질문 Context에서 비교할 문서 개수: 2 / 3 / 4
+DOCUMENT_COUNT = 2
+
+# 비교 group 하나당 만들 QA 개수
+QUESTIONS_PER_GROUP = 4
+
+# 4번 비교기준에서 "비슷한 기간"으로 허용할 최대 날짜 차이
+SIMILAR_PERIOD_DAYS = 90
+
+# 테스트 시 split당 group 개수 제한.
+# 0이면 전부 생성.
+MAX_GROUPS_PER_SPLIT = 0
+
+# 원본 corpus
+INPUT_PATH = cfg.DATASET_INPUT_PATH
+
+# 비교용 데이터셋 출력 폴더
+OUTPUT_DIR = PROJECT_ROOT / "Dataset_compare"
+
+# metadata manifest.
+# normalized_report_type / disclosure_chain_id 등을 가져오기 위해 사용.
+MANIFEST_PATH = (
+    PROJECT_ROOT
+    / "corpus"
+    / "derived"
+    / "manifest_v3_reviewed.jsonl"
+)
+
+# 별도 cache 사용 권장
+CACHE_PATH = (
+    OUTPUT_DIR
+    / ".qa_compare_generation_cache.jsonl"
+)
 
 
-def record_identity(record: dict[str, Any]) -> str:
-    source = normalize_text(record.get("_source_path"))
-    receipt = normalize_text(record.get("rcept_no") or record.get("receipt_no"))
-    return f"{source}#{receipt}" if receipt else source or normalize_text(record.get("title") or record.get("question"))
+# ============================================================
+# END USER SETTINGS
+# ============================================================
 
 
-def is_index_record(record: dict[str, Any]) -> bool:
-    source_name = Path(str(record.get("_source_path") or "")).name.lower()
-    metadata_keys = {"corp_code", "corp_name", "report_nm", "rcept_no", "rcept_dt"}
-    return source_name.startswith("list_") or metadata_keys.issubset(record.keys())
+def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
 
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8")
 
-def record_year(record: dict[str, Any]) -> int | None:
-    candidates = (
-        record.get("title"),
-        record.get("question"),
-        record.get("rcept_dt"),
-        record.get("rcept_no"),
-        record.get("_source_path"),
-    )
-    for value in candidates:
-        match = re.search(r"(?<!\d)(20\d{2})", normalize_text(value))
-        if match:
-            return int(match.group(1))
-    return None
+    if COMPARE_TYPE not in COMPARE_TYPES:
+        raise ValueError(
+            "COMPARE_TYPE must be 1, 2, 3, or 4"
+        )
 
+    if DOCUMENT_COUNT not in {2, 3, 4}:
+        raise ValueError(
+            "DOCUMENT_COUNT must be 2, 3, or 4"
+        )
 
-def record_company(record: dict[str, Any]) -> str:
-    title = normalize_text(record.get("title") or record.get("question"))
-    if "/" in title:
-        return title.split("/", 1)[0].strip() or "unknown"
-    source = Path(str(record.get("_source_path") or ""))
-    # Expected layout: exchange/company/receipt/file.xml
-    if len(source.parts) >= 3:
-        return source.parts[-3]
-    return "unknown"
+    compare_type = COMPARE_TYPES[
+        COMPARE_TYPE
+    ]
 
+    print("=" * 70)
+    print("Comparison dataset generation")
+    print(f"COMPARE_TYPE   : {COMPARE_TYPE} -> {compare_type}")
+    print(f"DOCUMENT_COUNT : {DOCUMENT_COUNT}")
+    print(f"QA / GROUP     : {QUESTIONS_PER_GROUP}")
+    print(f"INPUT          : {INPUT_PATH}")
+    print(f"MANIFEST       : {MANIFEST_PATH}")
+    print(f"OUTPUT         : {OUTPUT_DIR}")
+    print("=" * 70)
 
-def hash_split(identity: str) -> str:
-    train_ratio, validation_ratio, test_ratio = cfg.HASH_SPLIT_RATIOS
-    total = train_ratio + validation_ratio + test_ratio
-    if total <= 0:
-        raise ValueError("HASH_SPLIT_RATIOS must sum to a positive value")
-    value = int(
-        hashlib.sha256((cfg.SPLIT_SEED + identity).encode("utf-8")).hexdigest()[:12],
-        16,
-    ) / float(0xFFFFFFFFFFFF)
-    train_edge = train_ratio / total
-    validation_edge = (train_ratio + validation_ratio) / total
-    if value < train_edge:
-        return "train"
-    if value < validation_edge:
-        return "validation"
-    return "test"
-
-
-def choose_split(record: dict[str, Any]) -> str:
-    identity = record_identity(record)
-    if cfg.DATASET_SPLIT_MODE == "hash":
-        return hash_split(identity)
-    if cfg.DATASET_SPLIT_MODE != "time":
-        raise ValueError("DATASET_SPLIT_MODE must be 'time' or 'hash'")
-    year = record_year(record)
-    if year is None:
-        return hash_split(identity)
-    if year <= cfg.TRAIN_END_YEAR:
-        return "train"
-    if year in cfg.VALIDATION_YEARS:
-        return "validation"
-    if year >= cfg.TEST_START_YEAR:
-        return "test"
-    return hash_split(identity)
-
-
-def split_records(records: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
-    result = {name: [] for name in SPLIT_NAMES}
-    seen_sources: dict[str, str] = {}
-    for record in records:
-        source = record_identity(record)
-        split = choose_split(record)
-        previous = seen_sources.get(source)
-        if previous is not None and previous != split:
-            raise RuntimeError(f"Document leakage detected: {source} is in {previous} and {split}")
-        seen_sources[source] = split
-        result[split].append(record)
-    source_sets = {
-        name: {record_identity(record) for record in items}
-        for name, items in result.items()
-    }
-    for index, left in enumerate(SPLIT_NAMES):
-        for right in SPLIT_NAMES[index + 1 :]:
-            overlap = source_sets[left] & source_sets[right]
-            if overlap:
-                raise RuntimeError(f"Document leakage between {left} and {right}: {next(iter(overlap))}")
-    return result
-
-
-def limit_by_document(records: list[dict[str, Any]], max_documents: int) -> list[dict[str, Any]]:
-    if max_documents <= 0:
-        return records
-    selected_sources: set[str] = set()
-    limited: list[dict[str, Any]] = []
-    for record in records:
-        source = record_identity(record)
-        if source not in selected_sources and len(selected_sources) >= max_documents:
-            continue
-        selected_sources.add(source)
-        limited.append(record)
-    return limited
-
-
-def safe_filename(company: str) -> str:
-    cleaned = re.sub(r"[^0-9A-Za-z가-힣._-]+", "_", company).strip("._") or "unknown"
-    suffix = hashlib.sha1(company.encode("utf-8")).hexdigest()[:8]
-    return f"{cleaned[:70]}_{suffix}.jsonl"
-
-
-def safe_dirname(value: str) -> str:
-    """Windows에서도 안전한 디렉터리명으로 변환."""
-    cleaned = re.sub(r"[^0-9A-Za-z가-힣._-]+", "_", value).strip("._")
-    return cleaned[:80] or "unknown"
-
-
-def document_json_filename(record: dict[str, Any]) -> str:
-    """
-    입력 문서 1개당 JSON 파일명 생성.
-
-    우선순위:
-      1) rcept_no / receipt_no
-      2) 원본 파일 stem
-      3) record identity hash
-    """
-    receipt = normalize_text(
-        record.get("rcept_no") or record.get("receipt_no")
-    )
-    if receipt:
-        base = receipt
-    else:
-        source = Path(str(record.get("_source_path") or ""))
-        base = source.stem if source.stem else "document"
-
-    cleaned = re.sub(
-        r"[^0-9A-Za-z가-힣._-]+",
-        "_",
-        base,
-    ).strip("._") or "document"
-
-    identity = record_identity(record)
-    suffix = hashlib.sha1(
-        identity.encode("utf-8")
-    ).hexdigest()[:8]
-
-    return f"{cleaned[:80]}_{suffix}.json"
-
-
-def write_document_json(
-    path: Path,
-    *,
-    split_name: str,
-    company: str,
-    record: dict[str, Any],
-    rows: list[dict[str, Any]],
-    errors: list[str],
-) -> None:
-    """
-    입력 문서 하나에 대한 생성 결과를 JSON 하나로 저장한다.
-    """
-    path.parent.mkdir(parents=True, exist_ok=True)
-
-    payload = {
-        "split": split_name,
-        "company": company,
-        "source": normalize_text(record.get("_source_path")),
-        "receipt_no": normalize_text(
-            record.get("rcept_no") or record.get("receipt_no")
-        ),
-        "title": normalize_text(
-            record.get("title") or record.get("question")
-        ),
-        "year": record_year(record),
-        "generated_count": len(rows),
-        "rejected_count": len(errors),
-        "rows": rows,
-        "errors": errors,
-    }
-
-    path.write_text(
-        json.dumps(
-            payload,
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
+    # 1. raw documents
+    records = load_input_records(
+        INPUT_PATH
     )
 
+    if not getattr(
+        cfg,
+        "INCLUDE_INDEX_RECORDS",
+        False,
+    ):
+        records = [
+            record
+            for record in records
+            if not is_index_record(record)
+        ]
 
-def group_by_company(records: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
-    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for record in records:
-        grouped[record_company(record)].append(record)
-    return dict(sorted(grouped.items(), key=lambda item: item[0]))
+    print(
+        f"Loaded raw records: {len(records)}"
+    )
 
+    # 2. enrich raw documents with manifest metadata
+    manifest_index = load_manifest_index(
+        MANIFEST_PATH
+    )
 
-def reindex_rows(rows: list[dict[str, Any]]) -> None:
-    for cid, row in enumerate(rows):
-        row["C_ID"] = cid
-        row["T_ID"] = 0
+    print(
+        f"Manifest index: {len(manifest_index)}"
+    )
 
+    records = enrich_records_from_manifest(
+        records,
+        manifest_index,
+    )
 
-def write_manifest(
-    path: Path,
-    split_map: dict[str, list[dict[str, Any]]],
-    row_counts: dict[str, int],
-    rejected_counts: dict[str, int],
-) -> None:
-    manifest = {
-        "split_mode": cfg.DATASET_SPLIT_MODE,
-        "settings": {
-            "questions_per_document": cfg.QUESTIONS_PER_DOCUMENT,
-            "questions_per_multi_context": cfg.QUESTIONS_PER_MULTI_CONTEXT,
-            "multi_document_size": cfg.MULTI_DOCUMENT_SIZE,
-            "include_multi_document": cfg.INCLUDE_MULTI_DOCUMENT,
-            "model": cfg.CLOVA_MODEL,
-        },
-        "splits": {},
-    }
-    for name, records in split_map.items():
-        manifest["splits"][name] = {
-            "documents": len({record_identity(record) for record in records}),
-            "companies": len({record_company(record) for record in records}),
-            "rows": row_counts.get(name, 0),
-            "rejected": rejected_counts.get(name, 0),
-            "years": dict(sorted(Counter(record_year(record) for record in records).items(), key=lambda x: str(x[0]))),
-            "sources": sorted({record_identity(record) for record in records}),
-        }
-    path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 3. split documents BEFORE comparison grouping
+    #    so a single comparison Context cannot mix train/test docs.
+    split_map = split_records(
+        records,
+        split_mode=cfg.DATASET_SPLIT_MODE,
+        split_seed=cfg.SPLIT_SEED,
+        hash_ratios=tuple(
+            cfg.HASH_SPLIT_RATIOS
+        ),
+        train_end_year=cfg.TRAIN_END_YEAR,
+        validation_years=set(
+            cfg.VALIDATION_YEARS
+        ),
+        test_start_year=cfg.TEST_START_YEAR,
+    )
 
+    for split_name, items in split_map.items():
+        print(
+            f"{split_name}: "
+            f"{len(items)} documents"
+        )
 
-def print_summary(split_map: dict[str, list[dict[str, Any]]]) -> None:
-    print(f"Split mode: {cfg.DATASET_SPLIT_MODE}")
-    for name in SPLIT_NAMES:
-        records = split_map[name]
-        documents = len({record_identity(record) for record in records})
-        companies = len({record_company(record) for record in records})
-        years = Counter(record_year(record) for record in records)
-        print(f"{name}: documents={documents}, companies={companies}, years={dict(years)}")
+    if not cfg.CLOVA_STUDIO_API_KEY:
+        raise RuntimeError(
+            "CLOVA_STUDIO_API_KEY is empty in Config.py"
+        )
 
-
-def generate_all(
-    split_map: dict[str, list[dict[str, Any]]],
-    output_dir: Path,
-    limit_companies: int,
-) -> None:
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    # 입력 문서별 JSON 저장 위치
-    document_json_dir = output_dir / "generated"
-
-    rejected_dir = output_dir / "rejected"
-    document_json_dir.mkdir(parents=True, exist_ok=True)
-    rejected_dir.mkdir(parents=True, exist_ok=True)
-
+    # 4. HCX client
     client = ClovaClient(
         cfg.CLOVA_STUDIO_API_KEY,
         cfg.CLOVA_BASE_URL,
@@ -300,209 +176,22 @@ def generate_all(
         cfg.API_RETRIES,
     )
 
-    row_counts: dict[str, int] = {}
-    rejected_counts: dict[str, int] = {}
-    pipeline_errors: list[str] = []
-
-    for split_name in SPLIT_NAMES:
-        final_rows: list[dict[str, Any]] = []
-        rejected_total = 0
-
-        companies = list(
-            group_by_company(
-                split_map[split_name]
-            ).items()
-        )
-
-        if limit_companies > 0:
-            companies = companies[:limit_companies]
-
-        for company_index, (company, records) in enumerate(
-            companies,
-            start=1,
-        ):
-            print(
-                f"[{split_name}] "
-                f"{company_index}/{len(companies)} "
-                f"{company}: {len(records)} records"
-            )
-
-            company_dir = (
-                document_json_dir
-                / split_name
-                / safe_dirname(company)
-            )
-            company_dir.mkdir(
-                parents=True,
-                exist_ok=True,
-            )
-
-            # -------------------------------------------------
-            # 핵심 변경:
-            # 회사 전체 records를 한 번에 처리하지 않고
-            # 입력 문서(record) 하나씩 처리한다.
-            # -------------------------------------------------
-            for document_index, record in enumerate(
-                records,
-                start=1,
-            ):
-                source = normalize_text(
-                    record.get("_source_path")
-                )
-
-                print(
-                    f"  - document "
-                    f"{document_index}/{len(records)}: "
-                    f"{source or record_identity(record)}"
-                )
-
-                # 문서 1개에 대해서만 bundle 생성.
-                # 여기서는 입력 문서별 JSON이 목적이므로
-                # multi-document bundle은 만들지 않는다.
-                bundles = make_bundles(
-                    [record],
-                    max_context_chars=cfg.MAX_CONTEXT_CHARS,
-                    multi_doc_size=cfg.MULTI_DOCUMENT_SIZE,
-                    include_multi=False,
-                )
-
-                try:
-                    rows, errors = build_rows(
-                        bundles,
-                        client,
-                        single_count=cfg.QUESTIONS_PER_DOCUMENT,
-                        multi_count=cfg.QUESTIONS_PER_MULTI_CONTEXT,
-                        max_tokens=cfg.MAX_GENERATION_TOKENS,
-                        temperature=cfg.GENERATION_TEMPERATURE,
-                        include_context=True,
-                        system_prompt=cfg.TUNING_SYSTEM_PROMPT,
-                        cache_path=cfg.DATASET_CACHE_PATH,
-                        limit=0,
-                    )
-
-                except Exception as exc:
-                    message = (
-                        f"[{split_name}] "
-                        f"{company} | "
-                        f"{source or record_identity(record)}: "
-                        f"{exc}"
-                    )
-                    pipeline_errors.append(message)
-
-                    # 실패한 입력 문서도 JSON은 남겨서
-                    # 어떤 문서가 실패했는지 추적 가능하게 함.
-                    rows = []
-                    errors = [str(exc)]
-
-                # 문서 내부 C_ID는 우선 0부터 정렬
-                reindex_rows(rows)
-
-                document_path = (
-                    company_dir
-                    / document_json_filename(record)
-                )
-
-                write_document_json(
-                    document_path,
-                    split_name=split_name,
-                    company=company,
-                    record=record,
-                    rows=rows,
-                    errors=errors,
-                )
-
-                print(
-                    f"    -> JSON: {document_path} "
-                    f"({len(rows)} rows)"
-                )
-
-                rejected_total += len(errors)
-
-                # 전체 CSV용 집계
-                final_rows.extend(rows)
-
-        # -----------------------------------------------
-        # 최종 split CSV는 기존처럼 유지
-        # -----------------------------------------------
-        reindex_rows(final_rows)
-
-        final_path = (
-            output_dir
-            / f"{split_name}.csv"
-        )
-
-        write_rows(
-            final_rows,
-            final_path,
-            "csv",
-            cfg.TUNING_SYSTEM_PROMPT,
-        )
-
-        row_counts[split_name] = len(final_rows)
-        rejected_counts[split_name] = rejected_total
-
-        print(
-            f"Wrote {final_path}: "
-            f"{len(final_rows)} rows"
-        )
-
-    write_manifest(
-        output_dir / "manifest.json",
-        split_map,
-        row_counts,
-        rejected_counts,
+    # 5. comparison groups -> HCX QA -> JSON + CSV
+    generate_comparison_dataset(
+        split_map=split_map,
+        output_dir=OUTPUT_DIR,
+        compare_type=compare_type,
+        document_count=DOCUMENT_COUNT,
+        client=client,
+        questions_per_group=QUESTIONS_PER_GROUP,
+        max_context_chars=cfg.MAX_CONTEXT_CHARS,
+        max_tokens=cfg.MAX_GENERATION_TOKENS,
+        temperature=cfg.GENERATION_TEMPERATURE,
+        system_prompt=cfg.TUNING_SYSTEM_PROMPT,
+        cache_path=CACHE_PATH,
+        similar_period_days=SIMILAR_PERIOD_DAYS,
+        max_groups_per_split=MAX_GROUPS_PER_SPLIT,
     )
-
-    if pipeline_errors:
-        (
-            rejected_dir
-            / "pipeline.errors.log"
-        ).write_text(
-            "\n".join(pipeline_errors),
-            encoding="utf-8",
-        )
-
-    print(
-        f"Manifest: "
-        f"{output_dir / 'manifest.json'}"
-    )
-
-    if pipeline_errors:
-        print(
-            f"Pipeline errors: "
-            f"{len(pipeline_errors)} "
-            f"(see rejected/pipeline.errors.log)"
-        )
-
-
-def main() -> None:
-    if hasattr(sys.stdout, "reconfigure"):
-        sys.stdout.reconfigure(encoding="utf-8")
-    if hasattr(sys.stderr, "reconfigure"):
-        sys.stderr.reconfigure(encoding="utf-8")
-
-    parser = argparse.ArgumentParser(description="Generate and split HyperCLOVA X tuning datasets.")
-    parser.add_argument("--input", type=Path, default=cfg.DATASET_INPUT_PATH)
-    parser.add_argument("--output-dir", type=Path, default=cfg.DATASET_OUTPUT_DIR)
-    parser.add_argument("--max-documents", type=int, default=cfg.MAX_DOCUMENTS)
-    parser.add_argument("--limit-companies", type=int, default=0)
-    parser.add_argument("--dry-run", action="store_true", help="Only inspect document splits; no API calls")
-    args = parser.parse_args()
-
-    records = load_input_records(args.input)
-    if not cfg.INCLUDE_INDEX_RECORDS:
-        records = [record for record in records if not is_index_record(record)]
-    records = limit_by_document(records, args.max_documents)
-    if not records:
-        raise RuntimeError(f"No usable records found below {args.input}")
-    split_map = split_records(records)
-    print(f"Loaded records: {len(records)}")
-    print_summary(split_map)
-    if args.dry_run:
-        return
-    if not cfg.CLOVA_STUDIO_API_KEY:
-        raise RuntimeError("CLOVA_STUDIO_API_KEY is empty in Config.py")
-    generate_all(split_map, args.output_dir, max(0, args.limit_companies))
 
 
 if __name__ == "__main__":

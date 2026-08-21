@@ -1472,7 +1472,7 @@ def main() -> None:
         sys.stderr.reconfigure(encoding="utf-8")
 
     TEST_INPUT_PATH = Path(
-        r"C:\Users\User\.vscode\mirea_asset\corpus\raw\exchange\HD현대일렉트릭\20230131800162\20230131800162.xml"
+        r"C:\Users\User\.vscode\mirea_asset\corpus\raw\exchange\HD현대일렉트릭\20230131800162\20230131800162.xml"
     )
 
     QUESTIONS_PER_DOCUMENT = 4
