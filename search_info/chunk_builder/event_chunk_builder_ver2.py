@@ -14,7 +14,7 @@ from bs4 import XMLParsedAsHTMLWarning
 # PATHS
 # ============================================================
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 MANIFEST_PATH = (
     PROJECT_ROOT
@@ -45,6 +45,16 @@ MAX_FIELDS_PER_CHUNK = 12
 
 # 긴 서술형 value는 단독 chunk
 LONG_VALUE_THRESHOLD = 700
+
+# event note chunking
+EVENT_NOTE_MIN_CHARS = 40
+EVENT_NOTE_HEADING_MIN_CHARS = 8
+EVENT_NOTE_TARGET_CHARS = 600
+EVENT_NOTE_MAX_CHARS = 900
+
+TABLE_TARGET_CHARS = 1000
+TABLE_MAX_CHARS = 1500
+DEFAULT_HEADER_ROW_COUNT = 1
 
 
 # ============================================================
@@ -627,6 +637,350 @@ def matrix_to_text(
 
 
 # ============================================================
+# TABLE SPLIT
+# ============================================================
+
+def detect_header_row_count(
+    table: Any,
+    matrix: list[list[str]],
+) -> int:
+    """
+    <thead>가 있으면 실제 header row 수를 사용한다.
+
+    없으면 기본적으로 첫 번째 row를 header로 본다.
+    """
+
+    if not matrix:
+        return 0
+
+    thead = table.find(
+        "thead"
+    )
+
+    if thead is not None:
+
+        header_rows = thead.find_all(
+            "tr",
+            recursive=False,
+        )
+
+        count = len(
+            header_rows
+        )
+
+        if count > 0:
+
+            return min(
+                count,
+                3,
+            )
+
+    return min(
+        DEFAULT_HEADER_ROW_COUNT,
+        len(matrix),
+    )
+
+
+def build_split_table_text(
+    matrix: list[list[str]],
+) -> str:
+    """
+    split된 matrix를 기존 event table과
+    동일한 직렬화 방식으로 text로 만든다.
+    """
+
+    return matrix_to_text(
+        matrix
+    )
+
+
+def estimate_split_table_length(
+    matrix: list[list[str]],
+) -> int:
+
+    return len(
+        build_split_table_text(
+            matrix
+        )
+    )
+
+
+def split_large_event_table(
+    matrix: list[list[str]],
+    header_row_count: int,
+) -> list[dict[str, Any]]:
+    """
+    긴 table을 row 단위로 분할한다.
+
+    - header row는 각 part에 반복
+    - row 자체를 중간에서 자르지 않음
+    - 한 row 자체가 1500자를 넘으면
+      oversized_single_row=True로 그대로 보존
+    """
+
+    if not matrix:
+        return []
+
+    full_length = (
+        estimate_split_table_length(
+            matrix
+        )
+    )
+
+    # ========================================================
+    # 작은 표
+    # ========================================================
+
+    if (
+        full_length
+        <= TABLE_MAX_CHARS
+    ):
+
+        return [
+            {
+                "rows":
+                    matrix,
+
+                "source_row_start":
+                    1,
+
+                "source_row_end":
+                    len(matrix),
+
+                "oversized_single_row":
+                    False,
+            }
+        ]
+
+    # ========================================================
+    # HEADER / DATA 분리
+    # ========================================================
+
+    header_row_count = max(
+        0,
+        min(
+            header_row_count,
+            len(matrix),
+        ),
+    )
+
+    headers = matrix[
+        :header_row_count
+    ]
+
+    data_rows = matrix[
+        header_row_count:
+    ]
+
+    # header만 있는 이상한 표
+    if not data_rows:
+
+        return [
+            {
+                "rows":
+                    matrix,
+
+                "source_row_start":
+                    1,
+
+                "source_row_end":
+                    len(matrix),
+
+                "oversized_single_row":
+                    (
+                        full_length
+                        > TABLE_MAX_CHARS
+                    ),
+            }
+        ]
+
+    parts: list[
+        dict[str, Any]
+    ] = []
+
+    current_rows: list[
+        list[str]
+    ] = []
+
+    current_start = (
+        header_row_count
+        + 1
+    )
+
+    for data_index, row in enumerate(
+        data_rows,
+        start=header_row_count + 1,
+    ):
+
+        candidate_rows = [
+            *headers,
+            *current_rows,
+            row,
+        ]
+
+        candidate_length = (
+            estimate_split_table_length(
+                candidate_rows
+            )
+        )
+
+        # ----------------------------------------------------
+        # 현재 part가 비어 있는데
+        # header + row 하나만으로 MAX 초과
+        # ----------------------------------------------------
+
+        if (
+            not current_rows
+            and candidate_length
+            > TABLE_MAX_CHARS
+        ):
+
+            parts.append(
+                {
+                    "rows":
+                        [
+                            *headers,
+                            row,
+                        ],
+
+                    "source_row_start":
+                        data_index,
+
+                    "source_row_end":
+                        data_index,
+
+                    "oversized_single_row":
+                        True,
+                }
+            )
+
+            current_start = (
+                data_index
+                + 1
+            )
+
+            continue
+
+        # ----------------------------------------------------
+        # 현재 part에 row를 추가하면 MAX 초과
+        # ----------------------------------------------------
+
+        if (
+            current_rows
+            and candidate_length
+            > TABLE_MAX_CHARS
+        ):
+
+            parts.append(
+                {
+                    "rows":
+                        [
+                            *headers,
+                            *current_rows,
+                        ],
+
+                    "source_row_start":
+                        current_start,
+
+                    "source_row_end":
+                        data_index
+                        - 1,
+
+                    "oversized_single_row":
+                        False,
+                }
+            )
+
+            current_rows = [
+                row
+            ]
+
+            current_start = (
+                data_index
+            )
+
+            continue
+
+        # ----------------------------------------------------
+        # 아직 TARGET 이하
+        # ----------------------------------------------------
+
+        current_rows.append(
+            row
+        )
+
+        current_length = (
+            estimate_split_table_length(
+                [
+                    *headers,
+                    *current_rows,
+                ]
+            )
+        )
+
+        # TARGET 도달 시 여기서 part 종료
+        if (
+            current_length
+            >= TABLE_TARGET_CHARS
+        ):
+
+            parts.append(
+                {
+                    "rows":
+                        [
+                            *headers,
+                            *current_rows,
+                        ],
+
+                    "source_row_start":
+                        current_start,
+
+                    "source_row_end":
+                        data_index,
+
+                    "oversized_single_row":
+                        False,
+                }
+            )
+
+            current_rows = []
+
+            current_start = (
+                data_index
+                + 1
+            )
+
+    # ========================================================
+    # 마지막 남은 row
+    # ========================================================
+
+    if current_rows:
+
+        parts.append(
+            {
+                "rows":
+                    [
+                        *headers,
+                        *current_rows,
+                    ],
+
+                "source_row_start":
+                    current_start,
+
+                "source_row_end":
+                    header_row_count
+                    + len(
+                        data_rows
+                    ),
+
+                "oversized_single_row":
+                    False,
+            }
+        )
+
+    return parts
+
+# ============================================================
 # CHUNK STRATEGY
 # ============================================================
 
@@ -906,10 +1260,13 @@ def parse_event_document(
     path: Path,
 ) -> list[dict[str, Any]]:
     """
-    여기서는 table 구조만 복원한다.
+    여기서는 원본 table 구조만 복원한다.
 
-    field-value 변환 여부는
-    build 단계에서 문서 유형에 따라 결정한다.
+    중요:
+    - exchange는 원본 전체 table을 field-value로 변환해야 하므로
+      이 단계에서 table을 분할하지 않는다.
+    - major / holding의 대형 table 분할은
+      build_document_chunks()에서 문서 유형을 확인한 뒤 수행한다.
     """
 
     raw = read_document(
@@ -945,6 +1302,13 @@ def parse_event_document(
             table
         )
 
+        header_row_count = (
+            detect_header_row_count(
+                table=table,
+                matrix=matrix,
+            )
+        )
+
         table_text = matrix_to_text(
             matrix
         )
@@ -971,6 +1335,34 @@ def parse_event_document(
                         len(row)
                         for row
                         in matrix
+                    ),
+
+                # 원본 table의 실제 header 수를 보존
+                "header_row_count":
+                    header_row_count,
+
+                # 아직 split 전
+                "table_part_index":
+                    1,
+
+                "table_part_count":
+                    1,
+
+                "is_split":
+                    False,
+
+                "source_row_start":
+                    1,
+
+                "source_row_end":
+                    len(matrix),
+
+                "oversized_single_row":
+                    False,
+
+                "text_length":
+                    len(
+                        table_text
                     ),
             }
         )
@@ -999,10 +1391,18 @@ def is_searchable_event_table(
         )
     )
 
-    if len(rows) < 2:
+    if not rows:
         return False
 
     if len(text) < 10:
+        return False
+
+    # 1행짜리 표라도 긴 설명문이면 보존한다.
+    # 단위표/짧은 장식성 표만 제거한다.
+    if (
+        len(rows) == 1
+        and len(text) < 120
+    ):
         return False
 
     separator_count = len(
@@ -1490,6 +1890,45 @@ def build_common_metadata(
                 "row_count"
             ),
 
+        "table_part_index":
+            parsed_table.get(
+                "table_part_index",
+                1,
+            ),
+
+        "table_part_count":
+            parsed_table.get(
+                "table_part_count",
+                1,
+            ),
+
+        "is_split":
+            parsed_table.get(
+                "is_split",
+                False,
+            ),
+
+        "header_row_count":
+            parsed_table.get(
+                "header_row_count"
+            ),
+
+        "source_row_start":
+            parsed_table.get(
+                "source_row_start"
+            ),
+
+        "source_row_end":
+            parsed_table.get(
+                "source_row_end"
+            ),
+
+        "oversized_single_row":
+            parsed_table.get(
+                "oversized_single_row",
+                False,
+            ),
+
         "max_column_count":
             parsed_table.get(
                 "max_column_count"
@@ -1549,6 +1988,20 @@ def build_table_chunks(
         or 0
     )
 
+    table_part_index = int(
+        parsed_table.get(
+            "table_part_index"
+        )
+        or 1
+    )
+
+    table_part_count = int(
+        parsed_table.get(
+            "table_part_count"
+        )
+        or 1
+    )
+
     title = clean_text(
         parsed_table.get(
             "title"
@@ -1581,7 +2034,7 @@ def build_table_chunks(
     ] = []
 
     # --------------------------------------------------------
-    # major / exchange
+    # exchange
     # → field-value 우선
     # --------------------------------------------------------
 
@@ -1724,6 +2177,7 @@ def build_table_chunks(
         f"{doc_id}"
         f"_file_{raw_file_index:02d}"
         f"_table_{table_index:04d}"
+        f"_part_{table_part_index:03d}"
     )
 
     text = build_table_text(
@@ -1747,7 +2201,9 @@ def build_table_chunks(
                 search_priority
             ),
             chunk_strategy=(
-                "table"
+                "table_row_split"
+                if table_part_count > 1
+                else "table"
             ),
         )
     )
@@ -1776,6 +2232,728 @@ def build_table_chunks(
     return chunks
 
 
+
+# ============================================================
+# EVENT NOTE
+# ============================================================
+
+SECTION_TAG_PATTERN = re.compile(
+    r"^section-\d+$",
+    re.I,
+)
+
+NOTE_HEADING_PATTERN = re.compile(
+    r"^(?:"
+    r"\d+\.\s*"
+    r"|[-※]\s*"
+    r"|주\)\s*"
+    r"|\([0-9]+\)\s*"
+    r")"
+)
+
+
+def direct_section_title(
+    section: Any,
+) -> str:
+    """
+    현재 SECTION의 직계 TITLE만 반환한다.
+    하위 SECTION의 TITLE은 섞지 않는다.
+    """
+
+    for child in section.children:
+
+        name = str(
+            getattr(
+                child,
+                "name",
+                "",
+            )
+            or ""
+        ).lower()
+
+        if name != "title":
+            continue
+
+        title = clean_text(
+            child.get_text(
+                " ",
+                strip=True,
+            )
+        )
+
+        if title:
+            return title
+
+    return ""
+
+
+def get_section_path(
+    node: Any,
+) -> str:
+    """
+    P가 속한 SECTION 계층을 상위 -> 하위 순서로 복원한다.
+    """
+
+    sections = []
+
+    for parent in node.parents:
+
+        name = str(
+            getattr(
+                parent,
+                "name",
+                "",
+            )
+            or ""
+        )
+
+        if SECTION_TAG_PATTERN.match(
+            name
+        ):
+            sections.append(
+                parent
+            )
+
+    sections.reverse()
+
+    titles: list[str] = []
+
+    for section in sections:
+
+        title = direct_section_title(
+            section
+        )
+
+        if (
+            title
+            and (
+                not titles
+                or titles[-1] != title
+            )
+        ):
+            titles.append(
+                title
+            )
+
+    return " > ".join(
+        titles
+    )
+
+
+def is_event_note_heading(
+    text: str,
+) -> bool:
+    """
+    짧더라도 다음 긴 설명과 결합할 가치가 있는 P 제목인지 검사한다.
+    """
+
+    text = clean_text(
+        text
+    )
+
+    if len(text) < EVENT_NOTE_HEADING_MIN_CHARS:
+        return False
+
+    if len(text) > 120:
+        return False
+
+    if NOTE_HEADING_PATTERN.match(
+        text
+    ):
+        return True
+
+    if any(
+        keyword in text
+        for keyword in (
+            "기타 투자판단",
+            "참고할 사항",
+            "관련공시",
+            "주요내용",
+            "산정",
+            "주의",
+        )
+    ):
+        return True
+
+    return False
+
+
+def is_meaningful_event_note(
+    text: str,
+    allow_heading: bool = False,
+) -> bool:
+
+    text = clean_text(
+        text
+    )
+
+    if not text:
+        return False
+
+    if (
+        allow_heading
+        and is_event_note_heading(
+            text
+        )
+    ):
+        return True
+
+    if len(text) < EVENT_NOTE_MIN_CHARS:
+        return False
+
+    # "*해당사항 없음" 류 제거
+    if re.fullmatch(
+        r"[*※\s]*해당사항\s*없음[.]?",
+        text,
+    ):
+        return False
+
+    # 단위 표시 제거
+    if re.fullmatch(
+        r"\(?\s*단위\s*[:：].*?\)?",
+        text,
+    ):
+        return False
+
+    return True
+
+
+def split_event_note_sentences(
+    text: str,
+) -> list[str]:
+    """
+    약식 문장 분리.
+    variable-width lookbehind는 사용하지 않는다.
+    """
+
+    text = clean_text(
+        text
+    )
+
+    if not text:
+        return []
+
+    # HTML/XML에서 줄바꿈이 소실된 경우를 조금 보완한다.
+    text = re.sub(
+        r"(?<=[.!?。])(?=[가-힣A-Za-z0-9\-※①②③④⑤⑥⑦⑧⑨])",
+        "\n",
+        text,
+    )
+
+    parts = re.split(
+        r"(?<=[.!?。])\s+|\n+",
+        text,
+    )
+
+    result: list[str] = []
+
+    for part in parts:
+
+        part = clean_text(
+            part
+        )
+
+        if not part:
+            continue
+
+        if len(part) <= EVENT_NOTE_MAX_CHARS:
+
+            result.append(
+                part
+            )
+
+            continue
+
+        # 한 문장 자체가 지나치게 긴 경우 fallback 분할
+        start = 0
+
+        while start < len(part):
+
+            end = min(
+                start + EVENT_NOTE_MAX_CHARS,
+                len(part),
+            )
+
+            piece = part[
+                start:end
+            ]
+
+            if end < len(part):
+
+                candidates = [
+                    piece.rfind(". "),
+                    piece.rfind(", "),
+                    piece.rfind("; "),
+                    piece.rfind(" "),
+                ]
+
+                cut = max(
+                    candidates
+                )
+
+                if cut > int(
+                    EVENT_NOTE_MAX_CHARS
+                    * 0.6
+                ):
+
+                    end = (
+                        start
+                        + cut
+                        + 1
+                    )
+
+                    piece = part[
+                        start:end
+                    ]
+
+            piece = clean_text(
+                piece
+            )
+
+            if piece:
+                result.append(
+                    piece
+                )
+
+            start = end
+
+    return result
+
+
+def pack_event_note_text(
+    text: str,
+) -> list[str]:
+    """
+    약 600자를 목표로 묶고 900자를 넘지 않게 한다.
+    event note는 overlap을 두지 않는다.
+    """
+
+    sentences = (
+        split_event_note_sentences(
+            text
+        )
+    )
+
+    if not sentences:
+        return []
+
+    chunks: list[str] = []
+
+    current: list[str] = []
+    current_length = 0
+
+    for sentence in sentences:
+
+        additional = (
+            len(sentence)
+            + (
+                1
+                if current
+                else 0
+            )
+        )
+
+        if (
+            current
+            and (
+                current_length
+                + additional
+                > EVENT_NOTE_MAX_CHARS
+            )
+        ):
+
+            chunks.append(
+                clean_text(
+                    " ".join(
+                        current
+                    )
+                )
+            )
+
+            current = []
+            current_length = 0
+
+        current.append(
+            sentence
+        )
+
+        current_length += (
+            len(sentence)
+            + (
+                1
+                if len(current) > 1
+                else 0
+            )
+        )
+
+        if (
+            current_length
+            >= EVENT_NOTE_TARGET_CHARS
+        ):
+
+            chunks.append(
+                clean_text(
+                    " ".join(
+                        current
+                    )
+                )
+            )
+
+            current = []
+            current_length = 0
+
+    if current:
+
+        body = clean_text(
+            " ".join(
+                current
+            )
+        )
+
+        if body:
+            chunks.append(
+                body
+            )
+
+    return chunks
+
+
+def build_event_note_chunks(
+    record: dict[str, Any],
+    raw_file: Path,
+    raw_file_index: int,
+) -> list[dict[str, Any]]:
+    """
+    major / holding에 있는 TABLE 밖 P 설명을 보존한다.
+    exchange에는 호출하지 않는다.
+    """
+
+    raw = read_document(
+        raw_file
+    )
+
+    soup = BeautifulSoup(
+        raw,
+        "html.parser",
+    )
+
+    doc_id = str(
+        record.get("doc_id")
+        or record.get("rcept_no")
+        or raw_file.stem
+    )
+
+    candidates: list[
+        dict[str, str]
+    ] = []
+
+    for p_tag in soup.find_all(
+        "p"
+    ):
+
+        # table 내부 문장은 table chunk에서 이미 보존된다.
+        if p_tag.find_parent(
+            "table"
+        ) is not None:
+            continue
+
+        p_text = clean_text(
+            p_tag.get_text(
+                " ",
+                strip=True,
+            )
+        )
+
+        if not is_meaningful_event_note(
+            p_text,
+            allow_heading=True,
+        ):
+            continue
+
+        candidates.append(
+            {
+                "section_path":
+                    get_section_path(
+                        p_tag
+                    ),
+
+                "text":
+                    p_text,
+            }
+        )
+
+    # 같은 SECTION의 연속 P들을 먼저 합친다.
+    grouped: list[
+        dict[str, str]
+    ] = []
+
+    current_section: str | None = None
+    current_texts: list[str] = []
+
+    def flush_group() -> None:
+
+        nonlocal current_section
+        nonlocal current_texts
+
+        if not current_texts:
+            return
+
+        body = clean_text(
+            " ".join(
+                current_texts
+            )
+        )
+
+        if body:
+
+            grouped.append(
+                {
+                    "section_path":
+                        current_section
+                        or "",
+
+                    "text":
+                        body,
+                }
+            )
+
+        current_texts = []
+
+    for candidate in candidates:
+
+        section_path = (
+            candidate[
+                "section_path"
+            ]
+        )
+
+        if (
+            current_section
+            is not None
+            and section_path
+            != current_section
+        ):
+            flush_group()
+
+        current_section = (
+            section_path
+        )
+
+        current_texts.append(
+            candidate[
+                "text"
+            ]
+        )
+
+    flush_group()
+
+    chunks: list[
+        dict[str, Any]
+    ] = []
+
+    note_index = 0
+
+    for group in grouped:
+
+        section_path = (
+            group[
+                "section_path"
+            ]
+        )
+
+        bodies = pack_event_note_text(
+            group[
+                "text"
+            ]
+        )
+
+        for body in bodies:
+
+            # 제목 하나만 남은 지나치게 짧은 결과는 최종적으로 제거
+            if not is_meaningful_event_note(
+                body,
+                allow_heading=False,
+            ):
+                continue
+
+            note_index += 1
+
+            chunk_id = (
+                f"{doc_id}"
+                f"_file_{raw_file_index:02d}"
+                f"_note_{note_index:04d}"
+            )
+
+            chunk_type, search_priority = (
+                classify_event_chunk(
+                    table_text=body,
+                    fields=[],
+                )
+            )
+
+            context_lines = (
+                build_context_lines(
+                    record=record,
+                    table_title="",
+                )
+            )
+
+            if section_path:
+
+                context_lines.append(
+                    f"섹션: {section_path}"
+                )
+
+            context_lines.append("")
+            context_lines.append(body)
+
+            text = "\n".join(
+                context_lines
+            ).strip()
+
+            metadata = {
+
+                # DOCUMENT / COMPANY
+                "doc_id":
+                    record.get(
+                        "doc_id"
+                    ),
+
+                "corp_code":
+                    record.get(
+                        "corp_code"
+                    ),
+
+                "corp_name":
+                    record.get(
+                        "corp_name"
+                    ),
+
+                "stock_code":
+                    record.get(
+                        "stock_code"
+                    ),
+
+                "industry":
+                    record.get(
+                        "industry"
+                    ),
+
+                "sector":
+                    record.get(
+                        "sector"
+                    ),
+
+                # DISCLOSURE
+                "doc_group":
+                    record.get(
+                        "doc_group"
+                    ),
+
+                "doc_subtype":
+                    record.get(
+                        "doc_subtype"
+                    ),
+
+                "report_nm":
+                    record.get(
+                        "report_nm"
+                    ),
+
+                "normalized_report_type":
+                    record.get(
+                        "normalized_report_type"
+                    ),
+
+                "rcept_no":
+                    record.get(
+                        "rcept_no"
+                    ),
+
+                "rcept_dt":
+                    record.get(
+                        "rcept_dt"
+                    ),
+
+                "event_date":
+                    record.get(
+                        "event_date"
+                    ),
+
+                "base_year":
+                    record.get(
+                        "base_year"
+                    ),
+
+                "base_month":
+                    record.get(
+                        "base_month"
+                    ),
+
+                # CORRECTION
+                "is_correction":
+                    record.get(
+                        "is_correction"
+                    ),
+
+                "disclosure_chain_id":
+                    record.get(
+                        "disclosure_chain_id"
+                    ),
+
+                "corrects_doc_id":
+                    record.get(
+                        "corrects_doc_id"
+                    ),
+
+                "corrects_rcept_no":
+                    record.get(
+                        "corrects_rcept_no"
+                    ),
+
+                # NOTE
+                "raw_file_index":
+                    raw_file_index,
+
+                "note_index":
+                    note_index,
+
+                "section_path":
+                    section_path,
+
+                # RETRIEVAL
+                "chunk_type":
+                    chunk_type,
+
+                "search_priority":
+                    search_priority,
+
+                "chunk_strategy":
+                    "event_note",
+
+                # SOURCE
+                "raw_file":
+                    str(
+                        raw_file
+                    ),
+            }
+
+            chunks.append(
+                {
+                    "chunk_id":
+                        chunk_id,
+
+                    "text":
+                        text,
+
+                    "metadata":
+                        metadata,
+                }
+            )
+
+    return chunks
+
+
 # ============================================================
 # BUILD DOCUMENT CHUNKS
 # ============================================================
@@ -1799,13 +2977,191 @@ def build_document_chunks(
         start=1,
     ):
 
+        # ====================================================
+        # ORIGINAL TABLE PARSE
+        # ====================================================
+
         parsed_tables = (
             parse_event_document(
                 raw_file
             )
         )
 
+        doc_group = clean_text(
+            record.get(
+                "doc_group"
+            )
+        )
+
+        expanded_tables: list[
+            dict[str, Any]
+        ] = []
+
+        # ====================================================
+        # MAJOR / HOLDING:
+        # 긴 table만 row 단위 분할
+        #
+        # EXCHANGE:
+        # 원본 table 전체를 유지한 채 field-value 변환
+        # ====================================================
+
         for parsed_table in parsed_tables:
+
+            matrix = (
+                parsed_table.get(
+                    "rows"
+                )
+                or []
+            )
+
+            if not matrix:
+                continue
+
+            if doc_group in (
+                "major",
+                "holding",
+            ):
+
+                header_row_count = int(
+                    parsed_table.get(
+                        "header_row_count"
+                    )
+                    or 0
+                )
+
+                # <thead>가 없는 경우 최소 첫 row를
+                # split context로 반복한다.
+                if header_row_count <= 0:
+                    header_row_count = min(
+                        DEFAULT_HEADER_ROW_COUNT,
+                        len(matrix),
+                    )
+
+                parts = (
+                    split_large_event_table(
+                        matrix=matrix,
+                        header_row_count=(
+                            header_row_count
+                        ),
+                    )
+                )
+
+                part_count = len(
+                    parts
+                )
+
+                for part_index, part in enumerate(
+                    parts,
+                    start=1,
+                ):
+
+                    part_matrix = (
+                        part[
+                            "rows"
+                        ]
+                    )
+
+                    part_text = (
+                        matrix_to_text(
+                            part_matrix
+                        )
+                    )
+
+                    expanded_tables.append(
+                        {
+                            **parsed_table,
+
+                            "rows":
+                                part_matrix,
+
+                            "table_text":
+                                part_text,
+
+                            "row_count":
+                                len(
+                                    part_matrix
+                                ),
+
+                            "max_column_count":
+                                max(
+                                    len(row)
+                                    for row
+                                    in part_matrix
+                                ),
+
+                            "table_part_index":
+                                part_index,
+
+                            "table_part_count":
+                                part_count,
+
+                            "is_split":
+                                (
+                                    part_count
+                                    > 1
+                                ),
+
+                            "header_row_count":
+                                header_row_count,
+
+                            "source_row_start":
+                                part.get(
+                                    "source_row_start"
+                                ),
+
+                            "source_row_end":
+                                part.get(
+                                    "source_row_end"
+                                ),
+
+                            "oversized_single_row":
+                                part.get(
+                                    "oversized_single_row",
+                                    False,
+                                ),
+
+                            "text_length":
+                                len(
+                                    part_text
+                                ),
+                        }
+                    )
+
+            else:
+
+                # exchange는 절대 선분할하지 않는다.
+                # 원본 전체 table을 matrix_to_fields()에 넘긴다.
+                expanded_tables.append(
+                    {
+                        **parsed_table,
+
+                        "table_part_index":
+                            1,
+
+                        "table_part_count":
+                            1,
+
+                        "is_split":
+                            False,
+
+                        "source_row_start":
+                            1,
+
+                        "source_row_end":
+                            parsed_table.get(
+                                "row_count"
+                            ),
+
+                        "oversized_single_row":
+                            False,
+                    }
+                )
+
+        # ====================================================
+        # TABLE / FIELD-VALUE CHUNK BUILD
+        # ====================================================
+
+        for parsed_table in expanded_tables:
 
             if not (
                 is_searchable_event_table(
@@ -1827,6 +3183,32 @@ def build_document_chunks(
 
             chunks.extend(
                 table_chunks
+            )
+
+        # ====================================================
+        # EVENT NOTE
+        #
+        # major / holding만 표 밖 P 설명 보존
+        # exchange는 field-value table에 설명 포함
+        # ====================================================
+
+        if doc_group in (
+            "major",
+            "holding",
+        ):
+
+            note_chunks = (
+                build_event_note_chunks(
+                    record=record,
+                    raw_file=raw_file,
+                    raw_file_index=(
+                        raw_file_index
+                    ),
+                )
+            )
+
+            chunks.extend(
+                note_chunks
             )
 
     return chunks

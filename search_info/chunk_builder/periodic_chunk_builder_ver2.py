@@ -5,8 +5,12 @@ from typing import Any
 import json
 import re
 
-from periodic_table_parser import (
+from periodic_table_parser_split import (
     parse_periodic_tables,
+)
+
+from periodic_narrative_chunk_builder import (
+    make_narrative_chunks,
 )
 
 
@@ -14,7 +18,7 @@ from periodic_table_parser import (
 # PATHS
 # ============================================================
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 MANIFEST_PATH = (
     PROJECT_ROOT
@@ -624,22 +628,26 @@ def build_chunk(
         or 0
     )
 
+    table_part_index = int(
+        table.get("table_part_index")
+        or 1
+    )
+
+    table_part_count = int(
+        table.get("table_part_count")
+        or 1
+    )
+
     # --------------------------------------------------------
-    # IMPORTANT
-    #
-    # annual report 등은 한 doc_id 안에 raw file이
-    # 여러 개 존재할 수 있다.
-    #
-    # 따라서
-    # doc_id + table_index
-    #
-    # 만 쓰면 chunk_id 충돌 가능.
+    # 같은 원본 table이 여러 part로 분할될 수 있으므로
+    # part index까지 chunk_id에 포함한다.
     # --------------------------------------------------------
 
     chunk_id = (
         f"{doc_id}"
         f"_file_{raw_file_index:02d}"
         f"_table_{table_index:04d}"
+        f"_part_{table_part_index:03d}"
     )
 
     text = build_chunk_text(
@@ -745,6 +753,36 @@ def build_chunk(
                 table_index
             ),
 
+            "table_part_index": (
+                table_part_index
+            ),
+
+            "table_part_count": (
+                table_part_count
+            ),
+
+            "is_split": table.get(
+                "is_split",
+                False,
+            ),
+
+            "header_row_count": table.get(
+                "header_row_count"
+            ),
+
+            "source_row_start": table.get(
+                "source_row_start"
+            ),
+
+            "source_row_end": table.get(
+                "source_row_end"
+            ),
+
+            "oversized_single_row": table.get(
+                "oversized_single_row",
+                False,
+            ),
+
             "table_title": table.get(
                 "title"
             ),
@@ -765,6 +803,12 @@ def build_chunk(
                 chunk_type
             ),
 
+            "chunk_strategy": (
+                "table_row_split"
+                if table_part_count > 1
+                else "table"
+            ),
+
             "search_priority": (
                 search_priority
             ),
@@ -778,6 +822,112 @@ def build_chunk(
             ),
         },
     }
+
+
+# ============================================================
+# NARRATIVE CHUNKS
+# ============================================================
+
+def build_narrative_chunks_for_file(
+    record: dict[str, Any],
+    raw_file: Path,
+    raw_file_index: int,
+) -> list[dict[str, Any]]:
+    """
+    periodic_narrative_chunk_builder의 결과를
+    최종 periodic_vector_chunks.jsonl 형식으로 맞춘다.
+
+    한 doc_id에 raw file이 여러 개 있을 수 있으므로
+    최종 chunk_id에 raw_file_index를 반드시 넣는다.
+    """
+
+    source_chunks = make_narrative_chunks(
+        raw_file,
+        extra_metadata=record,
+    )
+
+    chunks: list[dict[str, Any]] = []
+
+    doc_id = str(
+        record.get("doc_id")
+        or record.get("rcept_no")
+        or raw_file.stem
+    )
+
+    for narrative_index, source_chunk in enumerate(
+        source_chunks,
+        start=1,
+    ):
+
+        source_metadata = dict(
+            source_chunk.get("metadata")
+            or {}
+        )
+
+        # narrative builder 내부 index가 있으면 그것을 우선 사용
+        source_narrative_index = int(
+            source_metadata.get(
+                "narrative_index"
+            )
+            or narrative_index
+        )
+
+        chunk_id = (
+            f"{doc_id}"
+            f"_file_{raw_file_index:02d}"
+            f"_narrative_{source_narrative_index:04d}"
+        )
+
+        metadata = {
+            **source_metadata,
+
+            # manifest 값을 source of truth로 다시 덮어쓴다.
+            "doc_id": record.get("doc_id"),
+            "corp_code": record.get("corp_code"),
+            "corp_name": record.get("corp_name"),
+            "stock_code": record.get("stock_code"),
+            "industry": record.get("industry"),
+            "sector": record.get("sector"),
+
+            "doc_group": record.get("doc_group"),
+            "doc_subtype": record.get("doc_subtype"),
+            "report_nm": record.get("report_nm"),
+            "rcept_no": record.get("rcept_no"),
+            "rcept_dt": record.get("rcept_dt"),
+            "base_year": record.get("base_year"),
+            "base_month": record.get("base_month"),
+            "is_correction": record.get("is_correction"),
+
+            "raw_file_index": raw_file_index,
+            "raw_file": str(raw_file),
+
+            "chunk_type": "narrative",
+            "chunk_strategy": (
+                source_metadata.get(
+                    "chunk_strategy"
+                )
+                or "section_sentence"
+            ),
+            "search_priority": (
+                source_metadata.get(
+                    "search_priority"
+                )
+                or "medium"
+            ),
+        }
+
+        chunks.append(
+            {
+                "chunk_id": chunk_id,
+                "text": str(
+                    source_chunk.get("text")
+                    or ""
+                ),
+                "metadata": metadata,
+            }
+        )
+
+    return chunks
 
 
 # ============================================================
@@ -805,6 +955,10 @@ def build_document_chunks(
         start=1,
     ):
 
+        # ====================================================
+        # 1. TABLE
+        # ====================================================
+
         tables = parse_periodic_tables(
             path=raw_file,
             corp_name=str(
@@ -819,10 +973,7 @@ def build_document_chunks(
 
         for table in tables:
 
-            # ------------------------------------------------
             # 명백하게 필요 없는 table만 제거
-            # ------------------------------------------------
-
             if not is_searchable_table(
                 table
             ):
@@ -838,6 +989,22 @@ def build_document_chunks(
             chunks.append(
                 chunk
             )
+
+        # ====================================================
+        # 2. NARRATIVE
+        # ====================================================
+
+        narrative_chunks = (
+            build_narrative_chunks_for_file(
+                record=record,
+                raw_file=raw_file,
+                raw_file_index=raw_file_index,
+            )
+        )
+
+        chunks.extend(
+            narrative_chunks
+        )
 
     return chunks
 
@@ -992,6 +1159,11 @@ def print_chunk_statistics(
         int,
     ] = {}
 
+    strategy_counts: dict[
+        str,
+        int,
+    ] = {}
+
     # chunk_id 중복 검사용
     chunk_ids: set[str] = set()
 
@@ -1057,6 +1229,23 @@ def print_chunk_statistics(
             + 1
         )
 
+        strategy = str(
+            metadata.get(
+                "chunk_strategy"
+            )
+            or "unknown"
+        )
+
+        strategy_counts[
+            strategy
+        ] = (
+            strategy_counts.get(
+                strategy,
+                0,
+            )
+            + 1
+        )
+
     print()
     print("=" * 100)
     print(
@@ -1081,6 +1270,18 @@ def print_chunk_statistics(
 
     for key, value in sorted(
         priority_counts.items()
+    ):
+
+        print(
+            f"{key:25s}: "
+            f"{value}"
+        )
+
+    print()
+    print("[STRATEGY]")
+
+    for key, value in sorted(
+        strategy_counts.items()
     ):
 
         print(

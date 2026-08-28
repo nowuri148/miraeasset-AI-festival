@@ -10,6 +10,18 @@ from bs4 import BeautifulSoup
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 # ============================================================
+# TABLE CHUNK SETTINGS
+# ============================================================
+# 작은 표는 그대로 1 chunk로 유지하고,
+# 큰 표만 "header + row 묶음"으로 분할한다.
+#
+# TARGET은 권장 크기, MAX는 가능한 한 넘지 않도록 하는 상한이다.
+# 단, 단일 row 자체가 MAX보다 긴 경우에는 그 row를 별도 chunk로 보존한다.
+TABLE_TARGET_CHARS = 1000
+TABLE_MAX_CHARS = 1500
+DEFAULT_HEADER_ROW_COUNT = 1
+
+# ============================================================
 # TEXT UTILS
 # ============================================================
 
@@ -480,6 +492,422 @@ def table_to_text(
     ).strip()
 
 
+
+# ============================================================
+# LARGE TABLE CHUNKING
+# ============================================================
+
+def detect_header_row_count(
+    table: Any,
+    matrix: list[list[str]],
+) -> int:
+    """
+    표의 header row 수를 추정한다.
+
+    우선순위:
+    1) <thead> 내부의 <tr> 개수
+    2) 없으면 기본 1행
+
+    너무 많은 header 반복을 피하기 위해 최대 3행까지만 사용한다.
+    """
+
+    if not matrix:
+        return 0
+
+    thead = table.find("thead")
+
+    if thead is not None:
+        count = len(
+            thead.find_all(
+                "tr",
+                recursive=False,
+            )
+        )
+
+        if count <= 0:
+            count = len(
+                thead.find_all("tr")
+            )
+
+        if count > 0:
+            return min(
+                count,
+                3,
+                len(matrix),
+            )
+
+    return min(
+        DEFAULT_HEADER_ROW_COUNT,
+        len(matrix),
+    )
+
+
+def matrix_to_lines(
+    matrix: list[list[str]],
+) -> list[str]:
+    """
+    matrix의 각 row를 검색용 문자열 한 줄로 변환한다.
+    """
+
+    lines: list[str] = []
+
+    for row in matrix:
+
+        cleaned_row = [
+            clean_text(cell)
+            for cell in row
+        ]
+
+        lines.append(
+            " | ".join(
+                cleaned_row
+            )
+        )
+
+    return lines
+
+
+def build_table_text(
+    *,
+    title: str,
+    matrix: list[list[str]],
+    corp_name: str = "",
+    report_nm: str = "",
+    part_index: int | None = None,
+    part_count: int | None = None,
+) -> str:
+    """
+    표 일부(matrix)를 Vector DB 검색용 text로 직렬화한다.
+
+    분할된 표라면 "(분할 x/y)" 문맥도 넣는다.
+    """
+
+    lines: list[str] = []
+
+    if corp_name:
+        lines.append(
+            f"회사: {corp_name}"
+        )
+
+    if report_nm:
+        lines.append(
+            f"보고서: {report_nm}"
+        )
+
+    if title:
+        lines.append(
+            f"표 제목: {title}"
+        )
+
+    if (
+        part_index is not None
+        and part_count is not None
+        and part_count > 1
+    ):
+        lines.append(
+            f"표 분할: {part_index}/{part_count}"
+        )
+
+    if lines:
+        lines.append("")
+
+    lines.extend(
+        matrix_to_lines(matrix)
+    )
+
+    return "\n".join(
+        lines
+    ).strip()
+
+
+def estimate_table_text_length(
+    *,
+    title: str,
+    matrix: list[list[str]],
+    corp_name: str = "",
+    report_nm: str = "",
+) -> int:
+    """
+    현재 matrix를 text로 만들었을 때의 대략적인 길이를 계산한다.
+    """
+
+    return len(
+        build_table_text(
+            title=title,
+            matrix=matrix,
+            corp_name=corp_name,
+            report_nm=report_nm,
+        )
+    )
+
+
+def split_large_table_matrix(
+    *,
+    matrix: list[list[str]],
+    header_row_count: int,
+    title: str,
+    corp_name: str = "",
+    report_nm: str = "",
+) -> list[dict[str, Any]]:
+    """
+    큰 표를 header + data row 묶음으로 분할한다.
+
+    작은 표:
+        전체 matrix -> part 1개
+
+    큰 표:
+        [header rows + data rows 1..N]
+        [header rows + data rows N+1..M]
+        ...
+
+    각 part마다 header를 반복한다.
+
+    주의:
+    - 행 중간은 자르지 않는다.
+    - 단일 row 자체가 TABLE_MAX_CHARS보다 긴 경우에는
+      데이터 유실을 막기 위해 그 row 하나를 독립 part로 보존한다.
+    """
+
+    if not matrix:
+        return []
+
+    full_length = estimate_table_text_length(
+        title=title,
+        matrix=matrix,
+        corp_name=corp_name,
+        report_nm=report_nm,
+    )
+
+    # 작은 표는 기존처럼 그대로 사용
+    if full_length <= TABLE_MAX_CHARS:
+        return [
+            {
+                "matrix": matrix,
+                "source_row_start": 1,
+                "source_row_end": len(matrix),
+                "oversized_single_row": False,
+            }
+        ]
+
+    header_row_count = max(
+        0,
+        min(
+            header_row_count,
+            len(matrix),
+        ),
+    )
+
+    header_rows = matrix[
+        :header_row_count
+    ]
+
+    data_rows = matrix[
+        header_row_count:
+    ]
+
+    # header만 있는 특수 케이스
+    if not data_rows:
+        return [
+            {
+                "matrix": matrix,
+                "source_row_start": 1,
+                "source_row_end": len(matrix),
+                "oversized_single_row": (
+                    full_length
+                    > TABLE_MAX_CHARS
+                ),
+            }
+        ]
+
+    parts: list[dict[str, Any]] = []
+
+    current_rows: list[list[str]] = []
+
+    # 원본 matrix 기준 data row 시작 번호
+    data_start_row_number = (
+        header_row_count + 1
+    )
+
+    current_source_start = (
+        data_start_row_number
+    )
+
+    for offset, row in enumerate(
+        data_rows
+    ):
+
+        source_row_number = (
+            data_start_row_number
+            + offset
+        )
+
+        candidate_rows = (
+            header_rows
+            + current_rows
+            + [row]
+        )
+
+        candidate_length = (
+            estimate_table_text_length(
+                title=title,
+                matrix=candidate_rows,
+                corp_name=corp_name,
+                report_nm=report_nm,
+            )
+        )
+
+        # 현재 part에 row를 넣으면 MAX 초과
+        if (
+            current_rows
+            and candidate_length
+            > TABLE_MAX_CHARS
+        ):
+
+            parts.append(
+                {
+                    "matrix": (
+                        header_rows
+                        + current_rows
+                    ),
+                    "source_row_start": (
+                        current_source_start
+                    ),
+                    "source_row_end": (
+                        source_row_number - 1
+                    ),
+                    "oversized_single_row": False,
+                }
+            )
+
+            current_rows = []
+            current_source_start = (
+                source_row_number
+            )
+
+        # 새 part에서 현재 row 하나만 넣었을 때 길이 확인
+        single_row_matrix = (
+            header_rows
+            + [row]
+        )
+
+        single_row_length = (
+            estimate_table_text_length(
+                title=title,
+                matrix=single_row_matrix,
+                corp_name=corp_name,
+                report_nm=report_nm,
+            )
+        )
+
+        # row 하나 자체가 MAX보다 큰 경우:
+        # 행을 잘라 의미를 깨뜨리기보다 독립 part로 보존
+        if single_row_length > TABLE_MAX_CHARS:
+
+            if current_rows:
+
+                parts.append(
+                    {
+                        "matrix": (
+                            header_rows
+                            + current_rows
+                        ),
+                        "source_row_start": (
+                            current_source_start
+                        ),
+                        "source_row_end": (
+                            source_row_number - 1
+                        ),
+                        "oversized_single_row": False,
+                    }
+                )
+
+                current_rows = []
+
+            parts.append(
+                {
+                    "matrix": (
+                        header_rows
+                        + [row]
+                    ),
+                    "source_row_start": (
+                        source_row_number
+                    ),
+                    "source_row_end": (
+                        source_row_number
+                    ),
+                    "oversized_single_row": True,
+                }
+            )
+
+            current_source_start = (
+                source_row_number + 1
+            )
+
+            continue
+
+        current_rows.append(
+            row
+        )
+
+        # TARGET을 넘었으면 여기서 자연스럽게 끊는다.
+        current_matrix = (
+            header_rows
+            + current_rows
+        )
+
+        current_length = (
+            estimate_table_text_length(
+                title=title,
+                matrix=current_matrix,
+                corp_name=corp_name,
+                report_nm=report_nm,
+            )
+        )
+
+        if (
+            current_length
+            >= TABLE_TARGET_CHARS
+        ):
+
+            parts.append(
+                {
+                    "matrix": current_matrix,
+                    "source_row_start": (
+                        current_source_start
+                    ),
+                    "source_row_end": (
+                        source_row_number
+                    ),
+                    "oversized_single_row": False,
+                }
+            )
+
+            current_rows = []
+            current_source_start = (
+                source_row_number + 1
+            )
+
+    if current_rows:
+
+        parts.append(
+            {
+                "matrix": (
+                    header_rows
+                    + current_rows
+                ),
+                "source_row_start": (
+                    current_source_start
+                ),
+                "source_row_end": (
+                    len(matrix)
+                ),
+                "oversized_single_row": False,
+            }
+        )
+
+    return parts
+
+
 # ============================================================
 # PARSE ALL TABLES
 # ============================================================
@@ -491,6 +919,15 @@ def parse_periodic_tables(
 ) -> list[dict[str, Any]]:
     """
     periodic 문서 하나에서 모든 유의미한 table을 추출한다.
+
+    작은 표:
+        표 전체를 result 1개로 유지
+
+    큰 표:
+        header + row 묶음으로 여러 result로 분할
+
+    따라서 하나의 원본 table_index에서
+    table_part_index 1..N 이 생성될 수 있다.
     """
 
     raw = read_document(
@@ -528,36 +965,110 @@ def parse_periodic_tables(
             table
         )
 
-        headers = flatten_headers(
-            matrix,
-            header_row_count=2,
+        header_row_count = (
+            detect_header_row_count(
+                table,
+                matrix,
+            )
         )
 
-        text = table_to_text(
-            title=title,
+        headers = flatten_headers(
+            matrix,
+            header_row_count=max(
+                1,
+                header_row_count,
+            ),
+        )
+
+        parts = split_large_table_matrix(
             matrix=matrix,
+            header_row_count=(
+                header_row_count
+            ),
+            title=title,
             corp_name=corp_name,
             report_nm=report_nm,
         )
 
-        result = {
-            "table_index": table_index,
-            "title": title,
-            "headers": headers,
-            "rows": matrix,
-            "row_count": len(
-                matrix
-            ),
-            "max_column_count": max(
-                len(row)
-                for row in matrix
-            ),
-            "text": text,
-        }
+        part_count = len(parts)
 
-        results.append(
-            result
-        )
+        for table_part_index, part in enumerate(
+            parts,
+            start=1,
+        ):
+
+            part_matrix = part[
+                "matrix"
+            ]
+
+            text = build_table_text(
+                title=title,
+                matrix=part_matrix,
+                corp_name=corp_name,
+                report_nm=report_nm,
+                part_index=table_part_index,
+                part_count=part_count,
+            )
+
+            result = {
+                # 원본 XML table 번호
+                "table_index": (
+                    table_index
+                ),
+
+                # 같은 table이 여러 chunk로 갈린 경우 사용
+                "table_part_index": (
+                    table_part_index
+                ),
+                "table_part_count": (
+                    part_count
+                ),
+                "is_split": (
+                    part_count > 1
+                ),
+
+                "title": title,
+                "headers": headers,
+
+                # 이 part에 실제 저장되는 matrix
+                # header는 각 part마다 반복됨
+                "rows": part_matrix,
+
+                "header_row_count": (
+                    header_row_count
+                ),
+
+                # 원본 table의 어느 data row 범위인지
+                "source_row_start": part[
+                    "source_row_start"
+                ],
+                "source_row_end": part[
+                    "source_row_end"
+                ],
+
+                "oversized_single_row": part[
+                    "oversized_single_row"
+                ],
+
+                "row_count": len(
+                    part_matrix
+                ),
+
+                "max_column_count": max(
+                    len(row)
+                    for row in part_matrix
+                ),
+
+                "text_length": len(
+                    text
+                ),
+
+                "text": text,
+            }
+
+            results.append(
+                result
+            )
 
     return results
 
@@ -601,6 +1112,20 @@ def preview_tables(
             table[
                 "table_index"
             ],
+        )
+
+        print(
+            "table_part:",
+            f"{table.get('table_part_index', 1)}/"
+            f"{table.get('table_part_count', 1)}",
+        )
+
+        print(
+            "text_length:",
+            table.get(
+                "text_length",
+                len(table.get("text", "")),
+            ),
         )
 
         print(
