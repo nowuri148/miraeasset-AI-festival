@@ -33,7 +33,7 @@ from pathlib import Path
 from typing import Any
 
 
-SCRIPT_VERSION = "1.4.0-simple-schema-string-sentinel"
+SCRIPT_VERSION = "1.4.1-company-enum-removed"
 DEFAULT_MODEL = "HCX-005"
 DEFAULT_ENDPOINT_TEMPLATE = (
     "https://clovastudio.stream.ntruss.com/v3/chat-completions/{model}"
@@ -220,14 +220,7 @@ class ClovaStudioClient:
 
 
 def build_search_tool(retriever: Any) -> dict[str, Any]:
-    """Build a Function Calling schema from values that exist in the corpus."""
-    company_values: set[str] = set()
-    for company in retriever.companies_by_code.values():
-        company_values.add(company.corp_code)
-        company_values.add(company.corp_name)
-        if company.listed_name:
-            company_values.add(company.listed_name)
-
+    """Build a CLOVA-compatible Function Calling schema."""
     return {
         "type": "function",
         "function": {
@@ -250,8 +243,10 @@ def build_search_tool(retriever: Any) -> dict[str, Any]:
                     },
                     "company": {
                         "type": "string",
-                        "enum": sorted(company_values),
-                        "description": "corpus에 존재하는 정확한 회사명 또는 corp_code",
+                        "description": (
+                            "사용자 질문에 명시된 정확한 회사명 또는 corp_code. "
+                            "회사명을 임의로 변경하거나 추측하지 않는다."
+                        ),
                     },
                     "normalized_report_type": {
                         "type": "string",
