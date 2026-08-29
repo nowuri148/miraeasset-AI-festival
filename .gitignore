@@ -10,3 +10,4 @@ Dataset/.qa_generation_cache.jsonl
 # Generated vector data
 corpus/derived/
 corpus/vector_db/
+.venv/
