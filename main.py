@@ -51,6 +51,10 @@ from search_info.z_search_task import (
     run_search_task,
 )
 
+from validation.validated_runner import (
+    run_with_grounding_validation,
+)
+
 
 # 추후 구현
 # from comparison_info.z_comparison_task import (
@@ -502,14 +506,24 @@ def run_agent(
     # 이미 추출했으므로 바로 Task 실행
     # --------------------------------------------------------
 
+    def execute_task() -> dict[str, Any]:
+        return (
+            run_task_from_extracted(
+                question=question,
+                extracted=extracted,
+            )
+        )
+
+
     return (
-        run_task_from_extracted(
+        run_with_grounding_validation(
             question=question,
-            extracted=extracted,
+            execute_task=execute_task,
+            max_attempts=3,
         )
     )
 
-
+    
 # ============================================================
 # USER OUTPUT
 # ============================================================
@@ -885,12 +899,20 @@ def main() -> None:
         # 이미 얻은 extracted를 바로 사용한다.
         # ====================================================
 
+        def execute_task() -> dict[str, Any]:
+            return (
+                run_task_from_extracted(
+                    question=conversation_question,
+                    extracted=extracted,
+                )
+            )
+
+
         task_result = (
-            run_task_from_extracted(
-                question=(
-                    conversation_question
-                ),
-                extracted=extracted,
+            run_with_grounding_validation(
+                question=conversation_question,
+                execute_task=execute_task,
+                max_attempts=3,
             )
         )
 

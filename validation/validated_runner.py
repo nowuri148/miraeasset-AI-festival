@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from typing import Any, Callable
 
-from .answer_grounding_validator import (
+from validation.answer_grounding_validator import (
     HCXGroundingValidator,
 )
 
-from .evidence_builder import (
+from validation.evidence_builder import (
     build_validation_evidence,
 )
 
@@ -16,10 +16,7 @@ from .evidence_builder import (
 # ============================================================
 
 TaskExecutor = Callable[
-    [
-        str,
-        str | None,
-    ],
+    [],
     dict[str, Any],
 ]
 
@@ -52,37 +49,32 @@ def get_validator() -> (
 
 
 # ============================================================
-# VERIFIED RUNNER
+# VALIDATED TASK RUNNER
 # ============================================================
 
 def run_with_grounding_validation(
     *,
     question: str,
-    execute_once: TaskExecutor,
+    execute_task: TaskExecutor,
     max_attempts: int = 3,
 ) -> dict[str, Any]:
     """
-    동일 질문을 최대 max_attempts회 실행한다.
+    Keyword Extraction 이후의 Task 결과를 검증한다.
 
-    1. Task 실행
-    2. 최종 답변 생성
-    3. 실제 근거와 답변 비교
-    4. PASS → 바로 return
-    5. RETRY → 동일 질문 재실행
-    6. 최대 횟수 실패 → 확인 불가 반환
+    흐름:
+    Task 실행
+    → 최종 후보 답변
+    → Evidence 구성
+    → Grounding Validation
+    → PASS면 반환
+    → RETRY면 동일 Task 재실행
 
-    retry_feedback은 사용자 질문을 변경하지 않고
-    내부 실행에만 전달한다.
+    Keyword Extractor는 이 함수에서 다시 실행하지 않는다.
     """
 
     validator = (
         get_validator()
     )
-
-    retry_feedback: (
-        str
-        | None
-    ) = None
 
     validation_history: list[
         dict[str, Any]
@@ -103,21 +95,19 @@ def run_with_grounding_validation(
     ):
 
         # ----------------------------------------------------
-        # Task 실행
+        # 이미 추출된 조건으로 동일 Task 실행
         # ----------------------------------------------------
 
         result = (
-            execute_once(
-                question,
-                retry_feedback,
-            )
+            execute_task()
         )
 
-        last_result = result
+        last_result = (
+            result
+        )
 
         # ----------------------------------------------------
-        # Task 자체가 실패했다면
-        # validator까지 갈 필요 없음
+        # Task 자체가 실패
         # ----------------------------------------------------
 
         if not result.get(
@@ -125,6 +115,10 @@ def run_with_grounding_validation(
         ):
 
             return result
+
+        # ----------------------------------------------------
+        # Task가 만든 최종 후보 답변
+        # ----------------------------------------------------
 
         answer = str(
             result.get(
@@ -138,7 +132,11 @@ def run_with_grounding_validation(
                 "task_type"
             )
             or ""
-        )
+        ).strip()
+
+        # ----------------------------------------------------
+        # Task가 실제 사용한 최종 근거
+        # ----------------------------------------------------
 
         evidence = (
             build_validation_evidence(
@@ -147,7 +145,7 @@ def run_with_grounding_validation(
         )
 
         # ----------------------------------------------------
-        # Grounding Validation
+        # FINAL GROUNDING VALIDATION
         # ----------------------------------------------------
 
         validation = (
@@ -159,23 +157,20 @@ def run_with_grounding_validation(
             )
         )
 
-        validation_record = {
-            "attempt": (
-                attempt
-            ),
-            **validation,
-        }
-
         validation_history.append(
-            validation_record
+            {
+                "attempt": attempt,
+                **validation,
+            }
         )
 
-        # ----------------------------------------------------
+        # ====================================================
         # PASS
-        # ----------------------------------------------------
+        # ====================================================
 
         if validation.get(
-            "is_grounded"
+            "is_grounded",
+            False,
         ):
 
             result[
@@ -189,14 +184,8 @@ def run_with_grounding_validation(
                         "reason"
                     )
                 ),
-                "confidence": (
-                    validation.get(
-                        "confidence"
-                    )
-                ),
             }
 
-            # 개발/평가 내부 확인용
             result[
                 "validation_history"
             ] = (
@@ -205,20 +194,18 @@ def run_with_grounding_validation(
 
             return result
 
-        # ----------------------------------------------------
+        # ====================================================
         # RETRY
-        # ----------------------------------------------------
+        # ====================================================
 
-        retry_feedback = str(
+        print(
+            "[GroundingValidator] "
+            f"attempt={attempt} RETRY"
+        )
+
+        print(
             validation.get(
-                "retry_feedback"
-            )
-            or validation.get(
                 "reason"
-            )
-            or (
-                "답변과 검색 근거가 일치하지 않습니다. "
-                "근거를 다시 확인하십시오."
             )
         )
 
@@ -228,25 +215,35 @@ def run_with_grounding_validation(
 
     return {
         "success": False,
+
+        "status": (
+            "grounding_validation_failed"
+        ),
+
         "task_type": (
             last_result.get(
                 "task_type"
             )
         ),
-        "status": (
-            "grounding_validation_failed"
+
+        "question": (
+            question
         ),
+
         "answer": (
             "제공된 공시 근거만으로 "
             "답변을 확정할 수 없습니다."
         ),
+
         "sources": [],
+
         "retrieved_context": (
             last_result.get(
                 "retrieved_context"
             )
             or ""
         ),
+
         "grounding_validation": {
             "passed": False,
             "attempts": (
@@ -254,6 +251,7 @@ def run_with_grounding_validation(
             ),
             "verdict": "RETRY",
         },
+
         "validation_history": (
             validation_history
         ),
