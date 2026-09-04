@@ -36,6 +36,10 @@ DEFAULT_MODEL = os.getenv(
 DEFAULT_MAX_SOURCES = 5
 DEFAULT_MAX_SOURCE_CHARS = 3500
 
+INSUFFICIENT_EVIDENCE_ANSWER = (
+    "제공된 공시 근거만으로 답변을 확정할 수 없습니다."
+)
+
 
 # =============================================================================
 # ANSWER GENERATOR
@@ -49,26 +53,9 @@ class HCXAnswerGenerator:
     --------
     1. HCX는 제공된 SOURCE 안에서만 답변한다.
     2. HCX는 실제 출처 metadata를 직접 생성하지 않는다.
-    3. HCX는 사용한 SOURCE 번호만 반환한다.
+    3. HCX는 답변에 실제로 사용한 SOURCE 번호만 반환한다.
     4. 실제 source 정보는 Python 코드가 reranker metadata에서 복원한다.
-    5. 이를 통해 출처 hallucination을 방지한다.
-
-    출력 예
-    -------
-    {
-        "answer": "...",
-        "used_source_ids": [1, 2],
-        "sources": [
-            {
-                "source_id": 1,
-                "corp_name": "SK텔레콤",
-                "report_nm": "분기보고서 (2023.03)",
-                "rcept_no": "20230512000710",
-                "doc_id": "...",
-                "chunk_id": "..."
-            }
-        ]
-    }
+    5. source attribution이 없는 구체적 답변은 Python에서 차단한다.
     """
 
     def __init__(
@@ -133,7 +120,8 @@ class HCXAnswerGenerator:
         reranked_results: list[dict[str, Any]],
     ) -> dict[str, Any]:
         """
-        질문 + reranker 결과를 받아 최종 답변과 출처를 생성한다.
+        질문 + reranker 결과를 받아
+        최종 답변과 실제 사용 출처를 생성한다.
         """
 
         question = str(
@@ -165,6 +153,17 @@ class HCXAnswerGenerator:
                 reranked_results
             )
         )
+
+        if not source_items:
+            return {
+                "answer": (
+                    "검색된 근거가 없어 "
+                    "답변할 수 없습니다."
+                ),
+                "used_source_ids": [],
+                "sources": [],
+                "raw_response": None,
+            }
 
         context = (
             self._build_context(
@@ -227,6 +226,7 @@ class HCXAnswerGenerator:
                 "answer",
                 "",
             )
+            or ""
         ).strip()
 
         used_source_ids = (
@@ -241,6 +241,40 @@ class HCXAnswerGenerator:
         )
 
         # ---------------------------------------------------------------------
+        # Fail-closed:
+        #
+        # HCX가 구체적인 answer를 생성했는데
+        # used_source_ids를 하나도 고르지 않았다면
+        # 근거가 귀속되지 않은 답변이므로 폐기한다.
+        # ---------------------------------------------------------------------
+
+        if (
+            answer
+            and not used_source_ids
+        ):
+
+            if self.debug:
+                print(
+                    "[HCXAnswerGenerator] "
+                    "WARNING: answer exists "
+                    "but no source selected. "
+                    "Rejecting ungrounded answer."
+                )
+
+            answer = (
+                INSUFFICIENT_EVIDENCE_ANSWER
+            )
+
+        # answer가 아예 비어 있으면
+        # 명시적인 근거 부족 답변으로 정규화
+        if not answer:
+            answer = (
+                INSUFFICIENT_EVIDENCE_ANSWER
+            )
+
+            used_source_ids = []
+
+        # ---------------------------------------------------------------------
         # source id → 실제 metadata 연결
         # ---------------------------------------------------------------------
 
@@ -253,27 +287,21 @@ class HCXAnswerGenerator:
             )
         )
 
-        # HCX가 source id를 비워버렸지만
-        # 답변은 생성한 경우:
-        # hallucination 방지를 위해 source 없는 답변을 그대로 신뢰하지 않음
-        if (
-            answer
-            and not used_source_ids
-        ):
-            if self.debug:
-                print(
-                    "[HCXAnswerGenerator] "
-                    "WARNING: answer exists "
-                    "but no source selected."
-                )
-
         return {
             "answer": answer,
+
             "used_source_ids": (
                 used_source_ids
             ),
-            "sources": sources,
-            "generation_time": elapsed,
+
+            "sources": (
+                sources
+            ),
+
+            "generation_time": (
+                elapsed
+            ),
+
             "raw_response": (
                 raw_response
             ),
@@ -308,8 +336,14 @@ class HCXAnswerGenerator:
                 item.get(
                     "document"
                 )
+                or item.get(
+                    "text"
+                )
                 or ""
             ).strip()
+
+            if not document:
+                continue
 
             if (
                 len(document)
@@ -328,6 +362,9 @@ class HCXAnswerGenerator:
 
                     "chunk_id": (
                         item.get(
+                            "chunk_id"
+                        )
+                        or metadata.get(
                             "chunk_id"
                         )
                     ),
@@ -353,6 +390,9 @@ class HCXAnswerGenerator:
                         )
                         or self._extract_rcept_no(
                             item.get(
+                                "chunk_id"
+                            )
+                            or metadata.get(
                                 "chunk_id"
                             )
                         )
@@ -394,11 +434,25 @@ class HCXAnswerGenerator:
                         )
                     ),
 
+                    "retrieval_origin": (
+                        item.get(
+                            "retrieval_origin"
+                        )
+                    ),
+
                     "document": (
                         document
                     ),
                 }
             )
+
+        # source_id를 1부터 다시 연속적으로 부여
+        # 중간에 document가 비어 skip된 경우를 방어
+        for index, source in enumerate(
+            prepared,
+            start=1,
+        ):
+            source["source_id"] = index
 
         return prepared
 
@@ -482,22 +536,127 @@ class HCXAnswerGenerator:
 
 반드시 다음 규칙을 지키십시오.
 
+[기본 원칙]
+
 1. 제공된 SOURCE의 내용만 사용하십시오.
-2. SOURCE에 없는 사실을 추측하거나 만들어내지 마십시오.
+
+2. SOURCE에 없는 사실을 외부 지식이나 상식으로 보완하거나 추측하지 마십시오.
+
 3. 질문에 직접 필요한 내용만 간결하고 명확하게 답하십시오.
-4. 수치, 단위, 기간, 회사명을 정확하게 유지하십시오.
-5. 여러 SOURCE가 같은 사실을 뒷받침하면 필요한 SOURCE만 선택하십시오.
-6. 답변 작성에 실제로 사용한 SOURCE 번호만 used_source_ids에 넣으십시오.
-7. SOURCE 번호 외의 출처 정보(접수번호, 보고서명 등)를 임의로 생성하지 마십시오.
-8. 근거가 충분하지 않으면 이를 명확히 밝히고 used_source_ids는 빈 배열로 반환하십시오.
-9. 반드시 JSON object 하나만 출력하십시오.
-10. Markdown 코드블록은 사용하지 마십시오.
+
+4. 수치, 단위, 기간, 회사명, 사업부문, 제품군, 지역, 지표를 정확하게 유지하십시오.
+
+5. 답변에 필요한 사실이 여러 SOURCE에 나뉘어 있다면 여러 SOURCE를 연결하여 사용할 수 있습니다.
+
+6. 하나의 SOURCE만으로 답을 확정할 수 없다면 필요한 다른 SOURCE의 근거까지 함께 확인하십시오.
+
+
+[출처 선택 규칙]
+
+7. 최종 answer에 포함된 모든 사실은 반드시 하나 이상의 SOURCE에 근거해야 합니다.
+
+8. 구체적인 answer를 생성했다면 실제로 답변 작성에 사용한 SOURCE 번호를
+used_source_ids에 반드시 1개 이상 포함하십시오.
+
+9. 질문에 답하기 위해 여러 SOURCE의 정보를 연결했다면
+그 연결에 실제로 사용한 모든 SOURCE 번호를 used_source_ids에 포함하십시오.
+
+10. used_source_ids에는 실제로 제공된 SOURCE 번호만 넣으십시오.
+
+11. SOURCE 번호 외의 접수번호, 보고서명, 회사명 등의 출처 metadata를
+임의로 생성하지 마십시오.
+
+12. answer에 구체적인 회사명, 기간, 사업부문, 제품군, 수치 또는 사실이 포함되어 있는데
+used_source_ids가 빈 배열인 출력은 허용되지 않습니다.
+
+13. 근거가 충분하지 않아 사용할 SOURCE를 하나도 선택할 수 없다면
+구체적인 수치나 사실을 답하지 마십시오.
+이 경우 반드시 다음과 같이 반환하십시오.
+
+{
+  "answer": "제공된 공시 근거만으로 답변을 확정할 수 없습니다.",
+  "used_source_ids": []
+}
+
+
+[세부 범위 및 표 해석 규칙]
+
+14. 질문에 특정 사업부문, 제품군, 지역, 자산군, 항목, 계약유형 등
+세부 대상이 명시되어 있으면 전체 합계나 다른 하위 항목의 값을
+그 대상의 값으로 답하지 마십시오.
+
+15. 표에 여러 행 또는 열이 있는 경우 숫자 값만 보지 말고,
+반드시 질문의 대상과 해당 숫자가 속한 행 이름 및 열 제목이
+의미적으로 대응하는지 확인하십시오.
+
+16. 질문이 특정 하위 범주를 묻는 경우:
+- 해당 하위 범주에 직접 대응하는 행 또는 문장을 우선 사용하십시오.
+- 전체 "합계", "총계" 값을 해당 하위 범주의 값으로 사용하지 마십시오.
+
+17. 반대로 질문이 전체 값을 묻는 경우
+특정 사업부문이나 일부 항목의 값만을 전체 값으로 답하지 마십시오.
+
+18. 질문의 표현과 공시의 표현이 서로 다를 수 있습니다.
+이 경우 제공된 SOURCE들 안에서 그 둘의 대응관계를 확인할 수 있을 때만
+의미적으로 연결하십시오.
+
+19. 질문의 표현과 공시의 표현 사이의 대응관계가
+SOURCE만으로 충분히 확인되지 않으면 외부 지식을 사용하여 연결하지 마십시오.
+
+20. 여러 SOURCE를 통해 다음과 같은 연결이 확인된다면 사용할 수 있습니다.
+
+질문의 대상
+→ SOURCE A에서 공시상의 사업부문/항목과 대응
+→ SOURCE B에서 해당 사업부문/항목의 수치 확인
+
+이 경우 SOURCE A와 SOURCE B를 모두 used_source_ids에 포함하십시오.
+
+21. 여러 후보 숫자가 존재하면 다음 조건을 순서대로 확인하십시오.
+- 회사가 일치하는가
+- 기간이 일치하는가
+- 질문의 세부 대상이 일치하는가
+- 지표가 일치하는가
+- 단위가 일치하는가
+
+위 조건을 가장 정확하게 만족하는 값만 답하십시오.
+
+22. 질문에 포함된 제한 표현을 임의로 제거하거나 더 넓은 범위로 해석하지 마십시오.
+
+23. 질문이 특정 하위 범주를 묻는데 해당 범주에 직접 대응하는 값을
+SOURCE에서 확정할 수 없는 경우,
+전체 합계나 유사한 다른 값으로 대신 답하지 마십시오.
+
+
+[출력 규칙]
+
+24. 반드시 JSON object 하나만 출력하십시오.
+
+25. Markdown 코드블록은 사용하지 마십시오.
+
+26. 설명, 주석, 머리말, 꼬리말을 JSON 바깥에 추가하지 마십시오.
+
 
 출력 형식:
 
 {
   "answer": "질문에 대한 최종 답변",
   "used_source_ids": [1, 2]
+}
+
+
+올바른 예시:
+
+{
+  "answer": "A사의 2023년 특정 사업부문 설비투자액은 100억 원입니다.",
+  "used_source_ids": [2, 4]
+}
+
+
+잘못된 예시:
+
+{
+  "answer": "A사의 2023년 특정 사업부문 설비투자액은 100억 원입니다.",
+  "used_source_ids": []
 }
 """.strip()
 
@@ -508,7 +667,12 @@ class HCXAnswerGenerator:
 [검색된 근거]
 {context}
 
-위 근거만 사용하여 질문에 답하십시오.
+위 SOURCE들만 사용하여 질문에 답하십시오.
+
+답변에 사용한 근거가 있다면 반드시 그 SOURCE 번호를
+used_source_ids에 포함하십시오.
+
+여러 SOURCE를 연결하여 답했다면 사용한 모든 SOURCE 번호를 포함하십시오.
 """.strip()
 
         return [
@@ -623,7 +787,7 @@ class HCXAnswerGenerator:
             )
 
         # ---------------------------------------------------------------------
-        # 1. 바로 JSON
+        # 1. 그대로 JSON parse
         # ---------------------------------------------------------------------
 
         try:
@@ -672,7 +836,7 @@ class HCXAnswerGenerator:
             pass
 
         # ---------------------------------------------------------------------
-        # 3. 문자열 내부 첫 JSON object 추출
+        # 3. 문자열 내부 JSON object 추출
         # ---------------------------------------------------------------------
 
         start = (
@@ -808,7 +972,7 @@ class HCXAnswerGenerator:
             resolved.append(
                 {
                     "source_id": (
-                        source_id
+                        int(source_id)
                     ),
 
                     "corp_name": (
@@ -911,35 +1075,53 @@ def format_answer_with_sources(
     """
 
     answer = str(
-        result.get("answer")
+        result.get(
+            "answer"
+        )
         or ""
     ).strip()
 
     sources = (
-        result.get("sources")
+        result.get(
+            "sources"
+        )
         or []
     )
 
     if not sources:
         return answer
 
+    # -------------------------------------------------------------------------
     # 동일 공시 중복 제거
+    # -------------------------------------------------------------------------
+
     unique_sources = []
     seen = set()
 
     for source in sources:
 
         dedup_key = (
-            source.get("rcept_no")
-            or source.get("doc_id")
-            or source.get("chunk_id")
+            source.get(
+                "rcept_no"
+            )
+            or source.get(
+                "doc_id"
+            )
+            or source.get(
+                "chunk_id"
+            )
         )
 
         if dedup_key in seen:
             continue
 
-        seen.add(dedup_key)
-        unique_sources.append(source)
+        seen.add(
+            dedup_key
+        )
+
+        unique_sources.append(
+            source
+        )
 
     lines = [
         answer,
@@ -954,39 +1136,56 @@ def format_answer_with_sources(
 
         parts = []
 
-        corp_name = source.get(
-            "corp_name"
+        corp_name = (
+            source.get(
+                "corp_name"
+            )
         )
 
-        report_nm = source.get(
-            "report_nm"
+        report_nm = (
+            source.get(
+                "report_nm"
+            )
         )
 
-        rcept_no = source.get(
-            "rcept_no"
+        rcept_no = (
+            source.get(
+                "rcept_no"
+            )
         )
 
         if corp_name:
             parts.append(
-                str(corp_name)
+                str(
+                    corp_name
+                )
             )
 
         if report_nm:
             parts.append(
-                str(report_nm)
+                str(
+                    report_nm
+                )
             )
 
         if rcept_no:
             parts.append(
-                f"접수번호 {rcept_no}"
+                f"접수번호 "
+                f"{rcept_no}"
             )
 
-        lines.append(
-            f"[{display_index}] "
-            + ", ".join(parts)
-        )
+        if parts:
+            lines.append(
+                f"[{display_index}] "
+                + ", ".join(
+                    parts
+                )
+            )
 
-    return "\n".join(lines)
+    return "\n".join(
+        lines
+    )
+
 
 # =============================================================================
 # SIMPLE TEST
@@ -1003,11 +1202,16 @@ def main() -> None:
                 "periodic_20230512000710_"
                 "file_01_table_0058_part_001"
             ),
+
             "corp_name": (
                 "SK텔레콤"
             ),
+
             "rerank_rank": 1,
-            "rerank_score": 0.81,
+
+            "rerank_score": (
+                0.81
+            ),
 
             "document": (
                 "회사: SK텔레콤\n"
@@ -1020,8 +1224,15 @@ def main() -> None:
                 "report_nm": (
                     "분기보고서 (2023.03)"
                 ),
-                "base_year": 2023,
-                "base_month": 3,
+
+                "base_year": (
+                    2023
+                ),
+
+                "base_month": (
+                    3
+                ),
+
                 "doc_group": (
                     "periodic"
                 ),
@@ -1042,9 +1253,17 @@ def main() -> None:
     )
 
     print()
-    print("=" * 80)
-    print("SOURCE PREPARATION TEST")
-    print("=" * 80)
+    print(
+        "=" * 80
+    )
+
+    print(
+        "SOURCE PREPARATION TEST"
+    )
+
+    print(
+        "=" * 80
+    )
 
     print(
         json.dumps(
@@ -1055,7 +1274,9 @@ def main() -> None:
     )
 
     print()
-    print("=" * 80)
+    print(
+        "=" * 80
+    )
 
     if (
         sources
@@ -1075,9 +1296,10 @@ def main() -> None:
             "preparation error"
         )
 
-    print("=" * 80)
+    print(
+        "=" * 80
+    )
 
 
 if __name__ == "__main__":
     main()
-
