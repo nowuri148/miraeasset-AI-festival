@@ -111,6 +111,32 @@ DEFAULT_LEXICAL_K = 24
 DEFAULT_RERANK_K = 10
 DEFAULT_CONTEXT_CHAR_BUDGET = 30_000
 DEFAULT_CONTEXT_MAX_CHUNKS = 18
+MAX_REPORT_TYPES_PER_REQUEST = 5
+PERIODIC_REPORT_TYPES = (
+    "annual_report",
+    "semiannual_report",
+    "quarterly_report",
+)
+DEFAULT_MIN_RELATIVE_RELEVANCE = 0.65
+DEFAULT_MIN_EVIDENCE_STRENGTH = 0.12
+DEFAULT_MIN_INTENT_FOCUS = 0.20
+DEFAULT_MIN_QUERY_COVERAGE_WITHOUT_ANCHOR = 0.65
+GENERIC_QUERY_STOPWORDS = frozenset(
+    {
+        "관련",
+        "공시",
+        "근거",
+        "내용",
+        "자료",
+        "대한",
+        "통해",
+        "함께",
+        "어떻게",
+        "설명",
+        "확인",
+        "알려줘",
+    }
+)
 RRF_K = 60
 DEFAULT_EVENT_DATE_FALLBACK = "rcept_dt"
 ALLOWED_EVENT_DATE_FALLBACKS = {None, "rcept_dt"}
@@ -180,6 +206,9 @@ class ResolvedRequest:
     graph_expanded_doc_ids: tuple[str, ...]
     date_basis_by_doc_id: tuple[tuple[str, str], ...]
     fallback_seed_doc_ids: tuple[str, ...]
+    report_type_fallback_applied: bool = False
+    report_type_fallback_types: tuple[str, ...] = ()
+    report_type_fallback_document_ids: tuple[str, ...] = ()
 
     def date_basis_for(self, document: DocumentRef) -> str:
         return dict(self.date_basis_by_doc_id).get(
@@ -195,8 +224,11 @@ class Candidate:
     metadata: dict[str, Any]
     request_ids: set[str] = field(default_factory=set)
     channel_ranks: dict[str, int] = field(default_factory=dict)
+    channel_scores: dict[str, float] = field(default_factory=dict)
     request_fusion_scores: dict[str, float] = field(default_factory=dict)
     request_scores: dict[str, float] = field(default_factory=dict)
+    request_evidence_strengths: dict[str, float] = field(default_factory=dict)
+    request_match_signals: dict[str, dict[str, float]] = field(default_factory=dict)
     fusion_score: float = 0.0
     rerank_score: float = 0.0
     is_expanded: bool = False
@@ -451,20 +483,76 @@ class ManifestGraphCatalog:
                 if basis != request.period.date_basis:
                     fallback_seed_ids.add(document.doc_id)
 
+        requested_eligible_count = len(eligible)
+        requested_seed_count = len(seeds)
+        requested_event_fallback_count = len(fallback_seed_ids)
+
+        # 지정한 비정기 공시 유형에서 기간 내 문서를 하나도 찾지 못한
+        # 경우에만 정기보고서로 범위를 넓힌다. 모든 비정기 유형에 같은
+        # 규칙을 적용하고, fallback 문서는 사업연도로 판정한다.
+        report_type_fallback_applied = False
+        report_type_fallback_types: tuple[str, ...] = ()
+        report_type_fallback_document_ids: tuple[str, ...] = ()
+        if not seeds and report_types.isdisjoint(PERIODIC_REPORT_TYPES):
+            fallback_period = _as_base_year_period(request.period)
+            fallback_eligible = [
+                document
+                for document in self.documents
+                if document.corp_code in company_codes
+                and document.normalized_report_type in PERIODIC_REPORT_TYPES
+            ]
+            fallback_seeds = [
+                document
+                for document in fallback_eligible
+                if _document_matches_period(
+                    document,
+                    fallback_period,
+                    date_basis="base_year",
+                )
+            ]
+            if fallback_seeds:
+                eligible = fallback_eligible
+                seeds = fallback_seeds
+                date_basis_by_doc_id = {
+                    document.doc_id: "base_year" for document in fallback_seeds
+                }
+                fallback_seed_ids.clear()
+                report_type_fallback_applied = True
+                report_type_fallback_types = tuple(
+                    report_type
+                    for report_type in PERIODIC_REPORT_TYPES
+                    if any(
+                        document.normalized_report_type == report_type
+                        for document in fallback_seeds
+                    )
+                )
+                report_type_fallback_document_ids = tuple(
+                    sorted(document.doc_id for document in fallback_seeds)
+                )
+
         _debug_print(
             debug_enabled,
             "SCOPE",
             f"{request.request_id} scope={scope.scope_type}:{list(scope.scope_values)} "
             f"companies={len(company_codes):,} report_types={list(request.normalized_report_types)} "
-            f"eligible_documents={len(eligible):,}",
+            f"eligible_documents={requested_eligible_count:,}",
         )
         _debug_print(
             debug_enabled,
             "PERIOD",
             f"{request.request_id} requested_basis={request.period.date_basis} "
             f"period={request.period.start}..{request.period.end} "
-            f"matched={len(seeds):,} fallback_to_rcept_dt={len(fallback_seed_ids):,}",
+            f"matched={requested_seed_count:,} "
+            f"fallback_to_rcept_dt={requested_event_fallback_count:,}",
         )
+        if report_type_fallback_applied:
+            _debug_print(
+                debug_enabled,
+                "REPORT_FALLBACK",
+                f"{request.request_id} requested={list(request.normalized_report_types)} "
+                f"fallback={list(report_type_fallback_types)} "
+                f"matched={len(seeds):,} date_basis=base_year",
+            )
 
         expanded_ids: set[str] = set()
         documents = list(seeds)
@@ -487,10 +575,14 @@ class ManifestGraphCatalog:
 
         for document in documents:
             if document.doc_id not in date_basis_by_doc_id:
-                basis = _effective_document_date_basis(
-                    document,
-                    requested_basis=request.period.date_basis,
-                    event_date_fallback=self.event_date_fallback,
+                basis = (
+                    "base_year"
+                    if report_type_fallback_applied and document.base_year is not None
+                    else _effective_document_date_basis(
+                        document,
+                        requested_basis=request.period.date_basis,
+                        event_date_fallback=self.event_date_fallback,
+                    )
                 )
                 if basis is not None:
                     date_basis_by_doc_id[document.doc_id] = basis
@@ -523,6 +615,9 @@ class ManifestGraphCatalog:
             ),
             date_basis_by_doc_id=tuple(sorted(date_basis_by_doc_id.items())),
             fallback_seed_doc_ids=tuple(sorted(fallback_seed_ids)),
+            report_type_fallback_applied=report_type_fallback_applied,
+            report_type_fallback_types=report_type_fallback_types,
+            report_type_fallback_document_ids=report_type_fallback_document_ids,
         )
 
     def _expand_correction_components(self, seed_ids: set[str]) -> set[str]:
@@ -579,6 +674,12 @@ def execute_search_plan(
     rerank_k_per_document_request: int = DEFAULT_RERANK_K,
     context_char_budget: int = DEFAULT_CONTEXT_CHAR_BUDGET,
     context_max_chunks: int = DEFAULT_CONTEXT_MAX_CHUNKS,
+    min_relative_relevance: float = DEFAULT_MIN_RELATIVE_RELEVANCE,
+    min_evidence_strength: float = DEFAULT_MIN_EVIDENCE_STRENGTH,
+    min_intent_focus: float = DEFAULT_MIN_INTENT_FOCUS,
+    min_query_coverage_without_anchor: float = (
+        DEFAULT_MIN_QUERY_COVERAGE_WITHOUT_ANCHOR
+    ),
     debug: bool = False,
 ) -> ContextBundle:
     question = _clean(question)
@@ -620,6 +721,10 @@ def execute_search_plan(
         expanded,
         char_budget=context_char_budget,
         max_chunks=context_max_chunks,
+        min_relative_relevance=min_relative_relevance,
+        min_evidence_strength=min_evidence_strength,
+        min_intent_focus=min_intent_focus,
+        min_query_coverage_without_anchor=min_query_coverage_without_anchor,
         debug=debug,
     )
 
@@ -653,9 +758,10 @@ def validate_and_normalize_search_plan(plan: dict[str, Any]) -> PreparedSearchPl
             raw.get("normalized_report_types"),
             f"{request_id}.normalized_report_types",
         )
-        if not 1 <= len(report_types) <= 5:
+        if not 1 <= len(report_types) <= MAX_REPORT_TYPES_PER_REQUEST:
             raise ValueError(
-                f"{request_id}.normalized_report_types must contain 1 to 5 values"
+                f"{request_id}.normalized_report_types must contain 1 to "
+                f"{MAX_REPORT_TYPES_PER_REQUEST} values"
             )
         invalid = sorted(set(report_types) - ALLOWED_REPORT_TYPES)
         if invalid:
@@ -701,6 +807,12 @@ def retrieve_candidates(
     candidates: list[Candidate] = []
     for item in resolved:
         request = item.request
+        content_query = _content_query(request)
+        _debug_print(
+            debug,
+            "QUERY",
+            f"{request.request_id} content_query={content_query!r}",
+        )
         groups: dict[tuple[str, str], list[DocumentRef]] = defaultdict(list)
         for document in item.documents:
             groups[
@@ -711,9 +823,13 @@ def retrieve_candidates(
             ].append(document)
         for group_index, documents in enumerate(groups.values(), start=1):
             doc_ids = tuple(document.doc_id for document in documents)
-            dense = store.dense_search(query=request.query, doc_ids=doc_ids, top_k=dense_k)
+            dense = store.dense_search(
+                query=content_query,
+                doc_ids=doc_ids,
+                top_k=dense_k,
+            )
             lexical = store.lexical_search(
-                query=request.query,
+                query=content_query,
                 exact_keywords=request.exact_keywords,
                 doc_ids=doc_ids,
                 top_k=lexical_k,
@@ -757,6 +873,10 @@ def fuse_and_deduplicate_candidates(
             existing.channel_ranks[channel] = min(
                 rank, existing.channel_ranks.get(channel, rank)
             )
+        for channel, score in candidate.channel_scores.items():
+            existing.channel_scores[channel] = max(
+                score, existing.channel_scores.get(channel, -math.inf)
+            )
 
     content_seen: dict[tuple[str, str], Candidate] = {}
     kept: list[Candidate] = []
@@ -770,6 +890,10 @@ def fuse_and_deduplicate_candidates(
             for channel, rank in candidate.channel_ranks.items():
                 original.channel_ranks[channel] = min(
                     rank, original.channel_ranks.get(channel, rank)
+                )
+            for channel, score in candidate.channel_scores.items():
+                original.channel_scores[channel] = max(
+                    score, original.channel_scores.get(channel, -math.inf)
                 )
             continue
         content_seen[key] = candidate
@@ -809,6 +933,65 @@ def rerank_candidates(
         ) or 1.0
         for request_id in requests
     }
+
+    # 요청별 후보군에서 실제로 등장하는 표현에만 IDF 가중치를 준다.
+    # 따라서 검색계획이 존재하지 않는 키워드를 몇 개 포함하더라도 모든
+    # 후보의 점수가 일괄적으로 낮아지지 않는다.
+    request_candidates = {
+        request_id: [
+            candidate for candidate in candidates if request_id in candidate.request_ids
+        ]
+        for request_id in requests
+    }
+    query_terms_by_request: dict[str, tuple[str, ...]] = {}
+    query_weights_by_request: dict[str, dict[str, float]] = {}
+    keyword_weights_by_request: dict[str, dict[str, float]] = {}
+    channel_ranges_by_request: dict[
+        str, dict[str, tuple[float, float]]
+    ] = {}
+    intent_density_ranges_by_request: dict[str, tuple[float, float]] = {}
+    for request_id, request in requests.items():
+        query_terms = _content_query_terms(request)
+        candidate_haystacks = [
+            _candidate_haystack(candidate)
+            for candidate in request_candidates[request_id]
+        ]
+        query_terms_by_request[request_id] = query_terms
+        query_weights_by_request[request_id] = _idf_expression_weights(
+            query_terms,
+            candidate_haystacks,
+            include_absent=True,
+        )
+        keyword_weights_by_request[request_id] = _idf_expression_weights(
+            tuple(keyword.lower() for keyword in request.exact_keywords),
+            candidate_haystacks,
+        )
+        density_values = [
+            _expression_density(
+                _candidate_haystack(candidate),
+                (*query_terms, *tuple(keyword.lower() for keyword in request.exact_keywords)),
+            )
+            for candidate in request_candidates[request_id]
+        ]
+        if density_values:
+            intent_density_ranges_by_request[request_id] = (
+                min(density_values),
+                max(density_values),
+            )
+        channel_ranges: dict[str, tuple[float, float]] = {}
+        for channel_name in ("dense", "lexical"):
+            values = [
+                score
+                for candidate in request_candidates[request_id]
+                for channel, score in candidate.channel_scores.items()
+                if channel.startswith(f"{request_id}:")
+                and channel.endswith(f":{channel_name}")
+                and math.isfinite(score)
+            ]
+            if values:
+                channel_ranges[channel_name] = (min(values), max(values))
+        channel_ranges_by_request[request_id] = channel_ranges
+
     for candidate in candidates:
         text = candidate.text.lower()
         metadata = candidate.metadata
@@ -829,18 +1012,124 @@ def rerank_candidates(
             quality -= 0.5
 
         candidate.request_scores = {}
+        candidate.request_evidence_strengths = {}
+        candidate.request_match_signals = {}
         for request_id in candidate.request_ids:
             request = requests[request_id]
-            score = candidate.request_fusion_scores.get(request_id, 0.0) / maxima[request_id]
-            query_terms = tuple(dict.fromkeys(_tokenize(request.query)))
-            if query_terms:
-                score += 0.28 * sum(term in text for term in query_terms) / len(query_terms)
-                score += 0.12 * sum(term in title for term in query_terms) / len(query_terms)
+            fusion = (
+                candidate.request_fusion_scores.get(request_id, 0.0)
+                / maxima[request_id]
+            )
+            query_terms = query_terms_by_request[request_id]
+            query_weights = query_weights_by_request[request_id]
+            keyword_weights = keyword_weights_by_request[request_id]
+            query_text = _weighted_expression_coverage(
+                query_terms, text, query_weights
+            )
+            query_title = _weighted_expression_coverage(
+                query_terms, title, query_weights
+            )
+            exact_text = _weighted_expression_coverage(
+                tuple(keyword.lower() for keyword in request.exact_keywords),
+                text,
+                keyword_weights,
+            )
+            exact_title = _weighted_expression_coverage(
+                tuple(keyword.lower() for keyword in request.exact_keywords),
+                title,
+                keyword_weights,
+            )
+            exact_frequency = _weighted_expression_frequency(
+                tuple(keyword.lower() for keyword in request.exact_keywords),
+                text,
+                keyword_weights,
+            )
+            heading_precision = _heading_intent_precision(
+                metadata,
+                (*query_terms, *tuple(keyword.lower() for keyword in request.exact_keywords)),
+            )
+            has_dense = any(
+                channel.startswith(f"{request_id}:") and channel.endswith(":dense")
+                for channel in candidate.channel_ranks
+            )
+            has_lexical = any(
+                channel.startswith(f"{request_id}:") and channel.endswith(":lexical")
+                for channel in candidate.channel_ranks
+            )
+            channel_agreement = 1.0 if has_dense and has_lexical else 0.35
+            dense_strength = _candidate_channel_strength(
+                candidate,
+                request_id,
+                "dense",
+                channel_ranges_by_request[request_id].get("dense"),
+            )
+            lexical_strength = _candidate_channel_strength(
+                candidate,
+                request_id,
+                "lexical",
+                channel_ranges_by_request[request_id].get("lexical"),
+            )
+            raw_intent_density = _expression_density(
+                _candidate_haystack(candidate),
+                (*query_terms, *tuple(keyword.lower() for keyword in request.exact_keywords)),
+            )
+            intent_density = _normalize_range_value(
+                raw_intent_density,
+                intent_density_ranges_by_request.get(request_id),
+            )
+
+            score = (
+                0.18 * fusion
+                + 0.13 * dense_strength
+                + 0.12 * lexical_strength
+                + 0.12 * query_text
+                + 0.06 * query_title
+                + 0.12 * exact_text
+                + 0.06 * exact_title
+                + 0.08 * exact_frequency
+                + 0.14 * intent_density
+                + 0.03 * channel_agreement
+                + 0.04 * heading_precision
+                + quality
+            )
             if request.exact_keywords:
-                keywords = tuple(keyword.lower() for keyword in request.exact_keywords)
-                score += 0.55 * sum(keyword in text for keyword in keywords) / len(keywords)
-                score += 0.22 * sum(keyword in title for keyword in keywords) / len(keywords)
-            candidate.request_scores[request_id] = score + quality
+                evidence_strength = (
+                    0.15 * exact_text
+                    + 0.15 * exact_frequency
+                    + 0.08 * exact_title
+                    + 0.12 * query_text
+                    + 0.04 * query_title
+                    + 0.13 * dense_strength
+                    + 0.08 * lexical_strength
+                    + 0.20 * intent_density
+                    + 0.05 * channel_agreement
+                )
+            else:
+                evidence_strength = (
+                    0.25 * query_text
+                    + 0.08 * query_title
+                    + 0.08 * heading_precision
+                    + 0.22 * dense_strength
+                    + 0.17 * lexical_strength
+                    + 0.15 * intent_density
+                    + 0.05 * channel_agreement
+                )
+            candidate.request_scores[request_id] = score
+            candidate.request_evidence_strengths[request_id] = evidence_strength
+            candidate.request_match_signals[request_id] = {
+                "fusion": fusion,
+                "dense_strength": dense_strength,
+                "lexical_strength": lexical_strength,
+                "intent_density": intent_density,
+                "query_text_coverage": query_text,
+                "query_title_coverage": query_title,
+                "exact_text_coverage": exact_text,
+                "exact_title_coverage": exact_title,
+                "exact_frequency": exact_frequency,
+                "heading_precision": heading_precision,
+                "channel_agreement": channel_agreement,
+                "evidence_strength": evidence_strength,
+            }
         candidate.rerank_score = max(candidate.request_scores.values(), default=float("-inf"))
 
     grouped: dict[tuple[str, str], list[Candidate]] = defaultdict(list)
@@ -903,6 +1192,11 @@ def expand_context(
                 request_ids=set(seed.request_ids),
                 request_fusion_scores={key: value * 0.6 for key, value in seed.request_fusion_scores.items()},
                 request_scores={key: value * 0.78 for key, value in seed.request_scores.items()},
+                request_evidence_strengths=dict(seed.request_evidence_strengths),
+                request_match_signals={
+                    key: dict(value)
+                    for key, value in seed.request_match_signals.items()
+                },
                 fusion_score=seed.fusion_score * 0.6,
                 rerank_score=seed.rerank_score * 0.78,
                 is_expanded=True,
@@ -924,10 +1218,26 @@ def pack_context(
     *,
     char_budget: int,
     max_chunks: int,
+    min_relative_relevance: float = DEFAULT_MIN_RELATIVE_RELEVANCE,
+    min_evidence_strength: float = DEFAULT_MIN_EVIDENCE_STRENGTH,
+    min_intent_focus: float = DEFAULT_MIN_INTENT_FOCUS,
+    min_query_coverage_without_anchor: float = (
+        DEFAULT_MIN_QUERY_COVERAGE_WITHOUT_ANCHOR
+    ),
     debug: bool = False,
 ) -> ContextBundle:
     if char_budget <= 0 or max_chunks <= 0:
         raise ValueError("context limits must be positive")
+    if not 0.0 <= min_relative_relevance <= 1.0:
+        raise ValueError("min_relative_relevance must be between 0 and 1")
+    if not 0.0 <= min_evidence_strength <= 1.0:
+        raise ValueError("min_evidence_strength must be between 0 and 1")
+    if not 0.0 <= min_intent_focus <= 1.0:
+        raise ValueError("min_intent_focus must be between 0 and 1")
+    if not 0.0 <= min_query_coverage_without_anchor <= 1.0:
+        raise ValueError(
+            "min_query_coverage_without_anchor must be between 0 and 1"
+        )
     selected: list[Candidate] = []
     selected_ids: set[str] = set()
     used_chars = 0
@@ -944,32 +1254,126 @@ def pack_context(
         used_chars += size
         return True
 
+    best_request_scores: dict[str, float] = {}
+    for item in resolved:
+        request_id = item.request.request_id
+        best_request_scores[request_id] = max(
+            (
+                candidate.request_scores.get(request_id, -math.inf)
+                for candidate in candidates
+                if request_id in candidate.request_ids
+            ),
+            default=-math.inf,
+        )
+
+    request_has_active_anchor = {
+        item.request.request_id: any(
+            candidate.request_match_signals.get(
+                item.request.request_id, {}
+            ).get("exact_text_coverage", 0.0)
+            > 0.0
+            or candidate.request_match_signals.get(
+                item.request.request_id, {}
+            ).get("exact_title_coverage", 0.0)
+            > 0.0
+            for candidate in candidates
+        )
+        for item in resolved
+    }
+
+    def qualifies(candidate: Candidate, request_id: str) -> bool:
+        score = candidate.request_scores.get(request_id, -math.inf)
+        best = best_request_scores.get(request_id, -math.inf)
+        evidence = candidate.request_evidence_strengths.get(request_id, 0.0)
+        if not math.isfinite(score) or not math.isfinite(best) or best <= 0.0:
+            return False
+        signals = candidate.request_match_signals.get(request_id, {})
+        exact_anchor = max(
+            signals.get("exact_text_coverage", 0.0),
+            signals.get("exact_title_coverage", 0.0),
+        )
+        query_alignment = max(
+            signals.get("query_text_coverage", 0.0),
+            signals.get("query_title_coverage", 0.0),
+        )
+        anchor_or_query = (
+            exact_anchor > 0.0
+            or not request_has_active_anchor.get(request_id, False)
+            and query_alignment > 0.0
+            or query_alignment >= min_query_coverage_without_anchor
+        )
+        focused = (
+            signals.get("intent_density", 0.0) >= min_intent_focus
+            or signals.get("exact_title_coverage", 0.0) > 0.0
+            or signals.get("query_title_coverage", 0.0) > 0.0
+            or signals.get("heading_precision", 0.0) >= min_intent_focus
+        )
+        return (
+            score >= best * min_relative_relevance
+            and evidence >= min_evidence_strength
+            and anchor_or_query
+            and focused
+        )
+
+    qualified_pools: dict[str, list[Candidate]] = {}
+    for item in resolved:
+        request_id = item.request.request_id
+        pool = [
+            candidate
+            for candidate in candidates
+            if request_id in candidate.request_ids and qualifies(candidate, request_id)
+        ]
+        pool.sort(
+            key=lambda candidate: candidate.request_scores.get(
+                request_id, -math.inf
+            ),
+            reverse=True,
+        )
+        qualified_pools[request_id] = pool
+
     # 검색 요청별 최소 한 개의 근거를 먼저 확보한다.
     for item in resolved:
-        pool = [candidate for candidate in candidates if item.request.request_id in candidate.request_ids]
+        pool = qualified_pools[item.request.request_id]
         if pool:
-            add(max(pool, key=lambda candidate: candidate.request_scores.get(item.request.request_id, -math.inf)))
+            add(pool[0])
 
     # 요청별 시점 버킷을 먼저 확보해 비교 연도·반기 누락을 막는다.
     period_pools: dict[tuple[str, str], list[Candidate]] = defaultdict(list)
     company_period_pools: dict[tuple[str, str, str], list[Candidate]] = defaultdict(list)
     for item in resolved:
         docs = {document.doc_id: document for document in item.documents}
-        for candidate in candidates:
+        for candidate in qualified_pools[item.request.request_id]:
             document = docs.get(candidate.doc_id)
-            if document and item.request.request_id in candidate.request_ids:
+            if document:
                 period_bucket = _period_bucket(document, item.date_basis_for(document))
                 period_pools[(item.request.request_id, period_bucket)].append(candidate)
                 company_period_pools[
                     (item.request.request_id, document.corp_name, period_bucket)
                 ].append(candidate)
-    for pool in period_pools.values():
-        add(max(pool, key=lambda candidate: candidate.rerank_score))
+    for (request_id, _), pool in period_pools.items():
+        add(
+            max(
+                pool,
+                key=lambda candidate: candidate.request_scores.get(
+                    request_id, -math.inf
+                ),
+            )
+        )
 
     # 범위가 넓을 때는 점수가 높은 서로 다른 회사·시점 근거 일부를 확보한다.
     diversity_candidates = sorted(
         (
-            max(pool, key=lambda candidate: candidate.rerank_score)
+            max(
+                pool,
+                key=lambda candidate: max(
+                    (
+                        candidate.request_scores.get(request_id, -math.inf)
+                        for request_id in candidate.request_ids
+                        if qualifies(candidate, request_id)
+                    ),
+                    default=-math.inf,
+                ),
+            )
             for pool in company_period_pools.values()
         ),
         key=lambda candidate: candidate.rerank_score,
@@ -984,21 +1388,7 @@ def pack_context(
             diversity_added += 1
 
     # 남은 예산은 요청별 순환 방식으로 채운다.
-    request_pools = {}
-    for item in resolved:
-        request_id = item.request.request_id
-        pool = [
-            candidate
-            for candidate in candidates
-            if request_id in candidate.request_ids
-        ]
-        pool.sort(
-            key=lambda candidate: candidate.request_scores.get(
-                request_id, float("-inf")
-            ),
-            reverse=True,
-        )
-        request_pools[request_id] = pool
+    request_pools = qualified_pools
     positions = {request_id: 0 for request_id in request_pools}
     while len(selected) < max_chunks:
         progressed = False
@@ -1023,11 +1413,30 @@ def pack_context(
             "text": candidate.text,
             "metadata": candidate.metadata,
             "retrieval": {
-                "request_ids": sorted(candidate.request_ids),
+                "request_ids": sorted(
+                    request_id
+                    for request_id in candidate.request_ids
+                    if qualifies(candidate, request_id)
+                ),
                 "fusion_score": round(candidate.fusion_score, 6),
                 "rerank_score": round(candidate.rerank_score, 6),
                 "request_scores": {
                     key: round(value, 6) for key, value in sorted(candidate.request_scores.items())
+                },
+                "evidence_strengths": {
+                    key: round(value, 6)
+                    for key, value in sorted(
+                        candidate.request_evidence_strengths.items()
+                    )
+                },
+                "match_signals": {
+                    request_id: {
+                        key: round(value, 6)
+                        for key, value in sorted(signals.items())
+                    }
+                    for request_id, signals in sorted(
+                        candidate.request_match_signals.items()
+                    )
                 },
                 "is_expanded": candidate.is_expanded,
                 "parent_chunk_id": candidate.parent_chunk_id,
@@ -1045,13 +1454,36 @@ def pack_context(
     diagnostics = []
     for item in resolved:
         request_id = item.request.request_id
-        selected_count = sum(request_id in candidate.request_ids for candidate in selected)
+        selected_count = sum(qualifies(candidate, request_id) for candidate in selected)
         candidate_count = sum(request_id in candidate.request_ids for candidate in candidates)
+        qualified_count = len(qualified_pools[request_id])
+        available_periods = {
+            _period_bucket(document, item.date_basis_for(document))
+            for document in item.documents
+        }
+        selected_periods = {
+            _period_bucket(document, item.date_basis_for(document))
+            for document in item.documents
+            for candidate in selected
+            if candidate.doc_id == document.doc_id
+            and qualifies(candidate, request_id)
+        }
+        missing_periods = sorted(available_periods - selected_periods)
+        if not item.documents:
+            status = "no_document"
+        elif not qualified_count:
+            status = "insufficient_relevance"
+        elif not selected_count:
+            status = "no_chunk_selected"
+        elif missing_periods:
+            status = "partial"
+        else:
+            status = "covered"
         diagnostics.append(
             {
                 "request_id": request_id,
                 "query": item.request.query,
-                "status": "covered" if selected_count else "no_chunk_selected" if item.documents else "no_document",
+                "status": status,
                 "seed_document_ids": [document.doc_id for document in item.seed_documents],
                 "resolved_document_ids": [document.doc_id for document in item.documents],
                 "graph_expanded_document_ids": list(item.graph_expanded_doc_ids),
@@ -1061,15 +1493,32 @@ def pack_context(
                 ),
                 "event_date_fallback_applied": bool(item.fallback_seed_doc_ids),
                 "event_date_fallback_seed_document_ids": list(item.fallback_seed_doc_ids),
+                "report_type_fallback_applied": item.report_type_fallback_applied,
+                "report_type_fallback_types": list(item.report_type_fallback_types),
+                "report_type_fallback_document_ids": list(
+                    item.report_type_fallback_document_ids
+                ),
                 "candidate_chunks": candidate_count,
+                "qualified_candidate_chunks": qualified_count,
                 "selected_chunks": selected_count,
+                "available_period_buckets": sorted(available_periods),
+                "covered_period_buckets": sorted(selected_periods),
+                "missing_period_buckets": missing_periods,
+                "relevance_threshold": {
+                    "relative_to_request_best": min_relative_relevance,
+                    "minimum_evidence_strength": min_evidence_strength,
+                    "minimum_intent_focus": min_intent_focus,
+                    "minimum_query_coverage_without_anchor": (
+                        min_query_coverage_without_anchor
+                    ),
+                },
             }
         )
     covered_buckets: set[str] = set()
     for item in resolved:
         documents = {document.doc_id: document for document in item.documents}
         for candidate in selected:
-            if item.request.request_id not in candidate.request_ids:
+            if not qualifies(candidate, item.request.request_id):
                 continue
             document = documents.get(candidate.doc_id)
             if document:
@@ -1081,7 +1530,16 @@ def pack_context(
         documents=tuple(sorted(all_documents.values(), key=_document_sort_key)),
         chunks=chunks,
         total_chars=sum(len(chunk["text"]) for chunk in chunks),
-        covered_request_ids=tuple(sorted({request_id for candidate in selected for request_id in candidate.request_ids})),
+        covered_request_ids=tuple(
+            sorted(
+                {
+                    request_id
+                    for candidate in selected
+                    for request_id in candidate.request_ids
+                    if qualifies(candidate, request_id)
+                }
+            )
+        ),
         covered_period_buckets=tuple(sorted(covered_buckets)),
         request_diagnostics=tuple(diagnostics),
     )
@@ -1151,10 +1609,11 @@ class JsonlHybridChunkStore:
 class CompanyChromaHybridChunkStore:
     """기존 회사별 Chroma DB를 사용하는 운영용 하이브리드 저장소.
 
-    Dense 검색은 저장소의 ``VectorRetriever``와 동일하게 회사 컬렉션에서
-    where 없이 HNSW 검색한 뒤, 문서 범위를 Python에서 필터링한다. 후보가
-    부족하면 검색 개수를 단계적으로 늘린다. 키워드 검색은 문서 범위의
-    청크만 읽어 로컬 BM25로 수행한다.
+    Dense 검색은 확정된 doc_id를 Chroma ``where`` 조건으로 먼저 제한한다.
+    설치된 Chroma 버전이나 기존 메타데이터가 필터 검색을 지원하지 않는
+    경우에만 회사 컬렉션 전체 HNSW 후보를 단계적으로 넓히는 방식으로
+    안전하게 되돌아간다. 키워드 검색은 문서 범위의 청크만 읽어 로컬
+    BM25로 수행한다.
     """
 
     def __init__(
@@ -1296,6 +1755,12 @@ class CompanyChromaHybridChunkStore:
             window=window,
         )
 
+    def get_document_rows(
+        self, doc_ids: Iterable[str]
+    ) -> list[dict[str, Any]]:
+        """진단 도구에서 확정 문서의 원문 청크를 읽는 공개 진입점."""
+        return list(self._get_document_rows(tuple(doc_ids)))
+
     def _dense_search_company(
         self,
         *,
@@ -1310,6 +1775,36 @@ class CompanyChromaHybridChunkStore:
         collection_count = int(self.retriever.get_collection_count(corp_name))
         if collection_count <= 0:
             return []
+
+        try:
+            result = collection.query(
+                query_embeddings=[query_embedding],
+                where=_chroma_value_filter("doc_id", sorted(allowed_doc_ids)),
+                n_results=min(top_k, collection_count),
+                include=["documents", "metadatas", "distances"],
+            )
+            prefiltered = [
+                row
+                for row in self._parse_query_result(result)
+                if _clean((row.get("metadata") or {}).get("doc_id"))
+                in allowed_doc_ids
+            ]
+            _debug_print(
+                self.debug,
+                "DENSE",
+                f"company={corp_name} prefiltered=true "
+                f"allowed_documents={len(allowed_doc_ids):,} "
+                f"matched={len(prefiltered):,}",
+            )
+            if prefiltered:
+                return prefiltered[:top_k]
+        except Exception as exc:
+            _debug_print(
+                self.debug,
+                "DENSE",
+                f"company={corp_name} prefilter_failed={type(exc).__name__}; "
+                "using adaptive fallback",
+            )
 
         sizes = sorted(
             {
@@ -1637,6 +2132,21 @@ def _normalize_period(raw: Any, date_basis: str, request_id: str) -> PeriodSpec:
     return PeriodSpec(start, end, date_basis, lower, upper)
 
 
+def _as_base_year_period(period: PeriodSpec) -> PeriodSpec:
+    """날짜 기반 요청을 정기보고서 fallback용 사업연도 범위로 바꾼다."""
+    if period.date_basis == "base_year":
+        return period
+    start_year = int(period.start[:4])
+    end_year = int(period.end[:4])
+    return PeriodSpec(
+        start=str(start_year),
+        end=str(end_year),
+        date_basis="base_year",
+        lower_key=start_year * 100 + 1,
+        upper_key=end_year * 100 + 12,
+    )
+
+
 def _is_day_value(value: str) -> bool:
     match = PERIOD_RE.fullmatch(value)
     return bool(match and match.group("day"))
@@ -1806,6 +2316,7 @@ def _ranked_rows_to_candidates(
             metadata=dict(row.get("metadata") or {}),
             request_ids={request_id},
             channel_ranks={channel: rank},
+            channel_scores={channel: float(row.get("score") or 0.0)},
         )
         for rank, row in enumerate(rows, start=1)
         if _clean(row.get("chunk_id")) and _clean(row.get("text"))
@@ -1913,6 +2424,181 @@ def _lru_put(
 
 def _tokenize(value: str) -> list[str]:
     return [token.lower() for token in re.findall(r"[가-힣A-Za-z0-9%.-]+", value) if len(token) > 1]
+
+
+def _content_query_terms(request: RetrievalRequest) -> tuple[str, ...]:
+    scope_tokens = {
+        token
+        for value in request.company_scope.scope_values
+        for token in _tokenize(value)
+    }
+    return tuple(
+        dict.fromkeys(
+            term
+            for term in _tokenize(request.query)
+            if term not in GENERIC_QUERY_STOPWORDS
+            and not re.fullmatch(r"\d{4}(?:년)?", term)
+            and not any(scope_token in term for scope_token in scope_tokens)
+        )
+    )
+
+
+def _content_query(request: RetrievalRequest) -> str:
+    expressions = _unique_strings(
+        (*_content_query_terms(request), *request.exact_keywords)
+    )
+    return " ".join(expressions) or request.query
+
+
+def _candidate_haystack(candidate: Candidate) -> str:
+    metadata = candidate.metadata
+    return " ".join(
+        (
+            candidate.text,
+            _clean(metadata.get("table_title")),
+            _clean(metadata.get("section_path")),
+            _clean(metadata.get("subtitle")),
+        )
+    ).lower()
+
+
+def _candidate_channel_strength(
+    candidate: Candidate,
+    request_id: str,
+    channel_name: str,
+    value_range: tuple[float, float] | None,
+) -> float:
+    values = [
+        score
+        for channel, score in candidate.channel_scores.items()
+        if channel.startswith(f"{request_id}:")
+        and channel.endswith(f":{channel_name}")
+        and math.isfinite(score)
+    ]
+    if not values or value_range is None:
+        return 0.0
+    value = max(values)
+    minimum, maximum = value_range
+    if math.isclose(minimum, maximum):
+        return 1.0
+    return max(0.0, min(1.0, (value - minimum) / (maximum - minimum)))
+
+
+def _idf_expression_weights(
+    expressions: Iterable[str],
+    haystacks: Iterable[str],
+    *,
+    include_absent: bool = False,
+) -> dict[str, float]:
+    unique = tuple(
+        dict.fromkeys(
+            expression.lower().strip()
+            for expression in expressions
+            if expression and expression.strip()
+        )
+    )
+    documents = tuple(haystacks)
+    size = len(documents)
+    if not unique or not size:
+        return {}
+    weights: dict[str, float] = {}
+    for expression in unique:
+        frequency = sum(expression in document for document in documents)
+        if frequency or include_absent:
+            weights[expression] = math.log((size + 1) / (frequency + 1)) + 1.0
+    return weights
+
+
+def _expression_density(haystack: str, expressions: Iterable[str]) -> float:
+    unique = tuple(
+        dict.fromkeys(
+            expression.lower().strip()
+            for expression in expressions
+            if expression and expression.strip()
+        )
+    )
+    if not unique:
+        return 0.0
+    occurrences = sum(haystack.count(expression) for expression in unique)
+    return occurrences / max(len(_tokenize(haystack)), 1)
+
+
+def _normalize_range_value(
+    value: float,
+    value_range: tuple[float, float] | None,
+) -> float:
+    if value_range is None:
+        return 0.0
+    minimum, maximum = value_range
+    if math.isclose(minimum, maximum):
+        return 1.0 if value > 0.0 else 0.0
+    return max(0.0, min(1.0, (value - minimum) / (maximum - minimum)))
+
+
+def _weighted_expression_coverage(
+    expressions: Iterable[str],
+    haystack: str,
+    weights: Mapping[str, float],
+) -> float:
+    normalized = tuple(
+        dict.fromkeys(expression.lower().strip() for expression in expressions)
+    )
+    total = sum(weights.get(expression, 0.0) for expression in normalized)
+    if total <= 0.0:
+        return 0.0
+    matched = sum(
+        weights.get(expression, 0.0)
+        for expression in normalized
+        if expression in haystack
+    )
+    return matched / total
+
+
+def _weighted_expression_frequency(
+    expressions: Iterable[str],
+    haystack: str,
+    weights: Mapping[str, float],
+) -> float:
+    normalized = tuple(
+        dict.fromkeys(expression.lower().strip() for expression in expressions)
+    )
+    total = sum(weights.get(expression, 0.0) for expression in normalized)
+    if total <= 0.0:
+        return 0.0
+    repeated = sum(
+        weights.get(expression, 0.0) * min(haystack.count(expression), 3) / 3
+        for expression in normalized
+    )
+    return repeated / total
+
+
+def _heading_intent_precision(
+    metadata: Mapping[str, Any],
+    intent_expressions: Iterable[str],
+) -> float:
+    heading = " ".join(
+        (
+            _clean(metadata.get("table_title")),
+            _clean(metadata.get("subtitle")),
+        )
+    ).lower()
+    heading_terms = tuple(dict.fromkeys(_tokenize(heading)))
+    if not heading_terms:
+        return 0.0
+    intent_terms = tuple(
+        dict.fromkeys(
+            token
+            for expression in intent_expressions
+            for token in _tokenize(expression)
+        )
+    )
+    if not intent_terms:
+        return 0.0
+    matched = sum(
+        any(term in intent or intent in term for intent in intent_terms)
+        for term in heading_terms
+    )
+    return matched / len(heading_terms)
 
 
 def _unique_strings(values: Iterable[Any]) -> tuple[str, ...]:
