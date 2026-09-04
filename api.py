@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+from collections import OrderedDict
 from typing import Any
 
 from fastapi import FastAPI, Query
@@ -68,66 +69,221 @@ def normalize_text(
     return re.sub(
         r"\s+",
         " ",
-        str(value or "").strip(),
+        str(
+            value
+            or ""
+        ).strip(),
     )
-
-
-def extract_numbers(
-    text: str,
-) -> set[str]:
-    """
-    답변에 등장한 숫자를 근거 행 탐색에 활용한다.
-
-    예:
-    3,249,918백만원
-    → 3249918
-    """
-
-    values: set[str] = set()
-
-    for match in re.findall(
-        r"\d[\d,\.]*",
-        str(text or ""),
-    ):
-
-        normalized = (
-            match.replace(",", "")
-        )
-
-        if normalized:
-            values.add(
-                normalized
-            )
-
-    return values
 
 
 def normalize_number_text(
-    text: str,
+    value: Any,
 ) -> str:
 
-    return str(
-        text or ""
-    ).replace(
-        ",",
-        "",
+    return (
+        str(
+            value
+            or ""
+        )
+        .replace(
+            ",",
+            "",
+        )
+        .replace(
+            " ",
+            "",
+        )
     )
 
 
+def get_item_document(
+    item: dict[str, Any],
+) -> str:
+
+    return str(
+        item.get(
+            "document"
+        )
+        or item.get(
+            "text"
+        )
+        or ""
+    ).strip()
+
+
 # ============================================================
-# SEARCH TERMS
+# ANSWER NUMBER EXTRACTION
+# ============================================================
+
+def extract_answer_numbers(
+    text: str,
+) -> set[str]:
+    """
+    최종 답변에서 실제 결과값으로 사용된 숫자를 추출한다.
+
+    연도, 분기 등은 가능한 한 제외한다.
+
+    예:
+        삼성전자의 2023년 전체 설비투자 금액은
+        531,139억 원입니다.
+
+    반환:
+        {"531139"}
+    """
+
+    text = str(
+        text
+        or ""
+    )
+
+    numbers: set[str] = set()
+
+    # --------------------------------------------------------
+    # 금액 / 주식 수
+    # --------------------------------------------------------
+
+    financial_pattern = (
+        r"(?<!\d)"
+        r"("
+        r"(?:\d{1,3}(?:,\d{3})+|\d+)"
+        r"(?:\.\d+)?"
+        r")"
+        r"\s*"
+        r"(?:"
+        r"백만원"
+        r"|천만원"
+        r"|억원"
+        r"|조원"
+        r"|천원"
+        r"|만원"
+        r"|백만주"
+        r"|천주"
+        r"|원"
+        r"|주"
+        r")"
+    )
+
+    for match in re.finditer(
+        financial_pattern,
+        text,
+    ):
+
+        value = (
+            match.group(1)
+            .replace(
+                ",",
+                "",
+            )
+        )
+
+        if value:
+            numbers.add(
+                value
+            )
+
+    # --------------------------------------------------------
+    # 비율
+    # --------------------------------------------------------
+
+    percent_pattern = (
+        r"(?<!\d)"
+        r"("
+        r"(?:\d{1,3}(?:,\d{3})+|\d+)"
+        r"(?:\.\d+)?"
+        r")"
+        r"\s*"
+        r"(?:%|퍼센트)"
+    )
+
+    for match in re.finditer(
+        percent_pattern,
+        text,
+    ):
+
+        value = (
+            match.group(1)
+            .replace(
+                ",",
+                "",
+            )
+        )
+
+        if value:
+
+            numbers.add(
+                value
+                + "%"
+            )
+
+    # --------------------------------------------------------
+    # 단위가 없는 답변의 fallback
+    # --------------------------------------------------------
+
+    if not numbers:
+
+        for match in re.findall(
+            r"\d[\d,\.]*",
+            text,
+        ):
+
+            value = (
+                match.replace(
+                    ",",
+                    "",
+                )
+            )
+
+            try:
+
+                integer_value = int(
+                    value
+                    .split(
+                        ".",
+                        1,
+                    )[0]
+                )
+
+            except ValueError:
+
+                integer_value = -1
+
+            # 연도 제거
+            if (
+                "." not in value
+                and 1900
+                <= integer_value
+                <= 2100
+            ):
+                continue
+
+            if len(
+                value
+            ) < 2:
+                continue
+
+            numbers.add(
+                value
+            )
+
+    return numbers
+
+
+# ============================================================
+# EVIDENCE TERMS
 # ============================================================
 
 def build_evidence_terms(
     result: dict[str, Any],
 ) -> list[str]:
     """
-    Keyword Extractor가 찾은 metric/topic을 이용해
-    근거 문장/행 검색용 키워드를 만든다.
+    Keyword Extractor 결과 중
+    metric/topic/company를 evidence 탐색에 활용한다.
     """
 
     extracted = (
-        result.get("extracted")
+        result.get(
+            "extracted"
+        )
         or {}
     )
 
@@ -139,25 +295,29 @@ def build_evidence_terms(
     ):
 
         values = (
-            extracted.get(key)
+            extracted.get(
+                key
+            )
             or []
         )
 
         for value in values:
 
-            value = normalize_text(
-                value
+            value = (
+                normalize_text(
+                    value
+                )
             )
 
             if (
                 value
                 and value not in terms
             ):
+
                 terms.append(
                     value
                 )
 
-    # 기업명도 보조적으로 사용
     companies = (
         extracted.get(
             "target_companies"
@@ -170,14 +330,17 @@ def build_evidence_terms(
 
     for company in companies:
 
-        company = normalize_text(
-            company
+        company = (
+            normalize_text(
+                company
+            )
         )
 
         if (
             company
             and company not in terms
         ):
+
             terms.append(
                 company
             )
@@ -186,259 +349,98 @@ def build_evidence_terms(
 
 
 # ============================================================
-# LINE SCORING
+# NUMBER MATCH
 # ============================================================
 
-def score_evidence_line(
-    line: str,
-    terms: list[str],
+def text_contains_answer_number(
+    text: str,
     answer_numbers: set[str],
-) -> float:
+) -> bool:
     """
-    질문 키워드와 최종 답변 숫자를 기준으로
-    각 문장/표 행의 관련도를 계산한다.
+    text 안에 최종 답변의 핵심 숫자가 있는지 확인.
     """
 
-    normalized_line = (
+    normalized_text = (
+        normalize_number_text(
+            text
+        )
+    )
+
+    for number in (
+        answer_numbers
+    ):
+
+        normalized_number = (
+            normalize_number_text(
+                number
+            )
+        )
+
+        if (
+            normalized_number
+            and normalized_number
+            in normalized_text
+        ):
+
+            return True
+
+    return False
+
+
+# ============================================================
+# TERM COVERAGE
+# ============================================================
+
+def calculate_term_coverage(
+    text: str,
+    terms: list[str],
+) -> float:
+
+    if not terms:
+        return 0.0
+
+    normalized = (
         normalize_text(
-            line
+            text
         ).lower()
     )
 
-    if not normalized_line:
-        return -1.0
-
-    score = 0.0
-
-    # --------------------------------------------------------
-    # 질문 관련 키워드
-    # --------------------------------------------------------
+    matched = 0
 
     for term in terms:
 
-        term_lower = (
-            term.lower()
-        )
-
-        if term_lower in normalized_line:
-
-            score += 2.0
-
-            # metric처럼 긴 표현일수록 조금 더 가중
-            if len(term_lower) >= 4:
-                score += 0.5
-
-    # --------------------------------------------------------
-    # 최종 답변에 사용된 숫자
-    # --------------------------------------------------------
-
-    number_line = (
-        normalize_number_text(
-            normalized_line
-        )
-    )
-
-    for number in answer_numbers:
+        term = str(
+            term
+            or ""
+        ).strip().lower()
 
         if (
-            len(number) >= 2
-            and number in number_line
-        ):
-            score += 4.0
-
-    # --------------------------------------------------------
-    # 표 행
-    # --------------------------------------------------------
-
-    if "|" in line:
-        score += 0.5
-
-    return score
-
-
-# ============================================================
-# EVIDENCE EXTRACTION
-# ============================================================
-
-def extract_relevant_evidence(
-    document: str,
-    *,
-    terms: list[str],
-    answer: str,
-    max_lines: int = 4,
-) -> str:
-    """
-    검색된 chunk 전체를 반환하지 않고,
-    질문/답변과 직접 관련된 핵심 행 또는 문장만 뽑는다.
-
-    표인 경우:
-        헤더 + 핵심 행을 함께 반환
-
-    서술형인 경우:
-        관련도가 높은 문장/행 반환
-    """
-
-    document = str(
-        document
-        or ""
-    ).strip()
-
-    if not document:
-        return ""
-
-    lines = [
-        line.strip()
-        for line in document.splitlines()
-        if line.strip()
-    ]
-
-    if not lines:
-        return ""
-
-    answer_numbers = (
-        extract_numbers(
-            answer
-        )
-    )
-
-    scored: list[
-        tuple[float, int, str]
-    ] = []
-
-    for index, line in enumerate(
-        lines
-    ):
-
-        score = (
-            score_evidence_line(
-                line,
-                terms,
-                answer_numbers,
-            )
-        )
-
-        if score > 0:
-
-            scored.append(
-                (
-                    score,
-                    index,
-                    line,
-                )
-            )
-
-    # --------------------------------------------------------
-    # 관련 문장을 못 찾은 경우
-    # 너무 긴 원문 대신 앞부분만 fallback
-    # --------------------------------------------------------
-
-    if not scored:
-
-        return "\n".join(
-            lines[:max_lines]
-        )
-
-    scored.sort(
-        key=lambda item: (
-            -item[0],
-            item[1],
-        )
-    )
-
-    best_score, best_index, best_line = (
-        scored[0]
-    )
-
-    selected_indices: list[int] = []
-
-    # --------------------------------------------------------
-    # TABLE
-    # 핵심 행 바로 앞의 헤더 최대 2줄 포함
-    # --------------------------------------------------------
-
-    if "|" in best_line:
-
-        for offset in (
-            -2,
-            -1,
+            term
+            and term in normalized
         ):
 
-            index = (
-                best_index
-                + offset
-            )
+            matched += 1
 
-            if (
-                0 <= index < len(lines)
-                and "|" in lines[index]
-            ):
-                selected_indices.append(
-                    index
-                )
-
-        selected_indices.append(
-            best_index
+    return (
+        matched
+        / len(
+            terms
         )
-
-        # 다른 직접 근거 행을 최대 1개 추가
-        for _, index, line in scored[1:]:
-
-            if len(
-                selected_indices
-            ) >= max_lines:
-                break
-
-            if (
-                index not in selected_indices
-                and "|" in line
-            ):
-                selected_indices.append(
-                    index
-                )
-
-    # --------------------------------------------------------
-    # NARRATIVE
-    # --------------------------------------------------------
-
-    else:
-
-        for _, index, _ in scored:
-
-            if index not in selected_indices:
-                selected_indices.append(
-                    index
-                )
-
-            if (
-                len(selected_indices)
-                >= max_lines
-            ):
-                break
-
-    selected_indices = sorted(
-        set(
-            selected_indices
-        )
-    )
-
-    return "\n".join(
-        lines[index]
-        for index in selected_indices
     )
 
 
 # ============================================================
-# SELECT ACTUALLY USED SOURCES
+# SELECT USED RESULTS
 # ============================================================
 
 def select_used_results(
     result: dict[str, Any],
 ) -> list[dict[str, Any]]:
     """
-    HCX Answer Generator가 사용했다고 선택한
-    used_source_ids만 retrieved_context에 사용한다.
+    Answer Generator의 used_source_ids에 해당하는
+    rerank 결과를 가져온다.
 
-    source_id는 rerank 결과의 1-based 순서와 대응한다.
+    used_source_ids가 없으면 TOP1을 사용한다.
     """
 
     reranked_results = (
@@ -462,16 +464,16 @@ def select_used_results(
         dict[str, Any]
     ] = []
 
-    # --------------------------------------------------------
-    # used_source_ids가 있으면 그것을 최우선 사용
-    # --------------------------------------------------------
-
-    for source_id in used_source_ids:
+    for source_id in (
+        used_source_ids
+    ):
 
         try:
 
             index = (
-                int(source_id)
+                int(
+                    source_id
+                )
                 - 1
             )
 
@@ -479,12 +481,15 @@ def select_used_results(
             TypeError,
             ValueError,
         ):
+
             continue
 
         if (
             0
             <= index
-            < len(reranked_results)
+            < len(
+                reranked_results
+            )
         ):
 
             selected.append(
@@ -493,24 +498,22 @@ def select_used_results(
                 ]
             )
 
-    # --------------------------------------------------------
-    # 없으면 rerank TOP1 fallback
-    # --------------------------------------------------------
-
     if not selected:
 
         selected = [
-            reranked_results[0]
+            reranked_results[
+                0
+            ]
         ]
 
     return selected
 
 
 # ============================================================
-# DEDUP USED SOURCES
+# CHUNK DEDUP
 # ============================================================
 
-def deduplicate_used_results(
+def deduplicate_chunks(
     results: list[
         dict[str, Any]
     ],
@@ -518,19 +521,23 @@ def deduplicate_used_results(
     dict[str, Any]
 ]:
     """
-    같은 공시에서 여러 chunk가 사용된 경우
-    대표 chunk 하나만 남긴다.
+    완전히 동일한 chunk만 제거한다.
 
-    rcept_no → doc_id → chunk_id 순서로 식별.
+    동일 rcept_no의 서로 다른 chunk는
+    이 단계에서는 제거하지 않는다.
     """
 
-    unique: list[
+    output: list[
         dict[str, Any]
     ] = []
 
-    seen: set[str] = set()
+    seen: set[
+        str
+    ] = set()
 
-    for item in results:
+    for index, item in enumerate(
+        results
+    ):
 
         metadata = (
             item.get(
@@ -539,36 +546,779 @@ def deduplicate_used_results(
             or {}
         )
 
-        key = str(
-            metadata.get(
-                "rcept_no"
+        chunk_id = str(
+            item.get(
+                "chunk_id"
             )
             or metadata.get(
-                "doc_id"
-            )
-            or item.get(
                 "chunk_id"
             )
             or ""
-        )
+        ).strip()
 
-        if key and key in seen:
-            continue
+        if chunk_id:
 
-        if key:
-            seen.add(
-                key
+            key = (
+                f"chunk:{chunk_id}"
             )
 
-        unique.append(
+        else:
+
+            key = (
+                f"index:{index}"
+            )
+
+        if key in seen:
+            continue
+
+        seen.add(
+            key
+        )
+
+        output.append(
             item
         )
 
-    return unique
+    return output
 
 
 # ============================================================
-# RETRIEVED CONTEXT
+# DOCUMENT KEY
+# ============================================================
+
+def get_document_key(
+    item: dict[str, Any],
+    fallback_index: int = 0,
+) -> str:
+
+    metadata = (
+        item.get(
+            "metadata"
+        )
+        or {}
+    )
+
+    return str(
+        metadata.get(
+            "rcept_no"
+        )
+        or item.get(
+            "doc_id"
+        )
+        or metadata.get(
+            "doc_id"
+        )
+        or item.get(
+            "chunk_id"
+        )
+        or metadata.get(
+            "chunk_id"
+        )
+        or f"unknown_{fallback_index}"
+    )
+
+
+# ============================================================
+# CHUNK SCORE
+# ============================================================
+
+def score_context_chunk(
+    item: dict[str, Any],
+    *,
+    answer_numbers: set[str],
+    terms: list[str],
+    rerank_position: int,
+) -> float:
+    """
+    같은 공시의 여러 chunk 중
+    API retrieved_context에 가장 적합한 대표 chunk를 고른다.
+
+    우선순위:
+    1. 답변 숫자가 실제로 존재
+    2. 질문 metric/topic coverage
+    3. rerank 상위
+    """
+
+    document = (
+        get_item_document(
+            item
+        )
+    )
+
+    if not document:
+        return float(
+            "-inf"
+        )
+
+    score = 0.0
+
+    # --------------------------------------------------------
+    # 답변 실제 숫자 존재
+    # 가장 중요한 신호
+    # --------------------------------------------------------
+
+    if text_contains_answer_number(
+        document,
+        answer_numbers,
+    ):
+
+        score += 100.0
+
+    # --------------------------------------------------------
+    # 질문 표현 coverage
+    # --------------------------------------------------------
+
+    score += (
+        10.0
+        * calculate_term_coverage(
+            document,
+            terms,
+        )
+    )
+
+    # --------------------------------------------------------
+    # rerank 순위
+    # 앞에 있을수록 조금 가점
+    # --------------------------------------------------------
+
+    score += max(
+        0.0,
+        5.0
+        - (
+            rerank_position
+            * 0.1
+        ),
+    )
+
+    return score
+
+
+# ============================================================
+# ANSWER SOURCE RECOVERY
+# ============================================================
+
+def ensure_answer_number_source(
+    result: dict[str, Any],
+    selected_results: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """
+    선택된 source 어디에도 최종 답변 숫자가 없다면
+    reranked_results에서 그 숫자가 실제로 존재하는
+    가장 상위 chunk 하나만 추가한다.
+
+    중요:
+    모든 matching chunk를 추가하지 않는다.
+
+    따라서 Q-002처럼 동일 숫자가 여러 표에 반복되어도
+    retrieved_context가 불필요하게 길어지지 않는다.
+    """
+
+    answer = str(
+        result.get(
+            "answer"
+        )
+        or ""
+    )
+
+    answer_numbers = (
+        extract_answer_numbers(
+            answer
+        )
+    )
+
+    if not answer_numbers:
+
+        return (
+            selected_results
+        )
+
+    # --------------------------------------------------------
+    # 이미 선택된 chunk 중 답변 숫자가 있으면
+    # 추가할 필요 없음
+    # --------------------------------------------------------
+
+    for item in (
+        selected_results
+    ):
+
+        if text_contains_answer_number(
+            get_item_document(
+                item
+            ),
+            answer_numbers,
+        ):
+
+            return (
+                selected_results
+            )
+
+    # --------------------------------------------------------
+    # 없을 때만 rerank에서 첫 matching chunk 1개 추가
+    # --------------------------------------------------------
+
+    reranked_results = (
+        result.get(
+            "reranked_results"
+        )
+        or []
+    )
+
+    output = list(
+        selected_results
+    )
+
+    for item in (
+        reranked_results
+    ):
+
+        document = (
+            get_item_document(
+                item
+            )
+        )
+
+        if not document:
+            continue
+
+        if text_contains_answer_number(
+            document,
+            answer_numbers,
+        ):
+
+            output.append(
+                item
+            )
+
+            break
+
+    return output
+
+
+# ============================================================
+# REPRESENTATIVE CHUNK PER DOCUMENT
+# ============================================================
+
+def select_best_chunk_per_document(
+    result: dict[str, Any],
+    results: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """
+    동일 공시의 여러 chunk가 선택되어 있으면
+    retrieved_context에는 가장 좋은 대표 chunk 하나만 사용한다.
+
+    다만 서로 다른 공시라면 각각 하나씩 유지한다.
+    """
+
+    answer = str(
+        result.get(
+            "answer"
+        )
+        or ""
+    )
+
+    answer_numbers = (
+        extract_answer_numbers(
+            answer
+        )
+    )
+
+    terms = (
+        build_evidence_terms(
+            result
+        )
+    )
+
+    reranked_results = (
+        result.get(
+            "reranked_results"
+        )
+        or []
+    )
+
+    # rerank position lookup
+    positions: dict[
+        str,
+        int
+    ] = {}
+
+    for index, item in enumerate(
+        reranked_results,
+        start=1,
+    ):
+
+        metadata = (
+            item.get(
+                "metadata"
+            )
+            or {}
+        )
+
+        chunk_id = str(
+            item.get(
+                "chunk_id"
+            )
+            or metadata.get(
+                "chunk_id"
+            )
+            or ""
+        ).strip()
+
+        if chunk_id:
+
+            positions[
+                chunk_id
+            ] = index
+
+    grouped: OrderedDict[
+        str,
+        list[dict[str, Any]]
+    ] = OrderedDict()
+
+    for index, item in enumerate(
+        results
+    ):
+
+        key = (
+            get_document_key(
+                item,
+                fallback_index=index,
+            )
+        )
+
+        grouped.setdefault(
+            key,
+            [],
+        ).append(
+            item
+        )
+
+    selected: list[
+        dict[str, Any]
+    ] = []
+
+    for items in (
+        grouped.values()
+    ):
+
+        best_item = None
+        best_score = float(
+            "-inf"
+        )
+
+        for item in items:
+
+            metadata = (
+                item.get(
+                    "metadata"
+                )
+                or {}
+            )
+
+            chunk_id = str(
+                item.get(
+                    "chunk_id"
+                )
+                or metadata.get(
+                    "chunk_id"
+                )
+                or ""
+            ).strip()
+
+            position = (
+                positions.get(
+                    chunk_id,
+                    999,
+                )
+            )
+
+            score = (
+                score_context_chunk(
+                    item,
+                    answer_numbers=answer_numbers,
+                    terms=terms,
+                    rerank_position=position,
+                )
+            )
+
+            if (
+                best_item is None
+                or score > best_score
+            ):
+
+                best_item = (
+                    item
+                )
+
+                best_score = (
+                    score
+                )
+
+        if best_item is not None:
+
+            selected.append(
+                best_item
+            )
+
+    return selected
+
+
+# ============================================================
+# EVIDENCE LINE SCORE
+# ============================================================
+
+def score_evidence_line(
+    line: str,
+    *,
+    terms: list[str],
+    answer_numbers: set[str],
+) -> float:
+
+    normalized_line = (
+        normalize_text(
+            line
+        ).lower()
+    )
+
+    if not normalized_line:
+        return -1.0
+
+    score = 0.0
+
+    # --------------------------------------------------------
+    # 답변 숫자
+    # --------------------------------------------------------
+
+    if text_contains_answer_number(
+        line,
+        answer_numbers,
+    ):
+
+        score += 20.0
+
+    # --------------------------------------------------------
+    # metric/topic
+    # --------------------------------------------------------
+
+    for term in terms:
+
+        term = str(
+            term
+            or ""
+        ).strip().lower()
+
+        if (
+            term
+            and term in normalized_line
+        ):
+
+            score += 2.0
+
+            if len(
+                term
+            ) >= 4:
+
+                score += 0.5
+
+    # --------------------------------------------------------
+    # 표
+    # --------------------------------------------------------
+
+    if "|" in line:
+        score += 0.5
+
+    return score
+
+
+# ============================================================
+# TABLE HEADER DETECTION
+# ============================================================
+
+def is_likely_table_header(
+    line: str,
+) -> bool:
+    """
+    일반적인 공시 표의 헤더 행 여부를 보수적으로 판단한다.
+    """
+
+    if "|" not in line:
+        return False
+
+    normalized = (
+        normalize_text(
+            line
+        ).lower()
+    )
+
+    header_terms = (
+        "구분",
+        "사업부문",
+        "항목",
+        "내용",
+        "투자액",
+        "매출액",
+        "비율",
+        "단위",
+        "품목",
+        "주요회사",
+        "기간",
+        "제40기",
+        "제39기",
+        "제38기",
+    )
+
+    matches = sum(
+        term in normalized
+        for term in header_terms
+    )
+
+    return (
+        matches
+        >= 1
+    )
+
+
+# ============================================================
+# EVIDENCE EXTRACTION
+# ============================================================
+
+def extract_relevant_evidence(
+    document: str,
+    *,
+    terms: list[str],
+    answer: str,
+    max_lines: int = 5,
+) -> str:
+    """
+    대표 chunk에서 API에 노출할 핵심 근거만 추출한다.
+
+    원칙:
+    - 답변 숫자가 포함된 행은 반드시 유지
+    - 표 헤더는 최대 2개 유지
+    - 관련도가 높은 보조 행만 최소한 추가
+    - 동일 chunk 전체를 그대로 노출하지 않음
+    """
+
+    document = str(
+        document
+        or ""
+    ).strip()
+
+    if not document:
+        return ""
+
+    lines = [
+        line.strip()
+        for line in (
+            document
+            .splitlines()
+        )
+        if line.strip()
+    ]
+
+    if not lines:
+        return ""
+
+    answer_numbers = (
+        extract_answer_numbers(
+            answer
+        )
+    )
+
+    direct_indices = [
+        index
+        for index, line in enumerate(
+            lines
+        )
+        if (
+            answer_numbers
+            and text_contains_answer_number(
+                line,
+                answer_numbers,
+            )
+        )
+    ]
+
+    scored = [
+        (
+            score_evidence_line(
+                line,
+                terms=terms,
+                answer_numbers=answer_numbers,
+            ),
+            index,
+            line,
+        )
+        for index, line in enumerate(
+            lines
+        )
+    ]
+
+    scored = [
+        item
+        for item in scored
+        if item[0] > 0
+    ]
+
+    scored.sort(
+        key=lambda item: (
+            -item[0],
+            item[1],
+        )
+    )
+
+    selected: list[
+        int
+    ] = []
+
+    # ========================================================
+    # 1. 직접 답변 행
+    # ========================================================
+
+    for index in (
+        direct_indices
+    ):
+
+        if index not in selected:
+
+            selected.append(
+                index
+            )
+
+    # ========================================================
+    # 2. 표 헤더
+    # ========================================================
+
+    if direct_indices:
+
+        # 문서 안에서 답변 행 이전의
+        # 가장 가까운 헤더 최대 2개
+        for direct_index in (
+            direct_indices
+        ):
+
+            header_candidates = [
+                index
+                for index in range(
+                    0,
+                    direct_index,
+                )
+                if is_likely_table_header(
+                    lines[
+                        index
+                    ]
+                )
+            ]
+
+            for index in (
+                header_candidates[
+                    -2:
+                ]
+            ):
+
+                if index not in selected:
+
+                    selected.append(
+                        index
+                    )
+
+    # ========================================================
+    # 3. 관련 문장 보충
+    # ========================================================
+
+    for _, index, _ in (
+        scored
+    ):
+
+        if index in selected:
+            continue
+
+        if len(
+            selected
+        ) >= max_lines:
+            break
+
+        selected.append(
+            index
+        )
+
+    # ========================================================
+    # 4. 아무 근거도 못 찾으면 앞부분 fallback
+    # ========================================================
+
+    if not selected:
+
+        selected = list(
+            range(
+                min(
+                    max_lines,
+                    len(
+                        lines
+                    ),
+                )
+            )
+        )
+
+    # --------------------------------------------------------
+    # 직접 답변 행은 max_lines 때문에 삭제하지 않는다.
+    # --------------------------------------------------------
+
+    must_keep = set(
+        direct_indices
+    )
+
+    selected = list(
+        dict.fromkeys(
+            selected
+        )
+    )
+
+    if (
+        len(
+            selected
+        )
+        > max_lines
+    ):
+
+        final_indices = [
+            index
+            for index in selected
+            if index in must_keep
+        ]
+
+        for index in selected:
+
+            if index in final_indices:
+                continue
+
+            if len(
+                final_indices
+            ) >= max_lines:
+                break
+
+            final_indices.append(
+                index
+            )
+
+        selected = (
+            final_indices
+        )
+
+    selected = sorted(
+        set(
+            selected
+        )
+    )
+
+    return "\n".join(
+        lines[
+            index
+        ]
+        for index in selected
+    )
+
+
+# ============================================================
+# API RETRIEVED CONTEXT
 # ============================================================
 
 def build_api_retrieved_context(
@@ -576,26 +1326,73 @@ def build_api_retrieved_context(
     max_sources: int = 5,
 ) -> str:
     """
-    평가 API용 검색 근거.
+    평가 API용 retrieved_context.
 
-    1. HCX가 실제 선택한 source만 사용
-    2. 동일 공시 중복 제거
-    3. 질문/답변에 직접 관련된 행·문장만 추출
+    흐름:
+    1. Answer Generator selected source
+    2. 답변 숫자 source가 빠졌으면 1개 보완
+    3. 동일 chunk 제거
+    4. 동일 공시에서는 대표 chunk 1개 선택
+    5. 대표 chunk에서 핵심 행만 추출
+
+    따라서:
+    - 근거 숫자가 빠지지 않음
+    - 같은 숫자가 여러 표에 반복되어도
+      retrieved_context가 과도하게 길어지지 않음
     """
 
-    used_results = (
+    # --------------------------------------------------------
+    # Answer Generator 선택 source
+    # --------------------------------------------------------
+
+    results = (
         select_used_results(
             result
         )
     )
 
-    used_results = (
-        deduplicate_used_results(
-            used_results
+    # --------------------------------------------------------
+    # 답변 숫자 source가 선택되지 않은 경우에만 보완
+    # --------------------------------------------------------
+
+    results = (
+        ensure_answer_number_source(
+            result,
+            results,
         )
     )
 
-    if not used_results:
+    # --------------------------------------------------------
+    # 동일 chunk 제거
+    # --------------------------------------------------------
+
+    results = (
+        deduplicate_chunks(
+            results
+        )
+    )
+
+    if not results:
+
+        return str(
+            result.get(
+                "retrieved_context"
+            )
+            or ""
+        ).strip()
+
+    # --------------------------------------------------------
+    # 같은 공시에서는 대표 chunk 하나만 선택
+    # --------------------------------------------------------
+
+    results = (
+        select_best_chunk_per_document(
+            result,
+            results,
+        )
+    )
+
+    if not results:
 
         return str(
             result.get(
@@ -617,10 +1414,12 @@ def build_api_retrieved_context(
         or ""
     )
 
-    blocks: list[str] = []
+    blocks: list[
+        str
+    ] = []
 
     for rank, item in enumerate(
-        used_results[
+        results[
             :max_sources
         ],
         start=1,
@@ -657,16 +1456,18 @@ def build_api_retrieved_context(
             or ""
         )
 
+        document = (
+            get_item_document(
+                item
+            )
+        )
+
         evidence = (
             extract_relevant_evidence(
-                str(
-                    item.get(
-                        "document"
-                    )
-                    or ""
-                ),
+                document,
                 terms=terms,
                 answer=answer,
+                max_lines=5,
             )
         )
 
@@ -674,23 +1475,28 @@ def build_api_retrieved_context(
             f"[근거 {rank}]",
         ]
 
-        # ----------------------------------------------------
-        # SOURCE METADATA
-        # ----------------------------------------------------
-
-        source_meta: list[str] = []
+        source_meta: list[
+            str
+        ] = []
 
         if corp_name:
+
             source_meta.append(
-                str(corp_name)
+                str(
+                    corp_name
+                )
             )
 
         if report_nm:
+
             source_meta.append(
-                str(report_nm)
+                str(
+                    report_nm
+                )
             )
 
         if rcept_no:
+
             source_meta.append(
                 f"접수번호 {rcept_no}"
             )
@@ -702,10 +1508,6 @@ def build_api_retrieved_context(
                     source_meta
                 )
             )
-
-        # ----------------------------------------------------
-        # CORE EVIDENCE
-        # ----------------------------------------------------
 
         if evidence:
 
@@ -735,9 +1537,8 @@ def build_think_trace(
     result: dict[str, Any],
 ) -> str:
     """
-    내부 Chain-of-Thought를 반환하는 것이 아니라,
-    평가자가 확인할 수 있는 검색/도구 사용 과정의
-    간결한 실행 요약을 반환한다.
+    내부 Chain-of-Thought가 아니라
+    평가용 실행 과정 요약을 반환한다.
     """
 
     extracted = (
@@ -808,27 +1609,29 @@ def build_think_trace(
         )
     )
 
-    # --------------------------------------------------------
-    # 검색 정보 추출
-    # --------------------------------------------------------
-
-    if task_type == (
-        "검색_정보추출"
+    if (
+        task_type
+        == "검색_정보추출"
     ):
 
-        parts: list[str] = []
+        parts: list[
+            str
+        ] = []
 
         if company_text:
+
             parts.append(
                 f"{company_text}의"
             )
 
         if doc_text:
+
             parts.append(
                 f"{doc_text}를 검색하고,"
             )
 
         else:
+
             parts.append(
                 "관련 공시를 검색하고,"
             )
@@ -856,10 +1659,6 @@ def build_think_trace(
             parts
         )
 
-    # --------------------------------------------------------
-    # 향후 다른 task에서도 사용 가능한 fallback
-    # --------------------------------------------------------
-
     return (
         "질의를 분석하고 관련 공시를 검색한 뒤, "
         "검색 결과를 재정렬하여 선택된 공시 근거를 "
@@ -883,11 +1682,7 @@ def answer(
     ),
 ) -> JSONResponse:
     """
-    주최 측 평가 API 스키마.
-
-    GET /answer
-        ?question_id=Q-001
-        &question=평가질의
+    주최 측 평가 API.
 
     Response:
         question_id
@@ -897,9 +1692,9 @@ def answer(
         answer
     """
 
-    # --------------------------------------------------------
+    # ========================================================
     # RUN AGENT
-    # --------------------------------------------------------
+    # ========================================================
 
     try:
 
@@ -998,10 +1793,6 @@ def answer(
             result
         )
     )
-
-    # ========================================================
-    # COMPETITION RESPONSE
-    # ========================================================
 
     response = {
         "question_id": (
