@@ -31,6 +31,7 @@ from .answer_generator import (
 # ============================================================
 
 RETRIEVAL_TOP_K = 10
+AUXILIARY_RETRIEVAL_TOP_K = 10
 RERANK_TOP_K = 5
 
 
@@ -104,7 +105,7 @@ def initialize_search_components() -> None:
 
 
 # ============================================================
-# RETRIEVAL
+# VECTOR RETRIEVAL
 # ============================================================
 
 def run_vector_retrieval(
@@ -256,6 +257,301 @@ def run_vector_retrieval(
 
 
 # ============================================================
+# AUXILIARY RETRIEVAL
+# ============================================================
+
+def build_auxiliary_retrieval_request(
+    retrieval_request: dict[str, Any],
+) -> dict[str, Any] | None:
+    """
+    원 질문의 값/수치 검색과 별도로,
+    topic_keywords가 실제 공시에서 어떤 사업부문/제품/서비스/
+    세부 범위에 대응하는지 설명하는 근거를 찾기 위한
+    보조 검색 request를 만든다.
+
+    특정 기업이나 특정 산업을 하드코딩하지 않고
+    Keyword Extractor가 추출한 topic_keywords를 사용한다.
+
+    예)
+    원 질문:
+        삼성전자의 2023년 반도체 설비투자 금액은?
+
+    topic_keywords:
+        ["반도체"]
+
+    보조 검색:
+        삼성전자 반도체 사업 부문 사업 구성 주요 제품 서비스
+
+    목적:
+        "반도체 → DS 부문"과 같은 의미 연결 근거를
+        공시 자체에서 찾는다.
+    """
+
+    companies = (
+        retrieval_request.get(
+            "companies"
+        )
+        or []
+    )
+
+    topic_keywords = (
+        retrieval_request.get(
+            "topic_keywords"
+        )
+        or []
+    )
+
+    if not companies:
+        return None
+
+    if not topic_keywords:
+        return None
+
+    normalized_companies = [
+        str(value).strip()
+        for value in companies
+        if str(value).strip()
+    ]
+
+    normalized_topics = [
+        str(value).strip()
+        for value in topic_keywords
+        if str(value).strip()
+    ]
+
+    if not normalized_companies:
+        return None
+
+    if not normalized_topics:
+        return None
+
+    company_text = " ".join(
+        normalized_companies
+    )
+
+    topic_text = " ".join(
+        normalized_topics
+    )
+
+    auxiliary_query = (
+        f"{company_text} "
+        f"{topic_text} "
+        "사업 부문 사업 구성 "
+        "주요 제품 서비스"
+    ).strip()
+
+    auxiliary_request = dict(
+        retrieval_request
+    )
+
+    auxiliary_request[
+        "query"
+    ] = auxiliary_query
+
+    auxiliary_request[
+        "top_k"
+    ] = min(
+        int(
+            retrieval_request.get(
+                "top_k",
+                AUXILIARY_RETRIEVAL_TOP_K,
+            )
+        ),
+        AUXILIARY_RETRIEVAL_TOP_K,
+    )
+
+    auxiliary_request[
+        "retrieval_mode"
+    ] = "auxiliary_scope"
+
+    return auxiliary_request
+
+
+# ============================================================
+# RETRIEVAL RESULT MERGE
+# ============================================================
+
+def _get_chunk_key(
+    item: dict[str, Any],
+    fallback_index: int,
+) -> str:
+    """
+    검색 결과의 중복 제거에 사용할 key를 만든다.
+
+    우선순위:
+    1. item.chunk_id
+    2. metadata.chunk_id
+    3. fallback key
+    """
+
+    chunk_id = str(
+        item.get(
+            "chunk_id"
+        )
+        or ""
+    ).strip()
+
+    if chunk_id:
+        return chunk_id
+
+    metadata = (
+        item.get(
+            "metadata"
+        )
+        or {}
+    )
+
+    chunk_id = str(
+        metadata.get(
+            "chunk_id"
+        )
+        or ""
+    ).strip()
+
+    if chunk_id:
+        return chunk_id
+
+    return (
+        f"__no_chunk_id_"
+        f"{fallback_index}"
+    )
+
+
+def _safe_distance(
+    item: dict[str, Any],
+) -> float:
+    """
+    검색 결과의 distance를 안전하게 float로 변환한다.
+    """
+
+    try:
+        return float(
+            item.get(
+                "distance",
+                999999.0,
+            )
+        )
+
+    except (
+        TypeError,
+        ValueError,
+    ):
+        return 999999.0
+
+
+def merge_retrieval_results(
+    primary_results: list[dict[str, Any]],
+    auxiliary_results: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """
+    원 질문 검색 결과와 보조 의미 검색 결과를 합친다.
+
+    - chunk_id 기준 중복 제거
+    - 동일 chunk가 두 검색에 모두 등장하면
+      distance가 더 작은 결과를 유지
+    - retrieval_origin을 붙여 디버깅 가능하게 함
+    """
+
+    merged: dict[
+        str,
+        dict[str, Any],
+    ] = {}
+
+    fallback_index = 0
+
+    # --------------------------------------------------------
+    # PRIMARY
+    # --------------------------------------------------------
+
+    for item in primary_results:
+
+        fallback_index += 1
+
+        copied = dict(
+            item
+        )
+
+        copied[
+            "retrieval_origin"
+        ] = "primary"
+
+        key = _get_chunk_key(
+            copied,
+            fallback_index,
+        )
+
+        merged[key] = copied
+
+    # --------------------------------------------------------
+    # AUXILIARY
+    # --------------------------------------------------------
+
+    for item in auxiliary_results:
+
+        fallback_index += 1
+
+        copied = dict(
+            item
+        )
+
+        copied[
+            "retrieval_origin"
+        ] = "auxiliary"
+
+        key = _get_chunk_key(
+            copied,
+            fallback_index,
+        )
+
+        existing = (
+            merged.get(
+                key
+            )
+        )
+
+        if existing is None:
+
+            merged[key] = copied
+
+            continue
+
+        existing_distance = (
+            _safe_distance(
+                existing
+            )
+        )
+
+        new_distance = (
+            _safe_distance(
+                copied
+            )
+        )
+
+        # 두 검색에서 모두 검색된 chunk라면
+        # 더 강하게 검색된 결과를 유지한다.
+        if (
+            new_distance
+            < existing_distance
+        ):
+
+            copied[
+                "retrieval_origin"
+            ] = "primary+auxiliary"
+
+            merged[key] = copied
+
+        else:
+
+            existing[
+                "retrieval_origin"
+            ] = "primary+auxiliary"
+
+    return list(
+        merged.values()
+    )
+
+
+# ============================================================
 # SOURCE DEDUP
 # ============================================================
 
@@ -352,6 +648,10 @@ def build_retrieved_context(
                     "chunk_id: "
                     f"{item.get('chunk_id')}"
                 ),
+                (
+                    "retrieval_origin: "
+                    f"{item.get('retrieval_origin') or ''}"
+                ),
                 "",
                 document,
             ]
@@ -380,10 +680,27 @@ def run_search_task(
     흐름
     ----
     1. Retrieval Adapter
-    2. Vector Retriever
-    3. Hybrid Reranker
-    4. HCX Answer Generator
-    5. 답변 + 출처 반환
+    2. Primary Vector Retrieval
+    3. Auxiliary Scope Retrieval
+    4. Retrieval Result Merge
+    5. Hybrid Reranker
+    6. HCX Answer Generator
+    7. 답변 + 출처 반환
+
+    Auxiliary Retrieval의 목적
+    --------------------------
+    원 질문 검색에서는 수치/표 근거는 잘 검색되지만,
+    질문의 세부 대상과 공시의 사업부문 표현 사이의
+    의미 관계를 설명하는 chunk가 누락될 수 있다.
+
+    예:
+        질문의 "반도체"
+        ↕
+        공시의 "DS 부문"
+
+    따라서 topic_keywords를 기반으로
+    사업/부문/제품 정의 근거를 추가 검색한 뒤
+    원 검색 결과와 합쳐 최종 rerank한다.
     """
 
     initialize_search_components()
@@ -418,29 +735,70 @@ def run_search_task(
 
         return {
             "success": False,
+
             "task_type": (
                 "검색_정보추출"
             ),
+
             "status": (
                 "retrieval_not_ready"
             ),
+
             "reason": (
                 retrieval_request.get(
                     "reason"
                 )
             ),
+
             "retrieval_request": (
                 retrieval_request
             ),
         }
 
     # ========================================================
-    # STEP 2. VECTOR RETRIEVAL
+    # STEP 2. PRIMARY VECTOR RETRIEVAL
+    # ========================================================
+
+    primary_vector_results = (
+        run_vector_retrieval(
+            retrieval_request
+        )
+    )
+
+    # ========================================================
+    # STEP 3. AUXILIARY SCOPE RETRIEVAL
+    # ========================================================
+
+    auxiliary_request = (
+        build_auxiliary_retrieval_request(
+            retrieval_request
+        )
+    )
+
+    auxiliary_vector_results: list[
+        dict[str, Any]
+    ] = []
+
+    if auxiliary_request is not None:
+
+        auxiliary_vector_results = (
+            run_vector_retrieval(
+                auxiliary_request
+            )
+        )
+
+    # ========================================================
+    # STEP 4. MERGE RETRIEVAL RESULTS
     # ========================================================
 
     vector_results = (
-        run_vector_retrieval(
-            retrieval_request
+        merge_retrieval_results(
+            primary_results=(
+                primary_vector_results
+            ),
+            auxiliary_results=(
+                auxiliary_vector_results
+            ),
         )
     )
 
@@ -448,24 +806,33 @@ def run_search_task(
 
         return {
             "success": False,
+
             "task_type": (
                 "검색_정보추출"
             ),
+
             "status": (
                 "no_retrieval_result"
             ),
+
             "answer": (
                 "관련 공시 근거를 "
                 "찾지 못했습니다."
             ),
+
             "sources": [],
+
             "retrieval_request": (
                 retrieval_request
+            ),
+
+            "auxiliary_retrieval_request": (
+                auxiliary_request
             ),
         }
 
     # ========================================================
-    # STEP 3. RERANK
+    # STEP 5. RERANK
     # ========================================================
 
     query = (
@@ -492,11 +859,19 @@ def run_search_task(
     reranked_results = (
         _reranker.rerank(
             question=query,
-            results=vector_results,
-            metrics=metrics,
+
+            results=(
+                vector_results
+            ),
+
+            metrics=(
+                metrics
+            ),
+
             topic_keywords=(
                 topic_keywords
             ),
+
             top_k=(
                 RERANK_TOP_K
             ),
@@ -507,26 +882,43 @@ def run_search_task(
 
         return {
             "success": False,
+
             "task_type": (
                 "검색_정보추출"
             ),
+
             "status": (
                 "no_rerank_result"
             ),
+
             "answer": (
                 "관련 근거를 "
                 "선별하지 못했습니다."
             ),
+
             "sources": [],
+
+            "retrieval_request": (
+                retrieval_request
+            ),
+
+            "auxiliary_retrieval_request": (
+                auxiliary_request
+            ),
+
+            "vector_results": (
+                vector_results
+            ),
         }
 
     # ========================================================
-    # STEP 4. ANSWER GENERATION
+    # STEP 6. ANSWER GENERATION
     # ========================================================
 
     answer_result = (
         _answer_generator.generate(
             question=query,
+
             reranked_results=(
                 reranked_results
             ),
@@ -539,6 +931,13 @@ def run_search_task(
         )
         or ""
     ).strip()
+
+    used_source_ids = (
+        answer_result.get(
+            "used_source_ids"
+        )
+        or []
+    )
 
     sources = (
         answer_result.get(
@@ -554,7 +953,7 @@ def run_search_task(
     )
 
     # ========================================================
-    # STEP 5. CONTEXT
+    # STEP 7. CONTEXT
     # ========================================================
 
     retrieved_context = (
@@ -564,13 +963,14 @@ def run_search_task(
     )
 
     # ========================================================
-    # STEP 6. FINAL DISPLAY TEXT
+    # STEP 8. FINAL DISPLAY TEXT
     # ========================================================
 
     formatted_answer = (
         format_answer_with_sources(
             {
                 **answer_result,
+
                 "sources": (
                     unique_sources
                 ),
@@ -593,7 +993,9 @@ def run_search_task(
             "completed"
         ),
 
-        "answer": answer,
+        "answer": (
+            answer
+        ),
 
         "answer_with_sources": (
             formatted_answer
@@ -604,10 +1006,7 @@ def run_search_task(
         ),
 
         "used_source_ids": (
-            answer_result.get(
-                "used_source_ids"
-            )
-            or []
+            used_source_ids
         ),
 
         "retrieved_context": (
@@ -618,7 +1017,26 @@ def run_search_task(
             retrieval_request
         ),
 
-        # 디버깅 / 평가용
+        # ----------------------------------------------------
+        # 보조 검색 디버깅용
+        # ----------------------------------------------------
+
+        "auxiliary_retrieval_request": (
+            auxiliary_request
+        ),
+
+        "primary_vector_results": (
+            primary_vector_results
+        ),
+
+        "auxiliary_vector_results": (
+            auxiliary_vector_results
+        ),
+
+        # ----------------------------------------------------
+        # 기존 디버깅 / 평가용
+        # ----------------------------------------------------
+
         "vector_results": (
             vector_results
         ),

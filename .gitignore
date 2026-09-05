@@ -11,3 +11,4 @@ Dataset/.qa_generation_cache.jsonl
 corpus/derived/
 corpus/vector_db/
 .venv/
+.env

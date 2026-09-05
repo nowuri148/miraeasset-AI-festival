@@ -17,6 +17,8 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from Config import CLOVA_STUDIO_API_KEY  # noqa: E402
 
+from dotenv import load_dotenv
+load_dotenv()
 
 # ----------------------------------------------------------------------
 # 기본 설정

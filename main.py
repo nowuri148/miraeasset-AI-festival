@@ -1,3 +1,4 @@
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -24,14 +25,11 @@ if str(PROJECT_ROOT) not in sys.path:
 # CONFIG
 # ============================================================
 
-from Config import CLOVA_STUDIO_API_KEY
-
-
-DEFAULT_BASE_URL = (
-    "https://clovastudio.stream.ntruss.com/v1/openai"
+from Config import (
+    CLOVA_STUDIO_API_KEY,
+    CLOVA_BASE_URL,
+    CLOVA_MODEL,
 )
-
-DEFAULT_MODEL = "HCX-005"
 
 
 # ============================================================
@@ -42,7 +40,6 @@ from question.keyword_extractor_ver2 import (
     HyperClovaXKeywordExtractor,
     CompanyScopeResolver,
     extract_and_resolve,
-    print_result,
 )
 
 
@@ -52,6 +49,10 @@ from question.keyword_extractor_ver2 import (
 
 from search_info.z_search_task import (
     run_search_task,
+)
+
+from validation.validated_runner import (
+    run_with_grounding_validation,
 )
 
 
@@ -66,7 +67,7 @@ from search_info.z_search_task import (
 
 
 # ============================================================
-# COMPANY UNIVERSE PATH
+# COMPANY UNIVERSE
 # ============================================================
 
 UNIVERSE_PATH = (
@@ -75,7 +76,20 @@ UNIVERSE_PATH = (
     / "universe.csv"
 )
 
-# 실제 universe 파일명이 다르면 위 경로만 수정하면 됨.
+
+# ============================================================
+# GLOBAL COMPONENTS
+# ============================================================
+
+_keyword_extractor: (
+    HyperClovaXKeywordExtractor
+    | None
+) = None
+
+_company_resolver: (
+    CompanyScopeResolver
+    | None
+) = None
 
 
 # ============================================================
@@ -86,26 +100,34 @@ def result_to_dict(
     result: Any,
 ) -> dict[str, Any]:
     """
-    extract_and_resolve()의 반환값을
-    task 모듈에서 사용 가능한 dict로 변환한다.
-
-    지원:
-    - dict
-    - dataclass
-    - pydantic model
-    - 일반 객체(__dict__)
+    extract_and_resolve() 반환값을 dict로 변환한다.
     """
 
-    if isinstance(result, dict):
+    if isinstance(
+        result,
+        dict,
+    ):
         return result
 
-    if is_dataclass(result):
-        return asdict(result)
+    if is_dataclass(
+        result
+    ):
+        return asdict(
+            result
+        )
 
-    if hasattr(result, "model_dump"):
-        return result.model_dump()
+    if hasattr(
+        result,
+        "model_dump",
+    ):
+        return (
+            result.model_dump()
+        )
 
-    if hasattr(result, "__dict__"):
+    if hasattr(
+        result,
+        "__dict__",
+    ):
         return dict(
             result.__dict__
         )
@@ -117,88 +139,133 @@ def result_to_dict(
 
 
 # ============================================================
+# COMPONENT INITIALIZATION
+# ============================================================
+
+def initialize_components() -> None:
+    """
+    Keyword Extractor와 Company Resolver를
+    최초 한 번만 초기화한다.
+    """
+
+    global _keyword_extractor
+    global _company_resolver
+
+    if (
+        _keyword_extractor is not None
+        and _company_resolver is not None
+    ):
+        return
+
+    api_key = os.getenv(
+        "CLOVA_STUDIO_API_KEY",
+        CLOVA_STUDIO_API_KEY,
+    )
+
+    if not api_key:
+        raise RuntimeError(
+            "CLOVA_STUDIO_API_KEY가 "
+            "설정되어 있지 않습니다."
+        )
+
+    base_url = os.getenv(
+        "CLOVA_BASE_URL",
+        CLOVA_BASE_URL,
+    )
+
+    model_name = os.getenv(
+        "CLOVA_MODEL",
+        CLOVA_MODEL,
+    )
+
+    _keyword_extractor = (
+        HyperClovaXKeywordExtractor(
+            api_key=api_key,
+            base_url=base_url,
+            model_name=model_name,
+            debug=False,
+        )
+    )
+
+    _company_resolver = (
+        CompanyScopeResolver(
+            UNIVERSE_PATH
+        )
+    )
+
+
+# ============================================================
 # TASK ROUTING
 # ============================================================
 
 def route_task(
     question: str,
     extracted: dict[str, Any],
-) -> Any:
+) -> dict[str, Any]:
     """
-    Keyword Extractor 결과의 task_type에 따라
-    각 task 파일로 분기한다.
+    task_type에 따라 각 실행 모듈로 분기한다.
     """
 
-    task_type = extracted.get(
-        "task_type"
+    task_type = (
+        extracted.get(
+            "task_type"
+        )
     )
 
     # --------------------------------------------------------
-    # 1. 정보 검색
+    # 검색 정보 추출
     # --------------------------------------------------------
 
-    if task_type == "검색_정보추출":
+    if task_type == (
+        "검색_정보추출"
+    ):
 
-        print()
-        print("=" * 70)
-        print("[Task Router] 검색_정보추출")
-        print("=" * 70)
-
-        return run_search_task(
-            question=question,
-            extracted=extracted,
+        return (
+            run_search_task(
+                question=question,
+                extracted=extracted,
+            )
         )
 
-
     # --------------------------------------------------------
-    # 2. 다중조회 / 비교연산
+    # 다중조회 / 비교연산
     # --------------------------------------------------------
 
-    if task_type == "다중조회_비교연산":
-
-        print()
-        print("=" * 70)
-        print("[Task Router] 다중조회_비교연산")
-        print("=" * 70)
-
-        # 추후 구현 시 아래로 교체
-        #
-        # return run_comparison_task(
-        #     question=question,
-        #     extracted=extracted,
-        # )
+    if task_type == (
+        "다중조회_비교연산"
+    ):
 
         return {
             "success": False,
             "task_type": task_type,
-            "status": "not_implemented",
+            "status": (
+                "not_implemented"
+            ),
+            "answer": (
+                "다중조회/비교연산 기능은 "
+                "아직 구현되지 않았습니다."
+            ),
         }
 
-
     # --------------------------------------------------------
-    # 3. 복합문서추론
+    # 복합문서추론
     # --------------------------------------------------------
 
-    if task_type == "복합문서추론":
-
-        print()
-        print("=" * 70)
-        print("[Task Router] 복합문서추론")
-        print("=" * 70)
-
-        # 추후 구현 시 아래로 교체
-        #
-        # return run_complex_task(
-        #     question=question,
-        #     extracted=extracted,
-        # )
+    if task_type == (
+        "복합문서추론"
+    ):
 
         return {
             "success": False,
             "task_type": task_type,
-            "status": "not_implemented",
+            "status": (
+                "not_implemented"
+            ),
+            "answer": (
+                "복합문서추론 기능은 "
+                "아직 구현되지 않았습니다."
+            ),
         }
-
 
     # --------------------------------------------------------
     # Unknown
@@ -207,72 +274,445 @@ def route_task(
     return {
         "success": False,
         "task_type": task_type,
-        "status": "unsupported_task_type",
+        "status": (
+            "unsupported_task_type"
+        ),
+        "answer": (
+            "지원하지 않는 질문 유형입니다."
+        ),
     }
 
 
 # ============================================================
-# MAIN
+# RUN TASK FROM EXTRACTED
+# ============================================================
+
+def run_task_from_extracted(
+    *,
+    question: str,
+    extracted: dict[str, Any],
+) -> dict[str, Any]:
+    """
+    이미 Keyword Extraction이 완료된 경우
+    Extractor를 다시 호출하지 않고 Task만 실행한다.
+
+    CLI clarification flow에서 사용한다.
+    """
+
+    try:
+
+        task_result = (
+            route_task(
+                question=question,
+                extracted=extracted,
+            )
+        )
+
+    except Exception as exc:
+
+        return {
+            "success": False,
+            "task_type": (
+                extracted.get(
+                    "task_type"
+                )
+            ),
+            "status": (
+                "task_error"
+            ),
+            "answer": (
+                "답변을 생성하는 중 "
+                "오류가 발생했습니다."
+            ),
+            "error": str(
+                exc
+            ),
+            "sources": [],
+        }
+
+    if isinstance(
+        task_result,
+        dict,
+    ):
+
+        # 내부 평가/디버깅용 정보
+        task_result.setdefault(
+            "question",
+            question,
+        )
+
+        task_result.setdefault(
+            "task_type",
+            extracted.get(
+                "task_type"
+            ),
+        )
+
+        task_result.setdefault(
+            "extracted",
+            extracted,
+        )
+
+        return task_result
+
+    return {
+        "success": True,
+        "question": question,
+        "task_type": (
+            extracted.get(
+                "task_type"
+            )
+        ),
+        "extracted": extracted,
+        "result": task_result,
+    }
+
+
+# ============================================================
+# RUN AGENT
+# ============================================================
+
+def run_agent(
+    question: str,
+) -> dict[str, Any]:
+    """
+    외부에서 단일 질문 하나를 넣어 처리하는 핵심 함수.
+
+    FastAPI에서는 이 함수 하나만 호출하면 된다.
+
+    흐름:
+    question
+    → Keyword Extractor
+    → Scope Resolver
+    → Task Router
+    → Answer
+    """
+
+    initialize_components()
+
+    assert (
+        _keyword_extractor
+        is not None
+    )
+
+    assert (
+        _company_resolver
+        is not None
+    )
+
+    question = str(
+        question
+        or ""
+    ).strip()
+
+    if not question:
+
+        return {
+            "success": False,
+            "status": (
+                "empty_question"
+            ),
+            "answer": (
+                "질문을 입력해주세요."
+            ),
+            "sources": [],
+        }
+
+    # --------------------------------------------------------
+    # Keyword Extraction
+    # --------------------------------------------------------
+
+    try:
+
+        result = (
+            extract_and_resolve(
+                question,
+                _keyword_extractor,
+                _company_resolver,
+            )
+        )
+
+    except Exception as exc:
+
+        return {
+            "success": False,
+            "status": (
+                "extractor_error"
+            ),
+            "answer": (
+                "질문을 분석하는 중 "
+                "오류가 발생했습니다."
+            ),
+            "error": str(
+                exc
+            ),
+            "sources": [],
+        }
+
+    # --------------------------------------------------------
+    # 추가 정보 필요
+    # --------------------------------------------------------
+
+    if not result.is_complete:
+
+        return {
+            "success": False,
+            "status": (
+                "clarification_required"
+            ),
+            "answer": (
+                result.clarification_question
+                or "추가 정보가 필요합니다."
+            ),
+            "missing_fields": (
+                result.missing_fields
+            ),
+            "clarification_question": (
+                result.clarification_question
+            ),
+            "sources": [],
+        }
+
+    # --------------------------------------------------------
+    # Result → dict
+    # --------------------------------------------------------
+
+    try:
+
+        extracted = (
+            result_to_dict(
+                result
+            )
+        )
+
+    except Exception as exc:
+
+        return {
+            "success": False,
+            "status": (
+                "result_conversion_error"
+            ),
+            "answer": (
+                "질문 분석 결과를 "
+                "처리하지 못했습니다."
+            ),
+            "error": str(
+                exc
+            ),
+            "sources": [],
+        }
+
+    # --------------------------------------------------------
+    # 이미 추출했으므로 바로 Task 실행
+    # --------------------------------------------------------
+
+    def execute_task() -> dict[str, Any]:
+        return (
+            run_task_from_extracted(
+                question=question,
+                extracted=extracted,
+            )
+        )
+
+
+    return (
+        run_with_grounding_validation(
+            question=question,
+            execute_task=execute_task,
+            max_attempts=3,
+        )
+    )
+
+    
+# ============================================================
+# USER OUTPUT
+# ============================================================
+
+def build_user_output(
+    task_result: dict[str, Any],
+) -> str:
+    """
+    사용자에게는 최종 답변 + 출처만 보여준다.
+    """
+
+    # --------------------------------------------------------
+    # Answer Generator가 완성한 문자열
+    # --------------------------------------------------------
+
+    answer_with_sources = str(
+        task_result.get(
+            "answer_with_sources"
+        )
+        or ""
+    ).strip()
+
+    if answer_with_sources:
+
+        # 이전 formatter에서 [1], [2]가 남아 있어도
+        # CLI에서는 제거해서 표시한다.
+        lines = []
+
+        for line in (
+            answer_with_sources
+            .splitlines()
+        ):
+
+            stripped = (
+                line.strip()
+            )
+
+            if (
+                stripped.startswith("[")
+                and "] " in stripped
+            ):
+
+                prefix, rest = (
+                    stripped.split(
+                        "] ",
+                        1,
+                    )
+                )
+
+                number = (
+                    prefix[1:]
+                )
+
+                if number.isdigit():
+                    line = rest
+
+            lines.append(
+                line
+            )
+
+        return "\n".join(
+            lines
+        ).strip()
+
+    # --------------------------------------------------------
+    # 일반 answer fallback
+    # --------------------------------------------------------
+
+    answer = str(
+        task_result.get(
+            "answer"
+        )
+        or ""
+    ).strip()
+
+    sources = (
+        task_result.get(
+            "sources"
+        )
+        or []
+    )
+
+    if not sources:
+
+        return (
+            answer
+            or "답변을 생성하지 못했습니다."
+        )
+
+    lines = [
+        answer,
+        "",
+        "출처:",
+    ]
+
+    seen = set()
+
+    for source in sources:
+
+        key = (
+            source.get(
+                "rcept_no"
+            )
+            or source.get(
+                "doc_id"
+            )
+            or source.get(
+                "chunk_id"
+            )
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(
+            key
+        )
+
+        parts = []
+
+        corp_name = (
+            source.get(
+                "corp_name"
+            )
+        )
+
+        report_nm = (
+            source.get(
+                "report_nm"
+            )
+        )
+
+        rcept_no = (
+            source.get(
+                "rcept_no"
+            )
+        )
+
+        if corp_name:
+            parts.append(
+                str(corp_name)
+            )
+
+        if report_nm:
+            parts.append(
+                str(report_nm)
+            )
+
+        if rcept_no:
+            parts.append(
+                f"접수번호 {rcept_no}"
+            )
+
+        if parts:
+
+            lines.append(
+                ", ".join(
+                    parts
+                )
+            )
+
+    return "\n".join(
+        lines
+    )
+
+
+# ============================================================
+# CLI MAIN
 # ============================================================
 
 def main() -> None:
 
-    # ========================================================
-    # 1. HyperCLOVA X API KEY
-    # ========================================================
+    initialize_components()
 
-    key = os.getenv(
-        "CLOVA_STUDIO_API_KEY",
-        CLOVA_STUDIO_API_KEY,
+    assert (
+        _keyword_extractor
+        is not None
     )
 
-    if not key:
-        raise RuntimeError(
-            "CLOVA_STUDIO_API_KEY가 "
-            "설정되어 있지 않습니다."
-        )
-
-
-    # ========================================================
-    # 2. HyperCLOVA X ENDPOINT
-    # ========================================================
-
-    base_url = os.getenv(
-        "HYPERCLOVA_X_ENDPOINT",
-        DEFAULT_BASE_URL,
+    assert (
+        _company_resolver
+        is not None
     )
-
-
-    # ========================================================
-    # 3. Keyword Extractor 초기화
-    # ========================================================
-
-    client = HyperClovaXKeywordExtractor(
-        api_key=key,
-        base_url=base_url,
-        model_name=DEFAULT_MODEL,
-        debug=False,
-    )
-
-
-    # ========================================================
-    # 4. Company Scope Resolver 초기화
-    # ========================================================
-
-    resolver = CompanyScopeResolver(
-        UNIVERSE_PATH
-    )
-
-    resolver.describe_columns()
-
-
-    # ========================================================
-    # 5. START
-    # ========================================================
 
     print()
     print("=" * 70)
-    print("HyperCLOVA X QA Pipeline")
+    print(
+        "HyperCLOVA X QA Pipeline"
+    )
     print("=" * 70)
 
     print(
@@ -280,42 +720,40 @@ def main() -> None:
         "q / quit / exit 입력"
     )
 
-
-    # ========================================================
-    # 6. 전체 질의 Loop
-    # ========================================================
-
     while True:
 
-        original_question = input(
-            "\n질문> "
-        ).strip()
-
+        original_question = (
+            input(
+                "\n질문> "
+            )
+            .strip()
+        )
 
         # ----------------------------------------------------
         # 종료
         # ----------------------------------------------------
 
-        if original_question.lower() in {
-            "q",
-            "quit",
-            "exit",
-        }:
-            print("종료합니다.")
+        if (
+            original_question.lower()
+            in {
+                "q",
+                "quit",
+                "exit",
+            }
+        ):
+
+            print(
+                "종료합니다."
+            )
+
             break
 
-
         # ----------------------------------------------------
-        # 빈 입력
+        # 빈 질문
         # ----------------------------------------------------
 
         if not original_question:
             continue
-
-
-        # ----------------------------------------------------
-        # 추가질문을 누적하기 위한 질문
-        # ----------------------------------------------------
 
         conversation_question = (
             original_question
@@ -323,26 +761,28 @@ def main() -> None:
 
         result = None
 
-
         # ====================================================
-        # 7. Keyword Extraction + Scope Resolution Loop
+        # KEYWORD EXTRACTION + CLARIFICATION
         # ====================================================
 
         while True:
 
             try:
 
-                result = extract_and_resolve(
-                    conversation_question,
-                    client,
-                    resolver,
+                result = (
+                    extract_and_resolve(
+                        conversation_question,
+                        _keyword_extractor,
+                        _company_resolver,
+                    )
                 )
 
             except Exception as exc:
 
                 print()
                 print(
-                    "추출/범위 해석 실패:"
+                    "질문 분석 중 오류가 "
+                    "발생했습니다."
                 )
 
                 print(
@@ -352,49 +792,30 @@ def main() -> None:
                 result = None
                 break
 
-
-            # =================================================
-            # 7-1. 질문 완성
-            # =================================================
+            # ------------------------------------------------
+            # Complete
+            # ------------------------------------------------
 
             if result.is_complete:
-
-                print()
-                print_result(
-                    result
-                )
-
                 break
 
-
-            # =================================================
-            # 7-2. 추가 정보 필요
-            # =================================================
+            # ------------------------------------------------
+            # 추가 정보 요청
+            # ------------------------------------------------
 
             print()
-            print("=" * 70)
-            print("추가 정보 필요")
-            print("=" * 70)
 
             print(
-                "누락 슬롯:",
-                result.missing_fields,
+                result.clarification_question
+                or "추가 정보가 필요합니다."
             )
 
-            print(
-                "확인 질문:",
-                result.clarification_question,
+            additional = (
+                input(
+                    "답변> "
+                )
+                .strip()
             )
-
-
-            additional = input(
-                "답변> "
-            ).strip()
-
-
-            # -------------------------------------------------
-            # 빈 답변
-            # -------------------------------------------------
 
             if not additional:
 
@@ -405,17 +826,19 @@ def main() -> None:
 
                 continue
 
+            # ------------------------------------------------
+            # 취소
+            # ------------------------------------------------
 
-            # -------------------------------------------------
-            # 현재 질문 취소
-            # -------------------------------------------------
-
-            if additional.lower() in {
-                "취소",
-                "cancel",
-                "quit",
-                "q",
-            }:
+            if (
+                additional.lower()
+                in {
+                    "취소",
+                    "cancel",
+                    "quit",
+                    "q",
+                }
+            ):
 
                 print(
                     "현재 질문을 "
@@ -425,49 +848,42 @@ def main() -> None:
                 result = None
                 break
 
-
-            # -------------------------------------------------
-            # 추가 정보를 기존 질문에 누적
-            # -------------------------------------------------
+            # ------------------------------------------------
+            # 기존 질문 + 추가 정보
+            # ------------------------------------------------
 
             conversation_question = (
                 conversation_question
-                + "\n[사용자 추가 정보] "
+                + "\n"
+                + "[사용자 추가 정보] "
                 + additional
             )
 
-
         # ====================================================
-        # 8. Extraction 실패 / 취소
+        # 실패 / 취소
         # ====================================================
 
         if result is None:
             continue
 
-
         # ====================================================
-        # 9. 아직 complete가 아닌 경우
-        # ====================================================
-
-        if not result.is_complete:
-            continue
-
-
-        # ====================================================
-        # 10. Result -> dict
+        # RESULT → DICT
         # ====================================================
 
         try:
 
-            extracted = result_to_dict(
-                result
+            extracted = (
+                result_to_dict(
+                    result
+                )
             )
 
         except Exception as exc:
 
             print()
             print(
-                "Extractor 결과 변환 실패:"
+                "질문 분석 결과를 "
+                "처리하지 못했습니다."
             )
 
             print(
@@ -476,43 +892,40 @@ def main() -> None:
 
             continue
 
-
         # ====================================================
-        # 11. Task Routing
+        # IMPORTANT
+        #
+        # 여기서 run_agent()를 다시 호출하지 않는다.
+        # 이미 얻은 extracted를 바로 사용한다.
         # ====================================================
 
-        try:
+        def execute_task() -> dict[str, Any]:
+            return (
+                run_task_from_extracted(
+                    question=conversation_question,
+                    extracted=extracted,
+                )
+            )
 
-            task_result = route_task(
+
+        task_result = (
+            run_with_grounding_validation(
                 question=conversation_question,
-                extracted=extracted,
+                execute_task=execute_task,
+                max_attempts=3,
             )
-
-        except Exception as exc:
-
-            print()
-            print(
-                "Task 실행 실패:"
-            )
-
-            print(
-                exc
-            )
-
-            continue
-
+        )
 
         # ====================================================
-        # 12. 결과 출력
+        # USER OUTPUT ONLY
         # ====================================================
 
         print()
-        print("=" * 70)
-        print("Task 결과")
-        print("=" * 70)
 
         print(
-            task_result
+            build_user_output(
+                task_result
+            )
         )
 
 
