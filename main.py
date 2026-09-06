@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 
 from pathlib import Path
@@ -40,6 +39,7 @@ from question.keyword_extractor_ver2 import (
     HyperClovaXKeywordExtractor,
     CompanyScopeResolver,
     extract_and_resolve,
+    is_business_focus_skip_answer,
 )
 
 
@@ -434,7 +434,51 @@ def run_agent(
         }
 
     # --------------------------------------------------------
-    # 추가 정보 필요
+    # 특정 사업 확인 필요
+    # --------------------------------------------------------
+    # "핵심 사업", "주요 사업", "사업 구조"처럼 범위가 넓은
+    # 사업 질문은 WHO / WHEN / WHAT 누락 여부보다 먼저
+    # 특정 사업을 원하는지 확인한다.
+    if getattr(
+        result,
+        "needs_business_clarification",
+        False,
+    ):
+
+        business_question = (
+            getattr(
+                result,
+                "business_clarification_question",
+                None,
+            )
+            or (
+                "특정 사업을 중심으로 확인할까요? "
+                "예: 반도체, 가전, 모바일. "
+                "특정 사업이 없거나 잘 모르겠다면 "
+                "'없음' 또는 '모름'이라고 답해주세요."
+            )
+        )
+
+        return {
+            "success": False,
+            "status": (
+                "clarification_required"
+            ),
+            "clarification_type": (
+                "business_focus"
+            ),
+            "answer": business_question,
+            "missing_fields": (
+                result.missing_fields
+            ),
+            "clarification_question": (
+                business_question
+            ),
+            "sources": [],
+        }
+
+    # --------------------------------------------------------
+    # 일반 추가 정보 필요
     # --------------------------------------------------------
 
     if not result.is_complete:
@@ -443,6 +487,9 @@ def run_agent(
             "success": False,
             "status": (
                 "clarification_required"
+            ),
+            "clarification_type": (
+                "required_slot"
             ),
             "answer": (
                 result.clarification_question
@@ -767,71 +814,166 @@ def main() -> None:
                 break
 
             # ------------------------------------------------
-            # Complete
+            # 1. 특정 사업 clarification
             # ------------------------------------------------
+            # 필수 슬롯(time 등)이 부족하더라도
+            # "핵심 사업", "주요 사업", "사업 구조"처럼
+            # 사업 범위가 넓은 질문이면 먼저 특정 사업을 확인한다.
+            if getattr(
+                result,
+                "needs_business_clarification",
+                False,
+            ):
 
-            if result.is_complete:
-                break
-
-            # ------------------------------------------------
-            # 추가 정보 요청
-            # ------------------------------------------------
-
-            print()
-
-            print(
-                result.clarification_question
-                or "추가 정보가 필요합니다."
-            )
-
-            additional = (
-                input(
-                    "답변> "
-                )
-                .strip()
-            )
-
-            if not additional:
+                print()
 
                 print(
-                    "필요한 정보를 "
-                    "입력해주세요."
+                    getattr(
+                        result,
+                        "business_clarification_question",
+                        None,
+                    )
+                    or (
+                        "특정 사업을 중심으로 확인할까요? "
+                        "예: 반도체, 가전, 모바일. "
+                        "특정 사업이 없거나 잘 모르겠다면 "
+                        "'없음' 또는 '모름'이라고 답해주세요."
+                    )
+                )
+
+                additional = (
+                    input(
+                        "답변> "
+                    )
+                    .strip()
+                )
+
+                if not additional:
+
+                    print(
+                        "특정 사업이 없다면 "
+                        "'없음' 또는 '모름'이라고 "
+                        "입력해주세요."
+                    )
+
+                    continue
+
+                if (
+                    additional.lower()
+                    in {
+                        "취소",
+                        "cancel",
+                        "quit",
+                        "q",
+                    }
+                ):
+
+                    print(
+                        "현재 질문을 "
+                        "취소합니다."
+                    )
+
+                    result = None
+                    break
+
+                if is_business_focus_skip_answer(
+                    additional
+                ):
+                    # 특정 사업을 사용자가 지정하지 않은 경우.
+                    # marker를 남겨 다음 extractor 호출에서
+                    # 같은 사업 질문을 다시 하지 않도록 한다.
+                    conversation_question = (
+                        conversation_question
+                        + "\n"
+                        + "[사용자 사업 범위] "
+                        + "특정 사업 지정 없음. "
+                        + "질문의 핵심 사업 또는 주요 사업을 "
+                        + "공시 근거를 바탕으로 판단할 것."
+                    )
+
+                else:
+                    # 사용자가 반도체, 가전, 모바일 등
+                    # 특정 사업을 직접 지정한 경우.
+                    conversation_question = (
+                        conversation_question
+                        + "\n"
+                        + "[사용자 사업 범위] "
+                        + additional
+                    )
+
+                # 사업 범위가 반영된 전체 질문을
+                # extractor에 다시 넣는다.
+                continue
+
+            # ------------------------------------------------
+            # 2. 일반 필수 슬롯 clarification
+            # ------------------------------------------------
+
+            if not result.is_complete:
+
+                print()
+
+                print(
+                    result.clarification_question
+                    or "추가 정보가 필요합니다."
+                )
+
+                additional = (
+                    input(
+                        "답변> "
+                    )
+                    .strip()
+                )
+
+                if not additional:
+
+                    print(
+                        "필요한 정보를 "
+                        "입력해주세요."
+                    )
+
+                    continue
+
+                # --------------------------------------------
+                # 취소
+                # --------------------------------------------
+
+                if (
+                    additional.lower()
+                    in {
+                        "취소",
+                        "cancel",
+                        "quit",
+                        "q",
+                    }
+                ):
+
+                    print(
+                        "현재 질문을 "
+                        "취소합니다."
+                    )
+
+                    result = None
+                    break
+
+                # --------------------------------------------
+                # 기존 질문 + 추가 정보
+                # --------------------------------------------
+
+                conversation_question = (
+                    conversation_question
+                    + "\n"
+                    + "[사용자 추가 정보] "
+                    + additional
                 )
 
                 continue
 
             # ------------------------------------------------
-            # 취소
+            # 3. 모든 clarification 완료
             # ------------------------------------------------
 
-            if (
-                additional.lower()
-                in {
-                    "취소",
-                    "cancel",
-                    "quit",
-                    "q",
-                }
-            ):
-
-                print(
-                    "현재 질문을 "
-                    "취소합니다."
-                )
-
-                result = None
-                break
-
-            # ------------------------------------------------
-            # 기존 질문 + 추가 정보
-            # ------------------------------------------------
-
-            conversation_question = (
-                conversation_question
-                + "\n"
-                + "[사용자 추가 정보] "
-                + additional
-            )
+            break
 
         # ====================================================
         # 실패 / 취소

@@ -82,6 +82,35 @@ COMPANY_COLUMN_CANDIDATES = [
 ]
 
 
+# 특정 사업을 따로 지정하지 않겠다는 사용자 응답
+BUSINESS_CLARIFICATION_SKIP_WORDS = {
+    "없음",
+    "없어요",
+    "없습니다",
+    "특정 사업 없음",
+    "특정사업없음",
+    "모름",
+    "몰라",
+    "몰라요",
+    "모르겠어",
+    "모르겠어요",
+    "모르겠습니다",
+    "잘 모르겠어",
+    "잘 모르겠어요",
+    "잘 모르겠습니다",
+    "상관없어",
+    "상관없어요",
+    "상관없습니다",
+    "전체",
+    "전체 사업",
+    "전체사업",
+    "전반적으로",
+    "알아서",
+    "알아서 해줘",
+    "알아서 판단해줘",
+}
+
+
 MODEL_SYSTEM_PROMPT = (
     "당신은 기업 공시 및 금융 질의를 분석하는 검색 라우터입니다. "
     "질문에 명시된 정보만 구조화해서 추출하세요. "
@@ -244,6 +273,14 @@ scope_type에 해당하는 범위 이름 목록.
 9) topic_keywords
 검색에 유용한 핵심 키워드 목록.
 
+중요:
+- 질문에 "[사용자 사업 범위]"가 있고 특정 사업명이 지정되어 있으면
+  해당 사업명을 topic_keywords에 반드시 포함한다.
+- "[사용자 사업 범위] 특정 사업 지정 없음"이 있으면
+  임의의 세부 사업을 하나로 고정하지 않는다.
+- 이 경우 질문의 "핵심 사업", "주요 사업", "사업 구조" 등을
+  제공된 공시 근거에서 넓게 판단할 수 있도록 유지한다.
+
 [출력 예시 1]
 질문: 현대자동차의 2026년 수출액은?
 {
@@ -358,6 +395,11 @@ class ExtractedKeywords:
     missing_fields: list = field(default_factory=list)
     clarification_question: str | None = None
 
+    # 선택적 사업 범위 확인용
+    business_focus: str | None = None
+    needs_business_clarification: bool = False
+    business_clarification_question: str | None = None
+
     def to_dict(self) -> dict:
         return {
             "question": self.question,
@@ -382,6 +424,9 @@ class ExtractedKeywords:
             "is_complete": self.is_complete,
             "missing_fields": self.missing_fields,
             "clarification_question": self.clarification_question,
+            "business_focus": self.business_focus,
+            "needs_business_clarification": self.needs_business_clarification,
+            "business_clarification_question": self.business_clarification_question,
         }
 
 
@@ -940,6 +985,187 @@ def build_clarification_question(
 
 
 # ----------------------------------------------------------------------
+# 선택적 사업 범위 Clarification
+# ----------------------------------------------------------------------
+
+def normalize_free_text(value: Any) -> str:
+    return re.sub(
+        r"\s+",
+        " ",
+        str(value or "").strip().casefold(),
+    )
+
+
+def has_business_clarification_marker(
+    question: str,
+) -> bool:
+    """
+    이미 특정 사업 범위를 한 차례 확인했으면 다시 묻지 않는다.
+    """
+    return "[사용자 사업 범위]" in str(question)
+
+
+def needs_business_focus_clarification(
+    question: str,
+    extracted: ExtractedKeywords,
+) -> bool:
+    """
+    '사업'을 넓은 범위로 묻는 질문이면 특정 사업을 원하는지
+    한 번 선택적으로 확인한다.
+
+    예:
+      - "핵심 사업이 어떻게 변했어?"
+      - "주요 사업은 어떻게 달라졌어?"
+      - "사업 구조가 어떻게 변했어?"
+
+    제외:
+      - '사업보고서', '사업연도'처럼 문서명/기간 표현에만
+        '사업'이 포함된 경우
+      - 이미 [사용자 사업 범위]를 한 차례 받은 경우
+    """
+    text = str(question or "").strip()
+
+    if not text:
+        return False
+
+    if has_business_clarification_marker(text):
+        return False
+
+    if "사업" not in text:
+        return False
+
+    # 문서명/기간 표현의 "사업"은 대상에서 제외
+    cleaned = text
+    for phrase in (
+        "사업보고서",
+        "사업 연도",
+        "사업연도",
+        "사업 년도",
+        "사업년도",
+    ):
+        cleaned = cleaned.replace(phrase, "")
+
+    if "사업" not in cleaned:
+        return False
+
+    # 사용자가 이미 특정 사업을 명시한 대표적 형태는 재질문하지 않는다.
+    # 예: "반도체 사업", "가전 사업", "모바일 사업"
+    # 반면 "핵심 사업", "주요 사업", "사업 구조"는 넓은 질문이므로 묻는다.
+    broad_patterns = (
+        "핵심 사업",
+        "핵심사업",
+        "주요 사업",
+        "주요사업",
+        "사업 구조",
+        "사업구조",
+        "사업 구성",
+        "사업구성",
+        "사업 부문",
+        "사업부문",
+        "사업 변화",
+        "사업변화",
+        "사업의 변화",
+        "사업이 어떻게",
+        "사업 내용",
+        "사업내용",
+        "어떤 사업",
+        "무슨 사업",
+    )
+
+    if any(pattern in cleaned for pattern in broad_patterns):
+        return True
+
+    # 복합문서 추론에서 HCX가 '사업' 자체를 핵심 topic으로 잡은 경우
+    # 보조적으로 clarification 대상에 포함
+    if (
+        extracted.task_type == "복합문서추론"
+        and any(
+            normalize_lookup_text(keyword)
+            in {
+                "사업",
+                "핵심사업",
+                "주요사업",
+                "사업구조",
+                "사업구성",
+                "사업부문",
+                "사업변화",
+                "사업내용",
+            }
+            for keyword in extracted.topic_keywords
+        )
+    ):
+        return True
+
+    return False
+
+
+def build_business_clarification_question() -> str:
+    return (
+        "특정 사업을 중심으로 확인할까요? "
+        "예: 반도체, 가전, 모바일. "
+        "특정 사업이 없거나 잘 모르겠다면 "
+        "'없음' 또는 '모름'이라고 답해주세요."
+    )
+
+
+def is_business_focus_skip_answer(
+    answer: str,
+) -> bool:
+    """
+    사용자가 특정 사업을 지정하지 않겠다는 의미인지 판별한다.
+    """
+    normalized = normalize_free_text(answer)
+
+    if not normalized:
+        return False
+
+    if normalized in BUSINESS_CLARIFICATION_SKIP_WORDS:
+        return True
+
+    skip_patterns = (
+        r"^없(어|어요|습니다)?$",
+        r"^특정\s*사업\s*(은|이)?\s*없",
+        r"^모르",
+        r"^잘\s*모르",
+        r"^상관\s*없",
+        r"^전체",
+        r"^전반적",
+        r"^알아서",
+    )
+
+    return any(
+        re.search(pattern, normalized)
+        for pattern in skip_patterns
+    )
+
+
+def extract_business_focus_from_question(
+    question: str,
+) -> str | None:
+    """
+    '[사용자 사업 범위]' 뒤의 특정 사업명을 추출한다.
+    '특정 사업 지정 없음'이면 None을 반환한다.
+    """
+    marker = "[사용자 사업 범위]"
+    text = str(question or "")
+
+    if marker not in text:
+        return None
+
+    tail = text.rsplit(marker, 1)[-1].strip()
+
+    if not tail:
+        return None
+
+    first_line = tail.splitlines()[0].strip()
+
+    if first_line.startswith("특정 사업 지정 없음"):
+        return None
+
+    return first_line or None
+
+
+# ----------------------------------------------------------------------
 # Scope Resolver
 # ----------------------------------------------------------------------
 
@@ -1319,12 +1545,32 @@ def extract_and_resolve(
         question
     )
 
+    # 이미 사업 범위가 추가된 질문이면 값 보존
+    extracted.business_focus = (
+        extract_business_focus_from_question(
+            question
+        )
+    )
+
     # 2. WHO / WHEN / WHAT 검증
     extracted = validate_required_slots(
         extracted
     )
 
-    # 3. 부족하면 retrieval 전에 중단
+    # 3. 필수 슬롯 완성 여부와 무관하게
+    #    넓은 '사업' 질문인지 먼저 판별한다.
+    #    예: "삼성전자의 핵심 사업이 뭐야?"
+    #    -> time이 없어도 특정 사업을 먼저 확인할 수 있음.
+    if needs_business_focus_clarification(
+        question,
+        extracted,
+    ):
+        extracted.needs_business_clarification = True
+        extracted.business_clarification_question = (
+            build_business_clarification_question()
+        )
+
+    # 4. 필수 슬롯이 부족하면 retrieval 전에 중단
     if not extracted.is_complete:
         extracted.clarification_question = (
             build_clarification_question(
@@ -1333,10 +1579,12 @@ def extract_and_resolve(
         )
         return extracted
 
-    # 4. 모두 갖춰졌을 때만 기업 범위 확장
-    return resolver.resolve(
+    # 5. 모두 갖춰졌을 때 기업 범위 확장
+    extracted = resolver.resolve(
         extracted
     )
+
+    return extracted
 
 
 def print_result(
@@ -1408,6 +1656,18 @@ def print_result(
     print(
         f"  clarification_question: "
         f"{result.clarification_question}"
+    )
+    print(
+        f"  business_focus: "
+        f"{result.business_focus}"
+    )
+    print(
+        f"  needs_business_clarification: "
+        f"{result.needs_business_clarification}"
+    )
+    print(
+        f"  business_clarification_question: "
+        f"{result.business_clarification_question}"
     )
     print(
         f"  metrics: {result.metrics}"
@@ -1485,42 +1745,99 @@ def main() -> None:
             f"question={conversation_question!r}"
         )
 
-        if result.is_complete:
-            print_result(result)
-            break
-
-        print("\n=== 추가 정보 필요 ===")
-        print(
-            f"누락 슬롯: {result.missing_fields}"
-        )
-        print(
-            f"확인 질문: "
-            f"{result.clarification_question}"
-        )
-
-        additional = input(
-            "답변: "
-        ).strip()
-
-        if not additional:
+        # --------------------------------------------------------------
+        # 1. 사업 관련 선택적 clarification을 먼저 처리
+        # --------------------------------------------------------------
+        # 필수 슬롯(time 등)이 부족해도 "핵심 사업", "주요 사업"처럼
+        # 넓은 사업 질문이면 특정 사업 범위를 우선 확인한다.
+        if result.needs_business_clarification:
+            print("\n=== 특정 사업 확인 ===")
             print(
-                "필요한 정보를 입력해주세요."
+                result.business_clarification_question
+            )
+
+            additional = input(
+                "답변: "
+            ).strip()
+
+            if not additional:
+                print(
+                    "특정 사업이 없다면 "
+                    "'없음'이라고 입력해주세요."
+                )
+                continue
+
+            if additional.lower() in {
+                "취소",
+                "quit",
+                "q",
+            }:
+                print("종료합니다.")
+                break
+
+            if is_business_focus_skip_answer(
+                additional
+            ):
+                conversation_question = (
+                    conversation_question
+                    + "\n[사용자 사업 범위] "
+                    + "특정 사업 지정 없음. "
+                    + "질문의 핵심 사업 또는 주요 사업을 "
+                    + "공시 근거를 바탕으로 판단할 것."
+                )
+            else:
+                conversation_question = (
+                    conversation_question
+                    + "\n[사용자 사업 범위] "
+                    + additional
+                )
+
+            # marker가 붙으므로 다음 루프에서는 사업 범위를 다시 묻지 않는다.
+            continue
+
+        # --------------------------------------------------------------
+        # 2. 기존 WHO / WHEN / WHAT clarification
+        # --------------------------------------------------------------
+        if not result.is_complete:
+            print("\n=== 추가 정보 필요 ===")
+            print(
+                f"누락 슬롯: {result.missing_fields}"
+            )
+            print(
+                f"확인 질문: "
+                f"{result.clarification_question}"
+            )
+
+            additional = input(
+                "답변: "
+            ).strip()
+
+            if not additional:
+                print(
+                    "필요한 정보를 입력해주세요."
+                )
+                continue
+
+            if additional.lower() in {
+                "취소",
+                "quit",
+                "q",
+            }:
+                print("종료합니다.")
+                break
+
+            conversation_question = (
+                conversation_question
+                + "\n[사용자 추가 정보] "
+                + additional
             )
             continue
 
-        if additional.lower() in {
-            "취소",
-            "quit",
-            "q",
-        }:
-            print("종료합니다.")
-            break
-
-        conversation_question = (
-            conversation_question
-            + "\n[사용자 추가 정보] "
-            + additional
-        )
+        # --------------------------------------------------------------
+        # 3. 추가 질문이 모두 끝났으면 최종 결과
+        # --------------------------------------------------------------
+        print_result(result)
+        break
 
 
 if __name__ == "__main__":
