@@ -106,15 +106,31 @@ PERIOD_RE = re.compile(
     r"^(?P<year>\d{4})(?:-(?:(?P<month>\d{2})-(?P<day>\d{2})|Q(?P<quarter>[1-4])|H(?P<half>[12])))?$"
 )
 
+# 청크 메타데이터에 table_part_index / narrative_index가 채워지지 않은
+# 코퍼스를 위해 chunk_id 문자열에서 같은 값을 복구한다.
+# 예) ..._table_1740_part_001 / ..._narrative_0027
+CHUNK_ID_TABLE_RE = re.compile(r"_table_(\d+)(?:_part_(\d+))?$")
+CHUNK_ID_NARRATIVE_RE = re.compile(r"_narrative_(\d+)$")
+
 DEFAULT_DENSE_K = 24
 DEFAULT_KEYWORD_DENSE_K = 12
 DEFAULT_RERANK_K = 10
-DEFAULT_CONTEXT_CHAR_BUDGET = 30_000
+# 답변 생성기의 COMPLEX_ANSWER_MAX_TOTAL_SOURCE_CHARS와 같은 값으로 맞춘다.
+DEFAULT_CONTEXT_CHAR_BUDGET = 70_000
 # 기간이 정확히 일치하는 요청×연도 셀을 최대 12개까지 다룰 때,
 # 각 셀의 적격 상위 청크 2개를 모두 담을 수 있는 기본 상한이다.
 DEFAULT_CONTEXT_MAX_CHUNKS = 24
+# 셀당 최소 보장 청크 수. 실제 상한은 셀 개수에 따라
+# max(이 값, max_chunks // 셀 개수)로 계산한다.
 DEFAULT_EXACT_CHUNKS_PER_CELL = 2
 DEFAULT_FALLBACK_CHUNKS_PER_CELL = 1
+# 하나로 합친 표/문단 청크의 글자 상한.
+# 답변 생성기의 COMPLEX_ANSWER_MAX_SOURCE_CHARS와 맞춰 두어야
+# 같은 텍스트가 두 번 잘리지 않는다.
+DEFAULT_MERGED_CHUNK_MAX_CHARS = 10_000
+# 표는 조각 개수와 무관하게 전체를 모아야 하므로 window를 크게 둔다.
+TABLE_MERGE_WINDOW = 999
+DEFAULT_NARRATIVE_MERGE_WINDOW = 1
 MAX_REPORT_TYPES_PER_REQUEST = 3
 PERIODIC_REPORT_TYPES = (
     "annual_report",
@@ -813,6 +829,8 @@ def execute_search_plan(
     rerank_k_per_document_request: int = DEFAULT_RERANK_K,
     context_char_budget: int = DEFAULT_CONTEXT_CHAR_BUDGET,
     context_max_chunks: int = DEFAULT_CONTEXT_MAX_CHUNKS,
+    merged_chunk_max_chars: int = DEFAULT_MERGED_CHUNK_MAX_CHARS,
+    narrative_merge_window: int = DEFAULT_NARRATIVE_MERGE_WINDOW,
     query_weight: float = DEFAULT_QUERY_WEIGHT,
     keyword_weight: float = DEFAULT_KEYWORD_WEIGHT,
     query_score_threshold: float = DEFAULT_QUERY_SCORE_THRESHOLD,
@@ -892,9 +910,14 @@ def execute_search_plan(
         keyword_weight=keyword_weight,
         debug=debug,
     )
-    primary_expanded = expand_context(
+    # 조각난 표를 원래 표 단위로 합치고, 서술 청크에는 인접 문단을
+    # 이어 붙인다. 별도 청크를 추가하지 않으므로 셀 배정과 자격 판정에
+    # 새로운 후보가 끼어들지 않는다.
+    primary_expanded = merge_related_chunks(
         primary_reranked,
         store,
+        max_chars=merged_chunk_max_chars,
+        narrative_window=narrative_merge_window,
         debug=debug,
     )
 
@@ -928,14 +951,20 @@ def execute_search_plan(
             fallback_raw,
             debug=debug,
         )
-        fallback_candidates = rerank_candidates(
-            prepared,
-            fallback_fused,
-            store=store,
-            keywords_by_request=keywords_by_request,
-            per_document_request_limit=rerank_k_per_document_request,
-            query_weight=query_weight,
-            keyword_weight=keyword_weight,
+        fallback_candidates = merge_related_chunks(
+            rerank_candidates(
+                prepared,
+                fallback_fused,
+                store=store,
+                keywords_by_request=keywords_by_request,
+                per_document_request_limit=rerank_k_per_document_request,
+                query_weight=query_weight,
+                keyword_weight=keyword_weight,
+                debug=debug,
+            ),
+            store,
+            max_chars=merged_chunk_max_chars,
+            narrative_window=narrative_merge_window,
             debug=debug,
         )
         _debug_print(
@@ -1338,6 +1367,362 @@ def rerank_candidates(
     return result
 
 
+# =============================================================================
+# CHUNK ID FALLBACK / RELATED CHUNK MERGE
+# =============================================================================
+
+def _resolve_table_index(chunk_id: Any, metadata: Mapping[str, Any]) -> int | None:
+    """표 번호를 메타데이터에서 읽고, 없으면 chunk_id에서 복구한다."""
+    value = _to_int_or_none(metadata.get("table_index"))
+    if value is not None:
+        return value
+    match = CHUNK_ID_TABLE_RE.search(_clean(chunk_id))
+    return int(match.group(1)) if match else None
+
+
+def _resolve_table_part_index(
+    chunk_id: Any, metadata: Mapping[str, Any]
+) -> int | None:
+    """표 조각 번호를 메타데이터에서 읽고, 없으면 chunk_id에서 복구한다."""
+    value = _to_int_or_none(metadata.get("table_part_index"))
+    if value is not None:
+        return value
+    match = CHUNK_ID_TABLE_RE.search(_clean(chunk_id))
+    if match and match.group(2):
+        return int(match.group(2))
+    return None
+
+
+def _resolve_narrative_index(
+    chunk_id: Any, metadata: Mapping[str, Any]
+) -> int | None:
+    """서술 문단 번호를 메타데이터에서 읽고, 없으면 chunk_id에서 복구한다."""
+    value = _to_int_or_none(metadata.get("narrative_index"))
+    if value is not None:
+        return value
+    match = CHUNK_ID_NARRATIVE_RE.search(_clean(chunk_id))
+    return int(match.group(1)) if match else None
+
+
+def _common_text_prefix(
+    texts: list[str],
+    *,
+    minimum: int = 20,
+    maximum: int = 400,
+) -> str:
+    """같은 표의 조각들이 공유하는 머리말을 찾는다.
+
+    청크 본문은 '회사: ... 보고서: ... 표 제목: ...' 형태의 머리말을
+    조각마다 반복해서 포함한다. 합칠 때 이 부분을 한 번만 남긴다.
+    """
+    if len(texts) < 2:
+        return ""
+    prefix = texts[0][:maximum]
+    for text in texts[1:]:
+        limit = min(len(prefix), len(text))
+        index = 0
+        while index < limit and prefix[index] == text[index]:
+            index += 1
+        prefix = prefix[:index]
+        if len(prefix) < minimum:
+            return ""
+    # 공통 부분이 단어 중간에서 끝나면 본문 글자까지 잘려나간다.
+    # ("행1"과 "행2"의 공통 접두사 "행") 마지막 공백까지만 머리말로 본다.
+    boundary = max(prefix.rfind(" "), prefix.rfind("\n"), prefix.rfind("\t"))
+    if boundary < 0:
+        return ""
+    prefix = prefix[: boundary + 1]
+    return prefix if len(prefix) >= minimum else ""
+
+
+def _join_chunk_texts(texts: list[str], *, max_chars: int) -> str:
+    """조각 본문을 순서대로 이어 붙이고 글자 상한을 적용한다."""
+    cleaned = [text for text in texts if text and text.strip()]
+    if not cleaned:
+        return ""
+    if len(cleaned) == 1:
+        joined = cleaned[0]
+    else:
+        prefix = _common_text_prefix(cleaned)
+        parts = [cleaned[0]]
+        for text in cleaned[1:]:
+            body = text[len(prefix):] if prefix else text
+            if body.strip():
+                parts.append(body.strip())
+        joined = "\n".join(parts)
+    if len(joined) > max_chars:
+        joined = joined[:max_chars] + "\n...[TRUNCATED]"
+    return joined
+
+
+def _candidate_with_text(
+    candidate: Candidate,
+    text: str,
+    *,
+    merged_part_count: int,
+) -> Candidate:
+    """점수를 그대로 유지한 채 본문만 교체한 후보를 만든다."""
+    metadata = dict(candidate.metadata)
+    if merged_part_count > 1:
+        metadata["merged_part_count"] = merged_part_count
+    return Candidate(
+        chunk_id=candidate.chunk_id,
+        text=text,
+        metadata=metadata,
+        request_ids=set(candidate.request_ids),
+        channel_ranks=dict(candidate.channel_ranks),
+        channel_scores=dict(candidate.channel_scores),
+        request_fusion_scores=dict(candidate.request_fusion_scores),
+        request_scores=dict(candidate.request_scores),
+        request_evidence_strengths=dict(candidate.request_evidence_strengths),
+        request_match_signals={
+            key: dict(value)
+            for key, value in candidate.request_match_signals.items()
+        },
+        request_keyword_scores={
+            key: dict(value)
+            for key, value in candidate.request_keyword_scores.items()
+        },
+        fusion_score=candidate.fusion_score,
+        rerank_score=candidate.rerank_score,
+        is_expanded=merged_part_count > 1,
+        parent_chunk_id=candidate.parent_chunk_id,
+    )
+
+
+def _collapse_table_group(
+    group: list[Candidate],
+    primary: Candidate,
+    text: str,
+    *,
+    merged_part_count: int,
+) -> Candidate:
+    """같은 표의 여러 조각 후보를 점수 최고값으로 하나에 합친다."""
+    request_ids: set[str] = set()
+    for candidate in group:
+        request_ids.update(candidate.request_ids)
+
+    request_scores: dict[str, float] = {}
+    request_evidence: dict[str, float] = {}
+    request_signals: dict[str, dict[str, float]] = {}
+    request_keywords: dict[str, dict[str, float]] = {}
+    request_fusion: dict[str, float] = {}
+
+    for request_id in request_ids:
+        holders = [
+            candidate
+            for candidate in group
+            if request_id in candidate.request_scores
+        ]
+        if holders:
+            best = max(
+                holders,
+                key=lambda item: item.request_scores.get(request_id, -math.inf),
+            )
+            request_scores[request_id] = best.request_scores[request_id]
+            request_evidence[request_id] = best.request_evidence_strengths.get(
+                request_id, 0.0
+            )
+            request_signals[request_id] = dict(
+                best.request_match_signals.get(request_id, {})
+            )
+            request_keywords[request_id] = dict(
+                best.request_keyword_scores.get(request_id, {})
+            )
+        request_fusion[request_id] = max(
+            (
+                candidate.request_fusion_scores.get(request_id, 0.0)
+                for candidate in group
+            ),
+            default=0.0,
+        )
+
+    channel_ranks: dict[str, int] = {}
+    channel_scores: dict[str, float] = {}
+    for candidate in group:
+        for channel, rank in candidate.channel_ranks.items():
+            channel_ranks[channel] = min(rank, channel_ranks.get(channel, rank))
+        for channel, score in candidate.channel_scores.items():
+            channel_scores[channel] = max(
+                score, channel_scores.get(channel, -math.inf)
+            )
+
+    metadata = dict(primary.metadata)
+    if merged_part_count > 1:
+        metadata["merged_part_count"] = merged_part_count
+    metadata.setdefault(
+        "merged_source_chunk_ids",
+        sorted({candidate.chunk_id for candidate in group}),
+    )
+
+    return Candidate(
+        chunk_id=primary.chunk_id,
+        text=text,
+        metadata=metadata,
+        request_ids=request_ids,
+        channel_ranks=channel_ranks,
+        channel_scores=channel_scores,
+        request_fusion_scores=request_fusion,
+        request_scores=request_scores,
+        request_evidence_strengths=request_evidence,
+        request_match_signals=request_signals,
+        request_keyword_scores=request_keywords,
+        fusion_score=max(request_fusion.values(), default=primary.fusion_score),
+        rerank_score=max(request_scores.values(), default=primary.rerank_score),
+        is_expanded=merged_part_count > 1,
+        parent_chunk_id=None,
+    )
+
+
+def merge_related_chunks(
+    candidates: list[Candidate],
+    store: HybridChunkStore,
+    *,
+    max_chars: int = DEFAULT_MERGED_CHUNK_MAX_CHARS,
+    narrative_window: int = DEFAULT_NARRATIVE_MERGE_WINDOW,
+    debug: bool = False,
+) -> list[Candidate]:
+    """조각난 근거를 의미 단위로 합친다.
+
+    표는 같은 (doc_id, table_index)의 모든 조각을 모아 하나의 후보로
+    붕괴시킨다. 서술 청크는 인접 문단을 본문에 이어 붙인다. 어느 쪽도
+    새 후보를 만들지 않으므로 자격 판정과 셀 배정에 원래 없던 청크가
+    끼어들지 않고, 확장 청크에 점수 페널티를 줄 필요도 없다.
+    """
+    if max_chars <= 0:
+        raise ValueError("max_chars must be positive")
+
+    table_groups: dict[tuple[str, int], list[Candidate]] = defaultdict(list)
+    narrative_candidates: list[Candidate] = []
+    passthrough: list[Candidate] = []
+
+    for candidate in candidates:
+        narrative_index = _resolve_narrative_index(
+            candidate.chunk_id, candidate.metadata
+        )
+        if narrative_index is not None:
+            narrative_candidates.append(candidate)
+            continue
+        table_index = _resolve_table_index(candidate.chunk_id, candidate.metadata)
+        if table_index is not None:
+            table_groups[(candidate.doc_id, table_index)].append(candidate)
+            continue
+        passthrough.append(candidate)
+
+    result: list[Candidate] = []
+    merged_tables = 0
+    merged_narratives = 0
+
+    # ---------------------------------------------------------------- 표
+    for (doc_id, table_index), group in table_groups.items():
+        primary = max(group, key=lambda item: item.rerank_score)
+        texts_by_part: dict[int, str] = {}
+
+        own_part = _resolve_table_part_index(primary.chunk_id, primary.metadata)
+        texts_by_part[own_part if own_part is not None else 0] = primary.text
+
+        for member in group:
+            part = _resolve_table_part_index(member.chunk_id, member.metadata)
+            if part is not None:
+                texts_by_part.setdefault(part, member.text)
+
+        if own_part is not None:
+            try:
+                rows = store.get_related_chunks(
+                    chunk=primary,
+                    window=TABLE_MERGE_WINDOW,
+                )
+            except Exception as exc:
+                rows = []
+                _debug_print(
+                    debug,
+                    "MERGE",
+                    f"table={doc_id}:{table_index} related lookup failed="
+                    f"{type(exc).__name__}",
+                )
+            for row in rows:
+                row_chunk_id = _clean(row.get("chunk_id"))
+                row_text = _clean(row.get("text"))
+                if not row_chunk_id or not row_text:
+                    continue
+                row_metadata = row.get("metadata") or {}
+                if _resolve_table_index(row_chunk_id, row_metadata) != table_index:
+                    continue
+                part = _resolve_table_part_index(row_chunk_id, row_metadata)
+                if part is None:
+                    continue
+                texts_by_part.setdefault(part, row_text)
+
+        ordered = [texts_by_part[key] for key in sorted(texts_by_part)]
+        merged_text = _join_chunk_texts(ordered, max_chars=max_chars)
+        if len(ordered) > 1:
+            merged_tables += 1
+        result.append(
+            _collapse_table_group(
+                group,
+                primary,
+                merged_text,
+                merged_part_count=len(ordered),
+            )
+        )
+
+    # ------------------------------------------------------------- 서술문
+    for candidate in narrative_candidates:
+        narrative_index = _resolve_narrative_index(
+            candidate.chunk_id, candidate.metadata
+        )
+        if narrative_window <= 0 or narrative_index is None:
+            result.append(candidate)
+            continue
+        try:
+            rows = store.get_related_chunks(
+                chunk=candidate,
+                window=narrative_window,
+            )
+        except Exception as exc:
+            rows = []
+            _debug_print(
+                debug,
+                "MERGE",
+                f"narrative={candidate.chunk_id} related lookup failed="
+                f"{type(exc).__name__}",
+            )
+        texts_by_index: dict[int, str] = {narrative_index: candidate.text}
+        for row in rows:
+            row_chunk_id = _clean(row.get("chunk_id"))
+            row_text = _clean(row.get("text"))
+            if not row_chunk_id or not row_text:
+                continue
+            row_index = _resolve_narrative_index(
+                row_chunk_id, row.get("metadata") or {}
+            )
+            if row_index is None:
+                continue
+            texts_by_index.setdefault(row_index, row_text)
+        ordered = [texts_by_index[key] for key in sorted(texts_by_index)]
+        if len(ordered) > 1:
+            merged_narratives += 1
+        result.append(
+            _candidate_with_text(
+                candidate,
+                _join_chunk_texts(ordered, max_chars=max_chars),
+                merged_part_count=len(ordered),
+            )
+        )
+
+    result.extend(passthrough)
+    result.sort(key=lambda item: item.rerank_score, reverse=True)
+
+    _debug_print(
+        debug,
+        "MERGE",
+        f"input={len(candidates):,} output={len(result):,} "
+        f"merged_tables={merged_tables:,} merged_narratives={merged_narratives:,} "
+        f"max_chars={max_chars:,} narrative_window={narrative_window}",
+    )
+    return result
+
+
 def expand_context(
     reranked: list[Candidate],
     store: HybridChunkStore,
@@ -1346,6 +1731,12 @@ def expand_context(
     neighbor_window: int = 1,
     debug: bool = False,
 ) -> list[Candidate]:
+    """구형 확장 방식. 현재 파이프라인은 merge_related_chunks를 사용한다.
+
+    확장 청크에 0.78 페널티를 주는데 자격 판정은 최고점의 0.90 이상을
+    요구하므로, 이 함수가 추가한 청크는 컨텍스트에 선택되지 않는다.
+    외부 호출 호환을 위해 정의만 남겨 둔다.
+    """
     grouped: dict[tuple[str, str], list[Candidate]] = defaultdict(list)
     for candidate in reranked:
         for request_id in candidate.request_ids:
@@ -1784,8 +2175,15 @@ def pack_context(
         for period_bucket in _requested_year_buckets(item.request.period)
     ]
 
-    # 모든 셀에 1개씩 먼저 배정해 앞쪽 셀이 2개를 차지하면서 뒤쪽 셀을
-    # 밀어내지 않도록 한다.
+    # 셀당 상한은 셀 개수에 따라 정한다. 셀이 적으면 컨텍스트 예산을
+    # 충분히 쓰고, 셀이 많으면 최소 보장치까지 자동으로 좁아진다.
+    per_cell_limit = max(
+        DEFAULT_EXACT_CHUNKS_PER_CELL,
+        max_chunks // max(len(expected_cells), 1),
+    )
+
+    # 모든 셀에 1개씩 먼저 배정해 앞쪽 셀이 여러 개를 차지하면서 뒤쪽
+    # 셀을 밀어내지 않도록 한다.
     for request_id, period_bucket in expected_cells:
         for candidate in cell_pools.get((request_id, period_bucket), []):
             if assign_to_cell(candidate, request_id, period_bucket):
@@ -1853,36 +2251,53 @@ def pack_context(
                 )
             break
 
-    # 모든 셀의 첫 번째 청크를 확보한 뒤, 1차 기간 필터를 통과한 같은
-    # 셀의 적격 후보 중 차순위 청크를 하나 더 배정한다. 두 번째 후보는
-    # 셀별 상위 후보이며 셀당 최대 2개를 넘기지 않는다.
-    second_options: list[tuple[float, float, str, str, Candidate]] = []
-    for request_id, period_bucket in expected_cells:
-        cell = (request_id, period_bucket)
-        if not cell_selected_ids[cell] or cell in fallback_pools:
-            continue
+    # 2차 이후 배정은 라운드로 진행한다. 한 라운드에서 각 셀이 후보를
+    # 하나씩만 올리고, 그 라운드 안에서만 점수순으로 배정한다. 라운드
+    # 진입 조건이 '현재 확보 수 == 라운드 번호'이므로 점수가 높은 셀이
+    # 앞서 여러 개를 챙기고 다른 셀을 굶기는 일이 생기지 않는다.
+    # 기간이 어긋난 fallback으로 채운 셀은 계속 제외한다.
+    def next_candidate_for_cell(cell: tuple[str, str]) -> Candidate | None:
         for candidate in cell_pools.get(cell, []):
-            if candidate.chunk_id in cell_selected_ids[cell]:
+            if candidate.chunk_id not in cell_selected_ids[cell]:
+                return candidate
+        return None
+
+    for round_index in range(1, per_cell_limit):
+        if len(selected) >= max_chunks:
+            break
+        round_options: list[tuple[float, float, str, str]] = []
+        for request_id, period_bucket in expected_cells:
+            cell = (request_id, period_bucket)
+            if cell in fallback_pools:
                 continue
-            second_options.append(
+            if len(cell_selected_ids[cell]) != round_index:
+                continue
+            candidate = next_candidate_for_cell(cell)
+            if candidate is None:
+                continue
+            round_options.append(
                 (
                     candidate.request_scores.get(request_id, -math.inf),
                     candidate.rerank_score,
                     request_id,
                     period_bucket,
-                    candidate,
                 )
             )
+        if not round_options:
             break
-    second_options.sort(key=lambda value: (value[0], value[1]), reverse=True)
-    for _, _, request_id, period_bucket, candidate in second_options:
-        if len(selected) >= max_chunks:
-            break
-        if len(cell_selected_ids[(request_id, period_bucket)]) >= (
-            DEFAULT_EXACT_CHUNKS_PER_CELL
-        ):
-            continue
-        assign_to_cell(candidate, request_id, period_bucket)
+        round_options.sort(key=lambda value: (value[0], value[1]), reverse=True)
+        for _, _, request_id, period_bucket in round_options:
+            if len(selected) >= max_chunks:
+                break
+            cell = (request_id, period_bucket)
+            if len(cell_selected_ids[cell]) >= per_cell_limit:
+                continue
+            # 글자 예산을 넘는 큰 청크는 건너뛰고 다음 후보를 시도한다.
+            for candidate in cell_pools.get(cell, []):
+                if candidate.chunk_id in cell_selected_ids[cell]:
+                    continue
+                if assign_to_cell(candidate, request_id, period_bucket):
+                    break
 
     chunks = tuple(
         {
@@ -1923,6 +2338,9 @@ def pack_context(
                     )
                 },
                 "is_expanded": candidate.is_expanded,
+                "merged_part_count": candidate.metadata.get(
+                    "merged_part_count", 1
+                ),
                 "parent_chunk_id": candidate.parent_chunk_id,
             },
         }
@@ -2054,6 +2472,7 @@ def pack_context(
                 "candidate_chunks": candidate_count,
                 "qualified_candidate_chunks": qualified_count,
                 "selected_chunks": selected_count,
+                "per_cell_limit": per_cell_limit,
                 "expected_period_buckets": sorted(expected_periods),
                 "available_period_buckets": sorted(available_periods),
                 "qualified_period_buckets": sorted(qualified_periods),
@@ -2130,6 +2549,8 @@ def pack_context(
         debug,
         "PACK",
         f"selected_chunks={len(bundle.chunks):,} characters={bundle.total_chars:,} "
+        f"cells={len(expected_cells):,} per_cell_limit={per_cell_limit} "
+        f"budget={char_budget:,} max_chunks={max_chunks} "
         f"covered_requests={len(bundle.covered_request_ids):,}/{len(resolved):,} "
         f"missing_request_year_cells={sum(len(item['missing_period_buckets']) for item in diagnostics):,}",
     )
@@ -3083,40 +3504,51 @@ def _ranked_rows_to_candidates(
 def _find_related_rows(
     rows: list[dict[str, Any]], *, chunk: Candidate, window: int
 ) -> list[dict[str, Any]]:
+    """같은 문서 안에서 인접한 청크를 찾는다.
+
+    조각 번호는 메타데이터에 없으면 chunk_id 문자열에서 복구한다.
+    코퍼스 인덱싱이 table_part_index / narrative_index를 채우지 않은
+    상태에서도 표 이어붙이기와 문단 확장이 동작하도록 하기 위함이다.
+    """
     metadata = chunk.metadata
     doc_id = chunk.doc_id
-    chunk_type = _clean(metadata.get("chunk_type"))
     result = []
-    if chunk_type == "narrative":
-        index = _to_int_or_none(metadata.get("narrative_index"))
-        if index is None:
-            return []
+
+    narrative_index = _resolve_narrative_index(chunk.chunk_id, metadata)
+    if narrative_index is not None:
         for row in rows:
             row_meta = row.get("metadata") or {}
-            row_index = _to_int_or_none(row_meta.get("narrative_index"))
-            if (
-                _clean(row_meta.get("doc_id")) == doc_id
-                and _clean(row_meta.get("chunk_type")) == "narrative"
-                and _clean(row_meta.get("section_path")) == _clean(metadata.get("section_path"))
-                and _clean(row_meta.get("subtitle")) == _clean(metadata.get("subtitle"))
-                and row_index is not None
-                and 0 < abs(row_index - index) <= window
+            if _clean(row_meta.get("doc_id")) != doc_id:
+                continue
+            row_index = _resolve_narrative_index(row.get("chunk_id"), row_meta)
+            if row_index is None:
+                continue
+            if _clean(row_meta.get("section_path")) != _clean(
+                metadata.get("section_path")
             ):
+                continue
+            if _clean(row_meta.get("subtitle")) != _clean(
+                metadata.get("subtitle")
+            ):
+                continue
+            if 0 < abs(row_index - narrative_index) <= window:
                 result.append(row)
         return result
-    table_index = _to_int_or_none(metadata.get("table_index"))
-    part_index = _to_int_or_none(metadata.get("table_part_index"))
+
+    table_index = _resolve_table_index(chunk.chunk_id, metadata)
+    part_index = _resolve_table_part_index(chunk.chunk_id, metadata)
     if table_index is None or part_index is None:
         return []
     for row in rows:
         row_meta = row.get("metadata") or {}
-        row_part = _to_int_or_none(row_meta.get("table_part_index"))
-        if (
-            _clean(row_meta.get("doc_id")) == doc_id
-            and _to_int_or_none(row_meta.get("table_index")) == table_index
-            and row_part is not None
-            and 0 < abs(row_part - part_index) <= window
-        ):
+        if _clean(row_meta.get("doc_id")) != doc_id:
+            continue
+        if _resolve_table_index(row.get("chunk_id"), row_meta) != table_index:
+            continue
+        row_part = _resolve_table_part_index(row.get("chunk_id"), row_meta)
+        if row_part is None:
+            continue
+        if 0 < abs(row_part - part_index) <= window:
             result.append(row)
     return result
 
