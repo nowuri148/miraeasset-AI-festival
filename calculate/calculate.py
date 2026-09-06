@@ -32,19 +32,269 @@ question
 from __future__ import annotations
 
 import json
+import os
 import re
+import sys
+import time
 from dataclasses import dataclass, asdict
+from pathlib import Path
 from typing import Any, Callable, Dict, List, Mapping, Optional, Sequence
 
-from basic_function import (
-    get_operation_specs,
+import requests
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from Config import CLOVA_STUDIO_API_KEY  # noqa: E402
+from .basic_function import (  # noqa: E402
+    OPERATION_SPECS,
     safe_execute_operation,
     supported_operations,
 )
+from complex_info.z_complex_task import (
+    initialize_complex_components,
+    _context_chunks_to_results,
+    _build_context_text,
+    _env_bool,
+    _env_int,
+    _debug,
+    _failure_result,
+    INSUFFICIENT_EVIDENCE_ANSWER,
+)
 
+DEFAULT_BASE_URL = "https://clovastudio.stream.ntruss.com/v1/openai"
+DEFAULT_MODEL = "HCX-005"
+
+CALCULATION_SYSTEM_PROMPT = (
+    "당신은 기업 공시 기반 다중 조회 및 비교·연산을 수행하는 계산 보조 모델입니다. "
+    "제공된 질문, 정규화 힌트, 검색 chunk만 사용하세요. "
+    "공시에 없는 사실을 추측하지 말고, 요구된 JSON 형식을 정확히 지키세요."
+)
+TASK_TYPE = "다중조회연산"
 
 LLMCallable = Callable[[str], str]
 
+
+
+# =============================================================================
+# HyperCLOVA X
+# =============================================================================
+
+class HyperClovaXCalculationClient:
+    """
+    calculate.py 전용 HyperCLOVA X 호출기.
+
+    사용 방식:
+        client = HyperClovaXCalculationClient(...)
+        result = calculate(..., llm_callable=client)
+
+    __call__(prompt) -> str 을 구현하므로 llm_callable로 바로 전달할 수 있다.
+    """
+
+    def __init__(
+        self,
+        api_key: str,
+        base_url: str = DEFAULT_BASE_URL,
+        model_name: str = DEFAULT_MODEL,
+        timeout: int = 60,
+        debug: bool = False,
+    ) -> None:
+        if not api_key:
+            raise ValueError("CLOVA Studio API key가 필요합니다.")
+
+        self.api_key = api_key
+        self.api_endpoint = base_url.rstrip("/") + "/chat/completions"
+        self.model_name = model_name
+        self.timeout = timeout
+        self.debug = debug
+
+    def __call__(self, prompt: str) -> str:
+        return self.generate(prompt)
+
+    def generate(self, prompt: str) -> str:
+        if not isinstance(prompt, str) or not prompt.strip():
+            raise ValueError("LLM prompt가 비어 있습니다.")
+
+        payload = {
+            "model": self.model_name,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": CALCULATION_SYSTEM_PROMPT,
+                },
+                {
+                    "role": "user",
+                    "content": prompt,
+                },
+            ],
+            "temperature": 0.0,
+            "top_p": 0.8,
+            "max_tokens": 2200,
+        }
+
+        headers = {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authorization": f"Bearer {self.api_key}",
+        }
+
+        try:
+            response = requests.post(
+                self.api_endpoint,
+                json=payload,
+                headers=headers,
+                timeout=self.timeout,
+            )
+        except requests.RequestException as exc:
+            raise RuntimeError(
+                f"HyperCLOVA X API 요청 실패: {exc}"
+            ) from exc
+
+        if self.debug:
+            print(f"[DEBUG] HCX status_code = {response.status_code}")
+            print(f"[DEBUG] HCX response = {response.text}")
+
+        try:
+            response.raise_for_status()
+        except requests.HTTPError as exc:
+            raise RuntimeError(
+                "HyperCLOVA X API 오류\n"
+                f"HTTP {response.status_code}\n"
+                f"{response.text}"
+            ) from exc
+
+        try:
+            data = response.json()
+            content = data["choices"][0]["message"]["content"]
+        except (
+            ValueError,
+            KeyError,
+            IndexError,
+            TypeError,
+        ) as exc:
+            raise RuntimeError(
+                "HyperCLOVA X API 응답 구조가 예상과 다릅니다.\n"
+                f"{response.text}"
+            ) from exc
+
+        if not isinstance(content, str):
+            raise RuntimeError(
+                "HyperCLOVA X message.content가 문자열이 아닙니다."
+            )
+
+        return content.strip()
+
+
+def build_default_hcx_client(
+    debug: bool = False,
+) -> HyperClovaXCalculationClient:
+    """
+    Config.py 또는 환경변수의 API key를 사용해 기본 HCX client를 만든다.
+    """
+    key = os.getenv(
+        "CLOVA_STUDIO_API_KEY",
+        CLOVA_STUDIO_API_KEY,
+    )
+
+    if not key:
+        raise RuntimeError(
+            "CLOVA_STUDIO_API_KEY가 설정되어 있지 않습니다."
+        )
+
+    base_url = os.getenv(
+        "HYPERCLOVA_X_ENDPOINT",
+        DEFAULT_BASE_URL,
+    )
+
+    return HyperClovaXCalculationClient(
+        api_key=key,
+        base_url=base_url,
+        model_name=DEFAULT_MODEL,
+        debug=debug,
+    )
+
+def _env_bool(
+    name: str,
+    default: bool = False,
+) -> bool:
+    value = os.getenv(name)
+
+    if value is None:
+        return default
+
+    return value.strip().lower() in {
+        "1",
+        "true",
+        "yes",
+        "y",
+        "on",
+    }
+
+
+def _env_int(
+    name: str,
+    default: int,
+    *,
+    minimum: int | None = None,
+    maximum: int | None = None,
+) -> int:
+    raw = os.getenv(name)
+
+    try:
+        value = int(raw) if raw is not None else int(default)
+    except (TypeError, ValueError):
+        value = int(default)
+
+    if minimum is not None:
+        value = max(minimum, value)
+
+    if maximum is not None:
+        value = min(maximum, value)
+
+    return value
+
+
+def _debug(
+    enabled: bool,
+    stage: str,
+    message: str,
+) -> None:
+    if enabled:
+        print(
+            f"[COMPLEX][{stage}] {message}",
+            flush=True,
+        )
+
+
+def _failure_result(
+    *,
+    status: str,
+    answer: str,
+    error: Exception | None = None,
+    search_plan: dict[str, Any] | None = None,
+    retrieved_context: str = "",
+) -> dict[str, Any]:
+    result: dict[str, Any] = {
+        "success": False,
+        "status": status,
+        "stage": status,
+        "task_type": TASK_TYPE,
+        "answer": answer,
+        "answer_with_sources": answer,
+        "sources": [],
+        "used_source_ids": [],
+        "retrieved_context": retrieved_context,
+    }
+
+    if search_plan is not None:
+        result["search_plan"] = search_plan
+
+    if error is not None:
+        result["error_type"] = type(error).__name__
+        result["error"] = str(error)
+
+    return result
 
 # =============================================================================
 # Exceptions
@@ -94,102 +344,63 @@ class CalculationPlan:
 # Chunk normalization
 # =============================================================================
 
-def normalize_chunks(chunks: Sequence[Any]) -> List[Dict[str, Any]]:
-    """
-    검색기가 어떤 형태의 chunk를 주더라도 LLM 입력 형식을 최대한 통일한다.
+def normalize_chunks(chunks):
+    normalized = []
 
-    지원:
-    - str
-    - dict
-    - 기타 객체(str 변환)
+    for idx, chunk in enumerate(chunks, start=1):
+        metadata = chunk.get("metadata") or {}
 
-    dict에서 자주 쓰는 key를 최대한 보존한다.
-    """
-    normalized: List[Dict[str, Any]] = []
+        normalized.append({
+            # 계산 LLM 전용 ID
+            "source_id": idx,
 
-    for i, chunk in enumerate(chunks):
-        default_source_id = f"S{i + 1}"
-
-        if isinstance(chunk, str):
-            normalized.append(
-                {
-                    "source_id": default_source_id,
-                    "chunk_id": None,
-                    "doc_id": None,
-                    "company": None,
-                    "report_name": None,
-                    "report_type": None,
-                    "rcept_dt": None,
-                    "title": None,
-                    "text": chunk,
-                }
-            )
-            continue
-
-        if isinstance(chunk, Mapping):
-            source_id = str(
-                chunk.get("source_id")
-                or chunk.get("chunk_id")
-                or chunk.get("id")
-                or default_source_id
-            )
-
-            text = (
-                chunk.get("text")
-                or chunk.get("content")
-                or chunk.get("chunk_text")
-                or chunk.get("page_content")
+            # 실제 검색 결과 ID는 보존
+            "chunk_id": (
+                chunk.get("chunk_id")
+                or metadata.get("chunk_id")
                 or ""
-            )
+            ),
 
-            normalized.append(
-                {
-                    "source_id": source_id,
-                    "chunk_id": _none_or_str(chunk.get("chunk_id")),
-                    "doc_id": _none_or_str(
-                        chunk.get("doc_id")
-                        or chunk.get("document_id")
-                        or chunk.get("rcept_no")
-                    ),
-                    "company": _none_or_str(
-                        chunk.get("company")
-                        or chunk.get("corp_name")
-                    ),
-                    "report_name": _none_or_str(
-                        chunk.get("report_name")
-                        or chunk.get("report_nm")
-                    ),
-                    "report_type": _none_or_str(
-                        chunk.get("report_type")
-                        or chunk.get("normalized_report_type")
-                    ),
-                    "rcept_dt": _none_or_str(
-                        chunk.get("rcept_dt")
-                        or chunk.get("date")
-                        or chunk.get("filing_date")
-                    ),
-                    "title": _none_or_str(chunk.get("title")),
-                    "text": str(text),
-                }
-            )
-            continue
+            "corp_name": (
+                chunk.get("corp_name")
+                or metadata.get("corp_name")
+                or ""
+            ),
 
-        normalized.append(
-            {
-                "source_id": default_source_id,
-                "chunk_id": None,
-                "doc_id": None,
-                "company": None,
-                "report_name": None,
-                "report_type": None,
-                "rcept_dt": None,
-                "title": None,
-                "text": str(chunk),
-            }
-        )
+            "report_nm": (
+                metadata.get("report_nm")
+                or metadata.get("report_name")
+                or ""
+            ),
+
+            "base_year": metadata.get("base_year"),
+            "rcept_no": metadata.get("rcept_no"),
+            "rcept_dt": metadata.get("rcept_dt"),
+            "event_date": metadata.get("event_date"),
+
+            "text": (
+                chunk.get("document")
+                or chunk.get("text")
+                or ""
+            ),
+
+            "rerank_score": (
+                chunk.get("rerank_score")
+                or (chunk.get("retrieval") or {}).get(
+                    "rerank_score"
+                )
+            ),
+
+            "request_ids": (
+                chunk.get("request_ids")
+                or (chunk.get("retrieval") or {}).get(
+                    "request_ids"
+                )
+                or []
+            ),
+        })
 
     return normalized
-
 
 def _none_or_str(value: Any) -> Optional[str]:
     return None if value is None else str(value)
@@ -274,7 +485,7 @@ def build_operation_prompt(
     hint: Mapping[str, Any],
     chunks: Sequence[Mapping[str, Any]],
 ) -> str:
-    specs = json.dumps(get_operation_specs(), ensure_ascii=False, indent=2)
+    specs = json.dumps(OPERATION_SPECS, ensure_ascii=False, indent=2)
     hint_json = json.dumps(hint, ensure_ascii=False, indent=2)
     chunk_json = json.dumps(list(chunks), ensure_ascii=False, indent=2)
 
@@ -345,7 +556,8 @@ def build_answer_prompt(
     return f"""
 당신은 공시 데이터 기반 질의응답 Agent의 최종 답변 생성기입니다.
 
-아래 사용자 질문에 대해 Python 계산 결과와 선택된 공시 근거만 사용해 최소한의 답변을 생성하십시오.
+아래 사용자 질문에 대해 Python 계산 결과와 선택된 공시 근거만 사용해
+최소한의 답변을 생성하십시오.
 
 규칙:
 1. 계산 결과를 임의로 다시 계산하거나 수정하지 마십시오.
@@ -353,8 +565,11 @@ def build_answer_prompt(
 3. 질문의 핵심 결론과 필요한 수치를 간결하게 포함하십시오.
 4. 단위가 있으면 반드시 명시하십시오.
 5. 근거가 부족하면 그 한계를 명시하십시오.
-6. 출처 목록은 별도로 Python이 붙일 것이므로 answer 문자열에는 장황한 출처 나열을 하지 않아도 됩니다.
-7. 출력은 JSON 하나만 반환하십시오.
+6. 출처 목록은 별도로 Python이 붙일 것이므로 장황하게 나열하지 마십시오.
+7. 최종 답변 문장만 출력하십시오.
+8. JSON, Python dict, Markdown 코드 블록을 출력하지 마십시오.
+9. '결과', '근거' 등의 별도 객체 구조를 만들지 마십시오.
+10. 질문에 대한 최종 답변을 1~3문장으로 작성하십시오.
 
 사용자 질문:
 {question}
@@ -370,13 +585,7 @@ Python 계산 결과:
 
 선택된 공시 근거:
 {json.dumps(list(selected_sources), ensure_ascii=False)}
-
-출력:
-{{
-  "answer": "최종 최소 답변"
-}}
 """.strip()
-
 
 # =============================================================================
 # Plan validation
@@ -457,7 +666,7 @@ def calculate(
     question: str,
     hint: Mapping[str, Any],
     chunks: Sequence[Any],
-    llm_callable: LLMCallable,
+    llm_callable: Optional[LLMCallable] = None,
     *,
     generate_answer: bool = True,
 ) -> Dict[str, Any]:
@@ -502,6 +711,12 @@ def calculate(
         raise CalculateError("question must not be empty.")
     if not isinstance(hint, Mapping):
         raise CalculateError("hint must be a mapping.")
+
+    # 외부에서 llm_callable을 주입하지 않으면
+    # 프로젝트의 Config.py / 환경변수를 이용해 HCX-005를 직접 사용한다.
+    if llm_callable is None:
+        llm_callable = build_default_hcx_client()
+
     if not callable(llm_callable):
         raise CalculateError("llm_callable must be callable.")
 
@@ -581,8 +796,7 @@ def calculate(
         )
 
         raw_answer = llm_callable(answer_prompt)
-        answer_obj = parse_json_object(raw_answer)
-        answer = str(answer_obj.get("answer") or "").strip()
+        answer = str(raw_answer or "").strip()
 
         if not answer:
             answer = _fallback_answer(plan, calculation)
@@ -739,56 +953,515 @@ def _build_retrieved_context(chunks: Sequence[Mapping[str, Any]]) -> str:
 
     return "\n\n".join(blocks)
 
+def run_calculation_task(
+    *,
+    question: str,
+    extracted: dict[str, Any],
+    debug: bool | None = None,
+) -> dict[str, Any]:
+    """
+    다중조회/비교연산 전체 흐름을 실행한다.
 
-# =============================================================================
-# Example adapter / usage
-# =============================================================================
+    질문/키워드 결과
+    → 검색계획 LLM
+    → 운영 검색 실행기
+    → reranked_results 구성
+    → calculate.py
+        - 연산 선택 LLM
+        - basic_function.py 계산
+        - 최종 답변 LLM
+    → validation
+    → 최종 결과 반환
+    """
 
-if __name__ == "__main__":
-    def mock_llm(prompt: str) -> str:
-        """
-        실제 사용 시 이 부분을 기존 HyperCLOVA X 호출 함수로 교체한다.
-        이 mock은 파일 실행 예시일 뿐이다.
-        """
-        if "계산 실행 계획 생성기" in prompt:
-            return json.dumps(
-                {
-                    "answerable": True,
-                    "operation": "argmax",
-                    "arguments": {
-                        "values": {
-                            "A사": 12500,
-                            "B사": 9800,
-                        }
-                    },
-                    "unit": "억원",
-                    "source_ids": ["A_2025", "B_2025"],
-                    "extracted_facts": [
-                        {
-                            "label": "A사 2025년 설비투자",
-                            "value": 12500,
-                            "unit": "억원",
-                            "source_id": "A_2025",
-                        },
-                        {
-                            "label": "B사 2025년 설비투자",
-                            "value": 9800,
-                            "unit": "억원",
-                            "source_id": "B_2025",
-                        },
-                    ],
-                    "reason": "두 기업 중 설비투자 규모가 더 큰 기업을 찾는 질문",
-                },
-                ensure_ascii=False,
-            )
+    started_total = time.perf_counter()
 
-        return json.dumps(
-            {
-                "answer": "2025년 설비투자 규모는 A사가 1조 2,500억원으로 B사의 9,800억원보다 큽니다."
-            },
-            ensure_ascii=False,
+    debug_enabled = (
+        _env_bool("CALCULATION_DEBUG", False)
+        if debug is None
+        else bool(debug)
+    )
+
+    question = str(
+        question or ""
+    ).strip()
+
+    # -------------------------------------------------------------------------
+    # 0. INPUT VALIDATION
+    # -------------------------------------------------------------------------
+
+    if not question:
+        return _failure_result(
+            status="empty_question",
+            answer="질문을 입력해주세요.",
         )
 
+    if not isinstance(
+        extracted,
+        dict,
+    ):
+        return _failure_result(
+            status="invalid_keyword_result",
+            answer=(
+                "질문 분석 결과의 형식이 "
+                "올바르지 않습니다."
+            ),
+        )
+
+    if extracted.get(
+        "is_complete"
+    ) is not True:
+
+        result = _failure_result(
+            status="clarification_required",
+            answer=str(
+                extracted.get(
+                    "clarification_question"
+                )
+                or "추가 정보가 필요합니다."
+            ),
+        )
+
+        result["missing_fields"] = (
+            extracted.get(
+                "missing_fields"
+            )
+            or []
+        )
+
+        result[
+            "clarification_question"
+        ] = extracted.get(
+            "clarification_question"
+        )
+
+        return result
+
+    _debug(
+        debug_enabled,
+        "START",
+        f"question={question}",
+    )
+
+    # -------------------------------------------------------------------------
+    # 1. INITIALIZE
+    # -------------------------------------------------------------------------
+
+    try:
+        (
+            plan_client,
+            executor,
+            validator,
+        ) = initialize_complex_components(
+            debug=debug_enabled,
+        )
+
+    except Exception as exc:
+        import traceback
+
+        print(
+            "[CALC][INIT_ERROR]",
+            f"{type(exc).__name__}: {exc}",
+            flush=True,
+        )
+        traceback.print_exc()
+
+        return _failure_result(
+            status="calculation_initialization_error",
+            answer="다중조회/비교연산 실행기를 초기화하지 못했습니다.",
+            error=exc,
+        )
+
+    # -------------------------------------------------------------------------
+    # 2. SEARCH PLAN
+    # -------------------------------------------------------------------------
+
+    plan_started = time.perf_counter()
+
+    try:
+            
+        search_plan, raw_search_plan = plan_client.generate(
+            question=question,
+            keyword_extractor_output=extracted,
+        )
+
+        print(
+            "[CALC][SEARCH_PLAN]",
+            json.dumps(
+                search_plan,
+                ensure_ascii=False,
+                indent=2,
+                default=str,
+            ),
+            flush=True,
+        )
+
+    except Exception as exc:
+        _debug(
+            debug_enabled,
+            "PLAN_ERROR",
+            f"{type(exc).__name__}: {exc}",
+        )
+
+        return _failure_result(
+            status="search_plan_error",
+            answer=(
+                "공시 검색 계획을 "
+                "생성하지 못했습니다."
+            ),
+            error=exc,
+        )
+
+    plan_seconds = (
+        time.perf_counter()
+        - plan_started
+    )
+
+    # -------------------------------------------------------------------------
+    # 3. OPERATIONAL SEARCH
+    # -------------------------------------------------------------------------
+
+    search_started = time.perf_counter()
+
+    try:
+        search_result = executor.run(
+            question=question,
+            search_plan=search_plan,
+            keyword_result=extracted,
+        )
+
+    except Exception as exc:
+        _debug(
+            debug_enabled,
+            "SEARCH_ERROR",
+            f"{type(exc).__name__}: {exc}",
+        )
+
+        return _failure_result(
+            status="search_execution_error",
+            answer=(
+                "공시 근거를 "
+                "검색하지 못했습니다."
+            ),
+            error=exc,
+            search_plan=search_plan,
+        )
+
+    search_seconds = (
+        time.perf_counter()
+        - search_started
+    )
+
+    print(
+        "[CALC][SEARCH_RESULT]",
+        json.dumps(
+            search_result,
+            ensure_ascii=False,
+            indent=2,
+            default=str,
+        ),
+        flush=True,
+    )
+
+
+    if not search_result.get(
+        "success"
+    ):
+        status = str(
+            search_result.get(
+                "stage"
+            )
+            or "search_execution_error"
+        )
+
+        error = RuntimeError(
+            str(
+                search_result.get(
+                    "message"
+                )
+                or search_result.get(
+                    "error"
+                )
+                or status
+            )
+        )
+
+        return _failure_result(
+            status=status,
+            answer=(
+                "질문에 필요한 공시 근거를 "
+                "검색하지 못했습니다."
+            ),
+            error=error,
+            search_plan=search_plan,
+        )
+
+    # -------------------------------------------------------------------------
+    # 4. BUILD RERANKED RESULTS
+    # -------------------------------------------------------------------------
+
+    context = (
+        search_result.get(
+            "context"
+        )
+        or {}
+    )
+
+    chunks_value = (
+        context.get(
+            "chunks"
+        )
+        or []
+    )
+
+    chunks = [
+        item
+        for item in chunks_value
+        if isinstance(
+            item,
+            dict,
+        )
+    ]
+
+    reranked_results = (
+        _context_chunks_to_results(
+            chunks
+        )
+    )
+
+    print(
+        "[CALC][RERANKED_RESULTS]",
+        json.dumps(
+            reranked_results,
+            ensure_ascii=False,
+            indent=2,
+            default=str,
+        ),
+        flush=True,
+    )
+
+    _debug(
+        debug_enabled,
+        "SEARCH_READY",
+        (
+            f"documents="
+            f"{len(context.get('documents') or [])} "
+            f"chunks="
+            f"{len(reranked_results)} "
+            f"chars="
+            f"{context.get('total_chars', 0)} "
+            f"elapsed="
+            f"{search_seconds:.3f}s"
+        ),
+    )
+
+    if not reranked_results:
+        return _failure_result(
+            status="no_search_context",
+            answer=(
+                INSUFFICIENT_EVIDENCE_ANSWER
+            ),
+            search_plan=search_plan,
+        )
+
+    retrieved_context = (
+        _build_context_text(
+            reranked_results,
+            max_results=len(
+                reranked_results
+            ),
+            max_chars_per_result=(
+                _env_int(
+                    (
+                        "CALCULATION_"
+                        "RETRIEVED_CONTEXT_CHARS"
+                    ),
+                    6000,
+                    minimum=500,
+                )
+            ),
+        )
+    )
+
+    context_summary = {
+        "document_count": len(
+            context.get(
+                "documents"
+            )
+            or []
+        ),
+        "chunk_count": len(
+            reranked_results
+        ),
+        "total_chars": context.get(
+            "total_chars",
+            0,
+        ),
+        "covered_request_ids": (
+            context.get(
+                "covered_request_ids"
+            )
+            or []
+        ),
+        "covered_period_buckets": (
+            context.get(
+                "covered_period_buckets"
+            )
+            or []
+        ),
+    }
+
+    # -------------------------------------------------------------------------
+    # 5. CALCULATION + ANSWER
+    # -------------------------------------------------------------------------
+
+    calculation_started = time.perf_counter()
+
+    try:
+        calculation_result = calculate(
+            question=question,
+            hint=extracted,
+            chunks=reranked_results,
+        )
+
+    except Exception as exc:
+        import traceback
+
+        print(
+            "[CALC][CALCULATION_ERROR]",
+            f"{type(exc).__name__}: {exc}",
+            flush=True,
+        )
+        traceback.print_exc()
+
+        return _failure_result(
+            status="calculation_error",
+            answer=(
+                "검색된 공시 근거로 "
+                "비교·연산을 수행하지 못했습니다."
+            ),
+            error=exc,
+            search_plan=search_plan,
+            retrieved_context=retrieved_context,
+        )
+
+    calculation_seconds = (
+        time.perf_counter()
+        - calculation_started
+    )
+
+    answer = str(
+        calculation_result.get("answer")
+        or ""
+    ).strip()
+
+    sources = (
+        calculation_result.get("sources")
+        or []
+    )
+
+    total_seconds = (
+        time.perf_counter()
+        - started_total
+    )
+
+    _debug(
+        debug_enabled,
+        "DONE",
+        (
+            f"answer_ready=true "
+            f"total_elapsed={total_seconds:.3f}s"
+        ),
+    )
+
+    return {
+        "success": True,
+        "status": "completed",
+        "stage": "answer_ready",
+        "task_type": "다중조회_비교연산",
+
+        "answer": (
+            answer
+            or INSUFFICIENT_EVIDENCE_ANSWER
+        ),
+
+        "sources": sources,
+
+        "search_plan": search_plan,
+
+        "documents": (
+            context.get("documents")
+            or []
+        ),
+
+        "reranked_results": (
+            reranked_results
+        ),
+
+        "retrieved_context": (
+            calculation_result.get(
+                "retrieved_context"
+            )
+            or retrieved_context
+        ),
+
+        "calculation": (
+            calculation_result.get(
+                "calculation"
+            )
+        ),
+
+        # main의 grounding validator가 활용할 수 있도록 유지
+        "validation_payload": (
+            calculation_result.get(
+                "validation_payload"
+            )
+            or {}
+        ),
+
+        "context_summary": (
+            context_summary
+        ),
+
+        "search_diagnostics": (
+            context.get(
+                "request_diagnostics"
+            )
+            or []
+        ),
+
+        "timings": {
+            "search_plan_seconds": round(
+                plan_seconds,
+                3,
+            ),
+            "search_seconds": round(
+                search_seconds,
+                3,
+            ),
+            "calculation_seconds": round(
+                calculation_seconds,
+                3,
+            ),
+            "total_seconds": round(
+                total_seconds,
+                3,
+            ),
+        },
+    }
+
+# =============================================================================
+# CLI test with real HyperCLOVA X
+# =============================================================================
+
+def main() -> None:
+    """
+    calculate.py 단독 실행 테스트.
+
+    주의:
+    - mock LLM을 사용하지 않는다.
+    - Config.py 또는 CLOVA_STUDIO_API_KEY 환경변수의 실제 HCX-005를 호출한다.
+    """
     example_chunks = [
         {
             "source_id": "A_2025",
@@ -812,13 +1485,29 @@ if __name__ == "__main__":
         question="A사와 B사 중 2025년 설비투자 규모가 더 큰 기업은?",
         hint={
             "task_type": "다중조회_비교연산",
+            "scope_type": "direct",
+            "scope_values": ["A사", "B사"],
             "companies": ["A사", "B사"],
-            "periods": ["2025"],
+            "target_companies": ["A사", "B사"],
+            "time_type": "point",
+            "start_year": 2025,
+            "start_quarter": None,
+            "start_half": None,
+            "end_year": None,
+            "end_quarter": None,
+            "end_half": None,
             "metrics": ["설비투자"],
             "actions": ["비교"],
+            "topic_keywords": ["A사", "B사", "2025년", "설비투자"],
         },
         chunks=example_chunks,
-        llm_callable=mock_llm,
+
+        # 생략하면 build_default_hcx_client()가 자동으로 실제 HCX-005를 사용한다.
+        llm_callable=None,
     )
 
     print(json.dumps(output, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()

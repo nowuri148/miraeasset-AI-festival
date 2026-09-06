@@ -51,19 +51,14 @@ from search_info.z_search_task import (
     run_search_task,
 )
 
-from validation.validated_runner import (
-    run_with_grounding_validation,
+# 추후 구현
+from calculate.calculate import (
+    run_calculation_task,
 )
 
-
-# 추후 구현
-# from comparison_info.z_comparison_task import (
-#     run_comparison_task,
-# )
-
-# from complex_info.z_complex_task import (
-#     run_complex_task,
-# )
+from complex_info.z_complex_task import (
+    run_complex_task,
+)
 
 
 # ============================================================
@@ -235,17 +230,10 @@ def route_task(
         "다중조회_비교연산"
     ):
 
-        return {
-            "success": False,
-            "task_type": task_type,
-            "status": (
-                "not_implemented"
-            ),
-            "answer": (
-                "다중조회/비교연산 기능은 "
-                "아직 구현되지 않았습니다."
-            ),
-        }
+        return run_calculation_task(
+            question=question,
+            extracted=extracted,
+        )
 
     # --------------------------------------------------------
     # 복합문서추론
@@ -255,17 +243,10 @@ def route_task(
         "복합문서추론"
     ):
 
-        return {
-            "success": False,
-            "task_type": task_type,
-            "status": (
-                "not_implemented"
-            ),
-            "answer": (
-                "복합문서추론 기능은 "
-                "아직 구현되지 않았습니다."
-            ),
-        }
+        return run_complex_task(
+            question=question,
+            extracted=extracted,
+        )
 
     # --------------------------------------------------------
     # Unknown
@@ -309,6 +290,9 @@ def run_task_from_extracted(
         )
 
     except Exception as exc:
+
+        import traceback
+        traceback.print_exc()
 
         return {
             "success": False,
@@ -506,20 +490,10 @@ def run_agent(
     # 이미 추출했으므로 바로 Task 실행
     # --------------------------------------------------------
 
-    def execute_task() -> dict[str, Any]:
-        return (
-            run_task_from_extracted(
-                question=question,
-                extracted=extracted,
-            )
-        )
-
-
     return (
-        run_with_grounding_validation(
+        run_task_from_extracted(
             question=question,
-            execute_task=execute_task,
-            max_attempts=3,
+            extracted=extracted,
         )
     )
 
@@ -899,20 +873,10 @@ def main() -> None:
         # 이미 얻은 extracted를 바로 사용한다.
         # ====================================================
 
-        def execute_task() -> dict[str, Any]:
-            return (
-                run_task_from_extracted(
-                    question=conversation_question,
-                    extracted=extracted,
-                )
-            )
-
-
         task_result = (
-            run_with_grounding_validation(
+            run_task_from_extracted(
                 question=conversation_question,
-                execute_task=execute_task,
-                max_attempts=3,
+                extracted=extracted,
             )
         )
 

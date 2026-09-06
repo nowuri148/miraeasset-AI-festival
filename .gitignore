@@ -12,3 +12,7 @@ corpus/derived/
 corpus/vector_db/
 .venv/
 .env
+
+# Local logs and backup files
+logs/
+*.bak

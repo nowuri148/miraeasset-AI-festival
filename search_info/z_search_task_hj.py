@@ -236,6 +236,7 @@ def run_search_task(
             catalog,
             store,
             question=question,
+            keyword_result=keyword_result,
             group_members=group_members,
             debug=debug,
         )

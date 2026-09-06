@@ -24,7 +24,7 @@ load_dotenv()
 # 기본 설정
 # ----------------------------------------------------------------------
 
-DATA_ROOT = Path(r"C:\mirae\miraeasset-AI-festival\corpus")
+DATA_ROOT = Path(r"/opt/gongpt/miraeasset-AI-festival/corpus")
 UNIVERSE_PATH = DATA_ROOT / "universe.csv"
 
 DEFAULT_BASE_URL = "https://clovastudio.stream.ntruss.com/v1/openai"
@@ -1478,6 +1478,12 @@ def main() -> None:
                 f"\n추출/범위 해석 실패: {exc}"
             )
             raise SystemExit(1)
+
+        print(
+            f"[DEBUG][AFTER_EXTRACTOR] "
+            f"len={len(conversation_question)} "
+            f"question={conversation_question!r}"
+        )
 
         if result.is_complete:
             print_result(result)

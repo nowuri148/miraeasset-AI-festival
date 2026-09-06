@@ -1,0 +1,134 @@
+{
+  "question": "삼성전자의 2023~2025년 반도체 설비투자, 재고자산, DS부문 실적 공시를 함께 보면 HBM 중심 투자 확대가 수익성 회복으로 이어진 과정은 어떻게 설명할 수 있을까?",
+  "keyword_extractor_output": {
+    "question": "삼성전자의 2023~2025년 반도체 설비투자, 재고자산, DS부문 실적 공시를 함께 보면 HBM 중심 투자 확대가 수익성 회복으로 이어진 과정은 어떻게 설명할 수 있을까?",
+    "task_type": "복합문서추론",
+    "scope_type": "direct",
+    "scope_values": [
+      "삼성전자"
+    ],
+    "companies": [
+      "삼성전자"
+    ],
+    "target_companies": [
+      "삼성전자"
+    ],
+    "doc_types": [
+      "사업보고서",
+      "반기보고서",
+      "분기보고서"
+    ],
+    "time_type": "range",
+    "start_year": 2023,
+    "start_quarter": 1,
+    "start_half": null,
+    "end_year": 2025,
+    "end_quarter": 4,
+    "end_half": null,
+    "metrics": [
+      "반도체 설비투자",
+      "재고자산",
+      "DS부문 실적"
+    ],
+    "actions": [
+      "정정 이력 확인"
+    ],
+    "topic_keywords": [
+      "삼성전자",
+      "반도체 설비투자",
+      "재고자산",
+      "DS부문 실적",
+      "HBM",
+      "수익성 회복"
+    ],
+    "scope_column": "corp_name",
+    "unresolved_scope_values": [],
+    "is_complete": true,
+    "missing_fields": [],
+    "clarification_question": null
+  },
+  "search_plan": {
+    "retrieval_requests": [
+      {
+        "query": "삼성전자의 2023~2025년 반도체 설비투자 관련 공시 근거",
+        "normalized_report_types": [
+          "annual_report",
+          "semiannual_report",
+          "quarterly_report"
+        ],
+        "period": {
+          "start": "2023",
+          "end": "2025"
+        },
+        "date_basis": "base_year",
+        "use_correction_graph": false,
+        "company_scope": {
+          "scope_type": "direct",
+          "scope_values": [
+            "삼성전자"
+          ]
+        },
+        "exact_keywords": [
+          "설비투자",
+          "시설투자",
+          "CAPEX",
+          "HBM",
+          "반도체 투자"
+        ]
+      },
+      {
+        "query": "삼성전자의 2023~2025년 재고자산 관련 공시 근거",
+        "normalized_report_types": [
+          "annual_report",
+          "semiannual_report",
+          "quarterly_report"
+        ],
+        "period": {
+          "start": "2023",
+          "end": "2025"
+        },
+        "date_basis": "base_year",
+        "use_correction_graph": false,
+        "company_scope": {
+          "scope_type": "direct",
+          "scope_values": [
+            "삼성전자"
+          ]
+        },
+        "exact_keywords": [
+          "재고자산",
+          "재고자산 회전율",
+          "재고자산 평가손실"
+        ]
+      },
+      {
+        "query": "삼성전자 DS 부문의 2023~2025년 매출액, 영업이익, HBM 관련 실적과 수익성",
+        "normalized_report_types": [
+          "annual_report",
+          "semiannual_report",
+          "quarterly_report"
+        ],
+        "period": {
+          "start": "2023",
+          "end": "2025"
+        },
+        "date_basis": "base_year",
+        "use_correction_graph": false,
+        "company_scope": {
+          "scope_type": "direct",
+          "scope_values": [
+            "삼성전자"
+          ]
+        },
+        "exact_keywords": [
+          "DS 부문",
+          "매출액",
+          "영업이익",
+          "HBM",
+          "고대역폭메모리",
+          "수익성"
+        ]
+      }
+    ]
+  }
+}
